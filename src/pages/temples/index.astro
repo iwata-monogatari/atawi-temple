@@ -17,7 +17,7 @@ import { allDistricts, allTemples, getDistrictName } from "../../lib/temples";
   <section class="section">
     <h2>9地区分類</h2>
     <div class="filter-band">
-      {allDistricts.map((district) => <a href={`/search/?district=${district.district_id}`}>{district.name}</a>)}
+      {allDistricts.map((district) => <a href={`/areas/${district.slug}/`}>{district.name}</a>)}
     </div>
   </section>
 
