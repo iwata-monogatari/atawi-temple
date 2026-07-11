@@ -1,0 +1,148 @@
+[
+ {
+  "slug": "tokuoin-mitsuke",
+  "name": "徳翁院",
+  "kana": "とくおういん",
+  "sect": "浄土宗",
+  "address": "静岡県磐田市見付568番地",
+  "aliases": [
+   "江東山徳翁院"
+  ],
+  "current_deity": "十一面観音菩薩（立像）",
+  "current_founded": "江戸時代初期（宗派資料の開基年次欄は「天和年間(1615~1623)」と表記。西暦1615〜1623年は元和年間にあたるため、年号表記に揺れがあります）",
+  "has_history": true
+ },
+ {
+  "slug": "keiganji-mitsuke",
+  "name": "慶岩寺",
+  "kana": "けいがんじ",
+  "sect": "浄土宗",
+  "address": "静岡県磐田市見付2735番地の1",
+  "aliases": [
+   "松光山慶岩寺"
+  ],
+  "current_deity": "未確認",
+  "current_founded": "永禄5年（1562年）開基（静岡教区浄土宗青年会の寺院紹介による）",
+  "has_history": true
+ },
+ {
+  "slug": "daikenji-mitsuke",
+  "name": "大見寺",
+  "kana": "だいけんじ",
+  "sect": "浄土宗",
+  "address": "静岡県磐田市見付2510番地の1",
+  "aliases": [
+   "日照山光明院大見寺"
+  ],
+  "current_deity": "阿弥陀如来（立像。宗派資料では「運慶作」と記されますが伝承の域を出ない可能性があり要確認）",
+  "current_founded": "鎌倉時代創建と伝わる（郷土サイト・現地案内板系の記述）。宗派資料の開基年次欄は「正和四年(1345)」と表記されるが、正和4年は西暦1315年にあたり年号と西暦が一致しないため要確認",
+  "has_history": true
+ },
+ {
+  "slug": "zendoji-mitsuke",
+  "name": "善導寺",
+  "kana": "ぜんどうじ",
+  "sect": "浄土宗",
+  "address": "静岡県磐田市見付1番地の10",
+  "aliases": [
+   "玉光山稱名院善導寺"
+  ],
+  "current_deity": "未確認",
+  "current_founded": "応安6年（1373年）開基（静岡教区浄土宗青年会の寺院紹介による）。郷土サイトでは応安4年（1371年）に旭光房が善導大師像を背負って当地を訪れ開いたと伝わるとも記され、記述に幅があります",
+  "has_history": true
+ },
+ {
+  "slug": "mantokuji-nakaizumi",
+  "name": "満徳寺",
+  "kana": "まんとくじ",
+  "sect": "真宗大谷派",
+  "address": "静岡県磐田市中泉1丁目4番地7",
+  "aliases": [
+   "光恩山満徳寺",
+   "中泉富士（本堂の通称）"
+  ],
+  "current_deity": "阿弥陀如来",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "saiganji-nakaizumi",
+  "name": "西願寺",
+  "kana": "さいがんじ",
+  "sect": "真宗大谷派",
+  "address": "静岡県磐田市中泉254番地の1",
+  "aliases": [
+   "弘誓山西願寺"
+  ],
+  "current_deity": "阿弥陀如来",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "gyosenji-mitsuke",
+  "name": "行泉寺",
+  "kana": "ぎょうせんじ",
+  "sect": "真宗高田派",
+  "address": "静岡県磐田市見付3080番地の2",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": false
+ },
+ {
+  "slug": "saikoji-kaketsuka",
+  "name": "西光寺",
+  "kana": "さいこうじ",
+  "sect": "浄土宗",
+  "address": "静岡県磐田市掛塚1079番地",
+  "aliases": [
+   "稱名山",
+   "称名山西光寺"
+  ],
+  "current_deity": "未確認",
+  "current_founded": "永正18年（1521年）開基",
+  "has_history": true
+ },
+ {
+  "slug": "kokuseiji-kaketsuka",
+  "name": "國清寺",
+  "kana": "こくせいじ",
+  "sect": "浄土宗",
+  "address": "静岡県磐田市掛塚643番地",
+  "aliases": [
+   "松林山",
+   "観智院",
+   "松林山観智院国清寺",
+   "国清寺"
+  ],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "manpukuji-kaketsuka-819",
+  "name": "満福寺",
+  "kana": "まんぷくじ",
+  "sect": "浄土真宗本願寺派",
+  "address": "静岡県磐田市掛塚819番地",
+  "aliases": [
+   "亀甲山",
+   "亀甲山満福寺",
+   "滿福寺"
+  ],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "manpukuji-kaketsuka-799",
+  "name": "萬福寺",
+  "kana": "まんぷくじ",
+  "sect": "真宗大谷派",
+  "address": "静岡県磐田市掛塚799番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ }
+]

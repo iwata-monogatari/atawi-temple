@@ -1,0 +1,102 @@
+[
+ {
+  "slug": "honshoji-kounodai",
+  "name": "本性寺",
+  "kana": "ほんしょうじ",
+  "sect": "日蓮宗",
+  "address": "静岡県磐田市国府台441番地の1",
+  "area": "見付",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "genmyoji-mitsuke",
+  "name": "玄妙寺",
+  "kana": "げんみょうじ",
+  "sect": "日蓮宗",
+  "address": "静岡県磐田市見付2440番地の1",
+  "area": "見付",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "senshoji-iwai",
+  "name": "宣正寺",
+  "kana": "せんしょうじ",
+  "sect": "日蓮正宗",
+  "address": "静岡県磐田市岩井2324番地の5",
+  "area": "向陽",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "nipponzan-myohoji-iwata",
+  "name": "日本山妙法寺磐田小僧伽",
+  "kana": "にっぽんざんみょうほうじいわたしょうそうぎゃ",
+  "sect": "日本山妙法寺大僧伽",
+  "address": "静岡県磐田市中泉3734番地の4",
+  "area": "中泉",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "shinshinkyo-mitsuke",
+  "name": "神心教",
+  "kana": "しんしんきょう",
+  "sect": "包括宗教法人「神心教」",
+  "address": "静岡県磐田市見付243番地",
+  "area": "見付",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "shinshinkyo-honbu-mitsuke",
+  "name": "神心教本部",
+  "kana": "しんしんきょうほんぶ",
+  "sect": "神心教",
+  "address": "静岡県磐田市見付206番地",
+  "area": "見付",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "rendaiji-yashiroyama",
+  "name": "蓮台寺",
+  "kana": "れんだいじ",
+  "sect": "真言宗智山派",
+  "address": "静岡県磐田市社山576番地",
+  "area": "豊岡",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "saikoji-kaketsuka",
+  "name": "西光寺",
+  "kana": "さいこうじ",
+  "sect": "浄土宗",
+  "address": "静岡県磐田市掛塚1079番地",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "kokuseiji-kaketsuka",
+  "name": "國清寺",
+  "kana": "こくせいじ",
+  "sect": "浄土宗",
+  "address": "静岡県磐田市掛塚643番地",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "manpukuji-kaketsuka-819",
+  "name": "満福寺",
+  "kana": "まんぷくじ",
+  "sect": "浄土真宗本願寺派",
+  "address": "静岡県磐田市掛塚819番地",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ }
+]

@@ -1,0 +1,102 @@
+[
+ {
+  "slug": "fukushoji-nishihiramatsu",
+  "name": "福生寺",
+  "kana": "ふくしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市西平松22番地",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "shojuji-oka",
+  "name": "聖寿寺",
+  "kana": "しょうじゅじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市岡330番地",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "kinzoji-toyooka",
+  "name": "金藏寺",
+  "kana": "きんぞうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市豊岡4517番地の1",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "yushoji-toyooka",
+  "name": "雄照寺",
+  "kana": "ゆうしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市豊岡1053番地の1",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "shuzoji-toyooka",
+  "name": "守増寺",
+  "kana": "しゅぞうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市豊岡2648番地",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "shokoji-miyanoshiki",
+  "name": "松向寺",
+  "kana": "しょうこうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市宮之一色413番地",
+  "area": "豊田",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "chionsai-hitokoto",
+  "name": "智恩齋",
+  "kana": "ちおんさい",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市一言797番地",
+  "area": "豊田",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "anrakuji-tateno",
+  "name": "安楽寺",
+  "kana": "あんらくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市立野477番地",
+  "area": "豊田",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "toyodain-kegojima",
+  "name": "豊田院",
+  "kana": "とよだいん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市気子島324番地",
+  "area": "豊田",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "shoi-ji-shimoban-no",
+  "name": "正医寺",
+  "kana": "しょういじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市下万能1162番地の1",
+  "area": "豊田",
+  "aliases": [],
+  "status": "現存"
+ }
+]

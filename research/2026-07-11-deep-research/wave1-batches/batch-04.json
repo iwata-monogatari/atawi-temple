@@ -1,0 +1,102 @@
+[
+ {
+  "slug": "taigetsuan-sagisaka",
+  "name": "太月庵",
+  "kana": "たいげつあん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市匂坂上59番地の1",
+  "area": "向陽",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "zosanji-sagisaka",
+  "name": "増参寺",
+  "kana": "ぞうさんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市匂坂中586番地",
+  "area": "向陽",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "shinpoin-mukasa",
+  "name": "新豊院",
+  "kana": "しんぽういん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市向笠竹之内14番地",
+  "area": "向陽",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "hounji-mukasa",
+  "name": "法雲寺",
+  "kana": "ほううんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市向笠西374番地",
+  "area": "向陽",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "anzenji-iwai",
+  "name": "安全寺",
+  "kana": "あんぜんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市岩井1365番地の1",
+  "area": "向陽",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "hofukuji-okubo",
+  "name": "保福寺",
+  "kana": "ほうふくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市大久保361番地",
+  "area": "向陽",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "shogenin-kojima",
+  "name": "正眼院",
+  "kana": "しょうげんいん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市小島738番地",
+  "area": "南部",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "mannenji-kusasaki",
+  "name": "萬然寺",
+  "kana": "まんねんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市草崎2430番地の1",
+  "area": "南部",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "jushouji-kusasaki",
+  "name": "壽正寺",
+  "kana": "じゅしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市草崎691番地の1",
+  "area": "南部",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "zenkaiji-nishijima",
+  "name": "全海寺",
+  "kana": "ぜんかいじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市西島452番地の1",
+  "area": "南部",
+  "aliases": [],
+  "status": "現存"
+ }
+]

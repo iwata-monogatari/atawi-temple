@@ -1,0 +1,102 @@
+[
+ {
+  "slug": "senzoji-nakaizumi",
+  "name": "泉蔵寺",
+  "kana": "せんぞうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市中泉1557番地の1",
+  "area": "中泉",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "renpukuji-ninomiya",
+  "name": "連福寺",
+  "kana": "れんぷくじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市二之宮1262番地",
+  "area": "中泉",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "jionji-mitsuke",
+  "name": "慈恩寺",
+  "kana": "じおんじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市見付2431番地の1",
+  "area": "見付",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "kenshoji-mitsuke",
+  "name": "見性寺",
+  "kana": "けんしょうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市見付2896番地",
+  "area": "見付",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "shinnyoji-sagisaka",
+  "name": "眞如寺",
+  "kana": "しんにょじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市匂坂上210番地の1",
+  "area": "向陽",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "myosenji-araide",
+  "name": "明泉寺",
+  "kana": "みょうせんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市新出613番地",
+  "area": "向陽",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "jokoji-maeno",
+  "name": "定光寺",
+  "kana": "じょうこうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市前野1773番地の1",
+  "area": "南部",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "jissaiji-samejima",
+  "name": "実際寺",
+  "kana": "じっさいじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市鮫島202番地",
+  "area": "南部",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "koganji-kusasaki",
+  "name": "光嚴寺",
+  "kana": "こうがんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市草崎644番地の1",
+  "area": "南部",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "shokoji-shirabyoshi",
+  "name": "正光寺",
+  "kana": "しょうこうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市白拍子358番地",
+  "area": "南部",
+  "aliases": [],
+  "status": "現存"
+ }
+]

@@ -1,0 +1,102 @@
+[
+ {
+  "slug": "keishoji-fukude",
+  "name": "慶昌寺",
+  "kana": "けいしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市福田1834番地",
+  "area": "福田",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "chosenji-fukudenakajima",
+  "name": "長泉寺",
+  "kana": "ちょうせんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市福田中島445番地",
+  "area": "福田",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "kannonji-fukude",
+  "name": "観音寺",
+  "kana": "かんのんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市福田688番地の1",
+  "area": "福田",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "ryuhoin-ohara",
+  "name": "龍法院",
+  "kana": "りゅうほういん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市大原2371番地",
+  "area": "南部",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "zohonji-ikago",
+  "name": "蔵本寺",
+  "kana": "ぞうほんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市五十子26番地",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "jushouji-hiruike",
+  "name": "寿正寺",
+  "kana": "じゅしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市蛭池230番地",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "rengakuji-ryuyonakajima",
+  "name": "蓮覚寺",
+  "kana": "れんがくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市竜洋中島689番地の1",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "ganjoji-hirama",
+  "name": "願成寺",
+  "kana": "がんじょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市平間431番地の1",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "jikeian-komaba",
+  "name": "慈慶庵",
+  "kana": "じけいあん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市駒場20番地の1",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "shingetsuji-ebijima",
+  "name": "心月寺",
+  "kana": "しんげつじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市海老島200番地の1",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ }
+]

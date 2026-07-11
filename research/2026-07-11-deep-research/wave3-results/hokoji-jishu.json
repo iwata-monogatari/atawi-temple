@@ -1,0 +1,191 @@
+[
+ {
+  "slug": "kindaiji-tenryu",
+  "found": true,
+  "official_page_url": "http://www.jishu.or.jp/jishu-shumusho/jishu-temples/",
+  "aliases_add": ["こんたいじ"],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [
+   "時宗公式「時宗寺院一覧」（第17教区）の読み仮名は「ｺﾝﾀｲｼﾞ（こんたいじ）」と表記されており、台帳の「きんだいじ」と異なる。正式な読みを寺院・市資料で要確認。",
+   "公式一覧に電話番号の掲載がない唯一の磐田市内時宗寺院であり、無住・兼務の可能性を要確認。",
+   "由緒・本尊は宗派公式サイトに掲載なし。別資料（磐田市史等）での調査が必要。"
+  ],
+  "sources": [
+   {"title": "時宗公式ページ 時宗寺院一覧（時宗宗務所）", "type": "宗派公式資料", "url": "http://www.jishu.or.jp/jishu-shumusho/jishu-temples/", "note": "一覧掲載のみ。第17教区に「金台寺（ｺﾝﾀｲｼﾞ）〒438-0075 静岡県磐田市天竜110」として掲載。由緒・本尊・行事の記載はない。読み仮名が公式では「こんたいじ」である点に注意。"}
+  ]
+ },
+ {
+  "slug": "shokoji-mitsuke",
+  "found": true,
+  "official_page_url": "http://www.jishu.or.jp/jishu-shumusho/jishu-temples/",
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [
+   "由緒・本尊は宗派公式サイトに掲載なし。鎌倉時代中期の時宗改宗伝承（民間記事由来）の裏取りは別資料で要調査。"
+  ],
+  "sources": [
+   {"title": "時宗公式ページ 時宗寺院一覧（時宗宗務所）", "type": "宗派公式資料", "url": "http://www.jishu.or.jp/jishu-shumusho/jishu-temples/", "note": "一覧掲載のみ。第17教区に「省光寺（ｼｮｳｺｳｼﾞ）〒438-0086 静岡県磐田市見付（二番町）2423」として掲載。所在地表記に「二番町」の注記あり。由緒・本尊・行事の記載はない。"}
+  ]
+ },
+ {
+  "slug": "saikoji-mitsuke",
+  "found": true,
+  "official_page_url": "http://www.jishu.or.jp/jishu-shumusho/jishu-temples/",
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [
+   "宗派公式一覧の住所表記は「磐田市見付加茂川通3353-1」で、町名レベルの表記（加茂川通）が台帳より詳しい。表記整合を確認。",
+   "寺院自身の公式サイトがあるにもかかわらず、宗派公式一覧には「寺院Web」リンクが付与されていない。寺院公式サイト側の由緒（文永2年開創等）との突合は寺院公式サイト調査で行う。"
+  ],
+  "sources": [
+   {"title": "時宗公式ページ 時宗寺院一覧（時宗宗務所）", "type": "宗派公式資料", "url": "http://www.jishu.or.jp/jishu-shumusho/jishu-temples/", "note": "一覧掲載のみ。第17教区に「西光寺（ｻｲｺｳｼﾞ）〒438-0086 静岡県磐田市見付加茂川通3353-1」として掲載。由緒・本尊・行事の記載はなく、寺院Webリンクもない。"}
+  ]
+ },
+ {
+  "slug": "gyokoji-ikeda",
+  "found": true,
+  "official_page_url": "http://www.jishu.or.jp/jishu-shumusho/jishu-temples/",
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [
+   "熊野の長藤で著名な寺院だが、時宗公式サイト（jishu.or.jp）・総本山遊行寺サイト（yugyoji.or.jp）のいずれにも個別紹介ページは見当たらない。由緒（熊野御前伝承）は磐田市・観光協会・国指定天然記念物資料で裏取りする。"
+  ],
+  "sources": [
+   {"title": "時宗公式ページ 時宗寺院一覧（時宗宗務所）", "type": "宗派公式資料", "url": "http://www.jishu.or.jp/jishu-shumusho/jishu-temples/", "note": "一覧掲載のみ。第17教区に「行興寺（ｷﾞｮｳｺｳｼﾞ）〒438-0805 静岡県磐田市池田330」として掲載。由緒・本尊・行事の記載はない。"}
+  ]
+ },
+ {
+  "slug": "shorinji-kawabukuro",
+  "found": true,
+  "official_page_url": "https://www.houkouji.or.jp/matsuji/",
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [
+   "由緒・本尊は大本山方広寺の末寺一覧に掲載なし。別資料（磐田市誌・竜洋町史等）での調査が必要。"
+  ],
+  "sources": [
+   {"title": "大本山方広寺 末寺のご案内（磐田市・袋井市）", "type": "宗派公式資料", "url": "https://www.houkouji.or.jp/matsuji/", "note": "一覧掲載のみ。「磐田市川袋 松林寺 〒438-0232 磐田市川袋224」として掲載。分譲可能墓地・永代供養墓ありの表示。由緒・本尊・山号の記載はない。"}
+  ]
+ },
+ {
+  "slug": "hojuin-jurojima",
+  "found": true,
+  "official_page_url": "https://www.houkouji.or.jp/matsuji/",
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [
+   "方広寺末寺一覧の表記は新字の「宝珠院」。電話番号欄がなく墓地等の対応欄もすべて「－」のため、無住・兼務の可能性を要確認。",
+   "由緒・本尊は末寺一覧に掲載なし。別資料での調査が必要。"
+  ],
+  "sources": [
+   {"title": "大本山方広寺 末寺のご案内（磐田市・袋井市）", "type": "宗派公式資料", "url": "https://www.houkouji.or.jp/matsuji/", "note": "一覧掲載のみ。「磐田市十郎島 宝珠院 〒438-0236 磐田市十郎島26-1」として掲載（新字表記）。連絡先・墓地サービスの掲載なし。由緒・本尊の記載はない。"}
+  ]
+ },
+ {
+  "slug": "senryuji-kawabukuro",
+  "found": true,
+  "official_page_url": "https://www.houkouji.or.jp/matsuji/",
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [
+   "白羽の龍泉寺と連絡先が共通しており、潜龍寺が龍泉寺を兼務している可能性がある。要確認。",
+   "由緒・本尊は末寺一覧に掲載なし。別資料での調査が必要。"
+  ],
+  "sources": [
+   {"title": "大本山方広寺 末寺のご案内（磐田市・袋井市）", "type": "宗派公式資料", "url": "https://www.houkouji.or.jp/matsuji/", "note": "一覧掲載のみ。「磐田市川袋 潜龍寺 〒438-0232 磐田市川袋463」として掲載。分譲可能墓地・永代供養墓ありの表示。由緒・本尊の記載はない。"}
+  ]
+ },
+ {
+  "slug": "ryusenji-shiraha",
+  "found": true,
+  "official_page_url": "https://www.houkouji.or.jp/matsuji/",
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [
+   "方広寺末寺一覧の番地は「白羽52」で、台帳の「白羽51」と相違。正しい番地を要確認。",
+   "末寺一覧の表記は旧字の「龍泉寺」。台帳の見出し表記「竜泉寺」との使い分けを整理。",
+   "川袋の潜龍寺と連絡先が共通しており兼務寺院の可能性。墓地等の対応欄はすべて「－」。",
+   "由緒・本尊は末寺一覧に掲載なし。別資料での調査が必要。"
+  ],
+  "sources": [
+   {"title": "大本山方広寺 末寺のご案内（磐田市・袋井市）", "type": "宗派公式資料", "url": "https://www.houkouji.or.jp/matsuji/", "note": "一覧掲載のみ。「磐田市白羽 龍泉寺 〒438-0235 磐田市白羽52」として掲載（旧字「龍」表記・番地52）。由緒・本尊の記載はない。"}
+  ]
+ },
+ {
+  "slug": "koshuji-kaketsuka",
+  "found": true,
+  "official_page_url": "https://www.houkouji.or.jp/matsuji/",
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [
+   "由緒・本尊は末寺一覧に掲載なし。掛塚湊関連の地誌資料での調査が必要。"
+  ],
+  "sources": [
+   {"title": "大本山方広寺 末寺のご案内（磐田市・袋井市）", "type": "宗派公式資料", "url": "https://www.houkouji.or.jp/matsuji/", "note": "一覧掲載のみ。「磐田市掛塚 香集寺 〒438-0234 磐田市掛塚1002」として掲載。分譲可能墓地・永代供養墓ありの表示。由緒・本尊の記載はない。"}
+  ]
+ },
+ {
+  "slug": "jorakuji-horinochi",
+  "found": true,
+  "official_page_url": "https://www.houkouji.or.jp/matsuji/",
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [
+   "末寺一覧の対応欄に「写経会」の記載があり、写経会を実施している寺院である。定例日等の詳細は寺院側の情報で要確認。",
+   "由緒・本尊は末寺一覧に掲載なし。別資料での調査が必要。"
+  ],
+  "sources": [
+   {"title": "大本山方広寺 末寺のご案内（磐田市・袋井市）", "type": "宗派公式資料", "url": "https://www.houkouji.or.jp/matsuji/", "note": "一覧掲載のみ。「磐田市堀之内 常楽寺 〒438-0205 磐田市堀之内761」として掲載。分譲可能墓地・永代供養墓・写経会ありの表示。由緒・本尊の記載はない。"}
+  ]
+ }
+]

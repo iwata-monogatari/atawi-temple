@@ -1,0 +1,102 @@
+[
+ {
+  "slug": "toshoji-higashikaizuka",
+  "name": "東昌寺",
+  "kana": "とうしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市東貝塚1291番地",
+  "area": "御厨",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "renjoji-shingai",
+  "name": "連城寺",
+  "kana": "れんじょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市新貝1556番地の1",
+  "area": "御厨",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "zenkyuin-kamada",
+  "name": "全久院",
+  "kana": "ぜんきゅういん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市鎌田2546番地",
+  "area": "御厨",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "fukuoji-jonosaki",
+  "name": "福王寺",
+  "kana": "ふくおうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市城之崎4丁目2722番地の1",
+  "area": "見付",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "gasshoji-nakaizumi",
+  "name": "合掌寺",
+  "kana": "がっしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市中泉1239番地の3",
+  "area": "中泉",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "jurinji-kamiohnogo",
+  "name": "十輪寺",
+  "kana": "じゅうりんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市上大之郷606番地の1",
+  "area": "南部",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "senkoji-mitsuke",
+  "name": "宣光寺",
+  "kana": "せんこうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市見付1340番地の1",
+  "area": "見付",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "eifukuji-nishikaizuka",
+  "name": "永福寺",
+  "kana": "えいふくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市西貝塚1519番地の1",
+  "area": "御厨",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "kongoji-mitsuke",
+  "name": "金剛寺",
+  "kana": "こんごうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市見付2749番地の1",
+  "area": "見付",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "rinpoin-nishikaizuka",
+  "name": "林宝院",
+  "kana": "りんぽういん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市西貝塚1423番地",
+  "area": "御厨",
+  "aliases": [],
+  "status": "現存"
+ }
+]

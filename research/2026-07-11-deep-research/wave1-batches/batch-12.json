@@ -1,0 +1,72 @@
+[
+ {
+  "slug": "tenryuin-kaminobe",
+  "name": "天龍院",
+  "kana": "てんりゅういん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市上野部353番地",
+  "area": "豊岡",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "ichiunsai-shimonobe",
+  "name": "一雲斉",
+  "kana": "いちうんさい",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市下野部1776番地",
+  "area": "豊岡",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "saikoji-matsunokijima",
+  "name": "最廣寺",
+  "kana": "さいこうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市松之木島314番地の1",
+  "area": "豊岡",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "myofukuji-fukude",
+  "name": "妙福寺",
+  "kana": "みょうふくじ",
+  "sect": "日蓮宗",
+  "address": "静岡県磐田市福田1723番地",
+  "area": "福田",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "chikyoin-shiraha",
+  "name": "智教院",
+  "kana": "ちきょういん",
+  "sect": "日蓮宗",
+  "address": "静岡県磐田市白羽546番地",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "myomanji-kaminobe",
+  "name": "妙満寺",
+  "kana": "みょうまんじ",
+  "sect": "日蓮宗",
+  "address": "静岡県磐田市上野部738番地",
+  "area": "豊岡",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "honmyoin-iwai",
+  "name": "本妙院",
+  "kana": "ほんみょういん",
+  "sect": "単立",
+  "address": "静岡県磐田市岩井2081番地の1",
+  "area": "向陽",
+  "aliases": [],
+  "status": "現存"
+ }
+]

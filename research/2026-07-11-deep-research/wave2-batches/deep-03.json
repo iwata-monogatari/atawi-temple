@@ -1,0 +1,133 @@
+[
+ {
+  "slug": "jushouji-kusasaki",
+  "name": "壽正寺",
+  "kana": "じゅしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市草崎691番地の1",
+  "area": "南部",
+  "aliases": [],
+  "current_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+  "current_sections": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "current_pilgrimage": null
+ },
+ {
+  "slug": "zenkaiji-nishijima",
+  "name": "全海寺",
+  "kana": "ぜんかいじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市西島452番地の1",
+  "area": "南部",
+  "aliases": [],
+  "current_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+  "current_sections": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "current_pilgrimage": null
+ },
+ {
+  "slug": "toshoji-higashikaizuka",
+  "name": "東昌寺",
+  "kana": "とうしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市東貝塚1291番地",
+  "area": "御厨",
+  "aliases": [],
+  "current_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+  "current_sections": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "current_pilgrimage": null
+ },
+ {
+  "slug": "gasshoji-nakaizumi",
+  "name": "合掌寺",
+  "kana": "がっしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市中泉1239番地の3",
+  "area": "中泉",
+  "aliases": [],
+  "current_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+  "current_sections": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "current_pilgrimage": null
+ },
+ {
+  "slug": "eifukuji-nishikaizuka",
+  "name": "永福寺",
+  "kana": "えいふくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市西貝塚1519番地の1",
+  "area": "御厨",
+  "aliases": [
+   "今浦山"
+  ],
+  "current_summary": "永福寺は磐田市西貝塚にある曹洞宗の寺院で、遠州三十三観音霊場第20番札所です。霊場の札所一覧では山号は今浦山、札所本尊は十一面観世音菩薩とされています。創建年代などの沿革は公開Web上では確認できませんでした。",
+  "current_sections": [
+   {
+    "heading": "遠州三十三観音霊場の札所として",
+    "body": "永福寺は、昭和59年（1984年）5月に開創された遠州三十三観音霊場の第20番札所です。霊場の札所一覧では、山号を今浦山、宗派を曹洞宗、札所本尊を十一面観世音菩薩としています。所在地の西貝塚は縄文時代後期から晩期の貝塚遺跡（西貝塚遺跡）で知られる地区で、地区の宗教施設として永福寺と林宝院の名が挙げられています。寺自体の創建・沿革については公開情報が乏しく、今後の調査が必要です。"
+   }
+  ],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "current_pilgrimage": "遠州三十三観音霊場第20番札所（札所本尊: 十一面観世音菩薩）"
+ },
+ {
+  "slug": "rinpoin-nishikaizuka",
+  "name": "林宝院",
+  "kana": "りんぽういん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市西貝塚1423番地",
+  "area": "御厨",
+  "aliases": [],
+  "current_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+  "current_sections": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "current_pilgrimage": null
+ },
+ {
+  "slug": "honshoji-kounodai",
+  "name": "本性寺",
+  "kana": "ほんしょうじ",
+  "sect": "日蓮宗",
+  "address": "静岡県磐田市国府台441番地の1",
+  "area": "見付",
+  "aliases": [
+   "常住山"
+  ],
+  "current_summary": "本性寺は磐田市国府台にある日蓮宗の寺院です。Wikipediaの寺院一覧では山号は常住山と記されています。創建年代や沿革を伝える公開資料は今回のWeb調査では確認できませんでした。",
+  "current_sections": [
+   {
+    "heading": "基礎情報と現況",
+    "body": "本性寺は磐田市国府台441番地の1に所在する日蓮宗の寺院です。Wikipediaの同名寺院一覧では「静岡県磐田市国府台にある日蓮宗の寺院。山号は常住山」と記載されています。参拝記録サイトのホトカミでは、本尊を日蓮宗の定式に沿った「久遠実成本師釈迦牟尼仏」と紹介し、御朱印の頒布に対応している旨の参拝報告が掲載されています。創建年代・開山・寺歴については、宗派公式サイトや行政資料での記載を現時点では確認できていません。"
+   }
+  ],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "current_pilgrimage": null
+ },
+ {
+  "slug": "senshoji-iwai",
+  "name": "宣正寺",
+  "kana": "せんしょうじ",
+  "sect": "日蓮正宗",
+  "address": "静岡県磐田市岩井2324番地の5",
+  "area": "向陽",
+  "aliases": [],
+  "current_summary": "宣正寺は磐田市岩井にある日蓮正宗の寺院です。日蓮正宗公式ホームページの国内寺院案内に掲載されており、静岡西布教区に属します。創建年代や沿革を伝える公開資料は今回のWeb調査では確認できませんでした。",
+  "current_sections": [
+   {
+    "heading": "基礎情報と現況",
+    "body": "宣正寺は磐田市岩井2324番地の5に所在する日蓮正宗の寺院です。総本山大石寺（富士宮市）を本山とする日蓮正宗の公式ホームページの国内寺院案内に、所在地とともに掲載されていることが確認できます。Wikipediaの日蓮正宗寺院一覧では、静岡市以西を管轄する静岡西布教区の寺院として記載されています。創建年代・開基などの沿革情報は、公式ページには掲載されていません。"
+   }
+  ],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "current_pilgrimage": null
+ }
+]

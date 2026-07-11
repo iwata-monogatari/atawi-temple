@@ -1,0 +1,123 @@
+[
+ {
+  "slug": "kindaiji-tenryu",
+  "name": "金台寺",
+  "kana": "きんだいじ",
+  "sect": "時宗",
+  "address": "静岡県磐田市天竜110番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "shokoji-mitsuke",
+  "name": "省光寺",
+  "kana": "しょうこうじ",
+  "sect": "時宗",
+  "address": "静岡県磐田市見付2423番地",
+  "aliases": [
+   "嶺松山"
+  ],
+  "current_deity": "未確認",
+  "current_founded": "創建年代不詳。民間の寺院紹介記事では鎌倉時代中期（1250年頃）に住職が一遍上人に帰依して時宗に改宗したと紹介されています。",
+  "has_history": true
+ },
+ {
+  "slug": "saikoji-mitsuke",
+  "name": "西光寺",
+  "kana": "さいこうじ",
+  "sect": "時宗",
+  "address": "静岡県磐田市見付3353番地の1",
+  "aliases": [
+   "東福山",
+   "東福山西光寺"
+  ],
+  "current_deity": "阿弥陀如来",
+  "current_founded": "寺伝（寺院公式サイト）では文永2年（1265年）開創とされます。",
+  "has_history": true
+ },
+ {
+  "slug": "gyokoji-ikeda",
+  "name": "行興寺",
+  "kana": "ぎょうこうじ",
+  "sect": "時宗",
+  "address": "静岡県磐田市池田330番地",
+  "aliases": [
+   "熊野の長藤の寺"
+  ],
+  "current_deity": "十一面観世音菩薩",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "shorinji-kawabukuro",
+  "name": "松林寺",
+  "kana": "しょうりんじ",
+  "sect": "臨済宗方広寺派",
+  "address": "静岡県磐田市川袋224番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "hojuin-jurojima",
+  "name": "寶珠院",
+  "kana": "ほうじゅいん",
+  "sect": "臨済宗方広寺派",
+  "address": "静岡県磐田市十郎島26番地ノ1",
+  "aliases": [
+   "宝珠院"
+  ],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "senryuji-kawabukuro",
+  "name": "潜龍寺",
+  "kana": "せんりゅうじ",
+  "sect": "臨済宗方広寺派",
+  "address": "静岡県磐田市川袋463番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "ryusenji-shiraha",
+  "name": "竜泉寺",
+  "kana": "りゅうせんじ",
+  "sect": "臨済宗方広寺派",
+  "address": "静岡県磐田市白羽51番地",
+  "aliases": [
+   "龍泉寺"
+  ],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "koshuji-kaketsuka",
+  "name": "香集寺",
+  "kana": "こうしゅうじ",
+  "sect": "臨済宗方広寺派",
+  "address": "静岡県磐田市掛塚1002番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "jorakuji-horinochi",
+  "name": "常楽寺",
+  "kana": "じょうらくじ",
+  "sect": "臨済宗方広寺派",
+  "address": "静岡県磐田市堀之内761番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ }
+]

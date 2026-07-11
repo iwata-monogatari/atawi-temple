@@ -1,0 +1,141 @@
+[
+ {
+  "slug": "daijoin-nakaizumi",
+  "name": "大乗院",
+  "kana": "だいじょういん",
+  "sect": "真言宗醍醐派",
+  "address": "静岡県磐田市中泉1丁目10番地6",
+  "aliases": [
+   "三仭坊",
+   "大乗院三仭坊",
+   "観広山大乗院"
+  ],
+  "current_deity": "大青面金剛（境内に並立する小笠寺の本尊は三仭坊大権現。いずれも室町時代作と伝わります）",
+  "current_founded": "寺伝では、大乗院は平家一門の衰退後に平行盛の次男行次の菩提供養のため愛宕将軍地蔵菩薩を勧請して創立されたと伝わります。並立する小笠寺の前身・祐厳寺は大宝年間（701〜704年）の創立と伝えられます。",
+  "has_history": true
+ },
+ {
+  "slug": "ioji-kamada",
+  "name": "醫王寺",
+  "kana": "いおうじ",
+  "sect": "真言宗智山派",
+  "address": "静岡県磐田市鎌田2065番地の1",
+  "aliases": [
+   "鎌田山医王寺",
+   "鎌田山金剛院医王寺",
+   "医王寺",
+   "鎌田の薬師様"
+  ],
+  "current_deity": "薬師如来",
+  "current_founded": "寺伝では天平6年〜20年（734〜748年）、聖武天皇の勅命を奉じた行基菩薩の開山と伝わる（奈良時代）",
+  "has_history": true
+ },
+ {
+  "slug": "kokubunji-mitsuke",
+  "name": "国分寺",
+  "kana": "こくぶんじ",
+  "sect": "新義真言宗",
+  "address": "静岡県磐田市見付3046番地",
+  "aliases": [
+   "遠江国分寺",
+   "遠江国分寺跡",
+   "特別史跡遠江国分寺跡"
+  ],
+  "current_deity": "未確認",
+  "current_founded": "奈良時代（遠江国分寺跡）／現寺院の沿革は調査中",
+  "has_history": true
+ },
+ {
+  "slug": "honshoji-kounodai",
+  "name": "本性寺",
+  "kana": "ほんしょうじ",
+  "sect": "日蓮宗",
+  "address": "静岡県磐田市国府台441番地の1",
+  "aliases": [
+   "常住山"
+  ],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "genmyoji-mitsuke",
+  "name": "玄妙寺",
+  "kana": "げんみょうじ",
+  "sect": "日蓮宗",
+  "address": "静岡県磐田市見付2440番地の1",
+  "aliases": [
+   "本立山",
+   "本立山玄妙寺"
+  ],
+  "current_deity": "未確認",
+  "current_founded": "室町時代（南北朝末期）／元中2年・北朝至徳2年（1385年）、日什により開創",
+  "has_history": true
+ },
+ {
+  "slug": "senshoji-iwai",
+  "name": "宣正寺",
+  "kana": "せんしょうじ",
+  "sect": "日蓮正宗",
+  "address": "静岡県磐田市岩井2324番地の5",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "nipponzan-myohoji-iwata",
+  "name": "日本山妙法寺磐田小僧伽",
+  "kana": "にっぽんざんみょうほうじいわたしょうそうぎゃ",
+  "sect": "日本山妙法寺大僧伽",
+  "address": "静岡県磐田市中泉3734番地の4",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "rendaiji-yashiroyama",
+  "name": "蓮台寺",
+  "kana": "れんだいじ",
+  "sect": "真言宗智山派",
+  "address": "静岡県磐田市社山576番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": false
+ },
+ {
+  "slug": "myofukuji-fukude",
+  "name": "妙福寺",
+  "kana": "みょうふくじ",
+  "sect": "日蓮宗",
+  "address": "静岡県磐田市福田1723番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "chikyoin-shiraha",
+  "name": "智教院",
+  "kana": "ちきょういん",
+  "sect": "日蓮宗",
+  "address": "静岡県磐田市白羽546番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "myomanji-kaminobe",
+  "name": "妙満寺",
+  "kana": "みょうまんじ",
+  "sect": "日蓮宗",
+  "address": "静岡県磐田市上野部738番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ }
+]

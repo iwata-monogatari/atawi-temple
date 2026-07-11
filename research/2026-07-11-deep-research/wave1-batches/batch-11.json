@@ -1,0 +1,102 @@
+[
+ {
+  "slug": "fukuoji-morimoto",
+  "name": "福王寺",
+  "kana": "ふくおうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市森本287番地",
+  "area": "豊田",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "rinshoji-kodateno",
+  "name": "林昌寺",
+  "kana": "りんしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市小立野241番地の1",
+  "area": "豊田",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "kotokuji-morishita",
+  "name": "興徳寺",
+  "kana": "こうとくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市森下612番地",
+  "area": "豊田",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "yofukuji-shimohongo",
+  "name": "養福寺",
+  "kana": "ようふくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市下本郷1363番地の1",
+  "area": "豊田",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "myohoji-ikeda",
+  "name": "妙法寺",
+  "kana": "みょうほうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市池田743番地",
+  "area": "豊田",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "seidoin-ikeda",
+  "name": "誓渡院",
+  "kana": "せいどいん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市池田356番地",
+  "area": "豊田",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "daienji-kamo",
+  "name": "大圓寺",
+  "kana": "だいえんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市加茂123番地",
+  "area": "豊田",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "daizoji-tomei",
+  "name": "大蔵寺",
+  "kana": "だいぞうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市東名393番地",
+  "area": "豊田",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "shokyuin-mitsue",
+  "name": "松久院",
+  "kana": "しょうきゅういん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市三家332番地",
+  "area": "豊岡",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "hoonan-kaminobe",
+  "name": "法音庵",
+  "kana": "ほうおんあん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市上野部2032番地",
+  "area": "豊岡",
+  "aliases": [],
+  "status": "現存"
+ }
+]

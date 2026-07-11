@@ -1,0 +1,554 @@
+[
+ {
+  "slug": "jionji-mitsuke",
+  "pilgrimage": "遠江四十九薬師霊場第49番札所／豊田郡三十三観音霊場第2番札所（享保年間開創の歴史的霊場・大正8年に磐田郡三十三観音霊場へ再編され現在は活動していない）",
+  "sources": [
+   {
+    "title": "遠州三十三観音霊場めぐり 札所一覧（霊場会公式サイト）",
+    "type": "寺院公式情報",
+    "url": "http://enshu33.com/all-guide/",
+    "note": "【訂正】既存注記の「遠州三十三観音霊場第19番札所」は誤り。霊場会公式の札所一覧では第19番は正醫寺（磐田市下万能1162-1）であり、慈恩寺は全33札所のどこにも含まれない。"
+   },
+   {
+    "title": "ニッポンの霊場 遠江四十九薬師霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/%E9%81%A0%E6%B1%9F%E5%9B%9B%E5%8D%81%E4%B9%9D%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/",
+    "note": "第49番＝大梅山慈恩寺（臨済宗妙心寺派・磐田市見付）を確認。番号付き最終札所（49番御詠歌に「祈り納むる」とあり結願にあたる）。"
+   },
+   {
+    "title": "ニッポンの霊場 豊田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E8%B1%8A%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第2番＝大梅山慈恩寺（見付2431）を確認。"
+   }
+  ]
+ },
+ {
+  "slug": "fukuoji-jonosaki",
+  "pilgrimage": "遠州三十三観音霊場第18番札所（札所本尊聖観世音菩薩）／遠江四十九薬師霊場客番札所／磐田郡三十三観音霊場第23番札所／遠州七福神（福禄寿・霊場会事務局）",
+  "sources": [
+   {
+    "title": "遠州三十三観音霊場めぐり 札所一覧（霊場会公式サイト）",
+    "type": "寺院公式情報",
+    "url": "http://enshu33.com/all-guide/",
+    "note": "第18番＝風祭山福王寺（磐田市城之崎4-2722-1）を確認。札所本尊はWikipedia「遠州三十三観音霊場」でも聖観世音菩薩と一致。"
+   },
+   {
+    "title": "ニッポンの霊場 遠江四十九薬師霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/%E9%81%A0%E6%B1%9F%E5%9B%9B%E5%8D%81%E4%B9%9D%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/",
+    "note": "客番＝風祭山福王寺（城之崎）を確認。"
+   },
+   {
+    "title": "ニッポンの霊場 静岡県の七福神（遠州七福神）",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E4%B8%83%E7%A6%8F%E7%A5%9E%E3%82%81%E3%81%90%E3%82%8A/%E9%9D%99%E5%B2%A1%E7%9C%8C%E3%81%AE%E4%B8%83%E7%A6%8F%E7%A5%9E/",
+    "note": "遠州七福神の福禄寿＝福王寺、かつ霊場会事務局が福王寺であることを確認。七福神めぐり資料集（rokumeibunko.com/shichifukujin/22shizuoka/enshu.html）の記載とも一致。磐田郡三十三観音第23番は同サイト磐田郡三十三観音霊場ページで確認。"
+   }
+  ]
+ },
+ {
+  "slug": "senkoji-mitsuke",
+  "pilgrimage": "遠州三十三観音霊場第17番札所（札所本尊十一面観世音菩薩）／磐田郡三十三観音霊場第22番札所",
+  "sources": [
+   {
+    "title": "遠州三十三観音霊場めぐり 札所一覧（霊場会公式サイト）",
+    "type": "寺院公式情報",
+    "url": "http://enshu33.com/all-guide/",
+    "note": "第17番＝珠玉山宣光寺（見付1340-1）を確認（既存注記どおり）。"
+   },
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "大正8年開創の磐田郡三十三ヶ所観音霊場第22番＝珠玉山宣光寺（見付1340・霊場御本尊十一面観世音菩薩）を確認。"
+   }
+  ]
+ },
+ {
+  "slug": "eifukuji-nishikaizuka",
+  "pilgrimage": "遠州三十三観音霊場第20番札所（札所本尊十一面観世音菩薩）／磐田郡三十三観音霊場第24番札所",
+  "sources": [
+   {
+    "title": "遠州三十三観音霊場めぐり 札所一覧（霊場会公式サイト）",
+    "type": "寺院公式情報",
+    "url": "http://enshu33.com/all-guide/",
+    "note": "第20番＝今浦山永福寺（西貝塚1519-1）を確認（既存注記どおり）。"
+   },
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第24番＝今浦山永福寺（西貝塚1519）を確認。"
+   }
+  ]
+ },
+ {
+  "slug": "shoi-ji-shimoban-no",
+  "pilgrimage": "遠州三十三観音霊場第19番札所（札所本尊如意輪観世音菩薩）／遠江四十九薬師霊場第5番札所（札所本尊薬師如来）／磐田郡三十三観音霊場第9番札所",
+  "sources": [
+   {
+    "title": "遠州三十三観音霊場めぐり 札所一覧（霊場会公式サイト）",
+    "type": "寺院公式情報",
+    "url": "http://enshu33.com/all-guide/",
+    "note": "第19番＝東光山正醫寺（下万能1162-1）を公式一覧で確認（既存注記どおり）。"
+   },
+   {
+    "title": "ニッポンの霊場 遠江四十九薬師霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/%E9%81%A0%E6%B1%9F%E5%9B%9B%E5%8D%81%E4%B9%9D%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/",
+    "note": "第5番＝東光山正医寺（御本尊薬師如来）を確認。"
+   },
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第9番＝東光山正医寺（下万能1162・霊場御本尊如意輪観世音菩薩）を確認。なお豊田郡三十三観音第32番正林寺（海老塚・廃寺）は正医寺に併合されたとの記載あり。"
+   }
+  ]
+ },
+ {
+  "slug": "kannonji-fukude",
+  "pilgrimage": "遠州三十三観音霊場第21番札所（札所本尊聖観世音菩薩・午年に開帳される秘仏）／磐田郡三十三観音霊場第1番札所",
+  "sources": [
+   {
+    "title": "遠州三十三観音霊場めぐり 観音寺（21番札所）",
+    "type": "寺院公式情報",
+    "url": "http://enshu33.com/all-guide/%e8%a6%b3%e9%9f%b3%e5%af%ba/",
+    "note": "円通山観音寺（福田688-1）のご本尊が聖観世音菩薩（恵心僧都作と伝わる秘仏・午年に1週間開帳）であることを公式ページ本文で確認。"
+   },
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第1番＝円通山観音寺（福田688）を確認。"
+   }
+  ]
+ },
+ {
+  "slug": "hounji-mukasa",
+  "pilgrimage": "遠州三十三観音霊場第29番札所（札所本尊聖観世音菩薩）／遠州七福神（大黒天）",
+  "sources": [
+   {
+    "title": "遠州三十三観音霊場めぐり 法雲寺（29番札所）",
+    "type": "寺院公式情報",
+    "url": "http://enshu33.com/all-guide/%e6%b3%95%e9%9b%b2%e5%af%ba/",
+    "note": "八幡山法雲寺（向笠西374）のご本尊が聖観世音菩薩であることを公式ページで確認。"
+   },
+   {
+    "title": "ニッポンの霊場 静岡県の七福神（遠州七福神）",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E4%B8%83%E7%A6%8F%E7%A5%9E%E3%82%81%E3%81%90%E3%82%8A/%E9%9D%99%E5%B2%A1%E7%9C%8C%E3%81%AE%E4%B8%83%E7%A6%8F%E7%A5%9E/",
+    "note": "遠州七福神（昭和期開創・曹洞宗寺院のみで構成）の大黒天＝法雲寺を確認。七福神めぐり資料集（rokumeibunko.com/shichifukujin/22shizuoka/enshu.html）の記載とも一致し、既存注記（磐田市観光協会資料）を裏付け。"
+   }
+  ]
+ },
+ {
+  "slug": "kokubunji-mitsuke",
+  "pilgrimage": "遠江四十九薬師霊場第1番札所（札所本尊薬師如来）",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 遠江四十九薬師霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/%E9%81%A0%E6%B1%9F%E5%9B%9B%E5%8D%81%E4%B9%9D%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/",
+    "note": "第1番＝参慶山延命院国分寺（新義真言宗・薬師如来・個人管理）を確認。一覧の所在地表記は「磐田市中央町」でDB住所（見付3046）と町名が異なるが、磐田市内の新義真言宗国分寺は1か寺のみで同一寺院（遠江国分寺の後継寺院）と判断。"
+   },
+   {
+    "title": "レコの館 参慶山延命院国分寺（静岡県磐田市）",
+    "type": "民間二次情報",
+    "url": "https://note.com/sz2020/n/n74eff5d9333a",
+    "note": "遠江国分寺の後継寺院で本尊薬師如来・遠江四十九薬師第1番であることを参拝記録で確認（所在地は中央町3048と紹介）。"
+   }
+  ]
+ },
+ {
+  "slug": "senzoji-nakaizumi",
+  "pilgrimage": "遠江四十九薬師霊場第2番札所",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 遠江四十九薬師霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/%E9%81%A0%E6%B1%9F%E5%9B%9B%E5%8D%81%E4%B9%9D%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/",
+    "note": "第2番＝無量山泉蔵寺（臨済宗妙心寺派・御本尊阿弥陀如来）を確認。一覧の所在地表記は「磐田市中泉石原」（石原町は旧中泉地区の町名）で、市内の臨済宗妙心寺派泉蔵寺は1か寺のみ。"
+   }
+  ]
+ },
+ {
+  "slug": "rinshoji-kodateno",
+  "pilgrimage": "遠江四十九薬師霊場第6番札所",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 遠江四十九薬師霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/%E9%81%A0%E6%B1%9F%E5%9B%9B%E5%8D%81%E4%B9%9D%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/",
+    "note": "第6番＝士石山林昌寺（曹洞宗・磐田市小立野）を確認。寺名・宗派・町名がDBと一致。"
+   }
+  ]
+ },
+ {
+  "slug": "myohoji-ikeda",
+  "pilgrimage": "遠江四十九薬師霊場第7番札所（札所本尊薬師如来）／磐田郡三十三観音霊場第10番札所／新四国八十八ヵ所第14番札所（池田地区）",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 遠江四十九薬師霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/%E9%81%A0%E6%B1%9F%E5%9B%9B%E5%8D%81%E4%B9%9D%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/",
+    "note": "第7番＝瑞雲山妙法寺（曹洞宗・池田・御本尊薬師如来）を確認（既存注記どおり）。"
+   },
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第10番＝瑞雲山妙法寺（池田743）を確認。既存注記の「観世音菩薩三十三所霊場第10番（池田まちづくり協議会資料）」は、番号が一致するため磐田郡三十三観音霊場第10番を指すとみられる。新四国八十八ヵ所第14番は既存注記（池田まちづくり協議会資料）を踏襲。"
+   }
+  ]
+ },
+ {
+  "slug": "rendaiji-yashiroyama",
+  "pilgrimage": "遠江四十九薬師霊場第32番札所（札所本尊薬師如来）",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 遠江四十九薬師霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/%E9%81%A0%E6%B1%9F%E5%9B%9B%E5%8D%81%E4%B9%9D%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/",
+    "note": "第32番＝城谷山蓮台寺（真言宗智山派・磐田市社山・御本尊薬師如来）を確認。寺名・宗派・町名がDBと一致。"
+   }
+  ]
+ },
+ {
+  "slug": "jushouji-hiruike",
+  "pilgrimage": "遠江四十九薬師霊場第44番札所",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 遠江四十九薬師霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/%E9%81%A0%E6%B1%9F%E5%9B%9B%E5%8D%81%E4%B9%9D%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/",
+    "note": "第44番＝松龍山寿正寺（曹洞宗・磐田市蛭池）を確認。草崎の壽正寺（別寺院）ではなく蛭池の寿正寺であることを住所で確認。"
+   }
+  ]
+ },
+ {
+  "slug": "zenkyuin-kamada",
+  "pilgrimage": "遠江四十九薬師霊場第45番札所／磐田郡三十三観音霊場第25番札所",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 遠江四十九薬師霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/%E9%81%A0%E6%B1%9F%E5%9B%9B%E5%8D%81%E4%B9%9D%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/",
+    "note": "第45番＝護国山全久院（曹洞宗・磐田市鎌田・御本尊虚空蔵菩薩）を確認。"
+   },
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第25番＝護国山全久院（鎌田2546）を確認。"
+   }
+  ]
+ },
+ {
+  "slug": "toshoji-higashikaizuka",
+  "pilgrimage": "遠江四十九薬師霊場第47番札所（札所本尊薬師如来）",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 遠江四十九薬師霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/%E9%81%A0%E6%B1%9F%E5%9B%9B%E5%8D%81%E4%B9%9D%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/",
+    "note": "第47番＝招宝山東昌寺（曹洞宗・磐田市東貝塚・御本尊薬師如来）を確認。寺名・宗派・町名がDBと一致。"
+   }
+  ]
+ },
+ {
+  "slug": "chosenji-fukudenakajima",
+  "pilgrimage": "遠江四十九薬師霊場番外札所（札所本尊薬師如来）",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 遠江四十九薬師霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/%E9%81%A0%E6%B1%9F%E5%9B%9B%E5%8D%81%E4%B9%9D%E8%96%AC%E5%B8%AB%E9%9C%8A%E5%A0%B4/",
+    "note": "番外1＝瑞光山長泉寺（曹洞宗・磐田市福田町中島・薬師如来）を確認。DBの長泉寺（福田中島445）と一致。番外御詠歌にも「長泉寺」の記載あり。"
+   }
+  ]
+ },
+ {
+  "slug": "jurinji-kamiohnogo",
+  "pilgrimage": "磐田郡三十三観音霊場第2番札所",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "大正8年開創の磐田郡三十三ヶ所観音霊場第2番＝宝蔵山十輪寺（曹洞宗・上大之郷606）を確認。寺名・宗派・住所がDBと一致。"
+   }
+  ]
+ },
+ {
+  "slug": "shogenin-kojima",
+  "pilgrimage": "磐田郡三十三観音霊場第3番札所（札所本尊千手観世音菩薩）／豊田郡三十三観音霊場第15番札所（享保年間開創の歴史的霊場・現在は活動していない）",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第3番＝拈華山正眼院（曹洞宗・小島738・千手観世音菩薩）を確認。"
+   },
+   {
+    "title": "ニッポンの霊場 豊田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E8%B1%8A%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "豊田郡三十三観音第15番＝正眼院を確認。同霊場は正眼院の隠居が始めたと伝わる。"
+   }
+  ]
+ },
+ {
+  "slug": "shuzoji-toyooka",
+  "pilgrimage": "磐田郡三十三観音霊場第5番札所",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第5番＝大宝山守増寺（曹洞宗・豊岡2648）を確認。寺名・宗派・住所がDBと一致。"
+   }
+  ]
+ },
+ {
+  "slug": "ganjoji-hirama",
+  "pilgrimage": "磐田郡三十三観音霊場第6番札所",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第6番＝福聚山願成寺（曹洞宗・平間431）を確認。寺名・宗派・住所がDBと一致。"
+   }
+  ]
+ },
+ {
+  "slug": "jokoji-maeno",
+  "pilgrimage": "磐田郡三十三観音霊場第7番札所（札所本尊十一面観世音菩薩）",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第7番＝八王山定光寺（曹洞宗・前野1773・御本尊阿弥陀如来／霊場御本尊十一面観世音菩薩）を確認。敷地の浄光寺（別寺院）ではなく前野の定光寺であることを住所で確認。"
+   }
+  ]
+ },
+ {
+  "slug": "renpukuji-ninomiya",
+  "pilgrimage": "磐田郡三十三観音霊場第8番札所",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第8番＝龍池山連福寺（臨済宗妙心寺派・二之宮1262）を確認。寺名・宗派・住所がDBと一致。"
+   }
+  ]
+ },
+ {
+  "slug": "daienji-kamo",
+  "pilgrimage": "磐田郡三十三観音霊場第11番札所",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第11番＝久松山大円寺（曹洞宗・加茂123）を確認。DBの大圓寺（加茂123）と住所が完全一致。"
+   }
+  ]
+ },
+ {
+  "slug": "zosanji-sagisaka",
+  "pilgrimage": "磐田郡三十三観音霊場第12番札所",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第12番＝岩田山増参寺（曹洞宗・匂坂中586）を確認。なお豊田郡三十三観音の旧札所（観音寺・養生寺・伊清寺、いずれも廃寺）が増参寺に併合されたとの記載あり。"
+   }
+  ]
+ },
+ {
+  "slug": "jigenji-kamikandamasu",
+  "pilgrimage": "磐田郡三十三観音霊場第13番札所",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第13番＝円通山慈眼寺（臨済宗妙心寺派・上神増99）を確認。袋井市高尾の慈眼寺（曹洞宗・遠州三十三観音14番）とは別寺院であることを宗派・住所で確認。"
+   }
+  ]
+ },
+ {
+  "slug": "tenryuin-kaminobe",
+  "pilgrimage": "磐田郡三十三観音霊場第15番札所",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第15番＝神谷山天龍院（曹洞宗・上野部353）を確認。寺名・宗派・住所がDBと一致。"
+   }
+  ]
+ },
+ {
+  "slug": "eianji-shikiji",
+  "pilgrimage": "磐田郡三十三観音霊場第16番札所",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第16番＝龍寿山永安寺（臨済宗妙心寺派・敷地1035）を確認。同じ敷地地区の永明寺（別寺院）ではないことを寺名・番地で確認。"
+   }
+  ]
+ },
+ {
+  "slug": "shinpoin-mukasa",
+  "pilgrimage": "磐田郡三十三観音霊場第19番札所",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第19番＝鷲渓山新豊院（曹洞宗・向笠竹之内14）を確認。寺名・宗派・住所がDBと一致。"
+   }
+  ]
+ },
+ {
+  "slug": "zenkaiji-nishijima",
+  "pilgrimage": "磐田郡三十三観音霊場第21番札所",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第21番＝広福山全海寺（曹洞宗・西島452）を確認。寺名・宗派・住所がDBと一致。"
+   }
+  ]
+ },
+ {
+  "slug": "keishoji-fukude",
+  "pilgrimage": "磐田郡三十三観音霊場第32番札所",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第32番＝円福山慶昌寺（曹洞宗・福田1834）を確認。寺名・宗派・住所がDBと一致。"
+   }
+  ]
+ },
+ {
+  "slug": "sojiji-minamijima",
+  "pilgrimage": "磐田郡三十三観音霊場第33番札所（結願所）",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 磐田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E7%A3%90%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第33番＝老松山宗次寺（曹洞宗・磐田市南島）を確認。一覧の番地は南島268でDB登録住所（南島149-1）と異なるが、磐田市南島の曹洞宗宗次寺は1か寺のみで同一と判断。納めの御詠歌に「南島」とあり結願所。"
+   }
+  ]
+ },
+ {
+  "slug": "kenshoji-mitsuke",
+  "pilgrimage": "豊田郡三十三観音霊場第1番札所（札所本尊如意輪観世音菩薩・享保年間開創の歴史的霊場で現在は活動していない）",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 豊田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E8%B1%8A%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "享保年中開創・大正8年に磐田郡三十三観音霊場として再興された旧霊場の第1番＝瑞雲山見性寺（臨済宗妙心寺派・見付2896）を確認。"
+   }
+  ]
+ },
+ {
+  "slug": "daijoin-nakaizumi",
+  "pilgrimage": "豊田郡三十三観音霊場第4番札所（小笠寺と2寺同境内・享保年間開創の歴史的霊場で現在は活動していない）",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 豊田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E8%B1%8A%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第4番＝観広山大乗院・小笠山小笠寺（真言宗醍醐派・中泉1丁目10-6・2寺同境内）を確認。宗派・住所がDBと完全一致。"
+   }
+  ]
+ },
+ {
+  "slug": "daizoji-kamiokata",
+  "pilgrimage": "豊田郡三十三観音霊場第5番札所（享保年間開創の歴史的霊場・現在は活動していない）",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 豊田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E8%B1%8A%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第5番＝大蔵寺（臨済宗妙心寺派・上岡田329・御本尊薬師如来）を確認。東名393の大蔵寺（曹洞宗・別寺院）ではなく上岡田の大蔵寺であることを宗派・住所で確認。"
+   }
+  ]
+ },
+ {
+  "slug": "senjuji-senjudou",
+  "pilgrimage": "豊田郡三十三観音霊場第10番札所（享保年間開創の歴史的霊場・現在は活動していない）",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 豊田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E8%B1%8A%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第10番＝慈眼山千手寺（臨済宗妙心寺派・千手堂637）を確認。寺名・宗派・住所がDBと一致。"
+   }
+  ]
+ },
+ {
+  "slug": "shingetsuji-ebijima",
+  "pilgrimage": "豊田郡三十三観音霊場第13番札所（享保年間開創の歴史的霊場・現在は活動していない）",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 豊田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E8%B1%8A%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第13番＝海松山心月寺（曹洞宗・海老島200）を確認。寺名・宗派・住所がDBと一致。"
+   }
+  ]
+ },
+ {
+  "slug": "shokoji-miyanoshiki",
+  "pilgrimage": "豊田郡三十三観音霊場第21番札所（享保年間開創の歴史的霊場・現在は活動していない）",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 豊田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E8%B1%8A%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第21番＝神宮山松向寺（曹洞宗・宮之一色413）を確認。寺名・宗派・住所がDBと一致。"
+   }
+  ]
+ },
+ {
+  "slug": "gyokoji-ikeda",
+  "pilgrimage": "豊田郡三十三観音霊場第25番札所（札所本尊十一面観世音菩薩・享保年間開創の歴史的霊場で現在は活動していない）",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 豊田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E8%B1%8A%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第25番＝摂取山行興寺（時宗・池田330・十一面観世音菩薩、熊野の長藤で著名）を確認。寺名・宗派・住所がDBと一致。"
+   }
+  ]
+ },
+ {
+  "slug": "daizoji-tomei",
+  "pilgrimage": "豊田郡三十三観音霊場第26番札所（享保年間開創の歴史的霊場・現在は活動していない）",
+  "sources": [
+   {
+    "title": "ニッポンの霊場 豊田郡三十三観音霊場",
+    "type": "民間二次情報",
+    "url": "https://nippon-reijo.jimdofree.com/%E6%8E%B2%E8%BC%89%E9%9C%8A%E5%A0%B4%E3%81%AE%E4%B8%80%E8%A6%A7/%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/%E8%B1%8A%E7%94%B0%E9%83%A1%E4%B8%89%E5%8D%81%E4%B8%89%E8%A6%B3%E9%9F%B3%E9%9C%8A%E5%A0%B4/",
+    "note": "第26番＝大蔵寺（東名393・匂坂中之郷公民館隣接）を確認。上岡田329の大蔵寺（臨済宗妙心寺派・同霊場第5番）とは別寺院であることを住所で確認。"
+   }
+  ]
+ }
+]

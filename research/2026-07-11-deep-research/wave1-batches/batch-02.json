@@ -1,0 +1,102 @@
+[
+ {
+  "slug": "shokoji-mitsuke",
+  "name": "省光寺",
+  "kana": "しょうこうじ",
+  "sect": "時宗",
+  "address": "静岡県磐田市見付2423番地",
+  "area": "見付",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "saikoji-mitsuke",
+  "name": "西光寺",
+  "kana": "さいこうじ",
+  "sect": "時宗",
+  "address": "静岡県磐田市見付3353番地の1",
+  "area": "見付",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "myooji-mitsuke",
+  "name": "明王寺",
+  "kana": "みょうおうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市見付河原町3987番地",
+  "area": "見付",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "hojuji-toyoshima",
+  "name": "寳珠寺",
+  "kana": "ほうじゅじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市豊島668番地",
+  "area": "南部",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "tamonji-nakano",
+  "name": "多聞寺",
+  "kana": "たもんじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市中野532番地の1",
+  "area": "南部",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "daizoji-kamiokata",
+  "name": "大蔵寺",
+  "kana": "だいぞうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市上岡田329番地",
+  "area": "南部",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "tenshoji-toyoshima",
+  "name": "天正寺",
+  "kana": "てんしょうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市豊島905番地",
+  "area": "南部",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "senjuji-senjudou",
+  "name": "千手寺",
+  "kana": "せんじゅじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市千手堂637番地",
+  "area": "南部",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "manshoji-manshoji",
+  "name": "萬勝寺",
+  "kana": "まんしょうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市万正寺515番地",
+  "area": "南部",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "chusenji-nakaizumi",
+  "name": "中泉寺",
+  "kana": "ちゅうせんじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市中泉743番地の1",
+  "area": "中泉",
+  "aliases": [],
+  "status": "現存"
+ }
+]

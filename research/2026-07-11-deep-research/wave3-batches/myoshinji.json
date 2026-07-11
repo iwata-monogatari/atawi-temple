@@ -1,0 +1,253 @@
+[
+ {
+  "slug": "myooji-mitsuke",
+  "name": "明王寺",
+  "kana": "みょうおうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市見付河原町3987番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "hojuji-toyoshima",
+  "name": "寳珠寺",
+  "kana": "ほうじゅじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市豊島668番地",
+  "aliases": [
+   "瑞龍山",
+   "瑞龍山宝珠寺"
+  ],
+  "current_deity": "未確認",
+  "current_founded": "庭園専門メディアの解説では観応元年（1350年）創建とされます（南北朝時代）。",
+  "has_history": true
+ },
+ {
+  "slug": "tamonji-nakano",
+  "name": "多聞寺",
+  "kana": "たもんじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市中野532番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": false
+ },
+ {
+  "slug": "daizoji-kamiokata",
+  "name": "大蔵寺",
+  "kana": "だいぞうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市上岡田329番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": false
+ },
+ {
+  "slug": "tenshoji-toyoshima",
+  "name": "天正寺",
+  "kana": "てんしょうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市豊島905番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": false
+ },
+ {
+  "slug": "senjuji-senjudou",
+  "name": "千手寺",
+  "kana": "せんじゅじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市千手堂637番地",
+  "aliases": [
+   "慈眼山"
+  ],
+  "current_deity": "千手十一面観音",
+  "current_founded": "『日本歴史地名大系』によれば正元2年（1260年）の創建で、もと真言宗、元禄元年（1688年）に臨済宗に転じたといいます。",
+  "has_history": true
+ },
+ {
+  "slug": "manshoji-manshoji",
+  "name": "萬勝寺",
+  "kana": "まんしょうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市万正寺515番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "chusenji-nakaizumi",
+  "name": "中泉寺",
+  "kana": "ちゅうせんじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市中泉743番地の1",
+  "aliases": [
+   "大池山",
+   "大池山中泉寺",
+   "御殿のお寺"
+  ],
+  "current_deity": "虚空蔵菩薩",
+  "current_founded": "室町時代末期、永禄5年（1562年）創建（磐田市観光協会資料による）",
+  "has_history": true
+ },
+ {
+  "slug": "senzoji-nakaizumi",
+  "name": "泉蔵寺",
+  "kana": "せんぞうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市中泉1557番地の1",
+  "aliases": [
+   "無量山"
+  ],
+  "current_deity": "阿弥陀如来",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "renpukuji-ninomiya",
+  "name": "連福寺",
+  "kana": "れんぷくじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市二之宮1262番地",
+  "aliases": [
+   "龍池山",
+   "弘福密寺（旧称と伝わる）"
+  ],
+  "current_deity": "釈迦牟尼仏",
+  "current_founded": "寺伝では大同2年（807年）開創と伝わる",
+  "has_history": true
+ },
+ {
+  "slug": "jionji-mitsuke",
+  "name": "慈恩寺",
+  "kana": "じおんじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市見付2431番地の1",
+  "aliases": [
+   "大梅山"
+  ],
+  "current_deity": "未確認",
+  "current_founded": "寺伝では室町時代の応永年間（1394〜1428年）の開創と伝わる（民間二次情報による）",
+  "has_history": true
+ },
+ {
+  "slug": "kenshoji-mitsuke",
+  "name": "見性寺",
+  "kana": "けんしょうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市見付2896番地",
+  "aliases": [
+   "瑞雲山"
+  ],
+  "current_deity": "未確認",
+  "current_founded": "創建年代不詳（観光情報データベースによる）",
+  "has_history": true
+ },
+ {
+  "slug": "shinnyoji-sagisaka",
+  "name": "眞如寺",
+  "kana": "しんにょじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市匂坂上210番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "jigenji-kamikandamasu",
+  "name": "慈眼寺",
+  "kana": "じげんじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市上神増99番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "entsuji-ohira",
+  "name": "圓通寺",
+  "kana": "えんつうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市大平530番",
+  "aliases": [
+   "温泉山"
+  ],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "mushuoji-mushuo",
+  "name": "虫生寺",
+  "kana": "むしゅうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市虫生457番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "jokoji-shikiji",
+  "name": "浄光寺",
+  "kana": "じょうこうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市敷地1021番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "ryounan-shikiji",
+  "name": "龍雲庵",
+  "kana": "りゅううんあん",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市敷地1367番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "eimeiji-shikiji",
+  "name": "永明寺",
+  "kana": "えいめいじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市敷地1014番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "eianji-shikiji",
+  "name": "永安寺",
+  "kana": "えいあんじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市敷地1035番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "seiryo-in-iwamuro",
+  "name": "清凉院",
+  "kana": "せいりょういん",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市岩室158番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ }
+]

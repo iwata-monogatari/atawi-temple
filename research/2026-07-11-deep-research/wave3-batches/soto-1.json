@@ -1,0 +1,257 @@
+[
+ {
+  "slug": "myosenji-araide",
+  "name": "明泉寺",
+  "kana": "みょうせんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市新出613番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "jokoji-maeno",
+  "name": "定光寺",
+  "kana": "じょうこうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市前野1773番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "jissaiji-samejima",
+  "name": "実際寺",
+  "kana": "じっさいじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市鮫島202番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "koganji-kusasaki",
+  "name": "光嚴寺",
+  "kana": "こうがんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市草崎644番地の1",
+  "aliases": [
+   "光厳寺（新字体表記）"
+  ],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "shokoji-shirabyoshi",
+  "name": "正光寺",
+  "kana": "しょうこうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市白拍子358番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "taigetsuan-sagisaka",
+  "name": "太月庵",
+  "kana": "たいげつあん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市匂坂上59番地の1",
+  "aliases": [
+   "大月庵"
+  ],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "zosanji-sagisaka",
+  "name": "増参寺",
+  "kana": "ぞうさんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市匂坂中586番地",
+  "aliases": [
+   "岩田山",
+   "蔵参庵"
+  ],
+  "current_deity": "釈迦牟尼如来",
+  "current_founded": "応仁2年（1468年）に前身の蔵参庵が建立されたと伝わる。永禄7年（1564年）に岩田山増参寺となる",
+  "has_history": true
+ },
+ {
+  "slug": "shinpoin-mukasa",
+  "name": "新豊院",
+  "kana": "しんぽういん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市向笠竹之内14番地",
+  "aliases": [
+   "鷲渓山"
+  ],
+  "current_deity": "能満諸願虚空蔵大菩薩",
+  "current_founded": "開創年代は不明だが、文明18年（1486年）よりも以前と伝わる。天正年間（1573〜1591年）に曹洞宗に改宗",
+  "has_history": true
+ },
+ {
+  "slug": "hounji-mukasa",
+  "name": "法雲寺",
+  "kana": "ほううんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市向笠西374番地",
+  "aliases": [
+   "八幡山",
+   "磐田あじさい寺",
+   "法雲庵"
+  ],
+  "current_deity": "聖観世音菩薩",
+  "current_founded": "寛永11年（1634年）に法雲庵として開創されたと伝わる",
+  "has_history": true
+ },
+ {
+  "slug": "anzenji-iwai",
+  "name": "安全寺",
+  "kana": "あんぜんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市岩井1365番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": false
+ },
+ {
+  "slug": "hofukuji-okubo",
+  "name": "保福寺",
+  "kana": "ほうふくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市大久保361番地",
+  "aliases": [
+   "大久山",
+   "保福院"
+  ],
+  "current_deity": "釈迦如来",
+  "current_founded": "江戸時代前期。『磐田郡誌』では寛永19年（1642年）の開創とも記される。宝暦2年（1752年）焼失後に再建",
+  "has_history": true
+ },
+ {
+  "slug": "shogenin-kojima",
+  "name": "正眼院",
+  "kana": "しょうげんいん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市小島738番地",
+  "aliases": [
+   "拈華山"
+  ],
+  "current_deity": "千手観世音菩薩",
+  "current_founded": "寺伝では治承年中（1177〜1181年）創建。永正12年（1515年）に曹洞宗寺院として再興",
+  "has_history": true
+ },
+ {
+  "slug": "mannenji-kusasaki",
+  "name": "萬然寺",
+  "kana": "まんねんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市草崎2430番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": false
+ },
+ {
+  "slug": "jushouji-kusasaki",
+  "name": "壽正寺",
+  "kana": "じゅしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市草崎691番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": false
+ },
+ {
+  "slug": "zenkaiji-nishijima",
+  "name": "全海寺",
+  "kana": "ぜんかいじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市西島452番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": false
+ },
+ {
+  "slug": "toshoji-higashikaizuka",
+  "name": "東昌寺",
+  "kana": "とうしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市東貝塚1291番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": false
+ },
+ {
+  "slug": "renjoji-shingai",
+  "name": "連城寺",
+  "kana": "れんじょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市新貝1556番地の1",
+  "aliases": [
+   "三白山"
+  ],
+  "current_deity": "未確認",
+  "current_founded": "平安時代末期（寺伝では平重盛が遠江守であったときの建立と伝わる）",
+  "has_history": true
+ },
+ {
+  "slug": "zenkyuin-kamada",
+  "name": "全久院",
+  "kana": "ぜんきゅういん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市鎌田2546番地",
+  "aliases": [
+   "護国山"
+  ],
+  "current_deity": "虚空蔵菩薩",
+  "current_founded": "創建年代は不詳。寺伝ではもと真言宗に属し、永禄元年（1558年）に曹洞宗へ改宗したと伝わる",
+  "has_history": true
+ },
+ {
+  "slug": "fukuoji-jonosaki",
+  "name": "福王寺",
+  "kana": "ふくおうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市城之崎4丁目2722番地の1",
+  "aliases": [
+   "風祭山"
+  ],
+  "current_deity": "聖観世音菩薩",
+  "current_founded": "寺伝では1000年以上前に真言宗高野山の末寺として開かれ、1444年（文安元年）に曹洞宗寺院として再興されたと伝わる",
+  "has_history": true
+ },
+ {
+  "slug": "gasshoji-nakaizumi",
+  "name": "合掌寺",
+  "kana": "がっしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市中泉1239番地の3",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": false
+ },
+ {
+  "slug": "jurinji-kamiohnogo",
+  "name": "十輪寺",
+  "kana": "じゅうりんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市上大之郷606番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ }
+]

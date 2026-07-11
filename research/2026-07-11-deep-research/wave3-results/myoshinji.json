@@ -1,0 +1,459 @@
+[
+ {
+  "slug": "myooji-mitsuke",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [
+   "臨黄ネット公式寺院検索では明王寺の住所が「静岡県磐田市見付2896」と登録されており、見性寺（見付一番町2896）と同一番地。台帳住所「見付河原町3987」と食い違う。兼務寺院（見性寺住職による代表登録）の可能性を含め、実際の所在地・法人登録住所を要確認。"
+  ],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。寺名「明王寺（みょうおうじ）」・住所「見付2896」を確認。本尊・由緒・行事・URL・コメント欄はすべて空欄。妙心寺公式サイト（myoshinji.or.jp）のFAQ300は寺院検索として臨黄ネットを公式に案内している。"
+   }
+  ]
+ },
+ {
+  "slug": "hojuji-toyoshima",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [
+   "臨黄ネット公式寺院検索での読みは「ほうしゅうじ」と掲載されており、台帳の「ほうじゅじ」と異なる。正式な読みを要確認。"
+  ],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。寺名「寳珠寺（ほうしゅうじ）」・住所「豊島668」を確認（台帳住所と一致）。本尊・由緒・行事欄は空欄。"
+   }
+  ]
+ },
+ {
+  "slug": "tamonji-nakano",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。寺名「多聞寺（たもんじ）」・住所「中野532-1」を確認（台帳と一致）。本尊・由緒・行事欄は空欄。"
+   }
+  ]
+ },
+ {
+  "slug": "daizoji-kamiokata",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [
+   "大藏寺"
+  ],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。公式検索では旧字体「大藏寺（だいぞうじ）」表記。住所「上岡田329」は台帳と一致。本尊・由緒・行事欄は空欄。"
+   }
+  ]
+ },
+ {
+  "slug": "tenshoji-toyoshima",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。寺名「天正寺（てんしょうじ）」・住所「豊島905」を確認（台帳と一致）。本尊・由緒・行事欄は空欄。"
+   }
+  ]
+ },
+ {
+  "slug": "senjuji-senjudou",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。寺名「千手寺（せんじゅじ）」・住所「千手堂637」を確認（台帳と一致）。本尊・由緒・行事欄は空欄で、台帳既載の本尊（千手十一面観音）・由緒の裏付けは公式検索からは得られない。"
+   }
+  ]
+ },
+ {
+  "slug": "manshoji-manshoji",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。寺名「萬勝寺（まんしょうじ）」・住所「万正寺515」を確認（台帳と一致）。本尊・由緒・行事欄は空欄。"
+   }
+  ]
+ },
+ {
+  "slug": "chusenji-nakaizumi",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。寺名「中泉寺（ちゅうせんじ）」・住所「中泉743-1」を確認（台帳と一致）。本尊・由緒・行事欄は空欄で、台帳既載の本尊（虚空蔵菩薩）・創建年の裏付けは公式検索からは得られない。"
+   }
+  ]
+ },
+ {
+  "slug": "senzoji-nakaizumi",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [
+   "泉藏寺"
+  ],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。公式検索では旧字体「泉藏寺（せんぞうじ）」表記。住所「中泉1557-1」は台帳と一致。本尊・由緒・行事欄は空欄。"
+   }
+  ]
+ },
+ {
+  "slug": "renpukuji-ninomiya",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。寺名「連福寺（れんぷくじ）」・住所「二之宮1262」を確認（台帳と一致）。本尊・由緒・行事欄は空欄で、台帳既載の本尊（釈迦牟尼仏）・大同2年開創伝承の裏付けは公式検索からは得られない。"
+   }
+  ]
+ },
+ {
+  "slug": "jionji-mitsuke",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。寺名「慈恩寺（じおんじ）」・住所「見付2431-1」を確認（台帳と一致）。本尊・由緒・行事欄は空欄。"
+   }
+  ]
+ },
+ {
+  "slug": "kenshoji-mitsuke",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。寺名「見性寺（けんしょうじ）」・住所「見付一番町2896」を確認（台帳の見付2896と同一地点、公式検索は町名「一番町」まで記載）。本尊・由緒・行事欄は空欄。"
+   }
+  ]
+ },
+ {
+  "slug": "shinnyoji-sagisaka",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [
+   "真如寺"
+  ],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。公式検索では新字体「真如寺（しんにょじ）」表記（台帳は眞如寺）。住所「匂坂上210-1」は台帳と一致。本尊・由緒・行事欄は空欄。"
+   }
+  ]
+ },
+ {
+  "slug": "jigenji-kamikandamasu",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。寺名「慈眼寺（じげんじ）」・住所「〒438-0115 上神増99」を確認（台帳と一致）。本尊・由緒・行事欄は空欄。"
+   }
+  ]
+ },
+ {
+  "slug": "entsuji-ohira",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。寺名「圓通寺（えんつうじ）」・住所「大平530」を確認（台帳と一致）。本尊・由緒・行事欄は空欄。"
+   }
+  ]
+ },
+ {
+  "slug": "mushuoji-mushuo",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [
+   "臨黄ネット公式寺院検索での読みは「ちゅうしょうじ」と掲載されており、台帳の「むしゅうじ」と大きく異なる。正式な読みを要確認（地名「虫生（むしゅう）」由来の読みと音読みの併存の可能性）。"
+  ],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。寺名「虫生寺（ちゅうしょうじ）」・住所「虫生457-1」を確認（住所は台帳と一致）。本尊・由緒・行事欄は空欄。"
+   }
+  ]
+ },
+ {
+  "slug": "jokoji-shikiji",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。寺名「浄光寺（じょうこうじ）」・住所「敷地1021」を確認（台帳と一致）。本尊・由緒・行事欄は空欄。"
+   }
+  ]
+ },
+ {
+  "slug": "ryounan-shikiji",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [
+   "臨黄ネット公式寺院検索での読みは「りょううんあん」と掲載されており、台帳の「りゅううんあん」と異なる。正式な読みを要確認。"
+  ],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。寺名「龍雲庵（りょううんあん）」・住所「敷地1367-1」を確認（住所は台帳と一致）。本尊・由緒・行事欄は空欄。"
+   }
+  ]
+ },
+ {
+  "slug": "eimeiji-shikiji",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [
+   "臨黄ネット公式寺院検索での読みは「ようめいじ」と掲載されており、台帳の「えいめいじ」と異なる。正式な読みを要確認。"
+  ],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。寺名「永明寺（ようめいじ）」・住所「敷地1014」を確認（住所は台帳と一致）。本尊・由緒・行事欄は空欄。"
+   }
+  ]
+ },
+ {
+  "slug": "eianji-shikiji",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。寺名「永安寺（えいあんじ）」・住所「敷地1035」を確認（台帳と一致）。本尊・由緒・行事欄は空欄。"
+   }
+  ]
+ },
+ {
+  "slug": "seiryo-in-iwamuro",
+  "found": true,
+  "official_page_url": null,
+  "aliases_add": [],
+  "main_deity": null,
+  "founded_period": null,
+  "history_summary": null,
+  "historical_sections": [],
+  "pilgrimage": null,
+  "annual_events": null,
+  "research_todos": [],
+  "sources": [
+   {
+    "title": "臨黄ネット 寺院検索（静岡県磐田市・妙心寺派）",
+    "type": "宗派公式資料",
+    "url": "https://rinnou.net/search/?prefectures=%E9%9D%99%E5%B2%A1%E7%9C%8C&address_1=%E7%A3%90%E7%94%B0%E5%B8%82&shuha=%E5%A6%99%E5%BF%83%E5%AF%BA%E6%B4%BE",
+    "note": "一覧掲載のみ。寺名「清凉院（せいりょういん）」・住所「岩室158」を確認（台帳と一致）。本尊・由緒・行事欄は空欄。"
+   }
+  ]
+ }
+]

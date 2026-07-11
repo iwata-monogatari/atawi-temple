@@ -1,0 +1,245 @@
+[
+ {
+  "slug": "yushoji-toyooka",
+  "name": "雄照寺",
+  "kana": "ゆうしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市豊岡1053番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": false
+ },
+ {
+  "slug": "shuzoji-toyooka",
+  "name": "守増寺",
+  "kana": "しゅぞうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市豊岡2648番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "shokoji-miyanoshiki",
+  "name": "松向寺",
+  "kana": "しょうこうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市宮之一色413番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "chionsai-hitokoto",
+  "name": "智恩齋",
+  "kana": "ちおんさい",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市一言797番地",
+  "aliases": [
+   "智恩斎",
+   "一言観音"
+  ],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "anrakuji-tateno",
+  "name": "安楽寺",
+  "kana": "あんらくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市立野477番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "toyodain-kegojima",
+  "name": "豊田院",
+  "kana": "ほうでんいん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市気子島324番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "shoi-ji-shimoban-no",
+  "name": "正医寺",
+  "kana": "しょういじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市下万能1162番地の1",
+  "aliases": [
+   "東光山正醫寺",
+   "正醫寺",
+   "萬能観音"
+  ],
+  "current_deity": "薬師如来",
+  "current_founded": "延暦元年（782年）草創と伝えられる（慶長5年〈1600年〉に曹洞宗寺院として開山）",
+  "has_history": true
+ },
+ {
+  "slug": "fukuoji-morimoto",
+  "name": "福王寺",
+  "kana": "ふくおうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市森本287番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "rinshoji-kodateno",
+  "name": "林昌寺",
+  "kana": "りんしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市小立野241番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "kotokuji-morishita",
+  "name": "興徳寺",
+  "kana": "こうとくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市森下612番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "yofukuji-shimohongo",
+  "name": "養福寺",
+  "kana": "ようふくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市下本郷1363番地の1",
+  "aliases": [
+   "龍祥山"
+  ],
+  "current_deity": "阿弥陀如来",
+  "current_founded": "慶長4年（1599年）に庵室として始まり、享保9年（1724年）に本寺が建立された",
+  "has_history": true
+ },
+ {
+  "slug": "myohoji-ikeda",
+  "name": "妙法寺",
+  "kana": "みょうほうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市池田743番地",
+  "aliases": [
+   "瑞雲山"
+  ],
+  "current_deity": "薬師如来",
+  "current_founded": "応永19年（1412年）に日蓮宗寺院として草創、慶長7年（1602年）に曹洞宗へ改宗と伝わる",
+  "has_history": true
+ },
+ {
+  "slug": "seidoin-ikeda",
+  "name": "誓渡院",
+  "kana": "せいどいん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市池田356番地",
+  "aliases": [
+   "済縁山",
+   "誓渡庵"
+  ],
+  "current_deity": "地蔵菩薩",
+  "current_founded": "永正元年（1504年）開創と伝わる（当時は誓渡庵と号した）",
+  "has_history": true
+ },
+ {
+  "slug": "daienji-kamo",
+  "name": "大圓寺",
+  "kana": "だいえんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市加茂123番地",
+  "aliases": [
+   "久松山",
+   "大円寺"
+  ],
+  "current_deity": "未確認",
+  "current_founded": "起源は神亀3年（726年）と伝わり、寛永15年（1638年）に久松山大円寺と改めた",
+  "has_history": true
+ },
+ {
+  "slug": "daizoji-tomei",
+  "name": "大蔵寺",
+  "kana": "だいぞうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市東名393番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "shokyuin-mitsue",
+  "name": "松久院",
+  "kana": "しょうきゅういん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市三家332番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "hoonan-kaminobe",
+  "name": "法音庵",
+  "kana": "ほうおんあん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市上野部2032番地",
+  "aliases": [
+   "鳳雄山"
+  ],
+  "current_deity": "十一面観世音菩薩",
+  "current_founded": "文明4年（1472年）川僧慧済禅師開創",
+  "has_history": true
+ },
+ {
+  "slug": "tenryuin-kaminobe",
+  "name": "天龍院",
+  "kana": "てんりゅういん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市上野部353番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "ichiunsai-shimonobe",
+  "name": "一雲斉",
+  "kana": "いちうんさい",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市下野部1776番地",
+  "aliases": [
+   "万世山一雲斎",
+   "萬世山一雲齋",
+   "一雲斎"
+  ],
+  "current_deity": "釈迦牟尼仏",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "saikoji-matsunokijima",
+  "name": "最廣寺",
+  "kana": "さいこうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市松之木島314番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ }
+]

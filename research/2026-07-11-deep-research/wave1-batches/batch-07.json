@@ -1,0 +1,102 @@
+[
+ {
+  "slug": "manpukuji-kaketsuka-799",
+  "name": "萬福寺",
+  "kana": "まんぷくじ",
+  "sect": "真宗大谷派",
+  "address": "静岡県磐田市掛塚799番地の1",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "gyokoji-ikeda",
+  "name": "行興寺",
+  "kana": "ぎょうこうじ",
+  "sect": "時宗",
+  "address": "静岡県磐田市池田330番地",
+  "area": "豊田",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "jigenji-kamikandamasu",
+  "name": "慈眼寺",
+  "kana": "じげんじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市上神増99番地",
+  "area": "豊岡",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "entsuji-ohira",
+  "name": "圓通寺",
+  "kana": "えんつうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市大平530番",
+  "area": "豊岡",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "mushuoji-mushuo",
+  "name": "虫生寺",
+  "kana": "むしゅうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市虫生457番地の1",
+  "area": "豊岡",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "jokoji-shikiji",
+  "name": "浄光寺",
+  "kana": "じょうこうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市敷地1021番地",
+  "area": "豊岡",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "ryounan-shikiji",
+  "name": "龍雲庵",
+  "kana": "りゅううんあん",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市敷地1367番地の1",
+  "area": "豊岡",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "eimeiji-shikiji",
+  "name": "永明寺",
+  "kana": "えいめいじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市敷地1014番地",
+  "area": "豊岡",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "eianji-shikiji",
+  "name": "永安寺",
+  "kana": "えいあんじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市敷地1035番地",
+  "area": "豊岡",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "seiryo-in-iwamuro",
+  "name": "清凉院",
+  "kana": "せいりょういん",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市岩室158番地",
+  "area": "豊岡",
+  "aliases": [],
+  "status": "現存"
+ }
+]

@@ -1,0 +1,198 @@
+[
+ {
+  "slug": "gyokoji-ikeda",
+  "found": true,
+  "cultural_assets_add": [
+   {
+    "name": "熊野絵巻",
+    "designation": "静岡県指定文化財（絵画）",
+    "summary": "室町時代の絵巻で、行興寺が所有します。熊野御前の伝承を今に伝える寺の性格を示す資料です。"
+   },
+   {
+    "name": "木造十一面観音菩薩坐像",
+    "designation": "磐田市指定文化財（彫刻）",
+    "summary": "鎌倉時代の作とされる坐像で、行興寺が所有します。"
+   },
+   {
+    "name": "行興寺の宝篋印塔",
+    "designation": "磐田市指定文化財（史跡）",
+    "summary": "室町時代の宝篋印塔です。境内に伝わる石造遺物として市の史跡に指定されています。"
+   },
+   {
+    "name": "行興寺文書",
+    "designation": "磐田市指定文化財（古文書）",
+    "summary": "江戸時代の文書群です。市の一覧では所有者は個人と記載されています。"
+   }
+  ],
+  "sources": [
+   {
+    "title": "市指定文化財｜磐田市公式ウェブサイト",
+    "type": "行政・公的資料",
+    "url": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1002039.html",
+    "note": "分類・時代・所在地・所有者を一覧表で確認"
+   },
+   {
+    "title": "県指定文化財｜磐田市公式ウェブサイト",
+    "type": "行政・公的資料",
+    "url": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1002038.html",
+    "note": "県指定文化財の分類・指定日・所有者を一覧表で確認"
+   },
+   {
+    "title": "磐田市文化財一覧オープンデータ（LinkData・CC BY）",
+    "type": "行政・公的資料",
+    "url": "http://linkdata.org/work/rdf1s10219i",
+    "note": "磐田市公開の文化財一覧オープンデータ。名称・よみ・所在地により寺院と文化財の対応を照合"
+   }
+  ]
+ },
+ {
+  "slug": "zendoji-mitsuke",
+  "found": true,
+  "cultural_assets_add": [
+   {
+    "name": "善導寺の大クス（善導寺大樟）",
+    "designation": "静岡県指定天然記念物",
+    "summary": "昭和34年（1959年）4月14日指定。旧境内地の中泉（磐田駅前）に立ち、現在の所有者は磐田市です。昭和42年（1967年）の寺の移転後も旧地に残り、駅前のシンボルとなっています。"
+   }
+  ],
+  "sources": [
+   {
+    "title": "県指定文化財｜磐田市公式ウェブサイト",
+    "type": "行政・公的資料",
+    "url": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1002038.html",
+    "note": "県指定文化財の分類・指定日・所有者を一覧表で確認"
+   },
+   {
+    "title": "磐田市文化財一覧オープンデータ（LinkData・CC BY）",
+    "type": "行政・公的資料",
+    "url": "http://linkdata.org/work/rdf1s10219i",
+    "note": "磐田市公開の文化財一覧オープンデータ。名称・よみ・所在地により寺院と文化財の対応を照合"
+   }
+  ]
+ },
+ {
+  "slug": "jurinji-kamiohnogo",
+  "found": true,
+  "cultural_assets_add": [
+   {
+    "name": "薬師如来立像",
+    "designation": "磐田市指定文化財（彫刻）",
+    "summary": "鎌倉時代の作とされる立像で、十輪寺が所有します。"
+   }
+  ],
+  "sources": [
+   {
+    "title": "市指定文化財｜磐田市公式ウェブサイト",
+    "type": "行政・公的資料",
+    "url": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1002039.html",
+    "note": "分類・時代・所在地・所有者を一覧表で確認"
+   },
+   {
+    "title": "磐田市文化財一覧オープンデータ（LinkData・CC BY）",
+    "type": "行政・公的資料",
+    "url": "http://linkdata.org/work/rdf1s10219i",
+    "note": "磐田市公開の文化財一覧オープンデータ。名称・よみ・所在地により寺院と文化財の対応を照合"
+   }
+  ]
+ },
+ {
+  "slug": "tenryuin-kaminobe",
+  "found": true,
+  "cultural_assets_add": [
+   {
+    "name": "松井氏首塚と供養塔",
+    "designation": "磐田市指定文化財（史跡）",
+    "summary": "室町時代の史跡で、天龍院が所有します。桶狭間の戦いで戦死した二俣城主・松井宗信の首を葬ったと伝わる塚と供養塔です。"
+   }
+  ],
+  "sources": [
+   {
+    "title": "市指定文化財｜磐田市公式ウェブサイト",
+    "type": "行政・公的資料",
+    "url": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1002039.html",
+    "note": "分類・時代・所在地・所有者を一覧表で確認"
+   },
+   {
+    "title": "磐田市文化財一覧オープンデータ（LinkData・CC BY）",
+    "type": "行政・公的資料",
+    "url": "http://linkdata.org/work/rdf1s10219i",
+    "note": "磐田市公開の文化財一覧オープンデータ。名称・よみ・所在地により寺院と文化財の対応を照合"
+   }
+  ]
+ },
+ {
+  "slug": "eianji-shikiji",
+  "found": true,
+  "cultural_assets_add": [
+   {
+    "name": "岩室廃寺跡（観音堂）",
+    "designation": "磐田市指定文化財（史跡）",
+    "summary": "奈良時代から江戸時代にわたる岩室の山寺の跡で、市の一覧では所有者は永安寺と記載されています。"
+   }
+  ],
+  "sources": [
+   {
+    "title": "市指定文化財｜磐田市公式ウェブサイト",
+    "type": "行政・公的資料",
+    "url": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1002039.html",
+    "note": "分類・時代・所在地・所有者を一覧表で確認"
+   },
+   {
+    "title": "磐田市文化財一覧オープンデータ（LinkData・CC BY）",
+    "type": "行政・公的資料",
+    "url": "http://linkdata.org/work/rdf1s10219i",
+    "note": "磐田市公開の文化財一覧オープンデータ。名称・よみ・所在地により寺院と文化財の対応を照合"
+   }
+  ]
+ },
+ {
+  "slug": "daienji-kamo",
+  "found": true,
+  "cultural_assets_add": [
+   {
+    "name": "加茂東十王堂十王像群",
+    "designation": "磐田市指定文化財（有形民俗文化財）",
+    "summary": "江戸時代の十王像群で、大円寺が所有します。加茂東の十王堂に安置されてきた冥界の十王をかたどった像です。"
+   }
+  ],
+  "sources": [
+   {
+    "title": "市指定文化財｜磐田市公式ウェブサイト",
+    "type": "行政・公的資料",
+    "url": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1002039.html",
+    "note": "分類・時代・所在地・所有者を一覧表で確認"
+   },
+   {
+    "title": "磐田市文化財一覧オープンデータ（LinkData・CC BY）",
+    "type": "行政・公的資料",
+    "url": "http://linkdata.org/work/rdf1s10219i",
+    "note": "磐田市公開の文化財一覧オープンデータ。名称・よみ・所在地により寺院と文化財の対応を照合"
+   }
+  ]
+ },
+ {
+  "slug": "senkoji-mitsuke",
+  "found": true,
+  "cultural_assets_add": [
+   {
+    "name": "子育如来像・子育地蔵菩薩像",
+    "designation": "磐田市指定文化財（彫刻）",
+    "summary": "江戸時代の作で、宣光寺が所有します。子育て信仰にかかわる像として伝わります。"
+   }
+  ],
+  "sources": [
+   {
+    "title": "市指定文化財｜磐田市公式ウェブサイト",
+    "type": "行政・公的資料",
+    "url": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1002039.html",
+    "note": "分類・時代・所在地・所有者を一覧表で確認"
+   },
+   {
+    "title": "磐田市文化財一覧オープンデータ（LinkData・CC BY）",
+    "type": "行政・公的資料",
+    "url": "http://linkdata.org/work/rdf1s10219i",
+    "note": "磐田市公開の文化財一覧オープンデータ。名称・よみ・所在地により寺院と文化財の対応を照合"
+   }
+  ]
+ }
+]

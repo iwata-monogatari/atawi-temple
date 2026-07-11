@@ -1,0 +1,102 @@
+[
+ {
+  "slug": "shorinji-kawabukuro",
+  "name": "松林寺",
+  "kana": "しょうりんじ",
+  "sect": "臨済宗方広寺派",
+  "address": "静岡県磐田市川袋224番地の1",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "hojuin-jurojima",
+  "name": "寶珠院",
+  "kana": "ほうじゅいん",
+  "sect": "臨済宗方広寺派",
+  "address": "静岡県磐田市十郎島26番地ノ1",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "senryuji-kawabukuro",
+  "name": "潜龍寺",
+  "kana": "せんりゅうじ",
+  "sect": "臨済宗方広寺派",
+  "address": "静岡県磐田市川袋463番地",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "ryusenji-shiraha",
+  "name": "竜泉寺",
+  "kana": "りゅうせんじ",
+  "sect": "臨済宗方広寺派",
+  "address": "静岡県磐田市白羽51番地",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "koshuji-kaketsuka",
+  "name": "香集寺",
+  "kana": "こうしゅうじ",
+  "sect": "臨済宗方広寺派",
+  "address": "静岡県磐田市掛塚1002番地",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "jorakuji-horinochi",
+  "name": "常楽寺",
+  "kana": "じょうらくじ",
+  "sect": "臨済宗方広寺派",
+  "address": "静岡県磐田市堀之内761番地",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "daisenji-toyohamanakano",
+  "name": "大泉寺",
+  "kana": "だいせんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市豊浜中野744番地の1",
+  "area": "南部",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "saifukuji-toyohamanakano",
+  "name": "西福寺",
+  "kana": "さいふくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市豊浜中野725番地の1",
+  "area": "南部",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "ryuunji-toyohama",
+  "name": "竜雲寺",
+  "kana": "りゅううんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市豊浜365番地の1",
+  "area": "福田",
+  "aliases": [],
+  "status": "現存"
+ },
+ {
+  "slug": "sojiji-minamijima",
+  "name": "宗次寺",
+  "kana": "そうじじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市南島149番地の1",
+  "area": "竜洋",
+  "aliases": [],
+  "status": "現存"
+ }
+]

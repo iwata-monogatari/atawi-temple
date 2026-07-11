@@ -1,0 +1,50 @@
+[
+ {
+  "slug": "honmyoin-iwai",
+  "found": false,
+  "sources": [
+   {
+    "type": "調査記録",
+    "name": "国立国会図書館 次世代デジタルライブラリー全文検索（郷土資料含む約35万点）",
+    "url": "https://lab.ndl.go.jp/dl/api/book/search",
+    "note": "「本妙院 磐田」「本妙院 見付」「本妙院 遠江」「本妙院 遠州」「岩井 本妙」「於保村 寺院」いずれも0件。「岩井村 寺」は他国の同名村のみヒット。"
+   },
+   {
+    "type": "調査記録",
+    "name": "国立国会図書館デジタルコレクション検索・NDLサーチOpenSearch",
+    "url": "https://ndlsearch.ndl.go.jp/api/opensearch?any=本妙院 磐田",
+    "note": "書誌メタデータ検索でも該当資料なし。"
+   },
+   {
+    "type": "調査記録",
+    "name": "全国遺跡報告総覧 全文検索",
+    "url": "https://sitereports.nabunken.go.jp/ja/search?keyword=本妙院",
+    "note": "磐田市岩井の本妙院に関する発掘調査報告・記載は確認できず。"
+   },
+   {
+    "type": "調査記録",
+    "name": "コトバンク「日本歴史地名大系」岩井村（遠江国山名郡）",
+    "url": "https://kotobank.jp/word/岩井村",
+    "note": "応永3年（1396年）今川貞世書下の「岩井郷」（山名庄東方）、寛正2年（1461年）本間久季紛失状の記載はあるが、公開部分に寺院への言及なし（続きは有料版のみ）。"
+   },
+   {
+    "type": "調査記録",
+    "name": "Google Books・Google Web検索",
+    "url": "https://www.googleapis.com/books/v1/volumes",
+    "note": "「\"本妙院\" 磐田市岩井」等で書籍・Webとも該当なし（同名の東京都大田区・台東区の本妙院のみヒット）。"
+   },
+   {
+    "type": "調査記録",
+    "name": "hamazo地域ブログ検索・jiincenter.net・遠州三十三観音（enshu33.com）・八百万の神・ホームメイト寺院検索・NAVITIME",
+    "url": "https://search.hamazo.tv/?q=本妙院",
+    "note": "現地踏査ブログ・寺院データベース・霊場サイトのいずれにも磐田市岩井の本妙院の記事・ページは確認できず（jiincenterは接続不能）。"
+   },
+   {
+    "type": "調査記録",
+    "name": "磐田市公式サイト文化財一覧・しずおか文化財ナビ・文化遺産オンライン・ADEAC",
+    "url": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/index.html",
+    "note": "国・県・市指定文化財に本妙院関連の指定なし。ADEAC横断検索もヒットなし。"
+   }
+  ]
+ }
+]

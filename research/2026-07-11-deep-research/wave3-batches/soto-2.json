@@ -1,0 +1,254 @@
+[
+ {
+  "slug": "senkoji-mitsuke",
+  "name": "宣光寺",
+  "kana": "せんこうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市見付1340番地の1",
+  "aliases": [
+   "珠玉山",
+   "身代わり地蔵"
+  ],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "eifukuji-nishikaizuka",
+  "name": "永福寺",
+  "kana": "えいふくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市西貝塚1519番地の1",
+  "aliases": [
+   "今浦山"
+  ],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "kongoji-mitsuke",
+  "name": "金剛寺",
+  "kana": "こんごうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市見付2749番地の1",
+  "aliases": [
+   "今浦山"
+  ],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "rinpoin-nishikaizuka",
+  "name": "林宝院",
+  "kana": "りんぽういん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市西貝塚1423番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": false
+ },
+ {
+  "slug": "daisenji-toyohamanakano",
+  "name": "大泉寺",
+  "kana": "だいせんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市豊浜中野744番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "saifukuji-toyohamanakano",
+  "name": "西福寺",
+  "kana": "さいふくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市豊浜中野725番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "ryuunji-toyohama",
+  "name": "竜雲寺",
+  "kana": "りゅううんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市豊浜365番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "sojiji-minamijima",
+  "name": "宗次寺",
+  "kana": "そうじじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市南島149番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "keishoji-fukude",
+  "name": "慶昌寺",
+  "kana": "けいしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市福田1834番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "chosenji-fukudenakajima",
+  "name": "長泉寺",
+  "kana": "ちょうせんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市福田中島445番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "kannonji-fukude",
+  "name": "観音寺",
+  "kana": "かんのんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市福田688番地の1",
+  "aliases": [
+   "円通山観音寺",
+   "円通院（旧称）"
+  ],
+  "current_deity": "聖観世音菩薩",
+  "current_founded": "寺伝では明応3年（1494年）開創の円通院を前身とし、永禄2年（1559年）に円通院観音寺と改められたと伝わる",
+  "has_history": true
+ },
+ {
+  "slug": "ryuhoin-ohara",
+  "name": "龍法院",
+  "kana": "りゅうほういん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市大原2371番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "zohonji-ikago",
+  "name": "蔵本寺",
+  "kana": "ぞうほんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市五十子26番地",
+  "aliases": [
+   "藏本寺"
+  ],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "jushouji-hiruike",
+  "name": "寿正寺",
+  "kana": "じゅしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市蛭池230番地",
+  "aliases": [
+   "壽正寺"
+  ],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "rengakuji-ryuyonakajima",
+  "name": "蓮覚寺",
+  "kana": "れんがくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市竜洋中島689番地の1",
+  "aliases": [
+   "瑞嶽山蓮覚寺",
+   "連覚寺（表記）"
+  ],
+  "current_deity": "未確認",
+  "current_founded": "寺伝では安元元年（1175年）頃、平重盛が遠州三連寺の一つとして創建したと伝わる",
+  "has_history": true
+ },
+ {
+  "slug": "ganjoji-hirama",
+  "name": "願成寺",
+  "kana": "がんじょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市平間431番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "jikeian-komaba",
+  "name": "慈慶庵",
+  "kana": "じけいあん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市駒場20番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "shingetsuji-ebijima",
+  "name": "心月寺",
+  "kana": "しんげつじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市海老島200番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ },
+ {
+  "slug": "fukushoji-nishihiramatsu",
+  "name": "福生寺",
+  "kana": "ふくしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市西平松22番地",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": false
+ },
+ {
+  "slug": "shojuji-oka",
+  "name": "聖寿寺",
+  "kana": "しょうじゅじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市岡330番地",
+  "aliases": [
+   "天龍山聖寿寺",
+   "岡のお寺",
+   "崗本山聖寿軒"
+  ],
+  "current_deity": "阿弥陀三尊（阿弥陀如来・観音菩薩・勢至菩薩）",
+  "current_founded": "室町時代／文明10年（1478年）開創",
+  "has_history": true
+ },
+ {
+  "slug": "kinzoji-toyooka",
+  "name": "金藏寺",
+  "kana": "こんぞうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市豊岡4517番地の1",
+  "aliases": [],
+  "current_deity": "未確認",
+  "current_founded": null,
+  "has_history": true
+ }
+]

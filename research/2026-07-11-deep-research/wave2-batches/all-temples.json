@@ -1,0 +1,946 @@
+[
+ {
+  "slug": "daijoin-nakaizumi",
+  "name": "大乗院",
+  "kana": "だいじょういん",
+  "sect": "真言宗醍醐派",
+  "address": "静岡県磐田市中泉1丁目10番地6",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "ioji-kamada",
+  "name": "醫王寺",
+  "kana": "いおうじ",
+  "sect": "真言宗智山派",
+  "address": "静岡県磐田市鎌田2065番地の1",
+  "pilgrimage_note": "遠州四十九薬師霊場（遠江四十九薬師霊場）第46番札所"
+ },
+ {
+  "slug": "kokubunji-mitsuke",
+  "name": "国分寺",
+  "kana": "こくぶんじ",
+  "sect": "新義真言宗",
+  "address": "静岡県磐田市見付3046番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "tokuoin-mitsuke",
+  "name": "徳翁院",
+  "kana": "とくおういん",
+  "sect": "浄土宗",
+  "address": "静岡県磐田市見付568番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "keiganji-mitsuke",
+  "name": "慶岩寺",
+  "kana": "けいがんじ",
+  "sect": "浄土宗",
+  "address": "静岡県磐田市見付2735番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "daikenji-mitsuke",
+  "name": "大見寺",
+  "kana": "だいけんじ",
+  "sect": "浄土宗",
+  "address": "静岡県磐田市見付2510番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "zendoji-mitsuke",
+  "name": "善導寺",
+  "kana": "ぜんどうじ",
+  "sect": "浄土宗",
+  "address": "静岡県磐田市見付1番地の10",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "mantokuji-nakaizumi",
+  "name": "満徳寺",
+  "kana": "まんとくじ",
+  "sect": "真宗大谷派",
+  "address": "静岡県磐田市中泉1丁目4番地7",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "saiganji-nakaizumi",
+  "name": "西願寺",
+  "kana": "さいがんじ",
+  "sect": "真宗大谷派",
+  "address": "静岡県磐田市中泉254番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "gyosenji-mitsuke",
+  "name": "行泉寺",
+  "kana": "ぎょうせんじ",
+  "sect": "真宗高田派",
+  "address": "静岡県磐田市見付3080番地の2",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "kindaiji-tenryu",
+  "name": "金台寺",
+  "kana": "きんだいじ",
+  "sect": "時宗",
+  "address": "静岡県磐田市天竜110番地",
+  "pilgrimage_note": "遠江四十九薬師霊場第3番札所（民間の霊場資料および参拝記録サイトの記載が一致）"
+ },
+ {
+  "slug": "shokoji-mitsuke",
+  "name": "省光寺",
+  "kana": "しょうこうじ",
+  "sect": "時宗",
+  "address": "静岡県磐田市見付2423番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "saikoji-mitsuke",
+  "name": "西光寺",
+  "kana": "さいこうじ",
+  "sect": "時宗",
+  "address": "静岡県磐田市見付3353番地の1",
+  "pilgrimage_note": "遠江四十九薬師霊場第48番札所（寺院公式サイトによる）"
+ },
+ {
+  "slug": "myooji-mitsuke",
+  "name": "明王寺",
+  "kana": "みょうおうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市見付河原町3987番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "hojuji-toyoshima",
+  "name": "寳珠寺",
+  "kana": "ほうじゅじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市豊島668番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "tamonji-nakano",
+  "name": "多聞寺",
+  "kana": "たもんじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市中野532番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "daizoji-kamiokata",
+  "name": "大蔵寺",
+  "kana": "だいぞうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市上岡田329番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "tenshoji-toyoshima",
+  "name": "天正寺",
+  "kana": "てんしょうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市豊島905番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "senjuji-senjudou",
+  "name": "千手寺",
+  "kana": "せんじゅじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市千手堂637番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "manshoji-manshoji",
+  "name": "萬勝寺",
+  "kana": "まんしょうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市万正寺515番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "chusenji-nakaizumi",
+  "name": "中泉寺",
+  "kana": "ちゅうせんじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市中泉743番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "senzoji-nakaizumi",
+  "name": "泉蔵寺",
+  "kana": "せんぞうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市中泉1557番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "renpukuji-ninomiya",
+  "name": "連福寺",
+  "kana": "れんぷくじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市二之宮1262番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "jionji-mitsuke",
+  "name": "慈恩寺",
+  "kana": "じおんじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市見付2431番地の1",
+  "pilgrimage_note": "遠州三十三観音霊場第19番札所（複数の民間サイトで一致）"
+ },
+ {
+  "slug": "kenshoji-mitsuke",
+  "name": "見性寺",
+  "kana": "けんしょうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市見付2896番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "shinnyoji-sagisaka",
+  "name": "眞如寺",
+  "kana": "しんにょじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市匂坂上210番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "myosenji-araide",
+  "name": "明泉寺",
+  "kana": "みょうせんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市新出613番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "jokoji-maeno",
+  "name": "定光寺",
+  "kana": "じょうこうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市前野1773番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "jissaiji-samejima",
+  "name": "実際寺",
+  "kana": "じっさいじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市鮫島202番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "koganji-kusasaki",
+  "name": "光嚴寺",
+  "kana": "こうがんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市草崎644番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "shokoji-shirabyoshi",
+  "name": "正光寺",
+  "kana": "しょうこうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市白拍子358番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "taigetsuan-sagisaka",
+  "name": "太月庵",
+  "kana": "たいげつあん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市匂坂上59番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "zosanji-sagisaka",
+  "name": "増参寺",
+  "kana": "ぞうさんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市匂坂中586番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "shinpoin-mukasa",
+  "name": "新豊院",
+  "kana": "しんぽういん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市向笠竹之内14番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "hounji-mukasa",
+  "name": "法雲寺",
+  "kana": "ほううんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市向笠西374番地",
+  "pilgrimage_note": "遠州三十三観音霊場第29番札所。磐田市観光協会の資料によれば遠州七福神めぐり（大黒天）の札所でもある"
+ },
+ {
+  "slug": "anzenji-iwai",
+  "name": "安全寺",
+  "kana": "あんぜんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市岩井1365番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "hofukuji-okubo",
+  "name": "保福寺",
+  "kana": "ほうふくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市大久保361番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "shogenin-kojima",
+  "name": "正眼院",
+  "kana": "しょうげんいん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市小島738番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "mannenji-kusasaki",
+  "name": "萬然寺",
+  "kana": "まんねんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市草崎2430番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "jushouji-kusasaki",
+  "name": "壽正寺",
+  "kana": "じゅしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市草崎691番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "zenkaiji-nishijima",
+  "name": "全海寺",
+  "kana": "ぜんかいじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市西島452番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "toshoji-higashikaizuka",
+  "name": "東昌寺",
+  "kana": "とうしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市東貝塚1291番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "renjoji-shingai",
+  "name": "連城寺",
+  "kana": "れんじょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市新貝1556番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "zenkyuin-kamada",
+  "name": "全久院",
+  "kana": "ぜんきゅういん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市鎌田2546番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "fukuoji-jonosaki",
+  "name": "福王寺",
+  "kana": "ふくおうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市城之崎4丁目2722番地の1",
+  "pilgrimage_note": "遠州三十三観音霊場第18番札所（札所本尊: 聖観世音菩薩）"
+ },
+ {
+  "slug": "gasshoji-nakaizumi",
+  "name": "合掌寺",
+  "kana": "がっしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市中泉1239番地の3",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "jurinji-kamiohnogo",
+  "name": "十輪寺",
+  "kana": "じゅうりんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市上大之郷606番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "senkoji-mitsuke",
+  "name": "宣光寺",
+  "kana": "せんこうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市見付1340番地の1",
+  "pilgrimage_note": "遠州三十三観音霊場第17番札所（札所本尊: 十一面観世音菩薩）"
+ },
+ {
+  "slug": "eifukuji-nishikaizuka",
+  "name": "永福寺",
+  "kana": "えいふくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市西貝塚1519番地の1",
+  "pilgrimage_note": "遠州三十三観音霊場第20番札所（札所本尊: 十一面観世音菩薩）"
+ },
+ {
+  "slug": "kongoji-mitsuke",
+  "name": "金剛寺",
+  "kana": "こんごうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市見付2749番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "rinpoin-nishikaizuka",
+  "name": "林宝院",
+  "kana": "りんぽういん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市西貝塚1423番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "honshoji-kounodai",
+  "name": "本性寺",
+  "kana": "ほんしょうじ",
+  "sect": "日蓮宗",
+  "address": "静岡県磐田市国府台441番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "genmyoji-mitsuke",
+  "name": "玄妙寺",
+  "kana": "げんみょうじ",
+  "sect": "日蓮宗",
+  "address": "静岡県磐田市見付2440番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "senshoji-iwai",
+  "name": "宣正寺",
+  "kana": "せんしょうじ",
+  "sect": "日蓮正宗",
+  "address": "静岡県磐田市岩井2324番地の5",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "nipponzan-myohoji-iwata",
+  "name": "日本山妙法寺磐田小僧伽",
+  "kana": "にっぽんざんみょうほうじいわたしょうそうぎゃ",
+  "sect": "日本山妙法寺大僧伽",
+  "address": "静岡県磐田市中泉3734番地の4",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "shinshinkyo-mitsuke",
+  "name": "神心教",
+  "kana": "しんしんきょう",
+  "sect": "包括宗教法人「神心教」",
+  "address": "静岡県磐田市見付243番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "shinshinkyo-honbu-mitsuke",
+  "name": "神心教本部",
+  "kana": "しんしんきょうほんぶ",
+  "sect": "神心教",
+  "address": "静岡県磐田市見付206番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "rendaiji-yashiroyama",
+  "name": "蓮台寺",
+  "kana": "れんだいじ",
+  "sect": "真言宗智山派",
+  "address": "静岡県磐田市社山576番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "saikoji-kaketsuka",
+  "name": "西光寺",
+  "kana": "さいこうじ",
+  "sect": "浄土宗",
+  "address": "静岡県磐田市掛塚1079番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "kokuseiji-kaketsuka",
+  "name": "國清寺",
+  "kana": "こくせいじ",
+  "sect": "浄土宗",
+  "address": "静岡県磐田市掛塚643番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "manpukuji-kaketsuka-819",
+  "name": "満福寺",
+  "kana": "まんぷくじ",
+  "sect": "浄土真宗本願寺派",
+  "address": "静岡県磐田市掛塚819番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "manpukuji-kaketsuka-799",
+  "name": "萬福寺",
+  "kana": "まんぷくじ",
+  "sect": "真宗大谷派",
+  "address": "静岡県磐田市掛塚799番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "gyokoji-ikeda",
+  "name": "行興寺",
+  "kana": "ぎょうこうじ",
+  "sect": "時宗",
+  "address": "静岡県磐田市池田330番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "jigenji-kamikandamasu",
+  "name": "慈眼寺",
+  "kana": "じげんじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市上神増99番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "entsuji-ohira",
+  "name": "圓通寺",
+  "kana": "えんつうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市大平530番",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "mushuoji-mushuo",
+  "name": "虫生寺",
+  "kana": "むしゅうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市虫生457番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "jokoji-shikiji",
+  "name": "浄光寺",
+  "kana": "じょうこうじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市敷地1021番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "ryounan-shikiji",
+  "name": "龍雲庵",
+  "kana": "りゅううんあん",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市敷地1367番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "eimeiji-shikiji",
+  "name": "永明寺",
+  "kana": "えいめいじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市敷地1014番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "eianji-shikiji",
+  "name": "永安寺",
+  "kana": "えいあんじ",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市敷地1035番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "seiryo-in-iwamuro",
+  "name": "清凉院",
+  "kana": "せいりょういん",
+  "sect": "臨済宗妙心寺派",
+  "address": "静岡県磐田市岩室158番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "shorinji-kawabukuro",
+  "name": "松林寺",
+  "kana": "しょうりんじ",
+  "sect": "臨済宗方広寺派",
+  "address": "静岡県磐田市川袋224番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "hojuin-jurojima",
+  "name": "寶珠院",
+  "kana": "ほうじゅいん",
+  "sect": "臨済宗方広寺派",
+  "address": "静岡県磐田市十郎島26番地ノ1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "senryuji-kawabukuro",
+  "name": "潜龍寺",
+  "kana": "せんりゅうじ",
+  "sect": "臨済宗方広寺派",
+  "address": "静岡県磐田市川袋463番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "ryusenji-shiraha",
+  "name": "竜泉寺",
+  "kana": "りゅうせんじ",
+  "sect": "臨済宗方広寺派",
+  "address": "静岡県磐田市白羽51番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "koshuji-kaketsuka",
+  "name": "香集寺",
+  "kana": "こうしゅうじ",
+  "sect": "臨済宗方広寺派",
+  "address": "静岡県磐田市掛塚1002番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "jorakuji-horinochi",
+  "name": "常楽寺",
+  "kana": "じょうらくじ",
+  "sect": "臨済宗方広寺派",
+  "address": "静岡県磐田市堀之内761番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "daisenji-toyohamanakano",
+  "name": "大泉寺",
+  "kana": "だいせんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市豊浜中野744番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "saifukuji-toyohamanakano",
+  "name": "西福寺",
+  "kana": "さいふくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市豊浜中野725番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "ryuunji-toyohama",
+  "name": "竜雲寺",
+  "kana": "りゅううんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市豊浜365番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "sojiji-minamijima",
+  "name": "宗次寺",
+  "kana": "そうじじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市南島149番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "keishoji-fukude",
+  "name": "慶昌寺",
+  "kana": "けいしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市福田1834番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "chosenji-fukudenakajima",
+  "name": "長泉寺",
+  "kana": "ちょうせんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市福田中島445番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "kannonji-fukude",
+  "name": "観音寺",
+  "kana": "かんのんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市福田688番地の1",
+  "pilgrimage_note": "遠州三十三観音霊場第21番札所"
+ },
+ {
+  "slug": "ryuhoin-ohara",
+  "name": "龍法院",
+  "kana": "りゅうほういん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市大原2371番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "zohonji-ikago",
+  "name": "蔵本寺",
+  "kana": "ぞうほんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市五十子26番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "jushouji-hiruike",
+  "name": "寿正寺",
+  "kana": "じゅしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市蛭池230番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "rengakuji-ryuyonakajima",
+  "name": "蓮覚寺",
+  "kana": "れんがくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市竜洋中島689番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "ganjoji-hirama",
+  "name": "願成寺",
+  "kana": "がんじょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市平間431番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "jikeian-komaba",
+  "name": "慈慶庵",
+  "kana": "じけいあん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市駒場20番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "shingetsuji-ebijima",
+  "name": "心月寺",
+  "kana": "しんげつじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市海老島200番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "fukushoji-nishihiramatsu",
+  "name": "福生寺",
+  "kana": "ふくしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市西平松22番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "shojuji-oka",
+  "name": "聖寿寺",
+  "kana": "しょうじゅじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市岡330番地",
+  "pilgrimage_note": "磐田郡三十三ヶ所観音霊場第4番・阿弥陀巡礼四十八ヶ所第15番（『竜洋町の寺院巡礼』竜洋町郷土研究会編による）"
+ },
+ {
+  "slug": "kinzoji-toyooka",
+  "name": "金藏寺",
+  "kana": "こんぞうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市豊岡4517番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "yushoji-toyooka",
+  "name": "雄照寺",
+  "kana": "ゆうしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市豊岡1053番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "shuzoji-toyooka",
+  "name": "守増寺",
+  "kana": "しゅぞうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市豊岡2648番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "shokoji-miyanoshiki",
+  "name": "松向寺",
+  "kana": "しょうこうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市宮之一色413番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "chionsai-hitokoto",
+  "name": "智恩齋",
+  "kana": "ちおんさい",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市一言797番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "anrakuji-tateno",
+  "name": "安楽寺",
+  "kana": "あんらくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市立野477番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "toyodain-kegojima",
+  "name": "豊田院",
+  "kana": "ほうでんいん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市気子島324番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "shoi-ji-shimoban-no",
+  "name": "正医寺",
+  "kana": "しょういじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市下万能1162番地の1",
+  "pilgrimage_note": "遠州三十三観音霊場第19番札所（札所本尊・如意輪観世音菩薩）。遠江四十九薬師霊場第5番札所（民間二次情報）。"
+ },
+ {
+  "slug": "fukuoji-morimoto",
+  "name": "福王寺",
+  "kana": "ふくおうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市森本287番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "rinshoji-kodateno",
+  "name": "林昌寺",
+  "kana": "りんしょうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市小立野241番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "kotokuji-morishita",
+  "name": "興徳寺",
+  "kana": "こうとくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市森下612番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "yofukuji-shimohongo",
+  "name": "養福寺",
+  "kana": "ようふくじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市下本郷1363番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "myohoji-ikeda",
+  "name": "妙法寺",
+  "kana": "みょうほうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市池田743番地",
+  "pilgrimage_note": "新四国八十八ヵ所第14番札所・遠江四十九薬師めぐり第7番札所・観世音菩薩三十三所霊場第10番（池田まちづくり協議会資料による）"
+ },
+ {
+  "slug": "seidoin-ikeda",
+  "name": "誓渡院",
+  "kana": "せいどいん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市池田356番地",
+  "pilgrimage_note": "新四国八十八ヵ所第5番札所（池田まちづくり協議会資料による）"
+ },
+ {
+  "slug": "daienji-kamo",
+  "name": "大圓寺",
+  "kana": "だいえんじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市加茂123番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "daizoji-tomei",
+  "name": "大蔵寺",
+  "kana": "だいぞうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市東名393番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "shokyuin-mitsue",
+  "name": "松久院",
+  "kana": "しょうきゅういん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市三家332番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "hoonan-kaminobe",
+  "name": "法音庵",
+  "kana": "ほうおんあん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市上野部2032番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "tenryuin-kaminobe",
+  "name": "天龍院",
+  "kana": "てんりゅういん",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市上野部353番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "ichiunsai-shimonobe",
+  "name": "一雲斉",
+  "kana": "いちうんさい",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市下野部1776番地",
+  "pilgrimage_note": "遠州（遠江）四十九薬師霊場第31番札所。札所本尊は薬師如来。"
+ },
+ {
+  "slug": "saikoji-matsunokijima",
+  "name": "最廣寺",
+  "kana": "さいこうじ",
+  "sect": "曹洞宗",
+  "address": "静岡県磐田市松之木島314番地の1",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "myofukuji-fukude",
+  "name": "妙福寺",
+  "kana": "みょうふくじ",
+  "sect": "日蓮宗",
+  "address": "静岡県磐田市福田1723番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "chikyoin-shiraha",
+  "name": "智教院",
+  "kana": "ちきょういん",
+  "sect": "日蓮宗",
+  "address": "静岡県磐田市白羽546番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "myomanji-kaminobe",
+  "name": "妙満寺",
+  "kana": "みょうまんじ",
+  "sect": "日蓮宗",
+  "address": "静岡県磐田市上野部738番地",
+  "pilgrimage_note": null
+ },
+ {
+  "slug": "honmyoin-iwai",
+  "name": "本妙院",
+  "kana": "ほんみょういん",
+  "sect": "単立",
+  "address": "静岡県磐田市岩井2081番地の1",
+  "pilgrimage_note": null
+ }
+]
