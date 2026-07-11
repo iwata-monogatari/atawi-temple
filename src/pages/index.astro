@@ -1,0 +1,65 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TempleCard from "../components/TempleCard.astro";
+import { allTemples } from "../lib/temples";
+
+const featured = allTemples.slice(0, 3);
+---
+
+<BaseLayout>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">公開資料と現地訪問で整理する地域寺院情報</p>
+      <h1>磐田市のお寺・寺院データベース</h1>
+      <p class="brand-name">ATAWI temple</p>
+      <form class="hero-search" action="/search/" method="get">
+        <label for="q">寺院名・住所・宗派・ご本尊・札所名から検索</label>
+        <div>
+          <input
+            id="q"
+            name="q"
+            type="search"
+            placeholder="宣光寺 / 見付 / 曹洞宗 / 薬師如来 / 廃寺"
+          />
+          <button type="submit">検索</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="filter-band" aria-label="主要な絞り込み">
+    <a href="/search/?area=見付">見付</a>
+    <a href="/search/?area=中泉">中泉</a>
+    <a href="/search/?status=existing">現存寺院</a>
+    <a href="/search/?status=ruin">廃寺・寺院跡</a>
+    <a href="/search/?sect=曹洞宗">曹洞宗</a>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>寺院一覧</h2>
+      <a href="/temples/">すべて見る</a>
+    </div>
+    <div class="card-grid">
+      {featured.map((temple) => <TempleCard temple={temple} />)}
+    </div>
+  </section>
+
+  <section class="section two-column">
+    <div>
+      <h2>初期公開の方針</h2>
+      <p>
+        まず磐田市内の寺院、廃寺、寺院跡を広く登録し、検索できる一覧として公開します。
+        詳細ページは公開資料の確認、出典整理、現地写真の追加が進んだ寺院から順次整備します。
+      </p>
+    </div>
+    <div>
+      <h2>情報提供について</h2>
+      <p>
+        名称、住所、宗派、由緒、写真非掲載などの訂正・情報提供を受け付けます。
+        投稿内容は自動公開せず、公開資料や現地確認と照合して反映します。
+      </p>
+      <a class="button-link" href="/correction/">情報提供・訂正へ</a>
+    </div>
+  </section>
+</BaseLayout>
