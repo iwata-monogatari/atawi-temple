@@ -3,7 +3,9 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import {
   allTemples,
   getDistrictName,
+  getPhotoCategory,
   getTempleBySlug,
+  getTempleMediaBySlug,
   isUnknownValue,
   knownValue,
 } from "../../lib/temples";
@@ -17,6 +19,7 @@ export function getStaticPaths() {
 const temple = getTempleBySlug(Astro.params.slug || "");
 const districtName = getDistrictName(temple?.district_id);
 const showKana = temple ? !isUnknownValue(temple.name_kana) : false;
+const media = temple ? getTempleMediaBySlug(temple.slug) : undefined;
 
 if (!temple) {
   return Astro.redirect("/temples/");
@@ -32,7 +35,33 @@ if (!temple) {
       <p class="eyebrow">{districtName} / {temple.status_label}</p>
       <h1>{temple.name}</h1>
       {showKana && <p class="kana">{temple.name_kana}</p>}
+      {"page_summary" in temple && temple.page_summary && <p class="lead">{temple.page_summary}</p>}
     </header>
+
+    {
+      media && (
+        <section class="section">
+          <h2>写真</h2>
+          <figure class="hero-photo">
+            <img src={media.hero_image} alt={`${temple.name}の主写真`} loading="eager" />
+          </figure>
+          <div class="photo-grid">
+            {media.photos.map((photo) => {
+              const category = getPhotoCategory(photo.category_id);
+              return (
+                <figure class="photo-card">
+                  <img src={photo.src} alt={photo.alt} loading="lazy" />
+                  <figcaption>
+                    <strong>{category?.label || "写真"}</strong>
+                    <span>{photo.caption}</span>
+                  </figcaption>
+                </figure>
+              );
+            })}
+          </div>
+        </section>
+      )
+    }
 
     <section class="section">
       <h2>基本情報</h2>
@@ -55,6 +84,29 @@ if (!temple) {
       <p>{temple.history_summary}</p>
       <p class="notice">現在は公式名簿に基づく基礎情報を掲載しています。由緒、文化財、写真、現地確認情報は、資料確認ができたものから追記します。</p>
     </section>
+
+    {
+      "research_highlights" in temple && Array.isArray(temple.research_highlights) && (
+        <section class="section">
+          <h2>国分寺についての要点</h2>
+          <ul class="plain-list">
+            {temple.research_highlights.map((highlight) => <li>{highlight}</li>)}
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      "page_rules" in temple && Array.isArray(temple.page_rules) && (
+        <section class="section">
+          <h2>このページの作成ルール</h2>
+          <ul class="plain-list">
+            {temple.page_rules.map((rule) => <li>{rule}</li>)}
+          </ul>
+          <a class="button-link" href="/photo-submit/">写真を投稿する</a>
+        </section>
+      )
+    }
 
     <section class="section">
       <h2>ご本尊</h2>

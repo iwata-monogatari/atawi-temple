@@ -1,11 +1,17 @@
 import temples from "../../data/temples.json";
 import districts from "../../data/districts.json";
+import templeMedia from "../../data/temple-media.json";
+import photoCategories from "../../data/photo-categories.json";
 
 export type Temple = (typeof temples)[number];
 export type District = (typeof districts)[number];
+export type TempleMedia = (typeof templeMedia)[number];
+export type PhotoCategory = (typeof photoCategories)[number];
 
 export const allTemples = temples;
 export const allDistricts = districts;
+export const allTempleMedia = templeMedia;
+export const allPhotoCategories = photoCategories;
 
 export const sectSlugMap: Record<string, string> = {
   "真言宗醍醐派": "shingon-daigo",
@@ -81,6 +87,14 @@ export function countTemplesByDistrict() {
 
 export function getTempleBySlug(slug: string) {
   return allTemples.find((temple) => temple.slug === slug);
+}
+
+export function getTempleMediaBySlug(slug: string) {
+  return allTempleMedia.find((media) => media.temple_slug === slug);
+}
+
+export function getPhotoCategory(categoryId: string | null | undefined) {
+  return allPhotoCategories.find((category) => category.category_id === categoryId);
 }
 
 export function isUnknownValue(value: string | null | undefined) {

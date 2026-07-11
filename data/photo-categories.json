@@ -1,0 +1,37 @@
+[
+  {
+    "category_id": "main-building",
+    "label": "本堂・堂宇",
+    "description": "本堂、薬師堂、庫裏、拝所など建物そのものが主題の写真。"
+  },
+  {
+    "category_id": "grounds",
+    "label": "境内全景",
+    "description": "境内の広がり、建物配置、参道、周辺環境が分かる写真。"
+  },
+  {
+    "category_id": "entrance-marker",
+    "label": "入口・石標",
+    "description": "寺号標、門前、参道入口、案内標柱など場所の入口を示す写真。"
+  },
+  {
+    "category_id": "signboard",
+    "label": "説明板・案内板",
+    "description": "文化財説明板、現地案内板、由緒板など文字情報を含む写真。"
+  },
+  {
+    "category_id": "stonework",
+    "label": "石造物・手水",
+    "description": "石灯籠、手水鉢、石仏、石碑、礎石などの写真。"
+  },
+  {
+    "category_id": "map-pilgrimage",
+    "label": "地図・札所案内",
+    "description": "霊場案内図、札所案内、周辺史跡マップなどの写真。"
+  },
+  {
+    "category_id": "other",
+    "label": "その他",
+    "description": "上記に分類しにくい補足写真。"
+  }
+]

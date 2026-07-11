@@ -1,0 +1,179 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { allPhotoCategories, allTemples } from "../../lib/temples";
+
+const temples = JSON.stringify(
+  allTemples.map((temple) => ({
+    slug: temple.slug,
+    name: temple.name,
+    name_kana: temple.name_kana,
+    area: temple.area,
+    address: temple.address,
+  })),
+);
+const categories = JSON.stringify(allPhotoCategories);
+---
+
+<BaseLayout
+  title="写真投稿｜ATAWI temple"
+  description="スマートフォンから寺院を選んで写真を投稿するATAWI templeの写真投稿ページです。"
+>
+  <section class="page-title">
+    <p class="eyebrow">Photo Submit</p>
+    <h1>寺院写真を投稿する</h1>
+    <p>
+      寺院を選択し、スマートフォンの写真をアップロードできます。投稿写真は自動分類の候補を付け、
+      編集確認後に寺院ページへ反映します。
+    </p>
+  </section>
+
+  <section class="search-panel photo-submit-panel" data-temples={temples} data-categories={categories}>
+    <form id="photo-submit-form" class="stack-form" enctype="multipart/form-data">
+      <label>
+        寺院を選択
+        <select name="temple_slug" required>
+          <option value="">寺院を選んでください</option>
+          {
+            allTemples.map((temple) => (
+              <option value={temple.slug}>
+                {temple.name}（{temple.name_kana} / {temple.area}）
+              </option>
+            ))
+          }
+        </select>
+      </label>
+
+      <label>
+        写真
+        <input name="photos" type="file" accept="image/*" multiple required />
+      </label>
+
+      <label>
+        お名前または表示名
+        <input name="submitter_name" type="text" placeholder="任意。公開名ではなく確認用です。" />
+      </label>
+
+      <label>
+        補足メモ
+        <textarea name="note" rows="4" placeholder="撮影日、場所、写真の説明、掲載時の注意など"></textarea>
+      </label>
+
+      <div class="notice">
+        <strong>投稿前の確認</strong>
+        <p>人の顔、車のナンバー、個人名が大きく写る写真は、公開前に編集側で確認します。寺院関係者の許可が必要そうな写真は、補足メモに状況を書いてください。</p>
+      </div>
+
+      <div>
+        <button type="submit">写真を送信する</button>
+      </div>
+    </form>
+
+    <section class="section preview-section" aria-live="polite">
+      <div class="section-heading">
+        <h2>自動分類候補</h2>
+        <span class="small">送信前に分類を直せます</span>
+      </div>
+      <div id="photo-preview" class="photo-grid"></div>
+      <pre id="submission-output" class="submission-output" hidden></pre>
+    </section>
+  </section>
+
+  <script is:inline>
+    // @ts-nocheck
+    const panel = document.querySelector("[data-temples]");
+    const form = document.querySelector("#photo-submit-form");
+    const preview = document.querySelector("#photo-preview");
+    const output = document.querySelector("#submission-output");
+    const categories = JSON.parse(panel.dataset.categories || "[]");
+
+    const fallbackCategory = categories.find((category) => category.category_id === "other") || categories[0];
+    const categoryOptions = categories
+      .map((category) => `<option value="${category.category_id}">${category.label}</option>`)
+      .join("");
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    function classifyByName(file) {
+      const name = file.name.toLowerCase().normalize("NFKC");
+      if (/map|案内|地図|霊場|札所/.test(name)) return "map-pilgrimage";
+      if (/sign|board|説明|案内|由緒/.test(name)) return "signboard";
+      if (/stone|碑|標|入口|門/.test(name)) return "entrance-marker";
+      if (/手水|chozu|石|灯籠/.test(name)) return "stonework";
+      if (/本堂|堂|hondo|main/.test(name)) return "main-building";
+      if (/境内|keidai|全景/.test(name)) return "grounds";
+      return fallbackCategory.category_id;
+    }
+
+    function renderPreview() {
+      const files = Array.from(form.photos.files || []);
+      preview.innerHTML = files
+        .map((file, index) => {
+          const url = URL.createObjectURL(file);
+          const categoryId = classifyByName(file);
+          return `
+            <article class="photo-card upload-card">
+              <img src="${url}" alt="${escapeHtml(file.name)}">
+              <div>
+                <strong>${escapeHtml(file.name)}</strong>
+                <label>
+                  分類候補
+                  <select name="photo_category_${index}" data-file-name="${escapeHtml(file.name)}">
+                    ${categoryOptions}
+                  </select>
+                </label>
+              </div>
+            </article>
+          `.replace(`value="${categoryId}"`, `value="${categoryId}" selected`);
+        })
+        .join("");
+    }
+
+    function buildDraft(status, detail) {
+      const data = new FormData(form);
+      const categoriesByFile = Array.from(preview.querySelectorAll("select")).map((select) => ({
+        file_name: select.dataset.fileName,
+        category_id: select.value,
+      }));
+      return {
+        status,
+        detail,
+        temple_slug: data.get("temple_slug"),
+        submitter_name: data.get("submitter_name"),
+        note: data.get("note"),
+        photos: categoriesByFile,
+      };
+    }
+
+    form.photos.addEventListener("change", renderPreview);
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      output.hidden = false;
+      output.textContent = "送信しています...";
+
+      const formData = new FormData(form);
+      try {
+        const response = await fetch("/api/photo-submissions", {
+          method: "POST",
+          body: formData,
+        });
+        const result = await response.json();
+        if (!response.ok || !result.ok) {
+          output.textContent = JSON.stringify(buildDraft("needs-cloudflare-r2", result), null, 2);
+          return;
+        }
+        output.textContent = JSON.stringify(buildDraft("submitted", result), null, 2);
+        form.reset();
+        preview.innerHTML = "";
+      } catch (error) {
+        output.textContent = JSON.stringify(buildDraft("local-draft", { message: String(error) }), null, 2);
+      }
+    });
+  </script>
+</BaseLayout>

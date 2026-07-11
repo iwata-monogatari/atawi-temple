@@ -1,0 +1,62 @@
+[
+  {
+    "temple_slug": "kokubunji-mitsuke",
+    "hero_image": "/assets/temples/kokubunji-mitsuke/hondo.webp",
+    "photos": [
+      {
+        "photo_id": "kokubunji-hondo-2026",
+        "src": "/assets/temples/kokubunji-mitsuke/hondo.webp",
+        "alt": "国分寺の堂宇正面",
+        "caption": "境内の堂宇。国分寺ページでは建物写真を基本の主写真として扱う。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kokubunji-keidai-2026",
+        "src": "/assets/temples/kokubunji-mitsuke/keidai.webp",
+        "alt": "国分寺境内の建物と前庭",
+        "caption": "堂宇と境内の様子。建物配置や参拝動線が分かる写真。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kokubunji-monument-2026",
+        "src": "/assets/temples/kokubunji-mitsuke/monument.webp",
+        "alt": "遠江国分寺を示す石標と参道",
+        "caption": "遠江国分寺を示す石標。入口・所在確認用の写真として掲載。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kokubunji-guide-shirube-2026",
+        "src": "/assets/temples/kokubunji-mitsuke/guide-shirube.webp",
+        "alt": "文化財の道しるべ 遠江国分寺跡とその周辺の説明板",
+        "caption": "磐田市教育委員会による遠江国分寺跡と周辺の説明板。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kokubunji-chozuishi-2026",
+        "src": "/assets/temples/kokubunji-mitsuke/chozuishi.webp",
+        "alt": "国分寺境内の手洗石",
+        "caption": "境内に残る手洗石。説明板には天正年間の銘が紹介されている。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kokubunji-yakushi-reijo-map-2026",
+        "src": "/assets/temples/kokubunji-mitsuke/yakushi-reijo-map.webp",
+        "alt": "遠江四十九薬師霊場案内図",
+        "caption": "遠江四十九薬師霊場案内図。国分寺周辺の札所・寺院の位置関係を示す。",
+        "category_id": "map-pilgrimage",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  }
+]

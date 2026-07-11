@@ -39,6 +39,15 @@ PUBLIC_FUJIGAOKA_ANALYTICS_SITE_ID=atawi-temple
 PUBLIC_FUJIGAOKA_ANALYTICS_ENABLED=true
 ```
 
+写真投稿を保存する場合は、Cloudflare R2に次のバケットを作成し、Pages Functionsのbindingへ追加します。
+
+| 項目 | 値 |
+|---|---|
+| R2 bucket | `atawi-temple-photos` |
+| Binding name | `ATAWI_PHOTO_BUCKET` |
+
+このbindingが未設定の場合、写真投稿ページは送信内容の下書きJSONを表示しますが、写真ファイルは保存されません。
+
 Preview環境の閲覧を本番集計へ混ぜたくない場合は、Previewだけ次にします。
 
 ```dotenv
