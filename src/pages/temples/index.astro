@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import TempleCard from "../../components/TempleCard.astro";
-import { allTemples } from "../../lib/temples";
+import { allDistricts, allTemples, getDistrictName } from "../../lib/temples";
 ---
 
 <BaseLayout
@@ -12,6 +12,13 @@ import { allTemples } from "../../lib/temples";
     <p class="eyebrow">Temple Index</p>
     <h1>磐田市の寺院一覧</h1>
     <p>寺院名、読み、住所、宗派、状態を確認できます。正式データは調査の進行にあわせて更新します。</p>
+  </section>
+
+  <section class="section">
+    <h2>9地区分類</h2>
+    <div class="filter-band">
+      {allDistricts.map((district) => <a href={`/search/?district=${district.district_id}`}>{district.name}</a>)}
+    </div>
   </section>
 
   <section class="section">
@@ -33,7 +40,7 @@ import { allTemples } from "../../lib/temples";
               <tr>
                 <td>{temple.name}</td>
                 <td>{temple.name_kana}</td>
-                <td>{temple.area}</td>
+                <td>{getDistrictName(temple.district_id)}</td>
                 <td>{temple.sect}</td>
                 <td>{temple.status_label}</td>
                 <td><a href={`/temples/${temple.slug}/`}>開く</a></td>
