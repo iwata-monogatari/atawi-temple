@@ -36,8 +36,8 @@ const showKana = !isUnknownValue(temple.name_kana);
       <dd>{knownValue(temple.main_deity)}</dd>
     </div>
     <div>
-      <dt>御朱印</dt>
-      <dd>{knownValue(temple.goshuin_status)}</dd>
+      <dt>創建・年代</dt>
+      <dd>{knownValue("founded_period" in temple ? temple.founded_period : null, "調査中")}</dd>
     </div>
   </dl>
   <p>{districtName}地区に所在する{temple.sect}の寺院です。公式名簿の基礎情報をもとに掲載しています。</p>

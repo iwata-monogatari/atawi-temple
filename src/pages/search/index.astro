@@ -141,7 +141,7 @@ const districts = JSON.stringify(allDistricts);
             <div><dt>地区</dt><dd>${escapeHtml(districtName)}</dd></div>
             <div><dt>宗派</dt><dd>${escapeHtml(temple.sect)}</dd></div>
             <div><dt>ご本尊</dt><dd>${escapeHtml(knownValue(temple.main_deity))}</dd></div>
-            <div><dt>御朱印</dt><dd>${escapeHtml(knownValue(temple.goshuin_status))}</dd></div>
+            <div><dt>創建・年代</dt><dd>${escapeHtml(knownValue(temple.founded_period, "調査中"))}</dd></div>
           </dl>
           <p>${escapeHtml(districtName)}地区に所在する${escapeHtml(temple.sect)}の寺院です。公式名簿の基礎情報をもとに掲載しています。</p>
         </article>

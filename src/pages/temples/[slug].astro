@@ -44,14 +44,16 @@ const visitNotes = "visit_notes" in temple && temple.visit_notes
 const pilgrimageNote = "pilgrimage_note" in temple && temple.pilgrimage_note
   ? temple.pilgrimage_note
   : null;
+const dankaInfo: any = "danka_info" in temple && temple.danka_info ? temple.danka_info : null;
+const annualEvents = dankaInfo && Array.isArray(dankaInfo.annual_events) ? dankaInfo.annual_events : [];
 
 const field = (value: string | null | undefined, pending = "調査中") => ({
   text: isUnknownValue(value) ? pending : value,
   pending: isUnknownValue(value),
 });
-const manned = field(temple.manned_status);
-const goshuin = field(temple.goshuin_status);
 const deity = field(temple.main_deity, "調査中・加筆待ち");
+const officialSite = dankaInfo?.official_site;
+const parking = field(dankaInfo?.parking, "調査中");
 ---
 
 <BaseLayout
@@ -164,6 +166,48 @@ const deity = field(temple.main_deity, "調査中・加筆待ち");
 
         <section class="detail-panel">
           <p class="section-number">04</p>
+          <h2>檀家の営み・行事</h2>
+          {dankaInfo && (annualEvents.length > 0 || dankaInfo.cemetery || dankaInfo.organization || dankaInfo.community_role) ? (
+            <div class="danka-info-list">
+              {annualEvents.length > 0 && (
+                <article>
+                  <h3>年中行事・法要</h3>
+                  <ul>
+                    {annualEvents.map((event: any) => (
+                      <li><strong>{event.name}</strong>{event.timing && <span>（{event.timing}）</span>}{event.note && <p>{event.note}</p>}</li>
+                    ))}
+                  </ul>
+                </article>
+              )}
+              {dankaInfo.cemetery && (
+                <article>
+                  <h3>供養・墓地</h3>
+                  <p>{dankaInfo.cemetery}</p>
+                </article>
+              )}
+              {dankaInfo.organization && (
+                <article>
+                  <h3>檀家組織</h3>
+                  <p>{dankaInfo.organization}</p>
+                </article>
+              )}
+              {dankaInfo.community_role && (
+                <article>
+                  <h3>地域との関わり</h3>
+                  <p>{dankaInfo.community_role}</p>
+                </article>
+              )}
+            </div>
+          ) : (
+            <div class="pending-block">
+              <strong>檀家向け情報は調査中です</strong>
+              <p>年中行事・法要、供養・墓地、檀家組織、地域との関わりを、寺院公式情報・公的資料から確認して加筆します。</p>
+            </div>
+          )}
+        </section>
+
+        <section class="detail-panel">
+          <p class="section-number">05</p>
           <h2>写真で見る境内</h2>
           {media ? (
             <div class="photo-record-list">
@@ -183,7 +227,7 @@ const deity = field(temple.main_deity, "調査中・加筆待ち");
         </section>
 
         <section class="detail-panel sources-panel">
-          <p class="section-number">05</p>
+          <p class="section-number">06</p>
           <h2>出典・参考資料</h2>
           <ol class="source-records">
             {temple.sources.map((source) => (
@@ -210,16 +254,23 @@ const deity = field(temple.main_deity, "調査中・加筆待ち");
             <div><dt>住所</dt><dd>{temple.address}</dd></div>
             <div><dt>地区</dt><dd>{districtName}</dd></div>
             {pilgrimageNote && <div><dt>霊場・札所</dt><dd>{pilgrimageNote}</dd></div>}
+            <div>
+              <dt>寺院公式サイト</dt>
+              <dd class={officialSite?.status === "あり" ? "confirmed-pill" : "pending-pill"}>
+                {officialSite?.status === "あり" && officialSite.url ? (
+                  <a href={officialSite.url} target="_blank" rel="noreferrer">あり</a>
+                ) : (
+                  officialSite?.status || "未確認"
+                )}
+              </dd>
+            </div>
           </dl>
         </section>
 
         <section class="side-panel">
-          <h2>参拝・現地情報</h2>
+          <h2>檀家・参拝情報</h2>
           <dl class="visit-status-list">
-            <div><dt>有人・無人</dt><dd class={manned.pending ? "pending-pill" : "confirmed-pill"}>{manned.text}</dd></div>
-            <div><dt>御朱印</dt><dd class={goshuin.pending ? "pending-pill" : "confirmed-pill"}>{goshuin.text}</dd></div>
-            <div><dt>拝観時間</dt><dd class="pending-pill">調査中</dd></div>
-            <div><dt>駐車場</dt><dd class="pending-pill">調査中</dd></div>
+            <div><dt>駐車場</dt><dd class={parking.pending ? "pending-pill" : "confirmed-pill"}>{parking.text}</dd></div>
           </dl>
           <p class="side-note">{visitNotes}</p>
         </section>
