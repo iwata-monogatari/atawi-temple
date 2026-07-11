@@ -9,6 +9,8 @@ ATAWI templeをCloudflare Pagesで公開する場合の設定です。
 
 ## Build Settings
 
+`wrangler.toml`にもCloudflare Pages用の出力先を定義しています。
+
 | 項目 | 値 |
 |---|---|
 | Framework preset | Astro |
@@ -16,6 +18,16 @@ ATAWI templeをCloudflare Pagesで公開する場合の設定です。
 | Build output directory | `dist` |
 | Root directory | 空欄 |
 | Node.js version | `20` 以上 |
+
+## Connect Git
+
+Cloudflare Pagesで新規プロジェクトを作成し、次のGitHubリポジトリを接続します。
+
+```text
+iwata-monogatari/atawi-temple
+```
+
+Production branchは`main`にします。
 
 ## Environment Variables
 
