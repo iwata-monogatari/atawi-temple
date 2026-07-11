@@ -50,6 +50,8 @@ ASTRO_TELEMETRY_DISABLED=1 HOME=/tmp npm --cache /tmp/npm-cache run build
 
 初期データは`data/temples.json`にあります。現時点のデータは本番確定前の仮登録です。寺院マスター確定後、同じ形式で正式データへ差し替えてください。
 
+公開URLは寺院名と地区名を組み合わせた名前ベースのslugにし、内部管理は`iwata-0001`のような番号IDで固定します。詳しくは`docs/url-policy.md`を参照してください。
+
 ## Cloudflare Pages
 
 公開設定は`docs/cloudflare-pages.md`にまとめています。
