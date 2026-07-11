@@ -1,0 +1,89 @@
+[
+ {
+  "slug": "taigetsuan-sagisaka",
+  "found": false
+ },
+ {
+  "slug": "zosanji-sagisaka",
+  "found": false
+ },
+ {
+  "slug": "shinpoin-mukasa",
+  "found": false
+ },
+ {
+  "slug": "hounji-mukasa",
+  "found": false
+ },
+ {
+  "slug": "anzenji-iwai",
+  "found": false
+ },
+ {
+  "slug": "hofukuji-okubo",
+  "found": false
+ },
+ {
+  "slug": "shogenin-kojima",
+  "found": true,
+  "danka_info": {
+   "official_site": {
+    "status": "あり",
+    "url": "https://www.syougenninn28.com/",
+    "checked_at": "2026-07-12"
+   },
+   "annual_events": [
+    {
+     "name": "坐禅会",
+     "timing": "月1回",
+     "note": "寺院公式サイトに月例開催の記載がある。新型コロナウイルス対策で一時休止していたとする情報もあり、現況は要確認"
+    },
+    {
+     "name": "法話会",
+     "timing": "不明",
+     "note": "寺院公式サイトに開催の記載があるが、具体的な時期・頻度は確認できていない"
+    }
+   ],
+   "cemetery": "公式サイトに「お墓・納骨堂の案内 お気軽にご相談ください」との記載があり、墓地・納骨堂に関する相談を受け付けている。永代供養墓か個別墓かなど詳細は確認できていない",
+   "parking": "公式サイト・曹洞禅ナビいずれにも駐車場に関する具体的な記載は確認できなかった"
+  },
+  "research_todos": [
+   "正眼院公式サイト内の「お寺について・年間行事」「お役立ち」ページに直接アクセスし、施餓鬼会・彼岸会等の具体的な日程を確認する",
+   "坐禅会が現在も継続開催されているか（コロナ後の再開状況）を確認する",
+   "護持会・世話人会など檀家組織の有無を確認する",
+   "駐車場の有無を現地確認する"
+  ],
+  "sources": [
+   {
+    "title": "正眼院 公式サイト",
+    "type": "寺院公式情報",
+    "url": "https://www.syougenninn28.com/",
+    "note": "曹洞禅ナビ経由で坐禅会・法話会・墓地/納骨堂案内の記載を確認"
+   },
+   {
+    "title": "正眼院 - 曹洞禅ナビー寺院検索",
+    "type": "寺院公式情報",
+    "url": "https://sotozen-navi.com/detail/index_220927.html",
+    "note": "曹洞宗公式ポータルサイト内の正眼院ページ。公式サイト・Facebookへのリンクと行事・墓地案内の記載を確認"
+   },
+   {
+    "title": "正眼院 磐田市 曹洞宗（Facebook）",
+    "type": "寺院公式情報",
+    "url": "https://www.facebook.com/syougenninn/",
+    "note": "寺院公式Facebookページの存在を確認（投稿内容の詳細確認には至らず）"
+   }
+  ]
+ },
+ {
+  "slug": "mannenji-kusasaki",
+  "found": false
+ },
+ {
+  "slug": "jushouji-kusasaki",
+  "found": false
+ },
+ {
+  "slug": "zenkaiji-nishijima",
+  "found": false
+ }
+]

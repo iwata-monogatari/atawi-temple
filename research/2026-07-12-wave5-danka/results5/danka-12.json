@@ -1,0 +1,45 @@
+[
+ {
+  "slug": "tenryuin-kaminobe",
+  "found": true,
+  "danka_info": {
+   "official_site": {"status": "不明", "note": "曹洞宗公式寺院ポータル「曹洞禅ナビ」の天龍院ページに「公式ホームページ」「Facebookページ」「Instagramページ」の項目名は表示されているが、実際のリンク先URLはページ内に記載がなく、独自サイト・SNSの実在は確認できなかった。"},
+   "organization": "曹洞宗公式寺院ポータル「曹洞禅ナビ」の天龍院ページに「梅花講」のアイコンが表示されており、梅花講（法要儀式で用いる詠讃歌の講）を有するとみられる。"
+  },
+  "research_todos": ["天龍院の公式ホームページ・SNSアカウントの実在確認（曹洞禅ナビのリンクが機能しているか現地または再クロールで要確認）", "年中行事・墓地永代供養・護持会・駐車場の現地確認"],
+  "sources": [
+   {"title": "天龍院 - 曹洞禅ナビ 寺院検索（曹洞宗公式寺院ポータルサイト）", "type": "行政・公的資料", "url": "https://sotozen-navi.com/detail/index_221229.html", "note": "住所・電話番号のほか、公式ホームページ／Facebook／Instagramの項目名と梅花講アイコンの表示を確認。ただしリンク先URLの記載なし。"}
+  ]
+ },
+ {
+  "slug": "ichiunsai-shimonobe",
+  "found": false
+ },
+ {
+  "slug": "saikoji-matsunokijima",
+  "found": true,
+  "danka_info": {
+   "official_site": {"status": "不明", "note": "曹洞宗公式寺院ポータル「曹洞禅ナビ」の最廣寺ページに「公式ホームページ」「Facebookページ」「Instagramページ」の項目名は表示されているが、実際のリンク先URLはページ内に記載がなく、独自サイト・SNSの実在は確認できなかった。"}
+  },
+  "research_todos": ["最廣寺の公式ホームページ・SNSアカウントの実在確認", "年中行事・墓地永代供養・護持会・駐車場の現地確認"],
+  "sources": [
+   {"title": "最廣寺 - 曹洞禅ナビ 寺院検索（曹洞宗公式寺院ポータルサイト）", "type": "行政・公的資料", "url": "https://sotozen-navi.com/detail/index_221230.html", "note": "住所・電話番号のほか、公式ホームページ／Facebook／Instagramの項目名の表示を確認。ただしリンク先URLの記載なし。"}
+  ]
+ },
+ {
+  "slug": "myofukuji-fukude",
+  "found": false
+ },
+ {
+  "slug": "chikyoin-shiraha",
+  "found": false
+ },
+ {
+  "slug": "myomanji-kaminobe",
+  "found": false
+ },
+ {
+  "slug": "honmyoin-iwai",
+  "found": false
+ }
+]

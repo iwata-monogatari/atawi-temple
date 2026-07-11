@@ -1,0 +1,58 @@
+[
+ {
+  "slug": "manpukuji-kaketsuka-799",
+  "found": false
+ },
+ {
+  "slug": "gyokoji-ikeda",
+  "found": true,
+  "danka_info": {
+   "official_site": {"status": "確認できず", "checked_at": "2026-07-12"},
+   "annual_events": [],
+   "community_role": "境内の藤「熊野の長フジ」（国指定天然記念物）の開花に合わせた地域行事「熊野の長藤まつり」が例年4月中旬から下旬にかけて行われ、開花情報の発信や無料シャトルバスの運行などの運営に地元組織の池田まちづくり協議会が関わっていることが確認できる。"
+  },
+  "research_todos": [
+   "年中行事（施餓鬼会・彼岸会等）の実施有無・時期",
+   "永代供養・納骨堂等の墓地情報の有無",
+   "護持会・世話人会等檀家組織の公開情報の有無",
+   "熊野御前の年忌供養など寺院独自の法要の有無"
+  ],
+  "sources": [
+   {"title": "熊野の長フジ｜磐田市公式ウェブサイト", "type": "行政・公的資料", "url": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kunishitei/1002051.html", "note": "国指定天然記念物としての由緒・所在地確認"},
+   {"title": "熊野の長藤について｜磐田市観光協会", "type": "民間二次情報", "url": "https://kanko-iwata.jp/2026/04/post-15638/", "note": "熊野の長藤まつりの開花情報発信・シャトルバス運行に池田まちづくり協議会が関わっている旨の記載"},
+   {"title": "池田まちづくり協議会", "type": "民間二次情報", "url": "https://ikeda-uk.jp/", "note": "地元地域組織の存在確認（行興寺固有の詳細記載は未確認）"}
+  ]
+ },
+ {
+  "slug": "jigenji-kamikandamasu",
+  "found": false
+ },
+ {
+  "slug": "entsuji-ohira",
+  "found": false
+ },
+ {
+  "slug": "mushuoji-mushuo",
+  "found": false
+ },
+ {
+  "slug": "jokoji-shikiji",
+  "found": false
+ },
+ {
+  "slug": "ryounan-shikiji",
+  "found": false
+ },
+ {
+  "slug": "eimeiji-shikiji",
+  "found": false
+ },
+ {
+  "slug": "eianji-shikiji",
+  "found": false
+ },
+ {
+  "slug": "seiryo-in-iwamuro",
+  "found": false
+ }
+]

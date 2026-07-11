@@ -1,0 +1,72 @@
+[
+ {
+  "slug": "senzoji-nakaizumi",
+  "found": false
+ },
+ {
+  "slug": "renpukuji-ninomiya",
+  "found": false
+ },
+ {
+  "slug": "jionji-mitsuke",
+  "found": false
+ },
+ {
+  "slug": "kenshoji-mitsuke",
+  "found": false
+ },
+ {
+  "slug": "shinnyoji-sagisaka",
+  "found": false
+ },
+ {
+  "slug": "myosenji-araide",
+  "found": false
+ },
+ {
+  "slug": "jokoji-maeno",
+  "found": true,
+  "danka_info": {
+   "official_site": {"status": "あり", "url": "https://jokouji.com/", "checked_at": "2026-07-12"},
+   "annual_events": [],
+   "cemetery": "後継者がいない人向けの永代供養を実施。檀家になる必要はなく、宗旨宗派を問わず、年会費・管理費もかからない。生前予約も可能で、彼岸・お盆には曹洞宗の作法に基づく法要を営む（永代供養料は要問合せ）。",
+   "organization": "護持会等の名称は公式サイト上には明記されていないが、平成20年（2008年）7月の本堂再建に際し「壇信徒および関係各位の御理解、御協力」により事業が実施されたことが寺院概要ページに記されており、檀信徒による護持体制がうかがえる。",
+   "community_role": "末寺数ヶ寺との関係があり、本堂再建時には末寺の本尊も本堂西室に安座されたと寺院概要ページに記載がある。",
+   "parking": "公式サイトの交通案内ページに駐車場に関する記載はなし（要問合せ）"
+  },
+  "history_addendum": "寺院概要ページによれば、定光寺は開創年月日・開基不明ながら、慶長3年（1598年）3月22日に袋井市久能可睡斎18世華亭豚秀和尚が中興し真言宗から曹洞宗に改めたとされる。慶安元年（1648年）9月17日には徳川家光より石高12石9斗の朱印を賜った。当初は字上下にあったが3世元峰和尚の代に現在地へ移転し、昭和53年（1978年）位牌堂、平成3年（1991年）書院庫裡、平成20年（2008年）7月に本堂を再建した。",
+  "research_todos": [
+   "護持会・世話人会の正式名称と活動内容の現地確認",
+   "駐車場の有無・台数の現地確認",
+   "施餓鬼会・彼岸会等の具体的な年中行事日程の現地確認（公式サイトに記載なし）"
+  ],
+  "sources": [
+   {"title": "定光寺 公式サイト（トップ）", "type": "寺院公式情報", "url": "https://jokouji.com/", "note": "2024年12月開設。永代供養墓の千手観音修復クラウドファンディングで知られる寺院独自の公式サイトを確認"},
+   {"title": "永代供養 - 定光寺", "type": "寺院公式情報", "url": "https://jokouji.com/eitai/", "note": "永代供養の内容・条件（檀家不要、宗旨宗派不問、彼岸・お盆の法要実施）を確認"},
+   {"title": "寺院概要 - 定光寺", "type": "寺院公式情報", "url": "https://jokouji.com/aboutus/", "note": "由緒・沿革・本堂再建時の壇信徒協力・末寺関係の記述を確認"},
+   {"title": "法事法要 - 定光寺", "type": "寺院公式情報", "url": "https://jokouji.com/houji/", "note": "葬儀・法事の受付方針（お布施は「お気持ちで」）を確認、年中行事の記載はなし"},
+   {"title": "交通案内 - 定光寺", "type": "寺院公式情報", "url": "https://jokouji.com/access/", "note": "電車・車でのアクセス記載を確認、駐車場情報の明記はなし"}
+  ]
+ },
+ {
+  "slug": "jissaiji-samejima",
+  "found": true,
+  "danka_info": {
+   "official_site": {"status": "あり（URL未確認）", "url": "", "checked_at": "2026-07-12"}
+  },
+  "research_todos": [
+   "曹洞禅ナビの実際寺ページ（https://sotozen-navi.com/detail/index_220922.html）は公式ホームページ・Facebookページ・Instagramページの存在を示すリンク項目を掲載しているが、JavaScript経由のリンクのためURLをテキスト取得できなかった。ブラウザで直接開いてURLを確認し、年中行事・墓地・護持会情報を追加調査する必要がある。"
+  ],
+  "sources": [
+   {"title": "実際寺 - 曹洞禅ナビ 寺院検索", "type": "寺院公式情報", "url": "https://sotozen-navi.com/detail/index_220922.html", "note": "曹洞宗公式ポータルに実際寺（磐田市鮫島202）の公式ホームページ・Facebook・Instagramへのリンク項目が存在することを確認したが、実URLは取得できず"}
+  ]
+ },
+ {
+  "slug": "koganji-kusasaki",
+  "found": false
+ },
+ {
+  "slug": "shokoji-shirabyoshi",
+  "found": false
+ }
+]

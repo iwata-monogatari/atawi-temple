@@ -1,0 +1,87 @@
+[
+ {
+  "slug": "genmyoji-mitsuke",
+  "found": true,
+  "danka_info": {
+   "official_site": {"status": "あり", "url": "https://honryuzan.genmyouji.nichiren-shu.jp/", "checked_at": "2026-07-12"},
+   "annual_events": [
+    {"name": "御命講", "timing": "11月11日・12日", "note": "元中2年（1385年）の日什上人以来続くとされる行事で、子育て草履の祈祷により親が子の健やかな成長を祈願する。檀家が参列し、地域住民にも親しまれてきたとされる。寺院公式サイトによる。"}
+   ],
+   "cemetery": "永代供養墓・樹木葬・納骨堂等を備え、個別墓と合祀墓の選択肢があるとされる（民間霊園紹介サイトの記載。寺院公式サイトにも「埋葬・埋蔵について」という案内ページが設けられており、内容の方向性は一致する）。",
+   "community_role": "御命講は地域住民にも親しまれてきた行事とされる（寺院公式サイトによる）。",
+   "parking": "駐車場を備えるとされる（民間情報サイトの記載）。"
+  },
+  "research_todos": ["公式サイトの「埋葬・埋蔵について」ページが直接アクセス不可（403）だったため、供養・墓地の詳細は現地または再アクセスでの確認が望ましい", "護持会等の檀家組織に関する公開情報は確認できず"],
+  "sources": [
+   {"title": "本立山 玄妙寺（公式サイト）", "type": "寺院公式情報", "url": "https://honryuzan.genmyouji.nichiren-shu.jp/", "note": "由緒・年中行事・寺報等のページ構成を確認"},
+   {"title": "御命講と玄妙寺", "type": "寺院公式情報", "url": "https://honryuzan.genmyouji.nichiren-shu.jp/link07/07_0001.htm", "note": "御命講の由来と檀家参列について"},
+   {"title": "御命講ポスター", "type": "寺院公式情報", "url": "https://honryuzan.genmyouji.nichiren-shu.jp/link05/05_0001.htm", "note": "御命講の日程（11月11日・12日）"},
+   {"title": "玄妙寺(静岡県磐田市)の永代供養墓・樹木葬・納骨堂", "type": "民間二次情報", "url": "https://eitaikuyo.jp/searcht/temple/T-0000037363", "note": "供養・墓地・駐車場に関する記載。公式サイトのページ構成と整合するため採用"}
+  ]
+ },
+ {
+  "slug": "nipponzan-myohoji-iwata",
+  "found": true,
+  "danka_info": {
+   "official_site": {"status": "あり（教団本部サイト）", "url": "https://nipponzanmyohoji.org/", "checked_at": "2026-07-12", "note": "日本山妙法寺大僧伽全体の公式サイト。磐田小僧伽単独の公式サイト・公式SNSは確認できなかった"},
+   "organization": "日本山妙法寺大僧伽は藤井日達を創立者とする法華系の教団で、出家修行者を中心に構成され、修行者は妻帯せず、檀家を持たない運営形態をとるとされる（教団公式サイト・複数の百科事典的情報源による）。そのため磐田小僧伽についても、一般寺院のような檀家組織は確認されない。",
+   "community_role": "教団全体としてうちわ太鼓を用いた平和行脚や仏舎利塔建立で知られるが、磐田小僧伽固有の地域行事・防災協力等を伝える公開資料は確認できなかった。"
+  },
+  "history_addendum": "日本山妙法寺磐田小僧伽が属する日本山妙法寺大僧伽は、出家修行者のみで構成され檀家を持たない教団運営を特徴とすると伝えられる。",
+  "research_todos": ["磐田小僧伽独自の行事日程・地域活動については現地確認が必要"],
+  "sources": [
+   {"title": "日本山妙法寺（公式サイト）", "type": "寺院公式情報", "url": "https://nipponzanmyohoji.org/", "note": "教団の活動方針・行脚案内を確認"},
+   {"title": "日本山妙法寺大僧伽 - Wikipedia", "type": "民間二次情報", "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E5%B1%B1%E5%A6%99%E6%B3%95%E5%AF%BA%E5%A4%A7%E5%83%A7%E4%BC%BD", "note": "檀家を持たない出家修行者中心の教団である旨の記載。公式サイトの活動内容と整合するため採用"}
+  ]
+ },
+ {
+  "slug": "saikoji-kaketsuka",
+  "found": true,
+  "danka_info": {
+   "official_site": {"status": "なし", "checked_at": "2026-07-12"},
+   "annual_events": [
+    {"name": "修正会", "timing": "1月"},
+    {"name": "涅槃会", "timing": "2月"},
+    {"name": "善導会", "timing": "3月"},
+    {"name": "彼岸会", "timing": "3月・9月"},
+    {"name": "宗祖降誕会", "timing": "4月"},
+    {"name": "灌仏会", "timing": "4月"},
+    {"name": "御忌会", "timing": "5月"},
+    {"name": "寺施餓鬼会", "timing": "7月"},
+    {"name": "十夜会", "timing": "11月"},
+    {"name": "成道会", "timing": "12月"}
+   ],
+   "organization": "春・秋の彼岸会や盂蘭盆会の時期に檀家宅を巡回し、祖先供養と念仏を勧める活動を行っているとされる（静岡教区浄土宗青年会の寺院紹介による）。",
+   "parking": "駐車場ありとされる（浄土宗公式の寺院検索サイトによる）。"
+  },
+  "research_todos": ["永代供養・納骨堂等の墓地情報は確認できず", "護持会等の組織名称・地域防災との関わりは未確認"],
+  "sources": [
+   {"title": "147 西光寺 磐田市掛塚", "type": "寺院公式情報", "url": "https://jodo-ss.com/temple_list/147%E3%80%80%E8%A5%BF%E5%85%89%E5%AF%BA%E3%80%80%E7%A3%90%E7%94%B0%E5%B8%82%E6%8E%9B%E5%A1%9A/", "note": "静岡教区浄土宗青年会による年中行事一覧・檀家宅訪問活動の記載"},
+   {"title": "西光寺 | 寺院を検索する | 浄土宗 寺院検索", "type": "寺院公式情報", "url": "http://otera.jodo.or.jp/temple/20-147/", "note": "浄土宗公式の寺院検索サイト。駐車場ありの記載、住所・電話番号を確認"}
+  ]
+ },
+ {
+  "slug": "kokuseiji-kaketsuka",
+  "found": true,
+  "danka_info": {
+   "official_site": {"status": "なし", "checked_at": "2026-07-12"},
+   "annual_events": [
+    {"name": "修正会", "timing": "1月"},
+    {"name": "彼岸会", "timing": "3月・9月"},
+    {"name": "御忌会", "timing": "4月"},
+    {"name": "施餓鬼会", "timing": "7月"},
+    {"name": "十夜会", "timing": "11月"}
+   ]
+  },
+  "research_todos": ["墓地・護持会・地域との関わり・駐車場の情報は確認できず"],
+  "sources": [
+   {"title": "148 國清寺 磐田市掛塚", "type": "寺院公式情報", "url": "https://jodo-ss.com/temple_list/148%E3%80%80%E5%9B%BD%E6%B8%85%E5%AF%BA%E3%80%80%E7%A3%90%E7%94%B0%E5%B8%82%E6%8E%9B%E5%A1%9A/", "note": "静岡教区浄土宗青年会による年中行事一覧を確認"}
+  ]
+ },
+ {"slug": "honshoji-kounodai", "found": false},
+ {"slug": "senshoji-iwai", "found": false},
+ {"slug": "shinshinkyo-mitsuke", "found": false},
+ {"slug": "shinshinkyo-honbu-mitsuke", "found": false},
+ {"slug": "rendaiji-yashiroyama", "found": false},
+ {"slug": "manpukuji-kaketsuka-819", "found": false}
+]

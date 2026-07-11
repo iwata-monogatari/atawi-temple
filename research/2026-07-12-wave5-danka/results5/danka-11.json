@@ -1,0 +1,104 @@
+[
+ {
+  "slug": "fukuoji-morimoto",
+  "found": true,
+  "danka_info": {
+   "official_site": {"status": "なし", "note": "曹洞宗公式ポータル「曹洞禅ナビ」の寺院ページ（森本287番地の当寺を確認）で公式ホームページ・Facebook・Instagramのリンク欄はいずれも未設定（プレースホルダーのみ）で、独自サイト・SNSは確認できなかった。", "checked_at": "2026-07-12"}
+  },
+  "research_todos": ["年中行事・永代供養・護持会等の情報は曹洞禅ナビ含め見つからず。現地掲示・檀家への聞き取りでの確認が必要"],
+  "sources": [
+   {"title": "福王寺 - 曹洞禅ナビー寺院検索", "type": "寺院公式情報", "url": "https://sotozen-navi.com/detail/index_220964.html", "note": "曹洞宗公式ポータルの登録ページ。住所は磐田市森本287番地で一致を確認。公式サイト等のリンクは未登録（#）。年間行事等のサブページも未作成"}
+  ]
+ },
+ {
+  "slug": "rinshoji-kodateno",
+  "found": false
+ },
+ {
+  "slug": "kotokuji-morishita",
+  "found": true,
+  "danka_info": {
+   "official_site": {"status": "なし", "note": "曹洞禅ナビの寺院ページ（森下612番地の当寺を確認）で公式ホームページ・Facebook・Instagramのリンク欄はいずれも未設定（プレースホルダーのみ）。個人ブログでの探訪記事はあるが檀家向け情報ではない", "checked_at": "2026-07-12"}
+  },
+  "research_todos": ["年中行事・永代供養・護持会等の情報は見つからず。現地掲示・檀家への聞き取りでの確認が必要"],
+  "sources": [
+   {"title": "興徳寺 - 曹洞禅ナビー寺院検索", "type": "寺院公式情報", "url": "https://sotozen-navi.com/detail/index_220958.html", "note": "曹洞宗公式ポータルの登録ページ。住所は磐田市森下612番地で一致を確認。公式サイト等のリンクは未登録（#）。年間行事等のサブページも未作成"}
+  ]
+ },
+ {
+  "slug": "yofukuji-shimohongo",
+  "found": true,
+  "danka_info": {
+   "official_site": {"status": "あり", "url": "http://youfukuji.web.fc2.com/", "note": "曹洞禅ナビに寺院公式ホームページとして登録されている", "checked_at": "2026-07-12"},
+   "annual_events": [
+    {"name": "降誕会", "timing": "4月8日", "note": "お釈迦様の誕生を祝う法要。甘茶をかけ誕生仏に参拝。寺院公式情報（曹洞禅ナビ掲載）による"},
+    {"name": "山門大施食会（盂蘭盆会）", "timing": "8月11日午前7時", "note": "お盆の大法要。檀信徒が参列すると案内されている。寺院公式情報による"},
+    {"name": "両祖忌", "timing": "9月29日", "note": "道元禅師・瑩山禅師の命日法要。寺院公式情報による"},
+    {"name": "達磨忌", "timing": "10月5日", "note": "達磨大師の命日法要。寺院公式情報による"},
+    {"name": "成道会", "timing": "12月8日", "note": "お釈迦様が悟りを開いた日を記念する法要。寺院公式情報による"}
+   ],
+   "cemetery": "本堂隣接の墓地のほか、様々な事情でお墓を持てない方のための永代供養塔（観音様を奉安）、動物供養墓（ペット供養墓）がある。朝の勤行やお盆に檀信徒・永代供養利用者への読経供養を行っている。寺院公式情報（曹洞禅ナビ）による",
+   "organization": "「檀信徒」という語で檀家層への言及があるが、護持会・世話人会等の名称を持つ組織についての公開情報は確認できなかった",
+   "community_role": "現住職は長年高校教師を務めた経歴を持ち、坐禅会・写経会・文化講演会・ベビーマッサージ（タッチケア）など幅広い世代向けの活動を通じて「地域の皆さんに愛されるお寺」を目指すと公式サイトで述べている"
+  },
+  "research_todos": ["公式サイト（fc2.com）は環境上直接閲覧できなかったため、駐車場情報・護持会の有無は現地または電話での追加確認が望ましい"],
+  "sources": [
+   {"title": "養福寺 - 曹洞禅ナビー寺院検索（沿革・年間行事）", "type": "寺院公式情報", "url": "https://sotozen-navi.com/detail/article_220923_1.html", "note": "寺院自身が登録する公式ポータルページ。年間行事・由緒を記載"},
+   {"title": "養福寺 - 曹洞禅ナビー寺院検索（お役立ち）", "type": "寺院公式情報", "url": "https://sotozen-navi.com/detail/article_220923_4.html", "note": "永代供養塔・動物供養墓の案内を記載"},
+   {"title": "養福寺 公式ホームページ", "type": "寺院公式情報", "url": "http://youfukuji.web.fc2.com/", "note": "曹洞禅ナビに登録された公式サイトURL（今回は直接閲覧不可のためURL記録のみ）"}
+  ]
+ },
+ {
+  "slug": "myohoji-ikeda",
+  "found": true,
+  "danka_info": {
+   "official_site": {"status": "なし", "note": "曹洞禅ナビの寺院ページ（池田743番地の当寺を確認）で公式ホームページ・Facebook・Instagramのリンク欄はいずれも未設定（プレースホルダーのみ）。年間行事等のサブページも未作成", "checked_at": "2026-07-12"}
+  },
+  "research_todos": ["年中行事・永代供養・護持会等の情報は見つからず。地元の池田まちづくり協議会や現地掲示での確認が必要"],
+  "sources": [
+   {"title": "妙法寺 - 曹洞禅ナビー寺院検索", "type": "寺院公式情報", "url": "https://sotozen-navi.com/detail/index_220963.html", "note": "曹洞宗公式ポータルの登録ページ。住所は磐田市池田743番地で一致を確認。公式サイト等のリンクは未登録（#）"}
+  ]
+ },
+ {
+  "slug": "seidoin-ikeda",
+  "found": false
+ },
+ {
+  "slug": "daienji-kamo",
+  "found": true,
+  "danka_info": {
+   "official_site": {"status": "不明", "note": "曹洞禅ナビ上で磐田市加茂の当寺に一致する登録ページを特定できなかった（同名の他地域寺院が多数ヒットし混同を避けるため未確定）", "checked_at": "2026-07-12"},
+   "community_role": "当寺は寺谷用水（世界かんがい施設遺産）を天正16年（1588年）に開削した代官・平野重定の墓所であり、命日にあたる毎年10月8日に「用水祭」（例祭）が営まれている。寺谷用水土地改良区の役員・総代、県・磐田市の関係者等が参列し、用水開発に貢献した先人を偲ぶ供養が行われる。2023年（令和5年）10月には「平野重定公400年祭」が営まれた。寺谷用水土地改良区公式サイトによる"
+  },
+  "research_todos": ["寺院独自の公式サイト・SNSの有無、永代供養・護持会の有無は未確認。現地または電話での追加確認が望ましい"],
+  "sources": [
+   {"title": "寺谷用水の歩み | 寺谷用水土地改良区", "type": "行政・公的資料", "url": "https://teradani.com/about/history/", "note": "平野重定の法要（用水祭）の開催日・参列者・2023年400年祭について記載。土地改良区（準公的組織）公式サイト"}
+  ]
+ },
+ {
+  "slug": "daizoji-tomei",
+  "found": false
+ },
+ {
+  "slug": "shokyuin-mitsue",
+  "found": false
+ },
+ {
+  "slug": "hoonan-kaminobe",
+  "found": true,
+  "danka_info": {
+   "official_site": {"status": "なし", "note": "曹洞禅ナビ上で公式ホームページ欄は未設定（#）。Facebookページのみ実リンクが確認できた", "checked_at": "2026-07-12"},
+   "annual_events": [
+    {"name": "六地蔵尊祈願祭", "timing": "毎年10月24日午後2時より", "note": "寺院公式情報（曹洞禅ナビ）による"}
+   ],
+   "cemetery": "境内隣接の墓地のほか、永代供養塔、樹木葬墓地がある。寺院公式情報（曹洞禅ナビ）による",
+   "parking": "お参りしやすい平地に立地し、駐車場も完備している。寺院公式情報（曹洞禅ナビ）による"
+  },
+  "research_todos": ["護持会・世話人会等の組織についての公開情報は見つからず。現地での確認が望ましい"],
+  "sources": [
+   {"title": "法音庵 - 曹洞禅ナビー寺院検索（沿革・年間行事）", "type": "寺院公式情報", "url": "https://sotozen-navi.com/detail/article_221244_1.html", "note": "六地蔵尊祈願祭の開催日を記載"},
+   {"title": "法音庵 - 曹洞禅ナビー寺院検索（お役立ち）", "type": "寺院公式情報", "url": "https://sotozen-navi.com/detail/article_221244_4.html", "note": "墓地・永代供養塔・樹木葬墓地・駐車場の案内を記載"},
+   {"title": "法音庵 Facebookページ", "type": "寺院公式情報", "url": "https://www.facebook.com/houonan/", "note": "曹洞禅ナビに登録された公式Facebookリンク"}
+  ]
+ }
+]

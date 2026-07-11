@@ -1,0 +1,114 @@
+[
+ {
+  "slug": "toshoji-higashikaizuka",
+  "found": false,
+  "research_todos": ["公式サイト・SNS・年中行事・墓地・護持会情報の有無を現地確認"]
+ },
+ {
+  "slug": "renjoji-shingai",
+  "found": true,
+  "danka_info": {
+   "official_site": {"status": "あり", "url": "https://iwata-renjyoji.com/", "checked_at": "2026-07-12"},
+   "annual_events": [
+    {"name": "新年祈祷会", "timing": "1月", "note": "寺院公式サイトによる"},
+    {"name": "春彼岸会法要", "timing": "3月", "note": "寺院公式サイトによる"},
+    {"name": "お盆供養", "timing": "7月または8月", "note": "寺院公式サイトによる"},
+    {"name": "秋彼岸会法要", "timing": "9月", "note": "寺院公式サイトによる"},
+    {"name": "山門大施食会", "timing": "時期の詳細は公式サイト上では明記されていない", "note": "寺院公式サイトに特別行事として記載"}
+   ],
+   "cemetery": "永代供養塔「ありが塔」があり、檀家にならなくても利用できる（個人20万円、納骨から1年間は個別安置、その後は合祀。春彼岸・お盆・秋彼岸の年3回合同供養）。別途、檀家になることを条件に高台墓地（一区画10万円、秋葉山古墳上の高台）と平地墓地（一区画20万円、車での乗り付け可能で段差なし）の2種の墓地区画がある。寺院公式サイトによる。",
+   "organization": "護持会があり、護持会総会や墓地奉仕作業などの活動が行われている。墓地購入者の年会費（護持会費・管理費）の目安は8,000円程度。寺院公式サイトによる。",
+   "community_role": "境内周辺の稲荷山・秋葉山・経塚古墳などの地域史跡や、平重盛・中泉代官大草太郎左衛門といった郷土の歴史的人物との関わりを、寺院公式サイトで紹介している。",
+   "parking": "駐車場があり、公式サイトのアクセスページに墓地までの案内が掲載されている。"
+  },
+  "research_todos": [
+   "登記上の地番（磐田市新貝1556番地の1）と寺院公式サイト記載の住所（磐田市新貝一丁目29-2）の相違の確認",
+   "山門大施食会の具体的な開催時期の現地確認"
+  ],
+  "sources": [
+   {"title": "曹洞宗 三白山 連城寺 公式サイト", "type": "寺院公式情報", "url": "https://iwata-renjyoji.com/", "note": "年中行事・護持会・沿革情報を確認"},
+   {"title": "永代供養・墓地 - 連城寺公式サイト", "type": "寺院公式情報", "url": "https://iwata-renjyoji.com/kuyou/", "note": "永代供養塔「ありが塔」・墓地区画・費用の詳細を確認"},
+   {"title": "アクセス - 連城寺公式サイト", "type": "寺院公式情報", "url": "https://iwata-renjyoji.com/access/", "note": "駐車場・地域史跡情報を確認"}
+  ]
+ },
+ {
+  "slug": "zenkyuin-kamada",
+  "found": false,
+  "research_todos": [
+   "公式サイト・SNSの有無を現地確認（同名で愛知県豊橋市・長野県松本市に別の曹洞宗「全久院」があり、検索時の混同に注意）"
+  ]
+ },
+ {
+  "slug": "fukuoji-jonosaki",
+  "found": true,
+  "danka_info": {
+   "official_site": {"status": "確認できず"},
+   "annual_events": [
+    {"name": "風祭り", "timing": "3月8日", "note": "永観2年（984年）に遠州一帯を襲った暴風を陰陽師・安倍晴明の祈祷で鎮めたという伝承に由来する行事とされる。中遠地域広域行政組合の紹介ページおよび遠州三十三観音霊場めぐりサイトの双方で同内容が確認できる。"}
+   ],
+   "community_role": "山号「風祭山」の由来となった安倍晴明の暴風鎮めの伝承が地域の言い伝えとして伝わり、境内には晴明が祈祷したと伝わる「安倍晴明堂」の旧跡が残るとされる。"
+  },
+  "history_addendum": "山号「風祭山」は、永観2年（984年）の暴風の際に諸国行脚中であった陰陽師・安倍晴明が祈祷して嵐を鎮めたという伝承に由来すると伝えられる。境内には晴明が祈祷したと伝わる旧跡（安倍晴明堂）が残る。",
+  "research_todos": [
+   "公式サイト・SNSの有無を再確認（「fukuouji.or.jp」は長野県佐久市の真言宗智山派の別の福王寺であり、磐田市城之崎の当寺とは無関係。混同に厳重注意）",
+   "風祭りが現在も檀家・地域住民参列の行事として継続しているかの現地確認"
+  ],
+  "sources": [
+   {"title": "中遠昔ばなし 福王寺［風祭山と安倍晴明］（磐田市）", "type": "行政・公的資料", "url": "https://www.chuen.net/mukashi/mukashi_125.html", "note": "中遠地域広域行政組合運営サイト。風祭り・安倍晴明伝承の内容を確認"},
+   {"title": "福王寺 (磐田市城之崎・18番札所) | 遠州三十三観音霊場めぐり", "type": "民間二次情報", "url": "http://enshu33.com/all-guide/%E7%A6%8F%E7%8E%8B%E5%AF%BA/", "note": "風祭りの開催日（3月8日）を確認。中遠昔ばなしの内容と整合し裏付けとした"}
+  ]
+ },
+ {
+  "slug": "gasshoji-nakaizumi",
+  "found": false,
+  "research_todos": [
+   "公式サイト・SNSの有無を現地確認（曹洞禅ナビ上に「公式ホームページ」等のリンク項目表示はあるが実際のURLは確認できず）"
+  ]
+ },
+ {
+  "slug": "jurinji-kamiohnogo",
+  "found": false,
+  "research_todos": [
+   "公式サイト・SNSの有無を現地確認（同名の三重県・埼玉県・兵庫県の別寺院がヒットしやすいため混同に注意）"
+  ]
+ },
+ {
+  "slug": "senkoji-mitsuke",
+  "found": false,
+  "research_todos": [
+   "公式サイト・SNSの有無を現地確認"
+  ]
+ },
+ {
+  "slug": "eifukuji-nishikaizuka",
+  "found": false,
+  "research_todos": [
+   "公式サイト・SNSの有無を現地確認（同名の掛川市・埼玉県杉戸町等の別寺院がヒットしやすいため混同に注意）"
+  ]
+ },
+ {
+  "slug": "kongoji-mitsuke",
+  "found": true,
+  "danka_info": {
+   "official_site": {"status": "あり（Instagram）", "url": "https://www.instagram.com/kongoji_iwata/", "checked_at": "2026-07-12"},
+   "annual_events": [
+    {"name": "月例坐禅会", "timing": "毎月", "note": "寺院公式Instagramアカウントのプロフィールに「毎月坐禅会をおこなっています」と記載"}
+   ],
+   "community_role": "寺院公式Instagramアカウントで坐禅会への参加を呼びかけ、地域住民に開かれた活動を発信している。"
+  },
+  "research_todos": [
+   "Instagram以外の公式サイトの有無の確認",
+   "月例坐禅会の具体的な開催日・参加方法の現地確認"
+  ],
+  "sources": [
+   {"title": "磐田市 金剛寺 公式Instagramアカウント（@kongoji_iwata）", "type": "寺院公式情報", "url": "https://www.instagram.com/kongoji_iwata/", "note": "磐田市見付の曹洞宗寺院であることを住所・宗派の記載で確認。月例坐禅会の実施を確認"}
+  ]
+ },
+ {
+  "slug": "rinpoin-nishikaizuka",
+  "found": false,
+  "research_todos": [
+   "公式サイト・SNSの有無を現地確認（Facebook上に「Shizuoka磐田市」とだけ記載された非公式ページが存在するが、投稿なし・フォロワー0人で実質未使用のため参考にならず）"
+  ]
+ }
+]
