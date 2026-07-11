@@ -1,0 +1,16 @@
+{
+  "name": "ATAWI temple",
+  "short_name": "ATAWI temple",
+  "description": "磐田市内の寺院情報を整理する地域寺院データベースです。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f4ee",
+  "theme_color": "#2f4b2b",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
