@@ -1,0 +1,17 @@
+---
+import { analyticsConfig } from "../config/analytics";
+
+const { enabled, siteId, trackerUrl } = analyticsConfig;
+---
+
+{
+  enabled && (
+    <script
+      is:inline
+      defer
+      src={trackerUrl}
+      data-site={siteId}
+      data-fujigaoka-analytics="true"
+    />
+  )
+}
