@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TempleCard from "../../components/TempleCard.astro";
+import { allSects, getSectBySlug, getTemplesBySect } from "../../lib/temples";
+
+export function getStaticPaths() {
+  return allSects.map((sect) => ({
+    params: { slug: sect.slug },
+  }));
+}
+
+const sect = getSectBySlug(Astro.params.slug || "");
+
+if (!sect) {
+  return Astro.redirect("/sects/");
+}
+
+const temples = getTemplesBySect(sect.name);
+---
+
+<BaseLayout
+  title={`${sect.name}の寺院一覧｜ATAWI temple`}
+  description={`${sect.name}として公式名簿に掲載されている磐田市内の寺院一覧です。`}
+>
+  <section class="page-title">
+    <p class="eyebrow">Sect / {sect.slug}</p>
+    <h1>{sect.name}の寺院一覧</h1>
+    <p>{sect.name}として掲載されている寺院を、地区・住所とあわせて確認できます。</p>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>登録寺院</h2>
+      <a href={`/search/?sect=${encodeURIComponent(sect.name)}`}>この宗派で検索する</a>
+    </div>
+    <div class="card-grid">
+      {temples.map((temple) => <TempleCard temple={temple} />)}
+    </div>
+  </section>
+
+  <section class="section">
+    <a class="button-link" href="/sects/">宗派一覧へ戻る</a>
+  </section>
+</BaseLayout>
