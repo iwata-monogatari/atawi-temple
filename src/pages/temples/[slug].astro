@@ -1,0 +1,71 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { allTemples, getTempleBySlug } from "../../lib/temples";
+
+export function getStaticPaths() {
+  return allTemples.map((temple) => ({
+    params: { slug: temple.slug },
+  }));
+}
+
+const temple = getTempleBySlug(Astro.params.slug || "");
+
+if (!temple) {
+  return Astro.redirect("/temples/");
+}
+---
+
+<BaseLayout
+  title={`${temple.name}｜住所・創建・ご本尊・歴史｜ATAWI temple`}
+  description={`${temple.name}の住所、宗派、状態、ご本尊、創建・沿革を整理するATAWI templeの仮詳細ページです。`}
+>
+  <article class="detail">
+    <header class="page-title">
+      <p class="eyebrow">{temple.area} / {temple.status_label}</p>
+      <h1>{temple.name}</h1>
+      <p class="kana">{temple.name_kana}</p>
+    </header>
+
+    <section class="section">
+      <h2>基本情報</h2>
+      <dl class="info-list">
+        <div><dt>寺院名</dt><dd>{temple.name}</dd></div>
+        <div><dt>読み方</dt><dd>{temple.name_kana}</dd></div>
+        <div><dt>住所</dt><dd>{temple.address}</dd></div>
+        <div><dt>宗派</dt><dd>{temple.sect}</dd></div>
+        <div><dt>状態</dt><dd>{temple.status_label}</dd></div>
+        <div><dt>有人・無人</dt><dd>{temple.manned_status}</dd></div>
+        <div><dt>御朱印</dt><dd>{temple.goshuin_status}</dd></div>
+        <div><dt>現地訪問</dt><dd>{temple.visit_status}</dd></div>
+        <div><dt>最終確認日</dt><dd>{temple.last_verified_at}</dd></div>
+      </dl>
+    </section>
+
+    <section class="section">
+      <h2>創建・沿革</h2>
+      <p>{temple.history_summary}</p>
+      <p class="notice">このページは初期公開用の仮詳細ページです。公開資料、郷土資料、現地確認により内容を順次更新します。</p>
+    </section>
+
+    <section class="section">
+      <h2>ご本尊</h2>
+      <p>{temple.main_deity}</p>
+    </section>
+
+    <section class="section">
+      <h2>出典・参考資料</h2>
+      <ul class="source-list">
+        {temple.sources.map((source) => <li>{source.title}（{source.type}） {source.note}</li>)}
+      </ul>
+    </section>
+
+    <section class="section notice">
+      <h2>非公式サイトである旨</h2>
+      <p>
+        ATAWI templeは各寺院の公式サイトではありません。寺院から監修・確認を受けている場合を除き、
+        公開情報および現地訪問をもとに、ATAWI temple編集部が独自に調査・整理しています。
+      </p>
+      <a class="button-link" href="/correction/">このページの情報を提供・訂正する</a>
+    </section>
+  </article>
+</BaseLayout>
