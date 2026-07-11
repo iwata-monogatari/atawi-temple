@@ -1,0 +1,54 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TempleCard from "../../components/TempleCard.astro";
+import { allTemples } from "../../lib/temples";
+---
+
+<BaseLayout
+  title="磐田市の寺院一覧｜ATAWI temple"
+  description="磐田市内の現存寺院、廃寺、寺院跡を検索できる一覧です。"
+>
+  <section class="page-title">
+    <p class="eyebrow">Temple Index</p>
+    <h1>磐田市の寺院一覧</h1>
+    <p>寺院名、読み、住所、宗派、状態を確認できます。正式データは調査の進行にあわせて更新します。</p>
+  </section>
+
+  <section class="section">
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>寺院名</th>
+            <th>読み</th>
+            <th>地区</th>
+            <th>宗派</th>
+            <th>状態</th>
+            <th>詳細</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            allTemples.map((temple) => (
+              <tr>
+                <td>{temple.name}</td>
+                <td>{temple.name_kana}</td>
+                <td>{temple.area}</td>
+                <td>{temple.sect}</td>
+                <td>{temple.status_label}</td>
+                <td><a href={`/temples/${temple.slug}/`}>開く</a></td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>カード表示</h2>
+    <div class="card-grid">
+      {allTemples.map((temple) => <TempleCard temple={temple} />)}
+    </div>
+  </section>
+</BaseLayout>
