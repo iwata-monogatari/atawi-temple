@@ -1,0 +1,37 @@
+---
+import type { Temple } from "../lib/temples";
+
+interface Props {
+  temple: Temple;
+}
+
+const { temple } = Astro.props;
+---
+
+<article class="temple-card">
+  <div class="card-topline">
+    <span class={`status status-${temple.status}`}>{temple.status_label}</span>
+    <span>{temple.area}</span>
+  </div>
+  <h3><a href={`/temples/${temple.slug}/`}>{temple.name}</a></h3>
+  <p class="kana">{temple.name_kana}</p>
+  <dl class="compact-list">
+    <div>
+      <dt>住所</dt>
+      <dd>{temple.address}</dd>
+    </div>
+    <div>
+      <dt>宗派</dt>
+      <dd>{temple.sect}</dd>
+    </div>
+    <div>
+      <dt>ご本尊</dt>
+      <dd>{temple.main_deity}</dd>
+    </div>
+    <div>
+      <dt>御朱印</dt>
+      <dd>{temple.goshuin_status}</dd>
+    </div>
+  </dl>
+  <p>{temple.history_summary}</p>
+</article>
