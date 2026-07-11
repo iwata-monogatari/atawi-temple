@@ -1,0 +1,224 @@
+<!DOCTYPE html><html lang="ja"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>写真管理｜ATAWI temple</title><meta name="description" content="ATAWI temple管理者専用の寺院写真アップロード画面です。"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#2f4b2b"><link rel="canonical" href="https://temple.atawi.link/admin/photos/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="manifest" href="/site.webmanifest"><script defer src="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/tracker.js" data-site="atawi-temple" data-fujigaoka-analytics="true"></script><link rel="stylesheet" href="/_astro/index.VFea1Y4_.css"></head> <body> <header class="site-header"> <a class="brand" href="/"> <img src="/assets/brand/atawi-temple-mark.svg" alt="" width="48" height="48"> <span> <small>磐田市のお寺・寺院データベース</small> <strong>ATAWI temple</strong> </span> </a> <nav aria-label="主要ナビゲーション"> <a href="/temples/">寺院一覧</a> <a href="/areas/">9地区</a> <a href="/sects/">宗派</a> <a href="/status/">調査状況</a> <a href="/search/">検索</a> <a href="/editorial-policy/">編集方針</a> <a href="/correction/">情報提供・訂正</a> </nav> </header> <main>  <section class="page-title admin-page-title"> <p class="eyebrow">Administrator</p> <h1>寺院写真を登録する</h1> <p>管理者専用です。全寺院から掲載先を選び、写真と分類情報を保存します。</p> </section> <section class="search-panel photo-submit-panel" data-categories="[{&#34;category_id&#34;:&#34;main-building&#34;,&#34;label&#34;:&#34;本堂・堂宇&#34;,&#34;description&#34;:&#34;本堂、薬師堂、庫裏、拝所など建物そのものが主題の写真。&#34;},{&#34;category_id&#34;:&#34;grounds&#34;,&#34;label&#34;:&#34;境内全景&#34;,&#34;description&#34;:&#34;境内の広がり、建物配置、参道、周辺環境が分かる写真。&#34;},{&#34;category_id&#34;:&#34;entrance-marker&#34;,&#34;label&#34;:&#34;入口・石標&#34;,&#34;description&#34;:&#34;寺号標、門前、参道入口、案内標柱など場所の入口を示す写真。&#34;},{&#34;category_id&#34;:&#34;signboard&#34;,&#34;label&#34;:&#34;説明板・案内板&#34;,&#34;description&#34;:&#34;文化財説明板、現地案内板、由緒板など文字情報を含む写真。&#34;},{&#34;category_id&#34;:&#34;stonework&#34;,&#34;label&#34;:&#34;石造物・手水&#34;,&#34;description&#34;:&#34;石灯籠、手水鉢、石仏、石碑、礎石などの写真。&#34;},{&#34;category_id&#34;:&#34;map-pilgrimage&#34;,&#34;label&#34;:&#34;地図・札所案内&#34;,&#34;description&#34;:&#34;霊場案内図、札所案内、周辺史跡マップなどの写真。&#34;},{&#34;category_id&#34;:&#34;other&#34;,&#34;label&#34;:&#34;その他&#34;,&#34;description&#34;:&#34;上記に分類しにくい補足写真。&#34;}]"> <form id="photo-submit-form" class="stack-form" enctype="multipart/form-data"> <label>
+寺院を検索
+<input id="temple-filter" type="search" placeholder="寺院名・読み方・住所で絞り込み" autocomplete="off"> </label> <label>
+掲載先の寺院
+<select id="temple-select" name="temple_slug" required> <option value="">寺院を選んでください（全118件）</option> <option value="anzenji-iwai" data-search="安全寺 あんぜんじ 向陽 静岡県磐田市岩井1365番地の1"> 安全寺（あんぜんじ / 向陽）
+</option><option value="anrakuji-tateno" data-search="安楽寺 あんらくじ 豊田 静岡県磐田市立野477番地"> 安楽寺（あんらくじ / 豊田）
+</option><option value="ioji-kamada" data-search="醫王寺 いおうじ 御厨 静岡県磐田市鎌田2065番地の1"> 醫王寺（いおうじ / 御厨）
+</option><option value="ichiunsai-shimonobe" data-search="一雲斉 いちうんさい 豊岡 静岡県磐田市下野部1776番地"> 一雲斉（いちうんさい / 豊岡）
+</option><option value="eianji-shikiji" data-search="永安寺 えいあんじ 豊岡 静岡県磐田市敷地1035番地"> 永安寺（えいあんじ / 豊岡）
+</option><option value="eifukuji-nishikaizuka" data-search="永福寺 えいふくじ 御厨 静岡県磐田市西貝塚1519番地の1"> 永福寺（えいふくじ / 御厨）
+</option><option value="eimeiji-shikiji" data-search="永明寺 えいめいじ 豊岡 静岡県磐田市敷地1014番地"> 永明寺（えいめいじ / 豊岡）
+</option><option value="entsuji-ohira" data-search="圓通寺 えんつうじ 豊岡 静岡県磐田市大平530番"> 圓通寺（えんつうじ / 豊岡）
+</option><option value="gasshoji-nakaizumi" data-search="合掌寺 がっしょうじ 中泉 静岡県磐田市中泉1239番地の3"> 合掌寺（がっしょうじ / 中泉）
+</option><option value="ganjoji-hirama" data-search="願成寺 がんじょうじ 竜洋 静岡県磐田市平間431番地の1"> 願成寺（がんじょうじ / 竜洋）
+</option><option value="kannonji-fukude" data-search="観音寺 かんのんじ 福田 静岡県磐田市福田688番地の1"> 観音寺（かんのんじ / 福田）
+</option><option value="gyokoji-ikeda" data-search="行興寺 ぎょうこうじ 豊田 静岡県磐田市池田330番地"> 行興寺（ぎょうこうじ / 豊田）
+</option><option value="gyosenji-mitsuke" data-search="行泉寺 ぎょうせんじ 見付 静岡県磐田市見付3080番地の2"> 行泉寺（ぎょうせんじ / 見付）
+</option><option value="kinzoji-toyooka" data-search="金藏寺 きんぞうじ 竜洋 静岡県磐田市豊岡4517番地の1"> 金藏寺（きんぞうじ / 竜洋）
+</option><option value="kindaiji-tenryu" data-search="金台寺 きんだいじ 中泉 静岡県磐田市天竜110番地"> 金台寺（きんだいじ / 中泉）
+</option><option value="keiganji-mitsuke" data-search="慶岩寺 けいがんじ 見付 静岡県磐田市見付2735番地の1"> 慶岩寺（けいがんじ / 見付）
+</option><option value="keishoji-fukude" data-search="慶昌寺 けいしょうじ 福田 静岡県磐田市福田1834番地"> 慶昌寺（けいしょうじ / 福田）
+</option><option value="kenshoji-mitsuke" data-search="見性寺 けんしょうじ 見付 静岡県磐田市見付2896番地"> 見性寺（けんしょうじ / 見付）
+</option><option value="genmyoji-mitsuke" data-search="玄妙寺 げんみょうじ 見付 静岡県磐田市見付2440番地の1"> 玄妙寺（げんみょうじ / 見付）
+</option><option value="koganji-kusasaki" data-search="光嚴寺 こうがんじ 南部 静岡県磐田市草崎644番地の1"> 光嚴寺（こうがんじ / 南部）
+</option><option value="koshuji-kaketsuka" data-search="香集寺 こうしゅうじ 竜洋 静岡県磐田市掛塚1002番地"> 香集寺（こうしゅうじ / 竜洋）
+</option><option value="kotokuji-morishita" data-search="興徳寺 こうとくじ 豊田 静岡県磐田市森下612番地"> 興徳寺（こうとくじ / 豊田）
+</option><option value="kokuseiji-kaketsuka" data-search="國清寺 こくせいじ 竜洋 静岡県磐田市掛塚643番地"> 國清寺（こくせいじ / 竜洋）
+</option><option value="kokubunji-mitsuke" data-search="国分寺 こくぶんじ 見付 静岡県磐田市見付3046番地"> 国分寺（こくぶんじ / 見付）
+</option><option value="kongoji-mitsuke" data-search="金剛寺 こんごうじ 見付 静岡県磐田市見付2749番地の1"> 金剛寺（こんごうじ / 見付）
+</option><option value="saiganji-nakaizumi" data-search="西願寺 さいがんじ 中泉 静岡県磐田市中泉254番地の1"> 西願寺（さいがんじ / 中泉）
+</option><option value="saikoji-mitsuke" data-search="西光寺 さいこうじ 見付 静岡県磐田市見付3353番地の1"> 西光寺（さいこうじ / 見付）
+</option><option value="saikoji-kaketsuka" data-search="西光寺 さいこうじ 竜洋 静岡県磐田市掛塚1079番地"> 西光寺（さいこうじ / 竜洋）
+</option><option value="saikoji-matsunokijima" data-search="最廣寺 さいこうじ 豊岡 静岡県磐田市松之木島314番地の1"> 最廣寺（さいこうじ / 豊岡）
+</option><option value="saifukuji-toyohamanakano" data-search="西福寺 さいふくじ 南部 静岡県磐田市豊浜中野725番地の1"> 西福寺（さいふくじ / 南部）
+</option><option value="jionji-mitsuke" data-search="慈恩寺 じおんじ 見付 静岡県磐田市見付2431番地の1"> 慈恩寺（じおんじ / 見付）
+</option><option value="jikeian-komaba" data-search="慈慶庵 じけいあん 竜洋 静岡県磐田市駒場20番地の1"> 慈慶庵（じけいあん / 竜洋）
+</option><option value="jigenji-kamikandamasu" data-search="慈眼寺 じげんじ 豊岡 静岡県磐田市上神増99番地"> 慈眼寺（じげんじ / 豊岡）
+</option><option value="jissaiji-samejima" data-search="実際寺 じっさいじ 南部 静岡県磐田市鮫島202番地"> 実際寺（じっさいじ / 南部）
+</option><option value="jurinji-kamiohnogo" data-search="十輪寺 じゅうりんじ 南部 静岡県磐田市上大之郷606番地の1"> 十輪寺（じゅうりんじ / 南部）
+</option><option value="jushouji-kusasaki" data-search="壽正寺 じゅしょうじ 南部 静岡県磐田市草崎691番地の1"> 壽正寺（じゅしょうじ / 南部）
+</option><option value="jushouji-hiruike" data-search="寿正寺 じゅしょうじ 竜洋 静岡県磐田市蛭池230番地"> 寿正寺（じゅしょうじ / 竜洋）
+</option><option value="shuzoji-toyooka" data-search="守増寺 しゅぞうじ 竜洋 静岡県磐田市豊岡2648番地"> 守増寺（しゅぞうじ / 竜洋）
+</option><option value="shoi-ji-shimoban-no" data-search="正医寺 しょういじ 豊田 静岡県磐田市下万能1162番地の1"> 正医寺（しょういじ / 豊田）
+</option><option value="shokyuin-mitsue" data-search="松久院 しょうきゅういん 豊岡 静岡県磐田市三家332番地"> 松久院（しょうきゅういん / 豊岡）
+</option><option value="shogenin-kojima" data-search="正眼院 しょうげんいん 南部 静岡県磐田市小島738番地"> 正眼院（しょうげんいん / 南部）
+</option><option value="shokoji-mitsuke" data-search="省光寺 しょうこうじ 見付 静岡県磐田市見付2423番地"> 省光寺（しょうこうじ / 見付）
+</option><option value="shokoji-shirabyoshi" data-search="正光寺 しょうこうじ 南部 静岡県磐田市白拍子358番地"> 正光寺（しょうこうじ / 南部）
+</option><option value="shokoji-miyanoshiki" data-search="松向寺 しょうこうじ 豊田 静岡県磐田市宮之一色413番地"> 松向寺（しょうこうじ / 豊田）
+</option><option value="jokoji-maeno" data-search="定光寺 じょうこうじ 南部 静岡県磐田市前野1773番地の1"> 定光寺（じょうこうじ / 南部）
+</option><option value="jokoji-shikiji" data-search="浄光寺 じょうこうじ 豊岡 静岡県磐田市敷地1021番地"> 浄光寺（じょうこうじ / 豊岡）
+</option><option value="shojuji-oka" data-search="聖寿寺 しょうじゅじ 竜洋 静岡県磐田市岡330番地"> 聖寿寺（しょうじゅじ / 竜洋）
+</option><option value="jorakuji-horinochi" data-search="常楽寺 じょうらくじ 竜洋 静岡県磐田市堀之内761番地"> 常楽寺（じょうらくじ / 竜洋）
+</option><option value="shorinji-kawabukuro" data-search="松林寺 しょうりんじ 竜洋 静岡県磐田市川袋224番地の1"> 松林寺（しょうりんじ / 竜洋）
+</option><option value="shingetsuji-ebijima" data-search="心月寺 しんげつじ 竜洋 静岡県磐田市海老島200番地の1"> 心月寺（しんげつじ / 竜洋）
+</option><option value="shinshinkyo-mitsuke" data-search="神心教 しんしんきょう 見付 静岡県磐田市見付243番地"> 神心教（しんしんきょう / 見付）
+</option><option value="shinshinkyo-honbu-mitsuke" data-search="神心教本部 しんしんきょうほんぶ 見付 静岡県磐田市見付206番地"> 神心教本部（しんしんきょうほんぶ / 見付）
+</option><option value="shinnyoji-sagisaka" data-search="眞如寺 しんにょじ 向陽 静岡県磐田市匂坂上210番地の1"> 眞如寺（しんにょじ / 向陽）
+</option><option value="shinpoin-mukasa" data-search="新豊院 しんぽういん 向陽 静岡県磐田市向笠竹之内14番地"> 新豊院（しんぽういん / 向陽）
+</option><option value="seidoin-ikeda" data-search="誓渡院 せいどいん 豊田 静岡県磐田市池田356番地"> 誓渡院（せいどいん / 豊田）
+</option><option value="seiryo-in-iwamuro" data-search="清凉院 せいりょういん 豊岡 静岡県磐田市岩室158番地"> 清凉院（せいりょういん / 豊岡）
+</option><option value="zenkaiji-nishijima" data-search="全海寺 ぜんかいじ 南部 静岡県磐田市西島452番地の1"> 全海寺（ぜんかいじ / 南部）
+</option><option value="zenkyuin-kamada" data-search="全久院 ぜんきゅういん 御厨 静岡県磐田市鎌田2546番地"> 全久院（ぜんきゅういん / 御厨）
+</option><option value="senkoji-mitsuke" data-search="宣光寺 せんこうじ 見付 静岡県磐田市見付1340番地の1"> 宣光寺（せんこうじ / 見付）
+</option><option value="senjuji-senjudou" data-search="千手寺 せんじゅじ 南部 静岡県磐田市千手堂637番地"> 千手寺（せんじゅじ / 南部）
+</option><option value="senshoji-iwai" data-search="宣正寺 せんしょうじ 向陽 静岡県磐田市岩井2324番地の5"> 宣正寺（せんしょうじ / 向陽）
+</option><option value="senzoji-nakaizumi" data-search="泉蔵寺 せんぞうじ 中泉 静岡県磐田市中泉1557番地の1"> 泉蔵寺（せんぞうじ / 中泉）
+</option><option value="zendoji-mitsuke" data-search="善導寺 ぜんどうじ 見付 静岡県磐田市見付1番地の10"> 善導寺（ぜんどうじ / 見付）
+</option><option value="senryuji-kawabukuro" data-search="潜龍寺 せんりゅうじ 竜洋 静岡県磐田市川袋463番地"> 潜龍寺（せんりゅうじ / 竜洋）
+</option><option value="zosanji-sagisaka" data-search="増参寺 ぞうさんじ 向陽 静岡県磐田市匂坂中586番地"> 増参寺（ぞうさんじ / 向陽）
+</option><option value="sojiji-minamijima" data-search="宗次寺 そうじじ 竜洋 静岡県磐田市南島149番地の1"> 宗次寺（そうじじ / 竜洋）
+</option><option value="zohonji-ikago" data-search="蔵本寺 ぞうほんじ 竜洋 静岡県磐田市五十子26番地"> 蔵本寺（ぞうほんじ / 竜洋）
+</option><option value="daienji-kamo" data-search="大圓寺 だいえんじ 豊田 静岡県磐田市加茂123番地"> 大圓寺（だいえんじ / 豊田）
+</option><option value="taigetsuan-sagisaka" data-search="太月庵 たいげつあん 向陽 静岡県磐田市匂坂上59番地の1"> 太月庵（たいげつあん / 向陽）
+</option><option value="daikenji-mitsuke" data-search="大見寺 だいけんじ 見付 静岡県磐田市見付2510番地の1"> 大見寺（だいけんじ / 見付）
+</option><option value="daijoin-nakaizumi" data-search="大乗院 だいじょういん 中泉 静岡県磐田市中泉1丁目10番地6"> 大乗院（だいじょういん / 中泉）
+</option><option value="daisenji-toyohamanakano" data-search="大泉寺 だいせんじ 南部 静岡県磐田市豊浜中野744番地の1"> 大泉寺（だいせんじ / 南部）
+</option><option value="daizoji-kamiokata" data-search="大蔵寺 だいぞうじ 南部 静岡県磐田市上岡田329番地"> 大蔵寺（だいぞうじ / 南部）
+</option><option value="daizoji-tomei" data-search="大蔵寺 だいぞうじ 豊田 静岡県磐田市東名393番地"> 大蔵寺（だいぞうじ / 豊田）
+</option><option value="tamonji-nakano" data-search="多聞寺 たもんじ 南部 静岡県磐田市中野532番地の1"> 多聞寺（たもんじ / 南部）
+</option><option value="chionsai-hitokoto" data-search="智恩齋 ちおんさい 豊田 静岡県磐田市一言797番地"> 智恩齋（ちおんさい / 豊田）
+</option><option value="chikyoin-shiraha" data-search="智教院 ちきょういん 竜洋 静岡県磐田市白羽546番地"> 智教院（ちきょういん / 竜洋）
+</option><option value="chusenji-nakaizumi" data-search="中泉寺 ちゅうせんじ 中泉 静岡県磐田市中泉743番地の1"> 中泉寺（ちゅうせんじ / 中泉）
+</option><option value="chosenji-fukudenakajima" data-search="長泉寺 ちょうせんじ 福田 静岡県磐田市福田中島445番地"> 長泉寺（ちょうせんじ / 福田）
+</option><option value="tenshoji-toyoshima" data-search="天正寺 てんしょうじ 南部 静岡県磐田市豊島905番地"> 天正寺（てんしょうじ / 南部）
+</option><option value="tenryuin-kaminobe" data-search="天龍院 てんりゅういん 豊岡 静岡県磐田市上野部353番地"> 天龍院（てんりゅういん / 豊岡）
+</option><option value="toshoji-higashikaizuka" data-search="東昌寺 とうしょうじ 御厨 静岡県磐田市東貝塚1291番地"> 東昌寺（とうしょうじ / 御厨）
+</option><option value="tokuoin-mitsuke" data-search="徳翁院 とくおういん 見付 静岡県磐田市見付568番地"> 徳翁院（とくおういん / 見付）
+</option><option value="toyodain-kegojima" data-search="豊田院 とよだいん 豊田 静岡県磐田市気子島324番地"> 豊田院（とよだいん / 豊田）
+</option><option value="nipponzan-myohoji-iwata" data-search="日本山妙法寺磐田小僧伽 にっぽんざんみょうほうじいわたしょうそうぎゃ 中泉 静岡県磐田市中泉3734番地の4"> 日本山妙法寺磐田小僧伽（にっぽんざんみょうほうじいわたしょうそうぎゃ / 中泉）
+</option><option value="fukuoji-jonosaki" data-search="福王寺 ふくおうじ 見付 静岡県磐田市城之崎4丁目2722番地の1"> 福王寺（ふくおうじ / 見付）
+</option><option value="fukuoji-morimoto" data-search="福王寺 ふくおうじ 豊田 静岡県磐田市森本287番地"> 福王寺（ふくおうじ / 豊田）
+</option><option value="fukushoji-nishihiramatsu" data-search="福生寺 ふくしょうじ 竜洋 静岡県磐田市西平松22番地"> 福生寺（ふくしょうじ / 竜洋）
+</option><option value="hounji-mukasa" data-search="法雲寺 ほううんじ 向陽 静岡県磐田市向笠西374番地"> 法雲寺（ほううんじ / 向陽）
+</option><option value="hoonan-kaminobe" data-search="法音庵 ほうおんあん 豊岡 静岡県磐田市上野部2032番地"> 法音庵（ほうおんあん / 豊岡）
+</option><option value="hojuin-jurojima" data-search="寶珠院 ほうじゅいん 竜洋 静岡県磐田市十郎島26番地ノ1"> 寶珠院（ほうじゅいん / 竜洋）
+</option><option value="hojuji-toyoshima" data-search="寳珠寺 ほうじゅじ 南部 静岡県磐田市豊島668番地"> 寳珠寺（ほうじゅじ / 南部）
+</option><option value="hofukuji-okubo" data-search="保福寺 ほうふくじ 向陽 静岡県磐田市大久保361番地"> 保福寺（ほうふくじ / 向陽）
+</option><option value="honshoji-kounodai" data-search="本性寺 ほんしょうじ 見付 静岡県磐田市国府台441番地の1"> 本性寺（ほんしょうじ / 見付）
+</option><option value="honmyoin-iwai" data-search="本妙院 ほんみょういん 向陽 静岡県磐田市岩井2081番地の1"> 本妙院（ほんみょういん / 向陽）
+</option><option value="manshoji-manshoji" data-search="萬勝寺 まんしょうじ 南部 静岡県磐田市万正寺515番地"> 萬勝寺（まんしょうじ / 南部）
+</option><option value="mantokuji-nakaizumi" data-search="満徳寺 まんとくじ 中泉 静岡県磐田市中泉1丁目4番地7"> 満徳寺（まんとくじ / 中泉）
+</option><option value="mannenji-kusasaki" data-search="萬然寺 まんねんじ 南部 静岡県磐田市草崎2430番地の1"> 萬然寺（まんねんじ / 南部）
+</option><option value="manpukuji-kaketsuka-819" data-search="満福寺 まんぷくじ 竜洋 静岡県磐田市掛塚819番地"> 満福寺（まんぷくじ / 竜洋）
+</option><option value="manpukuji-kaketsuka-799" data-search="萬福寺 まんぷくじ 竜洋 静岡県磐田市掛塚799番地の1"> 萬福寺（まんぷくじ / 竜洋）
+</option><option value="myooji-mitsuke" data-search="明王寺 みょうおうじ 見付 静岡県磐田市見付河原町3987番地"> 明王寺（みょうおうじ / 見付）
+</option><option value="myosenji-araide" data-search="明泉寺 みょうせんじ 向陽 静岡県磐田市新出613番地"> 明泉寺（みょうせんじ / 向陽）
+</option><option value="myofukuji-fukude" data-search="妙福寺 みょうふくじ 福田 静岡県磐田市福田1723番地"> 妙福寺（みょうふくじ / 福田）
+</option><option value="myohoji-ikeda" data-search="妙法寺 みょうほうじ 豊田 静岡県磐田市池田743番地"> 妙法寺（みょうほうじ / 豊田）
+</option><option value="myomanji-kaminobe" data-search="妙満寺 みょうまんじ 豊岡 静岡県磐田市上野部738番地"> 妙満寺（みょうまんじ / 豊岡）
+</option><option value="mushuoji-mushuo" data-search="虫生寺 むしゅうじ 豊岡 静岡県磐田市虫生457番地の1"> 虫生寺（むしゅうじ / 豊岡）
+</option><option value="yushoji-toyooka" data-search="雄照寺 ゆうしょうじ 竜洋 静岡県磐田市豊岡1053番地の1"> 雄照寺（ゆうしょうじ / 竜洋）
+</option><option value="yofukuji-shimohongo" data-search="養福寺 ようふくじ 豊田 静岡県磐田市下本郷1363番地の1"> 養福寺（ようふくじ / 豊田）
+</option><option value="ryounan-shikiji" data-search="龍雲庵 りゅううんあん 豊岡 静岡県磐田市敷地1367番地の1"> 龍雲庵（りゅううんあん / 豊岡）
+</option><option value="ryuunji-toyohama" data-search="竜雲寺 りゅううんじ 福田 静岡県磐田市豊浜365番地の1"> 竜雲寺（りゅううんじ / 福田）
+</option><option value="ryusenji-shiraha" data-search="竜泉寺 りゅうせんじ 竜洋 静岡県磐田市白羽51番地"> 竜泉寺（りゅうせんじ / 竜洋）
+</option><option value="ryuhoin-ohara" data-search="龍法院 りゅうほういん 南部 静岡県磐田市大原2371番地"> 龍法院（りゅうほういん / 南部）
+</option><option value="rinshoji-kodateno" data-search="林昌寺 りんしょうじ 豊田 静岡県磐田市小立野241番地の1"> 林昌寺（りんしょうじ / 豊田）
+</option><option value="rinpoin-nishikaizuka" data-search="林宝院 りんぽういん 御厨 静岡県磐田市西貝塚1423番地"> 林宝院（りんぽういん / 御厨）
+</option><option value="rengakuji-ryuyonakajima" data-search="蓮覚寺 れんがくじ 竜洋 静岡県磐田市竜洋中島689番地の1"> 蓮覚寺（れんがくじ / 竜洋）
+</option><option value="renjoji-shingai" data-search="連城寺 れんじょうじ 御厨 静岡県磐田市新貝1556番地の1"> 連城寺（れんじょうじ / 御厨）
+</option><option value="rendaiji-yashiroyama" data-search="蓮台寺 れんだいじ 豊岡 静岡県磐田市社山576番地"> 蓮台寺（れんだいじ / 豊岡）
+</option><option value="renpukuji-ninomiya" data-search="連福寺 れんぷくじ 中泉 静岡県磐田市二之宮1262番地"> 連福寺（れんぷくじ / 中泉）
+</option> </select> </label> <p id="temple-count" class="small">全118件から選択できます。</p> <label>
+写真（1回につき12枚まで、1枚12MBまで）
+<input name="photos" type="file" accept="image/*" multiple required> </label> <label>
+管理メモ
+<textarea name="note" rows="4" placeholder="撮影日、場所、写真の説明、掲載時の注意など"></textarea> </label> <div class="notice"> <strong>掲載前の確認</strong> <p>人の顔、車のナンバー、墓石の個人名、寺院関係者の許可が必要な箇所を確認してください。</p> </div> <div><button type="submit">管理用ストレージへ保存</button></div> </form> <section class="section preview-section" aria-live="polite"> <div class="section-heading"> <h2>写真分類</h2> <span class="small">候補を確認してから保存します</span> </div> <div id="photo-preview" class="photo-grid"></div> <div id="submission-output" class="submission-output" hidden></div> </section> </section> <script>
+    // @ts-nocheck
+    const panel = document.querySelector("[data-categories]");
+    const form = document.querySelector("#photo-submit-form");
+    const preview = document.querySelector("#photo-preview");
+    const output = document.querySelector("#submission-output");
+    const filter = document.querySelector("#temple-filter");
+    const templeSelect = document.querySelector("#temple-select");
+    const templeCount = document.querySelector("#temple-count");
+    const categories = JSON.parse(panel.dataset.categories || "[]");
+    const fallbackCategory = categories.find((category) => category.category_id === "other") || categories[0];
+    const categoryOptions = categories
+      .map((category) => `<option value="${category.category_id}">${category.label}</option>`)
+      .join("");
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    function classifyByName(file) {
+      const name = file.name.toLowerCase().normalize("NFKC");
+      if (/map|案内|地図|霊場|札所/.test(name)) return "map-pilgrimage";
+      if (/sign|board|説明|由緒/.test(name)) return "signboard";
+      if (/stone|碑|標|入口|門/.test(name)) return "entrance-marker";
+      if (/手水|chozu|石|灯籠/.test(name)) return "stonework";
+      if (/本堂|堂|hondo|main/.test(name)) return "main-building";
+      if (/境内|keidai|全景/.test(name)) return "grounds";
+      return fallbackCategory.category_id;
+    }
+
+    function filterTemples() {
+      const query = filter.value.normalize("NFKC").toLowerCase().trim();
+      let visible = 0;
+      Array.from(templeSelect.options).slice(1).forEach((option) => {
+        const matches = !query || option.dataset.search.normalize("NFKC").toLowerCase().includes(query);
+        option.hidden = !matches;
+        if (matches) visible += 1;
+      });
+      if (templeSelect.selectedOptions[0]?.hidden) templeSelect.value = "";
+      templeCount.textContent = query ? `${visible}件に絞り込みました。` : `全${visible}件から選択できます。`;
+    }
+
+    function renderPreview() {
+      const files = Array.from(form.photos.files || []);
+      preview.innerHTML = files.map((file, index) => {
+        const url = URL.createObjectURL(file);
+        const categoryId = classifyByName(file);
+        return `
+          <article class="photo-card upload-card">
+            <img src="${url}" alt="${escapeHtml(file.name)}">
+            <div>
+              <strong>${escapeHtml(file.name)}</strong>
+              <label>分類
+                <select data-photo-category data-file-name="${escapeHtml(file.name)}">
+                  ${categoryOptions}
+                </select>
+              </label>
+            </div>
+          </article>
+        `.replace(`value="${categoryId}"`, `value="${categoryId}" selected`);
+      }).join("");
+    }
+
+    filter.addEventListener("input", filterTemples);
+    form.photos.addEventListener("change", renderPreview);
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      output.hidden = false;
+      output.className = "submission-output";
+      output.textContent = "保存しています...";
+
+      const formData = new FormData(form);
+      const photoCategories = Array.from(preview.querySelectorAll("[data-photo-category]")).map((select) => ({
+        file_name: select.dataset.fileName,
+        category_id: select.value,
+      }));
+      formData.set("photo_categories", JSON.stringify(photoCategories));
+
+      try {
+        const response = await fetch("/admin/api/photo-submissions", { method: "POST", body: formData });
+        const result = await response.json();
+        if (!response.ok || !result.ok) throw new Error(result.message || "保存できませんでした。");
+        output.classList.add("success");
+        output.textContent = `${templeSelect.selectedOptions[0].textContent.trim()}へ${result.photos}枚を保存しました。\n受付ID: ${result.submission_id}`;
+        form.reset();
+        preview.innerHTML = "";
+        filterTemples();
+      } catch (error) {
+        output.classList.add("error");
+        output.textContent = `保存できませんでした。${error.message || error}`;
+      }
+    });
+  </script>  </main> <footer class="site-footer"> <p>運営：富士ヶ丘サービス</p> <nav aria-label="フッターナビゲーション"> <a href="/about/">運営者情報</a> <a href="/status/">調査状況</a> <a href="/sects/">宗派</a> <a href="/editorial-policy/">編集方針</a> <a href="/correction/">情報提供・訂正</a> <a href="/privacy/">プライバシーポリシー</a> </nav> <p class="small">ATAWI templeは各寺院の公式サイトではありません。</p> </footer> </body></html>
