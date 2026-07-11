@@ -1,0 +1,83 @@
+[
+  {
+    "temple_id": "iwata-0001",
+    "slug": "senkoji-mitsuke",
+    "name": "宣光寺",
+    "name_kana": "せんこうじ",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市見付",
+    "area": "見付",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "初期公開用の仮登録です。公開資料との照合後、創建・沿革・ご本尊を追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "初期寺院マスター",
+        "type": "内部整理",
+        "note": "詳細調査前の仮登録"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0002",
+    "slug": "example-nakaizumi",
+    "name": "中泉地区寺院候補",
+    "name_kana": "なかいずみちくじいんこうほ",
+    "aliases": ["調査中寺院"],
+    "record_type": "temple",
+    "status": "unknown",
+    "status_label": "状況不明",
+    "sect": "未確認",
+    "address": "静岡県磐田市中泉",
+    "area": "中泉",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "調査中",
+    "history_summary": "寺院マスター作成時に正式名称、所在地、宗派、状態を確認します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "初期寺院マスター",
+        "type": "内部整理",
+        "note": "正式データへ差し替え予定"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0003",
+    "slug": "ruin-sample",
+    "name": "旧寺院跡候補",
+    "name_kana": "きゅうじいんあとこうほ",
+    "aliases": ["廃寺候補"],
+    "record_type": "ruin",
+    "status": "ruin",
+    "status_label": "寺院跡",
+    "sect": "未確認",
+    "address": "所在地未確定",
+    "area": "磐田市内",
+    "main_deity": "未確認",
+    "manned_status": "対象外",
+    "goshuin_status": "対象外",
+    "visit_status": "未訪問",
+    "detail_status": "調査中",
+    "history_summary": "廃寺・寺院跡は推定地、伝承地、所在地不明を区別して整理します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "初期寺院マスター",
+        "type": "内部整理",
+        "note": "史料確認後に公開判断"
+      }
+    ]
+  }
+]
