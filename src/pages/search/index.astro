@@ -1,0 +1,142 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { allTemples } from "../../lib/temples";
+
+const areas = Array.from(new Set(allTemples.map((temple) => temple.area)));
+const sects = Array.from(new Set(allTemples.map((temple) => temple.sect)));
+const statuses = Array.from(new Set(allTemples.map((temple) => temple.status)));
+const data = JSON.stringify(allTemples);
+---
+
+<BaseLayout
+  title="寺院検索｜ATAWI temple"
+  description="寺院名、読み方、住所、地区、宗派、状態から磐田市のお寺を検索できます。"
+>
+  <section class="page-title">
+    <p class="eyebrow">Search</p>
+    <h1>寺院検索</h1>
+    <p>検索条件はURLに残るため、そのまま共有できます。</p>
+  </section>
+
+  <section class="search-panel" data-temples={data}>
+    <form id="search-form" class="search-form">
+      <label>
+        キーワード
+        <input name="q" type="search" placeholder="寺院名・住所・宗派・ご本尊" />
+      </label>
+      <label>
+        地区
+        <select name="area">
+          <option value="">すべて</option>
+          {areas.map((area) => <option value={area}>{area}</option>)}
+        </select>
+      </label>
+      <label>
+        宗派
+        <select name="sect">
+          <option value="">すべて</option>
+          {sects.map((sect) => <option value={sect}>{sect}</option>)}
+        </select>
+      </label>
+      <label>
+        状態
+        <select name="status">
+          <option value="">すべて</option>
+          {statuses.map((status) => <option value={status}>{status}</option>)}
+        </select>
+      </label>
+      <button type="submit">検索</button>
+    </form>
+    <p id="result-count" class="result-count" aria-live="polite"></p>
+    <div id="results" class="card-grid"></div>
+  </section>
+
+  <script>
+    const panel = document.querySelector("[data-temples]");
+    const form = document.querySelector("#search-form");
+    const results = document.querySelector("#results");
+    const resultCount = document.querySelector("#result-count");
+    const temples = JSON.parse(panel.dataset.temples);
+
+    function normalize(value) {
+      return String(value || "").toLowerCase().normalize("NFKC").replace(/\s+/g, "");
+    }
+
+    function textOf(temple) {
+      return normalize([
+        temple.name,
+        temple.name_kana,
+        temple.aliases.join(" "),
+        temple.address,
+        temple.area,
+        temple.sect,
+        temple.status_label,
+        temple.main_deity,
+        temple.history_summary,
+        temple.sources.map((source) => source.title).join(" "),
+      ].join(" "));
+    }
+
+    function readParams() {
+      const params = new URLSearchParams(window.location.search);
+      for (const element of form.elements) {
+        if (element.name) element.value = params.get(element.name) || "";
+      }
+    }
+
+    function writeParams(values) {
+      const params = new URLSearchParams();
+      for (const [key, value] of Object.entries(values)) {
+        if (value) params.set(key, value);
+      }
+      const query = params.toString();
+      history.replaceState(null, "", query ? `?${query}` : window.location.pathname);
+    }
+
+    function card(temple) {
+      return `
+        <article class="temple-card">
+          <div class="card-topline">
+            <span class="status status-${temple.status}">${temple.status_label}</span>
+            <span>${temple.area}</span>
+          </div>
+          <h3><a href="/temples/${temple.slug}/">${temple.name}</a></h3>
+          <p class="kana">${temple.name_kana}</p>
+          <dl class="compact-list">
+            <div><dt>住所</dt><dd>${temple.address}</dd></div>
+            <div><dt>宗派</dt><dd>${temple.sect}</dd></div>
+            <div><dt>ご本尊</dt><dd>${temple.main_deity}</dd></div>
+            <div><dt>御朱印</dt><dd>${temple.goshuin_status}</dd></div>
+          </dl>
+          <p>${temple.history_summary}</p>
+        </article>
+      `;
+    }
+
+    function render() {
+      const values = Object.fromEntries(new FormData(form).entries());
+      const keyword = normalize(values.q);
+      const filtered = temples.filter((temple) => {
+        if (keyword && !textOf(temple).includes(keyword)) return false;
+        if (values.area && temple.area !== values.area) return false;
+        if (values.sect && temple.sect !== values.sect) return false;
+        if (values.status && temple.status !== values.status) return false;
+        return true;
+      });
+
+      writeParams(values);
+      resultCount.textContent = `${filtered.length}件見つかりました`;
+      results.innerHTML = filtered.length
+        ? filtered.map(card).join("")
+        : `<div class="empty">該当する寺院が見つかりませんでした。地区や宗派の条件を外して再検索してください。</div>`;
+    }
+
+    readParams();
+    render();
+    form.addEventListener("input", render);
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      render();
+    });
+  </script>
+</BaseLayout>
