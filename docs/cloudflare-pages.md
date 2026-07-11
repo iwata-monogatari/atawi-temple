@@ -46,7 +46,27 @@ PUBLIC_FUJIGAOKA_ANALYTICS_ENABLED=true
 | R2 bucket | `atawi-temple-photos` |
 | Binding name | `ATAWI_PHOTO_BUCKET` |
 
-このbindingが未設定の場合、写真投稿ページは送信内容の下書きJSONを表示しますが、写真ファイルは保存されません。
+このbindingが未設定の場合、管理画面は写真を保存しません。
+
+## 管理者専用の写真登録
+
+写真管理画面は `/admin/photos/` です。公開ページからはリンクしません。Cloudflare Zero Trustの
+Access > ApplicationsでSelf-hosted applicationを作成し、次のパスを保護します。
+
+```text
+temple.atawi.link/admin/*
+```
+
+Allow policyには管理者本人のメールアドレス1件だけを指定します。PagesのProduction環境へ次の変数も設定します。
+
+| 変数 | 値 |
+|---|---|
+| `CF_ACCESS_TEAM_DOMAIN` | `https://<team-name>.cloudflareaccess.com` |
+| `CF_ACCESS_AUD` | Access applicationのAUDタグ |
+| `ATAWI_ADMIN_EMAIL` | Allow policyに指定した管理者メール |
+
+管理画面とAPIはAccess JWTの署名、AUD、有効期限、メールアドレスを検証します。変数やAccess設定が不足した場合は、
+安全のため管理画面を公開せずエラーで停止します。
 
 Preview環境の閲覧を本番集計へ混ぜたくない場合は、Previewだけ次にします。
 

@@ -2,16 +2,19 @@ import temples from "../../data/temples.json";
 import districts from "../../data/districts.json";
 import templeMedia from "../../data/temple-media.json";
 import photoCategories from "../../data/photo-categories.json";
+import templeUpdates from "../../data/temple-updates.json";
 
 export type Temple = (typeof temples)[number];
 export type District = (typeof districts)[number];
 export type TempleMedia = (typeof templeMedia)[number];
 export type PhotoCategory = (typeof photoCategories)[number];
+export type TempleUpdate = (typeof templeUpdates)[number];
 
 export const allTemples = temples;
 export const allDistricts = districts;
 export const allTempleMedia = templeMedia;
 export const allPhotoCategories = photoCategories;
+export const allTempleUpdates = [...templeUpdates].sort((a, b) => b.date.localeCompare(a.date));
 
 export const sectSlugMap: Record<string, string> = {
   "真言宗醍醐派": "shingon-daigo",

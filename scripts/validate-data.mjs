@@ -4,6 +4,7 @@ const temples = JSON.parse(await readFile("data/temples.json", "utf8"));
 const districts = JSON.parse(await readFile("data/districts.json", "utf8"));
 const templeMedia = JSON.parse(await readFile("data/temple-media.json", "utf8"));
 const photoCategories = JSON.parse(await readFile("data/photo-categories.json", "utf8"));
+const templeUpdates = JSON.parse(await readFile("data/temple-updates.json", "utf8"));
 
 const errors = [];
 const warnings = [];
@@ -50,6 +51,7 @@ checkUnique(temples, "slug", "temples");
 checkUnique(districts, "district_id", "districts");
 checkUnique(districts, "slug", "districts");
 checkUnique(photoCategories, "category_id", "photo categories");
+checkUnique(templeUpdates, "update_id", "temple updates");
 
 for (const district of districts) {
   const label = `district ${district.district_id || "(missing id)"}`;
@@ -144,6 +146,21 @@ for (const media of templeMedia) {
   }
 }
 
+for (const update of templeUpdates) {
+  const label = `temple update ${update.update_id || "(missing id)"}`;
+  requireText(update, "update_id", label);
+  requireText(update, "date", label);
+  requireText(update, "temple_slug", label);
+  requireText(update, "title", label);
+  requireText(update, "summary", label);
+  if (update.temple_slug && !templeSlugs.has(update.temple_slug)) {
+    errors.push(`${label}: temple_slug "${update.temple_slug}" is not in data/temples.json`);
+  }
+  if (update.date && !/^\d{4}-\d{2}-\d{2}$/.test(update.date)) {
+    errors.push(`${label}: date must match YYYY-MM-DD format`);
+  }
+}
+
 for (const warning of warnings) {
   console.warn(`[WARN] ${warning}`);
 }
@@ -154,5 +171,5 @@ if (errors.length > 0) {
   }
   process.exitCode = 1;
 } else {
-  console.log(`[OK] ${temples.length} temples, ${districts.length} districts, and ${templeMedia.length} media sets validated`);
+  console.log(`[OK] ${temples.length} temples, ${districts.length} districts, ${templeMedia.length} media sets, and ${templeUpdates.length} updates validated`);
 }

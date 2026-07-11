@@ -272,6 +272,36 @@ button,
   margin-bottom: 20px;
 }
 
+.updates-section {
+  padding-bottom: 12px;
+}
+
+.update-list {
+  border-top: 1px solid var(--line);
+}
+
+.update-item {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.update-item time {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.update-item h3 {
+  margin: 0 0 4px;
+  font-size: 1.12rem;
+}
+
+.update-item p {
+  margin-bottom: 4px;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -344,6 +374,30 @@ button,
   background: #20201d;
   color: #fffdf8;
   white-space: pre-wrap;
+}
+
+.submission-output.success {
+  border-color: #557b50;
+  background: #edf5eb;
+  color: #244320;
+}
+
+.submission-output.error {
+  border-color: #9e5547;
+  background: #fff0ed;
+  color: #732d21;
+}
+
+.admin-page-title {
+  border-left: 4px solid var(--accent-strong);
+  padding-left: 18px;
+}
+
+@media (max-width: 640px) {
+  .update-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
 }
 
 .district-grid {

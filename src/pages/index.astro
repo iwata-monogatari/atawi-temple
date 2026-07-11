@@ -4,6 +4,7 @@ import TempleCard from "../components/TempleCard.astro";
 import type { Temple } from "../lib/temples";
 import {
   allTemples,
+  allTempleUpdates,
   countTemplesByDistrict,
   countTemplesBySect,
   getTempleBySlug,
@@ -12,6 +13,10 @@ import {
 const districtCounts = countTemplesByDistrict();
 const allSectCounts = countTemplesBySect();
 const sectCounts = allSectCounts.slice(0, 6);
+const recentUpdates = allTempleUpdates.slice(0, 5).map((update) => ({
+  ...update,
+  temple: getTempleBySlug(update.temple_slug),
+}));
 const featured = [
   "kokubunji-mitsuke",
   "gyokoji-ikeda",
@@ -67,6 +72,29 @@ const featured = [
     <a href="/search/?status=ruin">廃寺・寺院跡</a>
     <a href="/search/?sect=曹洞宗">曹洞宗</a>
     <a href="/sects/">宗派から探す</a>
+  </section>
+
+  <section class="section updates-section">
+    <div class="section-heading">
+      <h2>更新情報</h2>
+      <span class="small">寺院ページの追加・更新</span>
+    </div>
+    <div class="update-list">
+      {
+        recentUpdates.map((update) => (
+          <article class="update-item">
+            <time datetime={update.date}>{update.date.replaceAll("-", ".")}</time>
+            <div>
+              <h3>
+                <a href={`/temples/${update.temple_slug}/`}>{update.title}</a>
+              </h3>
+              <p>{update.summary}</p>
+              {update.temple && <span class="small">{update.temple.name} / {update.temple.area}</span>}
+            </div>
+          </article>
+        ))
+      }
+    </div>
   </section>
 
   <section class="section">

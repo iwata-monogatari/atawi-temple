@@ -5,11 +5,13 @@ import "../styles/global.css";
 interface Props {
   title?: string;
   description?: string;
+  noindex?: boolean;
 }
 
 const {
   title = "磐田市のお寺・寺院データベース｜ATAWI temple",
   description = "磐田市内の寺院、廃寺、寺院跡、霊場・札所情報を整理する地域寺院データベースです。",
+  noindex = false,
 } = Astro.props;
 ---
 
@@ -20,6 +22,7 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex,nofollow" />}
     <meta name="theme-color" content="#2f4b2b" />
     <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -41,7 +44,6 @@ const {
         <a href="/sects/">宗派</a>
         <a href="/status/">調査状況</a>
         <a href="/search/">検索</a>
-        <a href="/photo-submit/">写真投稿</a>
         <a href="/editorial-policy/">編集方針</a>
         <a href="/correction/">情報提供・訂正</a>
       </nav>
@@ -55,7 +57,6 @@ const {
         <a href="/about/">運営者情報</a>
         <a href="/status/">調査状況</a>
         <a href="/sects/">宗派</a>
-        <a href="/photo-submit/">写真投稿</a>
         <a href="/editorial-policy/">編集方針</a>
         <a href="/correction/">情報提供・訂正</a>
         <a href="/privacy/">プライバシーポリシー</a>
