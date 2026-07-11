@@ -1,0 +1,56 @@
+[
+  {
+    "district_id": "mitsuke",
+    "name": "見付",
+    "slug": "mitsuke",
+    "summary": "遠江国府や東海道見付宿の記憶を受け継ぐ、磐田の政治・文化の中心地。"
+  },
+  {
+    "district_id": "nakaizumi",
+    "name": "中泉",
+    "slug": "nakaizumi",
+    "summary": "国分寺・国分尼寺、中泉御殿、鉄道開通後の玄関口としての歴史を持つ地区。"
+  },
+  {
+    "district_id": "mikuriya",
+    "name": "御厨",
+    "slug": "mikuriya",
+    "summary": "鎌田御厨や御厨古墳群など、磐田原台地東縁の古代史を伝える地区。"
+  },
+  {
+    "district_id": "toyoda",
+    "name": "豊田",
+    "slug": "toyoda",
+    "summary": "天竜川左岸と池田の渡し、熊野御前ゆかりの行興寺などの記憶が残る地区。"
+  },
+  {
+    "district_id": "nanbu",
+    "name": "南部",
+    "slug": "nanbu",
+    "summary": "天竜川と原野谷川に挟まれ、旧村ごとの歴史と治水の記憶を持つ地区。"
+  },
+  {
+    "district_id": "koyo",
+    "name": "向陽",
+    "slug": "koyo",
+    "summary": "岩田・大藤・向笠など、磐田原台地の丘陵地に古代からの遺跡が残る地区。"
+  },
+  {
+    "district_id": "ryuyo",
+    "name": "竜洋",
+    "slug": "ryuyo",
+    "summary": "天竜川と遠州灘に抱かれ、掛塚湊や掛塚まつりの記憶を伝える地区。"
+  },
+  {
+    "district_id": "fukude",
+    "name": "福田",
+    "slug": "fukude",
+    "summary": "太田川河口の港町として開け、海辺の暮らしと織物産業の記憶を持つ地区。"
+  },
+  {
+    "district_id": "toyooka",
+    "name": "豊岡",
+    "slug": "toyooka",
+    "summary": "磐田市北部の山間・丘陵に、古代から中世の記憶が残る地区。"
+  }
+]
