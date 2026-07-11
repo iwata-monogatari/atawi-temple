@@ -1,3 +1,8 @@
 name = "atawi-temple"
 compatibility_date = "2026-07-11"
 pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "ATAWI_BOARD_DB"
+database_name = "atawi-temple-board"
+database_id = "2ec1f622-bbe3-4aed-beaa-1ebde55211ca"
