@@ -244,6 +244,13 @@ button,
   color: var(--muted);
 }
 
+.district-card em {
+  align-self: end;
+  color: var(--accent-strong);
+  font-style: normal;
+  font-weight: 700;
+}
+
 .temple-card {
   background: var(--paper);
   border: 1px solid var(--line);
