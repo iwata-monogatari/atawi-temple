@@ -43,7 +43,7 @@ const featured = allTemples.slice(0, 3);
     <div class="district-grid">
       {
         allDistricts.map((district) => (
-          <a class="district-card" href={`/search/?district=${district.district_id}`}>
+          <a class="district-card" href={`/areas/${district.slug}/`}>
             <strong>{district.name}</strong>
             <span>{district.summary}</span>
           </a>
