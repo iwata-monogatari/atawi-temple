@@ -1,4 +1,5 @@
 import temples from "../../data/temples.json";
+import templePageOverrides from "../../data/temple-page-overrides.json";
 import districts from "../../data/districts.json";
 import templeMedia from "../../data/temple-media.json";
 import photoCategories from "../../data/photo-categories.json";
@@ -9,8 +10,16 @@ export type District = (typeof districts)[number];
 export type TempleMedia = (typeof templeMedia)[number];
 export type PhotoCategory = (typeof photoCategories)[number];
 export type TempleUpdate = (typeof templeUpdates)[number];
+type TemplePageOverride = (typeof templePageOverrides)[number];
 
-export const allTemples = temples;
+const templePageOverrideMap = new Map<string, TemplePageOverride>(
+  templePageOverrides.map((override) => [override.slug, override]),
+);
+
+export const allTemples = temples.map((temple) => ({
+  ...temple,
+  ...(templePageOverrideMap.get(temple.slug) || {}),
+})) as Temple[];
 export const allDistricts = districts;
 export const allTempleMedia = templeMedia;
 export const allPhotoCategories = photoCategories;
