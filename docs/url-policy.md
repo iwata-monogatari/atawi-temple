@@ -1,6 +1,6 @@
 # URL・ID設計方針
 
-ATAWI templeでは、公開URLと内部管理IDを分けて運用します。
+ATAWI TEMPLEでは、公開URLと内部管理IDを分けて運用します。
 
 ## 基本方針
 

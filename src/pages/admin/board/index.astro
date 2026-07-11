@@ -1,0 +1,91 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { allTemples } from "../../../lib/temples";
+const templeMap = JSON.stringify(Object.fromEntries(allTemples.map((temple) => [temple.slug, temple.name])));
+---
+
+<BaseLayout title="掲示板管理｜ATAWI TEMPLE" description="寺院情報提供掲示板の管理画面です。" noindex={true}>
+  <section class="page-title admin-page-title" data-temple-map={templeMap}>
+    <p class="eyebrow">Administrator</p>
+    <h1>掲示板を管理する</h1>
+    <p>投稿内容と非公開の連絡先を確認し、公開・非公開・対応済みを決定します。</p>
+    <a href="/admin/photos/">写真管理へ</a>
+  </section>
+  <section class="section admin-board-section">
+    <div class="admin-board-toolbar">
+      <button type="button" data-filter="pending">確認待ち</button>
+      <button type="button" data-filter="approved">公開中</button>
+      <button type="button" data-filter="resolved">対応済み</button>
+      <button type="button" data-filter="rejected">非公開</button>
+      <button type="button" data-filter="all">すべて</button>
+    </div>
+    <div id="admin-board-list" class="admin-board-list" aria-live="polite">投稿を読み込んでいます。</div>
+  </section>
+
+  <script is:inline>
+    // @ts-nocheck
+    const templeMap = JSON.parse(document.querySelector("[data-temple-map]").dataset.templeMap || "{}");
+    const list = document.querySelector("#admin-board-list");
+    const labels = { reading: "読み方", history: "由緒・記憶", heritage: "文化財", location: "場所・参拝", publication: "掲載配慮", other: "その他" };
+    let posts = [];
+    let currentFilter = "pending";
+    const escapeHtml = (value) => String(value || "").replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
+
+    function render() {
+      const filtered = currentFilter === "all" ? posts : posts.filter((post) => post.status === currentFilter);
+      if (!filtered.length) { list.innerHTML = `<div class="board-empty">該当する投稿はありません。</div>`; return; }
+      list.innerHTML = filtered.map((post) => `<article class="admin-board-card" data-id="${post.id}">
+        <div class="board-post-meta"><span>${labels[post.category] || post.category}</span><time>${post.created_at.slice(0, 10)}</time></div>
+        <h2>${escapeHtml(post.title)}</h2>
+        <p><strong>${escapeHtml(templeMap[post.temple_slug] || post.temple_slug)}</strong> / 投稿：${escapeHtml(post.display_name)}</p>
+        <p class="admin-board-body">${escapeHtml(post.body).replaceAll("\n", "<br>")}</p>
+        ${post.source_info ? `<p class="board-source"><strong>根拠：</strong>${escapeHtml(post.source_info)}</p>` : ""}
+        ${post.contact_email ? `<p class="private-contact"><strong>非公開連絡先：</strong>${escapeHtml(post.contact_email)}</p>` : ""}
+        <label>編集部からの公開返信<textarea rows="3" data-reply>${escapeHtml(post.public_reply || "")}</textarea></label>
+        <div class="admin-board-actions">
+          <button type="button" data-status="approved">公開する</button>
+          <button type="button" data-status="resolved">対応済みで公開</button>
+          <button type="button" class="secondary-button" data-status="rejected">非公開にする</button>
+        </div>
+        <p class="form-result" data-result hidden></p>
+      </article>`).join("");
+    }
+
+    async function load() {
+      const response = await fetch("/admin/api/board-posts");
+      const data = await response.json();
+      if (!response.ok || !data.ok) { list.textContent = data.message || "読み込めませんでした。"; return; }
+      posts = data.posts || [];
+      render();
+    }
+
+    document.querySelector(".admin-board-toolbar").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-filter]");
+      if (!button) return;
+      currentFilter = button.dataset.filter;
+      render();
+    });
+    list.addEventListener("click", async (event) => {
+      const button = event.target.closest("[data-status]");
+      if (!button) return;
+      const card = button.closest("[data-id]");
+      const result = card.querySelector("[data-result]");
+      button.disabled = true;
+      result.hidden = false;
+      result.textContent = "更新しています。";
+      try {
+        const response = await fetch("/admin/api/board-posts", {
+          method: "PATCH", headers: { "content-type": "application/json" },
+          body: JSON.stringify({ id: card.dataset.id, status: button.dataset.status, public_reply: card.querySelector("[data-reply]").value }),
+        });
+        const data = await response.json();
+        if (!response.ok || !data.ok) throw new Error(data.message || "更新できませんでした。");
+        await load();
+      } catch (error) {
+        result.classList.add("error");
+        result.textContent = error.message;
+      } finally { button.disabled = false; }
+    });
+    load();
+  </script>
+</BaseLayout>

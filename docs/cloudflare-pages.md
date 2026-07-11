@@ -1,6 +1,6 @@
 # Cloudflare Pages公開メモ
 
-ATAWI templeをCloudflare Pagesで公開する場合の設定です。
+ATAWI TEMPLEをCloudflare Pagesで公開する場合の設定です。
 
 ## GitHub
 
@@ -68,6 +68,32 @@ Allow policyには管理者本人のメールアドレス1件だけを指定し�
 管理画面とAPIはAccess JWTの署名、AUD、有効期限、メールアドレスを検証します。変数やAccess設定が不足した場合は、
 安全のため管理画面を公開せずエラーで停止します。
 
+## 寺院情報提供掲示板
+
+公開掲示板は `/correction/`、管理者用の審査画面は `/admin/board/` です。投稿は自動公開せず、
+管理者が承認した投稿だけを公開します。
+
+Cloudflare D1で `atawi-temple-board` データベースを作成し、Pages Functionsへ次のbindingを追加します。
+
+| 項目 | 値 |
+|---|---|
+| D1 database | `atawi-temple-board` |
+| Binding name | `ATAWI_BOARD_DB` |
+
+初回だけ `schema/board.sql` を実行してテーブルを作成します。
+
+```bash
+npx wrangler d1 execute atawi-temple-board --remote --file=schema/board.sql
+```
+
+迷惑投稿対策用の環境変数として、推測されにくい任意の文字列を設定します。
+
+```dotenv
+BOARD_RATE_LIMIT_SALT=<長いランダム文字列>
+```
+
+D1 bindingが未設定の場合、公開済み投稿欄は空の状態で表示され、投稿受付は停止します。
+
 Preview環境の閲覧を本番集計へ混ぜたくない場合は、Previewだけ次にします。
 
 ```dotenv
@@ -92,3 +118,5 @@ Cloudflare Pages側でCustom domainを追加し、DNSが自動作成されるか
 - HTML内の`tracker.js`が1回だけ読み込まれている
 - `data-site="atawi-temple"`になっている
 - 訂正フォームの入力値がURLへ入らない
+- `/correction/`で承認済み投稿のみ表示される
+- `/admin/board/`がCloudflare Accessで保護されている

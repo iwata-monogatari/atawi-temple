@@ -1,6 +1,6 @@
-# ATAWI temple
+# ATAWI TEMPLE
 
-磐田市のお寺・寺院データベース「ATAWI temple」です。
+磐田市のお寺・寺院データベース「ATAWI TEMPLE」です。
 
 ## 実装内容
 

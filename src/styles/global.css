@@ -751,6 +751,319 @@ button,
   color: var(--accent-strong);
 }
 
+.board-title {
+  padding-bottom: 34px;
+}
+
+.board-guide-band {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.board-guide-band > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-right: 1px solid var(--line);
+  padding: 16px 20px;
+}
+
+.board-guide-band > div:last-child {
+  border-right: 0;
+}
+
+.board-guide-band strong {
+  color: var(--accent-strong);
+  font-size: 1.4rem;
+}
+
+.board-guide-band span {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.board-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(340px, 0.75fr);
+  gap: 48px;
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 58px 0;
+  align-items: start;
+}
+
+.board-layout aside {
+  position: sticky;
+  top: 20px;
+}
+
+.board-section .section-heading {
+  align-items: end;
+}
+
+.board-section .section-heading h2,
+.board-form-panel h2 {
+  margin-bottom: 0;
+}
+
+.board-section .section-heading select {
+  width: min(270px, 100%);
+}
+
+.section-kicker {
+  margin-bottom: 2px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.board-post-list {
+  display: grid;
+  gap: 18px;
+}
+
+.board-post,
+.board-empty,
+.board-loading {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 22px;
+  background: var(--paper);
+}
+
+.board-loading,
+.board-empty {
+  color: var(--muted);
+}
+
+.board-empty p {
+  margin: 4px 0 0;
+}
+
+.board-post-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 9px;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.board-post-meta span {
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+
+.board-post h3 {
+  margin-bottom: 3px;
+  font-size: 1.25rem;
+}
+
+.board-temple-link {
+  display: inline-flex;
+  gap: 8px;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+.board-temple-link small {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.board-post-body {
+  margin-bottom: 14px;
+}
+
+.board-source,
+.editor-reply,
+.private-contact {
+  border-left: 3px solid var(--line);
+  padding: 10px 13px;
+  background: var(--bg);
+  font-size: 0.88rem;
+}
+
+.board-source strong,
+.editor-reply strong {
+  display: block;
+  color: var(--accent-strong);
+  font-size: 0.76rem;
+}
+
+.board-author {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.editor-reply {
+  margin-top: 16px;
+  border-left-color: var(--accent);
+  background: #edf4eb;
+}
+
+.editor-reply p {
+  margin: 3px 0 0;
+}
+
+.board-form-panel {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+  background: var(--paper);
+}
+
+.board-form-panel .stack-form {
+  margin-top: 22px;
+}
+
+.board-form-panel label {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.board-form-panel label input,
+.board-form-panel label select,
+.board-form-panel label textarea {
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+.required {
+  color: var(--warn);
+  font-size: 0.7rem;
+}
+
+.honeypot {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.consent-check {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 9px;
+  align-items: start;
+  color: var(--muted);
+  font-size: 0.78rem !important;
+  font-weight: 400 !important;
+}
+
+.consent-check input {
+  width: 18px;
+  margin-top: 3px !important;
+}
+
+.form-result {
+  margin: 0;
+  border-radius: 6px;
+  padding: 10px 12px;
+  background: var(--soft);
+  font-size: 0.86rem;
+}
+
+.form-result.success {
+  background: #e2eddf;
+  color: var(--accent-strong);
+}
+
+.form-result.error {
+  background: #fff0ed;
+  color: #732d21;
+}
+
+.board-policy {
+  padding-top: 0;
+}
+
+.policy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.policy-grid > div {
+  padding-top: 18px;
+}
+
+.policy-grid p {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.admin-board-toolbar,
+.admin-board-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.admin-board-toolbar {
+  margin-bottom: 20px;
+}
+
+.admin-board-toolbar button,
+.admin-board-actions button {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+}
+
+.secondary-button {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.admin-board-list {
+  display: grid;
+  gap: 16px;
+}
+
+.admin-board-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+  background: var(--paper);
+}
+
+.admin-board-card h2 {
+  margin-bottom: 4px;
+  font-size: 1.25rem;
+}
+
+.admin-board-body {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 14px 0;
+}
+
+.private-contact {
+  border-left-color: var(--warn);
+  background: #fff7eb;
+}
+
+.admin-board-card label {
+  display: block;
+  margin: 14px 0;
+  font-weight: 700;
+}
+
+.admin-board-card textarea {
+  margin-top: 5px;
+  font-weight: 400;
+}
+
 .section-heading {
   display: flex;
   align-items: baseline;
@@ -1183,6 +1496,18 @@ th {
     grid-template-columns: 1fr;
     gap: 8px;
   }
+
+  .board-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .board-layout aside {
+    position: static;
+  }
+
+  .policy-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 560px) {
@@ -1243,5 +1568,37 @@ th {
 
   .pending-inline small {
     grid-column: 1;
+  }
+
+  .board-guide-band {
+    grid-template-columns: 1fr;
+  }
+
+  .board-guide-band > div {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .board-guide-band > div:last-child {
+    border-bottom: 0;
+  }
+
+  .board-layout {
+    gap: 34px;
+    padding-top: 38px;
+  }
+
+  .board-section .section-heading {
+    display: grid;
+    align-items: start;
+  }
+
+  .board-section .section-heading select {
+    width: 100%;
+  }
+
+  .board-form-panel,
+  .board-post {
+    padding: 17px;
   }
 }

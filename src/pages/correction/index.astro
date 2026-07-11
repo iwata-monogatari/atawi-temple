@@ -1,48 +1,217 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { allTemples } from "../../lib/temples";
+
+const temples = [...allTemples].sort((a, b) => a.name_kana.localeCompare(b.name_kana, "ja"));
+const templeMap = JSON.stringify(Object.fromEntries(temples.map((temple) => [temple.slug, {
+  name: temple.name,
+  kana: temple.name_kana,
+  area: temple.area,
+}])));
 ---
 
-<BaseLayout title="情報提供・訂正｜ATAWI temple">
-  <section class="page-title">
-    <p class="eyebrow">Correction</p>
-    <h1>情報提供・訂正</h1>
-    <p>寺院名、読み方、住所、宗派、由緒、写真掲載の可否など、追加・訂正したい情報をお寄せください。</p>
+<BaseLayout
+  title="寺院情報提供掲示板｜ATAWI TEMPLE"
+  description="磐田市内の寺院について、読み方、由緒、文化財、所在地などの情報提供・訂正を受け付ける掲示板です。"
+>
+  <section class="page-title board-title">
+    <p class="eyebrow">Community Research Board</p>
+    <h1>寺院情報提供掲示板</h1>
+    <p class="lead">
+      磐田市内の寺院に関する記憶、読み方、由緒、文化財、現地情報をお寄せください。
+      投稿はATAWI TEMPLE編集部が資料と照合し、確認後に公開します。
+    </p>
   </section>
 
-  <section class="section two-column">
-    <div>
-      <h2>提供いただきたい内容</h2>
-      <ul class="plain-list">
-        <li>対象寺院名、または対象ページURL</li>
-        <li>訂正・追加したい内容（読み方の訂正も歓迎します）</li>
-        <li>根拠となる資料名、URL、写真、現地で確認した日付</li>
-        <li>公開してよいお名前、または匿名希望の旨</li>
-      </ul>
-      <p>
-        いただいた情報はそのまま断定せず、公開資料や現地確認と照合したうえで反映します。
-        個人情報、寺院関係者や地域の方に不利益が出る内容は掲載しません。
-      </p>
-    </div>
+  <section class="board-guide-band" aria-label="掲示板の流れ">
+    <div><strong>1</strong><span>寺院を選んで投稿</span></div>
+    <div><strong>2</strong><span>編集部が内容を確認</span></div>
+    <div><strong>3</strong><span>掲示板公開・ページ反映</span></div>
+  </section>
 
-    <div class="notice">
-      <h2>投稿先</h2>
-      <p>
-        情報提供は、磐田物語の掲示板からお願いします。
-        関連するページURL欄にATAWI templeの該当ページを入れると確認しやすくなります。
-      </p>
-      <a class="button-link" href="https://iwata-monogatari.net/bbs" target="_blank" rel="noreferrer">
-        磐田物語の掲示板へ
-      </a>
+  <div class="board-layout" data-temple-map={templeMap}>
+    <main>
+      <section class="board-section">
+        <div class="section-heading">
+          <div><p class="section-kicker">Published</p><h2>公開された情報</h2></div>
+          <select id="board-filter" aria-label="寺院で絞り込む">
+            <option value="">すべての寺院</option>
+            {temples.map((temple) => <option value={temple.slug}>{temple.name}（{temple.area}）</option>)}
+          </select>
+        </div>
+        <div id="board-posts" class="board-post-list" aria-live="polite">
+          <div class="board-loading">掲示板を読み込んでいます。</div>
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <section class="board-form-panel" id="post-form">
+        <p class="section-kicker">New Information</p>
+        <h2>情報を投稿する</h2>
+        <form id="board-form" class="stack-form">
+          <label>
+            対象寺院 <span class="required">必須</span>
+            <input id="board-temple-search" type="search" placeholder="寺院名・読み方で絞り込み" autocomplete="off" />
+            <select id="board-temple" name="temple_slug" required>
+              <option value="">寺院を選んでください（全{temples.length}件）</option>
+              {temples.map((temple) => (
+                <option value={temple.slug} data-search={`${temple.name} ${temple.name_kana} ${temple.area}`}>
+                  {temple.name}（{temple.name_kana} / {temple.area}）
+                </option>
+              ))}
+            </select>
+          </label>
+
+          <label>
+            情報の種類 <span class="required">必須</span>
+            <select name="category" required>
+              <option value="">選んでください</option>
+              <option value="reading">寺院名・読み方</option>
+              <option value="history">由緒・地域の記憶</option>
+              <option value="heritage">文化財・境内の見どころ</option>
+              <option value="location">住所・場所・参拝情報</option>
+              <option value="publication">掲載への配慮・訂正依頼</option>
+              <option value="other">その他</option>
+            </select>
+          </label>
+
+          <label>
+            件名 <span class="required">必須</span>
+            <input name="title" type="text" maxlength="80" placeholder="例：手洗石の年代について" required />
+          </label>
+
+          <label>
+            情報の内容 <span class="required">必須</span>
+            <textarea name="body" rows="7" maxlength="2000" placeholder="どこで、何を確認したか具体的にお書きください。" required></textarea>
+          </label>
+
+          <label>
+            根拠・資料
+            <textarea name="source_info" rows="3" maxlength="500" placeholder="資料名、現地確認日、参考URLなど"></textarea>
+          </label>
+
+          <label>
+            掲示名
+            <input name="display_name" type="text" maxlength="40" placeholder="未入力の場合は「匿名」" />
+          </label>
+
+          <label>
+            連絡先メール（非公開）
+            <input name="contact_email" type="email" maxlength="160" placeholder="確認が必要な場合のみ使用します" />
+          </label>
+
+          <label class="honeypot" aria-hidden="true">
+            ウェブサイト
+            <input name="website" type="text" tabindex="-1" autocomplete="off" />
+          </label>
+
+          <label class="consent-check">
+            <input name="consent" type="checkbox" required />
+            <span>個人情報、墓石の個人名、未確認の噂を含めず、編集部の確認後に公開されることに同意します。</span>
+          </label>
+
+          <button type="submit">確認依頼として投稿する</button>
+          <p id="board-form-result" class="form-result" role="status" hidden></p>
+        </form>
+      </section>
+    </aside>
+  </div>
+
+  <section class="section board-policy">
+    <h2>掲示板の掲載方針</h2>
+    <div class="policy-grid">
+      <div><strong>自動公開しません</strong><p>投稿内容は編集部が確認し、必要に応じて表現を整えてから公開します。</p></div>
+      <div><strong>出典を大切にします</strong><p>資料名、説明板、聞き取り、現地確認日がある情報を優先して調査します。</p></div>
+      <div><strong>寺院への配慮を優先します</strong><p>個人情報、檀家情報、誹謗中傷、参拝の妨げになる内容は掲載しません。</p></div>
     </div>
   </section>
 
-  <section class="section">
-    <h2>投稿例</h2>
-    <div class="example-box">
-      <p>対象寺院：宣光寺</p>
-      <p>対象ページURL：https://example.com/temples/senkoji-mitsuke/</p>
-      <p>追加内容：本堂前の説明板に、創建に関する記載がありました。</p>
-      <p>根拠：2026年7月に現地で確認。写真提供可。</p>
-    </div>
-  </section>
+  <script is:inline>
+    // @ts-nocheck
+    const layout = document.querySelector("[data-temple-map]");
+    const templeMap = JSON.parse(layout.dataset.templeMap || "{}");
+    const categoryLabels = {
+      reading: "寺院名・読み方", history: "由緒・地域の記憶", heritage: "文化財・見どころ",
+      location: "住所・参拝情報", publication: "掲載への配慮", other: "その他",
+    };
+    const list = document.querySelector("#board-posts");
+    const filter = document.querySelector("#board-filter");
+    const form = document.querySelector("#board-form");
+    const result = document.querySelector("#board-form-result");
+    const templeSearch = document.querySelector("#board-temple-search");
+    const templeSelect = document.querySelector("#board-temple");
+    let posts = [];
+
+    const escapeHtml = (value) => String(value || "").replaceAll("&", "&amp;").replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;");
+    const formatDate = (value) => new Intl.DateTimeFormat("ja-JP", { year: "numeric", month: "long", day: "numeric" }).format(new Date(value));
+
+    function renderPosts() {
+      const filtered = filter.value ? posts.filter((post) => post.temple_slug === filter.value) : posts;
+      if (!filtered.length) {
+        list.innerHTML = `<div class="board-empty"><strong>公開情報はまだありません</strong><p>この寺院についてご存じのことがあれば、投稿フォームからお寄せください。</p></div>`;
+        return;
+      }
+      list.innerHTML = filtered.map((post) => {
+        const temple = templeMap[post.temple_slug] || { name: post.temple_slug, area: "" };
+        return `<article class="board-post">
+          <div class="board-post-meta">
+            <span>${escapeHtml(categoryLabels[post.category] || "情報提供")}</span>
+            <time>${escapeHtml(formatDate(post.published_at || post.created_at))}</time>
+          </div>
+          <h3>${escapeHtml(post.title)}</h3>
+          <a class="board-temple-link" href="/temples/${escapeHtml(post.temple_slug)}/">${escapeHtml(temple.name)} <small>${escapeHtml(temple.area)}</small></a>
+          <p class="board-post-body">${escapeHtml(post.body).replaceAll("\n", "<br>")}</p>
+          ${post.source_info ? `<div class="board-source"><strong>根拠・資料</strong>${escapeHtml(post.source_info)}</div>` : ""}
+          <div class="board-author">投稿：${escapeHtml(post.display_name || "匿名")}</div>
+          ${post.public_reply ? `<div class="editor-reply"><strong>ATAWI TEMPLE編集部より</strong><p>${escapeHtml(post.public_reply).replaceAll("\n", "<br>")}</p></div>` : ""}
+        </article>`;
+      }).join("");
+    }
+
+    async function loadPosts() {
+      try {
+        const response = await fetch("/api/board-posts");
+        const data = await response.json();
+        posts = data.posts || [];
+        renderPosts();
+      } catch {
+        list.innerHTML = `<div class="board-empty"><strong>掲示板を読み込めませんでした</strong><p>時間をおいて再度ご確認ください。</p></div>`;
+      }
+    }
+
+    templeSearch.addEventListener("input", () => {
+      const query = templeSearch.value.normalize("NFKC").toLowerCase().trim();
+      Array.from(templeSelect.options).slice(1).forEach((option) => {
+        option.hidden = Boolean(query) && !option.dataset.search.normalize("NFKC").toLowerCase().includes(query);
+      });
+      if (templeSelect.selectedOptions[0]?.hidden) templeSelect.value = "";
+    });
+    filter.addEventListener("change", renderPosts);
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const button = form.querySelector("button[type=submit]");
+      button.disabled = true;
+      result.hidden = false;
+      result.className = "form-result";
+      result.textContent = "送信しています。";
+      const values = Object.fromEntries(new FormData(form).entries());
+      try {
+        const response = await fetch("/api/board-posts", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(values) });
+        const data = await response.json();
+        if (!response.ok || !data.ok) throw new Error(data.message || "投稿できませんでした。");
+        result.classList.add("success");
+        result.textContent = data.message || "投稿を受け付けました。";
+        form.reset();
+      } catch (error) {
+        result.classList.add("error");
+        result.textContent = error.message || "投稿できませんでした。";
+      } finally {
+        button.disabled = false;
+      }
+    });
+    loadPosts();
+  </script>
 </BaseLayout>

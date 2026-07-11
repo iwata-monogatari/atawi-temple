@@ -7,14 +7,15 @@ const categories = JSON.stringify(allPhotoCategories);
 ---
 
 <BaseLayout
-  title="写真管理｜ATAWI temple"
-  description="ATAWI temple管理者専用の寺院写真アップロード画面です。"
+  title="写真管理｜ATAWI TEMPLE"
+  description="ATAWI TEMPLE管理者専用の寺院写真アップロード画面です。"
   noindex={true}
 >
   <section class="page-title admin-page-title">
     <p class="eyebrow">Administrator</p>
     <h1>寺院写真を登録する</h1>
     <p>管理者専用です。全寺院から掲載先を選び、写真と分類情報を保存します。</p>
+    <a href="/admin/board/">掲示板管理へ</a>
   </section>
 
   <section class="search-panel photo-submit-panel" data-categories={categories}>
