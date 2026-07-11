@@ -9,7 +9,9 @@ import {
 const statusCounts = countTemplesByStatus();
 const districtCounts = countTemplesByDistrict();
 const unknownDistrictCount = allTemples.filter((temple) => !temple.district_id).length;
-const detailPublishedCount = allTemples.filter((temple) => temple.detail_status === "公開済み").length;
+const officialSourceCount = allTemples.filter((temple) =>
+  temple.sources.some((source) => source.title.includes("静岡県知事所轄宗教法人名簿")),
+).length;
 const visitedCount = allTemples.filter((temple) => temple.visit_status === "訪問済み").length;
 
 const statusLabels: Record<string, string> = {
@@ -28,7 +30,7 @@ const statusLabels: Record<string, string> = {
   <section class="page-title">
     <p class="eyebrow">Research Status</p>
     <h1>調査状況</h1>
-    <p>寺院マスターの整備状況を公開します。件数はデータ更新にあわせて自動集計されます。</p>
+    <p>公式名簿をもとにした基礎情報の登録状況と、今後の現地・文献調査の進み具合を公開します。</p>
   </section>
 
   <section class="section">
@@ -39,9 +41,9 @@ const statusLabels: Record<string, string> = {
         <small>寺院・廃寺・寺院跡を含む</small>
       </article>
       <article class="stat-card">
-        <span>詳細ページ公開済み</span>
-        <strong>{detailPublishedCount}</strong>
-        <small>調査完了後に順次公開</small>
+        <span>公式名簿反映済み</span>
+        <strong>{officialSourceCount}</strong>
+        <small>静岡県知事所轄宗教法人名簿を参照</small>
       </article>
       <article class="stat-card">
         <span>現地訪問済み</span>
@@ -112,8 +114,8 @@ const statusLabels: Record<string, string> = {
   <section class="section notice">
     <h2>件数の考え方</h2>
     <p>
-      初期段階では、現存寺院だけでなく、廃寺、寺院跡、所在地不明の旧寺院も寺院マスターへ登録します。
-      確定値としての寺院数は、行政資料、宗派名簿、郷土資料、現地確認を照合した後に更新します。
+      現在の件数は、静岡県知事所轄宗教法人名簿に掲載された磐田市内の寺院・関連宗教法人を基礎にしています。
+      廃寺、旧寺院跡、札所、堂宇、文化財、現地写真、由緒は、行政資料、宗派名簿、郷土資料、現地確認を照合しながら追加します。
     </p>
   </section>
 </BaseLayout>
