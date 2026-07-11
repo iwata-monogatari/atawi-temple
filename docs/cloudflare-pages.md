@@ -68,6 +68,22 @@ Allow policyには管理者本人のメールアドレス1件だけを指定し�
 管理画面とAPIはAccess JWTの署名、AUD、有効期限、メールアドレスを検証します。変数やAccess設定が不足した場合は、
 安全のため管理画面を公開せずエラーで停止します。
 
+### 管理キー認証（Accessを設定するまでの代替）
+
+Cloudflare Zero Trustを設定していない期間は、Pagesのシークレットとして`ATAWI_ADMIN_KEY`を設定すると、
+管理キー方式で`/admin/*`へログインできます。
+
+```bash
+printf '%s' '<長いランダム文字列>' | npx wrangler pages secret put ATAWI_ADMIN_KEY --project-name=atawi-temple
+```
+
+- 未ログインで`/admin/`配下のページを開くと管理キー入力画面が表示されます。
+- 入力したキーはCookie（`Path=/admin; Secure; SameSite=Strict`、有効12時間）にのみ保存します。
+- APIを直接呼ぶ場合は`X-Admin-Key`ヘッダーでも認証できます。
+- `CF_ACCESS_TEAM_DOMAIN`・`CF_ACCESS_AUD`・`ATAWI_ADMIN_EMAIL`の3変数が設定されると、
+  管理キー方式は無効になりCloudflare Access検証へ自動で切り替わります。切り替え後は
+  `ATAWI_ADMIN_KEY`を削除して構いません。
+
 ## 寺院情報提供掲示板
 
 公開掲示板は `/correction/`、管理者用の審査画面は `/admin/board/` です。投稿は自動公開せず、

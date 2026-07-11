@@ -1,5 +1,41 @@
 let cachedKeys;
 
+function readCookie(request, name) {
+  const header = request.headers.get("Cookie") || "";
+  for (const part of header.split(";")) {
+    const [key, ...rest] = part.trim().split("=");
+    if (key !== name) continue;
+    try {
+      return decodeURIComponent(rest.join("="));
+    } catch {
+      return rest.join("=");
+    }
+  }
+  return "";
+}
+
+async function sha256Hex(value) {
+  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(value));
+  return Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, "0")).join("");
+}
+
+function hasAccessConfig(env) {
+  return Boolean(env.CF_ACCESS_TEAM_DOMAIN && env.CF_ACCESS_AUD && env.ATAWI_ADMIN_EMAIL);
+}
+
+async function verifyAdminKey(request, env) {
+  const adminKey = String(env.ATAWI_ADMIN_KEY || "");
+  if (!adminKey) throw new Error("Admin authentication is not configured.");
+  const provided = readCookie(request, "atawi_admin_key") || request.headers.get("X-Admin-Key") || "";
+  if (!provided) return false;
+  return (await sha256Hex(provided)) === (await sha256Hex(adminKey));
+}
+
+export async function verifyAdmin(request, env) {
+  if (hasAccessConfig(env)) return verifyAccess(request, env);
+  return verifyAdminKey(request, env);
+}
+
 function decodeBase64Url(value) {
   const normalized = value.replace(/-/g, "+").replace(/_/g, "/");
   const binary = atob(normalized.padEnd(Math.ceil(normalized.length / 4) * 4, "="));
