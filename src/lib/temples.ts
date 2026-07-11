@@ -23,6 +23,20 @@ export function getTemplesByDistrictId(districtId: string) {
   return allTemples.filter((temple) => temple.district_id === districtId);
 }
 
+export function countTemplesByStatus() {
+  return allTemples.reduce<Record<string, number>>((counts, temple) => {
+    counts[temple.status] = (counts[temple.status] || 0) + 1;
+    return counts;
+  }, {});
+}
+
+export function countTemplesByDistrict() {
+  return allDistricts.map((district) => ({
+    ...district,
+    count: getTemplesByDistrictId(district.district_id).length,
+  }));
+}
+
 export function getTempleBySlug(slug: string) {
   return allTemples.find((temple) => temple.slug === slug);
 }
