@@ -7,6 +7,31 @@ export type District = (typeof districts)[number];
 export const allTemples = temples;
 export const allDistricts = districts;
 
+export const sectSlugMap: Record<string, string> = {
+  "真言宗醍醐派": "shingon-daigo",
+  "真言宗智山派": "shingon-chisan",
+  "新義真言宗": "shingi-shingon",
+  "浄土宗": "jodo",
+  "浄土真宗本願寺派": "shinshu-honganji",
+  "真宗大谷派": "shinshu-otani",
+  "真宗高田派": "shinshu-takada",
+  "時宗": "ji",
+  "臨済宗妙心寺派": "rinzai-myoshinji",
+  "臨済宗方広寺派": "rinzai-hokoji",
+  "曹洞宗": "soto",
+  "日蓮宗": "nichiren",
+  "日蓮正宗": "nichiren-shoshu",
+  "日本山妙法寺大僧伽": "nipponzan-myohoji",
+  "包括宗教法人「神心教」": "shinshinkyo",
+  "神心教": "shinshinkyo-honbu",
+  "単立": "independent",
+};
+
+export const allSects = Array.from(new Set(allTemples.map((temple) => temple.sect))).map((name) => ({
+  name,
+  slug: sectSlugMap[name] || normalizeSearchText(name),
+}));
+
 export function getDistrictById(districtId: string | null | undefined) {
   return allDistricts.find((district) => district.district_id === districtId);
 }
@@ -21,6 +46,23 @@ export function getDistrictName(districtId: string | null | undefined) {
 
 export function getTemplesByDistrictId(districtId: string) {
   return allTemples.filter((temple) => temple.district_id === districtId);
+}
+
+export function getTemplesBySect(sect: string) {
+  return allTemples.filter((temple) => temple.sect === sect);
+}
+
+export function getSectBySlug(slug: string) {
+  return allSects.find((sect) => sect.slug === slug);
+}
+
+export function countTemplesBySect() {
+  return allSects
+    .map((sect) => ({
+      ...sect,
+      count: getTemplesBySect(sect.name).length,
+    }))
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, "ja"));
 }
 
 export function countTemplesByStatus() {
