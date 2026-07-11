@@ -1,9 +1,10 @@
 import type { APIRoute } from "astro";
-import { allDistricts, allTemples } from "../lib/temples";
+import { allDistricts, allSects, allTemples } from "../lib/temples";
 
 const staticPaths = [
   "/",
   "/areas/",
+  "/sects/",
   "/temples/",
   "/status/",
   "/search/",
@@ -18,6 +19,7 @@ export const GET: APIRoute = ({ site }) => {
   const urls = [
     ...staticPaths,
     ...allDistricts.map((district) => `/areas/${district.slug}/`),
+    ...allSects.map((sect) => `/sects/${sect.slug}/`),
     ...allTemples.map((temple) => `/temples/${temple.slug}/`),
   ];
 
