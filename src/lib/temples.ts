@@ -11,8 +11,16 @@ export function getDistrictById(districtId: string | null | undefined) {
   return allDistricts.find((district) => district.district_id === districtId);
 }
 
+export function getDistrictBySlug(slug: string) {
+  return allDistricts.find((district) => district.slug === slug);
+}
+
 export function getDistrictName(districtId: string | null | undefined) {
   return getDistrictById(districtId)?.name || "地区未確定";
+}
+
+export function getTemplesByDistrictId(districtId: string) {
+  return allTemples.filter((temple) => temple.district_id === districtId);
 }
 
 export function getTempleBySlug(slug: string) {
