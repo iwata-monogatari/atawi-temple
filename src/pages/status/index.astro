@@ -1,0 +1,119 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  allTemples,
+  countTemplesByDistrict,
+  countTemplesByStatus,
+} from "../../lib/temples";
+
+const statusCounts = countTemplesByStatus();
+const districtCounts = countTemplesByDistrict();
+const unknownDistrictCount = allTemples.filter((temple) => !temple.district_id).length;
+const detailPublishedCount = allTemples.filter((temple) => temple.detail_status === "公開済み").length;
+const visitedCount = allTemples.filter((temple) => temple.visit_status === "訪問済み").length;
+
+const statusLabels: Record<string, string> = {
+  existing: "現存",
+  ruin: "寺院跡・廃寺",
+  moved: "移転",
+  merged: "統合",
+  unknown: "状況不明",
+};
+---
+
+<BaseLayout
+  title="調査状況｜ATAWI temple"
+  description="ATAWI templeの寺院マスター登録件数、9地区別件数、現地訪問状況、詳細ページ公開状況を確認できます。"
+>
+  <section class="page-title">
+    <p class="eyebrow">Research Status</p>
+    <h1>調査状況</h1>
+    <p>寺院マスターの整備状況を公開します。件数はデータ更新にあわせて自動集計されます。</p>
+  </section>
+
+  <section class="section">
+    <div class="stats-grid">
+      <article class="stat-card">
+        <span>登録件数</span>
+        <strong>{allTemples.length}</strong>
+        <small>寺院・廃寺・寺院跡を含む</small>
+      </article>
+      <article class="stat-card">
+        <span>詳細ページ公開済み</span>
+        <strong>{detailPublishedCount}</strong>
+        <small>調査完了後に順次公開</small>
+      </article>
+      <article class="stat-card">
+        <span>現地訪問済み</span>
+        <strong>{visitedCount}</strong>
+        <small>写真・現地確認を含む</small>
+      </article>
+      <article class="stat-card">
+        <span>地区未確定</span>
+        <strong>{unknownDistrictCount}</strong>
+        <small>所在地確認後に9地区へ分類</small>
+      </article>
+    </div>
+  </section>
+
+  <section class="section two-column">
+    <div>
+      <h2>状態別件数</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>状態</th>
+              <th>件数</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              Object.entries(statusCounts).map(([status, count]) => (
+                <tr>
+                  <td>{statusLabels[status] || status}</td>
+                  <td>{count}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div>
+      <h2>9地区別件数</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>地区</th>
+              <th>件数</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              districtCounts.map((district) => (
+                <tr>
+                  <td><a href={`/areas/${district.slug}/`}>{district.name}</a></td>
+                  <td>{district.count}</td>
+                </tr>
+              ))
+            }
+            <tr>
+              <td>地区未確定</td>
+              <td>{unknownDistrictCount}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section notice">
+    <h2>件数の考え方</h2>
+    <p>
+      初期段階では、現存寺院だけでなく、廃寺、寺院跡、所在地不明の旧寺院も寺院マスターへ登録します。
+      確定値としての寺院数は、行政資料、宗派名簿、郷土資料、現地確認を照合した後に更新します。
+    </p>
+  </section>
+</BaseLayout>
