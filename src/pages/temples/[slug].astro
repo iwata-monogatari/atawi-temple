@@ -7,136 +7,234 @@ import {
   getTempleBySlug,
   getTempleMediaBySlug,
   isUnknownValue,
-  knownValue,
 } from "../../lib/temples";
 
 export function getStaticPaths() {
-  return allTemples.map((temple) => ({
-    params: { slug: temple.slug },
-  }));
+  return allTemples.map((temple) => ({ params: { slug: temple.slug } }));
 }
 
 const temple = getTempleBySlug(Astro.params.slug || "");
-const districtName = getDistrictName(temple?.district_id);
-const showKana = temple ? !isUnknownValue(temple.name_kana) : false;
-const media = temple ? getTempleMediaBySlug(temple.slug) : undefined;
+if (!temple) return Astro.redirect("/temples/");
 
-if (!temple) {
-  return Astro.redirect("/temples/");
-}
+const districtName = getDistrictName(temple.district_id);
+const showKana = !isUnknownValue(temple.name_kana);
+const media = getTempleMediaBySlug(temple.slug);
+const galleryPhotos = media?.photos.filter((photo) => photo.src !== media.hero_image) || [];
+const historicalSections = "historical_sections" in temple && Array.isArray(temple.historical_sections)
+  ? temple.historical_sections
+  : [];
+const culturalAssets = "cultural_assets" in temple && Array.isArray(temple.cultural_assets)
+  ? temple.cultural_assets
+  : [];
+const researchTodos = "research_todos" in temple && Array.isArray(temple.research_todos)
+  ? temple.research_todos
+  : ["創建・沿革", "ご本尊", "参拝情報", "文化財・寺宝", "現地写真"];
+const pageSummary = "page_summary" in temple && temple.page_summary
+  ? temple.page_summary
+  : temple.history_summary;
+const foundedPeriod = "founded_period" in temple && temple.founded_period
+  ? temple.founded_period
+  : "調査中";
+const heritageStatus = "heritage_status" in temple && temple.heritage_status
+  ? temple.heritage_status
+  : "調査中";
+const visitNotes = "visit_notes" in temple && temple.visit_notes
+  ? temple.visit_notes
+  : "現地確認と寺院資料の調査後に加筆します。";
+
+const field = (value: string | null | undefined, pending = "調査中") => ({
+  text: isUnknownValue(value) ? pending : value,
+  pending: isUnknownValue(value),
+});
+const manned = field(temple.manned_status);
+const goshuin = field(temple.goshuin_status);
+const deity = field(temple.main_deity, "調査中・加筆待ち");
 ---
 
 <BaseLayout
   title={`${temple.name}｜住所・宗派・地区｜ATAWI temple`}
-  description={`${temple.name}の住所、宗派、地区、出典を整理するATAWI templeの寺院情報ページです。`}
+  description={`${temple.name}の住所、宗派、歴史、文化財、写真、調査状況を整理するATAWI templeの寺院情報ページです。`}
 >
-  <article class="detail">
-    <header class="page-title">
-      <p class="eyebrow">{districtName} / {temple.status_label}</p>
-      <h1>{temple.name}</h1>
-      {showKana && <p class="kana">{temple.name_kana}</p>}
-      {"page_summary" in temple && temple.page_summary && <p class="lead">{temple.page_summary}</p>}
+  <article class="temple-profile">
+    <header class="temple-masthead">
+      <div class="temple-heading">
+        <div>
+          <p class="eyebrow">{districtName}地区・{temple.status_label}</p>
+          <h1>{temple.name}</h1>
+          {showKana && <p class="temple-kana">{temple.name_kana}</p>}
+        </div>
+        <div class="research-badge">
+          <span>ページ充実度</span>
+          <strong>{media ? "現地写真・資料あり" : "基礎情報・調査中"}</strong>
+          <small>最終確認 {temple.last_verified_at.replaceAll("-", ".")}</small>
+        </div>
+      </div>
+      <p class="temple-lead">{pageSummary}</p>
+      {temple.aliases.length > 0 && (
+        <p class="alias-line"><span>別称・関連名称</span>{temple.aliases.join("／")}</p>
+      )}
     </header>
 
-    {
-      media && (
-        <section class="section">
-          <h2>写真</h2>
-          <figure class="hero-photo">
+    <section class="temple-visual" aria-label={`${temple.name}の写真`}>
+      {media ? (
+        <>
+          <figure class="temple-cover">
             <img src={media.hero_image} alt={`${temple.name}の主写真`} loading="eager" />
+            <figcaption>現地写真・{getPhotoCategory(media.photos[0]?.category_id)?.label || "寺院外観"}</figcaption>
           </figure>
-          <div class="photo-grid">
-            {media.photos.map((photo) => {
-              const category = getPhotoCategory(photo.category_id);
-              return (
-                <figure class="photo-card">
+          <div class="temple-photo-strip">
+            {galleryPhotos.slice(0, 5).map((photo) => (
+              <figure>
+                <img src={photo.src} alt={photo.alt} loading="lazy" />
+                <figcaption>{getPhotoCategory(photo.category_id)?.label || "現地写真"}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </>
+      ) : (
+        <div class="pending-photo">
+          <strong>写真を準備しています</strong>
+          <span>現地訪問後に、本堂・境内・入口・説明板の写真を掲載します。</span>
+        </div>
+      )}
+    </section>
+
+    <section class="temple-fact-band" aria-label="寺院の要点">
+      <div><span>宗派</span><strong>{temple.sect}</strong></div>
+      <div><span>創建・年代</span><strong class={foundedPeriod === "調査中" ? "pending-text" : ""}>{foundedPeriod}</strong></div>
+      <div><span>文化財・史跡</span><strong class={heritageStatus === "調査中" ? "pending-text" : ""}>{heritageStatus}</strong></div>
+      <div><span>所在地</span><strong>{temple.area}・磐田市</strong></div>
+    </section>
+
+    <div class="temple-content-grid">
+      <main class="temple-main-content">
+        <section class="detail-panel">
+          <p class="section-number">01</p>
+          <h2>この寺院について</h2>
+          <p class="summary-copy">{temple.history_summary}</p>
+          {deity.pending && (
+            <div class="pending-inline">
+              <span>ご本尊</span><strong>{deity.text}</strong><small>寺院資料・現地聞き取りで確認予定</small>
+            </div>
+          )}
+        </section>
+
+        <section class="detail-panel">
+          <p class="section-number">02</p>
+          <h2>歴史と背景</h2>
+          {historicalSections.length > 0 ? (
+            <div class="history-timeline">
+              {historicalSections.map((item) => (
+                <article>
+                  <h3>{item.heading}</h3>
+                  <p>{item.body}</p>
+                </article>
+              ))}
+            </div>
+          ) : (
+            <div class="pending-block">
+              <strong>沿革は調査中です</strong>
+              <p>創建年代、開山・開基、移転・再建の履歴を、寺院資料と地域資料から確認して加筆します。</p>
+            </div>
+          )}
+        </section>
+
+        <section class="detail-panel">
+          <p class="section-number">03</p>
+          <h2>文化財・見どころ</h2>
+          {culturalAssets.length > 0 ? (
+            <div class="heritage-list">
+              {culturalAssets.map((asset) => (
+                <article>
+                  <div><span>{asset.designation}</span><h3>{asset.name}</h3></div>
+                  <p>{asset.summary}</p>
+                </article>
+              ))}
+            </div>
+          ) : (
+            <div class="pending-block">
+              <strong>文化財・寺宝は加筆待ちです</strong>
+              <p>指定文化財、建築、仏像、石造物、古文書、境内の見どころを調査します。</p>
+            </div>
+          )}
+        </section>
+
+        <section class="detail-panel">
+          <p class="section-number">04</p>
+          <h2>写真で見る境内</h2>
+          {media ? (
+            <div class="photo-record-list">
+              {media.photos.map((photo) => (
+                <figure>
                   <img src={photo.src} alt={photo.alt} loading="lazy" />
                   <figcaption>
-                    <strong>{category?.label || "写真"}</strong>
+                    <strong>{getPhotoCategory(photo.category_id)?.label || "現地写真"}</strong>
                     <span>{photo.caption}</span>
                   </figcaption>
                 </figure>
-              );
-            })}
-          </div>
+              ))}
+            </div>
+          ) : (
+            <div class="pending-block"><strong>現地写真を準備しています</strong><p>初回訪問後に掲載します。</p></div>
+          )}
         </section>
-      )
-    }
 
-    <section class="section">
-      <h2>基本情報</h2>
-      <dl class="info-list">
-        <div><dt>寺院名</dt><dd>{temple.name}</dd></div>
-        {showKana && <div><dt>読み方</dt><dd>{temple.name_kana}</dd></div>}
-        <div><dt>住所</dt><dd>{temple.address}</dd></div>
-        <div><dt>地区</dt><dd>{districtName}</dd></div>
-        <div><dt>宗派</dt><dd>{temple.sect}</dd></div>
-        <div><dt>状態</dt><dd>{temple.status_label}</dd></div>
-        <div><dt>有人・無人</dt><dd>{knownValue(temple.manned_status)}</dd></div>
-        <div><dt>御朱印</dt><dd>{knownValue(temple.goshuin_status)}</dd></div>
-        <div><dt>現地訪問</dt><dd>{knownValue(temple.visit_status, "未訪問")}</dd></div>
-        <div><dt>最終確認日</dt><dd>{temple.last_verified_at}</dd></div>
-      </dl>
-    </section>
+        <section class="detail-panel sources-panel">
+          <p class="section-number">05</p>
+          <h2>出典・参考資料</h2>
+          <ol class="source-records">
+            {temple.sources.map((source) => (
+              <li>
+                <span>{source.type}</span>
+                {"url" in source && source.url ? (
+                  <a href={source.url} target="_blank" rel="noreferrer">{source.title}</a>
+                ) : <strong>{source.title}</strong>}
+                <p>{source.note}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+      </main>
 
-    <section class="section">
-      <h2>掲載内容</h2>
-      <p>{temple.history_summary}</p>
-      <p class="notice">現在は公式名簿に基づく基礎情報を掲載しています。由緒、文化財、写真、現地確認情報は、資料確認ができたものから追記します。</p>
-    </section>
+      <aside class="temple-sidebar">
+        <section class="side-panel">
+          <h2>基本情報</h2>
+          <dl class="side-info-list">
+            <div><dt>正式名称</dt><dd>{temple.name}</dd></div>
+            <div><dt>読み方</dt><dd>{showKana ? temple.name_kana : "調査中"}</dd></div>
+            <div><dt>宗派</dt><dd>{temple.sect}</dd></div>
+            <div><dt>ご本尊</dt><dd class={deity.pending ? "pending-text" : ""}>{deity.text}</dd></div>
+            <div><dt>住所</dt><dd>{temple.address}</dd></div>
+            <div><dt>地区</dt><dd>{districtName}</dd></div>
+          </dl>
+        </section>
 
-    {
-      "research_highlights" in temple && Array.isArray(temple.research_highlights) && (
-        <section class="section">
-          <h2>国分寺についての要点</h2>
-          <ul class="plain-list">
-            {temple.research_highlights.map((highlight) => <li>{highlight}</li>)}
+        <section class="side-panel">
+          <h2>参拝・現地情報</h2>
+          <dl class="visit-status-list">
+            <div><dt>有人・無人</dt><dd class={manned.pending ? "pending-pill" : "confirmed-pill"}>{manned.text}</dd></div>
+            <div><dt>御朱印</dt><dd class={goshuin.pending ? "pending-pill" : "confirmed-pill"}>{goshuin.text}</dd></div>
+            <div><dt>拝観時間</dt><dd class="pending-pill">調査中</dd></div>
+            <div><dt>駐車場</dt><dd class="pending-pill">調査中</dd></div>
+          </dl>
+          <p class="side-note">{visitNotes}</p>
+        </section>
+
+        <section class="side-panel research-panel">
+          <h2>これから調べること</h2>
+          <p>空欄にはせず、確認が必要な項目を公開しています。</p>
+          <ul>
+            {researchTodos.map((todo) => <li>{todo}</li>)}
           </ul>
         </section>
-      )
-    }
 
-    {
-      "page_rules" in temple && Array.isArray(temple.page_rules) && (
-        <section class="section">
-          <h2>このページの作成ルール</h2>
-          <ul class="plain-list">
-            {temple.page_rules.map((rule) => <li>{rule}</li>)}
-          </ul>
+        <section class="side-panel editorial-note">
+          <span>ATAWI temple編集部</span>
+          <h2>情報を更新しています</h2>
+          <p>公開資料と現地確認を照合し、確認できた情報から段階的に加筆します。</p>
+          <a class="button-link" href="/correction/">情報提供・訂正</a>
         </section>
-      )
-    }
-
-    <section class="section">
-      <h2>ご本尊</h2>
-      <p>{knownValue(temple.main_deity, "現在確認中です。")}</p>
-    </section>
-
-    <section class="section">
-      <h2>出典・参考資料</h2>
-      <ul class="source-list">
-        {
-          temple.sources.map((source) => (
-            <li>
-              {"url" in source && source.url ? (
-                <a href={source.url} target="_blank" rel="noreferrer">{source.title}</a>
-              ) : (
-                source.title
-              )}
-              （{source.type}） {source.note}
-            </li>
-          ))
-        }
-      </ul>
-    </section>
-
-    <section class="section notice">
-      <h2>非公式サイトである旨</h2>
-      <p>
-        ATAWI templeは各寺院の公式サイトではありません。寺院から監修・確認を受けている場合を除き、
-        公開情報および現地訪問をもとに、ATAWI temple編集部が独自に調査・整理しています。
-      </p>
-      <a class="button-link" href="/correction/">このページの情報を提供・訂正する</a>
-    </section>
+      </aside>
+    </div>
   </article>
 </BaseLayout>
