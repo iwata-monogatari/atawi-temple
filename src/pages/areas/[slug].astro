@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TempleCard from "../../components/TempleCard.astro";
+import {
+  allDistricts,
+  getDistrictBySlug,
+  getTemplesByDistrictId,
+} from "../../lib/temples";
+
+export function getStaticPaths() {
+  return allDistricts.map((district) => ({
+    params: { slug: district.slug },
+  }));
+}
+
+const district = getDistrictBySlug(Astro.params.slug || "");
+
+if (!district) {
+  return Astro.redirect("/areas/");
+}
+
+const temples = getTemplesByDistrictId(district.district_id);
+---
+
+<BaseLayout
+  title={`${district.name}地区のお寺・寺院一覧｜ATAWI temple`}
+  description={`${district.name}地区にある寺院、廃寺、寺院跡を整理するATAWI templeの地区別一覧です。`}
+>
+  <section class="page-title">
+    <p class="eyebrow">Area / {district.slug}</p>
+    <h1>{district.name}地区のお寺・寺院一覧</h1>
+    <p>{district.summary}</p>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>登録寺院</h2>
+      <a href={`/search/?district=${district.district_id}`}>この地区で検索する</a>
+    </div>
+    {
+      temples.length ? (
+        <div class="card-grid">
+          {temples.map((temple) => <TempleCard temple={temple} />)}
+        </div>
+      ) : (
+        <div class="empty">
+          この地区の寺院データはまだ登録されていません。寺院マスター作成後に順次追加します。
+        </div>
+      )
+    }
+  </section>
+
+  <section class="section">
+    <a class="button-link" href="/areas/">9地区一覧へ戻る</a>
+  </section>
+</BaseLayout>
