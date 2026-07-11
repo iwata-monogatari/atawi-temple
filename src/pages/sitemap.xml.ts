@@ -1,8 +1,9 @@
 import type { APIRoute } from "astro";
-import { allTemples } from "../lib/temples";
+import { allDistricts, allTemples } from "../lib/temples";
 
 const staticPaths = [
   "/",
+  "/areas/",
   "/temples/",
   "/search/",
   "/about/",
@@ -15,6 +16,7 @@ export const GET: APIRoute = ({ site }) => {
   const baseUrl = site?.toString().replace(/\/+$/, "") || "https://temple.atawi.link";
   const urls = [
     ...staticPaths,
+    ...allDistricts.map((district) => `/areas/${district.slug}/`),
     ...allTemples.map((temple) => `/temples/${temple.slug}/`),
   ];
 
