@@ -51,7 +51,13 @@ ASTRO_TELEMETRY_DISABLED=1 HOME=/tmp npm --cache /tmp/npm-cache run build
 
 ## 寺院データ
 
-初期データは`data/temples.json`にあります。現時点のデータは本番確定前の仮登録です。寺院マスター確定後、同じ形式で正式データへ差し替えてください。
+初期データは`data/temples.json`にあります。静岡県知事所轄宗教法人名簿をもとに、磐田市内の寺院・宗教法人を初期登録しています。創建、沿革、ご本尊、写真、現地確認情報は順次追記します。
+
+公式名簿から初期マスターを再生成する場合は、次を実行します。
+
+```bash
+node scripts/import-official-temples.mjs
+```
 
 公開URLは寺院名と地区名を組み合わせた名前ベースのslugにし、内部管理は`iwata-0001`のような番号IDで固定します。詳しくは`docs/url-policy.md`を参照してください。
 
