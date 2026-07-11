@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TempleCard from "../components/TempleCard.astro";
-import { allTemples } from "../lib/temples";
+import { allDistricts, allTemples } from "../lib/temples";
 
 const featured = allTemples.slice(0, 3);
 ---
@@ -28,11 +28,28 @@ const featured = allTemples.slice(0, 3);
   </section>
 
   <section class="filter-band" aria-label="主要な絞り込み">
-    <a href="/search/?area=見付">見付</a>
-    <a href="/search/?area=中泉">中泉</a>
+    <a href="/search/?district=mitsuke">見付</a>
+    <a href="/search/?district=nakaizumi">中泉</a>
     <a href="/search/?status=existing">現存寺院</a>
     <a href="/search/?status=ruin">廃寺・寺院跡</a>
     <a href="/search/?sect=曹洞宗">曹洞宗</a>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>9地区から探す</h2>
+      <a href="/search/">検索へ</a>
+    </div>
+    <div class="district-grid">
+      {
+        allDistricts.map((district) => (
+          <a class="district-card" href={`/search/?district=${district.district_id}`}>
+            <strong>{district.name}</strong>
+            <span>{district.summary}</span>
+          </a>
+        ))
+      }
+    </div>
   </section>
 
   <section class="section">
