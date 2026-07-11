@@ -41,6 +41,9 @@ const heritageStatus = "heritage_status" in temple && temple.heritage_status
 const visitNotes = "visit_notes" in temple && temple.visit_notes
   ? temple.visit_notes
   : "現地確認と寺院資料の調査後に加筆します。";
+const pilgrimageNote = "pilgrimage_note" in temple && temple.pilgrimage_note
+  ? temple.pilgrimage_note
+  : null;
 
 const field = (value: string | null | undefined, pending = "調査中") => ({
   text: isUnknownValue(value) ? pending : value,
@@ -206,6 +209,7 @@ const deity = field(temple.main_deity, "調査中・加筆待ち");
             <div><dt>ご本尊</dt><dd class={deity.pending ? "pending-text" : ""}>{deity.text}</dd></div>
             <div><dt>住所</dt><dd>{temple.address}</dd></div>
             <div><dt>地区</dt><dd>{districtName}</dd></div>
+            {pilgrimageNote && <div><dt>霊場・札所</dt><dd>{pilgrimageNote}</dd></div>}
           </dl>
         </section>
 
