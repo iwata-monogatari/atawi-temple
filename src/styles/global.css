@@ -393,6 +393,21 @@ th {
   padding-left: 1.2em;
 }
 
+.source-list {
+  padding-left: 1.2em;
+}
+
+.example-box {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.example-box p:last-child {
+  margin-bottom: 0;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   color: var(--muted);
