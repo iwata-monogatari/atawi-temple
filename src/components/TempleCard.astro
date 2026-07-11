@@ -1,6 +1,6 @@
 ---
 import type { Temple } from "../lib/temples";
-import { getDistrictName } from "../lib/temples";
+import { getDistrictName, isUnknownValue, knownValue } from "../lib/temples";
 
 interface Props {
   temple: Temple;
@@ -8,6 +8,7 @@ interface Props {
 
 const { temple } = Astro.props;
 const districtName = getDistrictName(temple.district_id);
+const showKana = !isUnknownValue(temple.name_kana);
 ---
 
 <article class="temple-card">
@@ -16,7 +17,7 @@ const districtName = getDistrictName(temple.district_id);
     <span>{districtName}</span>
   </div>
   <h3><a href={`/temples/${temple.slug}/`}>{temple.name}</a></h3>
-  <p class="kana">{temple.name_kana}</p>
+  {showKana && <p class="kana">{temple.name_kana}</p>}
   <dl class="compact-list">
     <div>
       <dt>住所</dt>
@@ -32,12 +33,12 @@ const districtName = getDistrictName(temple.district_id);
     </div>
     <div>
       <dt>ご本尊</dt>
-      <dd>{temple.main_deity}</dd>
+      <dd>{knownValue(temple.main_deity)}</dd>
     </div>
     <div>
       <dt>御朱印</dt>
-      <dd>{temple.goshuin_status}</dd>
+      <dd>{knownValue(temple.goshuin_status)}</dd>
     </div>
   </dl>
-  <p>{temple.history_summary}</p>
+  <p>{districtName}地区に所在する{temple.sect}の寺院です。公式名簿の基礎情報をもとに掲載しています。</p>
 </article>
