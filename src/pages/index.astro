@@ -3,13 +3,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TempleCard from "../components/TempleCard.astro";
 import type { Temple } from "../lib/temples";
 import {
+  allTemples,
   countTemplesByDistrict,
   countTemplesBySect,
   getTempleBySlug,
 } from "../lib/temples";
 
 const districtCounts = countTemplesByDistrict();
-const sectCounts = countTemplesBySect().slice(0, 6);
+const allSectCounts = countTemplesBySect();
+const sectCounts = allSectCounts.slice(0, 6);
 const featured = [
   "kokubunji-mitsuke",
   "gyokoji-ikeda",
@@ -41,6 +43,21 @@ const featured = [
         </div>
       </form>
     </div>
+  </section>
+
+  <section class="proof-band" aria-label="登録状況">
+    <article>
+      <strong>{allTemples.length}</strong>
+      <span>件登録</span>
+    </article>
+    <article>
+      <strong>{districtCounts.length}</strong>
+      <span>地区分類</span>
+    </article>
+    <article>
+      <strong>{allSectCounts.length}</strong>
+      <span>宗派分類</span>
+    </article>
   </section>
 
   <section class="filter-band" aria-label="主要な絞り込み">
