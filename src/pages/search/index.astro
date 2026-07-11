@@ -1,11 +1,11 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { allTemples } from "../../lib/temples";
+import { allDistricts, allTemples } from "../../lib/temples";
 
-const areas = Array.from(new Set(allTemples.map((temple) => temple.area)));
 const sects = Array.from(new Set(allTemples.map((temple) => temple.sect)));
 const statuses = Array.from(new Set(allTemples.map((temple) => temple.status)));
 const data = JSON.stringify(allTemples);
+const districts = JSON.stringify(allDistricts);
 ---
 
 <BaseLayout
@@ -18,7 +18,7 @@ const data = JSON.stringify(allTemples);
     <p>検索条件はURLに残るため、そのまま共有できます。</p>
   </section>
 
-  <section class="search-panel" data-temples={data}>
+  <section class="search-panel" data-temples={data} data-districts={districts}>
     <form id="search-form" class="search-form">
       <label>
         キーワード
@@ -26,9 +26,9 @@ const data = JSON.stringify(allTemples);
       </label>
       <label>
         地区
-        <select name="area">
+        <select name="district">
           <option value="">すべて</option>
-          {areas.map((area) => <option value={area}>{area}</option>)}
+          {allDistricts.map((district) => <option value={district.district_id}>{district.name}</option>)}
         </select>
       </label>
       <label>
@@ -57,6 +57,12 @@ const data = JSON.stringify(allTemples);
     const results = document.querySelector("#results");
     const resultCount = document.querySelector("#result-count");
     const temples = JSON.parse(panel.dataset.temples);
+    const districts = JSON.parse(panel.dataset.districts);
+    const districtNames = new Map(districts.map((district) => [district.district_id, district.name]));
+
+    function districtNameOf(temple) {
+      return districtNames.get(temple.district_id) || "地区未確定";
+    }
 
     function normalize(value) {
       return String(value || "").toLowerCase().normalize("NFKC").replace(/\s+/g, "");
@@ -69,6 +75,7 @@ const data = JSON.stringify(allTemples);
         temple.aliases.join(" "),
         temple.address,
         temple.area,
+        districtNameOf(temple),
         temple.sect,
         temple.status_label,
         temple.main_deity,
@@ -98,12 +105,13 @@ const data = JSON.stringify(allTemples);
         <article class="temple-card">
           <div class="card-topline">
             <span class="status status-${temple.status}">${temple.status_label}</span>
-            <span>${temple.area}</span>
+            <span>${districtNameOf(temple)}</span>
           </div>
           <h3><a href="/temples/${temple.slug}/">${temple.name}</a></h3>
           <p class="kana">${temple.name_kana}</p>
           <dl class="compact-list">
             <div><dt>住所</dt><dd>${temple.address}</dd></div>
+            <div><dt>地区</dt><dd>${districtNameOf(temple)}</dd></div>
             <div><dt>宗派</dt><dd>${temple.sect}</dd></div>
             <div><dt>ご本尊</dt><dd>${temple.main_deity}</dd></div>
             <div><dt>御朱印</dt><dd>${temple.goshuin_status}</dd></div>
@@ -118,7 +126,7 @@ const data = JSON.stringify(allTemples);
       const keyword = normalize(values.q);
       const filtered = temples.filter((temple) => {
         if (keyword && !textOf(temple).includes(keyword)) return false;
-        if (values.area && temple.area !== values.area) return false;
+        if (values.district && temple.district_id !== values.district) return false;
         if (values.sect && temple.sect !== values.sect) return false;
         if (values.status && temple.status !== values.status) return false;
         return true;
