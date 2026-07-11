@@ -1,8 +1,19 @@
 import temples from "../../data/temples.json";
+import districts from "../../data/districts.json";
 
 export type Temple = (typeof temples)[number];
+export type District = (typeof districts)[number];
 
 export const allTemples = temples;
+export const allDistricts = districts;
+
+export function getDistrictById(districtId: string | null | undefined) {
+  return allDistricts.find((district) => district.district_id === districtId);
+}
+
+export function getDistrictName(districtId: string | null | undefined) {
+  return getDistrictById(districtId)?.name || "地区未確定";
+}
 
 export function getTempleBySlug(slug: string) {
   return allTemples.find((temple) => temple.slug === slug);
@@ -23,6 +34,7 @@ export function templeSearchText(temple: Temple) {
       temple.aliases.join(" "),
       temple.address,
       temple.area,
+      getDistrictName(temple.district_id),
       temple.sect,
       temple.status_label,
       temple.main_deity,
