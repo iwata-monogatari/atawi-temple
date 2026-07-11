@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { countTemplesBySect } from "../../lib/temples";
+
+const sectCounts = countTemplesBySect();
+---
+
+<BaseLayout
+  title="宗派から探す｜ATAWI temple"
+  description="曹洞宗、浄土宗、臨済宗、日蓮宗など、宗派別に磐田市内のお寺を探せます。"
+>
+  <section class="page-title">
+    <p class="eyebrow">Sects</p>
+    <h1>宗派から探す</h1>
+    <p>公式名簿に掲載された宗派・包括団体ごとに、磐田市内の寺院を整理しています。</p>
+  </section>
+
+  <section class="section">
+    <div class="district-grid">
+      {
+        sectCounts.map((sect) => (
+          <a class="district-card" href={`/sects/${sect.slug}/`}>
+            <strong>{sect.name}</strong>
+            <span>{sect.name}として掲載されている寺院を一覧できます。</span>
+            <em>{sect.count}件登録</em>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>
