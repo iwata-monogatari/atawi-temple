@@ -11,7 +11,7 @@ import { allDistricts, allTemples, getDistrictName } from "../../lib/temples";
   <section class="page-title">
     <p class="eyebrow">Temple Index</p>
     <h1>磐田市の寺院一覧</h1>
-    <p>寺院名、読み、住所、宗派、状態を確認できます。正式データは調査の進行にあわせて更新します。</p>
+    <p>寺院名、住所、地区、宗派、状態を確認できます。基礎情報は公式名簿をもとに掲載し、読み・由緒・写真は調査にあわせて追加します。</p>
   </section>
 
   <section class="section">
@@ -27,7 +27,6 @@ import { allDistricts, allTemples, getDistrictName } from "../../lib/temples";
         <thead>
           <tr>
             <th>寺院名</th>
-            <th>読み</th>
             <th>地区</th>
             <th>宗派</th>
             <th>状態</th>
@@ -39,7 +38,6 @@ import { allDistricts, allTemples, getDistrictName } from "../../lib/temples";
             allTemples.map((temple) => (
               <tr>
                 <td>{temple.name}</td>
-                <td>{temple.name_kana}</td>
                 <td>{getDistrictName(temple.district_id)}</td>
                 <td>{temple.sect}</td>
                 <td>{temple.status_label}</td>
