@@ -1,17 +1,19 @@
 ---
 import type { Temple } from "../lib/temples";
+import { getDistrictName } from "../lib/temples";
 
 interface Props {
   temple: Temple;
 }
 
 const { temple } = Astro.props;
+const districtName = getDistrictName(temple.district_id);
 ---
 
 <article class="temple-card">
   <div class="card-topline">
     <span class={`status status-${temple.status}`}>{temple.status_label}</span>
-    <span>{temple.area}</span>
+    <span>{districtName}</span>
   </div>
   <h3><a href={`/temples/${temple.slug}/`}>{temple.name}</a></h3>
   <p class="kana">{temple.name_kana}</p>
@@ -19,6 +21,10 @@ const { temple } = Astro.props;
     <div>
       <dt>住所</dt>
       <dd>{temple.address}</dd>
+    </div>
+    <div>
+      <dt>地区</dt>
+      <dd>{districtName}</dd>
     </div>
     <div>
       <dt>宗派</dt>
