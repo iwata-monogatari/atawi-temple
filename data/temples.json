@@ -1,15 +1,73 @@
 [
   {
     "temple_id": "iwata-0001",
-    "slug": "senkoji-mitsuke",
-    "name": "宣光寺",
-    "name_kana": "せんこうじ",
+    "slug": "daijoin-nakaizumi",
+    "name": "大乗院",
+    "name_kana": "未確認",
     "aliases": [],
     "record_type": "temple",
     "status": "existing",
     "status_label": "現存",
-    "sect": "曹洞宗",
-    "address": "静岡県磐田市見付",
+    "sect": "真言宗醍醐派",
+    "address": "静岡県磐田市中泉1丁目10番地6",
+    "district_id": "nakaizumi",
+    "area": "中泉",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9053"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0002",
+    "slug": "ioji-kamada",
+    "name": "醫王寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "真言宗智山派",
+    "address": "静岡県磐田市鎌田2065番地の1",
+    "district_id": "mikuriya",
+    "area": "御厨",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9055"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0003",
+    "slug": "kokubunji-mitsuke",
+    "name": "国分寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "新義真言宗",
+    "address": "静岡県磐田市見付3046番地",
     "district_id": "mitsuke",
     "area": "見付",
     "main_deity": "未確認",
@@ -17,69 +75,3349 @@
     "goshuin_status": "未確認",
     "visit_status": "未訪問",
     "detail_status": "基礎情報のみ",
-    "history_summary": "初期公開用の仮登録です。公開資料との照合後、創建・沿革・ご本尊を追記します。",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
     "last_verified_at": "2026-07-11",
     "sources": [
       {
-        "title": "初期寺院マスター",
-        "type": "内部整理",
-        "note": "詳細調査前の仮登録"
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9057"
       }
     ]
   },
   {
-    "temple_id": "iwata-0002",
-    "slug": "example-nakaizumi",
-    "name": "中泉地区寺院候補",
-    "name_kana": "なかいずみちくじいんこうほ",
-    "aliases": ["調査中寺院"],
+    "temple_id": "iwata-0004",
+    "slug": "tokuoin-mitsuke",
+    "name": "徳翁院",
+    "name_kana": "未確認",
+    "aliases": [],
     "record_type": "temple",
-    "status": "unknown",
-    "status_label": "状況不明",
-    "sect": "未確認",
-    "address": "静岡県磐田市中泉",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "浄土宗",
+    "address": "静岡県磐田市見付568番地",
+    "district_id": "mitsuke",
+    "area": "見付",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9059"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0005",
+    "slug": "keiganji-mitsuke",
+    "name": "慶岩寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "浄土宗",
+    "address": "静岡県磐田市見付2735番地の1",
+    "district_id": "mitsuke",
+    "area": "見付",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9061"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0006",
+    "slug": "daikenji-mitsuke",
+    "name": "大見寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "浄土宗",
+    "address": "静岡県磐田市見付2510番地の1",
+    "district_id": "mitsuke",
+    "area": "見付",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9063"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0007",
+    "slug": "zendoji-mitsuke",
+    "name": "善導寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "浄土宗",
+    "address": "静岡県磐田市見付1番地の10",
+    "district_id": "mitsuke",
+    "area": "見付",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9065"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0008",
+    "slug": "mantokuji-nakaizumi",
+    "name": "満徳寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "真宗大谷派",
+    "address": "静岡県磐田市中泉1丁目4番地7",
     "district_id": "nakaizumi",
     "area": "中泉",
     "main_deity": "未確認",
     "manned_status": "未確認",
     "goshuin_status": "未確認",
     "visit_status": "未訪問",
-    "detail_status": "調査中",
-    "history_summary": "寺院マスター作成時に正式名称、所在地、宗派、状態を確認します。",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
     "last_verified_at": "2026-07-11",
     "sources": [
       {
-        "title": "初期寺院マスター",
-        "type": "内部整理",
-        "note": "正式データへ差し替え予定"
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9067"
       }
     ]
   },
   {
-    "temple_id": "iwata-0003",
-    "slug": "kyu-jiinato-iwata",
-    "name": "旧寺院跡候補",
-    "name_kana": "きゅうじいんあとこうほ",
-    "aliases": ["廃寺候補"],
-    "record_type": "ruin",
-    "status": "ruin",
-    "status_label": "寺院跡",
-    "sect": "未確認",
-    "address": "所在地未確定",
-    "district_id": null,
-    "area": "地区未確定",
+    "temple_id": "iwata-0009",
+    "slug": "saiganji-nakaizumi",
+    "name": "西願寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "真宗大谷派",
+    "address": "静岡県磐田市中泉254番地の1",
+    "district_id": "nakaizumi",
+    "area": "中泉",
     "main_deity": "未確認",
-    "manned_status": "対象外",
-    "goshuin_status": "対象外",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
     "visit_status": "未訪問",
-    "detail_status": "調査中",
-    "history_summary": "廃寺・寺院跡は推定地、伝承地、所在地不明を区別して整理します。",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
     "last_verified_at": "2026-07-11",
     "sources": [
       {
-        "title": "初期寺院マスター",
-        "type": "内部整理",
-        "note": "史料確認後に公開判断"
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9069"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0010",
+    "slug": "gyosenji-mitsuke",
+    "name": "行泉寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "真宗高田派",
+    "address": "静岡県磐田市見付3080番地の2",
+    "district_id": "mitsuke",
+    "area": "見付",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9071"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0011",
+    "slug": "kindaiji-tenryu",
+    "name": "金台寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "時宗",
+    "address": "静岡県磐田市天竜110番地",
+    "district_id": "nakaizumi",
+    "area": "中泉",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9073"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0012",
+    "slug": "shokoji-mitsuke",
+    "name": "省光寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "時宗",
+    "address": "静岡県磐田市見付2423番地",
+    "district_id": "mitsuke",
+    "area": "見付",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9075"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0013",
+    "slug": "saikoji-mitsuke",
+    "name": "西光寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "時宗",
+    "address": "静岡県磐田市見付3353番地の1",
+    "district_id": "mitsuke",
+    "area": "見付",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9077"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0014",
+    "slug": "myooji-mitsuke",
+    "name": "明王寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市見付河原町3987番地",
+    "district_id": "mitsuke",
+    "area": "見付",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9079"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0015",
+    "slug": "hojuji-toyoshima",
+    "name": "寳珠寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市豊島668番地",
+    "district_id": "nanbu",
+    "area": "南部",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9081"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0016",
+    "slug": "tamonji-nakano",
+    "name": "多聞寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市中野532番地の1",
+    "district_id": "nanbu",
+    "area": "南部",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9083"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0017",
+    "slug": "daizoji-kamiokata",
+    "name": "大蔵寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市上岡田329番地",
+    "district_id": "nanbu",
+    "area": "南部",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9085"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0018",
+    "slug": "tenshoji-toyoshima",
+    "name": "天正寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市豊島905番地",
+    "district_id": "nanbu",
+    "area": "南部",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9087"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0019",
+    "slug": "senjuji-senjudou",
+    "name": "千手寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市千手堂637番地",
+    "district_id": "nanbu",
+    "area": "南部",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9089"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0020",
+    "slug": "manshoji-manshoji",
+    "name": "萬勝寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市万正寺515番地",
+    "district_id": "nanbu",
+    "area": "南部",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9091"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0021",
+    "slug": "chusenji-nakaizumi",
+    "name": "中泉寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市中泉743番地の1",
+    "district_id": "nakaizumi",
+    "area": "中泉",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9093"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0022",
+    "slug": "senzoji-nakaizumi",
+    "name": "泉蔵寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市中泉1557番地の1",
+    "district_id": "nakaizumi",
+    "area": "中泉",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9095"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0023",
+    "slug": "renpukuji-ninomiya",
+    "name": "連福寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市二之宮1262番地",
+    "district_id": "nakaizumi",
+    "area": "中泉",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9096"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0024",
+    "slug": "jionji-mitsuke",
+    "name": "慈恩寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市見付2431番地の1",
+    "district_id": "mitsuke",
+    "area": "見付",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9097"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0025",
+    "slug": "kenshoji-mitsuke",
+    "name": "見性寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市見付2896番地",
+    "district_id": "mitsuke",
+    "area": "見付",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9098"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0026",
+    "slug": "shinnyoji-sagisaka",
+    "name": "眞如寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市匂坂上210番地の1",
+    "district_id": "koyo",
+    "area": "向陽",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9099"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0027",
+    "slug": "myosenji-araide",
+    "name": "明泉寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市新出613番地",
+    "district_id": "koyo",
+    "area": "向陽",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9100"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0028",
+    "slug": "jokoji-maeno",
+    "name": "定光寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市前野1773番地の1",
+    "district_id": "nanbu",
+    "area": "南部",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9101"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0029",
+    "slug": "jissaiji-samejima",
+    "name": "実際寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市鮫島202番地",
+    "district_id": "nanbu",
+    "area": "南部",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9102"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0030",
+    "slug": "koganji-kusasaki",
+    "name": "光嚴寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市草崎644番地の1",
+    "district_id": "nanbu",
+    "area": "南部",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9103"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0031",
+    "slug": "shokoji-shirabyoshi",
+    "name": "正光寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市白拍子358番地",
+    "district_id": "nanbu",
+    "area": "南部",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9104"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0032",
+    "slug": "taigetsuan-sagisaka",
+    "name": "太月庵",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市匂坂上59番地の1",
+    "district_id": "koyo",
+    "area": "向陽",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9105"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0033",
+    "slug": "zosanji-sagisaka",
+    "name": "増参寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市匂坂中586番地",
+    "district_id": "koyo",
+    "area": "向陽",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9106"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0034",
+    "slug": "shinpoin-mukasa",
+    "name": "新豊院",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市向笠竹之内14番地",
+    "district_id": "koyo",
+    "area": "向陽",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9107"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0035",
+    "slug": "hounji-mukasa",
+    "name": "法雲寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市向笠西374番地",
+    "district_id": "koyo",
+    "area": "向陽",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9108"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0036",
+    "slug": "anzenji-iwai",
+    "name": "安全寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市岩井1365番地の1",
+    "district_id": "koyo",
+    "area": "向陽",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9109"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0037",
+    "slug": "hofukuji-okubo",
+    "name": "保福寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市大久保361番地",
+    "district_id": "koyo",
+    "area": "向陽",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9110"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0038",
+    "slug": "shogenin-kojima",
+    "name": "正眼院",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市小島738番地",
+    "district_id": "nanbu",
+    "area": "南部",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9111"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0039",
+    "slug": "mannenji-kusasaki",
+    "name": "萬然寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市草崎2430番地の1",
+    "district_id": "nanbu",
+    "area": "南部",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9112"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0040",
+    "slug": "jushouji-kusasaki",
+    "name": "壽正寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市草崎691番地の1",
+    "district_id": "nanbu",
+    "area": "南部",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9113"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0041",
+    "slug": "zenkaiji-nishijima",
+    "name": "全海寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市西島452番地の1",
+    "district_id": "nanbu",
+    "area": "南部",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9114"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0042",
+    "slug": "toshoji-higashikaizuka",
+    "name": "東昌寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市東貝塚1291番地",
+    "district_id": "mikuriya",
+    "area": "御厨",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9115"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0043",
+    "slug": "renjoji-shingai",
+    "name": "連城寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市新貝1556番地の1",
+    "district_id": "mikuriya",
+    "area": "御厨",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9116"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0044",
+    "slug": "zenkyuin-kamada",
+    "name": "全久院",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市鎌田2546番地",
+    "district_id": "mikuriya",
+    "area": "御厨",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9117"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0045",
+    "slug": "fukuoji-jonosaki",
+    "name": "福王寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市城之崎4丁目2722番地の1",
+    "district_id": "mitsuke",
+    "area": "見付",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9118"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0046",
+    "slug": "gasshoji-nakaizumi",
+    "name": "合掌寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市中泉1239番地の3",
+    "district_id": "nakaizumi",
+    "area": "中泉",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9119"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0047",
+    "slug": "jurinji-kamiohnogo",
+    "name": "十輪寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市上大之郷606番地の1",
+    "district_id": "nanbu",
+    "area": "南部",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9120"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0048",
+    "slug": "senkoji-mitsuke",
+    "name": "宣光寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市見付1340番地の1",
+    "district_id": "mitsuke",
+    "area": "見付",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9121"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0049",
+    "slug": "eifukuji-nishikaizuka",
+    "name": "永福寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市西貝塚1519番地の1",
+    "district_id": "mikuriya",
+    "area": "御厨",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9122"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0050",
+    "slug": "kongoji-mitsuke",
+    "name": "金剛寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市見付2749番地の1",
+    "district_id": "mitsuke",
+    "area": "見付",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9123"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0051",
+    "slug": "rinpoin-nishikaizuka",
+    "name": "林宝院",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市西貝塚1423番地",
+    "district_id": "mikuriya",
+    "area": "御厨",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9124"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0052",
+    "slug": "honshoji-kounodai",
+    "name": "本性寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "日蓮宗",
+    "address": "静岡県磐田市国府台441番地の1",
+    "district_id": "mitsuke",
+    "area": "見付",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9125"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0053",
+    "slug": "genmyoji-mitsuke",
+    "name": "玄妙寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "日蓮宗",
+    "address": "静岡県磐田市見付2440番地の1",
+    "district_id": "mitsuke",
+    "area": "見付",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9126"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0054",
+    "slug": "senshoji-iwai",
+    "name": "宣正寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "日蓮正宗",
+    "address": "静岡県磐田市岩井2324番地の5",
+    "district_id": "koyo",
+    "area": "向陽",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9127"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0055",
+    "slug": "nipponzan-myohoji-iwata",
+    "name": "日本山妙法寺磐田小僧伽",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "日本山妙法寺大僧伽",
+    "address": "静岡県磐田市中泉3734番地の4",
+    "district_id": "nakaizumi",
+    "area": "中泉",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9128"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0056",
+    "slug": "shinshinkyo-mitsuke",
+    "name": "神心教",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "包括宗教法人「神心教」",
+    "address": "静岡県磐田市見付243番地",
+    "district_id": "mitsuke",
+    "area": "見付",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9143"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0057",
+    "slug": "shinshinkyo-honbu-mitsuke",
+    "name": "神心教本部",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "神心教",
+    "address": "静岡県磐田市見付206番地",
+    "district_id": "mitsuke",
+    "area": "見付",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9144"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0058",
+    "slug": "rendaiji-yashiroyama",
+    "name": "蓮台寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "真言宗智山派",
+    "address": "静岡県磐田市社山576番地",
+    "district_id": "toyooka",
+    "area": "豊岡",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9274"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0059",
+    "slug": "saikoji-kaketsuka",
+    "name": "西光寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "浄土宗",
+    "address": "静岡県磐田市掛塚1079番地",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9276"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0060",
+    "slug": "kokuseiji-kaketsuka",
+    "name": "國清寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "浄土宗",
+    "address": "静岡県磐田市掛塚643番地",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9278"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0061",
+    "slug": "manpukuji-kaketsuka-819",
+    "name": "満福寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "浄土真宗本願寺派",
+    "address": "静岡県磐田市掛塚819番地",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9280"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0062",
+    "slug": "manpukuji-kaketsuka-799",
+    "name": "萬福寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "真宗大谷派",
+    "address": "静岡県磐田市掛塚799番地の1",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9282"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0063",
+    "slug": "gyokoji-ikeda",
+    "name": "行興寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "時宗",
+    "address": "静岡県磐田市池田330番地",
+    "district_id": "toyoda",
+    "area": "豊田",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9284"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0064",
+    "slug": "jigenji-kamikandamasu",
+    "name": "慈眼寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市上神増99番地",
+    "district_id": "toyooka",
+    "area": "豊岡",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9286"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0065",
+    "slug": "entsuji-ohira",
+    "name": "圓通寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市大平530番",
+    "district_id": "toyooka",
+    "area": "豊岡",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9288"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0066",
+    "slug": "mushuoji-mushuo",
+    "name": "虫生寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市虫生457番地の1",
+    "district_id": "toyooka",
+    "area": "豊岡",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9290"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0067",
+    "slug": "jokoji-shikiji",
+    "name": "浄光寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市敷地1021番地",
+    "district_id": "toyooka",
+    "area": "豊岡",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9292"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0068",
+    "slug": "ryounan-shikiji",
+    "name": "龍雲庵",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市敷地1367番地の1",
+    "district_id": "toyooka",
+    "area": "豊岡",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9294"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0069",
+    "slug": "eimeiji-shikiji",
+    "name": "永明寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市敷地1014番地",
+    "district_id": "toyooka",
+    "area": "豊岡",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9296"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0070",
+    "slug": "eianji-shikiji",
+    "name": "永安寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市敷地1035番地",
+    "district_id": "toyooka",
+    "area": "豊岡",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9298"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0071",
+    "slug": "seiryo-in-iwamuro",
+    "name": "清凉院",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗妙心寺派",
+    "address": "静岡県磐田市岩室158番地",
+    "district_id": "toyooka",
+    "area": "豊岡",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9300"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0072",
+    "slug": "shorinji-kawabukuro",
+    "name": "松林寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗方広寺派",
+    "address": "静岡県磐田市川袋224番地の1",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9302"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0073",
+    "slug": "hojuin-jurojima",
+    "name": "寶珠院",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗方広寺派",
+    "address": "静岡県磐田市十郎島26番地ノ1",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9304"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0074",
+    "slug": "senryuji-kawabukuro",
+    "name": "潜龍寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗方広寺派",
+    "address": "静岡県磐田市川袋463番地",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9306"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0075",
+    "slug": "ryusenji-shiraha",
+    "name": "竜泉寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗方広寺派",
+    "address": "静岡県磐田市白羽51番地",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9308"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0076",
+    "slug": "koshuji-kaketsuka",
+    "name": "香集寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗方広寺派",
+    "address": "静岡県磐田市掛塚1002番地",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9310"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0077",
+    "slug": "jorakuji-horinochi",
+    "name": "常楽寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "臨済宗方広寺派",
+    "address": "静岡県磐田市堀之内761番地",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9312"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0078",
+    "slug": "daisenji-toyohamanakano",
+    "name": "大泉寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市豊浜中野744番地の1",
+    "district_id": "nanbu",
+    "area": "南部",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9314"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0079",
+    "slug": "saifukuji-toyohamanakano",
+    "name": "西福寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市豊浜中野725番地の1",
+    "district_id": "nanbu",
+    "area": "南部",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9316"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0080",
+    "slug": "ryuunji-toyohama",
+    "name": "竜雲寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市豊浜365番地の1",
+    "district_id": "fukude",
+    "area": "福田",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9318"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0081",
+    "slug": "sojiji-minamijima",
+    "name": "宗次寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市南島149番地の1",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9320"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0082",
+    "slug": "keishoji-fukude",
+    "name": "慶昌寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市福田1834番地",
+    "district_id": "fukude",
+    "area": "福田",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9322"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0083",
+    "slug": "chosenji-fukudenakajima",
+    "name": "長泉寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市福田中島445番地",
+    "district_id": "fukude",
+    "area": "福田",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9324"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0084",
+    "slug": "kannonji-fukude",
+    "name": "観音寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市福田688番地の1",
+    "district_id": "fukude",
+    "area": "福田",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9326"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0085",
+    "slug": "ryuhoin-ohara",
+    "name": "龍法院",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市大原2371番地",
+    "district_id": "nanbu",
+    "area": "南部",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9328"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0086",
+    "slug": "zohonji-ikago",
+    "name": "蔵本寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市五十子26番地",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9330"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0087",
+    "slug": "jushouji-hiruike",
+    "name": "寿正寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市蛭池230番地",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9332"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0088",
+    "slug": "rengakuji-ryuyonakajima",
+    "name": "蓮覚寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市竜洋中島689番地の1",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9334"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0089",
+    "slug": "ganjoji-hirama",
+    "name": "願成寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市平間431番地の1",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9336"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0090",
+    "slug": "jikeian-komaba",
+    "name": "慈慶庵",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市駒場20番地の1",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9338"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0091",
+    "slug": "shingetsuji-ebijima",
+    "name": "心月寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市海老島200番地の1",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9340"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0092",
+    "slug": "fukushoji-nishihiramatsu",
+    "name": "福生寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市西平松22番地",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9342"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0093",
+    "slug": "shojuji-oka",
+    "name": "聖寿寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市岡330番地",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9344"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0094",
+    "slug": "kinzoji-toyooka",
+    "name": "金藏寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市豊岡4517番地の1",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9346"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0095",
+    "slug": "yushoji-toyooka",
+    "name": "雄照寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市豊岡1053番地の1",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9348"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0096",
+    "slug": "shuzoji-toyooka",
+    "name": "守増寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市豊岡2648番地",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9352"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0097",
+    "slug": "shokoji-miyanoshiki",
+    "name": "松向寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市宮之一色413番地",
+    "district_id": "toyoda",
+    "area": "豊田",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9354"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0098",
+    "slug": "chionsai-hitokoto",
+    "name": "智恩齋",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市一言797番地",
+    "district_id": "toyoda",
+    "area": "豊田",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9356"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0099",
+    "slug": "anrakuji-tateno",
+    "name": "安楽寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市立野477番地",
+    "district_id": "toyoda",
+    "area": "豊田",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9358"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0100",
+    "slug": "toyodain-kegojima",
+    "name": "豊田院",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市気子島324番地",
+    "district_id": "toyoda",
+    "area": "豊田",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9360"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0101",
+    "slug": "shoi-ji-shimoban-no",
+    "name": "正医寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市下万能1162番地の1",
+    "district_id": "toyoda",
+    "area": "豊田",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9362"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0102",
+    "slug": "fukuoji-morimoto",
+    "name": "福王寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市森本287番地",
+    "district_id": "toyoda",
+    "area": "豊田",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9364"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0103",
+    "slug": "rinshoji-kodateno",
+    "name": "林昌寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市小立野241番地の1",
+    "district_id": "toyoda",
+    "area": "豊田",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9366"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0104",
+    "slug": "kotokuji-morishita",
+    "name": "興徳寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市森下612番地",
+    "district_id": "toyoda",
+    "area": "豊田",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9368"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0105",
+    "slug": "yofukuji-shimohongo",
+    "name": "養福寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市下本郷1363番地の1",
+    "district_id": "toyoda",
+    "area": "豊田",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9370"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0106",
+    "slug": "myohoji-ikeda",
+    "name": "妙法寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市池田743番地",
+    "district_id": "toyoda",
+    "area": "豊田",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9372"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0107",
+    "slug": "seidoin-ikeda",
+    "name": "誓渡院",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市池田356番地",
+    "district_id": "toyoda",
+    "area": "豊田",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9374"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0108",
+    "slug": "daienji-kamo",
+    "name": "大圓寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市加茂123番地",
+    "district_id": "toyoda",
+    "area": "豊田",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9376"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0109",
+    "slug": "daizoji-tomei",
+    "name": "大蔵寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市東名393番地",
+    "district_id": "toyoda",
+    "area": "豊田",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9378"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0110",
+    "slug": "shokyuin-mitsue",
+    "name": "松久院",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市三家332番地",
+    "district_id": "toyooka",
+    "area": "豊岡",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9380"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0111",
+    "slug": "hoonan-kaminobe",
+    "name": "法音庵",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市上野部2032番地",
+    "district_id": "toyooka",
+    "area": "豊岡",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9382"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0112",
+    "slug": "tenryuin-kaminobe",
+    "name": "天龍院",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市上野部353番地",
+    "district_id": "toyooka",
+    "area": "豊岡",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9384"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0113",
+    "slug": "ichiunsai-shimonobe",
+    "name": "一雲斉",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市下野部1776番地",
+    "district_id": "toyooka",
+    "area": "豊岡",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9386"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0114",
+    "slug": "saikoji-matsunokijima",
+    "name": "最廣寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "曹洞宗",
+    "address": "静岡県磐田市松之木島314番地の1",
+    "district_id": "toyooka",
+    "area": "豊岡",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9388"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0115",
+    "slug": "myofukuji-fukude",
+    "name": "妙福寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "日蓮宗",
+    "address": "静岡県磐田市福田1723番地",
+    "district_id": "fukude",
+    "area": "福田",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9390"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0116",
+    "slug": "chikyoin-shiraha",
+    "name": "智教院",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "日蓮宗",
+    "address": "静岡県磐田市白羽546番地",
+    "district_id": "ryuyo",
+    "area": "竜洋",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9392"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0117",
+    "slug": "myomanji-kaminobe",
+    "name": "妙満寺",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "日蓮宗",
+    "address": "静岡県磐田市上野部738番地",
+    "district_id": "toyooka",
+    "area": "豊岡",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9394"
+      }
+    ]
+  },
+  {
+    "temple_id": "iwata-0118",
+    "slug": "honmyoin-iwai",
+    "name": "本妙院",
+    "name_kana": "未確認",
+    "aliases": [],
+    "record_type": "temple",
+    "status": "existing",
+    "status_label": "現存",
+    "sect": "単立",
+    "address": "静岡県磐田市岩井2081番地の1",
+    "district_id": "koyo",
+    "area": "向陽",
+    "main_deity": "未確認",
+    "manned_status": "未確認",
+    "goshuin_status": "未確認",
+    "visit_status": "未訪問",
+    "detail_status": "基礎情報のみ",
+    "history_summary": "静岡県知事所轄宗教法人名簿に掲載されている基礎情報をもとに初期登録しています。創建、沿革、ご本尊、現地確認情報は今後追記します。",
+    "last_verified_at": "2026-07-11",
+    "sources": [
+      {
+        "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
+        "type": "行政・公的資料",
+        "url": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf",
+        "note": "磐田市内の宗教法人として掲載。参照行: L9412"
       }
     ]
   }
