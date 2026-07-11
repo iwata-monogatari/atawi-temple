@@ -51,11 +51,17 @@ const districts = JSON.stringify(allDistricts);
     <div id="results" class="card-grid"></div>
   </section>
 
-  <script>
+  <script is:inline>
+    // @ts-nocheck
     const panel = document.querySelector("[data-temples]");
     const form = document.querySelector("#search-form");
     const results = document.querySelector("#results");
     const resultCount = document.querySelector("#result-count");
+
+    if (!panel || !form || !results || !resultCount || !panel.dataset.temples || !panel.dataset.districts) {
+      throw new Error("Search UI failed to initialize.");
+    }
+
     const temples = JSON.parse(panel.dataset.temples);
     const districts = JSON.parse(panel.dataset.districts);
     const districtNames = new Map(districts.map((district) => [district.district_id, district.name]));
@@ -66,6 +72,22 @@ const districts = JSON.stringify(allDistricts);
 
     function normalize(value) {
       return String(value || "").toLowerCase().normalize("NFKC").replace(/\s+/g, "");
+    }
+
+    function isUnknownValue(value) {
+      return ["未確認", "調査中", "対象外"].includes(value);
+    }
+
+    function knownValue(value, fallback = "確認中") {
+      return isUnknownValue(value) ? fallback : value;
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
     }
 
     function textOf(temple) {
@@ -87,48 +109,53 @@ const districts = JSON.stringify(allDistricts);
     function readParams() {
       const params = new URLSearchParams(window.location.search);
       for (const element of form.elements) {
-        if (element.name) element.value = params.get(element.name) || "";
+        if (element instanceof HTMLInputElement || element instanceof HTMLSelectElement) {
+          if (element.name) element.value = params.get(element.name) || "";
+        }
       }
     }
 
     function writeParams(values) {
       const params = new URLSearchParams();
       for (const [key, value] of Object.entries(values)) {
-        if (value) params.set(key, value);
+        if (typeof value === "string" && value) params.set(key, value);
       }
       const query = params.toString();
       history.replaceState(null, "", query ? `?${query}` : window.location.pathname);
     }
 
     function card(temple) {
+      const kana = isUnknownValue(temple.name_kana) ? "" : `<p class="kana">${escapeHtml(temple.name_kana)}</p>`;
+      const districtName = districtNameOf(temple);
+
       return `
         <article class="temple-card">
           <div class="card-topline">
-            <span class="status status-${temple.status}">${temple.status_label}</span>
-            <span>${districtNameOf(temple)}</span>
+            <span class="status status-${escapeHtml(temple.status)}">${escapeHtml(temple.status_label)}</span>
+            <span>${escapeHtml(districtName)}</span>
           </div>
-          <h3><a href="/temples/${temple.slug}/">${temple.name}</a></h3>
-          <p class="kana">${temple.name_kana}</p>
+          <h3><a href="/temples/${escapeHtml(temple.slug)}/">${escapeHtml(temple.name)}</a></h3>
+          ${kana}
           <dl class="compact-list">
-            <div><dt>住所</dt><dd>${temple.address}</dd></div>
-            <div><dt>地区</dt><dd>${districtNameOf(temple)}</dd></div>
-            <div><dt>宗派</dt><dd>${temple.sect}</dd></div>
-            <div><dt>ご本尊</dt><dd>${temple.main_deity}</dd></div>
-            <div><dt>御朱印</dt><dd>${temple.goshuin_status}</dd></div>
+            <div><dt>住所</dt><dd>${escapeHtml(temple.address)}</dd></div>
+            <div><dt>地区</dt><dd>${escapeHtml(districtName)}</dd></div>
+            <div><dt>宗派</dt><dd>${escapeHtml(temple.sect)}</dd></div>
+            <div><dt>ご本尊</dt><dd>${escapeHtml(knownValue(temple.main_deity))}</dd></div>
+            <div><dt>御朱印</dt><dd>${escapeHtml(knownValue(temple.goshuin_status))}</dd></div>
           </dl>
-          <p>${temple.history_summary}</p>
+          <p>${escapeHtml(districtName)}地区に所在する${escapeHtml(temple.sect)}の寺院です。公式名簿の基礎情報をもとに掲載しています。</p>
         </article>
       `;
     }
 
     function render() {
       const values = Object.fromEntries(new FormData(form).entries());
-      const keyword = normalize(values.q);
+      const keyword = normalize(values.q || "");
       const filtered = temples.filter((temple) => {
         if (keyword && !textOf(temple).includes(keyword)) return false;
-        if (values.district && temple.district_id !== values.district) return false;
-        if (values.sect && temple.sect !== values.sect) return false;
-        if (values.status && temple.status !== values.status) return false;
+        if (values.district && temple.district_id !== String(values.district)) return false;
+        if (values.sect && temple.sect !== String(values.sect)) return false;
+        if (values.status && temple.status !== String(values.status)) return false;
         return true;
       });
 
