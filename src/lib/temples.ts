@@ -41,6 +41,15 @@ export function getTempleBySlug(slug: string) {
   return allTemples.find((temple) => temple.slug === slug);
 }
 
+export function isUnknownValue(value: string | null | undefined) {
+  if (!value) return true;
+  return ["未確認", "調査中", "対象外"].includes(value);
+}
+
+export function knownValue(value: string | null | undefined, fallback = "確認中") {
+  return isUnknownValue(value) ? fallback : value;
+}
+
 export function normalizeSearchText(value: string) {
   return value
     .toLowerCase()
