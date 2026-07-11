@@ -70,6 +70,8 @@ node scripts/import-official-temples.mjs
 
 公開設定は`docs/cloudflare-pages.md`にまとめています。
 
+GitHub Pages用の自動デプロイは`.github/workflows/deploy.yml`で設定しています。
+
 主な設定は次のとおりです。
 
 ```text
