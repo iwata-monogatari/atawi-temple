@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="情報提供・訂正｜ATAWI temple">
+  <section class="page-title">
+    <p class="eyebrow">Correction</p>
+    <h1>情報提供・訂正</h1>
+    <p>投稿内容は自動公開せず、編集部が公開資料と照合して反映します。</p>
+  </section>
+  <section class="section">
+    <form class="stack-form" method="post" action="/correction/thanks/">
+      <label>対象寺院<input name="temple" autocomplete="off" /></label>
+      <label>対象ページURL<input name="page_url" type="url" autocomplete="off" /></label>
+      <label>訂正・追加内容<textarea name="message" rows="6"></textarea></label>
+      <label>根拠資料・参考URL<textarea name="evidence" rows="4"></textarea></label>
+      <label>氏名<input name="name" autocomplete="name" /></label>
+      <label>メールアドレス<input name="email" type="email" autocomplete="email" /></label>
+      <label>電話番号（任意）<input name="phone" type="tel" autocomplete="tel" /></label>
+      <button type="submit">送信内容を確認する</button>
+    </form>
+    <p class="notice">初期実装ではフォーム送信先を仮URLにしています。公開時はCloudflare Pages Functions等へ接続してください。</p>
+  </section>
+</BaseLayout>
