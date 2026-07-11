@@ -216,6 +216,34 @@ button,
   gap: 16px;
 }
 
+.district-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.district-card {
+  display: grid;
+  gap: 8px;
+  min-height: 150px;
+  align-content: start;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.district-card strong {
+  font-size: 1.25rem;
+  color: var(--accent-strong);
+}
+
+.district-card span {
+  color: var(--muted);
+}
+
 .temple-card {
   background: var(--paper);
   border: 1px solid var(--line);
