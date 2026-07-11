@@ -1,9 +1,25 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TempleCard from "../components/TempleCard.astro";
-import { allDistricts, allTemples } from "../lib/temples";
+import type { Temple } from "../lib/temples";
+import {
+  countTemplesByDistrict,
+  countTemplesBySect,
+  getTempleBySlug,
+} from "../lib/temples";
 
-const featured = allTemples.slice(0, 3);
+const districtCounts = countTemplesByDistrict();
+const sectCounts = countTemplesBySect().slice(0, 6);
+const featured = [
+  "kokubunji-mitsuke",
+  "gyokoji-ikeda",
+  "senkoji-mitsuke",
+  "kokuseiji-kaketsuka",
+  "shokoji-miyanoshiki",
+  "myohoji-ikeda",
+]
+  .map((slug) => getTempleBySlug(slug))
+  .filter((temple): temple is Temple => Boolean(temple));
 ---
 
 <BaseLayout>
@@ -33,6 +49,7 @@ const featured = allTemples.slice(0, 3);
     <a href="/search/?status=existing">現存寺院</a>
     <a href="/search/?status=ruin">廃寺・寺院跡</a>
     <a href="/search/?sect=曹洞宗">曹洞宗</a>
+    <a href="/sects/">宗派から探す</a>
   </section>
 
   <section class="section">
@@ -42,10 +59,11 @@ const featured = allTemples.slice(0, 3);
     </div>
     <div class="district-grid">
       {
-        allDistricts.map((district) => (
+        districtCounts.map((district) => (
           <a class="district-card" href={`/areas/${district.slug}/`}>
             <strong>{district.name}</strong>
             <span>{district.summary}</span>
+            <em>{district.count}件登録</em>
           </a>
         ))
       }
@@ -54,7 +72,17 @@ const featured = allTemples.slice(0, 3);
 
   <section class="section">
     <div class="section-heading">
-      <h2>寺院一覧</h2>
+      <h2>宗派から探す</h2>
+      <a href="/sects/">宗派一覧へ</a>
+    </div>
+    <div class="filter-band">
+      {sectCounts.map((sect) => <a href={`/sects/${sect.slug}/`}>{sect.name} {sect.count}件</a>)}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>調査優先の寺院</h2>
       <a href="/temples/">すべて見る</a>
     </div>
     <div class="card-grid">
@@ -64,10 +92,10 @@ const featured = allTemples.slice(0, 3);
 
   <section class="section two-column">
     <div>
-      <h2>初期公開の方針</h2>
+      <h2>現在の掲載範囲</h2>
       <p>
-        まず磐田市内の寺院、廃寺、寺院跡を広く登録し、検索できる一覧として公開します。
-        詳細ページは公開資料の確認、出典整理、現地写真の追加が進んだ寺院から順次整備します。
+        静岡県知事所轄宗教法人名簿に掲載された磐田市内の寺院・関連宗教法人を基礎データとして公開しています。
+        地区分類、宗派分類、検索から、調べたい寺院へすばやく移動できます。
       </p>
     </div>
     <div>
