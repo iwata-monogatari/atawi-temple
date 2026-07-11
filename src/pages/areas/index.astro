@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { allDistricts, getTemplesByDistrictId } from "../../lib/temples";
+---
+
+<BaseLayout
+  title="磐田市の9地区から探す｜ATAWI temple"
+  description="見付・中泉・御厨・豊田・南部・向陽・竜洋・福田・豊岡の9地区分類から磐田市のお寺を探せます。"
+>
+  <section class="page-title">
+    <p class="eyebrow">Areas</p>
+    <h1>磐田市の9地区から探す</h1>
+    <p>磐田物語で採用している9地区分類にあわせて、寺院、廃寺、寺院跡を整理します。</p>
+  </section>
+
+  <section class="section">
+    <div class="district-grid">
+      {
+        allDistricts.map((district) => {
+          const count = getTemplesByDistrictId(district.district_id).length;
+          return (
+            <a class="district-card" href={`/areas/${district.slug}/`}>
+              <strong>{district.name}</strong>
+              <span>{district.summary}</span>
+              <em>{count}件登録</em>
+            </a>
+          );
+        })
+      }
+    </div>
+  </section>
+</BaseLayout>
