@@ -7,7 +7,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check && npm run build",
+    "check": "npm run validate:data && astro check && npm run build",
+    "validate:data": "node scripts/validate-data.mjs",
     "check:analytics": "node scripts/check-analytics.mjs"
   },
   "dependencies": {
