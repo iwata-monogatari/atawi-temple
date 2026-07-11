@@ -52,6 +52,8 @@ ASTRO_TELEMETRY_DISABLED=1 HOME=/tmp npm --cache /tmp/npm-cache run build
 
 公開URLは寺院名と地区名を組み合わせた名前ベースのslugにし、内部管理は`iwata-0001`のような番号IDで固定します。詳しくは`docs/url-policy.md`を参照してください。
 
+地区分類は磐田物語の9地区分類を採用します。地区マスターは`data/districts.json`、運用方針は`docs/district-policy.md`を参照してください。
+
 ## Cloudflare Pages
 
 公開設定は`docs/cloudflare-pages.md`にまとめています。
