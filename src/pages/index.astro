@@ -72,11 +72,11 @@ function photoAt(slug: string, index: number) {
 
 // 境内の実写真を各所の背景・ギャラリーに使う（華やかさ重視で選定）
 const heroPhotos = [
+  { src: "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&fit=crop&w=1200&q=80", alt: "" },
   photoAt("gyokoji-ikeda", 3),
   photoAt("jionji-mitsuke", 0),
   photoAt("daijoin-nakaizumi", 5),
   photoAt("saikoji-mitsuke", 4),
-  photoAt("honshoji-kounodai", 0),
   photoAt("senkoji-mitsuke", 8),
 ].filter((photo): photo is { src: string; alt: string } => Boolean(photo));
 
