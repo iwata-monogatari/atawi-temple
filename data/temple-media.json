@@ -2228,5 +2228,71 @@
         "category_id": "grounds"
       }
     ]
+  },
+  {
+    "temple_slug": "myohoji-ikeda",
+    "hero_image": "/images/temples/myohoji-ikeda/myohoji-ikeda-01-entrance-marker.webp",
+    "photos": [
+      {
+        "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-01-entrance-marker.webp",
+        "alt": "妙法寺の寺号標石と山門",
+        "category_id": "entrance-marker"
+      },
+      {
+        "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-02-gate-approach.webp",
+        "alt": "山門越しに見る本堂・三重塔・観音像",
+        "category_id": "main-building"
+      },
+      {
+        "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-03-gate-plaque.webp",
+        "alt": "山号「瑞雲山」の扁額",
+        "category_id": "signboard"
+      },
+      {
+        "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-04-sando-pagoda.webp",
+        "alt": "参道と三重塔、本堂の全景",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-05-main-hall-front.webp",
+        "alt": "妙法寺本堂の正面",
+        "category_id": "main-building"
+      },
+      {
+        "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-06-main-hall-distant.webp",
+        "alt": "境内の木々越しに見る本堂",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-07-dogen-statue.webp",
+        "alt": "高祖水平道元禅師の尊像",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-08-small-hall.webp",
+        "alt": "境内の小堂",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-09-chozuya.webp",
+        "alt": "石造の手水鉢",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-10-entrance-doors.webp",
+        "alt": "寺紋を掲げた本堂正面の扉",
+        "category_id": "main-building"
+      },
+      {
+        "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-11-garden-stone.webp",
+        "alt": "境内の庭石と本堂脇の建物",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-12-gate-view2.webp",
+        "alt": "山門と扁額、境内の三重塔",
+        "category_id": "grounds"
+      }
+    ]
   }
 ]
