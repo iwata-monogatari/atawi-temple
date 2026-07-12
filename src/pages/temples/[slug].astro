@@ -9,6 +9,11 @@ import {
   hasDetailPage,
   isUnknownValue,
 } from "../../lib/temples";
+import {
+  getMonogatariLinksBySlug,
+  getMonogatariRelationLabel,
+  realEstateFunnel,
+} from "../../lib/related-monogatari";
 
 export function getStaticPaths() {
   return allTemples.filter(hasDetailPage).map((temple) => ({ params: { slug: temple.slug } }));
@@ -47,6 +52,7 @@ const pilgrimageNote = "pilgrimage_note" in temple && temple.pilgrimage_note
   : null;
 const dankaInfo: any = "danka_info" in temple && temple.danka_info ? temple.danka_info : null;
 const annualEvents = dankaInfo && Array.isArray(dankaInfo.annual_events) ? dankaInfo.annual_events : [];
+const monogatariLinks = getMonogatariLinksBySlug(temple.slug);
 
 const field = (value: string | null | undefined, pending = "調査中") => ({
   text: isUnknownValue(value) ? pending : value,
@@ -165,8 +171,39 @@ const parking = field(dankaInfo?.parking, "調査中");
           )}
         </section>
 
+        {monogatariLinks.length > 0 && (
+          <section class="detail-panel monogatari-panel">
+            <p class="section-number">04</p>
+            <h2>磐田物語で読む</h2>
+            <p class="monogatari-lead">
+              この寺院やゆかりの土地の歴史を、姉妹サイト「磐田物語」の読み物でご覧いただけます。
+            </p>
+            <ul class="monogatari-link-list">
+              {monogatariLinks.map((link) => (
+                <li>
+                  <a href={link.url}>
+                    {link.relation === "direct" && (
+                      <span class="monogatari-relation-label">{getMonogatariRelationLabel(link.relation)}</span>
+                    )}
+                    <span class="monogatari-link-title">{link.title}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {realEstateFunnel.enabled && (
+          <section class="detail-panel real-estate-note">
+            <p>{realEstateFunnel.text}</p>
+            {realEstateFunnel.link_url && (
+              <a class="button-link" href={realEstateFunnel.link_url}>{realEstateFunnel.link_label}</a>
+            )}
+          </section>
+        )}
+
         <section class="detail-panel">
-          <p class="section-number">04</p>
+          <p class="section-number">05</p>
           <h2>檀家の営み・行事</h2>
           {dankaInfo && (annualEvents.length > 0 || dankaInfo.cemetery || dankaInfo.organization || dankaInfo.community_role) ? (
             <div class="danka-info-list">
@@ -208,7 +245,7 @@ const parking = field(dankaInfo?.parking, "調査中");
         </section>
 
         <section class="detail-panel">
-          <p class="section-number">05</p>
+          <p class="section-number">06</p>
           <h2>写真で見る境内</h2>
           {media ? (
             <div class="photo-record-list">
@@ -228,7 +265,7 @@ const parking = field(dankaInfo?.parking, "調査中");
         </section>
 
         <section class="detail-panel sources-panel">
-          <p class="section-number">06</p>
+          <p class="section-number">07</p>
           <h2>出典・参考資料</h2>
           <ol class="source-records">
             {temple.sources.map((source) => (

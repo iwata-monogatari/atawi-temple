@@ -8,6 +8,7 @@ import {
   getTemplesByDistrictId,
   hasDetailPage,
 } from "../../lib/temples";
+import { getMonogatariDistrictUrl } from "../../lib/related-monogatari";
 
 export function getStaticPaths() {
   return allDistricts.map((district) => ({
@@ -31,6 +32,7 @@ const detailedTemples = temples.filter((temple) => hasDetailPage(temple));
 const templesWithPhoto = detailedTemples.filter((temple) => templeHasPhoto(temple));
 const templesWithoutPhoto = detailedTemples.filter((temple) => !templeHasPhoto(temple));
 const unresearchedTemples = temples.filter((temple) => !hasDetailPage(temple));
+const monogatariDistrictUrl = getMonogatariDistrictUrl(district.district_id);
 
 const templeGroups = [
   { heading: "写真掲載あり", note: "現地写真を掲載している寺院です。", temples: templesWithPhoto },
@@ -79,6 +81,15 @@ const templeGroups = [
       )
     }
   </section>
+
+  {monogatariDistrictUrl && (
+    <section class="section">
+      <div class="district-monogatari-block">
+        <h2>この地区の歴史を磐田物語で読む</h2>
+        <a class="button-link" href={monogatariDistrictUrl}>{district.name}地区の記事へ ── 磐田物語</a>
+      </div>
+    </section>
+  )}
 
   <section class="section">
     <a class="button-link" href="/areas/">9地区一覧へ戻る</a>

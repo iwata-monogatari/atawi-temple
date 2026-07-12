@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "updated": "2026-07-12",
+  "temples": {
+    "kokubunji-mitsuke": [
+      {
+        "url": "https://iwata-monogatari.net/n034",
+        "title": "国分寺ものがたり ── 天平の寺はどう生き続けたか（特集・全12ページ公開）",
+        "relation": "direct",
+        "note": "遠江国分寺特集 親ページ（全12ページ）"
+      },
+      {
+        "url": "https://iwata-monogatari.net/n016",
+        "title": "遠江国分寺跡と、古代磐田のはじまり",
+        "relation": "direct"
+      },
+      {
+        "url": "https://iwata-monogatari.net/n001",
+        "title": "遠江国分寺とは何か ── 古代遠江の中心寺院",
+        "relation": "direct"
+      },
+      {
+        "url": "https://iwata-monogatari.net/n044",
+        "title": "森本善苗尼と近藤文六 ── 昭和の国分寺復興",
+        "relation": "direct"
+      },
+      {
+        "url": "https://iwata-monogatari.net/n045",
+        "title": "令和の薬師堂移築 ── 国分寺奉賛会と2度目の史跡公園",
+        "relation": "direct"
+      }
+    ],
+    "ioji-kamada": [
+      {
+        "url": "https://iwata-monogatari.net/u028",
+        "title": "医王寺庭園及び参道 ── 鎌田の名勝庭園と参道空間を歩く",
+        "relation": "direct"
+      }
+    ],
+    "zendoji-mitsuke": [
+      {
+        "url": "https://iwata-monogatari.net/n026",
+        "title": "善導寺大クス ── 寺の境内に立つ老樹を、中泉のまちが重ねてきた時間の目印として読む",
+        "relation": "direct"
+      }
+    ],
+    "shokoji-mitsuke": [
+      {
+        "url": "https://iwata-monogatari.net/m113",
+        "title": "旧見付学校以前の寺子屋教育 ── 宣光寺・省光寺と見付の手習い",
+        "relation": "direct"
+      }
+    ],
+    "senkoji-mitsuke": [
+      {
+        "url": "https://iwata-monogatari.net/m113",
+        "title": "旧見付学校以前の寺子屋教育 ── 宣光寺・省光寺と見付の手習い",
+        "relation": "direct"
+      }
+    ],
+    "saikoji-mitsuke": [
+      {
+        "url": "https://iwata-monogatari.net/m027",
+        "title": "見付本陣（神谷家・鈴木家）墓所 ── 西光寺に眠る本陣の家から、宿場の運営を読む",
+        "relation": "direct"
+      },
+      {
+        "url": "https://iwata-monogatari.net/m028",
+        "title": "西光寺大クス附ナギの木 ── 見付宿西端の寺に育つ社寺林の巨木",
+        "relation": "direct"
+      },
+      {
+        "url": "https://iwata-monogatari.net/m029",
+        "title": "西光寺のイヌマキ ── 時宗の寺に立つイヌマキと見付の社寺林",
+        "relation": "direct"
+      }
+    ],
+    "daijoin-nakaizumi": [
+      {
+        "url": "https://iwata-monogatari.net/c082",
+        "title": "中泉に息づく二つの信仰拠点 ── 中泉寺と大乗院三仭坊",
+        "relation": "direct"
+      },
+      {
+        "url": "https://iwata-monogatari.net/n052",
+        "title": "資料で読む中泉御殿の史実 - 家康の鷹狩り・秋鹿家・大池",
+        "relation": "topic",
+        "note": "中泉御殿ゆかりの由緒"
+      },
+      {
+        "url": "https://iwata-monogatari.net/n048",
+        "title": "中泉御殿と関ヶ原の戦い ── 家康滞在記録をたどる",
+        "relation": "topic",
+        "note": "中泉御殿ゆかりの由緒"
+      },
+      {
+        "url": "https://iwata-monogatari.net/n021",
+        "title": "中泉御殿のあった町 ── 天領を治めた中泉",
+        "relation": "topic",
+        "note": "中泉御殿ゆかりの由緒"
+      },
+      {
+        "url": "https://iwata-monogatari.net/c061",
+        "title": "中泉駅北の歴史地層 ── 御林・赤煉瓦・中泉御殿のそばを通った軌道",
+        "relation": "topic",
+        "note": "中泉御殿ゆかりの由緒"
+      }
+    ],
+    "kenshoji-mitsuke": [
+      {
+        "url": "https://iwata-monogatari.net/c084",
+        "title": "磐田の低湿地に残った木の道具 ── 見性寺遺跡の丸木舟と、野際遺跡の木製農具",
+        "relation": "topic",
+        "note": "寺名を冠する遺跡（見性寺遺跡）"
+      }
+    ],
+    "shinpoin-mukasa": [
+      {
+        "url": "https://iwata-monogatari.net/y011",
+        "title": "新豊院山古墳群と台地上の支配者 ── 弥生から古墳へ、向笠の丘に眠る記憶",
+        "relation": "area",
+        "note": "所在地・新豊院山の周辺史"
+      },
+      {
+        "url": "https://iwata-monogatari.net/k002",
+        "title": "新豊院山古墳群 ── 台地東縁に築かれた前期古墳群【国指定史跡】",
+        "relation": "area",
+        "note": "所在地・新豊院山の周辺史"
+      }
+    ],
+    "gyokoji-ikeda": [
+      {
+        "url": "https://iwata-monogatari.net/t033",
+        "title": "熊野御前ものがたり ── 池田に生きた伝説の女性と行興寺",
+        "relation": "direct"
+      },
+      {
+        "url": "https://iwata-monogatari.net/t036",
+        "title": "熊野道場由来記と熊野寺旧跡之畧縁起 ── 行興寺草創の二つの物語",
+        "relation": "direct"
+      },
+      {
+        "url": "https://iwata-monogatari.net/t037",
+        "title": "行興寺の近世史 ── 徳川家康の伝承と朱印地の古文書",
+        "relation": "direct"
+      },
+      {
+        "url": "https://iwata-monogatari.net/t002",
+        "title": "行興寺と熊野（ゆや）の長藤",
+        "relation": "direct"
+      },
+      {
+        "url": "https://iwata-monogatari.net/t029",
+        "title": "池田やかた祭り ── 熊野御前伝承と池田荘の記憶を、祭りのかたちから読み直す",
+        "relation": "topic",
+        "note": "熊野御前伝承ゆかりの祭礼"
+      }
+    ],
+    "shokoji-miyanoshiki": [
+      {
+        "url": "https://iwata-monogatari.net/t065",
+        "title": "神宮山松向寺 ── 浅間山噴火の記録を伝える豊田町最古最大の木造建築",
+        "relation": "direct"
+      }
+    ]
+  },
+  "districts": {
+    "mitsuke": "https://iwata-monogatari.net/01001-mitsuke",
+    "nakaizumi": "https://iwata-monogatari.net/01002-nakaizumi",
+    "mikuriya": "https://iwata-monogatari.net/01003-mikuriya",
+    "toyoda": "https://iwata-monogatari.net/01004-toyoda",
+    "nanbu": "https://iwata-monogatari.net/01005-nanbu",
+    "koyo": "https://iwata-monogatari.net/01006-koyo",
+    "ryuyo": "https://iwata-monogatari.net/01007-ryuyo",
+    "fukude": "https://iwata-monogatari.net/01008-fukude",
+    "toyooka": "https://iwata-monogatari.net/01009-toyooka"
+  }
+}

@@ -595,6 +595,59 @@ button,
   color: var(--muted);
 }
 
+.monogatari-lead {
+  margin-bottom: 18px;
+  color: var(--muted);
+}
+
+.monogatari-link-list {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.monogatari-link-list a {
+  display: block;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent-strong);
+  border-radius: 6px;
+  padding: 14px 18px;
+  background: var(--paper);
+  text-decoration: none;
+}
+
+.monogatari-link-list a:hover {
+  border-color: var(--accent-strong);
+}
+
+.monogatari-relation-label {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.monogatari-link-title {
+  display: block;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.district-monogatari-block,
+.real-estate-note {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 22px;
+  background: var(--paper);
+}
+
+.district-monogatari-block h2,
+.real-estate-note p {
+  margin: 0 0 12px;
+}
+
 .pending-block {
   border: 1px dashed var(--line);
   border-radius: 8px;
