@@ -4,7 +4,9 @@ import TempleCard from "../../components/TempleCard.astro";
 import {
   allDistricts,
   getDistrictBySlug,
+  getTempleMediaBySlug,
   getTemplesByDistrictId,
+  hasDetailPage,
 } from "../../lib/temples";
 
 export function getStaticPaths() {
@@ -19,7 +21,22 @@ if (!district) {
   return Astro.redirect("/areas/");
 }
 
+function templeHasPhoto(temple: (typeof temples)[number]) {
+  const media = getTempleMediaBySlug(temple.slug);
+  return Boolean(media?.hero_image ?? media?.photos?.[0]?.src);
+}
+
 const temples = getTemplesByDistrictId(district.district_id);
+const detailedTemples = temples.filter((temple) => hasDetailPage(temple));
+const templesWithPhoto = detailedTemples.filter((temple) => templeHasPhoto(temple));
+const templesWithoutPhoto = detailedTemples.filter((temple) => !templeHasPhoto(temple));
+const unresearchedTemples = temples.filter((temple) => !hasDetailPage(temple));
+
+const templeGroups = [
+  { heading: "写真掲載あり", note: "現地写真を掲載している寺院です。", temples: templesWithPhoto },
+  { heading: "写真準備中", note: "基礎情報は掲載済みで、現地写真は今後追加予定です。", temples: templesWithoutPhoto },
+  { heading: "現地確認待ち", note: "現地での痕跡確認ができておらず、検索記録として掲載しています。", temples: unresearchedTemples },
+].filter((group) => group.temples.length > 0);
 ---
 
 <BaseLayout
@@ -39,9 +56,22 @@ const temples = getTemplesByDistrictId(district.district_id);
     </div>
     {
       temples.length ? (
-        <div class="card-grid">
-          {temples.map((temple) => <TempleCard temple={temple} />)}
-        </div>
+        <>
+          <p class="small area-count-summary">
+            {temples.length}件登録（写真掲載あり{templesWithPhoto.length}件・写真準備中{templesWithoutPhoto.length}件・現地確認待ち{unresearchedTemples.length}件）
+          </p>
+          {templeGroups.map((group) => (
+            <div class="area-temple-group">
+              <div class="area-group-heading">
+                <h3>{group.heading}</h3>
+                <span class="small">{group.note} / {group.temples.length}件</span>
+              </div>
+              <div class="card-grid">
+                {group.temples.map((temple) => <TempleCard temple={temple} />)}
+              </div>
+            </div>
+          ))}
+        </>
       ) : (
         <div class="empty">
           この地区の寺院データは現在登録されていません。追加確認できた寺院から掲載します。

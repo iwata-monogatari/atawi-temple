@@ -1143,6 +1143,38 @@ button,
   gap: 16px;
 }
 
+.area-count-summary {
+  margin: -8px 0 24px;
+}
+
+.area-temple-group {
+  margin-bottom: 32px;
+}
+
+.area-temple-group:last-child {
+  margin-bottom: 0;
+}
+
+.area-group-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.area-group-heading h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.area-group-heading .small {
+  color: var(--muted);
+  text-align: right;
+}
+
 .pickup-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
