@@ -10,7 +10,6 @@ import {
   getTempleMediaBySlug,
   hasDetailPage,
   isUnknownValue,
-  knownValue,
 } from "../lib/temples";
 
 const districtCounts = countTemplesByDistrict();
@@ -37,17 +36,14 @@ const pickupPool = allTemples
       name: temple.name,
       nameKana: isUnknownValue(temple.name_kana) ? null : temple.name_kana,
       area: districtName,
-      sect: temple.sect,
       status: temple.status,
       statusLabel: temple.status_label,
-      address: temple.address,
-      mainDeity: knownValue(temple.main_deity),
-      foundedPeriod: knownValue("founded_period" in temple ? temple.founded_period : null, "調査中"),
       summary,
       image,
       imageAlt,
     };
-  });
+  })
+  .filter((temple) => Boolean(temple.image));
 const pickupPoolJson = JSON.stringify(pickupPool).replace(/</g, "\\u003c");
 ---
 
@@ -101,27 +97,28 @@ const pickupPoolJson = JSON.stringify(pickupPool).replace(/</g, "\\u003c");
       <h2>ピックアップ寺院</h2>
       <a href="/temples/">すべて見る</a>
     </div>
-    <div id="pickup-temples" class="card-grid" data-pickup-count="2">
+    <div id="pickup-temples" class="pickup-grid" data-pickup-count="2">
       <p class="small">読み込み中...</p>
     </div>
     <script type="application/json" id="pickup-temple-data" set:html={pickupPoolJson} />
     <script>
       function createPickupCard(temple: any) {
         const article = document.createElement("article");
-        article.className = "temple-card";
+        article.className = "pickup-card";
 
-        if (temple.image) {
-          const link = document.createElement("a");
-          link.className = "temple-card-photo";
-          link.href = `/temples/${temple.slug}/`;
-          link.setAttribute("aria-label", `${temple.name}の詳細を見る`);
-          const img = document.createElement("img");
-          img.src = temple.image;
-          img.alt = temple.imageAlt;
-          img.loading = "lazy";
-          link.appendChild(img);
-          article.appendChild(link);
-        }
+        const link = document.createElement("a");
+        link.className = "pickup-card-photo";
+        link.href = `/temples/${temple.slug}/`;
+        link.setAttribute("aria-label", `${temple.name}の詳細を見る`);
+        const img = document.createElement("img");
+        img.src = temple.image;
+        img.alt = temple.imageAlt;
+        img.loading = "lazy";
+        link.appendChild(img);
+        article.appendChild(link);
+
+        const body = document.createElement("div");
+        body.className = "pickup-card-body";
 
         const topline = document.createElement("div");
         topline.className = "card-topline";
@@ -131,44 +128,28 @@ const pickupPoolJson = JSON.stringify(pickupPool).replace(/</g, "\\u003c");
         const areaSpan = document.createElement("span");
         areaSpan.textContent = temple.area;
         topline.append(statusSpan, areaSpan);
-        article.appendChild(topline);
+        body.appendChild(topline);
 
         const heading = document.createElement("h3");
         const nameLink = document.createElement("a");
         nameLink.href = `/temples/${temple.slug}/`;
         nameLink.textContent = temple.name;
         heading.appendChild(nameLink);
-        article.appendChild(heading);
+        body.appendChild(heading);
 
         if (temple.nameKana) {
           const kana = document.createElement("p");
           kana.className = "kana";
           kana.textContent = temple.nameKana;
-          article.appendChild(kana);
+          body.appendChild(kana);
         }
-
-        const dl = document.createElement("dl");
-        dl.className = "compact-list";
-        const rows: [string, string][] = [
-          ["住所", temple.address],
-          ["宗派", temple.sect],
-          ["ご本尊", temple.mainDeity],
-          ["創建・年代", temple.foundedPeriod],
-        ];
-        for (const [label, value] of rows) {
-          const row = document.createElement("div");
-          const dt = document.createElement("dt");
-          dt.textContent = label;
-          const dd = document.createElement("dd");
-          dd.textContent = value;
-          row.append(dt, dd);
-          dl.appendChild(row);
-        }
-        article.appendChild(dl);
 
         const summary = document.createElement("p");
+        summary.className = "pickup-card-summary";
         summary.textContent = temple.summary;
-        article.appendChild(summary);
+        body.appendChild(summary);
+
+        article.appendChild(body);
 
         return article;
       }
