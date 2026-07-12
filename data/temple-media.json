@@ -1258,5 +1258,47 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "gyosenji-mitsuke",
+    "hero_image": "/assets/temples/gyosenji-mitsuke/main-hall-front.webp",
+    "photos": [
+      {
+        "photo_id": "gyosenji-main-hall-front-2026",
+        "src": "/assets/temples/gyosenji-mitsuke/main-hall-front.webp",
+        "alt": "行泉寺本堂正面",
+        "caption": "本堂正面。瓦屋根の軒に飾り瓦が並び、木製の格子戸を構える。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "gyosenji-main-hall-side-2026",
+        "src": "/assets/temples/gyosenji-mitsuke/main-hall-side.webp",
+        "alt": "本堂の側面",
+        "caption": "本堂を側面から見た様子。破風の彫刻や大屋根の造りが分かる。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "gyosenji-gate-2026",
+        "src": "/assets/temples/gyosenji-mitsuke/gate.webp",
+        "alt": "行泉寺の山門",
+        "caption": "瓦屋根の山門。奥へ続く参道と木々が見える。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "gyosenji-subsidiary-hall-2026",
+        "src": "/assets/temples/gyosenji-mitsuke/subsidiary-hall.webp",
+        "alt": "境内の小堂",
+        "caption": "境内に建つ小さな堂宇。奥に本堂の大屋根が見える。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
