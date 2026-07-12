@@ -1570,5 +1570,101 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "genmyoji-mitsuke",
+    "hero_image": "/assets/temples/genmyoji-mitsuke/hondo-front.webp",
+    "photos": [
+      {
+        "photo_id": "genmyoji-hondo-front-2026",
+        "src": "/assets/temples/genmyoji-mitsuke/hondo-front.webp",
+        "alt": "玄妙寺本堂正面「本立山」",
+        "caption": "「本立山」の扁額を掲げる本堂正面。一対の大香炉が置かれている。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "genmyoji-sanmon-gate-front-2026",
+        "src": "/assets/temples/genmyoji-mitsuke/sanmon-gate-front.webp",
+        "alt": "玄妙寺山門",
+        "caption": "瓦屋根の山門。石柱には寺号が刻まれている。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "genmyoji-tsuyomon-gate-marker-2026",
+        "src": "/assets/temples/genmyoji-mitsuke/tsuyomon-gate-marker.webp",
+        "alt": "玄妙寺通用門の石柱と案内板",
+        "caption": "「玄妙寺通用門」と刻まれた石柱と、「日蓮宗本山玄妙寺」の案内板。子宝・子育ての「母形児子母神」への案内も添えられている。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "genmyoji-kyozo-sutra-repository-2026",
+        "src": "/assets/temples/genmyoji-mitsuke/kyozo-sutra-repository.webp",
+        "alt": "国登録有形文化財「経蔵」",
+        "caption": "文化庁の登録有形文化財に指定されている経蔵。重厚な石造りの土蔵に鉄扉が構える。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "genmyoji-kyozo-door-detail-2026",
+        "src": "/assets/temples/genmyoji-mitsuke/kyozo-door-detail.webp",
+        "alt": "経蔵の鉄扉",
+        "caption": "経蔵の重厚な鉄扉を別角度から見る。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "genmyoji-grounds-overview-2026",
+        "src": "/assets/temples/genmyoji-mitsuke/grounds-overview.webp",
+        "alt": "玄妙寺境内全景",
+        "caption": "松の木越しに見る本堂と境内。墓地や庫裏が並ぶ。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "genmyoji-gate-view-to-hondo-2026",
+        "src": "/assets/temples/genmyoji-mitsuke/gate-view-to-hondo.webp",
+        "alt": "山門から本堂を望む",
+        "caption": "「日蓮宗本山 玄妙寺」の扁額が掲げられた山門の内側から本堂を望む。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "genmyoji-history-signboard-2026",
+        "src": "/assets/temples/genmyoji-mitsuke/history-signboard.webp",
+        "alt": "玄妙寺の由緒案内板",
+        "caption": "宗派・本尊・開山の由緒を記した案内板。元中2年(1385)に日什上人により開創され、日蓮上人の改名前の名「玄妙」を寺号としたことなどが記されている。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "genmyoji-kosodate-mizukake-jizo-2026",
+        "src": "/assets/temples/genmyoji-mitsuke/kosodate-mizukake-jizo.webp",
+        "alt": "子育て・水かけ地蔵さま",
+        "caption": "境内墓地の一角にまつられる「子育て・水かけ地蔵さま」。子供の健やかな成長を願う参拝者に親しまれている。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "genmyoji-large-camphor-tree-2026",
+        "src": "/assets/temples/genmyoji-mitsuke/large-camphor-tree.webp",
+        "alt": "境内の大クスノキ",
+        "caption": "本堂脇にそびえる大きなクスノキ。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
