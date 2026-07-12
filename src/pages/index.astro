@@ -70,15 +70,10 @@ function photoAt(slug: string, index: number) {
   return photo ? { src: photo.src, alt: photo.alt } : null;
 }
 
-// 境内の実写真を各所の背景・ギャラリーに使う（華やかさ重視で選定）
-const heroPhotos = [
-  { src: "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&fit=crop&w=1200&q=80", alt: "" },
-  photoAt("gyokoji-ikeda", 3),
-  photoAt("jionji-mitsuke", 0),
-  photoAt("daijoin-nakaizumi", 5),
-  photoAt("saikoji-mitsuke", 4),
-  photoAt("senkoji-mitsuke", 8),
-].filter((photo): photo is { src: string; alt: string } => Boolean(photo));
+// ヒーローは富士山と五重塔の写真を全面背景として1枚使う
+const heroImage = "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&fit=crop&w=1800&q=80";
+
+// 境内の実写真は「境内フォトギャラリー」等の各セクションで使う（華やかさ重視で選定）
 
 const districtPhotoByDistrictId: Record<string, { src: string; alt: string } | null> = {
   mitsuke: photoAt("kokubunji-mitsuke", 0),
@@ -106,10 +101,7 @@ const galleryPhotos = [
 ---
 
 <BaseLayout>
-  <section class="hero">
-    <div class="hero-photo-collage" aria-hidden="true">
-      {heroPhotos.map((photo) => <img src={photo.src} alt="" loading="eager" />)}
-    </div>
+  <section class="hero" style={`background-image: url(${heroImage})`}>
     <div>
       <p class="eyebrow">公開資料と現地訪問で整理する地域寺院情報</p>
       <span class="hero-rule" aria-hidden="true"></span>
