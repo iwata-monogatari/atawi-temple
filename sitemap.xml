@@ -17,6 +17,10 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://temple.atawi.link/updates/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://temple.atawi.link/status/</loc>
     <changefreq>weekly</changefreq>
   </url>
