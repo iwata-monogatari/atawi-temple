@@ -1102,5 +1102,83 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "daikenji-mitsuke",
+    "hero_image": "/assets/temples/daikenji-mitsuke/main-hall-front.webp",
+    "photos": [
+      {
+        "photo_id": "daikenji-main-hall-front-2026",
+        "src": "/assets/temples/daikenji-mitsuke/main-hall-front.webp",
+        "alt": "大見寺本堂正面",
+        "caption": "大きな屋根を持つ本堂正面。向拝の彫刻や扁額があり、石段前に一対の灯籠が置かれている。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daikenji-main-hall-shrine-2026",
+        "src": "/assets/temples/daikenji-mitsuke/main-hall-and-shrine.webp",
+        "alt": "大見寺境内、本堂と朱塗りの鳥居のある境内社",
+        "caption": "本堂前の境内。朱塗りの鳥居と小さな社殿を構える境内社、石碑や手水鉢、灯籠などが並ぶ。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daikenji-sanmon-gate-2026",
+        "src": "/assets/temples/daikenji-mitsuke/sanmon-gate.webp",
+        "alt": "大見寺の山門",
+        "caption": "瓦屋根の山門。右手に寺号を刻んだ石柱、左手に案内板が立ち、門の奥に本堂の屋根が見える。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daikenji-memorial-stone-jizo-2026",
+        "src": "/assets/temples/daikenji-mitsuke/memorial-stone-jizo.webp",
+        "alt": "境内の石碑と地蔵尊像",
+        "caption": "境内に建つ大きな自然石の石碑。手前には赤い頭巾と前掛けを着けた地蔵尊の石像が置かれている。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daikenji-eaves-plaque-2026",
+        "src": "/assets/temples/daikenji-mitsuke/eaves-plaque.webp",
+        "alt": "本堂軒下の扁額",
+        "caption": "本堂正面の軒下に掲げられた木製の扁額。彫刻の施された組物や垂木とともに撮影されている。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daikenji-dedication-stone-2026",
+        "src": "/assets/temples/daikenji-mitsuke/dedication-stone-1992.webp",
+        "alt": "「大見寺三十五世 乗誉一海晋山記念」の石碑",
+        "caption": "「大見寺三十五世 乗誉一海晋山記念 平成四年三月 檀信徒一同」と刻まれた石版。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daikenji-cultural-property-board-2026",
+        "src": "/assets/temples/daikenji-mitsuke/cultural-property-signboard.webp",
+        "alt": "「大見寺の文化財」案内板",
+        "caption": "境内にある磐田市文化財課の案内板。見付端城の土塁や、良純法親王供養塔、鳥人・幸吉の墓についての説明と、元禄11年(1698)の大見寺絵図が掲載されている。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daikenji-approach-path-2026",
+        "src": "/assets/temples/daikenji-mitsuke/approach-path.webp",
+        "alt": "参道から見た本堂",
+        "caption": "松の木や墓石が並ぶ参道から見た本堂と朱塗りの鳥居。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
