@@ -2147,5 +2147,86 @@
         "category_id": "stonework"
       }
     ]
+  },
+  {
+    "temple_slug": "daienji-kamo",
+    "hero_image": "/images/temples/daienji-kamo/daienji-kamo-01-entrance-marker.webp",
+    "photos": [
+      {
+        "src": "/images/temples/daienji-kamo/daienji-kamo-01-entrance-marker.webp",
+        "alt": "大圓寺の寺号標石と本堂遠景",
+        "category_id": "entrance-marker"
+      },
+      {
+        "src": "/images/temples/daienji-kamo/daienji-kamo-02-gate-view.webp",
+        "alt": "山門越しに見る大圓寺の本堂",
+        "category_id": "main-building"
+      },
+      {
+        "src": "/images/temples/daienji-kamo/daienji-kamo-03-gate-plaque.webp",
+        "alt": "山門に掲げられた「大圓寺」の扁額",
+        "category_id": "signboard"
+      },
+      {
+        "src": "/images/temples/daienji-kamo/daienji-kamo-04-gate-grounds.webp",
+        "alt": "山門と石灯籠、境内の枯山水風の庭",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/daienji-kamo/daienji-kamo-05-gate-wall.webp",
+        "alt": "山門と土塀、手水舎のある境内入口",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/daienji-kamo/daienji-kamo-06-main-hall-front.webp",
+        "alt": "大圓寺本堂の正面全景",
+        "category_id": "main-building"
+      },
+      {
+        "src": "/images/temples/daienji-kamo/daienji-kamo-07-main-hall-jizo.webp",
+        "alt": "本堂正面と参道の地蔵尊像",
+        "category_id": "main-building"
+      },
+      {
+        "src": "/images/temples/daienji-kamo/daienji-kamo-08-main-hall-side.webp",
+        "alt": "本堂を側面から見た全景",
+        "category_id": "main-building"
+      },
+      {
+        "src": "/images/temples/daienji-kamo/daienji-kamo-09-grounds-distant.webp",
+        "alt": "木々に囲まれた本堂の遠景",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/daienji-kamo/daienji-kamo-10-grounds-buildings.webp",
+        "alt": "経蔵・納骨堂と灯籠のある境内",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/daienji-kamo/daienji-kamo-11-sub-hall.webp",
+        "alt": "境内の塔頭風の小堂",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/daienji-kamo/daienji-kamo-12-old-roof-tile-monument.webp",
+        "alt": "「旧本堂鬼瓦」本堂改修記念碑",
+        "category_id": "stonework"
+      },
+      {
+        "src": "/images/temples/daienji-kamo/daienji-kamo-13-kamo-school-sign.webp",
+        "alt": "境内にある「加茂学校跡」の案内板",
+        "category_id": "signboard"
+      },
+      {
+        "src": "/images/temples/daienji-kamo/daienji-kamo-14-cycad-tree.webp",
+        "alt": "境内の大きなソテツの木",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/daienji-kamo/daienji-kamo-15-chozuya.webp",
+        "alt": "龍の吐水口がある手水舎「洗心水」",
+        "category_id": "grounds"
+      }
+    ]
   }
 ]
