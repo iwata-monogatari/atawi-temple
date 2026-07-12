@@ -466,5 +466,101 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "renpukuji-ninomiya",
+    "hero_image": "/assets/temples/renpukuji-ninomiya/hondo-front.webp",
+    "photos": [
+      {
+        "photo_id": "renpukuji-ireito-2026",
+        "src": "/assets/temples/renpukuji-ninomiya/ireito.webp",
+        "alt": "連福寺の慰霊塔",
+        "caption": "境内に建つ慰霊塔を正面から記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renpukuji-enma-signboard-2026",
+        "src": "/assets/temples/renpukuji-ninomiya/enma-signboard.webp",
+        "alt": "木造閻魔大王坐像の説明板",
+        "caption": "磐田市指定文化財・木造閻魔大王坐像の解説板。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renpukuji-sanmon-view-2026",
+        "src": "/assets/temples/renpukuji-ninomiya/sanmon-view.webp",
+        "alt": "連福寺の山門から見た参道",
+        "caption": "山門越しに参道と境内の堂宇を望む。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renpukuji-entrance-marker-2026",
+        "src": "/assets/temples/renpukuji-ninomiya/entrance-marker.webp",
+        "alt": "龍池山連福寺の寺号標",
+        "caption": "龍池山連福寺の寺号標と入口周辺を記録。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renpukuji-hondo-front-2026",
+        "src": "/assets/temples/renpukuji-ninomiya/hondo-front.webp",
+        "alt": "連福寺本堂の正面",
+        "caption": "連福寺の扁額を掲げる本堂正面。境内の代表写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renpukuji-grounds-hondo-2026",
+        "src": "/assets/temples/renpukuji-ninomiya/grounds-hondo.webp",
+        "alt": "連福寺境内と本堂",
+        "caption": "境内から本堂、閻魔堂、墓域の配置を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renpukuji-sect-marker-2026",
+        "src": "/assets/temples/renpukuji-ninomiya/sect-marker.webp",
+        "alt": "臨済宗妙心寺派の石標",
+        "caption": "寺域外周に立つ臨済宗妙心寺派の石標。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renpukuji-enma-do-2026",
+        "src": "/assets/temples/renpukuji-ninomiya/enma-do.webp",
+        "alt": "連福寺の閻魔堂",
+        "caption": "木造閻魔大王坐像の説明板が置かれた閻魔堂の正面。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renpukuji-stone-buddhas-2026",
+        "src": "/assets/temples/renpukuji-ninomiya/stone-buddhas.webp",
+        "alt": "連福寺境内の石仏",
+        "caption": "堂宇の壁面に安置された石仏を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renpukuji-memorial-stones-2026",
+        "src": "/assets/temples/renpukuji-ninomiya/memorial-stones.webp",
+        "alt": "連福寺境内の石塔群",
+        "caption": "境内に残る供養塔・石塔群を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
