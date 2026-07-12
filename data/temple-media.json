@@ -1936,5 +1936,119 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "senkoji-mitsuke",
+    "hero_image": "/assets/temples/senkoji-mitsuke/hondo-front.webp",
+    "photos": [
+      {
+        "photo_id": "senkoji-hondo-front-2026",
+        "src": "/assets/temples/senkoji-mitsuke/hondo-front.webp",
+        "alt": "宣光寺本堂正面",
+        "caption": "松の木に囲まれた本堂正面。「珠玉山」の扁額が掲げられている。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senkoji-hondo-nameplate-2026",
+        "src": "/assets/temples/senkoji-mitsuke/hondo-nameplate.webp",
+        "alt": "宣光寺本堂の「珠玉山」扁額",
+        "caption": "本堂入口に掲げられた山号「珠玉山」の扁額。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senkoji-jizoido-front-2026",
+        "src": "/assets/temples/senkoji-mitsuke/jizoido-front.webp",
+        "alt": "宣光寺延命地蔵堂正面",
+        "caption": "延命地蔵菩薩・毘沙門天像を祀る地蔵堂の正面。「みがわり地蔵」の由緒を伝える。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senkoji-jizoido-banners-2026",
+        "src": "/assets/temples/senkoji-mitsuke/jizoido-banners.webp",
+        "alt": "宣光寺地蔵堂と幟旗",
+        "caption": "「延命大地蔵」の幟旗が並ぶ地蔵堂前。水かけ地蔵の像も見える。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senkoji-bonsho-close-2026",
+        "src": "/assets/temples/senkoji-mitsuke/bonsho-close.webp",
+        "alt": "宣光寺の梵鐘",
+        "caption": "徳川家康が施主となって寄進したと伝わる梵鐘（磐田市指定文化財）。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senkoji-bonsho-monument-2026",
+        "src": "/assets/temples/senkoji-mitsuke/bonsho-monument.webp",
+        "alt": "宣光寺「家康寄進の梵鐘」の碑",
+        "caption": "鐘楼前に立つ「家康寄進の梵鐘」の由緒碑。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senkoji-yuisho-board-2026",
+        "src": "/assets/temples/senkoji-mitsuke/yuisho-board.webp",
+        "alt": "宣光寺由緒案内板",
+        "caption": "宗派・本尊・沿革と、県指定・市指定の文化財について記した境内の案内板。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senkoji-migawari-jizo-board-2026",
+        "src": "/assets/temples/senkoji-mitsuke/migawari-jizo-board.webp",
+        "alt": "宣光寺「みがわり地蔵の縁起」案内板",
+        "caption": "三方原の戦いで家康を助けたと伝わる「みがわり地蔵」の縁起を記した案内板。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senkoji-sanmon-front-2026",
+        "src": "/assets/temples/senkoji-mitsuke/sanmon-front.webp",
+        "alt": "宣光寺山門",
+        "caption": "境内を望む宣光寺の山門正面。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senkoji-sanmon-nameplate-2026",
+        "src": "/assets/temples/senkoji-mitsuke/sanmon-nameplate.webp",
+        "alt": "宣光寺山門柱の寺号",
+        "caption": "山門の柱に刻まれた「曹洞宗 宣光寺」の文字。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senkoji-grounds-overview-2026",
+        "src": "/assets/temples/senkoji-mitsuke/grounds-overview.webp",
+        "alt": "宣光寺境内全景",
+        "caption": "地蔵堂と本堂、笑顔の布袋像が並ぶ境内の眺め。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senkoji-temple-marker-sign-2026",
+        "src": "/assets/temples/senkoji-mitsuke/temple-marker-sign.webp",
+        "alt": "宣光寺の寺号標識",
+        "caption": "「曹洞宗宣光寺 遠州三十三観音霊場第十七番札所」と記した標識。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
