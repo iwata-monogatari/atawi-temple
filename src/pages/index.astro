@@ -61,14 +61,58 @@ const pickupPoolJson = JSON.stringify(pickupPool).replace(/</g, "\\u003c");
 
 const monogatariPickupSlugs = ["kokubunji-mitsuke", "daijoin-nakaizumi", "gyokoji-ikeda", "ioji-kamada"];
 const monogatariPickups = monogatariPickupSlugs
-  .map((slug) => ({ temple: getTempleBySlug(slug), link: getMonogatariLinksBySlug(slug)[0] }))
-  .filter((item): item is { temple: any; link: any } => Boolean(item.temple && item.link));
+  .map((slug) => ({ temple: getTempleBySlug(slug), link: getMonogatariLinksBySlug(slug)[0], photo: photoAt(slug, 9) }))
+  .filter((item): item is { temple: any; link: any; photo: any } => Boolean(item.temple && item.link));
+
+function photoAt(slug: string, index: number) {
+  const media = getTempleMediaBySlug(slug);
+  const photo = media?.photos?.[index];
+  return photo ? { src: photo.src, alt: photo.alt } : null;
+}
+
+// 境内の実写真を各所の背景・ギャラリーに使う（華やかさ重視で選定）
+const heroPhotos = [
+  photoAt("gyokoji-ikeda", 3),
+  photoAt("jionji-mitsuke", 0),
+  photoAt("daijoin-nakaizumi", 5),
+  photoAt("saikoji-mitsuke", 4),
+  photoAt("honshoji-kounodai", 0),
+  photoAt("senkoji-mitsuke", 8),
+].filter((photo): photo is { src: string; alt: string } => Boolean(photo));
+
+const districtPhotoByDistrictId: Record<string, { src: string; alt: string } | null> = {
+  mitsuke: photoAt("kokubunji-mitsuke", 0),
+  nakaizumi: photoAt("daijoin-nakaizumi", 5),
+  toyoda: photoAt("gyokoji-ikeda", 2),
+  nanbu: photoAt("kindaiji-tenryu", 0),
+};
+
+const galleryPhotos = [
+  { slug: "senkoji-mitsuke", index: 4 },
+  { slug: "saikoji-mitsuke", index: 2 },
+  { slug: "honshoji-kounodai", index: 1 },
+  { slug: "daienji-kamo", index: 1 },
+  { slug: "myohoji-ikeda", index: 3 },
+  { slug: "shokoji-miyanoshiki", index: 4 },
+  { slug: "genmyoji-mitsuke", index: 3 },
+  { slug: "jionji-mitsuke", index: 4 },
+]
+  .map(({ slug, index }) => {
+    const temple = getTempleBySlug(slug);
+    const photo = photoAt(slug, index);
+    return temple && photo ? { temple, photo } : null;
+  })
+  .filter((item): item is { temple: any; photo: any } => Boolean(item));
 ---
 
 <BaseLayout>
   <section class="hero">
+    <div class="hero-photo-collage" aria-hidden="true">
+      {heroPhotos.map((photo) => <img src={photo.src} alt="" loading="eager" />)}
+    </div>
     <div>
       <p class="eyebrow">公開資料と現地訪問で整理する地域寺院情報</p>
+      <span class="hero-rule" aria-hidden="true"></span>
       <h1>磐田市のお寺・寺院<br />データベース</h1>
       <p class="brand-name">ATAWI TEMPLE</p>
       <form class="hero-search" action="/search/" method="get">
@@ -133,20 +177,19 @@ const monogatariPickups = monogatariPickupSlugs
         img.alt = temple.imageAlt;
         img.loading = "lazy";
         link.appendChild(img);
+        const badge = document.createElement("span");
+        badge.className = `pickup-card-badge status-${temple.status}`;
+        badge.textContent = temple.statusLabel;
+        link.appendChild(badge);
         article.appendChild(link);
 
         const body = document.createElement("div");
         body.className = "pickup-card-body";
 
-        const topline = document.createElement("div");
-        topline.className = "card-topline";
-        const statusSpan = document.createElement("span");
-        statusSpan.className = `status status-${temple.status}`;
-        statusSpan.textContent = temple.statusLabel;
         const areaSpan = document.createElement("span");
-        areaSpan.textContent = temple.area;
-        topline.append(statusSpan, areaSpan);
-        body.appendChild(topline);
+        areaSpan.className = "pickup-card-area";
+        areaSpan.textContent = `${temple.area}地区`;
+        body.appendChild(areaSpan);
 
         const heading = document.createElement("h3");
         const nameLink = document.createElement("a");
@@ -215,14 +258,36 @@ const monogatariPickups = monogatariPickupSlugs
     </div>
     <div class="district-grid">
       {
-        districtCounts.map((district) => (
-          <a class="district-card" href={`/areas/${district.slug}/`}>
-            <strong>{district.name}</strong>
-            <span>{district.summary}</span>
-            <em>{district.count}件登録</em>
-          </a>
-        ))
+        districtCounts.map((district) => {
+          const photo = districtPhotoByDistrictId[district.district_id];
+          return (
+            <a
+              class={photo ? "district-card district-card--photo" : "district-card"}
+              href={`/areas/${district.slug}/`}
+              style={photo ? `background-image: linear-gradient(180deg, rgba(20,26,18,.15) 0%, rgba(20,26,18,.78) 100%), url(${photo.src})` : undefined}
+            >
+              <strong>{district.name}</strong>
+              <span>{district.summary}</span>
+              <em>{district.count}件登録</em>
+            </a>
+          );
+        })
       }
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>境内フォトギャラリー</h2>
+      <a href="/temples/">寺院一覧へ</a>
+    </div>
+    <div class="temple-gallery-grid">
+      {galleryPhotos.map(({ temple, photo }) => (
+        <a class="temple-gallery-card" href={`/temples/${temple.slug}/`}>
+          <img src={photo.src} alt={photo.alt} loading="lazy" />
+          <span>{temple.name}</span>
+        </a>
+      ))}
     </div>
   </section>
 
@@ -232,8 +297,12 @@ const monogatariPickups = monogatariPickupSlugs
       <a href="https://iwata-monogatari.net/">磐田物語へ</a>
     </div>
     <div class="monogatari-pickup-grid">
-      {monogatariPickups.map(({ temple, link }) => (
-        <a class="monogatari-pickup-card" href={link.url}>
+      {monogatariPickups.map(({ temple, link, photo }) => (
+        <a
+          class={photo ? "monogatari-pickup-card monogatari-pickup-card--photo" : "monogatari-pickup-card"}
+          href={link.url}
+          style={photo ? `background-image: linear-gradient(180deg, rgba(20,26,18,.1) 0%, rgba(20,26,18,.85) 100%), url(${photo.src})` : undefined}
+        >
           <span class="monogatari-pickup-temple">{temple.name}（{getDistrictName(temple.district_id)}地区）</span>
           <span class="monogatari-pickup-title">{link.title}</span>
         </a>
