@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { allTempleUpdates, getTempleBySlug } from "../../lib/temples";
+
+const laterUpdates = allTempleUpdates.slice(5).map((update) => ({
+  ...update,
+  temple: getTempleBySlug(update.temple_slug),
+}));
+---
+
+<BaseLayout
+  title="更新情報一覧 | ATAWI TEMPLE"
+  description="ATAWI TEMPLEの更新情報を、トップページ掲載分の新着5件以降から新しい順に掲載しています。"
+>
+  <section class="page-title">
+    <p class="eyebrow">Updates</p>
+    <h1>更新情報一覧</h1>
+    <p>トップページに掲載している新着5件以降の更新を、新しい順に掲載しています。</p>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>6件目以降の更新</h2>
+      <a href="/">トップページへ戻る</a>
+    </div>
+    {
+      laterUpdates.length > 0 ? (
+        <div class="update-list">
+          {
+            laterUpdates.map((update) => (
+              <article class="update-item">
+                <time datetime={update.date}>{update.date.replaceAll("-", ".")}</time>
+                <div>
+                  <h3>
+                    <a href={`/temples/${update.temple_slug}/`}>{update.title}</a>
+                  </h3>
+                  <p>{update.summary}</p>
+                  {update.temple && <span class="small">{update.temple.name} / {update.temple.area}</span>}
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      ) : (
+        <p class="empty">現在、トップページ掲載分以外の更新情報はありません。</p>
+      )
+    }
+  </section>
+</BaseLayout>
