@@ -1024,5 +1024,83 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "tokuoin-mitsuke",
+    "hero_image": "/assets/temples/tokuoin-mitsuke/kannon-do-front.webp",
+    "photos": [
+      {
+        "photo_id": "tokuoin-kannondo-front-2026",
+        "src": "/assets/temples/tokuoin-mitsuke/kannon-do-front.webp",
+        "alt": "徳翁院観音堂の正面",
+        "caption": "「江東山」の扁額と「徳翁院 観音堂」の看板を掲げる観音堂正面。現在の本尊安置堂として使われている。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tokuoin-kannondo-side-2026",
+        "src": "/assets/temples/tokuoin-mitsuke/kannon-do-side.webp",
+        "alt": "徳翁院観音堂の側面と境内",
+        "caption": "観音堂を側面から見た様子。奥に朱塗りの鳥居を構える境内社（稲荷社）が見える。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tokuoin-kannondo-rear-2026",
+        "src": "/assets/temples/tokuoin-mitsuke/kannon-do-rear.webp",
+        "alt": "徳翁院観音堂の背面",
+        "caption": "観音堂の背面側。裏口や設備配管、手水鉢などを含めて建物全体を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tokuoin-inari-shrine-2026",
+        "src": "/assets/temples/tokuoin-mitsuke/inari-shrine-torii.webp",
+        "alt": "徳翁院境内の稲荷社と朱塗りの鳥居",
+        "caption": "「正一位稲荷大明神」の幟を掲げる朱塗りの鳥居。狐像を配した一対の石灯籠と赤い社殿を構える境内社。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tokuoin-approach-tree-2026",
+        "src": "/assets/temples/tokuoin-mitsuke/inari-shrine-tree.webp",
+        "alt": "徳翁院境内入口の大木と鳥居",
+        "caption": "境内入口に立つ大木と、道路沿いから見た稲荷社の鳥居。周辺の住宅地との位置関係が分かる一枚。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tokuoin-water-basin-2026",
+        "src": "/assets/temples/tokuoin-mitsuke/shrine-water-basin.webp",
+        "alt": "徳翁院境内の手水舎",
+        "caption": "龍の吐水口を備えた手水鉢と、それを覆う屋根付きの覆屋。境内社そばに置かれている。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tokuoin-stone-statues-2026",
+        "src": "/assets/temples/tokuoin-mitsuke/stone-statues.webp",
+        "alt": "徳翁院境内の石仏群",
+        "caption": "境内に並ぶ多数の石仏。観音像・地蔵像と多数の小さな童子像が列をなして安置されている。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tokuoin-float-storage-2026",
+        "src": "/assets/temples/tokuoin-mitsuke/storage-building.webp",
+        "alt": "見付天神裸祭「元門車保存会」の倉庫",
+        "caption": "「見付天神裸祭 元門車保存会」の看板を掲げる倉庫。県指定無形民俗文化財・見付天神裸祭の元門車を保管する施設で、境内近くに建つ。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
