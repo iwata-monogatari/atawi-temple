@@ -319,5 +319,101 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "saiganji-nakaizumi",
+    "hero_image": "/assets/temples/saiganji-nakaizumi/entrance-wide.webp",
+    "photos": [
+      {
+        "photo_id": "saiganji-entrance-wide-2026",
+        "src": "/assets/temples/saiganji-nakaizumi/entrance-wide.webp",
+        "alt": "西願寺の入口と本堂",
+        "caption": "山号・寺号標の先に本堂を望む入口全景。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saiganji-hondo-2026",
+        "src": "/assets/temples/saiganji-nakaizumi/hondo.webp",
+        "alt": "西願寺本堂の正面",
+        "caption": "弘誓山の扁額を掲げる西願寺本堂の正面。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saiganji-grounds-tree-2026",
+        "src": "/assets/temples/saiganji-nakaizumi/grounds-tree.webp",
+        "alt": "西願寺境内の松と本堂",
+        "caption": "境内の大きな松、山門、本堂を一体で記録した境内景観。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saiganji-sanmon-2026",
+        "src": "/assets/temples/saiganji-nakaizumi/sanmon.webp",
+        "alt": "西願寺の山門と参道",
+        "caption": "山門越しに本堂を望む参道正面。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saiganji-chozuya-2026",
+        "src": "/assets/temples/saiganji-nakaizumi/chozuya.webp",
+        "alt": "西願寺境内の手水舎",
+        "caption": "鐘楼や墓域を背景にした手水舎の様子。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saiganji-memorial-2026",
+        "src": "/assets/temples/saiganji-nakaizumi/memorial.webp",
+        "alt": "西願寺境内の殉国戦士之墓",
+        "caption": "墓域に建つ殉国戦士之墓を正面から記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saiganji-old-nakaizumi-goten-sign-2026",
+        "src": "/assets/temples/saiganji-nakaizumi/old-nakaizumi-goten-sign.webp",
+        "alt": "旧中泉御殿裏門の説明板",
+        "caption": "市指定文化財・旧中泉御殿裏門について説明する案内板。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saiganji-bell-tower-2026",
+        "src": "/assets/temples/saiganji-nakaizumi/bell-tower.webp",
+        "alt": "西願寺の鐘楼",
+        "caption": "境内墓域のそばに建つ鐘楼を見上げて記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saiganji-temple-marker-2026",
+        "src": "/assets/temples/saiganji-nakaizumi/temple-marker.webp",
+        "alt": "弘誓山西願寺の寺号標と本堂",
+        "caption": "弘誓山西願寺と刻まれた寺号標と、奥に見える本堂。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saiganji-hondo-close-2026",
+        "src": "/assets/temples/saiganji-nakaizumi/hondo-close.webp",
+        "alt": "西願寺本堂の扁額と建具",
+        "caption": "本堂正面の扁額、欄間、建具を近くから記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
