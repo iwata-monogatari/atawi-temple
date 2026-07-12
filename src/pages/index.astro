@@ -1,7 +1,5 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import TempleCard from "../components/TempleCard.astro";
-import type { Temple } from "../lib/temples";
 import {
   allTemples,
   allTempleUpdates,
@@ -17,16 +15,6 @@ const recentUpdates = allTempleUpdates.slice(0, 5).map((update) => ({
   ...update,
   temple: getTempleBySlug(update.temple_slug),
 }));
-const featured = [
-  "kokubunji-mitsuke",
-  "gyokoji-ikeda",
-  "senkoji-mitsuke",
-  "kokuseiji-kaketsuka",
-  "shokoji-miyanoshiki",
-  "myohoji-ikeda",
-]
-  .map((slug) => getTempleBySlug(slug))
-  .filter((temple): temple is Temple => Boolean(temple));
 ---
 
 <BaseLayout>
@@ -74,32 +62,6 @@ const featured = [
     <a href="/sects/">宗派から探す</a>
   </section>
 
-  <section class="section updates-section">
-    <div class="section-heading">
-      <div>
-        <h2>更新情報</h2>
-        <span class="small">寺院ページの追加・更新 / 新着5件</span>
-      </div>
-      <a href="/updates/">6件目以降を見る</a>
-    </div>
-    <div class="update-list">
-      {
-        recentUpdates.map((update) => (
-          <article class="update-item">
-            <time datetime={update.date}>{update.date.replaceAll("-", ".")}</time>
-            <div>
-              <h3>
-                <a href={`/temples/${update.temple_slug}/`}>{update.title}</a>
-              </h3>
-              <p>{update.summary}</p>
-              {update.temple && <span class="small">{update.temple.name} / {update.temple.area}</span>}
-            </div>
-          </article>
-        ))
-      }
-    </div>
-  </section>
-
   <section class="section">
     <div class="section-heading">
       <h2>9地区から探す</h2>
@@ -128,13 +90,29 @@ const featured = [
     </div>
   </section>
 
-  <section class="section">
+  <section class="section updates-section">
     <div class="section-heading">
-      <h2>調査優先の寺院</h2>
-      <a href="/temples/">すべて見る</a>
+      <div>
+        <h2>更新情報</h2>
+        <span class="small">寺院ページの追加・更新 / 新着5件</span>
+      </div>
+      <a href="/updates/">6件目以降を見る</a>
     </div>
-    <div class="card-grid">
-      {featured.map((temple) => <TempleCard temple={temple} />)}
+    <div class="update-list">
+      {
+        recentUpdates.map((update) => (
+          <article class="update-item">
+            <time datetime={update.date}>{update.date.replaceAll("-", ".")}</time>
+            <div>
+              <h3>
+                <a href={`/temples/${update.temple_slug}/`}>{update.title}</a>
+              </h3>
+              <p>{update.summary}</p>
+              {update.temple && <span class="small">{update.temple.name} / {update.temple.area}</span>}
+            </div>
+          </article>
+        ))
+      }
     </div>
   </section>
 
