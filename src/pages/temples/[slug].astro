@@ -6,15 +6,16 @@ import {
   getPhotoCategory,
   getTempleBySlug,
   getTempleMediaBySlug,
+  hasDetailPage,
   isUnknownValue,
 } from "../../lib/temples";
 
 export function getStaticPaths() {
-  return allTemples.map((temple) => ({ params: { slug: temple.slug } }));
+  return allTemples.filter(hasDetailPage).map((temple) => ({ params: { slug: temple.slug } }));
 }
 
 const temple = getTempleBySlug(Astro.params.slug || "");
-if (!temple) return Astro.redirect("/temples/");
+if (!temple || !hasDetailPage(temple)) return Astro.redirect("/temples/");
 
 const districtName = getDistrictName(temple.district_id);
 const showKana = !isUnknownValue(temple.name_kana);

@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import TempleCard from "../../components/TempleCard.astro";
-import { allDistricts, allTemples, getDistrictName } from "../../lib/temples";
+import { allDistricts, allTemples, getDistrictName, hasDetailPage } from "../../lib/temples";
 ---
 
 <BaseLayout
@@ -36,16 +36,19 @@ import { allDistricts, allTemples, getDistrictName } from "../../lib/temples";
         </thead>
         <tbody>
           {
-            allTemples.map((temple) => (
-              <tr>
-                <td>{temple.name}</td>
-                <td>{temple.name_kana}</td>
-                <td>{getDistrictName(temple.district_id)}</td>
-                <td>{temple.sect}</td>
-                <td>{temple.status_label}</td>
-                <td><a href={`/temples/${temple.slug}/`}>開く</a></td>
-              </tr>
-            ))
+            allTemples.map((temple) => {
+              const detailPageAvailable = hasDetailPage(temple);
+              return (
+                <tr>
+                  <td>{temple.name}</td>
+                  <td>{temple.name_kana}</td>
+                  <td>{getDistrictName(temple.district_id)}</td>
+                  <td>{temple.sect}</td>
+                  <td>{temple.status_label}</td>
+                  <td>{detailPageAvailable ? <a href={`/temples/${temple.slug}/`}>開く</a> : <span class="pending-text">検索記録</span>}</td>
+                </tr>
+              );
+            })
           }
         </tbody>
       </table>

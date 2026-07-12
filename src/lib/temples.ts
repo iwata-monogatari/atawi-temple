@@ -41,6 +41,10 @@ export const allSects = Array.from(new Set(allTemples.map((temple) => temple.sec
   slug: sectSlugMap[name] || normalizeSearchText(name),
 }));
 
+export function hasDetailPage(temple: Temple) {
+  return !("detail_page" in temple) || temple.detail_page !== false;
+}
+
 export function getDistrictById(districtId: string | null | undefined) {
   return allDistricts.find((district) => district.district_id === districtId);
 }
@@ -129,6 +133,9 @@ export function templeSearchText(temple: Temple) {
       temple.status_label,
       temple.main_deity,
       temple.history_summary,
+      "page_summary" in temple ? temple.page_summary : "",
+      "visit_notes" in temple ? temple.visit_notes : "",
+      "detail_status" in temple ? temple.detail_status : "",
       temple.sources.map((source) => source.title).join(" "),
     ].join(" "),
   );

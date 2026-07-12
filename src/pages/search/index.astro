@@ -102,6 +102,9 @@ const districts = JSON.stringify(allDistricts);
         temple.status_label,
         temple.main_deity,
         temple.history_summary,
+        temple.page_summary,
+        temple.visit_notes,
+        temple.detail_status,
         temple.sources.map((source) => source.title).join(" "),
       ].join(" "));
     }
@@ -127,6 +130,14 @@ const districts = JSON.stringify(allDistricts);
     function card(temple) {
       const kana = isUnknownValue(temple.name_kana) ? "" : `<p class="kana">${escapeHtml(temple.name_kana)}</p>`;
       const districtName = districtNameOf(temple);
+      const detailPageAvailable = temple.detail_page !== false;
+      const title = detailPageAvailable
+        ? `<a href="/temples/${escapeHtml(temple.slug)}/">${escapeHtml(temple.name)}</a>`
+        : escapeHtml(temple.name);
+      const summary = temple.page_summary || `${districtName}地区に所在する${temple.sect}の寺院です。公式名簿の基礎情報をもとに掲載しています。`;
+      const detailNotice = detailPageAvailable
+        ? ""
+        : `<p class="pending-text">個別ページは公開していません。検索記録として表示しています。</p>`;
 
       return `
         <article class="temple-card">
@@ -134,7 +145,7 @@ const districts = JSON.stringify(allDistricts);
             <span class="status status-${escapeHtml(temple.status)}">${escapeHtml(temple.status_label)}</span>
             <span>${escapeHtml(districtName)}</span>
           </div>
-          <h3><a href="/temples/${escapeHtml(temple.slug)}/">${escapeHtml(temple.name)}</a></h3>
+          <h3>${title}</h3>
           ${kana}
           <dl class="compact-list">
             <div><dt>住所</dt><dd>${escapeHtml(temple.address)}</dd></div>
@@ -143,7 +154,7 @@ const districts = JSON.stringify(allDistricts);
             <div><dt>ご本尊</dt><dd>${escapeHtml(knownValue(temple.main_deity))}</dd></div>
             <div><dt>創建・年代</dt><dd>${escapeHtml(knownValue(temple.founded_period, "調査中"))}</dd></div>
           </dl>
-          <p>${escapeHtml(districtName)}地区に所在する${escapeHtml(temple.sect)}の寺院です。公式名簿の基礎情報をもとに掲載しています。</p>
+          <p>${escapeHtml(summary)}</p>` + detailNotice + `
         </article>
       `;
     }

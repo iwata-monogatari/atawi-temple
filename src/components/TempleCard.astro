@@ -1,6 +1,6 @@
 ---
 import type { Temple } from "../lib/temples";
-import { getDistrictName, getTempleMediaBySlug, isUnknownValue, knownValue } from "../lib/temples";
+import { getDistrictName, getTempleMediaBySlug, hasDetailPage, isUnknownValue, knownValue } from "../lib/temples";
 
 interface Props {
   temple: Temple;
@@ -12,21 +12,31 @@ const showKana = !isUnknownValue(temple.name_kana);
 const media = getTempleMediaBySlug(temple.slug);
 const cardImage = media?.hero_image ?? media?.photos[0]?.src;
 const cardImageAlt = media?.photos.find((photo) => photo.src === cardImage)?.alt ?? temple.name + "の代表写真";
+const detailPageAvailable = hasDetailPage(temple);
+const cardSummary = "page_summary" in temple && typeof temple.page_summary === "string" && temple.page_summary
+  ? temple.page_summary
+  : `${districtName}地区に所在する${temple.sect}の寺院です。公式名簿の基礎情報をもとに掲載しています。`;
 ---
 
 <article class="temple-card">
   {
     cardImage ? (
-      <a class="temple-card-photo" href={"/temples/" + temple.slug + "/"} aria-label={temple.name + "の詳細を見る"}>
-        <img src={cardImage} alt={cardImageAlt} loading="lazy" />
-      </a>
+      detailPageAvailable ? (
+        <a class="temple-card-photo" href={"/temples/" + temple.slug + "/"} aria-label={temple.name + "の詳細を見る"}>
+          <img src={cardImage} alt={cardImageAlt} loading="lazy" />
+        </a>
+      ) : (
+        <div class="temple-card-photo" aria-label={temple.name + "の検索記録"}>
+          <img src={cardImage} alt={cardImageAlt} loading="lazy" />
+        </div>
+      )
     ) : null
   }
   <div class="card-topline">
     <span class={`status status-${temple.status}`}>{temple.status_label}</span>
     <span>{districtName}</span>
   </div>
-  <h3><a href={`/temples/${temple.slug}/`}>{temple.name}</a></h3>
+  <h3>{detailPageAvailable ? <a href={`/temples/${temple.slug}/`}>{temple.name}</a> : temple.name}</h3>
   {showKana && <p class="kana">{temple.name_kana}</p>}
   <dl class="compact-list">
     <div>
@@ -46,5 +56,6 @@ const cardImageAlt = media?.photos.find((photo) => photo.src === cardImage)?.alt
       <dd>{knownValue("founded_period" in temple ? temple.founded_period : null, "調査中")}</dd>
     </div>
   </dl>
-  <p>{districtName}地区に所在する{temple.sect}の寺院です。公式名簿の基礎情報をもとに掲載しています。</p>
+  <p>{cardSummary}</p>
+  {!detailPageAvailable && <p class="pending-text">個別ページは公開していません。検索記録として表示しています。</p>}
 </article>
