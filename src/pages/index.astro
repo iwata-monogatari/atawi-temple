@@ -12,7 +12,20 @@ import {
   isUnknownValue,
 } from "../lib/temples";
 
-const districtCounts = countTemplesByDistrict();
+const districtDisplayOrder = [
+  "mitsuke",
+  "nakaizumi",
+  "toyoda",
+  "mikuriya",
+  "nanbu",
+  "koyo",
+  "ryuyo",
+  "fukude",
+  "toyooka",
+];
+const districtCounts = countTemplesByDistrict().sort(
+  (a, b) => districtDisplayOrder.indexOf(a.district_id) - districtDisplayOrder.indexOf(b.district_id),
+);
 const allSectCounts = countTemplesBySect();
 const sectCounts = allSectCounts.slice(0, 6);
 const recentUpdates = allTempleUpdates.slice(0, 5).map((update) => ({
