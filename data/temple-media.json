@@ -2050,5 +2050,71 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "gyokoji-ikeda",
+    "hero_image": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-01-gate.webp",
+    "photos": [
+      {
+        "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-01-gate.webp",
+        "alt": "行興寺の寺号標石と山門",
+        "category_id": "entrance-marker"
+      },
+      {
+        "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-02-grounds.webp",
+        "alt": "行興寺の境内全景、藤棚と本堂",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-03-main-hall.webp",
+        "alt": "行興寺の山門と藤棚越しの本堂",
+        "category_id": "main-building"
+      },
+      {
+        "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-04-wisteria-arbor.webp",
+        "alt": "国指定天然記念物「熊野の長藤」の藤棚トンネル参道",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-05-wisteria-monument-sign.webp",
+        "alt": "国指定天然記念物「熊野の長藤」の案内板と老木の幹",
+        "category_id": "signboard"
+      },
+      {
+        "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-06-history-sign.webp",
+        "alt": "行興寺の由緒案内板「記」",
+        "category_id": "signboard"
+      },
+      {
+        "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-07-noh-sign.webp",
+        "alt": "謡曲「熊野」と行興寺の案内板",
+        "category_id": "signboard"
+      },
+      {
+        "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-08-grave.webp",
+        "alt": "熊野御前と母の墓所",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-09-torii-shrine.webp",
+        "alt": "境内社の赤い鳥居と小祠",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-10-white-wisteria-bridge.webp",
+        "alt": "白藤の棚と赤い欄干の橋",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-11-chozuya.webp",
+        "alt": "龍の吐水口がある手水舎",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-12-grounds-stonework.webp",
+        "alt": "境内の石塔と石碑",
+        "category_id": "stonework"
+      }
+    ]
   }
 ]
