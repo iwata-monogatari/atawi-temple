@@ -1300,5 +1300,101 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "saikoji-mitsuke",
+    "hero_image": "/assets/temples/saikoji-mitsuke/main-hall-front.webp",
+    "photos": [
+      {
+        "photo_id": "saikoji-main-hall-front-2026",
+        "src": "/assets/temples/saikoji-mitsuke/main-hall-front.webp",
+        "alt": "西光寺本堂正面",
+        "caption": "本堂正面。手すり付きのスロープと石段、賽銭箱、ハート形の花壇があり、右手にはハローキティの石像も置かれている。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-main-hall-wide-2026",
+        "src": "/assets/temples/saikoji-mitsuke/main-hall-wide.webp",
+        "alt": "西光寺本堂の外観",
+        "caption": "白壁と黒い柱が特徴的な本堂の外観。奥にもう一棟の甍が重なって見える。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-bell-gate-2026",
+        "src": "/assets/temples/saikoji-mitsuke/bell-gate.webp",
+        "alt": "西光寺の鐘楼門",
+        "caption": "鐘を吊るした二階建ての鐘楼門。石段の両脇に灯籠と地蔵尊像が並ぶ。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-entrance-doors-2026",
+        "src": "/assets/temples/saikoji-mitsuke/entrance-doors.webp",
+        "alt": "本堂の玄関建具",
+        "caption": "円形の紋を入れたガラス戸の玄関。ハローキティの石像や猫をかたどった赤い郵便受けが置かれている。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-large-camphor-tree-2026",
+        "src": "/assets/temples/saikoji-mitsuke/large-camphor-tree.webp",
+        "alt": "西光寺の大樟",
+        "caption": "境内にそびえる大樟の樹冠を見上げた写真。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-camphor-signboard-2026",
+        "src": "/assets/temples/saikoji-mitsuke/camphor-tree-signboard.webp",
+        "alt": "「西光寺の大樟」案内板",
+        "caption": "磐田市指定天然記念物「西光寺の大樟」の案内板。寛政元年(1789)建立の鐘楼堂の右側に見えるクスノキの巨木で、樹高18メートル、根回り13.7メートル、推定樹齢500年と記されている。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-nagi-signboard-2026",
+        "src": "/assets/temples/saikoji-mitsuke/nagi-tree-signboard.webp",
+        "alt": "「梛の木」案内板",
+        "caption": "磐田市指定天然記念物「梛の木」の案内板。縁結びの木として知られ、源頼朝と北条政子、弁慶にまつわる言い伝えが紹介されている。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-history-signboard-2026",
+        "src": "/assets/temples/saikoji-mitsuke/temple-history-signboard.webp",
+        "alt": "「東福山西光寺由来略縁起」案内板",
+        "caption": "西光寺の由来を記した案内板。文永2年(1265)の開創から、徳川家康・秀忠父子や2代将軍徳川家光ゆかりの逸話まで、寺の沿革が詳しく記されている。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-gate-signboard-2026",
+        "src": "/assets/temples/saikoji-mitsuke/gate-signboard.webp",
+        "alt": "「西光寺の表門」案内板",
+        "caption": "西光寺の表門についての案内板。徳川家康が別荘とした中泉御殿の表門を移築したものと伝えられ、市の文化財に指定されていると記されている。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-interior-hall-2026",
+        "src": "/assets/temples/saikoji-mitsuke/interior-hall.webp",
+        "alt": "堂内の展示スペース",
+        "caption": "堂内の一角。NHK大河ドラマ「どうする家康」のポスターや地蔵尊像、地球儀などの展示物が並ぶ。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
