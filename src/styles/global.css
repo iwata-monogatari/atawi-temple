@@ -635,6 +635,38 @@ button,
   font-weight: 700;
 }
 
+.monogatari-pickup-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.monogatari-pickup-card {
+  display: grid;
+  gap: 6px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent-strong);
+  border-radius: 6px;
+  padding: 16px 18px;
+  background: var(--paper);
+  text-decoration: none;
+}
+
+.monogatari-pickup-card:hover {
+  border-color: var(--accent-strong);
+}
+
+.monogatari-pickup-temple {
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.monogatari-pickup-title {
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .district-monogatari-block,
 .real-estate-note {
   border: 1px solid var(--line);

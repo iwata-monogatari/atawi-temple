@@ -11,6 +11,7 @@ import {
   hasDetailPage,
   isUnknownValue,
 } from "../lib/temples";
+import { getMonogatariLinksBySlug } from "../lib/related-monogatari";
 
 const districtDisplayOrder = [
   "mitsuke",
@@ -27,7 +28,6 @@ const districtCounts = countTemplesByDistrict().sort(
   (a, b) => districtDisplayOrder.indexOf(a.district_id) - districtDisplayOrder.indexOf(b.district_id),
 );
 const allSectCounts = countTemplesBySect();
-const sectCounts = allSectCounts.slice(0, 6);
 const recentUpdates = allTempleUpdates.slice(0, 5).map((update) => ({
   ...update,
   temple: getTempleBySlug(update.temple_slug),
@@ -58,6 +58,11 @@ const pickupPool = allTemples
   })
   .filter((temple) => Boolean(temple.image));
 const pickupPoolJson = JSON.stringify(pickupPool).replace(/</g, "\\u003c");
+
+const monogatariPickupSlugs = ["kokubunji-mitsuke", "daijoin-nakaizumi", "gyokoji-ikeda", "ioji-kamada"];
+const monogatariPickups = monogatariPickupSlugs
+  .map((slug) => ({ temple: getTempleBySlug(slug), link: getMonogatariLinksBySlug(slug)[0] }))
+  .filter((item): item is { temple: any; link: any } => Boolean(item.temple && item.link));
 ---
 
 <BaseLayout>
@@ -223,11 +228,16 @@ const pickupPoolJson = JSON.stringify(pickupPool).replace(/</g, "\\u003c");
 
   <section class="section">
     <div class="section-heading">
-      <h2>宗派から探す</h2>
-      <a href="/sects/">宗派一覧へ</a>
+      <h2>磐田物語で読む登録寺院</h2>
+      <a href="https://iwata-monogatari.net/">磐田物語へ</a>
     </div>
-    <div class="filter-band">
-      {sectCounts.map((sect) => <a href={`/sects/${sect.slug}/`}>{sect.name} {sect.count}件</a>)}
+    <div class="monogatari-pickup-grid">
+      {monogatariPickups.map(({ temple, link }) => (
+        <a class="monogatari-pickup-card" href={link.url}>
+          <span class="monogatari-pickup-temple">{temple.name}（{getDistrictName(temple.district_id)}地区）</span>
+          <span class="monogatari-pickup-title">{link.title}</span>
+        </a>
+      ))}
     </div>
   </section>
 
