@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="ページが見つかりません｜ATAWI TEMPLE"
+  description="指定されたページは公開されていないか、削除されています。寺院名や地区から再検索してください。"
+  noindex={true}
+>
+  <section class="page-title">
+    <p class="eyebrow">Not Found</p>
+    <h1>ページが見つかりません</h1>
+    <p>指定されたページは公開されていないか、削除されています。寺院名、地区、宗派から探し直してください。</p>
+  </section>
+
+  <section class="section">
+    <div class="filter-band">
+      <a href="/search/">寺院検索へ</a>
+      <a href="/temples/">寺院一覧へ</a>
+      <a href="/">トップへ戻る</a>
+    </div>
+  </section>
+</BaseLayout>
