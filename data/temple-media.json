@@ -2294,5 +2294,51 @@
         "category_id": "grounds"
       }
     ]
+  },
+  {
+    "temple_slug": "shokoji-miyanoshiki",
+    "hero_image": "/images/temples/shokoji-miyanoshiki/shokoji-miyanoshiki-01-entrance-marker.webp",
+    "photos": [
+      {
+        "src": "/images/temples/shokoji-miyanoshiki/shokoji-miyanoshiki-01-entrance-marker.webp",
+        "alt": "「神宮山松向寺」の寺号標石と山門",
+        "category_id": "entrance-marker"
+      },
+      {
+        "src": "/images/temples/shokoji-miyanoshiki/shokoji-miyanoshiki-02-gate.webp",
+        "alt": "山門越しに望む本堂",
+        "category_id": "entrance-marker"
+      },
+      {
+        "src": "/images/temples/shokoji-miyanoshiki/shokoji-miyanoshiki-03-gate-plaque.webp",
+        "alt": "山門に掲げられた山号額「神宮山」",
+        "category_id": "signboard"
+      },
+      {
+        "src": "/images/temples/shokoji-miyanoshiki/shokoji-miyanoshiki-04-main-hall-grounds.webp",
+        "alt": "境内の庭木越しに見る本堂全景",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/shokoji-miyanoshiki/shokoji-miyanoshiki-05-main-hall.webp",
+        "alt": "本堂正面",
+        "category_id": "main-building"
+      },
+      {
+        "src": "/images/temples/shokoji-miyanoshiki/shokoji-miyanoshiki-06-main-hall-door-detail.webp",
+        "alt": "本堂正面扉の寺紋",
+        "category_id": "main-building"
+      },
+      {
+        "src": "/images/temples/shokoji-miyanoshiki/shokoji-miyanoshiki-07-shrine-donor-stone.webp",
+        "alt": "しめ縄のかかった境内社の小祠と寄進者の石碑",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/shokoji-miyanoshiki/shokoji-miyanoshiki-08-small-hall.webp",
+        "alt": "境内墓地に隣接する小堂",
+        "category_id": "grounds"
+      }
+    ]
   }
 ]
