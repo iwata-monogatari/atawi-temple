@@ -5,7 +5,12 @@ import {
   allTempleUpdates,
   countTemplesByDistrict,
   countTemplesBySect,
+  getDistrictName,
   getTempleBySlug,
+  getTempleMediaBySlug,
+  hasDetailPage,
+  isUnknownValue,
+  knownValue,
 } from "../lib/temples";
 
 const districtCounts = countTemplesByDistrict();
@@ -15,13 +20,42 @@ const recentUpdates = allTempleUpdates.slice(0, 5).map((update) => ({
   ...update,
   temple: getTempleBySlug(update.temple_slug),
 }));
+
+const pickupExcludedSlugs = new Set(["shinshinkyo-honbu-mitsuke"]);
+const pickupPool = allTemples
+  .filter((temple) => hasDetailPage(temple) && temple.status === "existing" && !pickupExcludedSlugs.has(temple.slug))
+  .map((temple) => {
+    const districtName = getDistrictName(temple.district_id);
+    const media = getTempleMediaBySlug(temple.slug);
+    const image = media?.hero_image ?? media?.photos[0]?.src ?? null;
+    const imageAlt = media?.photos.find((photo) => photo.src === image)?.alt ?? `${temple.name}の代表写真`;
+    const summary = "page_summary" in temple && typeof temple.page_summary === "string" && temple.page_summary
+      ? temple.page_summary
+      : `${districtName}地区に所在する${temple.sect}の寺院です。公式名簿の基礎情報をもとに掲載しています。`;
+    return {
+      slug: temple.slug,
+      name: temple.name,
+      nameKana: isUnknownValue(temple.name_kana) ? null : temple.name_kana,
+      area: districtName,
+      sect: temple.sect,
+      status: temple.status,
+      statusLabel: temple.status_label,
+      address: temple.address,
+      mainDeity: knownValue(temple.main_deity),
+      foundedPeriod: knownValue("founded_period" in temple ? temple.founded_period : null, "調査中"),
+      summary,
+      image,
+      imageAlt,
+    };
+  });
+const pickupPoolJson = JSON.stringify(pickupPool).replace(/</g, "\\u003c");
 ---
 
 <BaseLayout>
   <section class="hero">
     <div>
       <p class="eyebrow">公開資料と現地訪問で整理する地域寺院情報</p>
-      <h1>磐田市のお寺・寺院データベース</h1>
+      <h1>磐田市のお寺・寺院<br />データベース</h1>
       <p class="brand-name">ATAWI TEMPLE</p>
       <form class="hero-search" action="/search/" method="get">
         <label for="q">寺院名・読み方・住所・宗派・ご本尊・札所名から検索</label>
@@ -60,6 +94,119 @@ const recentUpdates = allTempleUpdates.slice(0, 5).map((update) => ({
     <a href="/search/?status=ruin">廃寺・寺院跡</a>
     <a href="/search/?sect=曹洞宗">曹洞宗</a>
     <a href="/sects/">宗派から探す</a>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>ピックアップ寺院</h2>
+      <a href="/temples/">すべて見る</a>
+    </div>
+    <div id="pickup-temples" class="card-grid" data-pickup-count="2">
+      <p class="small">読み込み中...</p>
+    </div>
+    <script type="application/json" id="pickup-temple-data" set:html={pickupPoolJson} />
+    <script>
+      function createPickupCard(temple: any) {
+        const article = document.createElement("article");
+        article.className = "temple-card";
+
+        if (temple.image) {
+          const link = document.createElement("a");
+          link.className = "temple-card-photo";
+          link.href = `/temples/${temple.slug}/`;
+          link.setAttribute("aria-label", `${temple.name}の詳細を見る`);
+          const img = document.createElement("img");
+          img.src = temple.image;
+          img.alt = temple.imageAlt;
+          img.loading = "lazy";
+          link.appendChild(img);
+          article.appendChild(link);
+        }
+
+        const topline = document.createElement("div");
+        topline.className = "card-topline";
+        const statusSpan = document.createElement("span");
+        statusSpan.className = `status status-${temple.status}`;
+        statusSpan.textContent = temple.statusLabel;
+        const areaSpan = document.createElement("span");
+        areaSpan.textContent = temple.area;
+        topline.append(statusSpan, areaSpan);
+        article.appendChild(topline);
+
+        const heading = document.createElement("h3");
+        const nameLink = document.createElement("a");
+        nameLink.href = `/temples/${temple.slug}/`;
+        nameLink.textContent = temple.name;
+        heading.appendChild(nameLink);
+        article.appendChild(heading);
+
+        if (temple.nameKana) {
+          const kana = document.createElement("p");
+          kana.className = "kana";
+          kana.textContent = temple.nameKana;
+          article.appendChild(kana);
+        }
+
+        const dl = document.createElement("dl");
+        dl.className = "compact-list";
+        const rows: [string, string][] = [
+          ["住所", temple.address],
+          ["宗派", temple.sect],
+          ["ご本尊", temple.mainDeity],
+          ["創建・年代", temple.foundedPeriod],
+        ];
+        for (const [label, value] of rows) {
+          const row = document.createElement("div");
+          const dt = document.createElement("dt");
+          dt.textContent = label;
+          const dd = document.createElement("dd");
+          dd.textContent = value;
+          row.append(dt, dd);
+          dl.appendChild(row);
+        }
+        article.appendChild(dl);
+
+        const summary = document.createElement("p");
+        summary.textContent = temple.summary;
+        article.appendChild(summary);
+
+        return article;
+      }
+
+      function renderPickupTemples() {
+        const dataEl = document.getElementById("pickup-temple-data");
+        const container = document.getElementById("pickup-temples");
+        if (!dataEl || !container) return;
+
+        let pool: any[] = [];
+        try {
+          pool = JSON.parse(dataEl.textContent || "[]");
+        } catch {
+          pool = [];
+        }
+        if (!Array.isArray(pool) || pool.length === 0) {
+          container.innerHTML = "";
+          return;
+        }
+
+        const count = Math.min(2, pool.length);
+        const usedIndexes = new Set<number>();
+        const picked: any[] = [];
+        while (picked.length < count) {
+          const index = Math.floor(Math.random() * pool.length);
+          if (usedIndexes.has(index)) continue;
+          usedIndexes.add(index);
+          picked.push(pool[index]);
+        }
+
+        container.innerHTML = "";
+        for (const temple of picked) {
+          container.appendChild(createPickupCard(temple));
+        }
+      }
+
+      renderPickupTemples();
+    </script>
   </section>
 
   <section class="section">
