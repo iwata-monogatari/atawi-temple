@@ -1666,5 +1666,65 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "shinshinkyo-honbu-mitsuke",
+    "hero_image": "/assets/temples/shinshinkyo-honbu-mitsuke/gate-pillar-nameplate.webp",
+    "photos": [
+      {
+        "photo_id": "shinshinkyo-gate-pillar-nameplate-2026",
+        "src": "/assets/temples/shinshinkyo-honbu-mitsuke/gate-pillar-nameplate.webp",
+        "alt": "神心教本部の門柱",
+        "caption": "「神心教本部」と刻まれた門柱と看板。松の木が植えられた敷地入口。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinshinkyo-roadside-signboard-2026",
+        "src": "/assets/temples/shinshinkyo-honbu-mitsuke/roadside-signboard.webp",
+        "alt": "路傍の「宗教法人神心教本部」看板",
+        "caption": "電柱に添えられた「宗教法人 神心教本部」の看板と、瓦屋根の本部施設。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinshinkyo-main-building-entrance-2026",
+        "src": "/assets/temples/shinshinkyo-honbu-mitsuke/main-building-entrance.webp",
+        "alt": "本部施設の玄関",
+        "caption": "蘇鉄や松が植えられた前庭と、本部施設の玄関。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinshinkyo-bronze-statue-monument-2026",
+        "src": "/assets/temples/shinshinkyo-honbu-mitsuke/bronze-statue-monument.webp",
+        "alt": "合掌する僧形の銅像",
+        "caption": "敷地内にまつられた合掌姿の僧形銅像。台座には「立正安国」の文字が刻まれている。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinshinkyo-notice-board-parking-2026",
+        "src": "/assets/temples/shinshinkyo-honbu-mitsuke/notice-board-parking.webp",
+        "alt": "掲示板と駐車スペース",
+        "caption": "「お題目を信じて唱えて」と記された掲示板と、駐車スペース越しに見る庭の松。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinshinkyo-building-side-garden-2026",
+        "src": "/assets/temples/shinshinkyo-honbu-mitsuke/building-side-garden.webp",
+        "alt": "本部施設側面と庭",
+        "caption": "瓦屋根の本部施設側面と、手入れされた庭木。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
