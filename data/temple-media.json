@@ -874,7 +874,7 @@
         "status": "published"
       }
     ]
-  }  ,
+  },
   {
     "temple_slug": "honshoji-kounodai",
     "hero_image": "/assets/temples/honshoji-kounodai/hondo-front.webp",
@@ -1392,6 +1392,93 @@
         "alt": "堂内の展示スペース",
         "caption": "堂内の一角。NHK大河ドラマ「どうする家康」のポスターや地蔵尊像、地球儀などの展示物が並ぶ。",
         "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "fukuoji-jonosaki",
+    "hero_image": "/assets/temples/fukuoji-jonosaki/sanmon-gate-nio.webp",
+    "photos": [
+      {
+        "photo_id": "fukuoji-sanmon-gate-nio-2026",
+        "src": "/assets/temples/fukuoji-jonosaki/sanmon-gate-nio.webp",
+        "alt": "福王寺山門と仁王像",
+        "caption": "山号を刻んだ石柱と一対の仁王像が構える福王寺の山門。奥に鐘楼門を望む。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-shoro-belfry-gate-2026",
+        "src": "/assets/temples/fukuoji-jonosaki/shoro-belfry-gate.webp",
+        "alt": "福王寺の鐘楼門",
+        "caption": "梵鐘を吊るした二階建ての鐘楼門。祭りの提灯が下げられている。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-gate-view-to-hondo-2026",
+        "src": "/assets/temples/fukuoji-jonosaki/gate-view-to-hondo.webp",
+        "alt": "山門から本堂へ続く境内",
+        "caption": "山門の内側から鐘楼門と本堂を望む。門柱には本尊聖観世菩薩と遠江四十九薬師客番霊場の札が掲げられている。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-hondo-front-2026",
+        "src": "/assets/temples/fukuoji-jonosaki/hondo-front.webp",
+        "alt": "福王寺本堂正面「法輪転」",
+        "caption": "「法輪転」の扁額を掲げる本堂正面。祭りの提灯が軒に連なる。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-seimei-daigongen-hall-2026",
+        "src": "/assets/temples/fukuoji-jonosaki/seimei-daigongen-hall.webp",
+        "alt": "晴明大権現堂",
+        "caption": "五芒星をあしらった紫の幕が掛かる晴明大権現堂。安倍晴明が祈祷して嵐を鎮めたという故事にちなみ、山号「風祭山」の由来ともされる。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-koh-getsu-do-2026",
+        "src": "/assets/temples/fukuoji-jonosaki/koh-getsu-do.webp",
+        "alt": "江月堂(資料館・図書文庫)",
+        "caption": "1階が資料館、2階が図書文庫となっている二階建ての江月堂。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-kannon-stone-statue-2026",
+        "src": "/assets/temples/fukuoji-jonosaki/kannon-stone-statue.webp",
+        "alt": "境内の観音石像",
+        "caption": "蓮台に立つ石造の観音像。台座には「報恩」の文字が刻まれている。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-chozuya-fountain-2026",
+        "src": "/assets/temples/fukuoji-jonosaki/chozuya-fountain.webp",
+        "alt": "手水舎",
+        "caption": "龍の吐水口と寺紋を刻んだ手水鉢。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-sanmon-plaque-pilgrimage-sign-2026",
+        "src": "/assets/temples/fukuoji-jonosaki/sanmon-plaque-pilgrimage-sign.webp",
+        "alt": "山門の扁額と札所案内板",
+        "caption": "「福王寺」の扁額と、遠州七福神・遠州三十三観音第18番・遠江四十九薬師客番の札所を案内する石標。",
+        "category_id": "signboard",
         "source": "現地写真",
         "status": "published"
       }
