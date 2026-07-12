@@ -1822,5 +1822,119 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "kenshoji-mitsuke",
+    "hero_image": "/assets/temples/kenshoji-mitsuke/hondo-front.webp",
+    "photos": [
+      {
+        "photo_id": "kenshoji-hondo-front-2026",
+        "src": "/assets/temples/kenshoji-mitsuke/hondo-front.webp",
+        "alt": "見性寺本堂正面",
+        "caption": "緑釉瓦の大屋根を持つ本堂正面。「瑞雲山」の扁額が掲げられている。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kenshoji-hondo-close-2026",
+        "src": "/assets/temples/kenshoji-mitsuke/hondo-close.webp",
+        "alt": "見性寺本堂入口",
+        "caption": "松や庭木越しに見る本堂の入口部分。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kenshoji-sanmon-and-pagoda-2026",
+        "src": "/assets/temples/kenshoji-mitsuke/sanmon-and-pagoda.webp",
+        "alt": "見性寺山門と多重塔",
+        "caption": "境内の山門と、その左手に立つ石造の多重塔。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kenshoji-sanmon-inner-view-2026",
+        "src": "/assets/temples/kenshoji-mitsuke/sanmon-inner-view.webp",
+        "alt": "見性寺山門を境内側から見る",
+        "caption": "境内側から見た山門。手前に手入れされた松が枝を伸ばす。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kenshoji-sanmon-nameplate-2026",
+        "src": "/assets/temples/kenshoji-mitsuke/sanmon-nameplate.webp",
+        "alt": "見性寺山門の「瑞雲山」扁額",
+        "caption": "山門に掲げられた山号「瑞雲山」の扁額。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kenshoji-sando-hedge-2026",
+        "src": "/assets/temples/kenshoji-mitsuke/sando-hedge.webp",
+        "alt": "見性寺参道",
+        "caption": "刈り込まれた生垣と松が並ぶ参道。奥に本堂が見える。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kenshoji-temple-marker-stone-2026",
+        "src": "/assets/temples/kenshoji-mitsuke/temple-marker-stone.webp",
+        "alt": "見性寺の寺号標石",
+        "caption": "「臨済宗 見性寺」と刻まれた寺号標石。隣に「泉善奉行」の石碑が並ぶ。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kenshoji-ancient-stone-marker-2026",
+        "src": "/assets/temples/kenshoji-mitsuke/ancient-stone-marker.webp",
+        "alt": "見性寺境内の石柱",
+        "caption": "「千古刹 瑞雲山」「諸悪莫作」と刻まれた石柱と石灯籠。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kenshoji-wall-street-view-2026",
+        "src": "/assets/temples/kenshoji-mitsuke/wall-street-view.webp",
+        "alt": "見性寺の土塀",
+        "caption": "道路に面して続く見性寺の白壁土塀。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kenshoji-jizo-hall-2026",
+        "src": "/assets/temples/kenshoji-mitsuke/jizo-hall.webp",
+        "alt": "見性寺の小堂と地蔵尊像",
+        "caption": "境内の小堂前に並ぶ地蔵尊像。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kenshoji-kannon-statue-2026",
+        "src": "/assets/temples/kenshoji-mitsuke/kannon-statue.webp",
+        "alt": "見性寺境内の子安観音像",
+        "caption": "幼子を抱いた観音石像。境内の一角に立つ。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kenshoji-reihaido-entrance-2026",
+        "src": "/assets/temples/kenshoji-mitsuke/reihaido-entrance.webp",
+        "alt": "見性寺の書院入口",
+        "caption": "唐破風の玄関を構える書院・庫裏の入口。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]

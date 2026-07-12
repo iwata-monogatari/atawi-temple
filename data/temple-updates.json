@@ -1,5 +1,12 @@
 [
   {
+    "update_id": "2026-07-12-kenshoji-photos-restore",
+    "date": "2026-07-12",
+    "temple_slug": "kenshoji-mitsuke",
+    "title": "見性寺の個別ページを再公開し、現地写真を追加しました",
+    "summary": "現存が確認できたため個別ページを再公開しました。本堂、山門と多重塔、参道、寺号標石、境内の地蔵尊像・観音像、書院入口など12点の現地写真を掲載しました。"
+  },
+  {
     "update_id": "2026-07-12-jionji-photos-restore",
     "date": "2026-07-12",
     "temple_slug": "jionji-mitsuke",

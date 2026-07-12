@@ -2564,9 +2564,8 @@
       "瑞雲山"
     ],
     "record_type": "temple",
-    "status": "unknown",
-    "status_label": "現地痕跡未確認",
-    "detail_page": false,
+    "status": "existing",
+    "status_label": "現存",
     "sect": "臨済宗妙心寺派",
     "address": "静岡県磐田市見付2896番地",
     "district_id": "mitsuke",
@@ -2574,10 +2573,10 @@
     "main_deity": "未確認",
     "manned_status": "未確認",
     "goshuin_status": "未確認",
-    "visit_status": "未訪問",
+    "visit_status": "現地写真あり",
     "detail_status": "公開情報調査済み",
     "history_summary": "見性寺は磐田市見付にある臨済宗妙心寺派の寺院で、山号は瑞雲山です。不動三尊立像・刺繍十六羅漢図・五鈷鈴の3件の磐田市指定文化財を所蔵し、境内には縄文時代の貝塚や盗賊日本左衛門の墓、松尾芭蕉の句碑があることで知られます。",
-    "last_verified_at": "2026-07-11",
+    "last_verified_at": "2026-07-12",
     "sources": [
       {
         "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
