@@ -2056,64 +2056,112 @@
     "hero_image": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-01-gate.webp",
     "photos": [
       {
+        "photo_id": "gyokoji-ikeda-01-gate",
         "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-01-gate.webp",
         "alt": "行興寺の寺号標石と山門",
-        "category_id": "entrance-marker"
+        "caption": "行興寺の寺号標石と山門。境内入口の位置確認用の写真として掲載。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "gyokoji-ikeda-02-grounds",
         "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-02-grounds.webp",
         "alt": "行興寺の境内全景、藤棚と本堂",
-        "category_id": "grounds"
+        "caption": "藤棚と本堂を含む行興寺の境内全景。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "gyokoji-ikeda-03-main-hall",
         "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-03-main-hall.webp",
         "alt": "行興寺の山門と藤棚越しの本堂",
-        "category_id": "main-building"
+        "caption": "山門越しに藤棚の先へ本堂を望む景観。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "gyokoji-ikeda-04-wisteria-arbor",
         "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-04-wisteria-arbor.webp",
         "alt": "国指定天然記念物「熊野の長藤」の藤棚トンネル参道",
-        "category_id": "grounds"
+        "caption": "国指定天然記念物「熊野の長藤」が連なる藤棚トンネルの参道。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "gyokoji-ikeda-05-wisteria-monument-sign",
         "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-05-wisteria-monument-sign.webp",
         "alt": "国指定天然記念物「熊野の長藤」の案内板と老木の幹",
-        "category_id": "signboard"
+        "caption": "国指定天然記念物「熊野の長藤」の案内板と、老木の太い幹を記録。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "gyokoji-ikeda-06-history-sign",
         "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-06-history-sign.webp",
         "alt": "行興寺の由緒案内板「記」",
-        "category_id": "signboard"
+        "caption": "行興寺の由緒を記した案内板「記」。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "gyokoji-ikeda-07-noh-sign",
         "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-07-noh-sign.webp",
         "alt": "謡曲「熊野」と行興寺の案内板",
-        "category_id": "signboard"
+        "caption": "謡曲「熊野」ゆかりの寺であることを伝える案内板。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "gyokoji-ikeda-08-grave",
         "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-08-grave.webp",
         "alt": "熊野御前と母の墓所",
-        "category_id": "grounds"
+        "caption": "境内に残る熊野御前と母の墓所。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "gyokoji-ikeda-09-torii-shrine",
         "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-09-torii-shrine.webp",
         "alt": "境内社の赤い鳥居と小祠",
-        "category_id": "grounds"
+        "caption": "境内社の赤い鳥居と小祠を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "gyokoji-ikeda-10-white-wisteria-bridge",
         "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-10-white-wisteria-bridge.webp",
         "alt": "白藤の棚と赤い欄干の橋",
-        "category_id": "grounds"
+        "caption": "白藤の棚と赤い欄干の橋がある境内の景観。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "gyokoji-ikeda-11-chozuya",
         "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-11-chozuya.webp",
         "alt": "龍の吐水口がある手水舎",
-        "category_id": "grounds"
+        "caption": "龍の吐水口を備えた手水舎。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "gyokoji-ikeda-12-grounds-stonework",
         "src": "/images/temples/gyokoji-ikeda/gyokoji-ikeda-12-grounds-stonework.webp",
         "alt": "境内の石塔と石碑",
-        "category_id": "stonework"
+        "caption": "境内に残る石塔と石碑群。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
       }
     ]
   },
@@ -2122,29 +2170,49 @@
     "hero_image": "/images/temples/seidoin-ikeda/seidoin-ikeda-01-entrance-marker.webp",
     "photos": [
       {
+        "photo_id": "seidoin-ikeda-01-entrance-marker",
         "src": "/images/temples/seidoin-ikeda/seidoin-ikeda-01-entrance-marker.webp",
         "alt": "誓渡院の寺号標石と地蔵菩薩立像",
-        "category_id": "entrance-marker"
+        "caption": "誓渡院の寺号標石と地蔵菩薩立像。境内入口の位置確認用の写真として掲載。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "seidoin-ikeda-02-gate-and-grounds",
         "src": "/images/temples/seidoin-ikeda/seidoin-ikeda-02-gate-and-grounds.webp",
         "alt": "誓渡院の門柱と地蔵菩薩立像、本堂",
-        "category_id": "grounds"
+        "caption": "門柱と地蔵菩薩立像、奥に本堂を望む境内の様子。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "seidoin-ikeda-03-main-hall",
         "src": "/images/temples/seidoin-ikeda/seidoin-ikeda-03-main-hall.webp",
         "alt": "誓渡院の本堂正面",
-        "category_id": "main-building"
+        "caption": "誓渡院本堂の正面。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "seidoin-ikeda-04-anyo-jizo",
         "src": "/images/temples/seidoin-ikeda/seidoin-ikeda-04-anyo-jizo.webp",
         "alt": "安養地蔵菩薩の立像",
-        "category_id": "grounds"
+        "caption": "境内に立つ安養地蔵菩薩の立像。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "seidoin-ikeda-05-tenryugawa-memorial",
         "src": "/images/temples/seidoin-ikeda/seidoin-ikeda-05-tenryugawa-memorial.webp",
         "alt": "境内墓地にある慰霊碑",
-        "category_id": "stonework"
+        "caption": "境内墓地に建つ慰霊碑を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
       }
     ]
   },
@@ -2153,79 +2221,139 @@
     "hero_image": "/images/temples/daienji-kamo/daienji-kamo-01-entrance-marker.webp",
     "photos": [
       {
+        "photo_id": "daienji-kamo-01-entrance-marker",
         "src": "/images/temples/daienji-kamo/daienji-kamo-01-entrance-marker.webp",
         "alt": "大圓寺の寺号標石と本堂遠景",
-        "category_id": "entrance-marker"
+        "caption": "大圓寺の寺号標石と、その奥に望む本堂の遠景。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "daienji-kamo-02-gate-view",
         "src": "/images/temples/daienji-kamo/daienji-kamo-02-gate-view.webp",
         "alt": "山門越しに見る大圓寺の本堂",
-        "category_id": "main-building"
+        "caption": "山門越しに大圓寺の本堂を望む参道正面。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "daienji-kamo-03-gate-plaque",
         "src": "/images/temples/daienji-kamo/daienji-kamo-03-gate-plaque.webp",
         "alt": "山門に掲げられた「大圓寺」の扁額",
-        "category_id": "signboard"
+        "caption": "山門に掲げられた「大圓寺」の扁額。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "daienji-kamo-04-gate-grounds",
         "src": "/images/temples/daienji-kamo/daienji-kamo-04-gate-grounds.webp",
         "alt": "山門と石灯籠、境内の枯山水風の庭",
-        "category_id": "grounds"
+        "caption": "山門と石灯籠、枯山水風に整えられた境内の庭。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "daienji-kamo-05-gate-wall",
         "src": "/images/temples/daienji-kamo/daienji-kamo-05-gate-wall.webp",
         "alt": "山門と土塀、手水舎のある境内入口",
-        "category_id": "grounds"
+        "caption": "山門と土塀、手水舎が並ぶ境内入口の様子。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "daienji-kamo-06-main-hall-front",
         "src": "/images/temples/daienji-kamo/daienji-kamo-06-main-hall-front.webp",
         "alt": "大圓寺本堂の正面全景",
-        "category_id": "main-building"
+        "caption": "大圓寺本堂の正面全景。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "daienji-kamo-07-main-hall-jizo",
         "src": "/images/temples/daienji-kamo/daienji-kamo-07-main-hall-jizo.webp",
         "alt": "本堂正面と参道の地蔵尊像",
-        "category_id": "main-building"
+        "caption": "本堂正面と、参道脇に安置された地蔵尊像。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "daienji-kamo-08-main-hall-side",
         "src": "/images/temples/daienji-kamo/daienji-kamo-08-main-hall-side.webp",
         "alt": "本堂を側面から見た全景",
-        "category_id": "main-building"
+        "caption": "本堂を側面から見た全景。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "daienji-kamo-09-grounds-distant",
         "src": "/images/temples/daienji-kamo/daienji-kamo-09-grounds-distant.webp",
         "alt": "木々に囲まれた本堂の遠景",
-        "category_id": "grounds"
+        "caption": "木々に囲まれた本堂の遠景。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "daienji-kamo-10-grounds-buildings",
         "src": "/images/temples/daienji-kamo/daienji-kamo-10-grounds-buildings.webp",
         "alt": "経蔵・納骨堂と灯籠のある境内",
-        "category_id": "grounds"
+        "caption": "経蔵・納骨堂と灯籠が並ぶ境内の様子。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "daienji-kamo-11-sub-hall",
         "src": "/images/temples/daienji-kamo/daienji-kamo-11-sub-hall.webp",
         "alt": "境内の塔頭風の小堂",
-        "category_id": "grounds"
+        "caption": "境内に建つ塔頭風の小堂。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "daienji-kamo-12-old-roof-tile-monument",
         "src": "/images/temples/daienji-kamo/daienji-kamo-12-old-roof-tile-monument.webp",
         "alt": "「旧本堂鬼瓦」本堂改修記念碑",
-        "category_id": "stonework"
+        "caption": "「旧本堂鬼瓦」と刻まれた本堂改修記念碑。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "daienji-kamo-13-kamo-school-sign",
         "src": "/images/temples/daienji-kamo/daienji-kamo-13-kamo-school-sign.webp",
         "alt": "境内にある「加茂学校跡」の案内板",
-        "category_id": "signboard"
+        "caption": "境内にある「加茂学校跡」の案内板。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "daienji-kamo-14-cycad-tree",
         "src": "/images/temples/daienji-kamo/daienji-kamo-14-cycad-tree.webp",
         "alt": "境内の大きなソテツの木",
-        "category_id": "grounds"
+        "caption": "境内に植えられた大きなソテツの木。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "daienji-kamo-15-chozuya",
         "src": "/images/temples/daienji-kamo/daienji-kamo-15-chozuya.webp",
         "alt": "龍の吐水口がある手水舎「洗心水」",
-        "category_id": "grounds"
+        "caption": "龍の吐水口を備えた手水舎「洗心水」。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       }
     ]
   },
@@ -2234,64 +2362,112 @@
     "hero_image": "/images/temples/myohoji-ikeda/myohoji-ikeda-01-entrance-marker.webp",
     "photos": [
       {
+        "photo_id": "myohoji-ikeda-01-entrance-marker",
         "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-01-entrance-marker.webp",
         "alt": "妙法寺の寺号標石と山門",
-        "category_id": "entrance-marker"
+        "caption": "妙法寺の寺号標石と山門。境内入口の位置確認用の写真として掲載。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "myohoji-ikeda-02-gate-approach",
         "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-02-gate-approach.webp",
         "alt": "山門越しに見る本堂・三重塔・観音像",
-        "category_id": "main-building"
+        "caption": "山門越しに本堂・三重塔・観音像を望む境内の景観。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "myohoji-ikeda-03-gate-plaque",
         "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-03-gate-plaque.webp",
         "alt": "山号「瑞雲山」の扁額",
-        "category_id": "signboard"
+        "caption": "山門に掲げられた山号「瑞雲山」の扁額。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "myohoji-ikeda-04-sando-pagoda",
         "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-04-sando-pagoda.webp",
         "alt": "参道と三重塔、本堂の全景",
-        "category_id": "grounds"
+        "caption": "参道の先に三重塔と本堂を望む境内全景。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "myohoji-ikeda-05-main-hall-front",
         "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-05-main-hall-front.webp",
         "alt": "妙法寺本堂の正面",
-        "category_id": "main-building"
+        "caption": "妙法寺本堂の正面。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "myohoji-ikeda-06-main-hall-distant",
         "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-06-main-hall-distant.webp",
         "alt": "境内の木々越しに見る本堂",
-        "category_id": "grounds"
+        "caption": "境内の木々越しに見る本堂の遠景。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "myohoji-ikeda-07-dogen-statue",
         "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-07-dogen-statue.webp",
         "alt": "高祖水平道元禅師の尊像",
-        "category_id": "grounds"
+        "caption": "境内に立つ高祖承陽道元禅師の尊像。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "myohoji-ikeda-08-small-hall",
         "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-08-small-hall.webp",
         "alt": "境内の小堂",
-        "category_id": "grounds"
+        "caption": "境内に建つ小堂を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "myohoji-ikeda-09-chozuya",
         "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-09-chozuya.webp",
         "alt": "石造の手水鉢",
-        "category_id": "grounds"
+        "caption": "境内に置かれた石造の手水鉢。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "myohoji-ikeda-10-entrance-doors",
         "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-10-entrance-doors.webp",
         "alt": "寺紋を掲げた本堂正面の扉",
-        "category_id": "main-building"
+        "caption": "寺紋を掲げた本堂正面の扉を近くから記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "myohoji-ikeda-11-garden-stone",
         "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-11-garden-stone.webp",
         "alt": "境内の庭石と本堂脇の建物",
-        "category_id": "grounds"
+        "caption": "境内の庭石と本堂脇の建物を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "myohoji-ikeda-12-gate-view2",
         "src": "/images/temples/myohoji-ikeda/myohoji-ikeda-12-gate-view2.webp",
         "alt": "山門と扁額、境内の三重塔",
-        "category_id": "grounds"
+        "caption": "山門と扁額、その奥に見える境内の三重塔。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       }
     ]
   },
@@ -2300,44 +2476,76 @@
     "hero_image": "/images/temples/shokoji-miyanoshiki/shokoji-miyanoshiki-01-entrance-marker.webp",
     "photos": [
       {
+        "photo_id": "shokoji-miyanoshiki-01-entrance-marker",
         "src": "/images/temples/shokoji-miyanoshiki/shokoji-miyanoshiki-01-entrance-marker.webp",
         "alt": "「神宮山松向寺」の寺号標石と山門",
-        "category_id": "entrance-marker"
+        "caption": "「神宮山松向寺」の寺号標石と山門。境内入口の位置確認用の写真として掲載。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "shokoji-miyanoshiki-02-gate",
         "src": "/images/temples/shokoji-miyanoshiki/shokoji-miyanoshiki-02-gate.webp",
         "alt": "山門越しに望む本堂",
-        "category_id": "entrance-marker"
+        "caption": "山門越しに本堂を望む参道正面。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "shokoji-miyanoshiki-03-gate-plaque",
         "src": "/images/temples/shokoji-miyanoshiki/shokoji-miyanoshiki-03-gate-plaque.webp",
         "alt": "山門に掲げられた山号額「神宮山」",
-        "category_id": "signboard"
+        "caption": "山門に掲げられた山号額「神宮山」。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "shokoji-miyanoshiki-04-main-hall-grounds",
         "src": "/images/temples/shokoji-miyanoshiki/shokoji-miyanoshiki-04-main-hall-grounds.webp",
         "alt": "境内の庭木越しに見る本堂全景",
-        "category_id": "grounds"
+        "caption": "境内の庭木越しに見る本堂全景。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "shokoji-miyanoshiki-05-main-hall",
         "src": "/images/temples/shokoji-miyanoshiki/shokoji-miyanoshiki-05-main-hall.webp",
         "alt": "本堂正面",
-        "category_id": "main-building"
+        "caption": "松向寺本堂の正面。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "shokoji-miyanoshiki-06-main-hall-door-detail",
         "src": "/images/temples/shokoji-miyanoshiki/shokoji-miyanoshiki-06-main-hall-door-detail.webp",
         "alt": "本堂正面扉の寺紋",
-        "category_id": "main-building"
+        "caption": "本堂正面扉に付けられた寺紋を近くから記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "shokoji-miyanoshiki-07-shrine-donor-stone",
         "src": "/images/temples/shokoji-miyanoshiki/shokoji-miyanoshiki-07-shrine-donor-stone.webp",
         "alt": "しめ縄のかかった境内社の小祠と寄進者の石碑",
-        "category_id": "grounds"
+        "caption": "しめ縄のかかった境内社の小祠と、寄進者名を刻んだ石碑。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       },
       {
+        "photo_id": "shokoji-miyanoshiki-08-small-hall",
         "src": "/images/temples/shokoji-miyanoshiki/shokoji-miyanoshiki-08-small-hall.webp",
         "alt": "境内墓地に隣接する小堂",
-        "category_id": "grounds"
+        "caption": "境内墓地に隣接する小堂を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
       }
     ]
   }
