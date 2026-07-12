@@ -241,5 +241,83 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "mantokuji-nakaizumi",
+    "hero_image": "/assets/temples/mantokuji-nakaizumi/sanmon.webp",
+    "photos": [
+      {
+        "photo_id": "mantokuji-sanmon-2026",
+        "src": "/assets/temples/mantokuji-nakaizumi/sanmon.webp",
+        "alt": "満徳寺の山門と寺号標",
+        "caption": "光恩山満徳寺の寺号標と山門。入口から境内奥の堂宇を望む。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "mantokuji-hondo-2026",
+        "src": "/assets/temples/mantokuji-nakaizumi/hondo.webp",
+        "alt": "満徳寺本堂の正面",
+        "caption": "満徳寺本堂の正面。大きな瓦屋根と木造の向拝を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "mantokuji-chozuya-front-2026",
+        "src": "/assets/temples/mantokuji-nakaizumi/chozuya-front.webp",
+        "alt": "満徳寺境内の手水舎正面",
+        "caption": "手水舎の正面。掲示と浄水の文字が入った手水鉢を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "mantokuji-chozuya-side-2026",
+        "src": "/assets/temples/mantokuji-nakaizumi/chozuya-side.webp",
+        "alt": "満徳寺の手水舎と本堂",
+        "caption": "手水舎と本堂を斜めから見た境内景観。提灯や風鈴も見える。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "mantokuji-grounds-side-2026",
+        "src": "/assets/temples/mantokuji-nakaizumi/grounds-side.webp",
+        "alt": "満徳寺の楼門脇から見た境内",
+        "caption": "楼門脇から境内を見た様子。手水舎と庭木、奥の建物配置を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "mantokuji-side-hall-2026",
+        "src": "/assets/temples/mantokuji-nakaizumi/side-hall.webp",
+        "alt": "満徳寺境内の堂宇外観",
+        "caption": "白壁と瓦屋根の堂宇外観。石垣と周辺通路も含めて記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "mantokuji-hondo-side-2026",
+        "src": "/assets/temples/mantokuji-nakaizumi/hondo-side.webp",
+        "alt": "満徳寺本堂と境内建物",
+        "caption": "本堂脇と境内建物を並べて写した景観。香炉と庭木が見える。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "mantokuji-kaionzan-stone-2026",
+        "src": "/assets/temples/mantokuji-nakaizumi/kaionzan-stone.webp",
+        "alt": "光恩山満徳寺の寺号標",
+        "caption": "光恩山満徳寺と刻まれた寺号標。山門前の位置確認用写真。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
