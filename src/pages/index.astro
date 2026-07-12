@@ -11,7 +11,7 @@ import {
   hasDetailPage,
   isUnknownValue,
 } from "../lib/temples";
-import { getMonogatariLinksBySlug } from "../lib/related-monogatari";
+import { getMonogatariLinksBySlug, realEstateFunnel } from "../lib/related-monogatari";
 
 const districtDisplayOrder = [
   "mitsuke",
@@ -349,6 +349,10 @@ const galleryPhotos = [
         寺院にゆかりの人物や祭礼、地区の歴史をより深く知りたいときにご覧ください。
       </p>
       <a class="button-link" href="https://iwata-monogatari.net/">磐田物語を読む</a>
+    </div>
+    <div class="real-estate-note-box">
+      <h2>実家・お墓のご相談</h2>
+      <p>{realEstateFunnel.text}</p>
     </div>
   </section>
 </BaseLayout>
