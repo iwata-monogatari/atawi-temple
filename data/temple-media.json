@@ -58,5 +58,83 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "kindaiji-tenryu",
+    "hero_image": "/assets/temples/kindaiji-tenryu/hondo.webp",
+    "photos": [
+      {
+        "photo_id": "kindaiji-hondo-2026",
+        "src": "/assets/temples/kindaiji-tenryu/hondo.webp",
+        "alt": "金台寺の本堂正面",
+        "caption": "金台寺の本堂正面。参道の先に建つ堂宇を主写真として掲載。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kindaiji-approach-2026",
+        "src": "/assets/temples/kindaiji-tenryu/approach.webp",
+        "alt": "金台寺の参道入口と本堂",
+        "caption": "生け垣に挟まれた参道入口。札所案内板の先に本堂を望む。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kindaiji-stone-buddhas-2026",
+        "src": "/assets/temples/kindaiji-tenryu/stone-buddhas.webp",
+        "alt": "金台寺境内の石仏群",
+        "caption": "境内脇に祀られた石仏群。赤い前掛けを付けた地蔵像などが並ぶ。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kindaiji-yakushi-reijo-sign-2026",
+        "src": "/assets/temples/kindaiji-tenryu/yakushi-reijo-sign.webp",
+        "alt": "遠江四十九薬師霊場第三番札所金台寺の案内板",
+        "caption": "「遠江四十九薬師霊場 第三番札所 金台寺」と記された案内板。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kindaiji-front-doors-2026",
+        "src": "/assets/temples/kindaiji-tenryu/front-doors.webp",
+        "alt": "金台寺本堂正面の引き戸と扁額",
+        "caption": "本堂正面の引き戸と扁額。「金台寺」の表記を確認できる。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kindaiji-grounds-2026",
+        "src": "/assets/temples/kindaiji-tenryu/grounds.webp",
+        "alt": "金台寺の本堂前境内",
+        "caption": "本堂前の境内と植栽。砂利敷きの境内から堂宇を眺める。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kindaiji-side-building-2026",
+        "src": "/assets/temples/kindaiji-tenryu/side-building.webp",
+        "alt": "金台寺の堂宇側面外観",
+        "caption": "境内側から見た堂宇の側面外観。瓦屋根と外壁の構成が分かる。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kindaiji-side-roof-2026",
+        "src": "/assets/temples/kindaiji-tenryu/side-roof.webp",
+        "alt": "金台寺の瓦屋根と側面外観",
+        "caption": "堂宇側面の瓦屋根と外壁。境内の管理表示板とあわせて記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
