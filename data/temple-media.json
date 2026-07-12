@@ -1483,5 +1483,92 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "kongoji-mitsuke",
+    "hero_image": "/assets/temples/kongoji-mitsuke/sanmon-gate-front.webp",
+    "photos": [
+      {
+        "photo_id": "kongoji-sanmon-gate-front-2026",
+        "src": "/assets/temples/kongoji-mitsuke/sanmon-gate-front.webp",
+        "alt": "金剛寺山門",
+        "caption": "「金剛寺」の扁額を掲げた山門。門の先に本堂が見える。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kongoji-sanmon-nameplate-bell-2026",
+        "src": "/assets/temples/kongoji-mitsuke/sanmon-nameplate-bell.webp",
+        "alt": "山門の扁額と半鐘",
+        "caption": "山門に掲げられた金色の「金剛寺」扁額。梁の上には半鐘が下げられている。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kongoji-grounds-overview-2026",
+        "src": "/assets/temples/kongoji-mitsuke/grounds-overview.webp",
+        "alt": "金剛寺境内全景",
+        "caption": "参道から見た本堂と境内。松の木や庭石、寿碑などが配されている。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kongoji-hondo-front-2026",
+        "src": "/assets/temples/kongoji-mitsuke/hondo-front.webp",
+        "alt": "金剛寺本堂正面",
+        "caption": "一対の「報恩燈」石灯籠が並ぶ本堂正面。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kongoji-hondo-plaque-hansho-2026",
+        "src": "/assets/temples/kongoji-mitsuke/hondo-plaque-hansho.webp",
+        "alt": "本堂の扁額「金剛禅寺」と半鐘",
+        "caption": "本堂正面に掲げられた「金剛禅寺」の扁額。軒下に半鐘が吊るされている。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kongoji-history-signboard-2026",
+        "src": "/assets/temples/kongoji-mitsuke/history-signboard.webp",
+        "alt": "磐田市教育委員会の金剛寺案内板",
+        "caption": "磐田市教育委員会文化財課による案内板。開基の由緒や寺子屋教育、境内の寿碑、幕末の侠客大和田友蔵の墓碑などについて記されている。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kongoji-showa-renovation-monument-2026",
+        "src": "/assets/temples/kongoji-mitsuke/showa-renovation-monument.webp",
+        "alt": "「昭和大改修記念」の石碑",
+        "caption": "平成元年7月に建てられた「昭和大改修記念」の石碑。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kongoji-pilgrimage-marker-stone-2026",
+        "src": "/assets/temples/kongoji-mitsuke/pilgrimage-marker-stone.webp",
+        "alt": "境内前の霊場道標石柱",
+        "caption": "寺の前に立つ霊場札所の道標石柱。",
+        "category_id": "map-pilgrimage",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kongoji-zazen-notice-board-2026",
+        "src": "/assets/temples/kongoji-mitsuke/zazen-notice-board.webp",
+        "alt": "金剛寺坐禅会のご案内",
+        "caption": "毎月開かれている坐禅会の案内板。檀信徒に限らず初めての方でも参加できると記されている。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
