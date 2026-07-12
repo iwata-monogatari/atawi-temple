@@ -2116,5 +2116,36 @@
         "category_id": "stonework"
       }
     ]
+  },
+  {
+    "temple_slug": "seidoin-ikeda",
+    "hero_image": "/images/temples/seidoin-ikeda/seidoin-ikeda-01-entrance-marker.webp",
+    "photos": [
+      {
+        "src": "/images/temples/seidoin-ikeda/seidoin-ikeda-01-entrance-marker.webp",
+        "alt": "誓渡院の寺号標石と地蔵菩薩立像",
+        "category_id": "entrance-marker"
+      },
+      {
+        "src": "/images/temples/seidoin-ikeda/seidoin-ikeda-02-gate-and-grounds.webp",
+        "alt": "誓渡院の門柱と地蔵菩薩立像、本堂",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/seidoin-ikeda/seidoin-ikeda-03-main-hall.webp",
+        "alt": "誓渡院の本堂正面",
+        "category_id": "main-building"
+      },
+      {
+        "src": "/images/temples/seidoin-ikeda/seidoin-ikeda-04-anyo-jizo.webp",
+        "alt": "安養地蔵菩薩の立像",
+        "category_id": "grounds"
+      },
+      {
+        "src": "/images/temples/seidoin-ikeda/seidoin-ikeda-05-tenryugawa-memorial.webp",
+        "alt": "境内墓地にある慰霊碑",
+        "category_id": "stonework"
+      }
+    ]
   }
 ]
