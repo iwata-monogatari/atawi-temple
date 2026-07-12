@@ -136,5 +136,110 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "daijoin-nakaizumi",
+    "hero_image": "/assets/temples/daijoin-nakaizumi/approach-gate.webp",
+    "photos": [
+      {
+        "photo_id": "daijoin-approach-gate-2026",
+        "src": "/assets/temples/daijoin-nakaizumi/approach-gate.webp",
+        "alt": "大乗院と小笠山小笠寺の参道入口",
+        "caption": "大乗院と小笠山小笠寺の寺号標が並ぶ参道入口。正面に堂宇を望む。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daijoin-chozuya-2026",
+        "src": "/assets/temples/daijoin-nakaizumi/chozuya.webp",
+        "alt": "大乗院境内の手水舎",
+        "caption": "参道脇の手水舎。濡れた石畳と庭木に囲まれた境内の様子を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daijoin-guide-board-2026",
+        "src": "/assets/temples/daijoin-nakaizumi/guide-board.webp",
+        "alt": "大乗院三仭坊の祈祷・供養案内板",
+        "caption": "大乗院三仭坊の御祈祷・御祓い・供養・年中行事を案内する掲示。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daijoin-shichibo-stone-2026",
+        "src": "/assets/temples/daijoin-nakaizumi/shichibo-stone.webp",
+        "alt": "遠州七坊大乗院三仭坊の石標と献灯",
+        "caption": "「真言宗醍醐派 遠州七坊 大乗院三仭坊」と刻まれた石標と献灯。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daijoin-pet-kuyo-jizo-2026",
+        "src": "/assets/temples/daijoin-nakaizumi/pet-kuyo-jizo.webp",
+        "alt": "大乗院境内のペット供養塔と六地蔵",
+        "caption": "ペット供養塔と六地蔵が並ぶ供養エリア。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daijoin-hondo-2026",
+        "src": "/assets/temples/daijoin-nakaizumi/hondo.webp",
+        "alt": "大乗院本堂の正面",
+        "caption": "赤い柱と向拝を備えた大乗院本堂の正面。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daijoin-gate-stairs-2026",
+        "src": "/assets/temples/daijoin-nakaizumi/gate-stairs.webp",
+        "alt": "大乗院の山門と石段",
+        "caption": "山門から石段越しに堂宇を望む参道の景観。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daijoin-grounds-overlook-2026",
+        "src": "/assets/temples/daijoin-nakaizumi/grounds-overlook.webp",
+        "alt": "大乗院の石段上から見た境内",
+        "caption": "石段上から参道、手水舎、庭園を見下ろす境内全景。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daijoin-rest-house-2026",
+        "src": "/assets/temples/daijoin-nakaizumi/rest-house.webp",
+        "alt": "大乗院境内の休憩所と石仏",
+        "caption": "境内脇の休憩所と石仏を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daijoin-mihirobo-front-2026",
+        "src": "/assets/temples/daijoin-nakaizumi/mihirobo-front.webp",
+        "alt": "大乗院三仭坊の正面",
+        "caption": "「三仭坊」の寺号を掲げる堂宇正面。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daijoin-small-hall-statue-2026",
+        "src": "/assets/temples/daijoin-nakaizumi/small-hall-statue.webp",
+        "alt": "大乗院境内の小堂と仏像",
+        "caption": "境内の小堂に安置された仏像と周辺の植栽。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
