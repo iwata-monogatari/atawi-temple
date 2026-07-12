@@ -725,7 +725,19 @@ button,
   margin: 0 0 12px;
 }
 
-.real-estate-note-box {
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 720px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.info-box {
   border: 1px solid var(--line);
   border-left: 3px solid var(--gold);
   border-radius: 8px;
@@ -733,13 +745,17 @@ button,
   background: var(--paper);
 }
 
-.real-estate-note-box h2 {
+.info-box h2 {
   margin: 0 0 12px;
 }
 
-.real-estate-note-box p {
+.info-box p {
   margin: 0;
   color: var(--muted);
+}
+
+.info-box .button-link {
+  margin-top: 16px;
 }
 
 .pending-block {
