@@ -1,6 +1,6 @@
 ---
 import type { Temple } from "../lib/temples";
-import { getDistrictName, isUnknownValue, knownValue } from "../lib/temples";
+import { getDistrictName, getTempleMediaBySlug, isUnknownValue, knownValue } from "../lib/temples";
 
 interface Props {
   temple: Temple;
@@ -9,9 +9,19 @@ interface Props {
 const { temple } = Astro.props;
 const districtName = getDistrictName(temple.district_id);
 const showKana = !isUnknownValue(temple.name_kana);
+const media = getTempleMediaBySlug(temple.slug);
+const cardImage = media?.hero_image ?? media?.photos[0]?.src;
+const cardImageAlt = media?.photos.find((photo) => photo.src === cardImage)?.alt ?? temple.name + "の代表写真";
 ---
 
 <article class="temple-card">
+  {
+    cardImage ? (
+      <a class="temple-card-photo" href={"/temples/" + temple.slug + "/"} aria-label={temple.name + "の詳細を見る"}>
+        <img src={cardImage} alt={cardImageAlt} loading="lazy" />
+      </a>
+    ) : null
+  }
   <div class="card-topline">
     <span class={`status status-${temple.status}`}>{temple.status_label}</span>
     <span>{districtName}</span>
