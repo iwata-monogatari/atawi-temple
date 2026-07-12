@@ -1180,5 +1180,83 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "zendoji-mitsuke",
+    "hero_image": "/assets/temples/zendoji-mitsuke/main-hall-front.webp",
+    "photos": [
+      {
+        "photo_id": "zendoji-main-hall-front-2026",
+        "src": "/assets/temples/zendoji-mitsuke/main-hall-front.webp",
+        "alt": "善導寺本堂正面",
+        "caption": "本堂正面。軒に「玉光山」の扁額を掲げ、参道には一対の灯籠、赤い頭巾をつけた地蔵尊像、青銅の香炉が並ぶ。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zendoji-kannon-shrine-2026",
+        "src": "/assets/temples/zendoji-mitsuke/kannon-shrine.webp",
+        "alt": "境内の観音像を祀る小堂",
+        "caption": "藤棚の下に建つ小堂に安置された観音菩薩の石像。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zendoji-gold-plaque-2026",
+        "src": "/assets/temples/zendoji-mitsuke/gold-plaque.webp",
+        "alt": "本堂に掲げられた「玉光山」の扁額",
+        "caption": "金文字で「玉光山」と記された本堂正面の扁額。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zendoji-street-view-2026",
+        "src": "/assets/temples/zendoji-mitsuke/street-view.webp",
+        "alt": "通りから見た善導寺の伽藍",
+        "caption": "道路越しに見た境内。本堂の大屋根と山門、白壁の築地塀が連なる。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zendoji-incense-burner-2026",
+        "src": "/assets/temples/zendoji-mitsuke/incense-burner.webp",
+        "alt": "本堂前の常香炉",
+        "caption": "本堂前に置かれた青銅製の香炉(常香炉)。屋根付きの覆いがあり、寺号が刻まれている。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zendoji-gate-detail-2026",
+        "src": "/assets/temples/zendoji-mitsuke/gate-detail.webp",
+        "alt": "善導寺山門の軒組物",
+        "caption": "山門を見上げた軒下の組物。右手には「浄土宗 玉光山 善導寺」と刻まれた石柱が立つ。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zendoji-complex-wide-view-2026",
+        "src": "/assets/temples/zendoji-mitsuke/complex-wide-view.webp",
+        "alt": "善導寺境内の伽藍全景",
+        "caption": "本堂・山門などの伽藍が並ぶ境内の全景。手前に庭石と木が配されている。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zendoji-gate-pillar-2026",
+        "src": "/assets/temples/zendoji-mitsuke/gate-pillar.webp",
+        "alt": "山門脇の寺号標石",
+        "caption": "山門脇に立つ「浄土宗 玉光山 善導寺」の寺号標石。奥に地蔵尊像と灯籠が見える。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
