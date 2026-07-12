@@ -682,5 +682,92 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "keiganji-mitsuke",
+    "hero_image": "/assets/temples/keiganji-mitsuke/hondo-exterior.webp",
+    "photos": [
+      {
+        "photo_id": "keiganji-hondo-exterior-2026",
+        "src": "/assets/temples/keiganji-mitsuke/hondo-exterior.webp",
+        "alt": "慶岩寺本堂の外観",
+        "caption": "境内から見た慶岩寺の本堂外観。正面階段、玄関、周囲の植栽を含めて記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keiganji-hondo-front-2026",
+        "src": "/assets/temples/keiganji-mitsuke/hondo-front.webp",
+        "alt": "慶岩寺本堂正面の入口",
+        "caption": "本堂正面の入口。扁額、ガラス戸、階段、左右の手すりを確認できる。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keiganji-hondo-nameboard-2026",
+        "src": "/assets/temples/keiganji-mitsuke/hondo-nameboard.webp",
+        "alt": "慶岩寺本堂入口上の扁額",
+        "caption": "本堂入口上部の扁額と玄関まわりを近くから記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keiganji-history-signboard-2026",
+        "src": "/assets/temples/keiganji-mitsuke/history-signboard.webp",
+        "alt": "慶岩寺の現地説明板",
+        "caption": "磐田市教育委員会文化財課による慶岩寺の説明板。延命地蔵堂や北向地蔵の由緒を伝える。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keiganji-jizodo-front-2026",
+        "src": "/assets/temples/keiganji-mitsuke/jizodo-front.webp",
+        "alt": "慶岩寺境内の地蔵堂",
+        "caption": "境内に建つ小堂。説明板とあわせて、北向地蔵尊信仰を確認するための現地写真として掲載。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keiganji-small-shrine-2026",
+        "src": "/assets/temples/keiganji-mitsuke/small-shrine.webp",
+        "alt": "慶岩寺境内の小祠",
+        "caption": "境内の樹木の下に祀られた小祠と周囲の石組みを記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keiganji-grounds-wide-2026",
+        "src": "/assets/temples/keiganji-mitsuke/grounds-wide.webp",
+        "alt": "慶岩寺の境内全景",
+        "caption": "本堂側から見た境内全景。小祠、植栽、通路、建物配置が分かる写真。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keiganji-shoin-direction-sign-2026",
+        "src": "/assets/temples/keiganji-mitsuke/shoin-direction-sign.webp",
+        "alt": "慶岩寺境内の書院案内板",
+        "caption": "境内に設置された「書院」案内板。参拝者向け動線の記録として掲載。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keiganji-shoin-entrance-2026",
+        "src": "/assets/temples/keiganji-mitsuke/shoin-entrance.webp",
+        "alt": "慶岩寺の書院入口",
+        "caption": "書院案内の先にある建物入口。境内の補助施設として外観を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
