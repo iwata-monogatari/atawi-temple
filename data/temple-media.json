@@ -415,5 +415,56 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "chusenji-nakaizumi",
+    "hero_image": "/assets/temples/chusenji-nakaizumi/hondo-front.webp",
+    "photos": [
+      {
+        "photo_id": "chusenji-garden-grounds-2026",
+        "src": "/assets/temples/chusenji-nakaizumi/garden-grounds.webp",
+        "alt": "中泉寺本堂前の庭園と境内",
+        "caption": "本堂前の庭園と堂宇を、植栽と石組みとともに記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chusenji-temple-marker-2026",
+        "src": "/assets/temples/chusenji-nakaizumi/temple-marker.webp",
+        "alt": "大池山中泉寺の寺号標",
+        "caption": "大池山中泉寺と刻銘された寺号標と、鐘楼の位置関係を確認できる写真。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chusenji-kannon-statue-2026",
+        "src": "/assets/temples/chusenji-nakaizumi/kannon-statue.webp",
+        "alt": "中泉寺境内の聖観世音菩薩",
+        "caption": "本堂前の庭園に立つ聖観世音菩薩と小さな石仏を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chusenji-sanmon-2026",
+        "src": "/assets/temples/chusenji-nakaizumi/sanmon.webp",
+        "alt": "中泉寺の山門と参道",
+        "caption": "山門越しに本堂を望む参道正面。境内の庭園と本堂の位置関係を確認できる。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chusenji-hondo-front-2026",
+        "src": "/assets/temples/chusenji-nakaizumi/hondo-front.webp",
+        "alt": "中泉寺本堂の正面",
+        "caption": "中泉の扁額を掲げる本堂正面。石仏と庭園を含めた代表的な写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
