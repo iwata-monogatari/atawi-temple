@@ -613,5 +613,74 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "senzoji-nakaizumi",
+    "hero_image": "/assets/temples/senzoji-nakaizumi/hondo-front.webp",
+    "photos": [
+      {
+        "photo_id": "senzoji-hondo-front-2026",
+        "src": "/assets/temples/senzoji-nakaizumi/hondo-front.webp",
+        "alt": "泉蔵寺の本堂正面",
+        "caption": "泉蔵寺の本堂正面。境内の中心となる建物を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senzoji-sanmon-view-2026",
+        "src": "/assets/temples/senzoji-nakaizumi/sanmon-view.webp",
+        "alt": "泉蔵寺の山門から本堂を望む",
+        "caption": "山門越しに本堂へ続く参道を望む。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senzoji-yakushi-reijo-sign-2026",
+        "src": "/assets/temples/senzoji-nakaizumi/yakushi-reijo-sign.webp",
+        "alt": "泉蔵寺の遠江四十九薬師霊場案内板",
+        "caption": "遠江四十九薬師霊場第二番札所を示す案内板を記録。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senzoji-grounds-side-2026",
+        "src": "/assets/temples/senzoji-nakaizumi/grounds-side.webp",
+        "alt": "泉蔵寺境内の側面からの眺め",
+        "caption": "本堂脇から山門側を望む境内の様子。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senzoji-approach-through-gate-2026",
+        "src": "/assets/temples/senzoji-nakaizumi/approach-through-gate.webp",
+        "alt": "泉蔵寺の山門内から見る参道",
+        "caption": "山門内から本堂へ続く参道と境内の堂宇を記録。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senzoji-temple-marker-2026",
+        "src": "/assets/temples/senzoji-nakaizumi/temple-marker.webp",
+        "alt": "泉蔵寺の寺号標",
+        "caption": "無量山泉蔵寺の寺号標と石段入口を記録。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senzoji-approach-stairs-2026",
+        "src": "/assets/temples/senzoji-nakaizumi/approach-stairs.webp",
+        "alt": "泉蔵寺へ上る石段",
+        "caption": "道路側から山門へ上る石段と入口まわりを記録。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
