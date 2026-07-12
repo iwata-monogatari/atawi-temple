@@ -769,5 +769,260 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "shokoji-mitsuke",
+    "hero_image": "/assets/temples/shokoji-mitsuke/hondo-front.webp",
+    "photos": [
+      {
+        "photo_id": "shokoji-hondo-front-2026",
+        "src": "/assets/temples/shokoji-mitsuke/hondo-front.webp",
+        "alt": "省光寺の本堂正面",
+        "caption": "参道階段の先に建つ本堂正面。軒下に「省光寺」の扁額を掲げる。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokoji-hondo-side-view-2026",
+        "src": "/assets/temples/shokoji-mitsuke/hondo-side-view.webp",
+        "alt": "省光寺本堂と境内墓地",
+        "caption": "本堂を斜めから望む一枚。奥には境内の墓地が広がる。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokoji-hondo-nameboard-interior-2026",
+        "src": "/assets/temples/shokoji-mitsuke/hondo-nameboard-interior.webp",
+        "alt": "本堂に掲げられた「省光寺」の扁額",
+        "caption": "本堂正面の軒下に掲げられた扁額。「省光寺」の寺号を確認できる。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokoji-belfry-gate-front-2026",
+        "src": "/assets/temples/shokoji-mitsuke/belfry-gate-front.webp",
+        "alt": "省光寺の鐘楼門",
+        "caption": "境内入口に建つ鐘楼門。磐田市内では例の少ない鐘楼門形式で、門の先に本堂を望む。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokoji-belfry-gate-roof-2026",
+        "src": "/assets/temples/shokoji-mitsuke/belfry-gate-roof.webp",
+        "alt": "鐘楼門を見上げた軒と梵鐘",
+        "caption": "鐘楼門を見上げた写真。二階の高欄内に梵鐘が吊られているのが分かる。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokoji-temple-marker-belfry-gate-2026",
+        "src": "/assets/temples/shokoji-mitsuke/temple-marker-belfry-gate.webp",
+        "alt": "「時宗 嶺松山 省光寺」の寺号標",
+        "caption": "門前に立つ寺号標。「時宗 嶺松山 省光寺」と刻まれ、背後に鐘楼門を望む。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokoji-gingko-canopy-2026",
+        "src": "/assets/temples/shokoji-mitsuke/gingko-canopy.webp",
+        "alt": "省光寺のイチョウ（新緑期）",
+        "caption": "磐田市指定天然記念物「省光寺のイチョウ」の樹冠。新緑期の姿を記録した一枚。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokoji-gingko-and-belfry-2026",
+        "src": "/assets/temples/shokoji-mitsuke/gingko-and-belfry.webp",
+        "alt": "省光寺のイチョウと鐘楼門",
+        "caption": "境内東側から見たイチョウと鐘楼門。市街地に残る古木の全体像が分かる。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokoji-gingko-marker-trunk-2026",
+        "src": "/assets/temples/shokoji-mitsuke/gingko-marker-trunk.webp",
+        "alt": "「見付の名木 銀杏」の標柱とイチョウの幹",
+        "caption": "「見付の名木 銀杏」の標柱。背後にイチョウの太い幹と根元の様子を見せる。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokoji-history-signboard-2026",
+        "src": "/assets/temples/shokoji-mitsuke/history-signboard.webp",
+        "alt": "省光寺の由緒を記した現地説明板",
+        "caption": "境内に設置された「省光寺」の説明板。宗派・本尊・沿革と、境内のイチョウについて解説する。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokoji-hall-near-cemetery-2026",
+        "src": "/assets/temples/shokoji-mitsuke/hall-near-cemetery.webp",
+        "alt": "境内奥の堂宇と墓地",
+        "caption": "境内奥に建つ堂宇。隣接して墓地と、納骨堂とみられる建物が並ぶ。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  }  ,
+  {
+    "temple_slug": "honshoji-kounodai",
+    "hero_image": "/assets/temples/honshoji-kounodai/hondo-front.webp",
+    "photos": [
+      {
+        "photo_id": "honshoji-hondo-front-2026",
+        "src": "/assets/temples/honshoji-kounodai/hondo-front.webp",
+        "alt": "本性寺の本堂正面",
+        "caption": "銅板葺きの大屋根が特徴的な本性寺本堂。正面には「常住山」の山号扁額が掲げられている。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "honshoji-sanmon-gate-2026",
+        "src": "/assets/temples/honshoji-kounodai/sanmon-gate.webp",
+        "alt": "本性寺の山門と寺号標",
+        "caption": "道路に面した山門。注連縄が掛けられ、右手に「常住山本性寺」と刻まれた寺号標が立つ。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "honshoji-daimoku-stone-pillar-2026",
+        "src": "/assets/temples/honshoji-kounodai/daimoku-stone-pillar.webp",
+        "alt": "本性寺門前の題目碑",
+        "caption": "山門脇の塀際に立つ石柱。日蓮宗寺院に多い南無妙法蓮華経の題目碑とみられる。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "honshoji-hondo-front-wide-2026",
+        "src": "/assets/temples/honshoji-kounodai/hondo-front-wide.webp",
+        "alt": "本性寺本堂前の境内と蘇鉄",
+        "caption": "本堂前に広がる境内。大きな蘇鉄と敷石が配され、左手には祖師像の台座が写る。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "honshoji-hondo-nameboard-entrance-2026",
+        "src": "/assets/temples/honshoji-kounodai/hondo-nameboard-entrance.webp",
+        "alt": "本性寺本堂の扁額と内陣",
+        "caption": "本堂正面に掲げられた「本性寺」の扁額。開いた格子戸の奥に金色の須弥壇が見える。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "honshoji-hondo-nameboard-closeup-2026",
+        "src": "/assets/temples/honshoji-kounodai/hondo-nameboard-closeup.webp",
+        "alt": "本性寺本堂扁額の拡大",
+        "caption": "「本性寺」の扁額を拡大した写真。大正9年（庚申）初秋、八十叟日慈の書と添え書きがある。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "honshoji-shichimendo-front-2026",
+        "src": "/assets/temples/honshoji-kounodai/shichimendo-front.webp",
+        "alt": "本性寺の七面堂",
+        "caption": "境内に建つ七面堂。「七面堂」の扁額が掲げられ、日蓮宗寺院で七面大明神を祀る堂宇。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "honshoji-shichimendo-founder-statue-2026",
+        "src": "/assets/temples/honshoji-kounodai/shichimendo-founder-statue.webp",
+        "alt": "本性寺七面堂前の銅像",
+        "caption": "七面堂前に建つ銅像と石碑。台座には詩文が刻まれている。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "honshoji-chinjusha-hall-2026",
+        "src": "/assets/temples/honshoji-kounodai/chinjusha-hall.webp",
+        "alt": "本性寺境内の鎮守社",
+        "caption": "境内に祀られる鎮守社。狛犬と石灯籠が並び、奥に朱塗りの鳥居が見える。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "honshoji-chinjusha-torii-2026",
+        "src": "/assets/temples/honshoji-kounodai/chinjusha-torii.webp",
+        "alt": "本性寺鎮守社の鳥居",
+        "caption": "鎮守社参道の朱塗りの鳥居。両脇に灯籠が配され、社殿へと続く。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "honshoji-chinjusha-war-memorial-2026",
+        "src": "/assets/temples/honshoji-kounodai/chinjusha-war-memorial.webp",
+        "alt": "本性寺境内の戦捷記念碑",
+        "caption": "鎮守社脇に立つ「戦捷記念碑」。朱塗りの鳥居や石灯籠とともに境内の一角を形成している。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "honshoji-chureiden-memorial-2026",
+        "src": "/assets/temples/honshoji-kounodai/chureiden-memorial.webp",
+        "alt": "本性寺境内の忠霊殿",
+        "caption": "「忠霊殿」と刻まれた石柱。石段の先に小祠が建ち、鳥居越しに参道が見える。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "honshoji-temizu-dragon-2026",
+        "src": "/assets/temples/honshoji-kounodai/temizu-dragon.webp",
+        "alt": "本性寺の手水鉢と龍の吐水口",
+        "caption": "庭園に置かれた石造りの手水鉢。龍をかたどった吐水口が水口に据えられている。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "honshoji-noticeboard-terakoya-2026",
+        "src": "/assets/temples/honshoji-kounodai/noticeboard-terakoya.webp",
+        "alt": "本性寺の掲示板「遠州の寺子屋」",
+        "caption": "「日蓮宗 国府台 本性寺」と刻まれた掲示板。青少年修養道場「遠州の寺子屋」の案内ポスターが貼られている。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "honshoji-sotetsu-grounds-2026",
+        "src": "/assets/temples/honshoji-kounodai/sotetsu-grounds.webp",
+        "alt": "本性寺境内の蘇鉄と庫裏",
+        "caption": "境内に植えられた大きな蘇鉄。奥には本堂の甍越しに庫裏が望める。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "honshoji-grounds-rooftops-2026",
+        "src": "/assets/temples/honshoji-kounodai/grounds-rooftops.webp",
+        "alt": "本性寺の堂宇の甍が並ぶ遠景",
+        "caption": "道路越しに見た本性寺の堂宇群。本堂・七面堂などの甍が重なり合う境内の広がりを記録した写真。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
