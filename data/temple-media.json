@@ -1726,5 +1726,101 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "jionji-mitsuke",
+    "hero_image": "/assets/temples/jionji-mitsuke/hondo-front.webp",
+    "photos": [
+      {
+        "photo_id": "jionji-hondo-front-2026",
+        "src": "/assets/temples/jionji-mitsuke/hondo-front.webp",
+        "alt": "慈恩寺本堂正面",
+        "caption": "石畳の参道の先に建つ本堂正面。しだれ桜越しに見る。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jionji-hondo-entrance-2026",
+        "src": "/assets/temples/jionji-mitsuke/hondo-entrance.webp",
+        "alt": "慈恩寺本堂入口",
+        "caption": "「慈恩寺」の扁額を掲げた本堂入口。階段の先に建つ。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jionji-hondo-nameplate-2026",
+        "src": "/assets/temples/jionji-mitsuke/hondo-nameplate.webp",
+        "alt": "慈恩寺本堂の扁額と家紋",
+        "caption": "本堂正面に掲げられた「慈恩寺」の扁額。ガラス戸には梅鉢を思わせる家紋が入る。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jionji-sanmon-inner-view-2026",
+        "src": "/assets/temples/jionji-mitsuke/sanmon-inner-view.webp",
+        "alt": "慈恩寺山門を境内側から見る",
+        "caption": "境内側から見た山門。「遠江四十九薬師霊場」の石柱と由緒案内板が並ぶ。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jionji-sanmon-outer-view-2026",
+        "src": "/assets/temples/jionji-mitsuke/sanmon-outer-view.webp",
+        "alt": "慈恩寺山門",
+        "caption": "瓦屋根の山門。「第四十九番札所 慈恩寺 遠江四十九薬師霊場」の案内板と石灯籠が立つ。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jionji-sanmon-nameplate-2026",
+        "src": "/assets/temples/jionji-mitsuke/sanmon-nameplate.webp",
+        "alt": "慈恩寺山門柱の寺号板",
+        "caption": "山門の柱に掲げられた「慈恩寺」の寺号板。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jionji-sando-lanterns-2026",
+        "src": "/assets/temples/jionji-mitsuke/sando-lanterns.webp",
+        "alt": "慈恩寺参道の石灯籠",
+        "caption": "山門へ続く参道沿いに並ぶ石灯籠。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jionji-keidai-sanmon-view-2026",
+        "src": "/assets/temples/jionji-mitsuke/keidai-sanmon-view.webp",
+        "alt": "境内から見た慈恩寺山門",
+        "caption": "境内から山門方向を見る。「梅のかをり」樹木葬の案内板と石灯籠が見える。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jionji-jizo-statues-2026",
+        "src": "/assets/temples/jionji-mitsuke/jizo-statues.webp",
+        "alt": "慈恩寺境内の観音像と地蔵尊",
+        "caption": "境内に並ぶ観音像と地蔵尊。赤い頭巾が掛けられている。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jionji-yuisho-board-2026",
+        "src": "/assets/temples/jionji-mitsuke/yuisho-board.webp",
+        "alt": "慈恩寺由緒案内板",
+        "caption": "本尊・宗派・沿革と、磐田市指定文化財「雲板」について記した境内の由緒案内板。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
