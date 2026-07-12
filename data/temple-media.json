@@ -562,5 +562,56 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "gasshoji-nakaizumi",
+    "hero_image": "/assets/temples/gasshoji-nakaizumi/small-shrine.webp",
+    "photos": [
+      {
+        "photo_id": "gasshoji-small-shrine-2026",
+        "src": "/assets/temples/gasshoji-nakaizumi/small-shrine.webp",
+        "alt": "合掌寺の小さな祠",
+        "caption": "現地に残る小さな祠。お堂などは確認できませんでした。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "gasshoji-stone-monument-2026",
+        "src": "/assets/temples/gasshoji-nakaizumi/stone-monument.webp",
+        "alt": "合掌寺の石碑",
+        "caption": "樹木の下に立つ合掌寺の石碑を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "gasshoji-stone-buddha-2026",
+        "src": "/assets/temples/gasshoji-nakaizumi/stone-buddha.webp",
+        "alt": "合掌寺の石仏",
+        "caption": "樹木のそばに安置された石仏を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "gasshoji-chozubachi-2026",
+        "src": "/assets/temples/gasshoji-nakaizumi/chozubachi.webp",
+        "alt": "合掌寺の手水鉢",
+        "caption": "祠の近くに残る手水鉢を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "gasshoji-site-overview-2026",
+        "src": "/assets/temples/gasshoji-nakaizumi/site-overview.webp",
+        "alt": "合掌寺跡周辺の現況",
+        "caption": "石碑と小さな祠が残る周辺環境を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
