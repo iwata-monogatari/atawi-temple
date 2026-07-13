@@ -45,6 +45,51 @@ const allowedStatuses = new Set([
   "unknown",
 ]);
 const allowedRecordTypes = new Set(["temple", "ruin", "hall", "pilgrimage"]);
+const statusLabels = {
+  existing: "現存",
+  ruin: "寺院跡・廃寺",
+  moved: "移転",
+  merged: "統合",
+  unknown: "状況不明（現地痕跡未確認）",
+};
+const relatedReligiousCorporationSect = "その他・関連宗教法人";
+const relatedReligiousCorporationSourceSects = new Set([
+  "包括宗教法人「神心教」",
+  "神心教",
+]);
+const iwataBounds = {
+  minLat: 34.6,
+  maxLat: 34.9,
+  minLng: 137.7,
+  maxLng: 137.95,
+};
+
+function sectGroupName(sect) {
+  return relatedReligiousCorporationSourceSects.has(sect) ? relatedReligiousCorporationSect : sect;
+}
+
+function hasDetailPage(temple) {
+  return temple.detail_page !== false;
+}
+
+function hasLatLng(temple) {
+  return Number.isFinite(Number(temple.lat)) && Number.isFinite(Number(temple.lng));
+}
+
+function inIwataBounds(lat, lng) {
+  return lat >= iwataBounds.minLat
+    && lat <= iwataBounds.maxLat
+    && lng >= iwataBounds.minLng
+    && lng <= iwataBounds.maxLng;
+}
+
+function countBy(records, keyFn) {
+  return records.reduce((counts, record) => {
+    const key = keyFn(record);
+    counts[key] = (counts[key] || 0) + 1;
+    return counts;
+  }, {});
+}
 
 checkUnique(temples, "temple_id", "temples");
 checkUnique(temples, "slug", "temples");
@@ -91,6 +136,10 @@ for (const temple of temples) {
     errors.push(`${label}: status "${temple.status}" is not allowed`);
   }
 
+  if (temple.status && !statusLabels[temple.status]) {
+    errors.push(`${label}: status "${temple.status}" has no display label`);
+  }
+
   if (temple.district_id !== null && temple.district_id !== undefined && !districtIds.has(temple.district_id)) {
     errors.push(`${label}: district_id "${temple.district_id}" is not in data/districts.json`);
   }
@@ -105,6 +154,14 @@ for (const temple of temples) {
 
   if (!Array.isArray(temple.sources) || temple.sources.length === 0) {
     warnings.push(`${label}: sources should include at least one source`);
+  }
+
+  if ("lat" in temple || "lng" in temple) {
+    if (!hasLatLng(temple)) {
+      errors.push(`${label}: lat/lng must both be numbers when either is present`);
+    } else if (!inIwataBounds(Number(temple.lat), Number(temple.lng))) {
+      errors.push(`${label}: lat/lng ${temple.lat},${temple.lng} is outside the expected Iwata area`);
+    }
   }
 }
 
@@ -159,6 +216,39 @@ for (const update of templeUpdates) {
   if (update.date && !/^\d{4}-\d{2}-\d{2}$/.test(update.date)) {
     errors.push(`${label}: date must match YYYY-MM-DD format`);
   }
+}
+
+const mediaSlugs = new Set(templeMedia.map((media) => media.temple_slug));
+for (const temple of temples) {
+  const label = `temple ${temple.temple_id || temple.name || "(unknown)"}`;
+  const hasPhotos = mediaSlugs.has(temple.slug);
+  if (hasPhotos && temple.visit_status !== "現地写真あり") {
+    errors.push(`${label}: visit_status must be "現地写真あり" because temple-media has photos`);
+  }
+  if (!hasPhotos && temple.visit_status === "現地写真あり") {
+    errors.push(`${label}: visit_status is "現地写真あり" but temple-media has no photos`);
+  }
+}
+
+const statusCounts = countBy(temples, (temple) => temple.status);
+const statusTotal = Object.values(statusCounts).reduce((total, count) => total + count, 0);
+const districtTotal = districts.reduce((total, district) => {
+  return total + temples.filter((temple) => temple.district_id === district.district_id).length;
+}, 0) + temples.filter((temple) => !temple.district_id).length;
+const sectTotal = Object.values(countBy(temples, (temple) => sectGroupName(temple.sect))).reduce((total, count) => total + count, 0);
+const detailPageSlugs = temples.filter(hasDetailPage).map((temple) => temple.slug);
+
+if (statusTotal !== temples.length) {
+  errors.push(`counts: status total ${statusTotal} does not match temple total ${temples.length}`);
+}
+if (districtTotal !== temples.length) {
+  errors.push(`counts: district total ${districtTotal} does not match temple total ${temples.length}`);
+}
+if (sectTotal !== temples.length) {
+  errors.push(`counts: sect total ${sectTotal} does not match temple total ${temples.length}`);
+}
+if (new Set(detailPageSlugs).size !== detailPageSlugs.length) {
+  errors.push("detail pages: duplicate detail page slug found");
 }
 
 for (const warning of warnings) {

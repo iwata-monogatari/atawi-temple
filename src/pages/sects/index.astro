@@ -6,13 +6,13 @@ const sectCounts = countTemplesBySect();
 ---
 
 <BaseLayout
-  title="宗派から探す｜ATAWI TEMPLE"
-  description="曹洞宗、浄土宗、臨済宗、日蓮宗など、宗派別に磐田市内のお寺を探せます。"
+  title="宗派・関連法人から探す｜ATAWI TEMPLE"
+  description="曹洞宗、浄土宗、臨済宗、日蓮宗などの宗派と、関連宗教法人の別枠から磐田市内のお寺を探せます。"
 >
   <section class="page-title">
     <p class="eyebrow">Sects</p>
-    <h1>宗派から探す</h1>
-    <p>公式名簿に掲載された宗派・包括団体ごとに、磐田市内の寺院を整理しています。</p>
+    <h1>宗派・関連法人から探す</h1>
+    <p>公式名簿に掲載された宗派・包括団体ごとに整理します。仏教寺院ではない関連宗教法人は別枠で表示します。</p>
   </section>
 
   <section class="section">
@@ -21,7 +21,7 @@ const sectCounts = countTemplesBySect();
         sectCounts.map((sect) => (
           <a class="district-card" href={`/sects/${sect.slug}/`}>
             <strong>{sect.name}</strong>
-            <span>{sect.name}として掲載されている寺院を一覧できます。</span>
+            <span>{sect.name}として整理している登録を一覧できます。</span>
             <em>{sect.count}件登録</em>
           </a>
         ))

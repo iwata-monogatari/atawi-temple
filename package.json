@@ -9,6 +9,8 @@
     "preview": "astro preview",
     "check": "npm run validate:data && astro check && npm run build",
     "validate:data": "node scripts/validate-data.mjs",
+    "verify:temple-data": "python scripts/verify_temple_data.py",
+    "geocode:temples": "node scripts/geocode-temples.mjs",
     "check:analytics": "node scripts/check-analytics.mjs"
   },
   "dependencies": {

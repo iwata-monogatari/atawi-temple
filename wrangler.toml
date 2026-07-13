@@ -2,6 +2,10 @@ name = "atawi-temple"
 compatibility_date = "2026-07-11"
 pages_build_output_dir = "dist"
 
+[vars]
+GOOGLE_MAPS_DYNAMIC_MONTHLY_CAP = "9000"
+GOOGLE_MAPS_DYNAMIC_DISABLED = "false"
+
 [[d1_databases]]
 binding = "ATAWI_BOARD_DB"
 database_name = "atawi-temple-board"

@@ -6,6 +6,10 @@ import {
   getPhotoCategory,
   getTempleBySlug,
   getTempleMediaBySlug,
+  getTempleStatusLabel,
+  googleMapsEmbedUrl,
+  googleMapsUrl,
+  googleMapsWebEmbedUrl,
   hasDetailPage,
   isUnknownValue,
 } from "../../lib/temples";
@@ -23,6 +27,11 @@ const temple = getTempleBySlug(Astro.params.slug || "");
 if (!temple || !hasDetailPage(temple)) return Astro.redirect("/temples/");
 
 const districtName = getDistrictName(temple.district_id);
+const mapsApiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_BROWSER_KEY;
+const mapEmbedUrl = googleMapsEmbedUrl(temple, mapsApiKey);
+const mapFallbackEmbedUrl = googleMapsWebEmbedUrl(temple);
+const visibleMapEmbedUrl = mapEmbedUrl || mapFallbackEmbedUrl;
+const mapUrl = googleMapsUrl(temple);
 const showKana = !isUnknownValue(temple.name_kana);
 const media = getTempleMediaBySlug(temple.slug);
 const galleryPhotos = media?.photos.filter((photo) => photo.src !== media.hero_image) || [];
@@ -71,7 +80,7 @@ const parking = field(dankaInfo?.parking, "調査中");
     <header class="temple-masthead">
       <div class="temple-heading">
         <div>
-          <p class="eyebrow">{districtName}地区・{temple.status_label}</p>
+          <p class="eyebrow">{districtName}地区・{getTempleStatusLabel(temple)}</p>
           <h1>{temple.name}</h1>
           {showKana && <p class="temple-kana">{temple.name_kana}</p>}
         </div>
@@ -303,6 +312,21 @@ const parking = field(dankaInfo?.parking, "調査中");
               </dd>
             </div>
           </dl>
+        </section>
+
+        <section class="side-panel temple-map-panel">
+          <h2>地図・経路</h2>
+          <iframe
+            title={`${temple.name}のGoogleマップ`}
+            src={visibleMapEmbedUrl}
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+          {!mapEmbedUrl && (
+            <p class="map-runtime-note">Google Maps APIキー未設定のため、Google Mapsの埋め込み地図を表示しています。</p>
+          )}
+          <a class="button-link" href={mapUrl} target="_blank" rel="noreferrer">Googleマップで開く</a>
         </section>
 
         <section class="side-panel">

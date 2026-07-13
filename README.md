@@ -9,6 +9,7 @@
 - 9地区別ページ
 - 宗派別ページ
 - 調査状況ページ
+- Googleマップ導線、地図ページ
 - キーワード検索、地区、宗派、状態フィルター
 - 個別寺院ページ
 - 運営者情報
@@ -41,6 +42,7 @@ npm install
 npm run dev
 npm run build
 npm run validate:data
+npm run verify:temple-data
 npm run check:analytics
 ```
 
@@ -65,6 +67,24 @@ node scripts/import-official-temples.mjs
 地区分類は磐田物語の9地区分類を採用します。地区マスターは`data/districts.json`、運用方針は`docs/district-policy.md`を参照してください。
 
 寺院マスター更新後は、公開前に`npm run validate:data`でID、slug、地区分類の整合性を確認します。
+
+## Googleマップ
+
+詳細ページはGoogle Mapsの埋め込み地図を表示します。`PUBLIC_GOOGLE_MAPS_BROWSER_KEY`が設定されている場合はMaps Embed APIを使い、未設定時もGoogle Mapsの埋め込み表示と「Googleマップで開く」リンクを表示します。
+
+全体地図ページは`/map/`です。APIキーや座標が未設定でも磐田市の広域Google Mapsを表示します。`data/temples.json`に`lat`/`lng`が登録され、`PUBLIC_GOOGLE_MAPS_BROWSER_KEY`が設定されると、Maps JavaScript APIとAdvanced Markersで地区カラーのピンを表示します。Advanced Markers用に`PUBLIC_GOOGLE_MAPS_MAP_ID`も設定してください。
+
+Maps JavaScript APIは課金対象になり得るため、`/api/maps-quota`で月間安全上限を確認してから読み込みます。`GOOGLE_MAPS_DYNAMIC_MONTHLY_CAP`を`9000`など無料枠より低い値に設定し、上限到達時はピン付き地図を読み込まず、無料の広域埋め込み地図とGoogleマップリンクだけを表示します。緊急停止する場合は`GOOGLE_MAPS_DYNAMIC_DISABLED=true`にします。
+
+一括ジオコーディングは次の流れです。初回は必ずドライランで結果を確認してください。
+
+```bash
+GOOGLE_MAPS_GEOCODING_KEY=... npm run geocode:temples -- --limit=5
+GOOGLE_MAPS_GEOCODING_KEY=... npm run geocode:temples -- --write
+npm run validate:data
+```
+
+公開用のブラウザキーは、Google Cloud側で`https://temple.atawi.link/*`などのHTTPリファラ制限と、Maps Embed API / Maps JavaScript APIのAPI制限を設定してください。ジオコーディング用キーは公開環境に置かず、ローカル実行だけに使います。
 
 ## Cloudflare Pages
 

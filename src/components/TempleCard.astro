@@ -1,6 +1,6 @@
 ---
 import type { Temple } from "../lib/temples";
-import { getDistrictName, getTempleMediaBySlug, hasDetailPage, isUnknownValue, knownValue } from "../lib/temples";
+import { getDistrictName, getTempleMediaBySlug, getTempleStatusLabel, hasDetailPage, isUnknownValue, knownValue } from "../lib/temples";
 
 interface Props {
   temple: Temple;
@@ -33,7 +33,7 @@ const cardSummary = "page_summary" in temple && typeof temple.page_summary === "
     ) : null
   }
   <div class="card-topline">
-    <span class={`status status-${temple.status}`}>{temple.status_label}</span>
+    <span class={`status status-${temple.status}`}>{getTempleStatusLabel(temple)}</span>
     <span>{districtName}</span>
   </div>
   <h3>{detailPageAvailable ? <a href={`/temples/${temple.slug}/`}>{temple.name}</a> : temple.name}</h3>

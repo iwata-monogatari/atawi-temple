@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { allDistricts, getTemplesByDistrictId } from "../../lib/temples";
+import { allDistricts, countUnassignedDistrictTemples, getTemplesByDistrictId } from "../../lib/temples";
+
+const unknownDistrictCount = countUnassignedDistrictTemples();
 ---
 
 <BaseLayout
@@ -27,6 +29,13 @@ import { allDistricts, getTemplesByDistrictId } from "../../lib/temples";
           );
         })
       }
+      {unknownDistrictCount > 0 && (
+        <a class="district-card district-card--pending" href="/search/?district=__unassigned">
+          <strong>地区未確定</strong>
+          <span>所在地情報の確認後、9地区分類へ振り分ける登録です。</span>
+          <em>{unknownDistrictCount}件登録</em>
+        </a>
+      )}
     </div>
   </section>
 </BaseLayout>

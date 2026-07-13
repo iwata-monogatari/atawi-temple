@@ -4,6 +4,7 @@ import { allDistricts, allSects, allTemples, hasDetailPage } from "../lib/temple
 const staticPaths = [
   "/",
   "/areas/",
+  "/map/",
   "/sects/",
   "/temples/",
   "/updates/",

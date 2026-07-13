@@ -3,9 +3,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import {
   allTemples,
   allTempleUpdates,
+  countTemplesByStatus,
+  countUnassignedDistrictTemples,
   countTemplesByDistrict,
   countTemplesBySect,
   getDistrictName,
+  getTempleStatusLabel,
   getTempleBySlug,
   getTempleMediaBySlug,
   hasDetailPage,
@@ -28,6 +31,8 @@ const districtCounts = countTemplesByDistrict().sort(
   (a, b) => districtDisplayOrder.indexOf(a.district_id) - districtDisplayOrder.indexOf(b.district_id),
 );
 const allSectCounts = countTemplesBySect();
+const statusCounts = countTemplesByStatus();
+const unknownDistrictCount = countUnassignedDistrictTemples();
 const recentUpdates = allTempleUpdates.slice(0, 5).map((update) => ({
   ...update,
   temple: getTempleBySlug(update.temple_slug),
@@ -50,7 +55,7 @@ const pickupPool = allTemples
       nameKana: isUnknownValue(temple.name_kana) ? null : temple.name_kana,
       area: districtName,
       status: temple.status,
-      statusLabel: temple.status_label,
+      statusLabel: getTempleStatusLabel(temple),
       summary,
       image,
       imageAlt,
@@ -141,8 +146,9 @@ const galleryPhotos = [
     <a href="/search/?district=mitsuke">見付</a>
     <a href="/search/?district=nakaizumi">中泉</a>
     <a href="/search/?status=existing">現存寺院</a>
-    <a href="/search/?status=ruin">廃寺・寺院跡</a>
+    {statusCounts.ruin ? <a href="/search/?status=ruin">廃寺・寺院跡</a> : <span class="filter-chip-disabled">廃寺・寺院跡 準備中</span>}
     <a href="/search/?sect=曹洞宗">曹洞宗</a>
+    <a href="/map/">地図から探す</a>
     <a href="/sects/">宗派から探す</a>
   </section>
 
@@ -154,7 +160,7 @@ const galleryPhotos = [
     <div id="pickup-temples" class="pickup-grid" data-pickup-count="6">
       <p class="small">読み込み中...</p>
     </div>
-    <script type="application/json" id="pickup-temple-data" set:html={pickupPoolJson} />
+    <script is:inline type="application/json" id="pickup-temple-data" set:html={pickupPoolJson} />
     <script>
       function createPickupCard(temple: any) {
         const article = document.createElement("article");
@@ -261,6 +267,12 @@ const galleryPhotos = [
         })
       }
     </div>
+    {unknownDistrictCount > 0 && (
+      <p class="count-note">
+        地区未確定の登録が{unknownDistrictCount}件あります。9地区分類の合計にこの未確定分を加えたものが全登録件数です。
+        <a href="/search/?district=__unassigned">地区未確定の寺院を見る</a>
+      </p>
+    )}
   </section>
 
   <section class="section">

@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import TempleCard from "../../components/TempleCard.astro";
-import { allDistricts, allTemples, getDistrictName, hasDetailPage } from "../../lib/temples";
+import { allDistricts, allTemples, getDistrictName, getTempleStatusLabel, hasDetailPage } from "../../lib/temples";
 ---
 
 <BaseLayout
@@ -18,6 +18,7 @@ import { allDistricts, allTemples, getDistrictName, hasDetailPage } from "../../
     <h2>9地区分類</h2>
     <div class="filter-band">
       {allDistricts.map((district) => <a href={`/areas/${district.slug}/`}>{district.name}</a>)}
+      <a href="/search/?district=__unassigned">地区未確定</a>
     </div>
   </section>
 
@@ -44,7 +45,7 @@ import { allDistricts, allTemples, getDistrictName, hasDetailPage } from "../../
                   <td>{temple.name_kana}</td>
                   <td>{getDistrictName(temple.district_id)}</td>
                   <td>{temple.sect}</td>
-                  <td>{temple.status_label}</td>
+                  <td>{getTempleStatusLabel(temple)}</td>
                   <td>{detailPageAvailable ? <a href={`/temples/${temple.slug}/`}>開く</a> : <span class="pending-text">検索記録</span>}</td>
                 </tr>
               );

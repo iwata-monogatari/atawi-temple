@@ -3,24 +3,23 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import {
   allTemples,
   countTemplesByDistrict,
+  countTemplesBySect,
   countTemplesByStatus,
+  countTemplesWithPhotos,
+  countUnassignedDistrictTemples,
+  getStatusLabel,
 } from "../../lib/temples";
 
 const statusCounts = countTemplesByStatus();
 const districtCounts = countTemplesByDistrict();
-const unknownDistrictCount = allTemples.filter((temple) => !temple.district_id).length;
+const sectCounts = countTemplesBySect();
+const unknownDistrictCount = countUnassignedDistrictTemples();
 const officialSourceCount = allTemples.filter((temple) =>
   temple.sources.some((source) => source.title.includes("静岡県知事所轄宗教法人名簿")),
 ).length;
-const visitedCount = allTemples.filter((temple) => temple.visit_status === "訪問済み").length;
-
-const statusLabels: Record<string, string> = {
-  existing: "現存",
-  ruin: "寺院跡・廃寺",
-  moved: "移転",
-  merged: "統合",
-  unknown: "状況不明",
-};
+const visitedCount = countTemplesWithPhotos();
+const districtTotal = districtCounts.reduce((total, district) => total + district.count, 0) + unknownDistrictCount;
+const sectTotal = sectCounts.reduce((total, sect) => total + sect.count, 0);
 ---
 
 <BaseLayout
@@ -46,9 +45,9 @@ const statusLabels: Record<string, string> = {
         <small>静岡県知事所轄宗教法人名簿を参照</small>
       </article>
       <article class="stat-card">
-        <span>現地訪問済み</span>
+        <span>現地写真掲載</span>
         <strong>{visitedCount}</strong>
-        <small>写真・現地確認を含む</small>
+        <small>写真データのある寺院を自動集計</small>
       </article>
       <article class="stat-card">
         <span>地区未確定</span>
@@ -73,11 +72,15 @@ const statusLabels: Record<string, string> = {
             {
               Object.entries(statusCounts).map(([status, count]) => (
                 <tr>
-                  <td>{statusLabels[status] || status}</td>
+                  <td>{getStatusLabel(status)}</td>
                   <td>{count}</td>
                 </tr>
               ))
             }
+            <tr>
+              <td>状態別合計</td>
+              <td>{Object.values(statusCounts).reduce((total, count) => total + count, 0)}</td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -105,9 +108,41 @@ const statusLabels: Record<string, string> = {
               <td>地区未確定</td>
               <td>{unknownDistrictCount}</td>
             </tr>
+            <tr>
+              <td>地区別合計</td>
+              <td>{districtTotal}</td>
+            </tr>
           </tbody>
         </table>
       </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>宗派・関連法人別件数</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>分類</th>
+            <th>件数</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            sectCounts.map((sect) => (
+              <tr>
+                <td><a href={`/sects/${sect.slug}/`}>{sect.name}</a></td>
+                <td>{sect.count}</td>
+              </tr>
+            ))
+          }
+          <tr>
+            <td>宗派・関連法人別合計</td>
+            <td>{sectTotal}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
