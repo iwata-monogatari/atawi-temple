@@ -1535,42 +1535,47 @@ button,
 
 .district-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
 }
 
 @media (max-width: 720px) {
   .district-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }
 
 .district-card {
+  position: relative;
   display: grid;
-  gap: 8px;
-  min-height: 170px;
-  align-content: start;
-  padding: 18px;
+  gap: 10px;
+  min-height: 220px;
+  align-content: end;
+  overflow: hidden;
+  padding: 22px;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 8px;
   background: var(--paper);
   color: var(--ink);
   text-decoration: none;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
 }
 
 .district-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 14px 28px rgba(32, 32, 29, 0.12);
+  box-shadow: 0 18px 34px rgba(32, 32, 29, 0.18);
+  filter: saturate(1.06);
 }
 
 .district-card strong {
-  font-size: 1.25rem;
+  font-size: 1.38rem;
+  line-height: 1.2;
   color: var(--accent-strong);
 }
 
 .district-card span {
   color: var(--muted);
+  line-height: 1.65;
 }
 
 .district-card em {
@@ -1581,12 +1586,14 @@ button,
 }
 
 .district-card--photo {
-  align-content: end;
   border: 0;
+  background-color: #22281f;
   background-position: center;
   background-size: cover;
-  box-shadow: 0 10px 26px rgba(32, 32, 29, 0.14);
+  box-shadow: 0 12px 28px rgba(32, 32, 29, 0.18);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55);
 }
+
 
 .district-card--photo strong,
 .district-card--photo em {
@@ -1594,7 +1601,7 @@ button,
 }
 
 .district-card--photo span {
-  color: #efe8dc;
+  color: #f7efe2;
 }
 
 .district-card--pending {

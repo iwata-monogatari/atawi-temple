@@ -81,10 +81,15 @@ const heroImage = "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?
 // 境内の実写真は「境内フォトギャラリー」等の各セクションで使う（華やかさ重視で選定）
 
 const districtPhotoByDistrictId: Record<string, { src: string; alt: string } | null> = {
-  mitsuke: photoAt("kokubunji-mitsuke", 0),
-  nakaizumi: photoAt("daijoin-nakaizumi", 5),
-  toyoda: photoAt("gyokoji-ikeda", 2),
-  nanbu: photoAt("kindaiji-tenryu", 0),
+  mitsuke: { src: "/assets/temples/kokubunji-mitsuke/hondo.webp", alt: "国分寺の本堂" },
+  nakaizumi: { src: "/assets/temples/daijoin-nakaizumi/approach-gate.webp", alt: "大乗院の参道と門" },
+  toyoda: { src: "/images/temples/gyokoji-ikeda/gyokoji-ikeda-03-main-hall.webp", alt: "行興寺の本堂" },
+  mikuriya: { src: "/assets/temples/renjoji-shingai/sanmon-view-to-hondo.webp", alt: "連城寺の山門越しに見る本堂" },
+  nanbu: { src: "/assets/temples/jurinji-kamiohnogo/romon-gate-and-main-hall.webp", alt: "十輪寺の楼門と本堂" },
+  koyo: { src: "/assets/temples/renjoji-shingai/history-guideboard.webp", alt: "連城寺の境内説明板" },
+  ryuyo: { src: "/assets/temples/ryuunji-toyohama/large-trees-grounds.webp", alt: "竜雲寺境内の大木群" },
+  fukude: { src: "/assets/temples/sojiji-minamijima/approach-hedges-and-pines.webp", alt: "宗次寺境内の参道と生垣" },
+  toyooka: { src: "/assets/temples/jurinji-kamiohnogo/garden-pine-and-stone-marker.webp", alt: "十輪寺境内庭園の松と石標" },
 };
 
 const galleryPhotos = [
