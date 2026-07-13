@@ -2854,5 +2854,74 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "sojiji-minamijima",
+    "hero_image": "/assets/temples/sojiji-minamijima/main-hall-front.webp",
+    "photos": [
+      {
+        "photo_id": "sojiji-main-hall-front-2026",
+        "src": "/assets/temples/sojiji-minamijima/main-hall-front.webp",
+        "alt": "宗次寺の本堂正面",
+        "caption": "宗次寺の本堂正面。石灯籠と植栽の奥に堂宇があり、山号扁額が掲げられている。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "sojiji-oimatsuzan-nameboard-close-2026",
+        "src": "/assets/temples/sojiji-minamijima/oimatsuzan-nameboard-close.webp",
+        "alt": "宗次寺本堂正面の老松山扁額の近景",
+        "caption": "本堂正面の「老松山」扁額の近景。札所資料に見える山号と一致する。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "sojiji-entrance-and-stone-buddha-hall-2026",
+        "src": "/assets/temples/sojiji-minamijima/entrance-and-stone-buddha-hall.webp",
+        "alt": "宗次寺の門前と石仏堂",
+        "caption": "門前から境内の石仏堂を見る。門柱には宗次寺の表示がある。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "sojiji-approach-hedges-and-pines-2026",
+        "src": "/assets/temples/sojiji-minamijima/approach-hedges-and-pines.webp",
+        "alt": "宗次寺境内の参道と生垣",
+        "caption": "生垣と松に囲まれた境内参道。南島集落内の寺院景観を示す。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "sojiji-stone-monument-in-garden-2026",
+        "src": "/assets/temples/sojiji-minamijima/stone-monument-in-garden.webp",
+        "alt": "宗次寺境内墓域側の大型石塔",
+        "caption": "境内墓域側の大型石塔と石灯籠。銘文の判読は今後の課題。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "sojiji-oimatsuzan-nameboard-wide-2026",
+        "src": "/assets/temples/sojiji-minamijima/oimatsuzan-nameboard-wide.webp",
+        "alt": "宗次寺本堂正面の老松山扁額",
+        "caption": "本堂正面の「老松山」扁額を堂宇外観とともに記録。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "sojiji-batokannon-hall-2026",
+        "src": "/assets/temples/sojiji-minamijima/batokannon-hall.webp",
+        "alt": "宗次寺境内の馬頭観音堂",
+        "caption": "境内墓域近くの馬頭観音堂。小祠と石標を確認できる。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
