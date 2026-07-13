@@ -2671,5 +2671,74 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "ryuunji-toyohama",
+    "hero_image": "/assets/temples/ryuunji-toyohama/temple-building-front.webp",
+    "photos": [
+      {
+        "photo_id": "ryuunji-temple-building-front-2026",
+        "src": "/assets/temples/ryuunji-toyohama/temple-building-front.webp",
+        "alt": "竜雲寺の堂宇正面",
+        "caption": "寺号額を掲げる竜雲寺の堂宇正面。現在の境内外観を示す主写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryuunji-temple-nameboard-2026",
+        "src": "/assets/temples/ryuunji-toyohama/temple-nameboard.webp",
+        "alt": "竜雲寺の寺号額",
+        "caption": "玄関上に掲げられた「雁代 龍雲寺」の寺号額。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryuunji-temple-building-side-2026",
+        "src": "/assets/temples/ryuunji-toyohama/temple-building-side.webp",
+        "alt": "竜雲寺の堂宇側面",
+        "caption": "堂宇の側面外観。境内の広さと建物配置を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryuunji-stone-monument-under-tree-2026",
+        "src": "/assets/temples/ryuunji-toyohama/stone-monument-under-tree.webp",
+        "alt": "大木の根元に残る竜雲寺境内の石碑",
+        "caption": "大木の根元に残る石碑。銘文は風化しており、判読を継続する。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryuunji-akibasan-shrine-2026",
+        "src": "/assets/temples/ryuunji-toyohama/akibasan-shrine.webp",
+        "alt": "竜雲寺境内の秋葉山小祠",
+        "caption": "火防の神として祀られる秋葉山小祠。豊浜地域に残る秋葉信仰の現地記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryuunji-stone-buddha-and-small-hall-2026",
+        "src": "/assets/temples/ryuunji-toyohama/stone-buddha-and-small-hall.webp",
+        "alt": "竜雲寺境内の石仏と小堂",
+        "caption": "境内の石仏と小堂。周辺の石造物群とあわせて記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryuunji-large-trees-grounds-2026",
+        "src": "/assets/temples/ryuunji-toyohama/large-trees-grounds.webp",
+        "alt": "竜雲寺境内の大木群",
+        "caption": "境内に立つ大木群。集落の中に残る竜雲寺境内の景観。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
