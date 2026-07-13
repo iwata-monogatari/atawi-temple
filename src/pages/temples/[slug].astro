@@ -323,9 +323,6 @@ const parking = field(dankaInfo?.parking, "調査中");
             referrerpolicy="no-referrer-when-downgrade"
             allowfullscreen
           ></iframe>
-          {!mapEmbedUrl && (
-            <p class="map-runtime-note">Google Maps APIキー未設定のため、Google Mapsの埋め込み地図を表示しています。</p>
-          )}
           <a class="button-link" href={mapUrl} target="_blank" rel="noreferrer">Googleマップで開く</a>
         </section>
 

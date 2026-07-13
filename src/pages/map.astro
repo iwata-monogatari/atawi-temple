@@ -52,9 +52,6 @@ const mapItems = allTemples.map((temple) => {
 });
 const markerCount = mapItems.filter((item) => item.lat !== null && item.lng !== null).length;
 const fallbackMapEmbedUrl = googleMapsWebEmbedUrl();
-const mapRuntimeNote = markerCount > 0 && mapsApiKey
-  ? "座標登録済みの寺院を地区カラーのピンで表示します。"
-  : "現在はGoogle Mapsの広域地図を表示しています。APIキーとlat/lng登録後、寺院ごとのピン表示に切り替わります。";
 const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
 ---
 
@@ -138,7 +135,7 @@ const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
         allowfullscreen
       ></iframe>
     </div>
-    <p class="map-runtime-note">{mapRuntimeNote}</p>
+    <p class="map-runtime-note" hidden></p>
 
     <div class="map-list-heading">
       <h2>寺院リスト</h2>
@@ -259,13 +256,19 @@ const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
     }
 
     function setMapRuntimeNote(message) {
-      if (mapRuntimeNoteEl && message) mapRuntimeNoteEl.textContent = message;
+      if (!mapRuntimeNoteEl) return;
+      if (message) {
+        mapRuntimeNoteEl.textContent = message;
+        mapRuntimeNoteEl.hidden = false;
+      } else {
+        mapRuntimeNoteEl.textContent = "";
+        mapRuntimeNoteEl.hidden = true;
+      }
     }
-
     function quotaBlockedMessage(reason) {
-      if (reason === "monthly_cap_reached") return "ピン付き地図は月間無料枠の安全上限に達したため停止中です。無料の広域地図とGoogleマップリンクは利用できます。";
-      if (reason === "disabled" || reason === "cap_not_configured") return "ピン付き地図は費用抑制のため停止中です。無料の広域地図を表示しています。";
-      return "ピン付き地図の利用状況を確認できないため、無料の広域地図を表示しています。";
+      if (reason === "monthly_cap_reached") return "地図の詳細表示は一時停止中です。寺院リストのGoogleマップリンクをご利用ください。";
+      if (reason === "disabled" || reason === "cap_not_configured") return "地図の詳細表示は一時停止中です。寺院リストから各寺院の場所を確認できます。";
+      return "地図の詳細表示を利用できません。寺院リストから各寺院の場所を確認できます。";
     }
 
     async function reserveDynamicMapLoad() {
@@ -289,9 +292,6 @@ const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
       if (!quota.allowed) {
         setMapRuntimeNote(quotaBlockedMessage(quota.reason));
         return;
-      }
-      if (Number.isFinite(quota.used) && Number.isFinite(quota.cap)) {
-        setMapRuntimeNote(`ピン付き地図を表示しています（月間安全上限 ${quota.used}/${quota.cap}）。`);
       }
       await new Promise((resolve, reject) => {
         const script = document.createElement("script");
@@ -348,7 +348,7 @@ const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
         const fallbackMapSrc = mapCanvas.dataset.fallbackMapSrc || "";
         mapCanvas.innerHTML = fallbackMapSrc
           ? `<iframe class="map-fallback-frame" title="磐田市寺院のGoogleマップ" src="${escapeHtml(fallbackMapSrc)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>`
-          : `<div class="map-placeholder"><strong>地図を読み込めませんでした</strong><span>APIキー、リファラ制限、Maps JavaScript APIの有効化を確認してください。</span></div>`;
+          : `<div class="map-placeholder"><strong>地図を読み込めませんでした</strong><span>下の寺院リストから各寺院の地図を開けます。</span></div>`;
       }
     });
   </script>
