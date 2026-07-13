@@ -53,9 +53,6 @@ const foundedPeriod = "founded_period" in temple && temple.founded_period
 const heritageStatus = "heritage_status" in temple && temple.heritage_status
   ? temple.heritage_status
   : "調査中";
-const visitNotes = "visit_notes" in temple && temple.visit_notes
-  ? temple.visit_notes
-  : "現地確認と寺院資料の調査後に加筆します。";
 const pilgrimageNote = "pilgrimage_note" in temple && temple.pilgrimage_note
   ? temple.pilgrimage_note
   : null;
@@ -69,7 +66,6 @@ const field = (value: string | null | undefined, pending = "調査中") => ({
 });
 const deity = field(temple.main_deity, "調査中・加筆待ち");
 const officialSite = dankaInfo?.official_site;
-const parking = field(dankaInfo?.parking, "調査中");
 ---
 
 <BaseLayout
@@ -324,14 +320,6 @@ const parking = field(dankaInfo?.parking, "調査中");
             allowfullscreen
           ></iframe>
           <a class="button-link" href={mapUrl} target="_blank" rel="noreferrer">Googleマップで開く</a>
-        </section>
-
-        <section class="side-panel">
-          <h2>檀家・参拝情報</h2>
-          <dl class="visit-status-list">
-            <div><dt>駐車場</dt><dd class={parking.pending ? "pending-pill" : "confirmed-pill"}>{parking.text}</dd></div>
-          </dl>
-          <p class="side-note">{visitNotes}</p>
         </section>
 
         <section class="side-panel research-panel">
