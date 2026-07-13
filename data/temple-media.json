@@ -2548,5 +2548,128 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "renjoji-shingai",
+    "hero_image": "/assets/temples/renjoji-shingai/hondo-front.webp",
+    "photos": [
+      {
+        "photo_id": "renjoji-hondo-front-2026",
+        "src": "/assets/temples/renjoji-shingai/hondo-front.webp",
+        "alt": "連城寺の本堂正面",
+        "caption": "連城寺の本堂正面。参道の先に大屋根を構える堂宇を主写真として掲載。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renjoji-sanmon-view-to-hondo-2026",
+        "src": "/assets/temples/renjoji-shingai/sanmon-view-to-hondo.webp",
+        "alt": "連城寺の四脚門越しに見る本堂",
+        "caption": "四脚門越しに本堂を望む。門と参道、本堂の位置関係が分かる。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renjoji-sanmon-and-temple-marker-2026",
+        "src": "/assets/temples/renjoji-shingai/sanmon-and-temple-marker.webp",
+        "alt": "連城寺の寺号石柱と四脚門",
+        "caption": "寺号石柱「連城寺」と四脚門。入口確認用の写真。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renjoji-hondo-side-2026",
+        "src": "/assets/temples/renjoji-shingai/hondo-side.webp",
+        "alt": "連城寺本堂の側面外観",
+        "caption": "境内側から見た本堂側面と植栽。瓦屋根と白壁の構成が分かる。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renjoji-hondo-nameboard-wide-2026",
+        "src": "/assets/temples/renjoji-shingai/hondo-nameboard-wide.webp",
+        "alt": "連城寺本堂正面の三白山扁額",
+        "caption": "本堂正面に掲げられた「三白山」の扁額。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renjoji-hondo-nameboard-close-2026",
+        "src": "/assets/temples/renjoji-shingai/hondo-nameboard-close.webp",
+        "alt": "三白山扁額の近景",
+        "caption": "「三白山」扁額の近景。山号を確認できる。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renjoji-history-guideboard-2026",
+        "src": "/assets/temples/renjoji-shingai/history-guideboard.webp",
+        "alt": "三白山連城寺の境内説明板",
+        "caption": "境内説明板。平重盛創建伝承、秋葉山・稲荷山古墳、経塚古墳出土鏡を紹介している。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renjoji-sanhakuzan-stone-pillar-2026",
+        "src": "/assets/temples/renjoji-shingai/sanhakuzan-stone-pillar.webp",
+        "alt": "三白山を刻んだ連城寺の石柱",
+        "caption": "山号「三白山」を刻んだ石柱。四脚門と本堂を背景に記録。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renjoji-stone-monuments-2026",
+        "src": "/assets/temples/renjoji-shingai/stone-monuments.webp",
+        "alt": "連城寺境内奥の石碑群",
+        "caption": "境内奥の石碑群。墓域・供養空間の一部を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renjoji-shotokuhi-monument-2026",
+        "src": "/assets/temples/renjoji-shingai/shotokuhi-monument.webp",
+        "alt": "連城寺境内の頌徳碑",
+        "caption": "境内の頌徳碑。連城寺周辺の歴史を伝える碑として記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renjoji-daikokuten-statue-2026",
+        "src": "/assets/temples/renjoji-shingai/daikokuten-statue.webp",
+        "alt": "連城寺本堂前の大黒天像と案内板",
+        "caption": "本堂前の大黒天像と案内板。福徳を招く福神として祀られている。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renjoji-ebisu-statue-2026",
+        "src": "/assets/temples/renjoji-shingai/ebisu-statue.webp",
+        "alt": "連城寺本堂前の恵比寿像",
+        "caption": "本堂前の恵比寿像。大黒天像と対になる福神像として記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "renjoji-sanmon-from-grounds-2026",
+        "src": "/assets/temples/renjoji-shingai/sanmon-from-grounds.webp",
+        "alt": "連城寺境内側から見た四脚門",
+        "caption": "境内側から見た四脚門。門の先に周辺道路を望む。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
