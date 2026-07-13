@@ -2740,5 +2740,119 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "jurinji-kamiohnogo",
+    "hero_image": "/assets/temples/jurinji-kamiohnogo/entrance-stone-pillar.webp",
+    "photos": [
+      {
+        "photo_id": "jurinji-entrance-stone-pillar-2026",
+        "src": "/assets/temples/jurinji-kamiohnogo/entrance-stone-pillar.webp",
+        "alt": "十輪寺入口の曹洞宗宝蔵山十輪寺の寺号石柱",
+        "caption": "入口の寺号石柱。「曹洞宗 宝蔵山 十輪寺」と刻まれ、山号・宗派・寺号を確認できる。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jurinji-kannon-statue-and-gate-2026",
+        "src": "/assets/temples/jurinji-kamiohnogo/kannon-statue-and-gate.webp",
+        "alt": "十輪寺の観音像と楼門",
+        "caption": "境内の観音像と楼門。観音霊場としての記録とあわせて境内景観を示す。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jurinji-approach-kannon-and-gate-2026",
+        "src": "/assets/temples/jurinji-kamiohnogo/approach-kannon-and-gate.webp",
+        "alt": "参道沿いの観音像と十輪寺の楼門",
+        "caption": "参道沿いから見る観音像と楼門。境内入口から堂宇へ向かう動線を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jurinji-gate-passage-to-main-hall-2026",
+        "src": "/assets/temples/jurinji-kamiohnogo/gate-passage-to-main-hall.webp",
+        "alt": "十輪寺楼門の木組みと本堂へ続く通路",
+        "caption": "楼門の下から本堂方向を望む。木組みと赤い格子戸が見える。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jurinji-wash-basin-and-garden-2026",
+        "src": "/assets/temples/jurinji-kamiohnogo/wash-basin-and-garden.webp",
+        "alt": "十輪寺境内の手水鉢と庭園",
+        "caption": "本堂前の手水鉢、雨鎖、庭園の通路を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jurinji-main-hall-nameboard-2026",
+        "src": "/assets/temples/jurinji-kamiohnogo/main-hall-nameboard.webp",
+        "alt": "十輪寺本堂正面の宝蔵山扁額",
+        "caption": "本堂正面に掲げられた「宝蔵山」の扁額。山号を現地で確認できる。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jurinji-garden-pine-and-stone-marker-2026",
+        "src": "/assets/temples/jurinji-kamiohnogo/garden-pine-and-stone-marker.webp",
+        "alt": "十輪寺境内庭園の松と石標",
+        "caption": "境内庭園の松と石標。庭園景観を示す写真として掲載。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jurinji-nio-statue-left-2026",
+        "src": "/assets/temples/jurinji-kamiohnogo/nio-statue-left.webp",
+        "alt": "十輪寺楼門の左側仁王像",
+        "caption": "楼門内に安置された仁王像の近景。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jurinji-romon-gate-front-2026",
+        "src": "/assets/temples/jurinji-kamiohnogo/romon-gate-front.webp",
+        "alt": "十輪寺の二層楼門正面",
+        "caption": "二層の楼門正面。境内を代表する建築景観として掲載。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jurinji-romon-gate-and-main-hall-2026",
+        "src": "/assets/temples/jurinji-kamiohnogo/romon-gate-and-main-hall.webp",
+        "alt": "十輪寺の楼門と本堂正面",
+        "caption": "楼門越しに本堂正面を望む。左右の仁王像と本堂の赤い格子戸が見える。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jurinji-nio-statue-right-2026",
+        "src": "/assets/temples/jurinji-kamiohnogo/nio-statue-right.webp",
+        "alt": "十輪寺楼門の右側仁王像",
+        "caption": "楼門内に安置されたもう一体の仁王像の近景。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jurinji-main-hall-front-2026",
+        "src": "/assets/temples/jurinji-kamiohnogo/main-hall-front.webp",
+        "alt": "十輪寺本堂正面",
+        "caption": "十輪寺の本堂正面。赤い格子戸、参道、手水鉢、スロープを含めて記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
