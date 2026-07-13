@@ -9,6 +9,10 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://temple.atawi.link/map/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://temple.atawi.link/sects/</loc>
     <changefreq>weekly</changefreq>
   </url>
@@ -129,11 +133,7 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://temple.atawi.link/sects/shinshinkyo/</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://temple.atawi.link/sects/shinshinkyo-honbu/</loc>
+    <loc>https://temple.atawi.link/sects/related-religious-corporations/</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
