@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import TempleCard from "../../components/TempleCard.astro";
+import type { Temple } from "../../lib/temples";
 import {
   allDistricts,
   getDistrictBySlug,
@@ -27,7 +28,13 @@ function templeHasPhoto(temple: (typeof temples)[number]) {
   return Boolean(media?.hero_image ?? media?.photos?.[0]?.src);
 }
 
-const temples = getTemplesByDistrictId(district.district_id);
+function compareAreaTemples(a: Temple, b: Temple) {
+  const rankA = a.status === "existing" ? 0 : 1;
+  const rankB = b.status === "existing" ? 0 : 1;
+  return rankA - rankB;
+}
+
+const temples = [...getTemplesByDistrictId(district.district_id)].sort(compareAreaTemples);
 const detailedTemples = temples.filter((temple) => hasDetailPage(temple));
 const templesWithPhoto = detailedTemples.filter((temple) => templeHasPhoto(temple));
 const templesWithoutPhoto = detailedTemples.filter((temple) => !templeHasPhoto(temple));
