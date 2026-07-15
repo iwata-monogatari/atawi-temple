@@ -3028,5 +3028,119 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "rinpoin-nishikaizuka",
+    "hero_image": "/assets/temples/rinpoin-nishikaizuka/main-hall-front.webp",
+    "photos": [
+      {
+        "photo_id": "rinpoin-main-hall-front-2026",
+        "src": "/assets/temples/rinpoin-nishikaizuka/main-hall-front.webp",
+        "alt": "林宝院の本堂正面",
+        "caption": "林宝院の本堂正面。西浦山の扁額と参道、左右の花立を含めて記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rinpoin-main-hall-wide-2026",
+        "src": "/assets/temples/rinpoin-nishikaizuka/main-hall-wide.webp",
+        "alt": "林宝院本堂と境内の広角外観",
+        "caption": "境内から見た林宝院本堂の広角外観。掃き整えられた砂利庭と石灯籠を含めて記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rinpoin-main-hall-and-noticeboard-2026",
+        "src": "/assets/temples/rinpoin-nishikaizuka/main-hall-and-noticeboard.webp",
+        "alt": "林宝院本堂と境内掲示板",
+        "caption": "正面参道から見る本堂と境内掲示板。現在の境内構成を示す写真として掲載。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rinpoin-main-hall-side-grounds-2026",
+        "src": "/assets/temples/rinpoin-nishikaizuka/main-hall-side-grounds.webp",
+        "alt": "ソテツ越しに見る林宝院本堂",
+        "caption": "ソテツ越しに見た本堂側面。境内の植栽と建物配置を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rinpoin-grounds-gravel-garden-2026",
+        "src": "/assets/temples/rinpoin-nishikaizuka/grounds-gravel-garden.webp",
+        "alt": "林宝院境内の砂利庭",
+        "caption": "掃き整えられた境内の砂利庭。参道、本堂、周辺堂宇の位置関係が分かる。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rinpoin-jizodo-front-2026",
+        "src": "/assets/temples/rinpoin-nishikaizuka/jizodo-front.webp",
+        "alt": "林宝院境内の地蔵堂",
+        "caption": "境内の地蔵堂。本尊地蔵菩薩を伝える林宝院の堂宇として記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rinpoin-hondo-nameboard-nishiurayama-2026",
+        "src": "/assets/temples/rinpoin-nishikaizuka/hondo-nameboard-nishiurayama.webp",
+        "alt": "林宝院本堂正面の西浦山扁額",
+        "caption": "本堂正面に掲げられた「西浦山」の扁額。山号を確認できる。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rinpoin-origin-stone-monument-2026",
+        "src": "/assets/temples/rinpoin-nishikaizuka/origin-stone-monument.webp",
+        "alt": "西浦山林宝院開創由来碑",
+        "caption": "西浦山林宝院開創由来碑。宗派、本山、本尊、開創由来を刻む境内資料として掲載。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rinpoin-memorial-stone-2026",
+        "src": "/assets/temples/rinpoin-nishikaizuka/memorial-stone.webp",
+        "alt": "林宝院墓域の石碑",
+        "caption": "墓域に建つ石碑。境内に残る石造物として記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rinpoin-sanmon-view-to-jizodo-2026",
+        "src": "/assets/temples/rinpoin-nishikaizuka/sanmon-view-to-jizodo.webp",
+        "alt": "林宝院山門から地蔵堂を望む",
+        "caption": "山門越しに境内の堂宇を望む。入口から境内奥への動線が分かる。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rinpoin-entrance-stone-pillar-2026",
+        "src": "/assets/temples/rinpoin-nishikaizuka/entrance-stone-pillar.webp",
+        "alt": "西浦山林宝院の寺号石柱",
+        "caption": "山門脇の寺号石柱。「西浦山 林宝院」と刻まれ、山号と寺号を確認できる。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rinpoin-stone-lantern-and-grounds-2026",
+        "src": "/assets/temples/rinpoin-nishikaizuka/stone-lantern-and-grounds.webp",
+        "alt": "林宝院境内の石灯籠と砂利庭",
+        "caption": "境内の石灯籠と砂利庭。植栽、墓域、周辺の地蔵像群を含めて記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
