@@ -3142,5 +3142,119 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "myosenji-araide",
+    "hero_image": "/assets/temples/myosenji-araide/community-hall-myosenji-sign.webp",
+    "photos": [
+      {
+        "photo_id": "myosenji-community-hall-myosenji-sign-2026",
+        "src": "/assets/temples/myosenji-araide/community-hall-myosenji-sign.webp",
+        "alt": "新出公会堂に掲げられた曹洞宗明泉寺の表札",
+        "caption": "新出公会堂の入口に掲げられた「曹洞宗 明泉寺」の表札。現地では寺院名が公民館建物に残されている。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myosenji-community-hall-front-2026",
+        "src": "/assets/temples/myosenji-araide/community-hall-front.webp",
+        "alt": "新出公会堂の外観",
+        "caption": "新出公会堂の外観。前身庵または明泉寺に関わる跡地とみられる場所が、地域住民の集会施設として管理されている。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myosenji-field-hokora-wide-2026",
+        "src": "/assets/temples/myosenji-araide/field-hokora-wide.webp",
+        "alt": "畑の中に残る明泉寺ゆかりの祠",
+        "caption": "畑の中に残る小さな祠。寺院建築ではなく、祠と石造物が信仰の痕跡を伝えている。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myosenji-field-hokora-landscape-2026",
+        "src": "/assets/temples/myosenji-araide/field-hokora-landscape.webp",
+        "alt": "田畑の中に点在する明泉寺ゆかりの祠と樹木",
+        "caption": "田畑の中に祠と樹木が点在する景観。周囲には建物よりも土地と墓域の記憶が残る。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myosenji-field-hokora-overview-2026",
+        "src": "/assets/temples/myosenji-araide/field-hokora-overview.webp",
+        "alt": "畑に残る祠周辺の遠景",
+        "caption": "祠周辺の遠景。将来の地域寺院の姿を考える手がかりとして記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myosenji-small-shrine-front-2026",
+        "src": "/assets/temples/myosenji-araide/small-shrine-front.webp",
+        "alt": "明泉寺ゆかりの小祠正面",
+        "caption": "石灯籠の奥に立つ小祠。周囲には墓地と石碑が残る。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myosenji-small-shrine-interior-2026",
+        "src": "/assets/temples/myosenji-araide/small-shrine-interior.webp",
+        "alt": "小祠内部に祀られた仏像と位牌",
+        "caption": "小祠内部。仏像や位牌が祀られ、閉じた寺院の信仰が小さな空間に継承されている。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myosenji-jizo-shrine-front-2026",
+        "src": "/assets/temples/myosenji-araide/jizo-shrine-front.webp",
+        "alt": "墓地脇の地蔵堂",
+        "caption": "墓地脇の地蔵堂。赤い前掛けの石仏が祀られている。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myosenji-memorial-stone-and-graveyard-2026",
+        "src": "/assets/temples/myosenji-araide/memorial-stone-and-graveyard.webp",
+        "alt": "墓地脇に残る石碑",
+        "caption": "墓地脇に残る石碑。背後に墓地が続き、寺院の記憶が墓域とともに残されている。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myosenji-stone-monuments-behind-fence-2026",
+        "src": "/assets/temples/myosenji-araide/stone-monuments-behind-fence.webp",
+        "alt": "垣根越しに見る明泉寺ゆかりの石碑",
+        "caption": "垣根越しに見る石碑群。地域の住宅地と墓地の間に信仰の痕跡が残る。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myosenji-memorial-stones-close-2026",
+        "src": "/assets/temples/myosenji-araide/memorial-stones-close.webp",
+        "alt": "念仏供養塔と明泉寺ゆかりの石碑",
+        "caption": "念仏供養塔などの石碑。前身庵から明泉寺へ続く地域信仰の記憶を伝える。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myosenji-field-stone-shrines-2026",
+        "src": "/assets/temples/myosenji-araide/field-stone-shrines.webp",
+        "alt": "田の畔に残る石祠",
+        "caption": "田の畔に残る石祠。畑の中に残る小さな信仰施設として記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]

@@ -40,6 +40,7 @@ const recentUpdates = allTempleUpdates.slice(0, 5).map((update) => ({
 }));
 
 const pickupExcludedSlugs = new Set(["shinshinkyo-honbu-mitsuke"]);
+const pinnedPickupSlugs = ["myosenji-araide"];
 const pickupPool = allTemples
   .filter((temple) => hasDetailPage(temple) && temple.status === "existing" && !pickupExcludedSlugs.has(temple.slug))
   .map((temple) => {
@@ -64,6 +65,7 @@ const pickupPool = allTemples
   })
   .filter((temple) => Boolean(temple.image));
 const pickupPoolJson = JSON.stringify(pickupPool).replace(/</g, "\\u003c");
+const pinnedPickupSlugsJson = JSON.stringify(pinnedPickupSlugs).replace(/</g, "\\u003c");
 
 const monogatariPickupSlugs = ["kokubunji-mitsuke", "daijoin-nakaizumi", "gyokoji-ikeda", "ioji-kamada"];
 const monogatariPickups = monogatariPickupSlugs
@@ -170,10 +172,11 @@ const galleryPhotos = [
       <p class="small">読み込み中...</p>
     </div>
     <script is:inline type="application/json" id="pickup-temple-data" set:html={pickupPoolJson} />
+    <script is:inline type="application/json" id="pinned-pickup-slugs" set:html={pinnedPickupSlugsJson} />
     <script>
       function createPickupCard(temple: any) {
         const article = document.createElement("article");
-        article.className = "pickup-card";
+        article.className = temple.pinned ? "pickup-card pickup-card--pinned" : "pickup-card";
 
         const link = document.createElement("a");
         link.className = "pickup-card-photo";
@@ -219,32 +222,44 @@ const galleryPhotos = [
 
       function renderPickupTemples() {
         const dataEl = document.getElementById("pickup-temple-data");
+        const pinnedEl = document.getElementById("pinned-pickup-slugs");
         const container = document.getElementById("pickup-temples");
         if (!dataEl || !container) return;
 
         let pool: any[] = [];
+        let pinnedSlugs: string[] = [];
         try {
           pool = JSON.parse(dataEl.textContent || "[]");
+          pinnedSlugs = JSON.parse(pinnedEl?.textContent || "[]");
         } catch {
           pool = [];
+          pinnedSlugs = [];
         }
         if (!Array.isArray(pool) || pool.length === 0) {
           container.innerHTML = "";
           return;
         }
+        if (!Array.isArray(pinnedSlugs)) pinnedSlugs = [];
 
         const count = Math.min(6, pool.length);
+        const pinned = pinnedSlugs
+          .map((slug) => pool.find((temple) => temple.slug === slug))
+          .filter(Boolean)
+          .map((temple) => ({ ...temple, pinned: true }));
+        const pinnedSlugSet = new Set(pinned.map((temple) => temple.slug));
+        const randomPool = pool.filter((temple) => !pinnedSlugSet.has(temple.slug));
         const usedIndexes = new Set<number>();
         const picked: any[] = [];
-        while (picked.length < count) {
-          const index = Math.floor(Math.random() * pool.length);
+        const randomCount = Math.max(0, count - pinned.length);
+        while (picked.length < randomCount && usedIndexes.size < randomPool.length) {
+          const index = Math.floor(Math.random() * randomPool.length);
           if (usedIndexes.has(index)) continue;
           usedIndexes.add(index);
-          picked.push(pool[index]);
+          picked.push(randomPool[index]);
         }
 
         container.innerHTML = "";
-        for (const temple of picked) {
+        for (const temple of [...pinned, ...picked].slice(0, count)) {
           container.appendChild(createPickupCard(temple));
         }
       }

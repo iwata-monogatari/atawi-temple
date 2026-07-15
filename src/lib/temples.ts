@@ -152,7 +152,7 @@ export function getStatusLabel(status: string) {
 }
 
 export function getTempleStatusLabel(temple: Temple) {
-  return getStatusLabel(temple.status);
+  return "status_label" in temple && temple.status_label ? temple.status_label : getStatusLabel(temple.status);
 }
 
 export function getPhotoCategory(categoryId: string | null | undefined) {

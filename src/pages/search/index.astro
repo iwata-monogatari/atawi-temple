@@ -7,6 +7,7 @@ import {
   countTemplesByStatus,
   getSectGroupName,
   getStatusLabel,
+  getTempleStatusLabel,
 } from "../../lib/temples";
 
 const sects = countTemplesBySect();
@@ -19,7 +20,7 @@ const statuses = Object.keys(statusCounts).map((status) => ({
 const data = JSON.stringify(allTemples.map((temple) => ({
   ...temple,
   sect_group: getSectGroupName(temple.sect),
-  display_status_label: getStatusLabel(temple.status),
+  display_status_label: getTempleStatusLabel(temple),
 })));
 const districts = JSON.stringify(allDistricts);
 ---
