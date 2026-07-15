@@ -150,7 +150,7 @@ export const guideArticles: EditorialArticle[] = [
     ],
     bridgeLinks: [
       { label: "墓じまい・改葬の手順を見る", href: "/guide/hakajimai/" },
-      { label: "実家じまい相談室を読む", href: jikkaUrl("guide", "haka-enpo"), event: "guide_to_jikka_click" },
+      { label: "ふじがおか実家カルテを見る", href: jikkaUrl("guide", "haka-enpo"), event: "guide_to_jikka_click" },
     ],
   },
   {
@@ -213,7 +213,7 @@ export const guideArticles: EditorialArticle[] = [
     ],
     bridgeLinks: [
       { label: "お墓が遠い方の選択肢を見る", href: "/guide/haka-enpo/" },
-      { label: "実家じまい相談室を読む", href: jikkaUrl("guide", "hakajimai"), event: "guide_to_jikka_click" },
+      { label: "ふじがおか実家カルテを見る", href: jikkaUrl("guide", "hakajimai"), event: "guide_to_jikka_click" },
     ],
   },
   {
@@ -265,7 +265,7 @@ export const guideArticles: EditorialArticle[] = [
     ],
     bridgeLinks: [
       { label: "お寺は今、どうなっているのか", href: "/tokushu/jiin-no-korekara/" },
-      { label: "実家じまい相談室を読む", href: jikkaUrl("guide", "danka"), event: "guide_to_jikka_click" },
+      { label: "ふじがおか実家カルテを見る", href: jikkaUrl("guide", "danka"), event: "guide_to_jikka_click" },
     ],
   },
   {
@@ -323,7 +323,7 @@ export const guideArticles: EditorialArticle[] = [
     ],
     bridgeLinks: [
       { label: "お墓が遠い方の選択肢を見る", href: "/guide/haka-enpo/" },
-      { label: "実家じまい相談室を読む", href: jikkaUrl("guide", "eitaikuyo"), event: "guide_to_jikka_click" },
+      { label: "ふじがおか実家カルテを見る", href: jikkaUrl("guide", "eitaikuyo"), event: "guide_to_jikka_click" },
     ],
   },
   {
@@ -375,7 +375,7 @@ export const guideArticles: EditorialArticle[] = [
     ],
     bridgeLinks: [
       { label: "お盆版チェックリストを見る", href: "/obon/" },
-      { label: "実家じまい相談室を読む", href: jikkaUrl("guide", "kisei-check"), event: "guide_to_jikka_click" },
+      { label: "ふじがおか実家カルテを見る", href: jikkaUrl("guide", "kisei-check"), event: "guide_to_jikka_click" },
     ],
   },
 ];

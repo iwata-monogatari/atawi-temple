@@ -375,10 +375,12 @@ button,
 
 .article-body {
   display: grid;
+  min-width: 0;
   gap: 46px;
 }
 
 .article-section {
+  min-width: 0;
   border-top: 3px solid var(--ink);
   padding-top: 18px;
 }
@@ -472,6 +474,12 @@ button,
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+.article-section .cta-row {
+  max-width: 820px;
+  min-width: 0;
+  width: 100%;
 }
 
 .inline-link-row {
@@ -2714,6 +2722,8 @@ th {
 
   .consultation-card .button-link,
   .cta-row .button-link {
+    box-sizing: border-box;
+    min-width: 0;
     width: 100%;
   }
 
