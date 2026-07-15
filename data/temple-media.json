@@ -3256,5 +3256,218 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "ioji-kamada",
+    "hero_image": "/assets/temples/ioji-kamada/sanmon-front.webp",
+    "photos": [
+      {
+        "photo_id": "ioji-sanmon-front-2026",
+        "src": "/assets/temples/ioji-kamada/sanmon-front.webp",
+        "alt": "医王寺の山門正面",
+        "caption": "医王寺の山門正面。緑に包まれた参道の入口から境内を望む。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-hondo-front-green-roof-2026",
+        "src": "/assets/temples/ioji-kamada/hondo-front-green-roof.webp",
+        "alt": "緑青色の屋根をもつ医王寺本堂正面",
+        "caption": "医王寺本堂の正面。緑青色の屋根と庭園の植栽を含めて記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-sanmon-view-out-2026",
+        "src": "/assets/temples/ioji-kamada/sanmon-view-out.webp",
+        "alt": "山門から参道を振り返る景観",
+        "caption": "山門から参道を振り返る。市指定名勝「医王寺庭園及び参道」の入口部を示す。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-sanmon-view-in-2026",
+        "src": "/assets/temples/ioji-kamada/sanmon-view-in.webp",
+        "alt": "山門の扉越しに見る医王寺境内",
+        "caption": "山門の扉越しに見る境内。苔庭、石畳、堂宇の配置が分かる。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-entrance-marker-noticeboard-2026",
+        "src": "/assets/temples/ioji-kamada/entrance-marker-noticeboard.webp",
+        "alt": "鎌田山医王寺の寺号柱と掲示板",
+        "caption": "「真言宗智山派 鎌田山 医王寺」の寺号柱と掲示板。毎月8日の薬師如来縁日や写経会の案内が掲示されている。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-tree-lined-approach-2026",
+        "src": "/assets/temples/ioji-kamada/tree-lined-approach.webp",
+        "alt": "樹木に囲まれた医王寺参道",
+        "caption": "樹木に囲まれた参道。名勝指定を受ける参道景観の一部として記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-yakushido-front-2026",
+        "src": "/assets/temples/ioji-kamada/yakushido-front.webp",
+        "alt": "医王寺の薬師如来を祀る堂宇正面",
+        "caption": "薬師如来を祀る堂宇正面。遠州四十九薬師第46番札所ののぼりが立つ。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-yakushido-interior-2026",
+        "src": "/assets/temples/ioji-kamada/yakushido-interior.webp",
+        "alt": "薬師堂内の薬師如来像と納経所案内",
+        "caption": "堂内の薬師如来像と納経所案内。札所としての現在の信仰を伝える。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-entrance-marker-wide-2026",
+        "src": "/assets/temples/ioji-kamada/entrance-marker-wide.webp",
+        "alt": "鎌田山医王寺の寺号柱と参道入口",
+        "caption": "鎌田山医王寺の寺号柱と参道入口。門前から境内林へ続く景観。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-bochu-school-site-wide-2026",
+        "src": "/assets/temples/ioji-kamada/bochu-school-site-wide.webp",
+        "alt": "坊中学校の跡案内板と石碑周辺",
+        "caption": "坊中学校の跡案内板と忠霊塔周辺。明治期の地域教育史を伝える場所。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-garden-path-green-2026",
+        "src": "/assets/temples/ioji-kamada/garden-path-green.webp",
+        "alt": "医王寺庭園内の石畳と植栽",
+        "caption": "庭園内の石畳と植栽。枯山水庭園と参道の落ち着いた景観。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-middle-gate-approach-2026",
+        "src": "/assets/temples/ioji-kamada/middle-gate-approach.webp",
+        "alt": "石積みの間を進む医王寺参道",
+        "caption": "石積みの間を進む参道と中門。境内奥へ向かう導線を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-bochu-school-site-sign-2026",
+        "src": "/assets/temples/ioji-kamada/bochu-school-site-sign.webp",
+        "alt": "磐田市文化財課による坊中学校の跡説明板",
+        "caption": "磐田市文化財課による「坊中学校の跡」説明板。医王寺住職が開いた学校の歴史を伝える。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-garden-stone-paving-2026",
+        "src": "/assets/temples/ioji-kamada/garden-stone-paving.webp",
+        "alt": "医王寺庭園の苔と石畳",
+        "caption": "苔の庭と石畳。庭園の石組み、参道、植栽を近くから記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-chozuya-interior-2026",
+        "src": "/assets/temples/ioji-kamada/chozuya-interior.webp",
+        "alt": "医王寺の手水舎内部",
+        "caption": "手水舎内部。手水鉢と休憩できる空間が残る。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-stone-lantern-2026",
+        "src": "/assets/temples/ioji-kamada/stone-lantern.webp",
+        "alt": "医王寺境内の石灯籠",
+        "caption": "境内の石灯籠。参道脇の石造物として記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-hondo-and-garden-side-2026",
+        "src": "/assets/temples/ioji-kamada/hondo-and-garden-side.webp",
+        "alt": "本堂と庭園を側面から見る景観",
+        "caption": "本堂と庭園を側面から見る。石造物とソテツを含む境内構成が分かる。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-side-approach-big-tree-2026",
+        "src": "/assets/temples/ioji-kamada/side-approach-big-tree.webp",
+        "alt": "大木の下を進む医王寺の側参道",
+        "caption": "大木の下を進む側参道。境内林と墓域、堂宇の位置関係が分かる。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-garden-path-from-steps-2026",
+        "src": "/assets/temples/ioji-kamada/garden-path-from-steps.webp",
+        "alt": "階段上から見る医王寺庭園参道",
+        "caption": "階段上から見る庭園参道。樹木に囲まれた名勝の参道景観。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-hondo-garden-wide-2026",
+        "src": "/assets/temples/ioji-kamada/hondo-garden-wide.webp",
+        "alt": "庭園越しに見る医王寺本堂",
+        "caption": "庭園越しに見る本堂。苔、石畳、植栽、堂宇を広く記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-chureito-front-2026",
+        "src": "/assets/temples/ioji-kamada/chureito-front.webp",
+        "alt": "医王寺境内の忠霊塔",
+        "caption": "境内の忠霊塔。医王寺の年中行事にも戦没者慰霊法要が伝えられる。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-jizo-statue-garden-2026",
+        "src": "/assets/temples/ioji-kamada/jizo-statue-garden.webp",
+        "alt": "石積みと地蔵像のある医王寺境内",
+        "caption": "石積みと地蔵像。庭園内に残る石仏と祈りの場を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ioji-rear-approach-shade-2026",
+        "src": "/assets/temples/ioji-kamada/rear-approach-shade.webp",
+        "alt": "木陰の医王寺裏参道",
+        "caption": "木陰の参道。境内奥へ続く静かな導線を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
