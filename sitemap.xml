@@ -21,6 +21,18 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://temple.atawi.link/obon/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/guide/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/tokushu/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://temple.atawi.link/updates/</loc>
     <changefreq>weekly</changefreq>
   </url>
@@ -146,6 +158,42 @@
   </url>
   <url>
     <loc>https://temple.atawi.link/sects/independent/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/guide/haka-enpo/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/guide/hakajimai/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/guide/danka/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/guide/eitaikuyo/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/guide/kisei-check/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/tokushu/houyou-sahou/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/tokushu/jiin-no-korekara/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/tokushu/sotetsu/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/tokushu/kenchiku/</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>

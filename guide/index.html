@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="ja"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>お墓・檀家・実家じまいの基礎ガイド｜ATAWI TEMPLE</title><meta name="description" content="磐田のお寺やお墓を調べる方へ。遠方管理、墓じまい、檀家、永代供養、帰省チェックを中立に整理します。"><meta name="theme-color" content="#2f4b2b"><link rel="canonical" href="https://temple.atawi.link/guide/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="manifest" href="/site.webmanifest"><script defer src="https://fujigaoka-analytics-worker.hiroyukio0122.workers.dev/tracker.js" data-site="atawi-temple" data-fujigaoka-analytics="true"></script><link rel="stylesheet" href="/_astro/index.8KS_qx7b.css"></head> <body> <header class="site-header"> <a class="brand" href="/"> <img src="/assets/brand/atawi-temple-mark.svg" alt="" width="48" height="48"> <span> <small>磐田市のお寺・寺院データベース</small> <strong>ATAWI TEMPLE</strong> </span> </a> <nav aria-label="主要ナビゲーション"> <a href="/temples/">寺院一覧</a> <a href="/map/">地図</a> <a href="/areas/">9地区</a> <a href="/sects/">宗派・関連法人</a> <a href="/obon/">お盆チェック</a> <a href="/guide/">ガイド</a> <a href="/tokushu/">特集</a> <a href="/status/">調査状況</a> <a href="/search/">検索</a> <a href="/editorial-policy/">編集方針</a> <a href="/correction/">情報提供掲示板</a> </nav> </header> <aside class="seasonal-banner" data-obon-banner hidden> <a href="/obon/" data-track-click="obon_banner_click">お盆の帰省前に ─ 実家とお墓のチェックリストを公開しました →</a> <button type="button" data-obon-banner-close aria-label="お知らせを閉じる">×</button> </aside> <main>  <section class="page-title"> <p class="eyebrow">Guide</p> <h1>お墓・檀家・実家じまいの基礎ガイド</h1> <p class="lead">寺院情報を調べたあと、家族で何を確認すればよいか。お墓、檀家、実家の管理を、売却ありきではなく順番に整理します。</p> </section> <section class="section"> <div class="article-card-grid"> <a class="reading-card" href="/guide/haka-enpo/"> <span>お墓と実家</span> <h2>お墓が遠い方へ</h2> <p>遠方から磐田のお墓を守る選択肢</p> <small>更新 2026.07.14</small> </a><a class="reading-card" href="/guide/hakajimai/"> <span>手続き</span> <h2>墓じまい・改葬の手順</h2> <p>磐田市の場合に確認する順番</p> <small>更新 2026.07.14</small> </a><a class="reading-card" href="/guide/danka/"> <span>檀家</span> <h2>檀家とお布施の基礎知識</h2> <p>菩提寺と話す前に整えておきたいこと</p> <small>更新 2026.07.14</small> </a><a class="reading-card" href="/guide/eitaikuyo/"> <span>供養</span> <h2>永代供養という選択肢</h2> <p>承継者がいない・遠方で守れないときに考えること</p> <small>更新 2026.07.14</small> </a><a class="reading-card" href="/guide/kisei-check/"> <span>帰省</span> <h2>親の家、帰省で見るべき10項目</h2> <p>お盆・年末年始に、写真だけでも残すチェックリスト</p> <small>更新 2026.07.14</small> </a> </div> </section>  </main> <footer class="site-footer"> <p>運営：富士ヶ丘サービス</p> <nav aria-label="フッターナビゲーション"> <a href="/about/">運営者情報</a> <a href="/map/">地図</a> <a href="/status/">調査状況</a> <a href="/sects/">宗派・関連法人</a> <a href="/obon/">お盆チェック</a> <a href="/guide/">基礎ガイド</a> <a href="/tokushu/">特集・読みもの</a> <a href="/editorial-policy/">編集方針</a> <a href="/correction/">情報提供掲示板</a> <a href="/privacy/">プライバシーポリシー</a> <a href="https://iwata-monogatari.net/">磐田物語</a> <a href="https://fudosan.atawi.link/">実家・相続・空き家相談</a> </nav> <p class="small">姉妹サイト：磐田物語 ─ 磐田の歴史読み物</p> <p class="small">ATAWI TEMPLEは各寺院の公式サイトではありません。</p> </footer> <script>
+      // @ts-nocheck
+      (function () {
+        var banner = document.querySelector("[data-obon-banner]");
+        if (!banner) return;
+        var storageKey = "atawi-temple-obon-banner-2026";
+        var now = new Date();
+        var jstParts = new Intl.DateTimeFormat("en-CA", {
+          timeZone: "Asia/Tokyo",
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+        }).formatToParts(now).reduce(function (acc, part) {
+          if (part.type !== "literal") acc[part.type] = part.value;
+          return acc;
+        }, {});
+        var today = jstParts.year + "-" + jstParts.month + "-" + jstParts.day;
+        var inSeason = today >= "2026-07-15" && today <= "2026-08-31";
+        try {
+          if (inSeason && window.localStorage.getItem(storageKey) !== "closed") {
+            banner.hidden = false;
+          }
+        } catch (_) {
+          if (inSeason) banner.hidden = false;
+        }
+        var closeButton = document.querySelector("[data-obon-banner-close]");
+        if (!closeButton) return;
+        closeButton.addEventListener("click", function () {
+          banner.hidden = true;
+          try {
+            window.localStorage.setItem(storageKey, "closed");
+          } catch (_) {}
+        });
+      })();
+    </script> </body> </html>
