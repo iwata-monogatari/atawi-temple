@@ -3556,5 +3556,164 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "zenkyuin-kamada",
+    "hero_image": "/assets/temples/zenkyuin-kamada/hondo-main-front.webp",
+    "photos": [
+      {
+        "photo_id": "zenkyuin-kamada-01",
+        "src": "/assets/temples/zenkyuin-kamada/hondo-main-front.webp",
+        "alt": "全久院本堂正面",
+        "caption": "境内正面から見る全久院本堂。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkyuin-kamada-02",
+        "src": "/assets/temples/zenkyuin-kamada/brick-wall-and-old-stones.webp",
+        "alt": "全久院境内の煉瓦塀と石造物",
+        "caption": "煉瓦塀と古い石造物が残る境内の一角。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkyuin-kamada-03",
+        "src": "/assets/temples/zenkyuin-kamada/reception-hall-front.webp",
+        "alt": "全久院の受付堂宇",
+        "caption": "受付案内が掲げられた堂宇。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkyuin-kamada-04",
+        "src": "/assets/temples/zenkyuin-kamada/ennogyosha-sign-close.webp",
+        "alt": "全久院境内の役の行者案内板",
+        "caption": "役の行者の由来を記した案内板。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkyuin-kamada-05",
+        "src": "/assets/temples/zenkyuin-kamada/small-hall-and-temple-marker.webp",
+        "alt": "全久院の小堂と寺号石柱",
+        "caption": "寺号石柱と小堂を望む。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkyuin-kamada-06",
+        "src": "/assets/temples/zenkyuin-kamada/compound-roofs-and-garden.webp",
+        "alt": "全久院境内の堂宇と庭",
+        "caption": "複数の堂宇と庭木が並ぶ境内。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkyuin-kamada-07",
+        "src": "/assets/temples/zenkyuin-kamada/sotetsu-garden.webp",
+        "alt": "全久院境内のソテツ",
+        "caption": "境内のソテツと庭木。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkyuin-kamada-08",
+        "src": "/assets/temples/zenkyuin-kamada/small-shrine-front.webp",
+        "alt": "全久院境内の小堂正面",
+        "caption": "石灯籠を前にした小堂。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkyuin-kamada-09",
+        "src": "/assets/temples/zenkyuin-kamada/jizo-shelter.webp",
+        "alt": "全久院境内の地蔵堂",
+        "caption": "赤い帽子の石仏を祀る小堂。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkyuin-kamada-10",
+        "src": "/assets/temples/zenkyuin-kamada/hondo-roof-detail.webp",
+        "alt": "全久院本堂の屋根意匠",
+        "caption": "本堂正面上部の意匠。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkyuin-kamada-11",
+        "src": "/assets/temples/zenkyuin-kamada/approach-to-hondo.webp",
+        "alt": "全久院本堂への参道",
+        "caption": "参道から本堂を望む。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkyuin-kamada-12",
+        "src": "/assets/temples/zenkyuin-kamada/temple-name-stone-and-marker.webp",
+        "alt": "護国山全久院の寺号石柱",
+        "caption": "護国山全久院と刻まれた寺号石柱。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkyuin-kamada-13",
+        "src": "/assets/temples/zenkyuin-kamada/ennogyosha-origin-board.webp",
+        "alt": "役の行者の行事由来板",
+        "caption": "役の行者の行事由来を伝える案内板。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkyuin-kamada-14",
+        "src": "/assets/temples/zenkyuin-kamada/brick-wall-and-gate-side.webp",
+        "alt": "全久院山門と煉瓦塀",
+        "caption": "大木と煉瓦塀越しに見る山門。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkyuin-kamada-15",
+        "src": "/assets/temples/zenkyuin-kamada/sanmon-front.webp",
+        "alt": "全久院山門正面",
+        "caption": "石灯籠と札所案内が並ぶ山門正面。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkyuin-kamada-16",
+        "src": "/assets/temples/zenkyuin-kamada/old-stone-monument.webp",
+        "alt": "全久院境内の古い石碑",
+        "caption": "小堂近くに残る古い石碑。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkyuin-kamada-17",
+        "src": "/assets/temples/zenkyuin-kamada/precinct-wide-from-road.webp",
+        "alt": "道路側から見る全久院境内",
+        "caption": "道路側から山門と境内を望む。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
