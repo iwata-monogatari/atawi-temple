@@ -2589,6 +2589,12 @@ th {
   background-position: center 42%;
 }
 
+.monogatari-index-box::after {
+  inset: 0;
+  height: auto;
+  background: linear-gradient(90deg, rgba(255, 253, 248, 0.96) 0%, rgba(255, 253, 248, 0.9) 48%, rgba(255, 253, 248, 0.44) 70%, rgba(255, 253, 248, 0.08) 100%);
+}
+
 .fudosan-index-box {
   background-color: #9fe7ff;
   background-position: center 45%;
