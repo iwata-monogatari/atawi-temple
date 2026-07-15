@@ -4,21 +4,34 @@ import { getDistrictName, getTempleMediaBySlug, getTempleStatusLabel, hasDetailP
 
 interface Props {
   temple: Temple;
+  variant?: "default" | "area-result";
 }
 
-const { temple } = Astro.props;
+const { temple, variant = "default" } = Astro.props;
 const districtName = getDistrictName(temple.district_id);
 const showKana = !isUnknownValue(temple.name_kana);
 const media = getTempleMediaBySlug(temple.slug);
 const cardImage = media?.hero_image ?? media?.photos[0]?.src;
 const cardImageAlt = media?.photos.find((photo) => photo.src === cardImage)?.alt ?? temple.name + "の代表写真";
 const detailPageAvailable = hasDetailPage(temple);
+const isAreaResult = variant === "area-result";
 const cardSummary = "page_summary" in temple && typeof temple.page_summary === "string" && temple.page_summary
   ? temple.page_summary
   : `${districtName}地区に所在する${temple.sect}の寺院です。公式名簿の基礎情報をもとに掲載しています。`;
+const factItems = isAreaResult
+  ? [
+      { label: "住所", value: temple.address },
+      { label: "宗派", value: temple.sect },
+    ]
+  : [
+      { label: "住所", value: temple.address },
+      { label: "宗派", value: temple.sect },
+      { label: "ご本尊", value: knownValue(temple.main_deity) },
+      { label: "創建・年代", value: knownValue("founded_period" in temple ? temple.founded_period : null, "調査中") },
+    ];
 ---
 
-<article class="temple-card">
+<article class:list={["temple-card", { "temple-card--area-result": isAreaResult }]}>
   {
     cardImage ? (
       detailPageAvailable ? (
@@ -30,32 +43,26 @@ const cardSummary = "page_summary" in temple && typeof temple.page_summary === "
           <img src={cardImage} alt={cardImageAlt} loading="lazy" />
         </div>
       )
+    ) : isAreaResult ? (
+      <div class="temple-card-photo temple-card-photo--placeholder" aria-hidden="true"></div>
     ) : null
   }
-  <div class="card-topline">
-    <span class={`status status-${temple.status}`}>{getTempleStatusLabel(temple)}</span>
-    <span>{districtName}</span>
+  <div class="temple-card-body">
+    <div class="card-topline">
+      <span class={`status status-${temple.status}`}>{getTempleStatusLabel(temple)}</span>
+      <span>{districtName}</span>
+    </div>
+    <h3>{detailPageAvailable ? <a href={`/temples/${temple.slug}/`}>{temple.name}</a> : temple.name}</h3>
+    {showKana && <p class="kana">{temple.name_kana}</p>}
+    <dl class="compact-list">
+      {factItems.map((item) => (
+        <div>
+          <dt>{item.label}</dt>
+          <dd>{item.value}</dd>
+        </div>
+      ))}
+    </dl>
+    <p class="temple-card-summary">{cardSummary}</p>
+    {!detailPageAvailable && <p class="pending-text">個別ページは公開していません。検索記録として表示しています。</p>}
   </div>
-  <h3>{detailPageAvailable ? <a href={`/temples/${temple.slug}/`}>{temple.name}</a> : temple.name}</h3>
-  {showKana && <p class="kana">{temple.name_kana}</p>}
-  <dl class="compact-list">
-    <div>
-      <dt>住所</dt>
-      <dd>{temple.address}</dd>
-    </div>
-    <div>
-      <dt>宗派</dt>
-      <dd>{temple.sect}</dd>
-    </div>
-    <div>
-      <dt>ご本尊</dt>
-      <dd>{knownValue(temple.main_deity)}</dd>
-    </div>
-    <div>
-      <dt>創建・年代</dt>
-      <dd>{knownValue("founded_period" in temple ? temple.founded_period : null, "調査中")}</dd>
-    </div>
-  </dl>
-  <p>{cardSummary}</p>
-  {!detailPageAvailable && <p class="pending-text">個別ページは公開していません。検索記録として表示しています。</p>}
 </article>

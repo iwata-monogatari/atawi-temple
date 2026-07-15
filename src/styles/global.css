@@ -1595,12 +1595,143 @@ button,
   gap: 16px;
 }
 
+.area-hero {
+  --district-color: var(--accent);
+  --area-hero-image: linear-gradient(135deg, rgba(47, 75, 43, 0.92), rgba(32, 32, 29, 0.86));
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.42fr);
+  gap: 28px;
+  align-items: end;
+  width: min(1120px, calc(100% - 32px));
+  margin: 18px auto 0;
+  padding: 28px 0 24px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.area-hero-copy {
+  min-width: 0;
+}
+
+.area-hero .eyebrow {
+  color: var(--district-color);
+  font-weight: 800;
+}
+
+.area-hero h1 {
+  max-width: 760px;
+  margin-bottom: 12px;
+  font-size: clamp(2.2rem, 4.5vw, 3.65rem);
+}
+
+.area-hero-copy > p:not(.eyebrow) {
+  max-width: 720px;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 1.06rem;
+}
+
+.area-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.area-text-link {
+  font-weight: 800;
+}
+
+.area-hero-visual {
+  display: grid;
+  min-height: 218px;
+  align-content: end;
+  overflow: hidden;
+  border-radius: 8px;
+  padding: 22px;
+  background:
+    linear-gradient(180deg, rgba(20, 22, 16, 0.04) 0%, rgba(20, 22, 16, 0.78) 100%),
+    var(--area-hero-image);
+  background-color: var(--district-color);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  box-shadow: 0 18px 36px rgba(32, 32, 29, 0.18);
+}
+
+.area-hero-visual strong {
+  font-size: clamp(3rem, 7vw, 5.2rem);
+  line-height: 0.9;
+}
+
+.area-hero-visual span {
+  color: #f7efe2;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.area-stat-strip {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.area-stat-strip div {
+  display: grid;
+  gap: 2px;
+  padding: 11px 18px;
+  border-right: 1px solid var(--line);
+}
+
+.area-stat-strip div:first-child {
+  padding-left: 0;
+}
+
+.area-stat-strip div:last-child {
+  border-right: 0;
+}
+
+.area-stat-strip strong {
+  color: var(--district-color);
+  font-size: 1.85rem;
+  line-height: 1;
+}
+
+.area-stat-strip span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.area-results-section {
+  padding-top: 28px;
+}
+
+.area-results-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 18px;
+}
+
+.area-results-heading h2 {
+  margin-bottom: 0;
+}
+
 .area-count-summary {
-  margin: -8px 0 24px;
+  margin: 0;
+  color: var(--muted);
+  text-align: right;
 }
 
 .area-temple-group {
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 
 .area-temple-group:last-child {
@@ -1613,18 +1744,33 @@ button,
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 14px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--line);
+  padding: 0 0 9px;
+  border-bottom: 2px solid var(--ink);
 }
 
 .area-group-heading h3 {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.22rem;
 }
 
 .area-group-heading .small {
   color: var(--muted);
   text-align: right;
+}
+
+.area-result-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.area-result-grid--plain,
+.area-result-grid--pending {
+  grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr));
+}
+
+.area-temple-group--pending .area-group-heading {
+  border-bottom-color: var(--warn);
 }
 
 .pickup-grid {
@@ -1981,9 +2127,134 @@ button,
   outline-offset: 2px;
 }
 
+.temple-card-photo--placeholder {
+  position: relative;
+  background:
+    linear-gradient(135deg, rgba(47, 75, 43, 0.18), rgba(193, 154, 73, 0.22)),
+    var(--soft);
+}
+
+.temple-card-photo--placeholder::before {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(47, 75, 43, 0.38);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+}
+
+.temple-card--area-result {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  min-height: 174px;
+  overflow: hidden;
+  padding: 0;
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
+}
+
+.temple-card--area-result:hover {
+  border-color: rgba(47, 75, 43, 0.38);
+  box-shadow: 0 16px 30px rgba(32, 32, 29, 0.12);
+  transform: translateY(-2px);
+}
+
+.temple-card--area-result .temple-card-photo {
+  width: 100%;
+  height: 100%;
+  min-height: 174px;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.temple-card--area-result .temple-card-photo img {
+  transition: transform 0.32s ease;
+}
+
+.temple-card--area-result:hover .temple-card-photo img {
+  transform: scale(1.05);
+}
+
+.temple-card-body {
+  min-width: 0;
+}
+
+.temple-card--area-result .temple-card-body {
+  display: grid;
+  align-content: start;
+  padding: 14px 16px 13px;
+}
+
+.temple-card--area-result .card-topline {
+  align-items: center;
+  margin-bottom: 7px;
+  font-size: 0.78rem;
+}
+
+.temple-card--area-result .status {
+  padding: 1px 8px;
+  font-size: 0.72rem;
+}
+
+.temple-card--area-result h3 {
+  margin-bottom: 1px;
+  font-size: 1.18rem;
+  line-height: 1.3;
+}
+
+.temple-card--area-result .kana {
+  margin-bottom: 7px;
+  font-size: 0.82rem;
+  line-height: 1.25;
+}
+
+.temple-card--area-result .compact-list {
+  gap: 3px;
+  margin: 9px 0 0;
+}
+
+.temple-card--area-result .compact-list div {
+  grid-template-columns: 3.8em minmax(0, 1fr);
+  gap: 8px;
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.temple-card-summary {
+  margin-bottom: 0;
+}
+
+.temple-card--area-result .temple-card-summary {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 9px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.58;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.temple-card--area-result .pending-text {
+  margin: 7px 0 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
 .temple-card h3 {
   font-size: 1.35rem;
   margin-bottom: 2px;
+}
+
+.temple-card--area-result h3 {
+  margin-bottom: 1px;
+  font-size: 1.18rem;
+  line-height: 1.3;
 }
 
 .card-topline {
@@ -2299,6 +2570,31 @@ th {
     margin-top: -28px;
   }
 
+  .area-hero {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 26px;
+  }
+
+  .area-hero-visual {
+    min-height: 210px;
+  }
+
+  .area-results-heading,
+  .area-group-heading {
+    display: grid;
+    align-items: start;
+  }
+
+  .area-count-summary,
+  .area-group-heading .small {
+    text-align: left;
+  }
+
+  .area-result-grid {
+    grid-template-columns: 1fr;
+  }
+
   .compact-list div,
   .info-list div {
     grid-template-columns: 1fr;
@@ -2404,6 +2700,98 @@ th {
 }
 
 @media (max-width: 560px) {
+  .area-hero {
+    gap: 15px;
+    padding: 22px 0 18px;
+  }
+
+  .area-hero h1 {
+    font-size: 2.28rem;
+    line-height: 1.08;
+  }
+
+  .area-hero-copy > p:not(.eyebrow) {
+    font-size: 0.98rem;
+  }
+
+  .area-actions {
+    margin-top: 18px;
+  }
+
+  .area-hero-visual {
+    min-height: 128px;
+    padding: 16px;
+  }
+
+  .area-hero-visual strong {
+    font-size: 3.1rem;
+  }
+
+  .area-actions .button-link {
+    width: 100%;
+  }
+
+  .area-stat-strip {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .area-stat-strip div {
+    border-right: 1px solid var(--line);
+    border-bottom: 0;
+    padding: 8px 6px;
+  }
+
+  .area-stat-strip div:first-child {
+    padding-left: 0;
+  }
+
+  .area-stat-strip div:nth-child(2) {
+    border-right: 1px solid var(--line);
+  }
+
+  .area-stat-strip div:nth-last-child(-n + 2) {
+    border-bottom: 0;
+  }
+
+  .area-stat-strip div:last-child {
+    border-right: 0;
+  }
+
+  .area-stat-strip strong {
+    font-size: 1.45rem;
+  }
+
+  .area-stat-strip span {
+    font-size: 0.68rem;
+    line-height: 1.35;
+  }
+
+  .temple-card--area-result {
+    grid-template-columns: 112px minmax(0, 1fr);
+    min-height: 148px;
+  }
+
+  .temple-card--area-result .temple-card-photo {
+    min-height: 148px;
+  }
+
+  .temple-card--area-result .temple-card-body {
+    padding: 12px;
+  }
+
+  .temple-card--area-result h3 {
+    font-size: 1.06rem;
+  }
+
+  .temple-card--area-result .compact-list div {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .temple-card--area-result .temple-card-summary {
+    -webkit-line-clamp: 1;
+  }
+
   .temple-masthead {
     padding-top: 34px;
   }

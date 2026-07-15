@@ -4,6 +4,7 @@ import TempleCard from "../../components/TempleCard.astro";
 import type { Temple } from "../../lib/temples";
 import {
   allDistricts,
+  districtColors,
   getDistrictBySlug,
   getTempleMediaBySlug,
   getTemplesByDistrictId,
@@ -23,9 +24,13 @@ if (!district) {
   return Astro.redirect("/areas/");
 }
 
-function templeHasPhoto(temple: (typeof temples)[number]) {
+function getTempleCardImage(temple: Temple) {
   const media = getTempleMediaBySlug(temple.slug);
-  return Boolean(media?.hero_image ?? media?.photos?.[0]?.src);
+  return media?.hero_image ?? media?.photos?.[0]?.src ?? "";
+}
+
+function templeHasPhoto(temple: Temple) {
+  return Boolean(getTempleCardImage(temple));
 }
 
 function compareAreaTemples(a: Temple, b: Temple) {
@@ -40,11 +45,16 @@ const templesWithPhoto = detailedTemples.filter((temple) => templeHasPhoto(templ
 const templesWithoutPhoto = detailedTemples.filter((temple) => !templeHasPhoto(temple));
 const unresearchedTemples = temples.filter((temple) => !hasDetailPage(temple));
 const monogatariDistrictUrl = getMonogatariDistrictUrl(district.district_id);
+const districtColor = districtColors[district.district_id] || districtColors.unassigned;
+const areaHeroImage = templesWithPhoto.map((temple) => getTempleCardImage(temple)).find(Boolean);
+const sectCount = new Set(detailedTemples.map((temple) => temple.sect)).size;
+const searchUrl = `/search/?district=${district.district_id}`;
+const heroStyle = `--district-color: ${districtColor};${areaHeroImage ? ` --area-hero-image: url("${areaHeroImage}");` : ""}`;
 
 const templeGroups = [
-  { heading: "写真掲載あり", note: "現地写真を掲載している寺院です。", temples: templesWithPhoto },
-  { heading: "写真準備中", note: "基礎情報は掲載済みで、現地写真は今後追加予定です。", temples: templesWithoutPhoto },
-  { heading: "現地確認待ち", note: "現地での痕跡確認ができておらず、検索記録として掲載しています。", temples: unresearchedTemples },
+  { kind: "photo", heading: "写真掲載あり", note: "現地写真を掲載している寺院です。", temples: templesWithPhoto },
+  { kind: "plain", heading: "写真準備中", note: "基礎情報は掲載済みで、現地写真は今後追加予定です。", temples: templesWithoutPhoto },
+  { kind: "pending", heading: "現地確認待ち", note: "現地での痕跡確認ができておらず、検索記録として掲載しています。", temples: unresearchedTemples },
 ].filter((group) => group.temples.length > 0);
 ---
 
@@ -52,31 +62,61 @@ const templeGroups = [
   title={`${district.name}地区のお寺・寺院一覧｜ATAWI TEMPLE`}
   description={`${district.name}地区にある寺院、廃寺、寺院跡を整理するATAWI TEMPLEの地区別一覧です。`}
 >
-  <section class="page-title">
-    <p class="eyebrow">Area / {district.slug}</p>
-    <h1>{district.name}地区のお寺・寺院一覧</h1>
-    <p>{district.summary}</p>
+  <section class:list={["area-hero", { "area-hero--photo": areaHeroImage }]} style={heroStyle}>
+    <div class="area-hero-copy">
+      <p class="eyebrow">Area Results / {district.slug}</p>
+      <h1>{district.name}の寺院検索結果</h1>
+      <p>{district.summary}</p>
+      <div class="area-actions">
+        <a class="button-link" href={searchUrl}>この地区で検索する</a>
+        <a class="area-text-link" href="/areas/">9地区一覧へ戻る</a>
+      </div>
+    </div>
+    <div class="area-hero-visual" aria-hidden="true">
+      <strong>{temples.length}</strong>
+      <span>registered temples</span>
+    </div>
+    <div class="area-stat-strip" aria-label={`${district.name}地区の登録状況`}>
+      <div>
+        <strong>{temples.length}</strong>
+        <span>登録</span>
+      </div>
+      <div>
+        <strong>{templesWithPhoto.length}</strong>
+        <span>写真掲載</span>
+      </div>
+      <div>
+        <strong>{templesWithoutPhoto.length}</strong>
+        <span>写真準備中</span>
+      </div>
+      <div>
+        <strong>{sectCount}</strong>
+        <span>宗派・法人</span>
+      </div>
+    </div>
   </section>
 
-  <section class="section">
-    <div class="section-heading">
-      <h2>登録寺院</h2>
-      <a href={`/search/?district=${district.district_id}`}>この地区で検索する</a>
+  <section class="section area-results-section">
+    <div class="area-results-heading">
+      <div>
+        <p class="eyebrow">Temple Results</p>
+        <h2>登録寺院</h2>
+      </div>
+      <p class="small area-count-summary">
+        {temples.length}件登録 / 写真掲載あり{templesWithPhoto.length}件 / 写真準備中{templesWithoutPhoto.length}件 / 現地確認待ち{unresearchedTemples.length}件
+      </p>
     </div>
     {
       temples.length ? (
         <>
-          <p class="small area-count-summary">
-            {temples.length}件登録（写真掲載あり{templesWithPhoto.length}件・写真準備中{templesWithoutPhoto.length}件・現地確認待ち{unresearchedTemples.length}件）
-          </p>
           {templeGroups.map((group) => (
-            <div class="area-temple-group">
+            <div class:list={["area-temple-group", `area-temple-group--${group.kind}`]}>
               <div class="area-group-heading">
                 <h3>{group.heading}</h3>
                 <span class="small">{group.note} / {group.temples.length}件</span>
               </div>
-              <div class="card-grid">
-                {group.temples.map((temple) => <TempleCard temple={temple} />)}
+              <div class:list={["area-result-grid", `area-result-grid--${group.kind}`]}>
+                {group.temples.map((temple) => <TempleCard temple={temple} variant="area-result" />)}
               </div>
             </div>
           ))}
