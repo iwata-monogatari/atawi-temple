@@ -2538,6 +2538,24 @@ th {
   z-index: 1;
 }
 
+.image-info-box-link {
+  color: var(--ink);
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.image-info-box-link:hover {
+  border-color: rgba(47, 75, 43, 0.34);
+  box-shadow: 0 18px 34px rgba(47, 75, 43, 0.18);
+  transform: translateY(-2px);
+}
+
+.image-info-box-link:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
 .image-info-box span {
   width: fit-content;
   margin-bottom: 10px;
@@ -2573,6 +2591,7 @@ th {
 }
 
 .image-info-box .banner-link {
+  display: inline-flex;
   width: fit-content;
   margin-top: 16px;
   border: 1px solid rgba(47, 75, 43, 0.18);
@@ -2596,6 +2615,14 @@ th {
 }
 
 .fudosan-index-box {
-  background-color: #9fe7ff;
-  background-position: center 45%;
+  background-color: #eaf5f8;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.fudosan-index-box::after {
+  inset: 0;
+  height: auto;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.18) 34%, rgba(255, 255, 255, 0.86) 68%, rgba(255, 255, 255, 0.96) 100%);
 }
