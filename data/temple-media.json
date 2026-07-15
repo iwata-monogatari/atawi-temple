@@ -3469,5 +3469,92 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "toshoji-higashikaizuka",
+    "hero_image": "/assets/temples/toshoji-higashikaizuka/hondo-front.webp",
+    "photos": [
+      {
+        "photo_id": "toshoji-01",
+        "src": "/assets/temples/toshoji-higashikaizuka/shrine-and-stone-lantern.webp",
+        "alt": "東昌寺境内の祠と石灯籠",
+        "caption": "境内に残る祠と石灯籠。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "toshoji-02",
+        "src": "/assets/temples/toshoji-higashikaizuka/entrance-and-hondo.webp",
+        "alt": "東昌寺の入口石柱と本堂",
+        "caption": "入口の石柱越しに本堂を望む。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "toshoji-03",
+        "src": "/assets/temples/toshoji-higashikaizuka/temple-name-stone.webp",
+        "alt": "招宝山東昌寺の寺号石柱",
+        "caption": "招宝山東昌寺と刻まれた寺号石柱。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "toshoji-04",
+        "src": "/assets/temples/toshoji-higashikaizuka/gate-pillars-from-inside.webp",
+        "alt": "東昌寺の門柱と参道",
+        "caption": "境内側から見る門柱と参道。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "toshoji-05",
+        "src": "/assets/temples/toshoji-higashikaizuka/hondo-side.webp",
+        "alt": "東昌寺本堂の側面",
+        "caption": "本堂と庫裏周辺の外観。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "toshoji-06",
+        "src": "/assets/temples/toshoji-higashikaizuka/reijo-stone-and-shrine.webp",
+        "alt": "東昌寺境内の石碑と祠",
+        "caption": "境内に祀られる石碑と祠。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "toshoji-07",
+        "src": "/assets/temples/toshoji-higashikaizuka/hondo-wide.webp",
+        "alt": "東昌寺本堂の全景",
+        "caption": "境内正面から見る東昌寺本堂。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "toshoji-08",
+        "src": "/assets/temples/toshoji-higashikaizuka/garden-and-shrine.webp",
+        "alt": "東昌寺境内の庭と祠",
+        "caption": "庭木と祠が並ぶ境内の一角。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "toshoji-09",
+        "src": "/assets/temples/toshoji-higashikaizuka/hondo-front.webp",
+        "alt": "東昌寺本堂正面",
+        "caption": "正面から見る東昌寺本堂。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
