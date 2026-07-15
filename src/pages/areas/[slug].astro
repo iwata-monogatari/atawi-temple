@@ -90,11 +90,27 @@ const templeGroups = [
         <span>写真準備中</span>
       </div>
       <div>
+        <strong>{unresearchedTemples.length}</strong>
+        <span>現地確認待ち</span>
+      </div>
+      <div>
         <strong>{sectCount}</strong>
         <span>宗派・法人</span>
       </div>
     </div>
   </section>
+
+  <nav class="area-switcher" style={`--district-color: ${districtColor};`} aria-label="地区を切り替える">
+    {allDistricts.map((item) => (
+      <a
+        class:list={["area-switcher-link", { "is-current": item.district_id === district.district_id }]}
+        href={`/areas/${item.slug}/`}
+        aria-current={item.district_id === district.district_id ? "page" : undefined}
+      >
+        {item.name}
+      </a>
+    ))}
+  </nav>
 
   <section class="section area-results-section">
     <div class="area-results-heading">

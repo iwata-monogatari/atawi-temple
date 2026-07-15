@@ -1676,7 +1676,7 @@ button,
 .area-stat-strip {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -1706,6 +1706,42 @@ button,
   color: var(--muted);
   font-size: 0.82rem;
   font-weight: 800;
+}
+
+.area-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: min(1120px, calc(100% - 32px));
+  margin: 16px auto 0;
+}
+
+.area-switcher-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 6px 12px;
+  font-size: 0.88rem;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+.area-switcher-link:hover {
+  border-color: var(--district-color);
+  color: var(--district-color);
+  transform: translateY(-1px);
+}
+
+.area-switcher-link.is-current {
+  border-color: var(--district-color);
+  background: var(--district-color);
+  color: #fff;
 }
 
 .area-results-section {
@@ -2732,7 +2768,7 @@ th {
   }
 
   .area-stat-strip {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .area-stat-strip div {
@@ -2762,8 +2798,25 @@ th {
   }
 
   .area-stat-strip span {
-    font-size: 0.68rem;
+    font-size: 0.62rem;
     line-height: 1.35;
+  }
+
+  .area-switcher {
+    flex-wrap: nowrap;
+    gap: 7px;
+    overflow-x: auto;
+    width: calc(100% - 24px);
+    margin-top: 12px;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
+  }
+
+  .area-switcher-link {
+    flex: 0 0 auto;
+    min-height: 32px;
+    padding: 6px 10px;
+    font-size: 0.82rem;
   }
 
   .temple-card--area-result {
