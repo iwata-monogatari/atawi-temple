@@ -8,7 +8,7 @@ import {
   getTemplesByDistrictId,
   hasDetailPage,
 } from "../../lib/temples";
-import { getMonogatariDistrictUrl } from "../../lib/related-monogatari";
+import { getMonogatariDistrictUrl, realEstateFunnel } from "../../lib/related-monogatari";
 
 export function getStaticPaths() {
   return allDistricts.map((district) => ({
@@ -87,6 +87,18 @@ const templeGroups = [
       <div class="district-monogatari-block">
         <h2>この地区の歴史を磐田物語で読む</h2>
         <a class="button-link" href={monogatariDistrictUrl}>{district.name}地区の記事へ ── 磐田物語</a>
+      </div>
+    </section>
+  )}
+  {realEstateFunnel.enabled && (
+    <section class="section">
+      <div class="district-monogatari-block fudosan-text-panel">
+        <h2>寺院・墓地と実家の整理</h2>
+        <p>
+          この地区のお寺やお墓を調べる中で、実家の土地・建物、相続登記、空き家の管理も確認したくなった方は、
+          <a href={realEstateFunnel.link_url} target="_blank" rel="noopener noreferrer">ATAWI FUDOSANの売却前カルテ</a>
+          から整理を始められます。
+        </p>
       </div>
     </section>
   )}

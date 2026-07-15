@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import TempleCard from "../../components/TempleCard.astro";
 import { allDistricts, allTemples, getDistrictName, getTempleStatusLabel, hasDetailPage } from "../../lib/temples";
+import { realEstateFunnel } from "../../lib/related-monogatari";
 ---
 
 <BaseLayout
@@ -13,6 +14,15 @@ import { allDistricts, allTemples, getDistrictName, getTempleStatusLabel, hasDet
     <h1>磐田市の寺院一覧</h1>
     <p>寺院名、読み方、住所、地区、宗派、状態を確認できます。基礎情報は公式名簿をもとに掲載し、由緒・写真は調査にあわせて追加します。</p>
   </section>
+  {realEstateFunnel.enabled && (
+    <section class="section fudosan-inline-section">
+      <p class="fudosan-context-link">
+        寺院一覧で地域やお墓まわりを確認したあと、実家の名義・相続・空き家の課題も見えてきた方は
+        <a href={realEstateFunnel.link_url} target="_blank" rel="noopener noreferrer">ATAWI FUDOSAN</a>
+        で売却前カルテを確認できます。
+      </p>
+    </section>
+  )}
 
   <section class="section">
     <h2>9地区分類</h2>

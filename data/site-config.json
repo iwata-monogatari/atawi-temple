@@ -1,8 +1,12 @@
 {
   "real_estate_funnel": {
-    "enabled": false,
-    "text": "お寺やお墓のことを調べるとき、実家や相続の課題が一緒に見えてくることがあります。磐田市・袋井市の相続・空き家・実家じまいのご相談は、本サイト運営元の富士ヶ丘サービスへ。",
-    "link_url": null,
-    "link_label": "富士ヶ丘サービスに相談する"
+    "enabled": true,
+    "brand": "ATAWI FUDOSAN",
+    "headline": "査定の前に、実家のカルテを。",
+    "text": "お寺やお墓のことを調べるとき、実家の名義、相続登記、空き家の管理、土地の境界などの課題が一緒に見えてくることがあります。磐田市・袋井市周辺の実家じまい、相続不動産、空き家の整理は、運営元の富士ヶ丘サービスがATAWI FUDOSANで承ります。",
+    "banner_note": "売却を決める前に、支障になりそうなことを机上調査で整理します。価格は出しません。査定ではありません。",
+    "link_url": "https://fudosan.atawi.link/",
+    "link_label": "売却前カルテを見る",
+    "image_url": "https://fudosan.atawi.link/og-image.png"
   }
 }

@@ -197,12 +197,17 @@ const officialSite = dankaInfo?.official_site;
             </ul>
           </section>
         )}
-
         {realEstateFunnel.enabled && (
           <section class="detail-panel real-estate-note">
-            <p>{realEstateFunnel.text}</p>
+            <p class="section-number">Estate</p>
+            <h2>お墓・実家の整理もあわせて考える</h2>
+            <p>
+              {temple.name}や地域のお墓を調べる中で、実家の名義、相続登記、空き家の管理が気になった場合は、
+              <a href={realEstateFunnel.link_url} target="_blank" rel="noopener noreferrer">ATAWI FUDOSAN</a>
+              の売却前カルテで、売る前に支障になりそうな点を整理できます。
+            </p>
             {realEstateFunnel.link_url && (
-              <a class="button-link" href={realEstateFunnel.link_url}>{realEstateFunnel.link_label}</a>
+              <a class="button-link" href={realEstateFunnel.link_url} target="_blank" rel="noopener noreferrer">{realEstateFunnel.link_label}</a>
             )}
           </section>
         )}
@@ -329,6 +334,14 @@ const officialSite = dankaInfo?.official_site;
           </ul>
         </section>
 
+        {realEstateFunnel.enabled && (
+          <section class="side-panel fudosan-side-panel">
+            <span>運営元の相談窓口</span>
+            <h2>実家・相続・空き家</h2>
+            <p>寺院や墓地の確認とあわせて、実家の土地・建物の整理が必要になったときの入口です。</p>
+            <a href={realEstateFunnel.link_url} target="_blank" rel="noopener noreferrer">ATAWI FUDOSANへ</a>
+          </section>
+        )}
         <section class="side-panel editorial-note">
           <span>ATAWI TEMPLE編集部</span>
           <h2>情報を更新しています</h2>

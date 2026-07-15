@@ -77,6 +77,7 @@ function photoAt(slug: string, index: number) {
 
 // ヒーローは富士山と五重塔の写真を全面背景として1枚使う
 const heroImage = "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&fit=crop&w=1800&q=80";
+const iwataMonogatariBannerImage = "https://iwata-monogatari.net/img/ogp.jpg";
 
 // 境内の実写真は「境内フォトギャラリー」等の各セクションで使う（華やかさ重視で選定）
 
@@ -357,18 +358,31 @@ const galleryPhotos = [
         </p>
         <a class="button-link" href="/correction/">情報提供掲示板へ</a>
       </div>
-      <div class="info-box">
+      <div
+        class="info-box image-info-box monogatari-index-box"
+        style={`background-image: linear-gradient(135deg, rgba(255, 253, 244, 0.18) 0%, rgba(255, 249, 225, 0.26) 100%), url(${iwataMonogatariBannerImage})`}
+      >
+        <span>IWATA MONOGATARI</span>
         <h2>姉妹サイト「磐田物語」</h2>
         <p>
           ATAWI TEMPLEが整理する寺院の基礎データに対し、姉妹サイト「磐田物語」は磐田の歴史・伝承を読み物として伝えるサイトです。
           寺院にゆかりの人物や祭礼、地区の歴史をより深く知りたいときにご覧ください。
         </p>
-        <a class="button-link" href="https://iwata-monogatari.net/">磐田物語を読む</a>
+        <a class="banner-link" href="https://iwata-monogatari.net/">磐田物語を読む</a>
       </div>
-      <div class="info-box">
-        <h2>実家・お墓のご相談</h2>
-        <p>{realEstateFunnel.text}</p>
-      </div>
+      {realEstateFunnel.enabled && (
+        <div
+          class="info-box image-info-box fudosan-index-box"
+          style={`background-image: linear-gradient(135deg, rgba(244, 252, 255, 0.16) 0%, rgba(255, 247, 231, 0.24) 100%), url(${realEstateFunnel.image_url})`}
+        >
+          <span>{realEstateFunnel.brand}</span>
+          <p>
+            お寺やお墓の情報とあわせて、実家の名義や空き家の整理も確認したい方は
+            <a href={realEstateFunnel.link_url} target="_blank" rel="noopener noreferrer"><strong>ATAWI FUDOSANの売却前カルテ</strong></a>
+            をご覧ください。
+          </p>
+        </div>
+      )}
     </div>
   </section>
 </BaseLayout>
