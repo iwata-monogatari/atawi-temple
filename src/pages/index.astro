@@ -14,6 +14,7 @@ import {
   hasDetailPage,
   isUnknownValue,
 } from "../lib/temples";
+import { guideArticles, tokushuArticles } from "../lib/editorial";
 import { getMonogatariLinksBySlug, realEstateFunnel } from "../lib/related-monogatari";
 
 const districtDisplayOrder = [
@@ -68,6 +69,8 @@ const monogatariPickupSlugs = ["kokubunji-mitsuke", "daijoin-nakaizumi", "gyokoj
 const monogatariPickups = monogatariPickupSlugs
   .map((slug) => ({ temple: getTempleBySlug(slug), link: getMonogatariLinksBySlug(slug)[0], photo: photoAt(slug, 9) }))
   .filter((item): item is { temple: any; link: any; photo: any } => Boolean(item.temple && item.link));
+const topTokushu = tokushuArticles.slice(0, 4);
+const topGuides = guideArticles.slice(0, 3);
 
 function photoAt(slug: string, index: number) {
   const media = getTempleMediaBySlug(slug);
@@ -312,6 +315,48 @@ const galleryPhotos = [
           <span class="monogatari-pickup-title">{link.title}</span>
         </a>
       ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <div>
+        <h2>特集・読みもの</h2>
+        <span class="small">お寺を調べたあと、境内・法要・実家のことまで読む</span>
+      </div>
+      <a href="/tokushu/">特集一覧へ</a>
+    </div>
+    <div class="article-card-grid">
+      {
+        topTokushu.map((article) => (
+          <a class="reading-card" href={`/tokushu/${article.slug}/`}>
+            <span>{article.category}</span>
+            <h3>{article.title}</h3>
+            <p>{article.subtitle}</p>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <div>
+        <h2>お墓・檀家・実家の基礎ガイド</h2>
+        <span class="small">遠方管理、墓じまい、檀家、帰省チェックを中立に整理</span>
+      </div>
+      <a href="/guide/">ガイド一覧へ</a>
+    </div>
+    <div class="article-card-grid guide-card-grid">
+      {
+        topGuides.map((article) => (
+          <a class="reading-card" href={`/guide/${article.slug}/`}>
+            <span>{article.category}</span>
+            <h3>{article.title}</h3>
+            <p>{article.subtitle}</p>
+          </a>
+        ))
+      }
     </div>
   </section>
 

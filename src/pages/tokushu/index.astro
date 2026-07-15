@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { tokushuArticles } from "../../lib/editorial";
+---
+
+<BaseLayout
+  title="特集・読みもの｜ATAWI TEMPLE"
+  description="磐田のお寺を深く読むための特集。法要の作法、これからのお寺、ソテツ、寺院建築を整理します。"
+>
+  <section class="page-title">
+    <p class="eyebrow">Tokushu</p>
+    <h1>特集・読みもの</h1>
+    <p class="lead">寺院データベースを、調べて終わりにしないための読みものです。境内の見方、法要の作法、家族で話すきっかけを整理します。</p>
+  </section>
+
+  <section class="section">
+    <div class="article-card-grid">
+      {
+        tokushuArticles.map((article) => (
+          <a class="reading-card" href={`/tokushu/${article.slug}/`}>
+            <span>{article.category}</span>
+            <h2>{article.title}</h2>
+            <p>{article.subtitle}</p>
+            {article.priority && <em>{article.priority}</em>}
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

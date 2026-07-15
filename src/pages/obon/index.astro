@@ -1,0 +1,122 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { LINE_URL, jikkaUrl, obonChecklist, houyouRows } from "../../lib/editorial";
+---
+
+<BaseLayout
+  title="お盆に帰省したら、お墓と実家を一度だけ、見ておいてください。｜ATAWI TEMPLE"
+  description="お盆の帰省中に、お墓と実家を一度だけ確認するための10項目チェックリスト。法要の作法早見表と相談導線をまとめます。"
+>
+  <article class="article-page seasonal-page">
+    <header class="article-hero">
+      <p class="eyebrow">Obon Check</p>
+      <h1>お盆に帰省したら、お墓と実家を一度だけ、見ておいてください。</h1>
+      <p class="article-subtitle">家族全員が実家とお墓の前に揃う、年に一度の機会に。全部できなくて構いません。写真だけでも、後で必ず役に立ちます。</p>
+      <div class="hero-actions plain-actions">
+        <a class="button-link" href={LINE_URL} target="_blank" rel="noopener" data-track-click="obon_line_click">帰省中・帰省後の相談をLINEで</a>
+        <a class="button-link secondary-button" href={jikkaUrl("obon", "hero")} data-track-click="obon_to_jikka_click">実家じまい相談室を読む</a>
+      </div>
+    </header>
+
+    <div class="article-layout">
+      <main class="article-body">
+        <section class="article-section">
+          <p class="section-number">01</p>
+          <h2>帰省チェックリスト10項目</h2>
+          <p>お墓、実家、家族の話を、いきなり全部決める必要はありません。見たことを写真とメモで残すだけで、帰省後の話し合いが進めやすくなります。</p>
+          <ol class="checkbox-list">
+            {obonChecklist.map((item) => (
+              <li><span aria-hidden="true"></span>{item}</li>
+            ))}
+          </ol>
+        </section>
+
+        <section class="article-section">
+          <p class="section-number">02</p>
+          <h2>全部できなくて構いません</h2>
+          <p>帰省中は、法要、親族の予定、移動、親の体調確認だけで時間が過ぎます。10項目をすべて済ませようとしなくて構いません。</p>
+          <p>最低限、家・庭・お墓・お寺の掲示板をスマートフォンで撮っておいてください。写真は、後で兄弟姉妹と同じ情報を見ながら話すための材料になります。</p>
+        </section>
+
+        <section class="article-section">
+          <p class="section-number">03</p>
+          <h2>宗派別・焼香の早見表</h2>
+          <p>久しぶりの法要では、焼香の回数や作法が不安になることがあります。以下は一般的な目安です。地域・寺院により異なるため、菩提寺や会場の案内を優先してください。</p>
+          <div class="table-wrap compact-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>宗派</th>
+                  <th>焼香の目安</th>
+                  <th>確認事項</th>
+                </tr>
+              </thead>
+              <tbody>
+                {houyouRows.map((row) => (
+                  <tr>
+                    <td>{row.sect}</td>
+                    <td>{row.incense}</td>
+                    <td>{row.note}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p><a href="/tokushu/houyou-sahou/">詳しい作法と宗派の調べ方を見る</a></p>
+        </section>
+
+        <section class="article-section">
+          <p class="section-number">04</p>
+          <h2>帰省後に、そのままにしない</h2>
+          <p>気になったことがあっても、帰省が終わると日常に戻ります。庭木、雨漏り、お墓、仏壇、書類の場所は、時間が経つほど確認しづらくなります。</p>
+          <p>売ると決めていなくても構いません。写真と分かる範囲の住所だけでも、相談の入口になります。</p>
+          <div class="cta-row">
+            <a class="button-link" href={LINE_URL} target="_blank" rel="noopener" data-track-click="obon_line_click">LINEで相談する</a>
+            <a class="button-link secondary-button" href={jikkaUrl("obon", "body")} data-track-click="obon_to_jikka_click">実家じまい相談室を読む</a>
+          </div>
+        </section>
+      </main>
+
+      <aside class="article-aside">
+        <section class="side-panel">
+          <h2>関連リンク</h2>
+          <div class="side-link-list">
+            <a href="/guide/kisei-check/">恒常版チェックリスト</a>
+            <a href="/guide/haka-enpo/">お墓が遠い方へ</a>
+            <a href="/guide/danka/">檀家とお布施の基礎知識</a>
+            <a href="/tokushu/sotetsu/">お寺のソテツは、なぜあるのか</a>
+          </div>
+        </section>
+        <section class="side-panel conversion-panel">
+          <span>運営元による相談窓口</span>
+          <h2>実家じまい相談室</h2>
+          <p>本相談窓口はサイト運営元によるもので、掲載寺院とは関係ありません。</p>
+          <a class="button-link" href={jikkaUrl("obon", "side")} data-track-click="obon_to_jikka_click">相談室を読む</a>
+        </section>
+      </aside>
+    </div>
+  </article>
+
+  <script is:inline>
+    // @ts-nocheck
+    window.addEventListener("load", function () {
+      var tracker = document.querySelector("script[data-fujigaoka-analytics]");
+      if (!tracker || !tracker.src || location.hostname !== "temple.atawi.link") return;
+      var url = new URL("/api/click", tracker.src).href;
+      var payload = JSON.stringify({
+        site_id: tracker.getAttribute("data-site") || "atawi-temple",
+        path: location.pathname + location.search,
+        url: location.href,
+        referrer: document.referrer || "",
+        event_name: "obon_checklist_view"
+      });
+      if (navigator.sendBeacon) {
+        navigator.sendBeacon(url, new Blob([payload], { type: "application/json" }));
+        return;
+      }
+      if (window.fetch) {
+        fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: payload, mode: "cors", credentials: "omit", keepalive: true }).catch(function () {});
+      }
+    });
+  </script>
+</BaseLayout>
