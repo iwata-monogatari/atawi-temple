@@ -56,6 +56,9 @@ const heritageStatus = "heritage_status" in temple && temple.heritage_status
 const pilgrimageNote = "pilgrimage_note" in temple && temple.pilgrimage_note
   ? temple.pilgrimage_note
   : null;
+const publicationNotice: any = "publication_notice" in temple && temple.publication_notice
+  ? temple.publication_notice
+  : null;
 const dankaInfo: any = "danka_info" in temple && temple.danka_info ? temple.danka_info : null;
 const annualEvents = dankaInfo && Array.isArray(dankaInfo.annual_events) ? dankaInfo.annual_events : [];
 const monogatariLinks = getMonogatariLinksBySlug(temple.slug);
@@ -110,8 +113,17 @@ const officialSite = dankaInfo?.official_site;
         </>
       ) : (
         <div class="pending-photo">
-          <strong>写真を準備しています</strong>
-          <span>現地訪問後に、本堂・境内・入口・説明板の写真を掲載します。</span>
+          {publicationNotice ? (
+            <>
+              <strong>写真掲載を見合わせています</strong>
+              <span>関係者からの明確な意思表示を受け、当サイトでの写真掲載を行っていません。</span>
+            </>
+          ) : (
+            <>
+              <strong>写真を準備しています</strong>
+              <span>現地訪問後に、本堂・境内・入口・説明板の写真を掲載します。</span>
+            </>
+          )}
         </div>
       )}
     </section>
@@ -270,7 +282,19 @@ const officialSite = dankaInfo?.official_site;
               ))}
             </div>
           ) : (
-            <div class="pending-block"><strong>現地写真を準備しています</strong><p>初回訪問後に掲載します。</p></div>
+            <div class="pending-block">
+              {publicationNotice ? (
+                <>
+                  <strong>写真掲載を見合わせています</strong>
+                  <p>関係者からの明確な意思表示を受け、当サイトでの写真掲載を行っていません。</p>
+                </>
+              ) : (
+                <>
+                  <strong>現地写真を準備しています</strong>
+                  <p>初回訪問後に掲載します。</p>
+                </>
+              )}
+            </div>
           )}
         </section>
 
@@ -350,5 +374,14 @@ const officialSite = dankaInfo?.official_site;
         </section>
       </aside>
     </div>
+    {publicationNotice && (
+      <section class="publication-notice publication-notice--bottom" aria-label={publicationNotice.label || "掲載に関するお知らせ"}>
+        <div class="publication-notice__inner">
+          <span>{publicationNotice.label || "掲載に関するお知らせ"}</span>
+          <h2>{publicationNotice.title}</h2>
+          {publicationNotice.body.map((paragraph: string) => <p>{paragraph}</p>)}
+        </div>
+      </section>
+    )}
   </article>
 </BaseLayout>

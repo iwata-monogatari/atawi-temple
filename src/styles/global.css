@@ -3067,3 +3067,35 @@ th {
   height: auto;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.18) 34%, rgba(255, 255, 255, 0.86) 68%, rgba(255, 255, 255, 0.96) 100%);
 }
+
+.publication-notice--bottom {
+  margin-top: 64px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--ink);
+  border-radius: 8px;
+  padding: 24px;
+  background: var(--paper);
+}
+
+.publication-notice__inner {
+  display: grid;
+  gap: 12px;
+}
+
+.publication-notice__inner > span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.publication-notice__inner h2 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.publication-notice__inner p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.9;
+}
