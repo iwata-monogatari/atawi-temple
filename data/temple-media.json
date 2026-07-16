@@ -564,6 +564,93 @@
     ]
   },
   {
+    "temple_slug": "zenkaiji-nishijima",
+    "hero_image": "/assets/temples/zenkaiji-nishijima/hondo.webp",
+    "photos": [
+      {
+        "photo_id": "zenkaiji-hondo-2026",
+        "src": "/assets/temples/zenkaiji-nishijima/hondo.webp",
+        "alt": "全海寺の本堂正面",
+        "caption": "全海寺の本堂正面。境内中央から堂宇全体を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkaiji-temple-marker-2026",
+        "src": "/assets/temples/zenkaiji-nishijima/temple-marker.webp",
+        "alt": "全海寺の寺号石柱と境内入口",
+        "caption": "「曹洞宗 広福山 全海寺」と刻まれた寺号石柱。入口から境内を望む。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkaiji-geba-jizo-hall-2026",
+        "src": "/assets/temples/zenkaiji-nishijima/geba-jizo-hall.webp",
+        "alt": "全海寺境内の下馬地蔵堂",
+        "caption": "境内の下馬地蔵堂。赤い前掛けの地蔵像が祀られている。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkaiji-geba-jizo-sign-2026",
+        "src": "/assets/temples/zenkaiji-nishijima/geba-jizo-sign.webp",
+        "alt": "広福山全海寺下馬地蔵の由緒説明板",
+        "caption": "広福山全海寺下馬地蔵の由緒説明板。徳川家光の通過伝承を紹介している。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkaiji-hondo-plaque-2026",
+        "src": "/assets/temples/zenkaiji-nishijima/hondo-plaque.webp",
+        "alt": "全海寺本堂正面の扁額",
+        "caption": "本堂正面の扁額と葵紋入りのガラス戸。寺号の表記を確認できる。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkaiji-hondo-frame-plaque-2026",
+        "src": "/assets/temples/zenkaiji-nishijima/hondo-frame-plaque.webp",
+        "alt": "全海寺本堂に掲げられた扁額",
+        "caption": "本堂に掲げられた扁額。山号・寺号の表記を確認できる写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkaiji-chozuya-2026",
+        "src": "/assets/temples/zenkaiji-nishijima/chozuya.webp",
+        "alt": "全海寺境内の手水",
+        "caption": "境内の手水。背後の桶にも全海寺の寺号が記されている。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkaiji-side-hall-2026",
+        "src": "/assets/temples/zenkaiji-nishijima/side-hall.webp",
+        "alt": "全海寺境内の堂宇と本堂脇の景観",
+        "caption": "本堂脇の堂宇と境内景観。瓦屋根と庭木を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zenkaiji-entrance-porch-2026",
+        "src": "/assets/temples/zenkaiji-nishijima/entrance-porch.webp",
+        "alt": "全海寺本堂脇の玄関まわり",
+        "caption": "本堂脇の玄関まわり。向拝と植栽の様子を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
     "temple_slug": "gasshoji-nakaizumi",
     "hero_image": "/assets/temples/gasshoji-nakaizumi/small-shrine.webp",
     "photos": [

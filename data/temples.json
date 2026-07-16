@@ -4240,15 +4240,15 @@
     "status_label": "現存",
     "sect": "曹洞宗",
     "address": "静岡県磐田市西島452番地の1",
-    "district_id": "nanbu",
-    "area": "南部",
+    "district_id": "mikuriya",
+    "area": "御厨",
     "main_deity": "地蔵菩薩（『静岡県磐田郡誌』による）",
     "manned_status": "未確認",
     "goshuin_status": "未確認",
-    "visit_status": "未訪問",
-    "detail_status": "深掘り調査済み",
+    "visit_status": "現地写真あり",
+    "detail_status": "深掘り調査・現地写真あり",
     "history_summary": "全海寺は磐田市西島にある曹洞宗の寺院で、山号は広福山です。『静岡県磐田郡誌』（大正10年）によれば天文11年（1542年）の草創で、上野部（現磐田市上野部）天龍院の末寺、本尊は地蔵菩薩とされます。江戸時代には朱印寺領3石余を有して正保郷帳や『東海道宿村大概帳』に記録され、西島村の檀那寺として宗門改帳にも見える東海道沿いの寺院です。",
-    "last_verified_at": "2026-07-11",
+    "last_verified_at": "2026-07-16",
     "sources": [
       {
         "title": "静岡県知事所轄宗教法人名簿（令和5年3月31日現在）",
@@ -4333,7 +4333,8 @@
       }
     ],
     "cultural_assets": [],
-    "pilgrimage_note": "磐田郡三十三観音霊場第21番札所"
+    "pilgrimage_note": "磐田郡三十三観音霊場第21番札所",
+    "visit_notes": "2026年7月に本堂、寺号石柱、下馬地蔵堂、由緒説明板、手水、扁額等を現地写真で確認し、写真を追加しました。"
   },
   {
     "temple_id": "iwata-0042",
