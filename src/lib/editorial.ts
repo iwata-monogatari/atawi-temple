@@ -141,11 +141,6 @@ export const guideArticles: EditorialArticle[] = [
         url: "/editorial-policy/",
         note: "寺院情報は公式・公的資料を優先し、墓地・供養情報は確認できた範囲に限る方針を参照。",
       },
-      {
-        title: "厚生労働省・墓地、埋葬等に関する法律",
-        url: "https://www.mhlw.go.jp/web/t_doc?dataId=80018000&dataType=0&pageNo=1",
-        note: "改葬には市区町村長の許可が必要であることを確認する一次法令。",
-      },
     ],
     bridgeLinks: [
       { label: "実家じまい相談室を読む", href: jikkaUrl("guide", "haka-enpo"), event: "guide_to_jikka_click" },
@@ -228,7 +223,7 @@ export const guideArticles: EditorialArticle[] = [
           "個別安置期間と合祀の有無",
           "費用に含まれるものと含まれないもの",
           "年忌法要・お盆・彼岸の扱い",
-          "既存墓地の撤去や改葬許可の要否",
+          "菩提寺への事前相談と家族間の合意",
         ],
       },
       {
@@ -246,7 +241,7 @@ export const guideArticles: EditorialArticle[] = [
       },
       {
         question: "菩提寺がある場合も永代供養を選べますか。",
-        answer: "選べる場合もありますが、まず菩提寺と相談することが重要です。改葬が関わる場合は、手続きと供養の両方を確認します。",
+        answer: "選べる場合もありますが、まず菩提寺と相談することが重要です。現在の墓地、法要、家族の希望を分けて確認します。",
       },
     ],
     sources: [
