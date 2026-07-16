@@ -27,6 +27,10 @@ const statuses = Object.keys(statusCounts).map((status) => ({
   label: getStatusLabel(status),
   count: statusCounts[status],
 }));
+const quickMapDistrictIds = ["koyo", "mikuriya", "toyoda", "mitsuke", "nanbu"];
+const quickMapDistricts = quickMapDistrictIds
+  .map((districtId) => allDistricts.find((district) => district.district_id === districtId))
+  .filter((district): district is (typeof allDistricts)[number] => Boolean(district));
 const mapItems = allTemples.map((temple) => {
   const latLng = getTempleLatLng(temple);
   const media = getTempleMediaBySlug(temple.slug);
@@ -95,6 +99,14 @@ const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
     data-map-api-key={mapsApiKey}
     data-map-id={mapId}
   >
+    <div class="map-quick-filter" aria-label="主要地区フィルタ">
+      <span>地区フィルタ</span>
+      {quickMapDistricts.map((district) => (
+        <button type="button" data-map-district={district.district_id} data-track-click="temple_map_click">{district.name}</button>
+      ))}
+      <button type="button" data-map-district="" data-track-click="temple_map_click">すべて</button>
+    </div>
+
     <form id="map-filter-form" class="search-form map-filter-form">
       <label>
         キーワード
@@ -122,7 +134,7 @@ const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
           {statuses.map((item) => <option value={item.status}>{item.label}（{item.count}）</option>)}
         </select>
       </label>
-      <button type="submit">絞り込み</button>
+      <button type="submit" data-track-click="temple_search_refine">絞り込み</button>
     </form>
 
     <div id="temple-map-canvas" class="temple-map-canvas" data-fallback-map-src={fallbackMapEmbedUrl}>
@@ -153,6 +165,7 @@ const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
     const mapResults = document.querySelector("#map-results");
     const mapResultCount = document.querySelector("#map-result-count");
     const mapRuntimeNoteEl = document.querySelector(".map-runtime-note");
+    const mapQuickButtons = document.querySelectorAll("[data-map-district]");
     const mapDataEl = document.querySelector("#map-temple-data");
     const mapItems = JSON.parse(mapDataEl?.textContent || "[]");
     const apiKey = mapShell?.dataset.mapApiKey || "";
@@ -178,6 +191,30 @@ const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
       return Object.fromEntries(new FormData(mapForm).entries());
     }
 
+    function readMapParams() {
+      const params = new URLSearchParams(window.location.search);
+      for (const element of mapForm.elements) {
+        if (element instanceof HTMLInputElement || element instanceof HTMLSelectElement) {
+          if (element.name) element.value = params.get(element.name) || "";
+        }
+      }
+    }
+
+    function writeMapParams(values) {
+      const params = new URLSearchParams();
+      for (const [key, value] of Object.entries(values)) {
+        if (typeof value === "string" && value) params.set(key, value);
+      }
+      const query = params.toString();
+      history.replaceState(null, "", query ? `?${query}` : window.location.pathname);
+    }
+
+    function updateQuickDistrictState(districtId) {
+      mapQuickButtons.forEach((button) => {
+        button.classList.toggle("is-active", (button.dataset.mapDistrict || "") === (districtId || ""));
+      });
+    }
+
     function filteredItems() {
       const values = valuesFromForm();
       const keyword = normalize(values.q || "");
@@ -194,14 +231,14 @@ const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
       mapResultCount.textContent = `${items.length}件表示`;
       mapResults.innerHTML = items.map((item) => {
         const title = item.detailUrl
-          ? `<a href="${escapeHtml(item.detailUrl)}">${escapeHtml(item.name)}</a>`
+          ? `<a href="${escapeHtml(item.detailUrl)}" data-track-click="temple_detail_click">${escapeHtml(item.name)}</a>`
           : escapeHtml(item.name);
         const image = item.image
           ? `<img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.imageAlt)}" loading="lazy" />`
           : `<span class="map-result-noimage">写真準備中</span>`;
         return `
           <article class="map-result-card">
-            <a class="map-result-image" href="${escapeHtml(item.detailUrl || item.mapUrl)}">${image}</a>
+            <a class="map-result-image" href="${escapeHtml(item.detailUrl || item.mapUrl)}" ${item.detailUrl ? `data-track-click="temple_detail_click"` : ""}>${image}</a>
             <div>
               <div class="card-topline">
                 <span class="status status-${escapeHtml(item.status)}">${escapeHtml(item.statusLabel)}</span>
@@ -213,7 +250,7 @@ const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
                 <div><dt>宗派</dt><dd>${escapeHtml(item.sectGroup)}</dd></div>
               </dl>
               <div class="map-card-actions">
-                ${item.detailUrl ? `<a href="${escapeHtml(item.detailUrl)}">詳細ページ</a>` : ""}
+                ${item.detailUrl ? `<a href="${escapeHtml(item.detailUrl)}" data-track-click="temple_detail_click">詳細ページ</a>` : ""}
                 <a href="${escapeHtml(item.mapUrl)}" target="_blank" rel="noreferrer">Googleマップ</a>
               </div>
             </div>
@@ -251,6 +288,9 @@ const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
 
     function applyFilters() {
       const items = filteredItems();
+      const values = valuesFromForm();
+      writeMapParams(values);
+      updateQuickDistrictState(values.district);
       renderList(items);
       updateMarkers(items);
     }
@@ -325,7 +365,7 @@ const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
             <div class="map-info-window">
               <strong>${escapeHtml(item.name)}</strong>
               <span>${escapeHtml(item.districtName)} / ${escapeHtml(item.sectGroup)}</span>
-              <a href="${escapeHtml(item.detailUrl || item.mapUrl)}">${item.detailUrl ? "詳細ページ" : "Googleマップ"}</a>
+              <a href="${escapeHtml(item.detailUrl || item.mapUrl)}" ${item.detailUrl ? `data-track-click="temple_detail_click"` : ""}>${item.detailUrl ? "詳細ページ" : "Googleマップ"}</a>
             </div>
           `);
           infoWindow.open({ map: googleMap, anchor: marker });
@@ -342,7 +382,15 @@ const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
         applyFilters();
       });
     }
-    renderList(mapItems);
+    mapQuickButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const districtSelect = mapForm.elements.namedItem("district");
+        if (districtSelect) districtSelect.value = button.dataset.mapDistrict || "";
+        applyFilters();
+      });
+    });
+    readMapParams();
+    applyFilters();
     loadGoogleMap().catch(() => {
       if (mapCanvas) {
         const fallbackMapSrc = mapCanvas.dataset.fallbackMapSrc || "";

@@ -22,6 +22,7 @@ const factItems = isAreaResult
   ? [
       { label: "住所", value: temple.address },
       { label: "宗派", value: temple.sect },
+      { label: "小地域", value: temple.area },
     ]
   : [
       { label: "住所", value: temple.address },
@@ -35,7 +36,12 @@ const factItems = isAreaResult
   {
     cardImage ? (
       detailPageAvailable ? (
-        <a class="temple-card-photo" href={"/temples/" + temple.slug + "/"} aria-label={temple.name + "の詳細を見る"}>
+        <a
+          class="temple-card-photo"
+          href={"/temples/" + temple.slug + "/"}
+          aria-label={temple.name + "の詳細を見る"}
+          data-track-click={isAreaResult ? "temple_detail_click" : undefined}
+        >
           <img src={cardImage} alt={cardImageAlt} loading="lazy" />
         </a>
       ) : (
@@ -52,7 +58,11 @@ const factItems = isAreaResult
       <span class={`status status-${temple.status}`}>{getTempleStatusLabel(temple)}</span>
       <span>{districtName}</span>
     </div>
-    <h3>{detailPageAvailable ? <a href={`/temples/${temple.slug}/`}>{temple.name}</a> : temple.name}</h3>
+    <h3>
+      {detailPageAvailable ? (
+        <a href={`/temples/${temple.slug}/`} data-track-click={isAreaResult ? "temple_detail_click" : undefined}>{temple.name}</a>
+      ) : temple.name}
+    </h3>
     {showKana && <p class="kana">{temple.name_kana}</p>}
     <dl class="compact-list">
       {factItems.map((item) => (
@@ -63,6 +73,9 @@ const factItems = isAreaResult
       ))}
     </dl>
     <p class="temple-card-summary">{cardSummary}</p>
+    {detailPageAvailable && isAreaResult && (
+      <a class="temple-card-action" href={`/temples/${temple.slug}/`} data-track-click="temple_detail_click">詳細を見る</a>
+    )}
     {!detailPageAvailable && <p class="pending-text">個別ページは公開していません。検索記録として表示しています。</p>}
   </div>
 </article>

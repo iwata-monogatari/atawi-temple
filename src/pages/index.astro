@@ -31,6 +31,13 @@ const districtDisplayOrder = [
 const districtCounts = countTemplesByDistrict().sort(
   (a, b) => districtDisplayOrder.indexOf(a.district_id) - districtDisplayOrder.indexOf(b.district_id),
 );
+const districtCards = districtCounts.map((district) => ({
+  ...district,
+  representatives: allTemples
+    .filter((temple) => temple.district_id === district.district_id && hasDetailPage(temple))
+    .slice(0, 2)
+    .map((temple) => temple.name),
+}));
 const allSectCounts = countTemplesBySect();
 const statusCounts = countTemplesByStatus();
 const unknownDistrictCount = countUnassignedDistrictTemples();
@@ -132,7 +139,7 @@ const galleryPhotos = [
             type="search"
             placeholder="せんこうじ / 宣光寺 / 見付 / 曹洞宗 / 廃寺"
           />
-          <button type="submit">検索</button>
+          <button type="submit" data-track-click="temple_search_refine">検索</button>
         </div>
       </form>
     </div>
@@ -153,13 +160,39 @@ const galleryPhotos = [
     </article>
   </section>
 
+  <section class="discovery-actions" aria-label="基本の探し方">
+    <a class="discovery-card" href="/areas/" data-track-click="temple_area_click">
+      <span>地区から探す</span>
+      <strong>9地区の分類で探す</strong>
+      <em>見付・中泉・御厨・豊田・向陽など、地区別一覧へ</em>
+    </a>
+    <a class="discovery-card" href="/map/" data-track-click="temple_map_click">
+      <span>地図から探す</span>
+      <strong>位置関係から探す</strong>
+      <em>地区フィルタと寺院リストを地図で確認</em>
+    </a>
+    <form class="discovery-card discovery-search" action="/search/" method="get">
+      <label for="home-q">寺院名で探す</label>
+      <div>
+        <input id="home-q" name="q" type="search" placeholder="寺院名・読み方・住所" />
+        <button type="submit" data-track-click="temple_search_refine">検索</button>
+      </div>
+    </form>
+  </section>
+
+  <nav class="top-primary-links" aria-label="上部の主要リンク">
+    <a href="/temples/">全寺院一覧を見る</a>
+    <a href="/map/" data-track-click="temple_map_click">地図から探す</a>
+    <a href="/search/">条件検索へ</a>
+  </nav>
+
   <section class="filter-band" aria-label="主要な絞り込み">
     <a href="/search/?district=mitsuke">見付</a>
     <a href="/search/?district=nakaizumi">中泉</a>
     <a href="/search/?status=existing">現存寺院</a>
     {statusCounts.ruin ? <a href="/search/?status=ruin">廃寺・寺院跡</a> : <span class="filter-chip-disabled">廃寺・寺院跡 準備中</span>}
     <a href="/search/?sect=曹洞宗">曹洞宗</a>
-    <a href="/map/">地図から探す</a>
+    <a href="/map/" data-track-click="temple_map_click">地図から探す</a>
     <a href="/sects/">宗派から探す</a>
   </section>
 
@@ -182,6 +215,7 @@ const galleryPhotos = [
         link.className = "pickup-card-photo";
         link.href = `/temples/${temple.slug}/`;
         link.setAttribute("aria-label", `${temple.name}の詳細を見る`);
+        link.setAttribute("data-track-click", "temple_detail_click");
         const img = document.createElement("img");
         img.src = temple.image;
         img.alt = temple.imageAlt;
@@ -204,6 +238,7 @@ const galleryPhotos = [
         const heading = document.createElement("h3");
         const nameLink = document.createElement("a");
         nameLink.href = `/temples/${temple.slug}/`;
+        nameLink.setAttribute("data-track-click", "temple_detail_click");
         nameLink.textContent = temple.name;
         heading.appendChild(nameLink);
         body.appendChild(heading);
@@ -275,17 +310,21 @@ const galleryPhotos = [
     </div>
     <div class="district-grid">
       {
-        districtCounts.map((district) => {
+        districtCards.map((district) => {
           const photo = districtPhotoByDistrictId[district.district_id];
           return (
             <a
               class={photo ? "district-card district-card--photo" : "district-card"}
               href={`/areas/${district.slug}/`}
               style={photo ? `background-image: linear-gradient(180deg, rgba(20,26,18,.15) 0%, rgba(20,26,18,.78) 100%), url(${photo.src})` : undefined}
+              data-track-click="temple_area_click"
             >
               <strong>{district.name}</strong>
               <span>{district.summary}</span>
               <em>{district.count}件登録</em>
+              {district.representatives.length > 0 && (
+                <small>寺院例：{district.representatives.join("・")}</small>
+              )}
             </a>
           );
         })

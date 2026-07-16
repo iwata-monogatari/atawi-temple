@@ -39,11 +39,11 @@ const districts = JSON.stringify(allDistricts);
     <form id="search-form" class="search-form">
       <label>
         キーワード
-        <input name="q" type="search" placeholder="寺院名・読み方・住所・宗派・ご本尊" />
+        <input name="q" type="search" placeholder="寺院名・読み方・住所・宗派・ご本尊" data-track-click="temple_search_refine" />
       </label>
       <label>
         地区
-        <select name="district">
+        <select name="district" data-track-click="temple_search_refine">
           <option value="">すべて</option>
           {allDistricts.map((district) => <option value={district.district_id}>{district.name}</option>)}
           <option value="__unassigned">地区未確定</option>
@@ -51,21 +51,28 @@ const districts = JSON.stringify(allDistricts);
       </label>
       <label>
         宗派
-        <select name="sect">
+        <select name="sect" data-track-click="temple_search_refine">
           <option value="">すべて</option>
           {sects.map((sect) => <option value={sect.name}>{sect.name}（{sect.count}）</option>)}
         </select>
       </label>
       <label>
         状態
-        <select name="status">
+        <select name="status" data-track-click="temple_search_refine">
           <option value="">すべて</option>
           {statuses.map((item) => <option value={item.status}>{item.label}（{item.count}）</option>)}
         </select>
       </label>
-      <button type="submit">検索</button>
+      <button type="submit" data-track-click="temple_search_refine">検索</button>
     </form>
     <p id="result-count" class="result-count" aria-live="polite"></p>
+    <div class="search-return-links" aria-label="検索から戻るリンク">
+      <span id="active-district-return"></span>
+      <a href="/areas/" data-track-click="temple_area_click">地区一覧へ戻る</a>
+      <a href="/temples/">全寺院一覧へ戻る</a>
+      <a href="/map/" data-track-click="temple_map_click">地図から探す</a>
+      <a href="/search/" data-track-click="temple_search_refine">条件を変更する</a>
+    </div>
     <div id="results" class="card-grid"></div>
   </section>
 
@@ -75,6 +82,7 @@ const districts = JSON.stringify(allDistricts);
     const form = document.querySelector("#search-form");
     const results = document.querySelector("#results");
     const resultCount = document.querySelector("#result-count");
+    const activeDistrictReturn = document.querySelector("#active-district-return");
 
     if (!panel || !form || !results || !resultCount || !panel.dataset.temples || !panel.dataset.districts) {
       throw new Error("Search UI failed to initialize.");
@@ -83,6 +91,7 @@ const districts = JSON.stringify(allDistricts);
     const temples = JSON.parse(panel.dataset.temples);
     const districts = JSON.parse(panel.dataset.districts);
     const districtNames = new Map(districts.map((district) => [district.district_id, district.name]));
+    const districtById = new Map(districts.map((district) => [district.district_id, district]));
 
     function districtNameOf(temple) {
       return districtNames.get(temple.district_id) || "地区未確定";
@@ -151,7 +160,7 @@ const districts = JSON.stringify(allDistricts);
       const districtName = districtNameOf(temple);
       const detailPageAvailable = temple.detail_page !== false;
       const title = detailPageAvailable
-        ? `<a href="/temples/${escapeHtml(temple.slug)}/">${escapeHtml(temple.name)}</a>`
+        ? `<a href="/temples/${escapeHtml(temple.slug)}/" data-track-click="temple_detail_click">${escapeHtml(temple.name)}</a>`
         : escapeHtml(temple.name);
       const summary = temple.page_summary || `${districtName}地区に所在する${temple.sect}の寺院です。公式名簿の基礎情報をもとに掲載しています。`;
       const detailNotice = detailPageAvailable
@@ -178,6 +187,41 @@ const districts = JSON.stringify(allDistricts);
       `;
     }
 
+    function emptyMessage(values) {
+      if (values.district === "__unassigned") {
+        return `
+          <div class="empty">
+            <strong>地区未分類の寺院は現在この条件では見つかりませんでした。</strong>
+            <p>地区条件を外すか、寺院名・宗派・状態の条件を変更してください。</p>
+            <div class="plain-actions">
+              <a href="/search/" data-track-click="temple_search_refine">条件を変更する</a>
+              <a href="/areas/" data-track-click="temple_area_click">地区一覧へ戻る</a>
+              <a href="/temples/">全寺院一覧へ戻る</a>
+            </div>
+          </div>
+        `;
+      }
+      return `
+        <div class="empty">
+          <strong>該当する寺院が見つかりませんでした。</strong>
+          <p>地区や宗派の条件を外して再検索してください。</p>
+          <div class="plain-actions">
+            <a href="/search/" data-track-click="temple_search_refine">条件を変更する</a>
+            <a href="/areas/" data-track-click="temple_area_click">地区一覧へ戻る</a>
+            <a href="/map/" data-track-click="temple_map_click">地図から探す</a>
+          </div>
+        </div>
+      `;
+    }
+
+    function updateReturnLinks(values) {
+      if (!activeDistrictReturn) return;
+      const selectedDistrict = districtById.get(values.district);
+      activeDistrictReturn.innerHTML = selectedDistrict
+        ? `<a href="/areas/${escapeHtml(selectedDistrict.slug)}/" data-track-click="temple_area_click">${escapeHtml(selectedDistrict.name)}地区へ戻る</a>`
+        : "";
+    }
+
     function render() {
       const values = Object.fromEntries(new FormData(form).entries());
       const keyword = normalize(values.q || "");
@@ -191,10 +235,13 @@ const districts = JSON.stringify(allDistricts);
       });
 
       writeParams(values);
-      resultCount.textContent = `${filtered.length}件見つかりました`;
+      updateReturnLinks(values);
+      resultCount.textContent = values.district === "__unassigned"
+        ? `地区未分類の寺院：${filtered.length}件`
+        : `${filtered.length}件見つかりました`;
       results.innerHTML = filtered.length
         ? filtered.map(card).join("")
-        : `<div class="empty">該当する寺院が見つかりませんでした。地区や宗派の条件を外して再検索してください。</div>`;
+        : emptyMessage(values);
     }
 
     readParams();

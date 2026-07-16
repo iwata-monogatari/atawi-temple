@@ -54,7 +54,22 @@ const districtColor = districtColors[district.district_id] || districtColors.una
 const areaHeroImage = templesWithPhoto.map((temple) => getTempleCardImage(temple)).find(Boolean);
 const sectCount = new Set(detailedTemples.map((temple) => temple.sect)).size;
 const searchUrl = `/search/?district=${district.district_id}`;
+const mapUrl = `/map/?district=${district.district_id}`;
 const heroStyle = `--district-color: ${districtColor};${areaHeroImage ? ` --area-hero-image: url("${areaHeroImage}");` : ""}`;
+const relatedDistrictIdsByDistrictId: Record<string, string[]> = {
+  mitsuke: ["nakaizumi", "koyo", "mikuriya"],
+  nakaizumi: ["mitsuke", "toyoda", "nanbu"],
+  toyoda: ["nakaizumi", "mitsuke", "toyooka"],
+  mikuriya: ["mitsuke", "koyo", "nanbu"],
+  nanbu: ["nakaizumi", "mikuriya", "fukude"],
+  koyo: ["mitsuke", "mikuriya", "toyooka"],
+  ryuyo: ["fukude", "nanbu"],
+  fukude: ["ryuyo", "nanbu"],
+  toyooka: ["toyoda", "koyo"],
+};
+const relatedDistricts = (relatedDistrictIdsByDistrictId[district.district_id] || [])
+  .map((districtId) => allDistricts.find((item) => item.district_id === districtId))
+  .filter((item): item is (typeof allDistricts)[number] => Boolean(item));
 
 const templeGroups = [
   { kind: "photo", heading: "写真掲載あり", note: "現地写真を掲載している寺院です。", temples: templesWithPhoto },
@@ -74,7 +89,8 @@ const templeGroups = [
       <h1>{district.name}の寺院検索結果</h1>
       <p>{district.summary}</p>
       <div class="area-actions">
-        <a class="button-link" href={searchUrl}>この地区で検索する</a>
+        <a class="button-link" href={searchUrl} data-track-click="temple_search_refine">この地区で検索する</a>
+        <a class="area-text-link" href={mapUrl} data-track-click="temple_map_click">地図で見る</a>
         <a class="area-text-link" href="/areas/">9地区一覧へ戻る</a>
       </div>
     </div>
@@ -124,7 +140,30 @@ const templeGroups = [
     ))}
   </nav>
 
-  <section class="section area-results-section">
+  <section class="section area-capabilities" aria-labelledby="area-capabilities-title">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Area Navigation</p>
+        <h2 id="area-capabilities-title">この地区でできること</h2>
+      </div>
+    </div>
+    <div class="area-capability-grid">
+      <a href="#area-temple-list">
+        <span>寺院一覧を見る</span>
+        <strong>{district.name}地区の登録寺院を確認</strong>
+      </a>
+      <a href={mapUrl} data-track-click="temple_map_click">
+        <span>地図で位置を見る</span>
+        <strong>地図ページをこの地区で絞り込み</strong>
+      </a>
+      <a href={searchUrl} data-track-click="temple_search_refine">
+        <span>宗派・住所で比べる</span>
+        <strong>検索ページで条件を変えて比較</strong>
+      </a>
+    </div>
+  </section>
+
+  <section id="area-temple-list" class="section area-results-section">
     <div class="area-results-heading">
       <div>
         <p class="eyebrow">Temple Results</p>
@@ -180,6 +219,20 @@ const templeGroups = [
   )}
 
   <section class="section">
+    <div class="related-districts-block">
+      <div>
+        <p class="eyebrow">Related Areas</p>
+        <h2>隣接・関連地区へ</h2>
+      </div>
+      <div class="related-district-links">
+        {relatedDistricts.map((item) => (
+          <a href={`/areas/${item.slug}/`} data-track-click="temple_area_click">
+            <strong>{item.name}</strong>
+            <span>{item.summary}</span>
+          </a>
+        ))}
+      </div>
+    </div>
     <a class="button-link" href="/areas/">9地区一覧へ戻る</a>
   </section>
 </BaseLayout>
