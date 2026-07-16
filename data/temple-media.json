@@ -4177,5 +4177,155 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "hofukuji-okubo",
+    "hero_image": "/assets/temples/hofukuji-okubo/hondo-front.webp",
+    "photos": [
+      {
+        "photo_id": "hofukuji-hondo-front-2026",
+        "src": "/assets/temples/hofukuji-okubo/hondo-front.webp",
+        "alt": "保福寺の本堂正面",
+        "caption": "境内正面から見た保福寺本堂。大久山の扁額と堂前の植栽を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hofukuji-sanmon-view-to-hondo-2026",
+        "src": "/assets/temples/hofukuji-okubo/sanmon-view-to-hondo.webp",
+        "alt": "保福寺山門から本堂を望む",
+        "caption": "山門越しに本堂を望む写真。門前の石灯籠と参道の配置を記録。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hofukuji-approach-stone-lanterns-2026",
+        "src": "/assets/temples/hofukuji-okubo/approach-stone-lanterns.webp",
+        "alt": "保福寺参道の石灯籠",
+        "caption": "入口から本堂へ続く参道。左右の石灯籠と刈り込まれた植栽を記録。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hofukuji-hondo-approach-wide-2026",
+        "src": "/assets/temples/hofukuji-okubo/hondo-approach-wide.webp",
+        "alt": "保福寺本堂と境内参道",
+        "caption": "参道の奥に本堂を正面から見る写真。境内全体の奥行きと堂前の配置を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hofukuji-hondo-and-kuri-grounds-2026",
+        "src": "/assets/temples/hofukuji-okubo/hondo-and-kuri-grounds.webp",
+        "alt": "保福寺の本堂と庫裏まわり",
+        "caption": "本堂側面と庫裏へ続く境内の景観。庭石、植栽、狸像を含めて記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hofukuji-hondo-nameboard-2026",
+        "src": "/assets/temples/hofukuji-okubo/hondo-nameboard.webp",
+        "alt": "保福寺本堂の寺号額",
+        "caption": "本堂正面に掲げられた「保福寺」の寺号額と向拝まわりの木部を記録。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hofukuji-temple-marker-stone-2026",
+        "src": "/assets/temples/hofukuji-okubo/temple-marker-stone.webp",
+        "alt": "保福寺の寺号石柱",
+        "caption": "入口脇に立つ大久山保福寺の寺号石柱。周囲の緑と合わせて記録。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hofukuji-temple-marker-wide-2026",
+        "src": "/assets/temples/hofukuji-okubo/temple-marker-wide.webp",
+        "alt": "保福寺寺号石柱と入口周辺",
+        "caption": "寺号石柱と参道入口を広く写した写真。境内入口の位置関係を記録。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hofukuji-guardian-statue-lantern-2026",
+        "src": "/assets/temples/hofukuji-okubo/guardian-statue-lantern.webp",
+        "alt": "保福寺境内の石像と石灯籠",
+        "caption": "境内に立つ石像と灯籠。参道脇の石造物と植栽を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hofukuji-eirei-monument-garden-2026",
+        "src": "/assets/temples/hofukuji-okubo/eirei-monument-garden.webp",
+        "alt": "保福寺の英霊之碑と石塔",
+        "caption": "境内の英霊之碑と石塔、庭園の石組を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hofukuji-eirei-monument-overview-2026",
+        "src": "/assets/temples/hofukuji-okubo/eirei-monument-overview.webp",
+        "alt": "保福寺の英霊之碑全景",
+        "caption": "木々の間から見た英霊之碑の全景。周囲の墓地と石造物の配置を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hofukuji-eirei-signboard-2026",
+        "src": "/assets/temples/hofukuji-okubo/eirei-signboard.webp",
+        "alt": "保福寺の英霊の碑説明板",
+        "caption": "英霊の碑について記した説明板。碑の由来を伝える文字情報を記録。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hofukuji-six-jizo-statues-2026",
+        "src": "/assets/temples/hofukuji-okubo/six-jizo-statues.webp",
+        "alt": "保福寺境内の六地蔵",
+        "caption": "境内脇に並ぶ六地蔵。参道と本堂周辺の石仏群を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hofukuji-jizo-hall-2026",
+        "src": "/assets/temples/hofukuji-okubo/jizo-hall.webp",
+        "alt": "保福寺境内の地蔵堂",
+        "caption": "植栽に囲まれた小堂内の石仏。境内の祈りの場所として記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hofukuji-jizo-shelter-2026",
+        "src": "/assets/temples/hofukuji-okubo/jizo-shelter.webp",
+        "alt": "保福寺境内の小さな地蔵祠",
+        "caption": "赤い屋根の小さな祠と石仏。境内周辺の小堂を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hofukuji-tanuki-statues-2026",
+        "src": "/assets/temples/hofukuji-okubo/tanuki-statues.webp",
+        "alt": "保福寺山門の狸像",
+        "caption": "山門脇で参拝者を迎える大小の狸像。保福寺の門前風景を記録。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
