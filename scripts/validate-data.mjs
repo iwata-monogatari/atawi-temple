@@ -1,4 +1,4 @@
-import { readFile } from "node:fs/promises";
+import { access, readFile } from "node:fs/promises";
 
 const temples = JSON.parse(await readFile("data/temples.json", "utf8"));
 const districts = JSON.parse(await readFile("data/districts.json", "utf8"));
@@ -63,6 +63,13 @@ const iwataBounds = {
   minLng: 137.7,
   maxLng: 137.95,
 };
+const deprecatedDataFiles = [
+  "data/temples-index.json",
+  "data/search-index.json",
+  "data/area.json",
+  "data/areas.json",
+  "data/status.json",
+];
 
 function sectGroupName(sect) {
   return relatedReligiousCorporationSourceSects.has(sect) ? relatedReligiousCorporationSect : sect;
@@ -104,7 +111,17 @@ for (const district of districts) {
   requireText(district, "name", label);
   requireText(district, "slug", label);
   requireText(district, "summary", label);
+  requireText(district, "description", label);
   if (district.slug) checkSlug(district.slug, label);
+}
+
+for (const file of deprecatedDataFiles) {
+  try {
+    await access(file);
+    errors.push(`data source: deprecated derived JSON must not be used as a source: ${file}`);
+  } catch {
+    // File is absent, which is the intended state.
+  }
 }
 
 for (const temple of temples) {
@@ -249,6 +266,40 @@ if (sectTotal !== temples.length) {
 }
 if (new Set(detailPageSlugs).size !== detailPageSlugs.length) {
   errors.push("detail pages: duplicate detail page slug found");
+}
+
+const regressionRules = [
+  {
+    slug: "kindaiji-tenryu",
+    expected: {
+      district_id: "nanbu",
+      area: "南部",
+      address: "静岡県磐田市天竜110番地",
+    },
+  },
+  {
+    slug: "nipponzan-myohoji-iwata",
+    expected: {
+      district_id: null,
+      area: "地区未確定",
+      address: "所在地不明",
+      status: "unknown",
+      status_label: "所在地・現況不明",
+    },
+  },
+];
+
+for (const rule of regressionRules) {
+  const temple = temples.find((item) => item.slug === rule.slug);
+  if (!temple) {
+    errors.push(`regression: required temple "${rule.slug}" is missing`);
+    continue;
+  }
+  for (const [field, expected] of Object.entries(rule.expected)) {
+    if (temple[field] !== expected) {
+      errors.push(`regression: ${rule.slug}.${field} expected "${expected}" but got "${temple[field]}"`);
+    }
+  }
 }
 
 for (const warning of warnings) {

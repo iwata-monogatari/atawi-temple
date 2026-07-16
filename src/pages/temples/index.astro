@@ -1,13 +1,62 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import TempleCard from "../../components/TempleCard.astro";
-import { allDistricts, allTemples, getDistrictName, getTempleStatusLabel, hasDetailPage } from "../../lib/temples";
+import {
+  allDistricts,
+  allTemples,
+  getDistrictName,
+  getTempleMediaBySlug,
+  getTempleStatusLabel,
+  hasDetailPage,
+} from "../../lib/temples";
 import { realEstateFunnel } from "../../lib/related-monogatari";
+
+const initialLimit = 20;
+const initialTemples = [...allTemples]
+  .sort((a, b) => a.name_kana.localeCompare(b.name_kana, "ja") || a.name.localeCompare(b.name, "ja"))
+  .slice(0, initialLimit);
+const templeIndexData = allTemples.map((temple) => {
+  const districtName = getDistrictName(temple.district_id);
+  const media = getTempleMediaBySlug(temple.slug);
+  const image = media?.hero_image ?? media?.photos[0]?.src ?? "";
+  const imageAlt = media?.photos.find((photo) => photo.src === image)?.alt ?? `${temple.name}の代表写真`;
+  return {
+    slug: temple.slug,
+    name: temple.name,
+    name_kana: temple.name_kana,
+    address: temple.address,
+    district_id: temple.district_id,
+    district_name: districtName,
+    area: temple.area,
+    sect: temple.sect,
+    status: temple.status,
+    status_label: getTempleStatusLabel(temple),
+    main_deity: temple.main_deity,
+    founded_period: "founded_period" in temple ? temple.founded_period : "",
+    page_summary: "page_summary" in temple && temple.page_summary
+      ? temple.page_summary
+      : `${districtName}地区に所在する${temple.sect}の寺院です。公式名簿の基礎情報をもとに掲載しています。`,
+    last_verified_at: temple.last_verified_at,
+    detail_page: hasDetailPage(temple),
+    image,
+    image_alt: imageAlt,
+  };
+});
+const templeIndexDataJson = JSON.stringify(templeIndexData).replace(/</g, "\\u003c");
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "磐田市の寺院一覧",
+  description: "磐田市内の現存寺院、廃寺、寺院跡を検索できる一覧です。",
+  url: "https://temple.atawi.link/temples/",
+  numberOfItems: allTemples.length,
+};
 ---
 
 <BaseLayout
   title="磐田市の寺院一覧｜ATAWI TEMPLE"
   description="磐田市内の現存寺院、廃寺、寺院跡を検索できる一覧です。"
+  structuredData={structuredData}
 >
   <section class="page-title">
     <p class="eyebrow">Temple Index</p>
@@ -32,44 +81,193 @@ import { realEstateFunnel } from "../../lib/related-monogatari";
     </div>
   </section>
 
-  <section class="section">
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>寺院名</th>
-            <th>読み方</th>
-            <th>地区</th>
-            <th>宗派</th>
-            <th>状態</th>
-            <th>詳細</th>
-          </tr>
-        </thead>
-        <tbody>
-          {
-            allTemples.map((temple) => {
-              const detailPageAvailable = hasDetailPage(temple);
-              return (
-                <tr>
-                  <td>{temple.name}</td>
-                  <td>{temple.name_kana}</td>
-                  <td>{getDistrictName(temple.district_id)}</td>
-                  <td>{temple.sect}</td>
-                  <td>{getTempleStatusLabel(temple)}</td>
-                  <td>{detailPageAvailable ? <a href={`/temples/${temple.slug}/`}>開く</a> : <span class="pending-text">検索記録</span>}</td>
-                </tr>
-              );
-            })
-          }
-        </tbody>
-      </table>
+  <section class="section temple-index-section" data-temple-index>
+    <div class="index-toolbar" aria-label="寺院一覧の表示設定">
+      <p id="temple-index-count" class="index-count">{allTemples.length}件中{initialTemples.length}件を表示</p>
+      <div class="mode-toggle" role="group" aria-label="表示形式">
+        <button type="button" class="is-active" data-index-mode="card" aria-pressed="true">カード</button>
+        <button type="button" data-index-mode="list" aria-pressed="false">一覧</button>
+      </div>
+      <label>
+        並び替え
+        <select id="temple-index-sort">
+          <option value="kana">五十音</option>
+          <option value="district">地区</option>
+          <option value="sect">宗派</option>
+          <option value="updated">更新日</option>
+        </select>
+      </label>
     </div>
+
+    <div id="temple-index-results" class="card-grid">
+      {initialTemples.map((temple) => <TempleCard temple={temple} />)}
+    </div>
+    <div class="temple-index-actions">
+      <button id="temple-index-more" type="button" class="button-link" hidden>もっと見る</button>
+      <a class="mini-text-link" href="/search/">条件検索で絞り込む</a>
+    </div>
+    <script is:inline type="application/json" id="temple-index-data" set:html={templeIndexDataJson} />
   </section>
 
-  <section class="section">
-    <h2>カード表示</h2>
-    <div class="card-grid">
-      {allTemples.map((temple) => <TempleCard temple={temple} />)}
-    </div>
-  </section>
+  <script is:inline>
+    // @ts-nocheck
+    const indexRoot = document.querySelector("[data-temple-index]");
+    const dataEl = document.getElementById("temple-index-data");
+    const resultsEl = document.getElementById("temple-index-results");
+    const countEl = document.getElementById("temple-index-count");
+    const moreButton = document.getElementById("temple-index-more");
+    const sortSelect = document.getElementById("temple-index-sort");
+    const modeButtons = Array.from(document.querySelectorAll("[data-index-mode]"));
+    const pageSize = 20;
+    let visibleCount = pageSize;
+    let mode = "card";
+    let temples = [];
+
+    if (indexRoot && dataEl && resultsEl && countEl && moreButton && sortSelect) {
+      try {
+        temples = JSON.parse(dataEl.textContent || "[]");
+      } catch {
+        temples = [];
+      }
+      renderIndex();
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    function isUnknownValue(value) {
+      return !value || ["未確認", "調査中", "対象外"].includes(value);
+    }
+
+    function knownValue(value, fallback = "確認中") {
+      return isUnknownValue(value) ? fallback : value;
+    }
+
+    function sortedTemples() {
+      const items = [...temples];
+      const sort = sortSelect.value;
+      if (sort === "district") {
+        return items.sort((a, b) =>
+          a.district_name.localeCompare(b.district_name, "ja") ||
+          a.name_kana.localeCompare(b.name_kana, "ja") ||
+          a.name.localeCompare(b.name, "ja")
+        );
+      }
+      if (sort === "sect") {
+        return items.sort((a, b) =>
+          a.sect.localeCompare(b.sect, "ja") ||
+          a.name_kana.localeCompare(b.name_kana, "ja") ||
+          a.name.localeCompare(b.name, "ja")
+        );
+      }
+      if (sort === "updated") {
+        return items.sort((a, b) =>
+          String(b.last_verified_at).localeCompare(String(a.last_verified_at)) ||
+          a.name_kana.localeCompare(b.name_kana, "ja")
+        );
+      }
+      return items.sort((a, b) => a.name_kana.localeCompare(b.name_kana, "ja") || a.name.localeCompare(b.name, "ja"));
+    }
+
+    function cardHtml(temple) {
+      const title = temple.detail_page
+        ? `<a href="/temples/${escapeHtml(temple.slug)}/" data-track-click="temple_detail_click">${escapeHtml(temple.name)}</a>`
+        : escapeHtml(temple.name);
+      const photo = temple.image
+        ? temple.detail_page
+          ? `<a class="temple-card-photo" href="/temples/${escapeHtml(temple.slug)}/" aria-label="${escapeHtml(temple.name)}の詳細を見る" data-track-click="temple_detail_click"><img src="${escapeHtml(temple.image)}" alt="${escapeHtml(temple.image_alt)}" loading="lazy" /></a>`
+          : `<div class="temple-card-photo" aria-label="${escapeHtml(temple.name)}の検索記録"><img src="${escapeHtml(temple.image)}" alt="${escapeHtml(temple.image_alt)}" loading="lazy" /></div>`
+        : "";
+      const kana = isUnknownValue(temple.name_kana) ? "" : `<p class="kana">${escapeHtml(temple.name_kana)}</p>`;
+      const pending = temple.detail_page ? "" : `<p class="pending-text">個別ページは公開していません。検索記録として表示しています。</p>`;
+      return `
+        <article class="temple-card">
+          ${photo}
+          <div class="temple-card-body">
+            <div class="card-topline">
+              <span class="status status-${escapeHtml(temple.status)}">${escapeHtml(temple.status_label)}</span>
+              <span>${escapeHtml(temple.district_name)}</span>
+            </div>
+            <h3>${title}</h3>
+            ${kana}
+            <dl class="compact-list">
+              <div><dt>住所</dt><dd>${escapeHtml(temple.address)}</dd></div>
+              <div><dt>宗派</dt><dd>${escapeHtml(temple.sect)}</dd></div>
+              <div><dt>ご本尊</dt><dd>${escapeHtml(knownValue(temple.main_deity))}</dd></div>
+              <div><dt>創建・年代</dt><dd>${escapeHtml(knownValue(temple.founded_period, "調査中"))}</dd></div>
+            </dl>
+            <p class="temple-card-summary">${escapeHtml(temple.page_summary)}</p>
+            ${pending}
+          </div>
+        </article>
+      `;
+    }
+
+    function listHtml(items) {
+      return `
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>寺院名</th>
+                <th>読み方</th>
+                <th>地区</th>
+                <th>宗派</th>
+                <th>状態</th>
+                <th>詳細</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${items.map((temple) => `
+                <tr>
+                  <td>${escapeHtml(temple.name)}</td>
+                  <td>${escapeHtml(temple.name_kana)}</td>
+                  <td>${escapeHtml(temple.district_name)}</td>
+                  <td>${escapeHtml(temple.sect)}</td>
+                  <td>${escapeHtml(temple.status_label)}</td>
+                  <td>${temple.detail_page ? `<a href="/temples/${escapeHtml(temple.slug)}/">開く</a>` : `<span class="pending-text">検索記録</span>`}</td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+      `;
+    }
+
+    function renderIndex() {
+      const sorted = sortedTemples();
+      const visible = sorted.slice(0, visibleCount);
+      resultsEl.className = mode === "card" ? "card-grid" : "temple-index-list";
+      resultsEl.innerHTML = mode === "card" ? visible.map(cardHtml).join("") : listHtml(visible);
+      countEl.textContent = `${sorted.length}件中${visible.length}件を表示`;
+      moreButton.hidden = visible.length >= sorted.length;
+    }
+
+    modeButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        mode = button.dataset.indexMode || "card";
+        modeButtons.forEach((item) => {
+          const active = item === button;
+          item.classList.toggle("is-active", active);
+          item.setAttribute("aria-pressed", active ? "true" : "false");
+        });
+        renderIndex();
+      });
+    });
+
+    sortSelect?.addEventListener("change", () => {
+      visibleCount = pageSize;
+      renderIndex();
+    });
+
+    moreButton?.addEventListener("click", () => {
+      visibleCount += pageSize;
+      renderIndex();
+    });
+  </script>
 </BaseLayout>

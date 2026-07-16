@@ -56,6 +56,14 @@ const sectCount = new Set(detailedTemples.map((temple) => temple.sect)).size;
 const searchUrl = `/search/?district=${district.district_id}`;
 const mapUrl = `/map/?district=${district.district_id}`;
 const heroStyle = `--district-color: ${districtColor};${areaHeroImage ? ` --area-hero-image: url("${areaHeroImage}");` : ""}`;
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: `${district.name}地区のお寺・寺院一覧`,
+  description: district.description,
+  url: `https://temple.atawi.link/areas/${district.slug}/`,
+  numberOfItems: temples.length,
+};
 const relatedDistrictIdsByDistrictId: Record<string, string[]> = {
   mitsuke: ["nakaizumi", "koyo", "mikuriya"],
   nakaizumi: ["mitsuke", "toyoda", "nanbu"],
@@ -82,6 +90,8 @@ const templeGroups = [
 <BaseLayout
   title={`${district.name}地区のお寺・寺院一覧｜ATAWI TEMPLE`}
   description={`${district.name}地区にある寺院、廃寺、寺院跡を整理するATAWI TEMPLEの地区別一覧です。`}
+  ogImage={areaHeroImage || undefined}
+  structuredData={structuredData}
 >
   <section class:list={["area-hero", { "area-hero--photo": areaHeroImage }]} style={heroStyle}>
     <div class="area-hero-copy">
@@ -126,6 +136,12 @@ const templeGroups = [
         <span>宗派・法人</span>
       </div>
     </div>
+  </section>
+
+  <section class="section area-intro-section" aria-labelledby="area-intro-title">
+    <p class="eyebrow">Area Guide</p>
+    <h2 id="area-intro-title">{district.name}地区の寺院と地域史</h2>
+    <p>{district.description}</p>
   </section>
 
   <nav class="area-switcher" style={`--district-color: ${districtColor};`} aria-label="地区を切り替える">

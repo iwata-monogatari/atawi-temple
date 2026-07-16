@@ -1,11 +1,14 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import {
+  allSects,
   allTemples,
   getDistrictById,
   getDistrictName,
   getPhotoCategory,
+  getSectGroupName,
   getTempleBySlug,
+  getTempleLatLng,
   getTempleMediaBySlug,
   getTempleStatusLabel,
   googleMapsEmbedUrl,
@@ -68,10 +71,63 @@ const publicationNotice: any = "publication_notice" in temple && temple.publicat
 const dankaInfo: any = "danka_info" in temple && temple.danka_info ? temple.danka_info : null;
 const annualEvents = dankaInfo && Array.isArray(dankaInfo.annual_events) ? dankaInfo.annual_events : [];
 const monogatariLinks = getMonogatariLinksBySlug(temple.slug);
+const currentSectName = getSectGroupName(temple.sect);
+const currentSectSlug = allSects.find((sect) => sect.name === currentSectName)?.slug || "";
 const sameDistrictTemples = allTemples
   .filter((item) => item.slug !== temple.slug && item.district_id === temple.district_id && hasDetailPage(item))
   .sort((a, b) => (a.status === "existing" ? 0 : 1) - (b.status === "existing" ? 0 : 1))
   .slice(0, 5);
+const sameSectTemples = allTemples
+  .filter((item) => item.slug !== temple.slug && getSectGroupName(item.sect) === currentSectName && hasDetailPage(item))
+  .sort((a, b) =>
+    (a.district_id === temple.district_id ? 0 : 1) - (b.district_id === temple.district_id ? 0 : 1) ||
+    a.name_kana.localeCompare(b.name_kana, "ja") ||
+    a.name.localeCompare(b.name, "ja")
+  )
+  .slice(0, 5);
+const currentLatLng = getTempleLatLng(temple);
+const nearbyTemples = currentLatLng
+  ? allTemples
+      .filter((item) => item.slug !== temple.slug && hasDetailPage(item) && getTempleLatLng(item))
+      .map((item) => {
+        const latLng = getTempleLatLng(item)!;
+        const distance = (latLng.lat - currentLatLng.lat) ** 2 + (latLng.lng - currentLatLng.lng) ** 2;
+        return { temple: item, distance };
+      })
+      .sort((a, b) => a.distance - b.distance)
+      .slice(0, 5)
+      .map((item) => item.temple)
+  : [];
+const templeImage = media?.hero_image || "/assets/temples/kokubunji-mitsuke/hondo.webp";
+const siteUrl = "https://temple.atawi.link";
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "ATAWI TEMPLE", item: `${siteUrl}/` },
+      { "@type": "ListItem", position: 2, name: "寺院一覧", item: `${siteUrl}/temples/` },
+      { "@type": "ListItem", position: 3, name: `${districtName}地区`, item: `${siteUrl}${districtUrl}` },
+      { "@type": "ListItem", position: 4, name: temple.name, item: `${siteUrl}/temples/${temple.slug}/` },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    name: temple.name,
+    description: pageSummary,
+    url: `${siteUrl}/temples/${temple.slug}/`,
+    image: new URL(templeImage, siteUrl).toString(),
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "JP",
+      addressRegion: "静岡県",
+      addressLocality: "磐田市",
+      streetAddress: temple.address.replace(/^静岡県磐田市/, ""),
+    },
+    ...(currentLatLng ? { geo: { "@type": "GeoCoordinates", latitude: currentLatLng.lat, longitude: currentLatLng.lng } } : {}),
+  },
+];
 
 const field = (value: string | null | undefined, pending = "調査中") => ({
   text: isUnknownValue(value) ? pending : value,
@@ -84,6 +140,8 @@ const officialSite = dankaInfo?.official_site;
 <BaseLayout
   title={`${temple.name}｜${districtName}・${temple.address}・${temple.sect}｜ATAWI TEMPLE`}
   description={`${temple.name}の住所、宗派、歴史、文化財、写真、調査状況を整理するATAWI TEMPLEの寺院情報ページです。`}
+  ogImage={templeImage}
+  structuredData={structuredData}
 >
   <article class="temple-profile">
     {publicationNotice && (
@@ -425,6 +483,46 @@ const officialSite = dankaInfo?.official_site;
               <span>{getTempleStatusLabel(item)}</span>
               <strong>{item.name}</strong>
               <em>{item.area} / {item.sect}</em>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+    {sameSectTemples.length > 0 && (
+      <section class="same-district-temples">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Same Sect</p>
+            <h2>同じ宗派・関連法人の寺院</h2>
+          </div>
+          {currentSectSlug && <a href={`/sects/${currentSectSlug}/`}>宗派別一覧を見る</a>}
+        </div>
+        <div class="same-district-grid">
+          {sameSectTemples.map((item) => (
+            <a href={`/temples/${item.slug}/`} data-track-click="temple_related_temple_click">
+              <span>{getTempleStatusLabel(item)}</span>
+              <strong>{item.name}</strong>
+              <em>{getDistrictName(item.district_id)} / {item.sect}</em>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+    {nearbyTemples.length > 0 && (
+      <section class="same-district-temples">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Nearby</p>
+            <h2>近隣の寺院</h2>
+          </div>
+          <a href={mapPageUrl} data-track-click="temple_map_click">地図で見る</a>
+        </div>
+        <div class="same-district-grid">
+          {nearbyTemples.map((item) => (
+            <a href={`/temples/${item.slug}/`} data-track-click="temple_related_temple_click">
+              <span>{getTempleStatusLabel(item)}</span>
+              <strong>{item.name}</strong>
+              <em>{getDistrictName(item.district_id)} / {item.sect}</em>
             </a>
           ))}
         </div>

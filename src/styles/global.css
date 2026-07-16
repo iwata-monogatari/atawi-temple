@@ -1672,6 +1672,83 @@ button,
   gap: 16px;
 }
 
+.temple-index-section {
+  padding-top: 24px;
+}
+
+.index-toolbar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(180px, 240px);
+  gap: 14px;
+  align-items: end;
+  margin-bottom: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  padding: 14px;
+}
+
+.index-count {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.index-toolbar label {
+  display: grid;
+  gap: 4px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.mode-toggle {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+  padding: 4px;
+}
+
+.mode-toggle button {
+  border-radius: 6px;
+  background: transparent;
+  color: var(--accent-strong);
+  padding: 8px 12px;
+}
+
+.mode-toggle button.is-active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.temple-index-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.temple-index-list {
+  display: block;
+}
+
+.area-intro-section {
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+.area-intro-section p:last-child {
+  max-width: 880px;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 1.03rem;
+}
+
 .area-hero {
   --district-color: var(--accent);
   --area-hero-image: linear-gradient(135deg, rgba(47, 75, 43, 0.92), rgba(32, 32, 29, 0.86));
@@ -3499,6 +3576,7 @@ th {
 @media (max-width: 820px) {
   .discovery-actions,
   .area-capability-grid,
+  .index-toolbar,
   .temple-summary-strip {
     grid-template-columns: 1fr;
   }

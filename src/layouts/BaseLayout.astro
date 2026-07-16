@@ -5,14 +5,44 @@ import "../styles/global.css";
 interface Props {
   title?: string;
   description?: string;
+  ogImage?: string;
   noindex?: boolean;
+  structuredData?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const {
   title = "磐田市のお寺・寺院データベース｜ATAWI TEMPLE",
   description = "磐田市内の寺院、廃寺、寺院跡、霊場・札所情報を整理する地域寺院データベースです。",
+  ogImage = "/assets/temples/kokubunji-mitsuke/hondo.webp",
   noindex = false,
+  structuredData = [],
 } = Astro.props;
+const siteUrl = Astro.site?.toString().replace(/\/+$/, "") || "https://temple.atawi.link";
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).toString();
+const ogImageUrl = new URL(ogImage, siteUrl).toString();
+const pageStructuredData = Array.isArray(structuredData) ? structuredData : [structuredData];
+const sharedStructuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "ATAWI TEMPLE",
+    url: siteUrl,
+    logo: new URL("/assets/brand/atawi-temple-mark.svg", siteUrl).toString(),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "ATAWI TEMPLE",
+    url: siteUrl,
+    description,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${siteUrl}/search/?q={search_term_string}`,
+      "query-input": "required name=search_term_string",
+    },
+  },
+];
+const structuredDataItems = [...sharedStructuredData, ...pageStructuredData].filter((item) => Object.keys(item).length > 0);
 ---
 
 <!doctype html>
@@ -24,9 +54,22 @@ const {
     <meta name="description" content={description} />
     {noindex && <meta name="robots" content="noindex,nofollow" />}
     <meta name="theme-color" content="#2f4b2b" />
-    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:site_name" content="ATAWI TEMPLE" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="manifest" href="/site.webmanifest" />
+    {structuredDataItems.map((item) => (
+      <script is:inline type="application/ld+json" set:html={JSON.stringify(item).replace(/</g, "\\u003c")} />
+    ))}
     <FujigaokaAnalytics />
   </head>
   <body>

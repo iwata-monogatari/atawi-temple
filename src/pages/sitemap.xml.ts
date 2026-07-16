@@ -1,6 +1,6 @@
 import type { APIRoute } from "astro";
 import { guideArticles, tokushuArticles } from "../lib/editorial";
-import { allDistricts, allSects, allTemples, hasDetailPage } from "../lib/temples";
+import { allDistricts, allSects, allTempleUpdates, allTemples, hasDetailPage } from "../lib/temples";
 
 const staticPaths = [
   "/",
@@ -22,13 +22,20 @@ const staticPaths = [
 
 export const GET: APIRoute = ({ site }) => {
   const baseUrl = site?.toString().replace(/\/+$/, "") || "https://temple.atawi.link";
+  const latestSiteDate = [
+    ...allTemples.map((temple) => temple.last_verified_at),
+    ...allTempleUpdates.map((update) => update.date),
+  ].sort().at(-1) || "2026-07-17";
   const urls = [
-    ...staticPaths,
-    ...allDistricts.map((district) => `/areas/${district.slug}/`),
-    ...allSects.map((sect) => `/sects/${sect.slug}/`),
-    ...guideArticles.map((article) => `/guide/${article.slug}/`),
-    ...tokushuArticles.map((article) => `/tokushu/${article.slug}/`),
-    ...allTemples.filter(hasDetailPage).map((temple) => `/temples/${temple.slug}/`),
+    ...staticPaths.map((path) => ({ path, lastmod: latestSiteDate })),
+    ...allDistricts.map((district) => ({ path: `/areas/${district.slug}/`, lastmod: latestSiteDate })),
+    ...allSects.map((sect) => ({ path: `/sects/${sect.slug}/`, lastmod: latestSiteDate })),
+    ...guideArticles.map((article) => ({ path: `/guide/${article.slug}/`, lastmod: latestSiteDate })),
+    ...tokushuArticles.map((article) => ({ path: `/tokushu/${article.slug}/`, lastmod: latestSiteDate })),
+    ...allTemples.filter(hasDetailPage).map((temple) => ({
+      path: `/temples/${temple.slug}/`,
+      lastmod: temple.last_verified_at || latestSiteDate,
+    })),
   ];
 
   return new Response(
@@ -36,8 +43,9 @@ export const GET: APIRoute = ({ site }) => {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls
   .map(
-    (path) => `  <url>
+    ({ path, lastmod }) => `  <url>
     <loc>${baseUrl}${path}</loc>
+    <lastmod>${lastmod}</lastmod>
     <changefreq>${path.startsWith("/temples/") ? "monthly" : "weekly"}</changefreq>
   </url>`,
   )
