@@ -3802,5 +3802,56 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "honmyoin-iwai",
+    "hero_image": "/assets/temples/honmyoin-iwai/hondo-front.webp",
+    "photos": [
+      {
+        "photo_id": "honmyoin-hondo-front-2026",
+        "src": "/assets/temples/honmyoin-iwai/hondo-front.webp",
+        "alt": "本妙院の本堂正面",
+        "caption": "道路沿いから見た本妙院の本堂正面。松と本堂の全体を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "honmyoin-hondo-side-2026",
+        "src": "/assets/temples/honmyoin-iwai/hondo-side.webp",
+        "alt": "本妙院本堂の側面外観",
+        "caption": "本堂側面の外観。瓦屋根と縁側、周辺の植栽を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "honmyoin-entrance-nameboard-2026",
+        "src": "/assets/temples/honmyoin-iwai/entrance-nameboard.webp",
+        "alt": "本妙院の寺号板と玄関まわり",
+        "caption": "本堂脇の玄関まわりに掲げられた「本妙院」の寺号板。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "honmyoin-approach-road-2026",
+        "src": "/assets/temples/honmyoin-iwai/approach-road.webp",
+        "alt": "本妙院前の道路と境内外観",
+        "caption": "道路沿いから見た本妙院の境内外観。周辺の住宅地との位置関係が分かる。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "honmyoin-hondo-side-rear-2026",
+        "src": "/assets/temples/honmyoin-iwai/hondo-side-rear.webp",
+        "alt": "本妙院本堂の側面と屋根",
+        "caption": "本堂側面と屋根の造り。堂宇の規模と境内の奥行きを記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
