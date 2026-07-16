@@ -4054,5 +4054,128 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "shinpoin-mukasa",
+    "hero_image": "/assets/temples/shinpoin-mukasa/hondo-front.webp",
+    "photos": [
+      {
+        "photo_id": "shinpoin-hondo-front-2026",
+        "src": "/assets/temples/shinpoin-mukasa/hondo-front.webp",
+        "alt": "新豊院の本堂正面",
+        "caption": "新豊院の本堂正面。階段、石造物、堂前の配置を含めて境内の中心部を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinpoin-hondo-entrance-2026",
+        "src": "/assets/temples/shinpoin-mukasa/hondo-entrance.webp",
+        "alt": "新豊院本堂の入口まわり",
+        "caption": "本堂入口と献香台、向拝まわりを正面から確認できる写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinpoin-hondo-plaque-2026",
+        "src": "/assets/temples/shinpoin-mukasa/hondo-plaque.webp",
+        "alt": "新豊院本堂の山号額",
+        "caption": "本堂正面に掲げられた山号額と大数珠を記録。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinpoin-hondo-plaque-close-2026",
+        "src": "/assets/temples/shinpoin-mukasa/hondo-plaque-close.webp",
+        "alt": "新豊院本堂の山号額近景",
+        "caption": "山号額を近景で撮影し、額の風合いと本堂正面の細部を補足。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinpoin-hondo-side-veranda-2026",
+        "src": "/assets/temples/shinpoin-mukasa/hondo-side-veranda.webp",
+        "alt": "新豊院本堂脇の縁側",
+        "caption": "本堂脇の縁側と境内建物のつながりを記録した写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinpoin-grounds-wide-2026",
+        "src": "/assets/temples/shinpoin-mukasa/grounds-wide.webp",
+        "alt": "新豊院境内の全景",
+        "caption": "本堂、境内看板、庫裏側の建物を含む新豊院境内の全景。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinpoin-approach-stone-pillar-2026",
+        "src": "/assets/temples/shinpoin-mukasa/approach-stone-pillar.webp",
+        "alt": "新豊院参道の寺号石柱",
+        "caption": "参道脇の寺号石柱と、奥に続く境内への導線を記録。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinpoin-entrance-stone-pillar-2026",
+        "src": "/assets/temples/shinpoin-mukasa/entrance-stone-pillar.webp",
+        "alt": "新豊院入口の曹洞宗石柱",
+        "caption": "入口付近の曹洞宗石柱と参道、墓地、山裾の位置関係を記録。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinpoin-old-marker-entrance-2026",
+        "src": "/assets/temples/shinpoin-mukasa/old-marker-entrance.webp",
+        "alt": "新豊院入口付近の古い標柱",
+        "caption": "新豊院入口付近に残る古い標柱と石碑を記録。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinpoin-small-hall-monument-2026",
+        "src": "/assets/temples/shinpoin-mukasa/small-hall-monument.webp",
+        "alt": "新豊院境内の小堂と石碑",
+        "caption": "境内の小堂、石灯籠、石碑を記録した写真。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinpoin-rokudo-jizo-monument-2026",
+        "src": "/assets/temples/shinpoin-mukasa/rokudo-jizo-monument.webp",
+        "alt": "新豊院の六道能化地蔵願王菩薩供養碑",
+        "caption": "六道能化地蔵願王菩薩供養碑の刻字を確認できる近景。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinpoin-overlook-kannon-2026",
+        "src": "/assets/temples/shinpoin-mukasa/overlook-kannon.webp",
+        "alt": "新豊院の観音像と眺望",
+        "caption": "高台の観音像と周辺の眺望を記録した写真。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinpoin-overlook-kannon-wide-2026",
+        "src": "/assets/temples/shinpoin-mukasa/overlook-kannon-wide.webp",
+        "alt": "新豊院高台からの眺望",
+        "caption": "観音像の立つ高台から、太田川流域方向の眺望を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
