@@ -87,8 +87,45 @@ function photoAt(slug: string, index: number) {
   return photo ? { src: photo.src, alt: photo.alt } : null;
 }
 
-// ヒーローは富士山と五重塔の写真を全面背景として1枚使う
-const heroImage = "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&fit=crop&w=1800&q=80";
+type HeroSlide = {
+  src: string;
+  alt: string;
+  templeName: string;
+  districtName: string;
+  meta: string;
+  href: string;
+  objectPosition: string;
+};
+
+const heroSlideSeeds = [
+  { slug: "ioji-kamada", index: 10, objectPosition: "center center" },
+  { slug: "jurinji-kamiohnogo", index: 9, objectPosition: "center center" },
+  { slug: "gyokoji-ikeda", index: 3, objectPosition: "center center" },
+  { slug: "daijoin-nakaizumi", index: 7, objectPosition: "center center" },
+  { slug: "kokubunji-mitsuke", index: 0, objectPosition: "center center" },
+  { slug: "shinpoin-mukasa", index: 12, objectPosition: "center center" },
+  { slug: "sojiji-minamijima", index: 3, objectPosition: "center center" },
+];
+
+const heroSlides = heroSlideSeeds
+  .map((seed) => {
+    const temple = getTempleBySlug(seed.slug);
+    const photo = photoAt(seed.slug, seed.index);
+    if (!temple || !photo) return null;
+    const districtName = getDistrictName(temple.district_id);
+    return {
+      src: photo.src,
+      alt: photo.alt,
+      templeName: temple.name,
+      districtName,
+      meta: `${districtName}地区 / ${photo.alt}`,
+      href: `/temples/${temple.slug}/`,
+      objectPosition: seed.objectPosition,
+    };
+  })
+  .filter((slide): slide is HeroSlide => Boolean(slide));
+const firstHeroSlide = heroSlides[0];
+const heroSlidesJson = JSON.stringify(heroSlides).replace(/</g, "\\u003c");
 const iwataMonogatariBannerImage = "/assets/temples/kokubunji-mitsuke/hondo.webp";
 
 // 境内の実写真は「境内フォトギャラリー」等の各セクションで使う（華やかさ重視で選定）
@@ -124,12 +161,47 @@ const galleryPhotos = [
 ---
 
 <BaseLayout>
-  <section class="hero" style={`background-image: url(${heroImage})`}>
-    <div>
+  <section class="hero hero--slideshow" data-hero-slideshow>
+    <div class="hero-slides" aria-hidden="true">
+      {heroSlides.map((slide, index) => (
+        <img
+          class={index === 0 ? "hero-slide is-active" : "hero-slide"}
+          src={slide.src}
+          alt=""
+          loading={index === 0 ? "eager" : "lazy"}
+          fetchpriority={index === 0 ? "high" : "auto"}
+          decoding="async"
+          style={`object-position: ${slide.objectPosition};`}
+          data-hero-slide
+        />
+      ))}
+    </div>
+    <div class="hero-content">
       <p class="eyebrow">公開資料と現地訪問で整理する地域寺院情報</p>
       <span class="hero-rule" aria-hidden="true"></span>
       <h1>磐田市のお寺・寺院<br />データベース</h1>
       <p class="brand-name">ATAWI TEMPLE</p>
+      {firstHeroSlide && (
+        <div class="hero-photo-meta" aria-live="polite">
+          <a id="hero-slide-link" href={firstHeroSlide.href} data-track-click="temple_detail_click">
+            {firstHeroSlide.templeName}
+          </a>
+          <span id="hero-slide-location">{firstHeroSlide.meta}</span>
+        </div>
+      )}
+      {heroSlides.length > 1 && (
+        <div class="hero-slide-dots" aria-label="ヒーロー写真">
+          {heroSlides.map((slide, index) => (
+            <button
+              class={index === 0 ? "hero-slide-dot is-active" : "hero-slide-dot"}
+              type="button"
+              aria-label={`${slide.templeName}の写真を表示`}
+              aria-current={index === 0 ? "true" : undefined}
+              data-hero-dot={index}
+            />
+          ))}
+        </div>
+      )}
       <form class="hero-search" action="/search/" method="get">
         <label for="q">寺院名・読み方・住所・宗派・ご本尊・札所名から検索</label>
         <div>
@@ -143,6 +215,78 @@ const galleryPhotos = [
         </div>
       </form>
     </div>
+    <script is:inline type="application/json" id="hero-slide-data" set:html={heroSlidesJson} />
+    <script>
+      (() => {
+        const root = document.querySelector("[data-hero-slideshow]");
+        const dataEl = document.getElementById("hero-slide-data");
+        if (!root || !dataEl) return;
+
+        let slideData: any[] = [];
+        try {
+          slideData = JSON.parse(dataEl.textContent || "[]");
+        } catch {
+          slideData = [];
+        }
+
+        const slides = Array.from(root.querySelectorAll("[data-hero-slide]"));
+        const dots = Array.from(root.querySelectorAll("[data-hero-dot]"));
+        const link = document.getElementById("hero-slide-link");
+        const location = document.getElementById("hero-slide-location");
+        if (slides.length === 0 || slideData.length === 0) return;
+
+        let activeIndex = 0;
+        let timer: number | null = null;
+        const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+        function setActiveSlide(nextIndex: number) {
+          activeIndex = (nextIndex + slides.length) % slides.length;
+          slides.forEach((slide, index) => {
+            slide.classList.toggle("is-active", index === activeIndex);
+          });
+          dots.forEach((dot, index) => {
+            dot.classList.toggle("is-active", index === activeIndex);
+            if (index === activeIndex) {
+              dot.setAttribute("aria-current", "true");
+            } else {
+              dot.removeAttribute("aria-current");
+            }
+          });
+
+          const current = slideData[activeIndex];
+          if (current && link && location) {
+            link.setAttribute("href", current.href);
+            link.textContent = current.templeName;
+            location.textContent = current.meta;
+          }
+        }
+
+        function stop() {
+          if (timer) window.clearInterval(timer);
+          timer = null;
+        }
+
+        function start() {
+          stop();
+          if (slides.length < 2 || motionQuery.matches || document.hidden) return;
+          timer = window.setInterval(() => {
+            setActiveSlide(activeIndex + 1);
+          }, 5600);
+        }
+
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            setActiveSlide(index);
+            start();
+          });
+        });
+        root.addEventListener("mouseenter", stop);
+        root.addEventListener("mouseleave", start);
+        document.addEventListener("visibilitychange", start);
+        motionQuery.addEventListener?.("change", start);
+        start();
+      })();
+    </script>
   </section>
 
   <section class="proof-band" aria-label="登録状況">
