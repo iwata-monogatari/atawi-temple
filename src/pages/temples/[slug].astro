@@ -76,6 +76,15 @@ const officialSite = dankaInfo?.official_site;
   description={`${temple.name}の住所、宗派、歴史、文化財、写真、調査状況を整理するATAWI TEMPLEの寺院情報ページです。`}
 >
   <article class="temple-profile">
+    {publicationNotice && (
+      <section class="publication-notice publication-notice--top" aria-label={publicationNotice.label || "掲載に関するお知らせ"}>
+        <div class="publication-notice__inner">
+          <span>{publicationNotice.label || "掲載に関するお知らせ"}</span>
+          <h2>{publicationNotice.title}</h2>
+          {publicationNotice.body.map((paragraph: string) => <p>{paragraph}</p>)}
+        </div>
+      </section>
+    )}
     <header class="temple-masthead">
       <div class="temple-heading">
         <div>
@@ -374,14 +383,5 @@ const officialSite = dankaInfo?.official_site;
         </section>
       </aside>
     </div>
-    {publicationNotice && (
-      <section class="publication-notice publication-notice--bottom" aria-label={publicationNotice.label || "掲載に関するお知らせ"}>
-        <div class="publication-notice__inner">
-          <span>{publicationNotice.label || "掲載に関するお知らせ"}</span>
-          <h2>{publicationNotice.title}</h2>
-          {publicationNotice.body.map((paragraph: string) => <p>{paragraph}</p>)}
-        </div>
-      </section>
-    )}
   </article>
 </BaseLayout>

@@ -39,10 +39,15 @@ function compareAreaTemples(a: Temple, b: Temple) {
   return rankA - rankB;
 }
 
+const bottomListedTempleSlugs = district.district_id === "koyo" ? new Set(["senshoji-iwai"]) : new Set<string>();
+const isBottomListedTemple = (temple: Temple) => bottomListedTempleSlugs.has(temple.slug);
+
 const temples = [...getTemplesByDistrictId(district.district_id)].sort(compareAreaTemples);
 const detailedTemples = temples.filter((temple) => hasDetailPage(temple));
-const templesWithPhoto = detailedTemples.filter((temple) => templeHasPhoto(temple));
-const templesWithoutPhoto = detailedTemples.filter((temple) => !templeHasPhoto(temple));
+const bottomListedTemples = detailedTemples.filter(isBottomListedTemple);
+const standardDetailedTemples = detailedTemples.filter((temple) => !isBottomListedTemple(temple));
+const templesWithPhoto = standardDetailedTemples.filter((temple) => templeHasPhoto(temple));
+const templesWithoutPhoto = standardDetailedTemples.filter((temple) => !templeHasPhoto(temple));
 const unresearchedTemples = temples.filter((temple) => !hasDetailPage(temple));
 const monogatariDistrictUrl = getMonogatariDistrictUrl(district.district_id);
 const districtColor = districtColors[district.district_id] || districtColors.unassigned;
@@ -55,6 +60,7 @@ const templeGroups = [
   { kind: "photo", heading: "写真掲載あり", note: "現地写真を掲載している寺院です。", temples: templesWithPhoto },
   { kind: "plain", heading: "写真準備中", note: "基礎情報は掲載済みで、現地写真は今後追加予定です。", temples: templesWithoutPhoto },
   { kind: "pending", heading: "現地確認待ち", note: "現地での痕跡確認ができておらず、検索記録として掲載しています。", temples: unresearchedTemples },
+  { kind: "withheld", heading: "掲載見合わせ", note: "関係者からの意思表示を受け、写真掲載を見合わせている寺院です。", temples: bottomListedTemples },
 ].filter((group) => group.temples.length > 0);
 ---
 
@@ -93,6 +99,12 @@ const templeGroups = [
         <strong>{unresearchedTemples.length}</strong>
         <span>現地確認待ち</span>
       </div>
+      {bottomListedTemples.length > 0 && (
+        <div>
+          <strong>{bottomListedTemples.length}</strong>
+          <span>掲載見合わせ</span>
+        </div>
+      )}
       <div>
         <strong>{sectCount}</strong>
         <span>宗派・法人</span>
@@ -120,6 +132,7 @@ const templeGroups = [
       </div>
       <p class="small area-count-summary">
         {temples.length}件登録 / 写真掲載あり{templesWithPhoto.length}件 / 写真準備中{templesWithoutPhoto.length}件 / 現地確認待ち{unresearchedTemples.length}件
+        {bottomListedTemples.length > 0 && <> / 掲載見合わせ{bottomListedTemples.length}件</>}
       </p>
     </div>
     {
