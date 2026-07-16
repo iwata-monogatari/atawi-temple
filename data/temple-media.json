@@ -3853,5 +3853,206 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "hounji-mukasa",
+    "hero_image": "/assets/temples/hounji-mukasa/hondo-front.webp",
+    "photos": [
+      {
+        "photo_id": "hounji-hondo-front-2026",
+        "src": "/assets/temples/hounji-mukasa/hondo-front.webp",
+        "alt": "法雲寺の本堂正面",
+        "caption": "庭越しに見た法雲寺の本堂正面。瓦屋根と前庭の植栽を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hounji-hondo-front-close-2026",
+        "src": "/assets/temples/hounji-mukasa/hondo-front-close.webp",
+        "alt": "法雲寺本堂の正面近景",
+        "caption": "本堂正面を近くから見た写真。向拝、柱、扉まわりの造りを記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hounji-hondo-entrance-2026",
+        "src": "/assets/temples/hounji-mukasa/hondo-entrance.webp",
+        "alt": "法雲寺本堂の入口まわり",
+        "caption": "本堂入口の近景。扉、彫刻、軒下の細部を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hounji-sanmon-approach-2026",
+        "src": "/assets/temples/hounji-mukasa/sanmon-approach.webp",
+        "alt": "法雲寺の山門と参道",
+        "caption": "山門越しに本堂を望む参道正面の構図。境内入口の様子を記録。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hounji-entrance-stone-pillar-2026",
+        "src": "/assets/temples/hounji-mukasa/entrance-stone-pillar.webp",
+        "alt": "法雲寺の寺号石柱",
+        "caption": "入口付近の寺号石柱。「曹洞宗 八幡山 法雲寺」の文字を確認できる。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hounji-road-signboard-2026",
+        "src": "/assets/temples/hounji-mukasa/road-signboard.webp",
+        "alt": "法雲寺の道路沿い案内看板",
+        "caption": "道路沿いに立つ法雲寺の案内看板。札所や七福神、地蔵霊場の表示を記録。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hounji-grounds-side-approach-2026",
+        "src": "/assets/temples/hounji-mukasa/grounds-side-approach.webp",
+        "alt": "法雲寺境内の参道脇",
+        "caption": "山門脇から境内奥を見た写真。石碑、植栽、境内動線を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hounji-grounds-hondo-side-2026",
+        "src": "/assets/temples/hounji-mukasa/grounds-hondo-side.webp",
+        "alt": "法雲寺本堂脇の境内",
+        "caption": "本堂脇と庫裏側の外観。庭木と建物配置が分かる境内写真。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hounji-stone-statues-sign-2026",
+        "src": "/assets/temples/hounji-mukasa/stone-statues-sign.webp",
+        "alt": "法雲寺境内の石仏と案内板",
+        "caption": "境内の石仏、石碑、案内板を記録した写真。札所としての信仰要素が分かる。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hounji-inari-shrine-2026",
+        "src": "/assets/temples/hounji-mukasa/inari-shrine.webp",
+        "alt": "法雲寺境内の稲荷堂",
+        "caption": "境内に祀られる稲荷堂。赤い鳥居と社殿を正面から記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hounji-jizo-halls-2026",
+        "src": "/assets/temples/hounji-mukasa/jizo-halls.webp",
+        "alt": "法雲寺境内の地蔵堂",
+        "caption": "境内に並ぶ小堂と石仏。赤い屋根の小堂を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hounji-stone-lantern-monument-2026",
+        "src": "/assets/temples/hounji-mukasa/stone-lantern-monument.webp",
+        "alt": "法雲寺境内の石灯籠と石碑",
+        "caption": "植栽の中に残る石灯籠と石碑。境内の石造物を補足記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "anzenji-iwai",
+    "hero_image": "/assets/temples/anzenji-iwai/hondo-front.webp",
+    "photos": [
+      {
+        "photo_id": "anzenji-hondo-front-2026",
+        "src": "/assets/temples/anzenji-iwai/hondo-front.webp",
+        "alt": "安全寺の本堂正面",
+        "caption": "安全寺の本堂正面。山号額「岩井山」と本堂入口を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "anzenji-hondo-side-2026",
+        "src": "/assets/temples/anzenji-iwai/hondo-side.webp",
+        "alt": "安全寺本堂の側面外観",
+        "caption": "本堂側面と山裾の緑を写した外観写真。境内の立地を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "anzenji-hondo-approach-2026",
+        "src": "/assets/temples/anzenji-iwai/hondo-approach.webp",
+        "alt": "安全寺本堂への参道",
+        "caption": "参道から木々越しに本堂を望む写真。境内の奥行きと植栽を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "anzenji-approach-stairs-2026",
+        "src": "/assets/temples/anzenji-iwai/approach-stairs.webp",
+        "alt": "安全寺へ向かう参道階段",
+        "caption": "道路側から境内へ向かう階段参道。高低差のある入口を記録。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "anzenji-grounds-hillside-shrine-2026",
+        "src": "/assets/temples/anzenji-iwai/grounds-hillside-shrine.webp",
+        "alt": "安全寺境内の山裾と小堂",
+        "caption": "山裾の緑と境内奥の小堂。安全寺の周辺環境を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "anzenji-hondo-plaque-2026",
+        "src": "/assets/temples/anzenji-iwai/hondo-plaque.webp",
+        "alt": "安全寺本堂の山号額",
+        "caption": "本堂正面に掲げられた山号額「岩井山」。山号確認用の写真。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "anzenji-grounds-kannon-2026",
+        "src": "/assets/temples/anzenji-iwai/grounds-kannon.webp",
+        "alt": "安全寺境内の観音像と本堂周辺",
+        "caption": "境内の観音像と本堂周辺の景観。山裾に接する境内配置を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "anzenji-kannon-stonework-2026",
+        "src": "/assets/temples/anzenji-iwai/kannon-stonework.webp",
+        "alt": "安全寺境内の観音像と石仏",
+        "caption": "境内の観音像と石仏を近くから記録した写真。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "anzenji-jizo-hall-2026",
+        "src": "/assets/temples/anzenji-iwai/jizo-hall.webp",
+        "alt": "安全寺境内の地蔵堂",
+        "caption": "境内奥の地蔵堂。二体の石仏と小堂の様子を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
