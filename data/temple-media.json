@@ -5335,5 +5335,1883 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "saikoji-kaketsuka",
+    "hero_image": "/assets/temples/saikoji-kaketsuka/ryuyo-01.webp",
+    "photos": [
+      {
+        "photo_id": "saikoji-kaketsuka-ryuyo-01-2026",
+        "src": "/assets/temples/saikoji-kaketsuka/ryuyo-01.webp",
+        "alt": "西光寺の現地写真 1",
+        "caption": "西光寺の現地写真 1",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-kaketsuka-ryuyo-02-2026",
+        "src": "/assets/temples/saikoji-kaketsuka/ryuyo-02.webp",
+        "alt": "西光寺の現地写真 2",
+        "caption": "西光寺の現地写真 2",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-kaketsuka-ryuyo-03-2026",
+        "src": "/assets/temples/saikoji-kaketsuka/ryuyo-03.webp",
+        "alt": "西光寺の現地写真 3",
+        "caption": "西光寺の現地写真 3",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-kaketsuka-ryuyo-04-2026",
+        "src": "/assets/temples/saikoji-kaketsuka/ryuyo-04.webp",
+        "alt": "西光寺の現地写真 4",
+        "caption": "西光寺の現地写真 4",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-kaketsuka-ryuyo-05-2026",
+        "src": "/assets/temples/saikoji-kaketsuka/ryuyo-05.webp",
+        "alt": "西光寺の現地写真 5",
+        "caption": "西光寺の現地写真 5",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-kaketsuka-ryuyo-06-2026",
+        "src": "/assets/temples/saikoji-kaketsuka/ryuyo-06.webp",
+        "alt": "西光寺の現地写真 6",
+        "caption": "西光寺の現地写真 6",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-kaketsuka-ryuyo-07-2026",
+        "src": "/assets/temples/saikoji-kaketsuka/ryuyo-07.webp",
+        "alt": "西光寺の現地写真 7",
+        "caption": "西光寺の現地写真 7",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "kokuseiji-kaketsuka",
+    "hero_image": "/assets/temples/kokuseiji-kaketsuka/ryuyo-01.webp",
+    "photos": [
+      {
+        "photo_id": "kokuseiji-kaketsuka-ryuyo-01-2026",
+        "src": "/assets/temples/kokuseiji-kaketsuka/ryuyo-01.webp",
+        "alt": "國清寺の現地写真 1",
+        "caption": "國清寺の現地写真 1",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kokuseiji-kaketsuka-ryuyo-02-2026",
+        "src": "/assets/temples/kokuseiji-kaketsuka/ryuyo-02.webp",
+        "alt": "國清寺の現地写真 2",
+        "caption": "國清寺の現地写真 2",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kokuseiji-kaketsuka-ryuyo-03-2026",
+        "src": "/assets/temples/kokuseiji-kaketsuka/ryuyo-03.webp",
+        "alt": "國清寺の現地写真 3",
+        "caption": "國清寺の現地写真 3",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kokuseiji-kaketsuka-ryuyo-04-2026",
+        "src": "/assets/temples/kokuseiji-kaketsuka/ryuyo-04.webp",
+        "alt": "國清寺の現地写真 4",
+        "caption": "國清寺の現地写真 4",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kokuseiji-kaketsuka-ryuyo-05-2026",
+        "src": "/assets/temples/kokuseiji-kaketsuka/ryuyo-05.webp",
+        "alt": "國清寺の現地写真 5",
+        "caption": "國清寺の現地写真 5",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kokuseiji-kaketsuka-ryuyo-06-2026",
+        "src": "/assets/temples/kokuseiji-kaketsuka/ryuyo-06.webp",
+        "alt": "國清寺の現地写真 6",
+        "caption": "國清寺の現地写真 6",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kokuseiji-kaketsuka-ryuyo-07-2026",
+        "src": "/assets/temples/kokuseiji-kaketsuka/ryuyo-07.webp",
+        "alt": "國清寺の現地写真 7",
+        "caption": "國清寺の現地写真 7",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kokuseiji-kaketsuka-ryuyo-08-2026",
+        "src": "/assets/temples/kokuseiji-kaketsuka/ryuyo-08.webp",
+        "alt": "國清寺の現地写真 8",
+        "caption": "國清寺の現地写真 8",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "manpukuji-kaketsuka-819",
+    "hero_image": "/assets/temples/manpukuji-kaketsuka-819/ryuyo-01.webp",
+    "photos": [
+      {
+        "photo_id": "manpukuji-kaketsuka-819-ryuyo-01-2026",
+        "src": "/assets/temples/manpukuji-kaketsuka-819/ryuyo-01.webp",
+        "alt": "満福寺の現地写真 1",
+        "caption": "満福寺の現地写真 1",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "manpukuji-kaketsuka-819-ryuyo-02-2026",
+        "src": "/assets/temples/manpukuji-kaketsuka-819/ryuyo-02.webp",
+        "alt": "満福寺の現地写真 2",
+        "caption": "満福寺の現地写真 2",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "manpukuji-kaketsuka-819-ryuyo-03-2026",
+        "src": "/assets/temples/manpukuji-kaketsuka-819/ryuyo-03.webp",
+        "alt": "満福寺の現地写真 3",
+        "caption": "満福寺の現地写真 3",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "manpukuji-kaketsuka-819-ryuyo-04-2026",
+        "src": "/assets/temples/manpukuji-kaketsuka-819/ryuyo-04.webp",
+        "alt": "満福寺の現地写真 4",
+        "caption": "満福寺の現地写真 4",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "manpukuji-kaketsuka-819-ryuyo-05-2026",
+        "src": "/assets/temples/manpukuji-kaketsuka-819/ryuyo-05.webp",
+        "alt": "満福寺の現地写真 5",
+        "caption": "満福寺の現地写真 5",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "manpukuji-kaketsuka-819-ryuyo-06-2026",
+        "src": "/assets/temples/manpukuji-kaketsuka-819/ryuyo-06.webp",
+        "alt": "満福寺の現地写真 6",
+        "caption": "満福寺の現地写真 6",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "manpukuji-kaketsuka-819-ryuyo-07-2026",
+        "src": "/assets/temples/manpukuji-kaketsuka-819/ryuyo-07.webp",
+        "alt": "満福寺の現地写真 7",
+        "caption": "満福寺の現地写真 7",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "manpukuji-kaketsuka-819-ryuyo-08-2026",
+        "src": "/assets/temples/manpukuji-kaketsuka-819/ryuyo-08.webp",
+        "alt": "満福寺の現地写真 8",
+        "caption": "満福寺の現地写真 8",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "manpukuji-kaketsuka-819-ryuyo-09-2026",
+        "src": "/assets/temples/manpukuji-kaketsuka-819/ryuyo-09.webp",
+        "alt": "満福寺の現地写真 9",
+        "caption": "満福寺の現地写真 9",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "manpukuji-kaketsuka-799",
+    "hero_image": "/assets/temples/manpukuji-kaketsuka-799/ryuyo-01.webp",
+    "photos": [
+      {
+        "photo_id": "manpukuji-kaketsuka-799-ryuyo-01-2026",
+        "src": "/assets/temples/manpukuji-kaketsuka-799/ryuyo-01.webp",
+        "alt": "萬福寺の現地写真 1",
+        "caption": "萬福寺の現地写真 1",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "manpukuji-kaketsuka-799-ryuyo-02-2026",
+        "src": "/assets/temples/manpukuji-kaketsuka-799/ryuyo-02.webp",
+        "alt": "萬福寺の現地写真 2",
+        "caption": "萬福寺の現地写真 2",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "manpukuji-kaketsuka-799-ryuyo-03-2026",
+        "src": "/assets/temples/manpukuji-kaketsuka-799/ryuyo-03.webp",
+        "alt": "萬福寺の現地写真 3",
+        "caption": "萬福寺の現地写真 3",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "manpukuji-kaketsuka-799-ryuyo-04-2026",
+        "src": "/assets/temples/manpukuji-kaketsuka-799/ryuyo-04.webp",
+        "alt": "萬福寺の現地写真 4",
+        "caption": "萬福寺の現地写真 4",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "manpukuji-kaketsuka-799-ryuyo-05-2026",
+        "src": "/assets/temples/manpukuji-kaketsuka-799/ryuyo-05.webp",
+        "alt": "萬福寺の現地写真 5",
+        "caption": "萬福寺の現地写真 5",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "shorinji-kawabukuro",
+    "hero_image": "/assets/temples/shorinji-kawabukuro/ryuyo-01.webp",
+    "photos": [
+      {
+        "photo_id": "shorinji-kawabukuro-ryuyo-01-2026",
+        "src": "/assets/temples/shorinji-kawabukuro/ryuyo-01.webp",
+        "alt": "松林寺の現地写真 1",
+        "caption": "松林寺の現地写真 1",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shorinji-kawabukuro-ryuyo-02-2026",
+        "src": "/assets/temples/shorinji-kawabukuro/ryuyo-02.webp",
+        "alt": "松林寺の現地写真 2",
+        "caption": "松林寺の現地写真 2",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shorinji-kawabukuro-ryuyo-03-2026",
+        "src": "/assets/temples/shorinji-kawabukuro/ryuyo-03.webp",
+        "alt": "松林寺の現地写真 3",
+        "caption": "松林寺の現地写真 3",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shorinji-kawabukuro-ryuyo-04-2026",
+        "src": "/assets/temples/shorinji-kawabukuro/ryuyo-04.webp",
+        "alt": "松林寺の現地写真 4",
+        "caption": "松林寺の現地写真 4",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shorinji-kawabukuro-ryuyo-05-2026",
+        "src": "/assets/temples/shorinji-kawabukuro/ryuyo-05.webp",
+        "alt": "松林寺の現地写真 5",
+        "caption": "松林寺の現地写真 5",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shorinji-kawabukuro-ryuyo-06-2026",
+        "src": "/assets/temples/shorinji-kawabukuro/ryuyo-06.webp",
+        "alt": "松林寺の現地写真 6",
+        "caption": "松林寺の現地写真 6",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shorinji-kawabukuro-ryuyo-07-2026",
+        "src": "/assets/temples/shorinji-kawabukuro/ryuyo-07.webp",
+        "alt": "松林寺の現地写真 7",
+        "caption": "松林寺の現地写真 7",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shorinji-kawabukuro-ryuyo-08-2026",
+        "src": "/assets/temples/shorinji-kawabukuro/ryuyo-08.webp",
+        "alt": "松林寺の現地写真 8",
+        "caption": "松林寺の現地写真 8",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "hojuin-jurojima",
+    "hero_image": "/assets/temples/hojuin-jurojima/ryuyo-01.webp",
+    "photos": [
+      {
+        "photo_id": "hojuin-jurojima-ryuyo-01-2026",
+        "src": "/assets/temples/hojuin-jurojima/ryuyo-01.webp",
+        "alt": "寶珠院の現地写真 1",
+        "caption": "寶珠院の現地写真 1",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hojuin-jurojima-ryuyo-02-2026",
+        "src": "/assets/temples/hojuin-jurojima/ryuyo-02.webp",
+        "alt": "寶珠院の現地写真 2",
+        "caption": "寶珠院の現地写真 2",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hojuin-jurojima-ryuyo-03-2026",
+        "src": "/assets/temples/hojuin-jurojima/ryuyo-03.webp",
+        "alt": "寶珠院の現地写真 3",
+        "caption": "寶珠院の現地写真 3",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hojuin-jurojima-ryuyo-04-2026",
+        "src": "/assets/temples/hojuin-jurojima/ryuyo-04.webp",
+        "alt": "寶珠院の現地写真 4",
+        "caption": "寶珠院の現地写真 4",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hojuin-jurojima-ryuyo-05-2026",
+        "src": "/assets/temples/hojuin-jurojima/ryuyo-05.webp",
+        "alt": "寶珠院の現地写真 5",
+        "caption": "寶珠院の現地写真 5",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "senryuji-kawabukuro",
+    "hero_image": "/assets/temples/senryuji-kawabukuro/ryuyo-01.webp",
+    "photos": [
+      {
+        "photo_id": "senryuji-kawabukuro-ryuyo-01-2026",
+        "src": "/assets/temples/senryuji-kawabukuro/ryuyo-01.webp",
+        "alt": "潜龍寺の現地写真 1",
+        "caption": "潜龍寺の現地写真 1",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senryuji-kawabukuro-ryuyo-02-2026",
+        "src": "/assets/temples/senryuji-kawabukuro/ryuyo-02.webp",
+        "alt": "潜龍寺の現地写真 2",
+        "caption": "潜龍寺の現地写真 2",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senryuji-kawabukuro-ryuyo-03-2026",
+        "src": "/assets/temples/senryuji-kawabukuro/ryuyo-03.webp",
+        "alt": "潜龍寺の現地写真 3",
+        "caption": "潜龍寺の現地写真 3",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senryuji-kawabukuro-ryuyo-04-2026",
+        "src": "/assets/temples/senryuji-kawabukuro/ryuyo-04.webp",
+        "alt": "潜龍寺の現地写真 4",
+        "caption": "潜龍寺の現地写真 4",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senryuji-kawabukuro-ryuyo-05-2026",
+        "src": "/assets/temples/senryuji-kawabukuro/ryuyo-05.webp",
+        "alt": "潜龍寺の現地写真 5",
+        "caption": "潜龍寺の現地写真 5",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senryuji-kawabukuro-ryuyo-06-2026",
+        "src": "/assets/temples/senryuji-kawabukuro/ryuyo-06.webp",
+        "alt": "潜龍寺の現地写真 6",
+        "caption": "潜龍寺の現地写真 6",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senryuji-kawabukuro-ryuyo-07-2026",
+        "src": "/assets/temples/senryuji-kawabukuro/ryuyo-07.webp",
+        "alt": "潜龍寺の現地写真 7",
+        "caption": "潜龍寺の現地写真 7",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senryuji-kawabukuro-ryuyo-08-2026",
+        "src": "/assets/temples/senryuji-kawabukuro/ryuyo-08.webp",
+        "alt": "潜龍寺の現地写真 8",
+        "caption": "潜龍寺の現地写真 8",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senryuji-kawabukuro-ryuyo-09-2026",
+        "src": "/assets/temples/senryuji-kawabukuro/ryuyo-09.webp",
+        "alt": "潜龍寺の現地写真 9",
+        "caption": "潜龍寺の現地写真 9",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senryuji-kawabukuro-ryuyo-10-2026",
+        "src": "/assets/temples/senryuji-kawabukuro/ryuyo-10.webp",
+        "alt": "潜龍寺の現地写真 10",
+        "caption": "潜龍寺の現地写真 10",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "ryusenji-shiraha",
+    "hero_image": "/assets/temples/ryusenji-shiraha/ryuyo-01.webp",
+    "photos": [
+      {
+        "photo_id": "ryusenji-shiraha-ryuyo-01-2026",
+        "src": "/assets/temples/ryusenji-shiraha/ryuyo-01.webp",
+        "alt": "竜泉寺の現地写真 1",
+        "caption": "竜泉寺の現地写真 1",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryusenji-shiraha-ryuyo-02-2026",
+        "src": "/assets/temples/ryusenji-shiraha/ryuyo-02.webp",
+        "alt": "竜泉寺の現地写真 2",
+        "caption": "竜泉寺の現地写真 2",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryusenji-shiraha-ryuyo-03-2026",
+        "src": "/assets/temples/ryusenji-shiraha/ryuyo-03.webp",
+        "alt": "竜泉寺の現地写真 3",
+        "caption": "竜泉寺の現地写真 3",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryusenji-shiraha-ryuyo-04-2026",
+        "src": "/assets/temples/ryusenji-shiraha/ryuyo-04.webp",
+        "alt": "竜泉寺の現地写真 4",
+        "caption": "竜泉寺の現地写真 4",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryusenji-shiraha-ryuyo-05-2026",
+        "src": "/assets/temples/ryusenji-shiraha/ryuyo-05.webp",
+        "alt": "竜泉寺の現地写真 5",
+        "caption": "竜泉寺の現地写真 5",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryusenji-shiraha-ryuyo-06-2026",
+        "src": "/assets/temples/ryusenji-shiraha/ryuyo-06.webp",
+        "alt": "竜泉寺の現地写真 6",
+        "caption": "竜泉寺の現地写真 6",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryusenji-shiraha-ryuyo-07-2026",
+        "src": "/assets/temples/ryusenji-shiraha/ryuyo-07.webp",
+        "alt": "竜泉寺の現地写真 7",
+        "caption": "竜泉寺の現地写真 7",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryusenji-shiraha-ryuyo-08-2026",
+        "src": "/assets/temples/ryusenji-shiraha/ryuyo-08.webp",
+        "alt": "竜泉寺の現地写真 8",
+        "caption": "竜泉寺の現地写真 8",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryusenji-shiraha-ryuyo-09-2026",
+        "src": "/assets/temples/ryusenji-shiraha/ryuyo-09.webp",
+        "alt": "竜泉寺の現地写真 9",
+        "caption": "竜泉寺の現地写真 9",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryusenji-shiraha-ryuyo-10-2026",
+        "src": "/assets/temples/ryusenji-shiraha/ryuyo-10.webp",
+        "alt": "竜泉寺の現地写真 10",
+        "caption": "竜泉寺の現地写真 10",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryusenji-shiraha-ryuyo-11-2026",
+        "src": "/assets/temples/ryusenji-shiraha/ryuyo-11.webp",
+        "alt": "竜泉寺の現地写真 11",
+        "caption": "竜泉寺の現地写真 11",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "koshuji-kaketsuka",
+    "hero_image": "/assets/temples/koshuji-kaketsuka/ryuyo-01.webp",
+    "photos": [
+      {
+        "photo_id": "koshuji-kaketsuka-ryuyo-01-2026",
+        "src": "/assets/temples/koshuji-kaketsuka/ryuyo-01.webp",
+        "alt": "香集寺の現地写真 1",
+        "caption": "香集寺の現地写真 1",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "koshuji-kaketsuka-ryuyo-02-2026",
+        "src": "/assets/temples/koshuji-kaketsuka/ryuyo-02.webp",
+        "alt": "香集寺の現地写真 2",
+        "caption": "香集寺の現地写真 2",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "koshuji-kaketsuka-ryuyo-03-2026",
+        "src": "/assets/temples/koshuji-kaketsuka/ryuyo-03.webp",
+        "alt": "香集寺の現地写真 3",
+        "caption": "香集寺の現地写真 3",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "koshuji-kaketsuka-ryuyo-04-2026",
+        "src": "/assets/temples/koshuji-kaketsuka/ryuyo-04.webp",
+        "alt": "香集寺の現地写真 4",
+        "caption": "香集寺の現地写真 4",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "koshuji-kaketsuka-ryuyo-05-2026",
+        "src": "/assets/temples/koshuji-kaketsuka/ryuyo-05.webp",
+        "alt": "香集寺の現地写真 5",
+        "caption": "香集寺の現地写真 5",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "koshuji-kaketsuka-ryuyo-06-2026",
+        "src": "/assets/temples/koshuji-kaketsuka/ryuyo-06.webp",
+        "alt": "香集寺の現地写真 6",
+        "caption": "香集寺の現地写真 6",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "koshuji-kaketsuka-ryuyo-07-2026",
+        "src": "/assets/temples/koshuji-kaketsuka/ryuyo-07.webp",
+        "alt": "香集寺の現地写真 7",
+        "caption": "香集寺の現地写真 7",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "koshuji-kaketsuka-ryuyo-08-2026",
+        "src": "/assets/temples/koshuji-kaketsuka/ryuyo-08.webp",
+        "alt": "香集寺の現地写真 8",
+        "caption": "香集寺の現地写真 8",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "koshuji-kaketsuka-ryuyo-09-2026",
+        "src": "/assets/temples/koshuji-kaketsuka/ryuyo-09.webp",
+        "alt": "香集寺の現地写真 9",
+        "caption": "香集寺の現地写真 9",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "koshuji-kaketsuka-ryuyo-10-2026",
+        "src": "/assets/temples/koshuji-kaketsuka/ryuyo-10.webp",
+        "alt": "香集寺の現地写真 10",
+        "caption": "香集寺の現地写真 10",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "koshuji-kaketsuka-ryuyo-11-2026",
+        "src": "/assets/temples/koshuji-kaketsuka/ryuyo-11.webp",
+        "alt": "香集寺の現地写真 11",
+        "caption": "香集寺の現地写真 11",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "koshuji-kaketsuka-ryuyo-12-2026",
+        "src": "/assets/temples/koshuji-kaketsuka/ryuyo-12.webp",
+        "alt": "香集寺の現地写真 12",
+        "caption": "香集寺の現地写真 12",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "koshuji-kaketsuka-ryuyo-13-2026",
+        "src": "/assets/temples/koshuji-kaketsuka/ryuyo-13.webp",
+        "alt": "香集寺の現地写真 13",
+        "caption": "香集寺の現地写真 13",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "koshuji-kaketsuka-ryuyo-14-2026",
+        "src": "/assets/temples/koshuji-kaketsuka/ryuyo-14.webp",
+        "alt": "香集寺の現地写真 14",
+        "caption": "香集寺の現地写真 14",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "koshuji-kaketsuka-ryuyo-15-2026",
+        "src": "/assets/temples/koshuji-kaketsuka/ryuyo-15.webp",
+        "alt": "香集寺の現地写真 15",
+        "caption": "香集寺の現地写真 15",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "jorakuji-horinochi",
+    "hero_image": "/assets/temples/jorakuji-horinochi/ryuyo-01.webp",
+    "photos": [
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-01-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-01.webp",
+        "alt": "常楽寺の現地写真 1",
+        "caption": "常楽寺の現地写真 1",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-02-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-02.webp",
+        "alt": "常楽寺の現地写真 2",
+        "caption": "常楽寺の現地写真 2",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-03-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-03.webp",
+        "alt": "常楽寺の現地写真 3",
+        "caption": "常楽寺の現地写真 3",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-04-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-04.webp",
+        "alt": "常楽寺の現地写真 4",
+        "caption": "常楽寺の現地写真 4",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-05-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-05.webp",
+        "alt": "常楽寺の現地写真 5",
+        "caption": "常楽寺の現地写真 5",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-06-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-06.webp",
+        "alt": "常楽寺の現地写真 6",
+        "caption": "常楽寺の現地写真 6",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-07-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-07.webp",
+        "alt": "常楽寺の現地写真 7",
+        "caption": "常楽寺の現地写真 7",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-08-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-08.webp",
+        "alt": "常楽寺の現地写真 8",
+        "caption": "常楽寺の現地写真 8",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-09-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-09.webp",
+        "alt": "常楽寺の現地写真 9",
+        "caption": "常楽寺の現地写真 9",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-10-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-10.webp",
+        "alt": "常楽寺の現地写真 10",
+        "caption": "常楽寺の現地写真 10",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-11-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-11.webp",
+        "alt": "常楽寺の現地写真 11",
+        "caption": "常楽寺の現地写真 11",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-12-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-12.webp",
+        "alt": "常楽寺の現地写真 12",
+        "caption": "常楽寺の現地写真 12",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-13-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-13.webp",
+        "alt": "常楽寺の現地写真 13",
+        "caption": "常楽寺の現地写真 13",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-14-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-14.webp",
+        "alt": "常楽寺の現地写真 14",
+        "caption": "常楽寺の現地写真 14",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-15-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-15.webp",
+        "alt": "常楽寺の現地写真 15",
+        "caption": "常楽寺の現地写真 15",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-16-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-16.webp",
+        "alt": "常楽寺の現地写真 16",
+        "caption": "常楽寺の現地写真 16",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-17-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-17.webp",
+        "alt": "常楽寺の現地写真 17",
+        "caption": "常楽寺の現地写真 17",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-18-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-18.webp",
+        "alt": "常楽寺の現地写真 18",
+        "caption": "常楽寺の現地写真 18",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-19-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-19.webp",
+        "alt": "常楽寺の現地写真 19",
+        "caption": "常楽寺の現地写真 19",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-20-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-20.webp",
+        "alt": "常楽寺の現地写真 20",
+        "caption": "常楽寺の現地写真 20",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jorakuji-horinochi-ryuyo-21-2026",
+        "src": "/assets/temples/jorakuji-horinochi/ryuyo-21.webp",
+        "alt": "常楽寺の現地写真 21",
+        "caption": "常楽寺の現地写真 21",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "rengakuji-ryuyonakajima",
+    "hero_image": "/assets/temples/rengakuji-ryuyonakajima/ryuyo-01.webp",
+    "photos": [
+      {
+        "photo_id": "rengakuji-ryuyonakajima-ryuyo-01-2026",
+        "src": "/assets/temples/rengakuji-ryuyonakajima/ryuyo-01.webp",
+        "alt": "蓮覚寺の現地写真 1",
+        "caption": "蓮覚寺の現地写真 1",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rengakuji-ryuyonakajima-ryuyo-02-2026",
+        "src": "/assets/temples/rengakuji-ryuyonakajima/ryuyo-02.webp",
+        "alt": "蓮覚寺の現地写真 2",
+        "caption": "蓮覚寺の現地写真 2",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rengakuji-ryuyonakajima-ryuyo-03-2026",
+        "src": "/assets/temples/rengakuji-ryuyonakajima/ryuyo-03.webp",
+        "alt": "蓮覚寺の現地写真 3",
+        "caption": "蓮覚寺の現地写真 3",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rengakuji-ryuyonakajima-ryuyo-04-2026",
+        "src": "/assets/temples/rengakuji-ryuyonakajima/ryuyo-04.webp",
+        "alt": "蓮覚寺の現地写真 4",
+        "caption": "蓮覚寺の現地写真 4",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rengakuji-ryuyonakajima-ryuyo-05-2026",
+        "src": "/assets/temples/rengakuji-ryuyonakajima/ryuyo-05.webp",
+        "alt": "蓮覚寺の現地写真 5",
+        "caption": "蓮覚寺の現地写真 5",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rengakuji-ryuyonakajima-ryuyo-06-2026",
+        "src": "/assets/temples/rengakuji-ryuyonakajima/ryuyo-06.webp",
+        "alt": "蓮覚寺の現地写真 6",
+        "caption": "蓮覚寺の現地写真 6",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rengakuji-ryuyonakajima-ryuyo-07-2026",
+        "src": "/assets/temples/rengakuji-ryuyonakajima/ryuyo-07.webp",
+        "alt": "蓮覚寺の現地写真 7",
+        "caption": "蓮覚寺の現地写真 7",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rengakuji-ryuyonakajima-ryuyo-08-2026",
+        "src": "/assets/temples/rengakuji-ryuyonakajima/ryuyo-08.webp",
+        "alt": "蓮覚寺の現地写真 8",
+        "caption": "蓮覚寺の現地写真 8",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rengakuji-ryuyonakajima-ryuyo-09-2026",
+        "src": "/assets/temples/rengakuji-ryuyonakajima/ryuyo-09.webp",
+        "alt": "蓮覚寺の現地写真 9",
+        "caption": "蓮覚寺の現地写真 9",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rengakuji-ryuyonakajima-ryuyo-10-2026",
+        "src": "/assets/temples/rengakuji-ryuyonakajima/ryuyo-10.webp",
+        "alt": "蓮覚寺の現地写真 10",
+        "caption": "蓮覚寺の現地写真 10",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rengakuji-ryuyonakajima-ryuyo-11-2026",
+        "src": "/assets/temples/rengakuji-ryuyonakajima/ryuyo-11.webp",
+        "alt": "蓮覚寺の現地写真 11",
+        "caption": "蓮覚寺の現地写真 11",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rengakuji-ryuyonakajima-ryuyo-12-2026",
+        "src": "/assets/temples/rengakuji-ryuyonakajima/ryuyo-12.webp",
+        "alt": "蓮覚寺の現地写真 12",
+        "caption": "蓮覚寺の現地写真 12",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rengakuji-ryuyonakajima-ryuyo-13-2026",
+        "src": "/assets/temples/rengakuji-ryuyonakajima/ryuyo-13.webp",
+        "alt": "蓮覚寺の現地写真 13",
+        "caption": "蓮覚寺の現地写真 13",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "ganjoji-hirama",
+    "hero_image": "/assets/temples/ganjoji-hirama/ryuyo-01.webp",
+    "photos": [
+      {
+        "photo_id": "ganjoji-hirama-ryuyo-01-2026",
+        "src": "/assets/temples/ganjoji-hirama/ryuyo-01.webp",
+        "alt": "願成寺の現地写真 1",
+        "caption": "願成寺の現地写真 1",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ganjoji-hirama-ryuyo-02-2026",
+        "src": "/assets/temples/ganjoji-hirama/ryuyo-02.webp",
+        "alt": "願成寺の現地写真 2",
+        "caption": "願成寺の現地写真 2",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ganjoji-hirama-ryuyo-03-2026",
+        "src": "/assets/temples/ganjoji-hirama/ryuyo-03.webp",
+        "alt": "願成寺の現地写真 3",
+        "caption": "願成寺の現地写真 3",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ganjoji-hirama-ryuyo-04-2026",
+        "src": "/assets/temples/ganjoji-hirama/ryuyo-04.webp",
+        "alt": "願成寺の現地写真 4",
+        "caption": "願成寺の現地写真 4",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ganjoji-hirama-ryuyo-05-2026",
+        "src": "/assets/temples/ganjoji-hirama/ryuyo-05.webp",
+        "alt": "願成寺の現地写真 5",
+        "caption": "願成寺の現地写真 5",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ganjoji-hirama-ryuyo-06-2026",
+        "src": "/assets/temples/ganjoji-hirama/ryuyo-06.webp",
+        "alt": "願成寺の現地写真 6",
+        "caption": "願成寺の現地写真 6",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ganjoji-hirama-ryuyo-07-2026",
+        "src": "/assets/temples/ganjoji-hirama/ryuyo-07.webp",
+        "alt": "願成寺の現地写真 7",
+        "caption": "願成寺の現地写真 7",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ganjoji-hirama-ryuyo-08-2026",
+        "src": "/assets/temples/ganjoji-hirama/ryuyo-08.webp",
+        "alt": "願成寺の現地写真 8",
+        "caption": "願成寺の現地写真 8",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ganjoji-hirama-ryuyo-09-2026",
+        "src": "/assets/temples/ganjoji-hirama/ryuyo-09.webp",
+        "alt": "願成寺の現地写真 9",
+        "caption": "願成寺の現地写真 9",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ganjoji-hirama-ryuyo-10-2026",
+        "src": "/assets/temples/ganjoji-hirama/ryuyo-10.webp",
+        "alt": "願成寺の現地写真 10",
+        "caption": "願成寺の現地写真 10",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "jikeian-komaba",
+    "hero_image": "/assets/temples/jikeian-komaba/ryuyo-01.webp",
+    "photos": [
+      {
+        "photo_id": "jikeian-komaba-ryuyo-01-2026",
+        "src": "/assets/temples/jikeian-komaba/ryuyo-01.webp",
+        "alt": "慈慶庵の現地写真 1",
+        "caption": "慈慶庵の現地写真 1",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jikeian-komaba-ryuyo-02-2026",
+        "src": "/assets/temples/jikeian-komaba/ryuyo-02.webp",
+        "alt": "慈慶庵の現地写真 2",
+        "caption": "慈慶庵の現地写真 2",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jikeian-komaba-ryuyo-03-2026",
+        "src": "/assets/temples/jikeian-komaba/ryuyo-03.webp",
+        "alt": "慈慶庵の現地写真 3",
+        "caption": "慈慶庵の現地写真 3",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jikeian-komaba-ryuyo-04-2026",
+        "src": "/assets/temples/jikeian-komaba/ryuyo-04.webp",
+        "alt": "慈慶庵の現地写真 4",
+        "caption": "慈慶庵の現地写真 4",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jikeian-komaba-ryuyo-05-2026",
+        "src": "/assets/temples/jikeian-komaba/ryuyo-05.webp",
+        "alt": "慈慶庵の現地写真 5",
+        "caption": "慈慶庵の現地写真 5",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jikeian-komaba-ryuyo-06-2026",
+        "src": "/assets/temples/jikeian-komaba/ryuyo-06.webp",
+        "alt": "慈慶庵の現地写真 6",
+        "caption": "慈慶庵の現地写真 6",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jikeian-komaba-ryuyo-07-2026",
+        "src": "/assets/temples/jikeian-komaba/ryuyo-07.webp",
+        "alt": "慈慶庵の現地写真 7",
+        "caption": "慈慶庵の現地写真 7",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jikeian-komaba-ryuyo-08-2026",
+        "src": "/assets/temples/jikeian-komaba/ryuyo-08.webp",
+        "alt": "慈慶庵の現地写真 8",
+        "caption": "慈慶庵の現地写真 8",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jikeian-komaba-ryuyo-09-2026",
+        "src": "/assets/temples/jikeian-komaba/ryuyo-09.webp",
+        "alt": "慈慶庵の現地写真 9",
+        "caption": "慈慶庵の現地写真 9",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jikeian-komaba-ryuyo-10-2026",
+        "src": "/assets/temples/jikeian-komaba/ryuyo-10.webp",
+        "alt": "慈慶庵の現地写真 10",
+        "caption": "慈慶庵の現地写真 10",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "shingetsuji-ebijima",
+    "hero_image": "/assets/temples/shingetsuji-ebijima/ryuyo-01.webp",
+    "photos": [
+      {
+        "photo_id": "shingetsuji-ebijima-ryuyo-01-2026",
+        "src": "/assets/temples/shingetsuji-ebijima/ryuyo-01.webp",
+        "alt": "心月寺の現地写真 1",
+        "caption": "心月寺の現地写真 1",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shingetsuji-ebijima-ryuyo-02-2026",
+        "src": "/assets/temples/shingetsuji-ebijima/ryuyo-02.webp",
+        "alt": "心月寺の現地写真 2",
+        "caption": "心月寺の現地写真 2",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shingetsuji-ebijima-ryuyo-03-2026",
+        "src": "/assets/temples/shingetsuji-ebijima/ryuyo-03.webp",
+        "alt": "心月寺の現地写真 3",
+        "caption": "心月寺の現地写真 3",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shingetsuji-ebijima-ryuyo-04-2026",
+        "src": "/assets/temples/shingetsuji-ebijima/ryuyo-04.webp",
+        "alt": "心月寺の現地写真 4",
+        "caption": "心月寺の現地写真 4",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shingetsuji-ebijima-ryuyo-05-2026",
+        "src": "/assets/temples/shingetsuji-ebijima/ryuyo-05.webp",
+        "alt": "心月寺の現地写真 5",
+        "caption": "心月寺の現地写真 5",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shingetsuji-ebijima-ryuyo-06-2026",
+        "src": "/assets/temples/shingetsuji-ebijima/ryuyo-06.webp",
+        "alt": "心月寺の現地写真 6",
+        "caption": "心月寺の現地写真 6",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shingetsuji-ebijima-ryuyo-07-2026",
+        "src": "/assets/temples/shingetsuji-ebijima/ryuyo-07.webp",
+        "alt": "心月寺の現地写真 7",
+        "caption": "心月寺の現地写真 7",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shingetsuji-ebijima-ryuyo-08-2026",
+        "src": "/assets/temples/shingetsuji-ebijima/ryuyo-08.webp",
+        "alt": "心月寺の現地写真 8",
+        "caption": "心月寺の現地写真 8",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shingetsuji-ebijima-ryuyo-09-2026",
+        "src": "/assets/temples/shingetsuji-ebijima/ryuyo-09.webp",
+        "alt": "心月寺の現地写真 9",
+        "caption": "心月寺の現地写真 9",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shingetsuji-ebijima-ryuyo-10-2026",
+        "src": "/assets/temples/shingetsuji-ebijima/ryuyo-10.webp",
+        "alt": "心月寺の現地写真 10",
+        "caption": "心月寺の現地写真 10",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shingetsuji-ebijima-ryuyo-11-2026",
+        "src": "/assets/temples/shingetsuji-ebijima/ryuyo-11.webp",
+        "alt": "心月寺の現地写真 11",
+        "caption": "心月寺の現地写真 11",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shingetsuji-ebijima-ryuyo-12-2026",
+        "src": "/assets/temples/shingetsuji-ebijima/ryuyo-12.webp",
+        "alt": "心月寺の現地写真 12",
+        "caption": "心月寺の現地写真 12",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shingetsuji-ebijima-ryuyo-13-2026",
+        "src": "/assets/temples/shingetsuji-ebijima/ryuyo-13.webp",
+        "alt": "心月寺の現地写真 13",
+        "caption": "心月寺の現地写真 13",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "fukushoji-nishihiramatsu",
+    "hero_image": "/assets/temples/fukushoji-nishihiramatsu/ryuyo-01.webp",
+    "photos": [
+      {
+        "photo_id": "fukushoji-nishihiramatsu-ryuyo-01-2026",
+        "src": "/assets/temples/fukushoji-nishihiramatsu/ryuyo-01.webp",
+        "alt": "福生寺の現地写真 1",
+        "caption": "福生寺の現地写真 1",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukushoji-nishihiramatsu-ryuyo-02-2026",
+        "src": "/assets/temples/fukushoji-nishihiramatsu/ryuyo-02.webp",
+        "alt": "福生寺の現地写真 2",
+        "caption": "福生寺の現地写真 2",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukushoji-nishihiramatsu-ryuyo-03-2026",
+        "src": "/assets/temples/fukushoji-nishihiramatsu/ryuyo-03.webp",
+        "alt": "福生寺の現地写真 3",
+        "caption": "福生寺の現地写真 3",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukushoji-nishihiramatsu-ryuyo-04-2026",
+        "src": "/assets/temples/fukushoji-nishihiramatsu/ryuyo-04.webp",
+        "alt": "福生寺の現地写真 4",
+        "caption": "福生寺の現地写真 4",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukushoji-nishihiramatsu-ryuyo-05-2026",
+        "src": "/assets/temples/fukushoji-nishihiramatsu/ryuyo-05.webp",
+        "alt": "福生寺の現地写真 5",
+        "caption": "福生寺の現地写真 5",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukushoji-nishihiramatsu-ryuyo-06-2026",
+        "src": "/assets/temples/fukushoji-nishihiramatsu/ryuyo-06.webp",
+        "alt": "福生寺の現地写真 6",
+        "caption": "福生寺の現地写真 6",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukushoji-nishihiramatsu-ryuyo-07-2026",
+        "src": "/assets/temples/fukushoji-nishihiramatsu/ryuyo-07.webp",
+        "alt": "福生寺の現地写真 7",
+        "caption": "福生寺の現地写真 7",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "shojuji-oka",
+    "hero_image": "/assets/temples/shojuji-oka/ryuyo-01.webp",
+    "photos": [
+      {
+        "photo_id": "shojuji-oka-ryuyo-01-2026",
+        "src": "/assets/temples/shojuji-oka/ryuyo-01.webp",
+        "alt": "聖寿寺の現地写真 1",
+        "caption": "聖寿寺の現地写真 1",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shojuji-oka-ryuyo-02-2026",
+        "src": "/assets/temples/shojuji-oka/ryuyo-02.webp",
+        "alt": "聖寿寺の現地写真 2",
+        "caption": "聖寿寺の現地写真 2",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shojuji-oka-ryuyo-03-2026",
+        "src": "/assets/temples/shojuji-oka/ryuyo-03.webp",
+        "alt": "聖寿寺の現地写真 3",
+        "caption": "聖寿寺の現地写真 3",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shojuji-oka-ryuyo-04-2026",
+        "src": "/assets/temples/shojuji-oka/ryuyo-04.webp",
+        "alt": "聖寿寺の現地写真 4",
+        "caption": "聖寿寺の現地写真 4",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shojuji-oka-ryuyo-05-2026",
+        "src": "/assets/temples/shojuji-oka/ryuyo-05.webp",
+        "alt": "聖寿寺の現地写真 5",
+        "caption": "聖寿寺の現地写真 5",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shojuji-oka-ryuyo-06-2026",
+        "src": "/assets/temples/shojuji-oka/ryuyo-06.webp",
+        "alt": "聖寿寺の現地写真 6",
+        "caption": "聖寿寺の現地写真 6",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shojuji-oka-ryuyo-07-2026",
+        "src": "/assets/temples/shojuji-oka/ryuyo-07.webp",
+        "alt": "聖寿寺の現地写真 7",
+        "caption": "聖寿寺の現地写真 7",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shojuji-oka-ryuyo-08-2026",
+        "src": "/assets/temples/shojuji-oka/ryuyo-08.webp",
+        "alt": "聖寿寺の現地写真 8",
+        "caption": "聖寿寺の現地写真 8",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shojuji-oka-ryuyo-09-2026",
+        "src": "/assets/temples/shojuji-oka/ryuyo-09.webp",
+        "alt": "聖寿寺の現地写真 9",
+        "caption": "聖寿寺の現地写真 9",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shojuji-oka-ryuyo-10-2026",
+        "src": "/assets/temples/shojuji-oka/ryuyo-10.webp",
+        "alt": "聖寿寺の現地写真 10",
+        "caption": "聖寿寺の現地写真 10",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shojuji-oka-ryuyo-11-2026",
+        "src": "/assets/temples/shojuji-oka/ryuyo-11.webp",
+        "alt": "聖寿寺の現地写真 11",
+        "caption": "聖寿寺の現地写真 11",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shojuji-oka-ryuyo-12-2026",
+        "src": "/assets/temples/shojuji-oka/ryuyo-12.webp",
+        "alt": "聖寿寺の現地写真 12",
+        "caption": "聖寿寺の現地写真 12",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shojuji-oka-ryuyo-13-2026",
+        "src": "/assets/temples/shojuji-oka/ryuyo-13.webp",
+        "alt": "聖寿寺の現地写真 13",
+        "caption": "聖寿寺の現地写真 13",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shojuji-oka-ryuyo-14-2026",
+        "src": "/assets/temples/shojuji-oka/ryuyo-14.webp",
+        "alt": "聖寿寺の現地写真 14",
+        "caption": "聖寿寺の現地写真 14",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "kinzoji-toyooka",
+    "hero_image": "/assets/temples/kinzoji-toyooka/ryuyo-01.webp",
+    "photos": [
+      {
+        "photo_id": "kinzoji-toyooka-ryuyo-01-2026",
+        "src": "/assets/temples/kinzoji-toyooka/ryuyo-01.webp",
+        "alt": "金藏寺の現地写真 1",
+        "caption": "金藏寺の現地写真 1",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kinzoji-toyooka-ryuyo-02-2026",
+        "src": "/assets/temples/kinzoji-toyooka/ryuyo-02.webp",
+        "alt": "金藏寺の現地写真 2",
+        "caption": "金藏寺の現地写真 2",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kinzoji-toyooka-ryuyo-03-2026",
+        "src": "/assets/temples/kinzoji-toyooka/ryuyo-03.webp",
+        "alt": "金藏寺の現地写真 3",
+        "caption": "金藏寺の現地写真 3",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kinzoji-toyooka-ryuyo-04-2026",
+        "src": "/assets/temples/kinzoji-toyooka/ryuyo-04.webp",
+        "alt": "金藏寺の現地写真 4",
+        "caption": "金藏寺の現地写真 4",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kinzoji-toyooka-ryuyo-05-2026",
+        "src": "/assets/temples/kinzoji-toyooka/ryuyo-05.webp",
+        "alt": "金藏寺の現地写真 5",
+        "caption": "金藏寺の現地写真 5",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kinzoji-toyooka-ryuyo-06-2026",
+        "src": "/assets/temples/kinzoji-toyooka/ryuyo-06.webp",
+        "alt": "金藏寺の現地写真 6",
+        "caption": "金藏寺の現地写真 6",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kinzoji-toyooka-ryuyo-07-2026",
+        "src": "/assets/temples/kinzoji-toyooka/ryuyo-07.webp",
+        "alt": "金藏寺の現地写真 7",
+        "caption": "金藏寺の現地写真 7",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kinzoji-toyooka-ryuyo-08-2026",
+        "src": "/assets/temples/kinzoji-toyooka/ryuyo-08.webp",
+        "alt": "金藏寺の現地写真 8",
+        "caption": "金藏寺の現地写真 8",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kinzoji-toyooka-ryuyo-09-2026",
+        "src": "/assets/temples/kinzoji-toyooka/ryuyo-09.webp",
+        "alt": "金藏寺の現地写真 9",
+        "caption": "金藏寺の現地写真 9",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kinzoji-toyooka-ryuyo-10-2026",
+        "src": "/assets/temples/kinzoji-toyooka/ryuyo-10.webp",
+        "alt": "金藏寺の現地写真 10",
+        "caption": "金藏寺の現地写真 10",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "shuzoji-toyooka",
+    "hero_image": "/assets/temples/shuzoji-toyooka/ryuyo-01.webp",
+    "photos": [
+      {
+        "photo_id": "shuzoji-toyooka-ryuyo-01-2026",
+        "src": "/assets/temples/shuzoji-toyooka/ryuyo-01.webp",
+        "alt": "守増寺の現地写真 1",
+        "caption": "守増寺の現地写真 1",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shuzoji-toyooka-ryuyo-02-2026",
+        "src": "/assets/temples/shuzoji-toyooka/ryuyo-02.webp",
+        "alt": "守増寺の現地写真 2",
+        "caption": "守増寺の現地写真 2",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shuzoji-toyooka-ryuyo-03-2026",
+        "src": "/assets/temples/shuzoji-toyooka/ryuyo-03.webp",
+        "alt": "守増寺の現地写真 3",
+        "caption": "守増寺の現地写真 3",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shuzoji-toyooka-ryuyo-04-2026",
+        "src": "/assets/temples/shuzoji-toyooka/ryuyo-04.webp",
+        "alt": "守増寺の現地写真 4",
+        "caption": "守増寺の現地写真 4",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shuzoji-toyooka-ryuyo-05-2026",
+        "src": "/assets/temples/shuzoji-toyooka/ryuyo-05.webp",
+        "alt": "守増寺の現地写真 5",
+        "caption": "守増寺の現地写真 5",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shuzoji-toyooka-ryuyo-06-2026",
+        "src": "/assets/temples/shuzoji-toyooka/ryuyo-06.webp",
+        "alt": "守増寺の現地写真 6",
+        "caption": "守増寺の現地写真 6",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shuzoji-toyooka-ryuyo-07-2026",
+        "src": "/assets/temples/shuzoji-toyooka/ryuyo-07.webp",
+        "alt": "守増寺の現地写真 7",
+        "caption": "守増寺の現地写真 7",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shuzoji-toyooka-ryuyo-08-2026",
+        "src": "/assets/temples/shuzoji-toyooka/ryuyo-08.webp",
+        "alt": "守増寺の現地写真 8",
+        "caption": "守増寺の現地写真 8",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shuzoji-toyooka-ryuyo-09-2026",
+        "src": "/assets/temples/shuzoji-toyooka/ryuyo-09.webp",
+        "alt": "守増寺の現地写真 9",
+        "caption": "守増寺の現地写真 9",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shuzoji-toyooka-ryuyo-10-2026",
+        "src": "/assets/temples/shuzoji-toyooka/ryuyo-10.webp",
+        "alt": "守増寺の現地写真 10",
+        "caption": "守増寺の現地写真 10",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shuzoji-toyooka-ryuyo-11-2026",
+        "src": "/assets/temples/shuzoji-toyooka/ryuyo-11.webp",
+        "alt": "守増寺の現地写真 11",
+        "caption": "守増寺の現地写真 11",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shuzoji-toyooka-ryuyo-12-2026",
+        "src": "/assets/temples/shuzoji-toyooka/ryuyo-12.webp",
+        "alt": "守増寺の現地写真 12",
+        "caption": "守増寺の現地写真 12",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shuzoji-toyooka-ryuyo-13-2026",
+        "src": "/assets/temples/shuzoji-toyooka/ryuyo-13.webp",
+        "alt": "守増寺の現地写真 13",
+        "caption": "守増寺の現地写真 13",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shuzoji-toyooka-ryuyo-14-2026",
+        "src": "/assets/temples/shuzoji-toyooka/ryuyo-14.webp",
+        "alt": "守増寺の現地写真 14",
+        "caption": "守増寺の現地写真 14",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "chikyoin-shiraha",
+    "hero_image": "/assets/temples/chikyoin-shiraha/ryuyo-01.webp",
+    "photos": [
+      {
+        "photo_id": "chikyoin-shiraha-ryuyo-01-2026",
+        "src": "/assets/temples/chikyoin-shiraha/ryuyo-01.webp",
+        "alt": "智教院の現地写真 1",
+        "caption": "智教院の現地写真 1",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chikyoin-shiraha-ryuyo-02-2026",
+        "src": "/assets/temples/chikyoin-shiraha/ryuyo-02.webp",
+        "alt": "智教院の現地写真 2",
+        "caption": "智教院の現地写真 2",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chikyoin-shiraha-ryuyo-03-2026",
+        "src": "/assets/temples/chikyoin-shiraha/ryuyo-03.webp",
+        "alt": "智教院の現地写真 3",
+        "caption": "智教院の現地写真 3",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chikyoin-shiraha-ryuyo-04-2026",
+        "src": "/assets/temples/chikyoin-shiraha/ryuyo-04.webp",
+        "alt": "智教院の現地写真 4",
+        "caption": "智教院の現地写真 4",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chikyoin-shiraha-ryuyo-05-2026",
+        "src": "/assets/temples/chikyoin-shiraha/ryuyo-05.webp",
+        "alt": "智教院の現地写真 5",
+        "caption": "智教院の現地写真 5",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chikyoin-shiraha-ryuyo-06-2026",
+        "src": "/assets/temples/chikyoin-shiraha/ryuyo-06.webp",
+        "alt": "智教院の現地写真 6",
+        "caption": "智教院の現地写真 6",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
