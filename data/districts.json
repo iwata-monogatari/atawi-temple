@@ -59,8 +59,8 @@
     "slug": "ryuyo",
     "summary": "天竜川と遠州灘に抱かれ、掛塚湊や掛塚まつりの記憶を伝える地区。",
     "description": "竜洋地区は、天竜川河口、遠州灘、掛塚湊の歴史を背景に持つ地域です。掛塚、豊浜、十郎島などの寺院は、港町、海辺の暮らし、近世の交通、地域祭礼と関わりながら受け継がれてきました。ATAWI TEMPLEでは、寺院名、住所、宗派、旧村名、札所・文化財の有無を照合し、竜洋のお寺を地区一覧と地図から確認できるように整備しています。今後は現地写真と寺院跡の確認を段階的に増やします。",
-    "hero_image": null,
-    "hero_image_alt": null
+    "hero_image": "/assets/temples/kokuseiji-kaketsuka/ryuyo-01.webp",
+    "hero_image_alt": "國清寺の境内と本堂"
   },
   {
     "district_id": "fukude",
