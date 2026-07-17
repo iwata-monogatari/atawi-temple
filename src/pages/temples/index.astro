@@ -5,9 +5,12 @@ import {
   allDistricts,
   allTemples,
   getDistrictName,
+  getTempleDisplaySummary,
   getTempleMediaBySlug,
   getTempleStatusLabel,
+  getVisibleTempleMediaPhotos,
   hasDetailPage,
+  isCemeteryServiceInfo,
 } from "../../lib/temples";
 import { realEstateFunnel } from "../../lib/related-monogatari";
 
@@ -18,8 +21,16 @@ const initialTemples = [...allTemples]
 const templeIndexData = allTemples.map((temple) => {
   const districtName = getDistrictName(temple.district_id);
   const media = getTempleMediaBySlug(temple.slug);
-  const image = media?.hero_image ?? media?.photos[0]?.src ?? "";
-  const imageAlt = media?.photos.find((photo) => photo.src === image)?.alt ?? `${temple.name}の代表写真`;
+  const visiblePhotos = getVisibleTempleMediaPhotos(temple.slug);
+  const imagePhoto = media
+    ? visiblePhotos.find((photo) => photo.src === media.hero_image) || visiblePhotos[0] || null
+    : null;
+  const image = imagePhoto?.src ?? "";
+  const imageAlt = imagePhoto?.alt ?? `${temple.name}の代表写真`;
+  const mainDeity = isCemeteryServiceInfo(temple.main_deity) ? "" : temple.main_deity;
+  const foundedPeriod = "founded_period" in temple && !isCemeteryServiceInfo(temple.founded_period)
+    ? temple.founded_period
+    : "";
   return {
     slug: temple.slug,
     name: temple.name,
@@ -31,11 +42,9 @@ const templeIndexData = allTemples.map((temple) => {
     sect: temple.sect,
     status: temple.status,
     status_label: getTempleStatusLabel(temple),
-    main_deity: temple.main_deity,
-    founded_period: "founded_period" in temple ? temple.founded_period : "",
-    page_summary: "page_summary" in temple && temple.page_summary
-      ? temple.page_summary
-      : `${districtName}地区に所在する${temple.sect}の寺院です。公式名簿の基礎情報をもとに掲載しています。`,
+    main_deity: mainDeity,
+    founded_period: foundedPeriod,
+    page_summary: getTempleDisplaySummary(temple, districtName),
     last_verified_at: temple.last_verified_at,
     detail_page: hasDetailPage(temple),
     image,

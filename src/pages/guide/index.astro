@@ -1,22 +1,22 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { guideArticles } from "../../lib/editorial";
+import { publicGuideArticles } from "../../lib/editorial";
 ---
 
 <BaseLayout
-  title="お墓・檀家・実家じまいの基礎ガイド｜ATAWI TEMPLE"
-  description="磐田のお寺やお墓を調べる方へ。遠方管理、檀家、永代供養、帰省チェックを中立に整理します。"
+  title="檀家・実家じまいの基礎ガイド｜ATAWI TEMPLE"
+  description="磐田のお寺を調べる方へ。檀家、法要、帰省時の実家確認を中立に整理します。"
 >
   <section class="page-title">
     <p class="eyebrow">Guide</p>
-    <h1>お墓・檀家・実家じまいの基礎ガイド</h1>
-    <p class="lead">寺院情報を調べたあと、家族で何を確認すればよいか。お墓、檀家、実家の管理を、売却ありきではなく順番に整理します。</p>
+    <h1>檀家・実家じまいの基礎ガイド</h1>
+    <p class="lead">寺院情報を調べたあと、家族で何を確認すればよいか。檀家、法要、実家の管理を、売却ありきではなく順番に整理します。</p>
   </section>
 
   <section class="section">
     <div class="article-card-grid">
       {
-        guideArticles.map((article) => (
+        publicGuideArticles.map((article) => (
           <a class="reading-card" href={`/guide/${article.slug}/`}>
             <span>{article.category}</span>
             <h2>{article.title}</h2>

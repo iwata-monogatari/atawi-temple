@@ -5,9 +5,14 @@ import {
   allTemples,
   countTemplesBySect,
   countTemplesByStatus,
+  getDistrictName,
   getSectGroupName,
   getStatusLabel,
+  getTempleDisplaySummary,
   getTempleStatusLabel,
+  hasDetailPage,
+  isCemeteryServiceInfo,
+  normalizeSearchText,
 } from "../../lib/temples";
 
 const sects = countTemplesBySect();
@@ -17,11 +22,49 @@ const statuses = Object.keys(statusCounts).map((status) => ({
   label: getStatusLabel(status),
   count: statusCounts[status],
 }));
-const data = JSON.stringify(allTemples.map((temple) => ({
-  ...temple,
-  sect_group: getSectGroupName(temple.sect),
-  display_status_label: getTempleStatusLabel(temple),
-})));
+const data = JSON.stringify(allTemples.map((temple) => {
+  const districtName = getDistrictName(temple.district_id);
+  const sectGroup = getSectGroupName(temple.sect);
+  const displayStatusLabel = getTempleStatusLabel(temple);
+  const mainDeity = isCemeteryServiceInfo(temple.main_deity) ? "" : temple.main_deity;
+  const foundedPeriod = "founded_period" in temple && !isCemeteryServiceInfo(temple.founded_period)
+    ? temple.founded_period
+    : "";
+  const pageSummary = getTempleDisplaySummary(temple, districtName);
+  const aliases = temple.aliases.filter((alias) => !isCemeteryServiceInfo(alias));
+  const searchText = normalizeSearchText([
+    temple.name,
+    temple.name_kana,
+    aliases.join(" "),
+    temple.address,
+    temple.area,
+    districtName,
+    temple.sect,
+    sectGroup,
+    displayStatusLabel,
+    mainDeity,
+    foundedPeriod,
+    pageSummary,
+  ].join(" "));
+  return {
+    slug: temple.slug,
+    name: temple.name,
+    name_kana: temple.name_kana,
+    aliases,
+    address: temple.address,
+    area: temple.area,
+    district_id: temple.district_id,
+    sect: temple.sect,
+    sect_group: sectGroup,
+    status: temple.status,
+    display_status_label: displayStatusLabel,
+    main_deity: mainDeity,
+    founded_period: foundedPeriod,
+    page_summary: pageSummary,
+    detail_page: hasDetailPage(temple),
+    search_text: searchText,
+  };
+})).replace(/</g, "\\u003c");
 const districts = JSON.stringify(allDistricts);
 ---
 
@@ -118,6 +161,7 @@ const districts = JSON.stringify(allDistricts);
     }
 
     function textOf(temple) {
+      if (temple.search_text) return temple.search_text;
       return normalize([
         temple.name,
         temple.name_kana,

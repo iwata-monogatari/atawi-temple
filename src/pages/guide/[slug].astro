@@ -1,9 +1,9 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { getGuideArticle, guideArticles, jikkaUrl } from "../../lib/editorial";
+import { getGuideArticle, jikkaUrl, publicGuideArticles } from "../../lib/editorial";
 
 export function getStaticPaths() {
-  return guideArticles.map((article) => ({ params: { slug: article.slug } }));
+  return publicGuideArticles.map((article) => ({ params: { slug: article.slug } }));
 }
 
 const article = getGuideArticle(Astro.params.slug || "");

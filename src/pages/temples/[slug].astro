@@ -7,14 +7,17 @@ import {
   getDistrictName,
   getPhotoCategory,
   getSectGroupName,
+  getTempleDisplaySummary,
   getTempleBySlug,
   getTempleLatLng,
   getTempleMediaBySlug,
   getTempleStatusLabel,
+  getVisibleTempleMediaPhotos,
   googleMapsEmbedUrl,
   googleMapsUrl,
   googleMapsWebEmbedUrl,
   hasDetailPage,
+  isCemeteryServiceInfo,
   isUnknownValue,
 } from "../../lib/temples";
 import {
@@ -43,18 +46,33 @@ const visibleMapEmbedUrl = mapEmbedUrl || mapFallbackEmbedUrl;
 const mapUrl = googleMapsUrl(temple);
 const showKana = !isUnknownValue(temple.name_kana);
 const media = getTempleMediaBySlug(temple.slug);
-const galleryPhotos = media?.photos.filter((photo) => photo.src !== media.hero_image) || [];
+const visibleMediaPhotos = getVisibleTempleMediaPhotos(temple.slug);
+const coverPhoto = media
+  ? visibleMediaPhotos.find((photo) => photo.src === media.hero_image) || visibleMediaPhotos[0] || null
+  : null;
+const galleryPhotos = coverPhoto ? visibleMediaPhotos.filter((photo) => photo.src !== coverPhoto.src) : [];
 const historicalSections = "historical_sections" in temple && Array.isArray(temple.historical_sections)
   ? temple.historical_sections
   : [];
+const visibleHistoricalSections = historicalSections.filter((item: any) =>
+  !isCemeteryServiceInfo(`${item.heading || ""} ${item.body || ""}`)
+);
 const culturalAssets = "cultural_assets" in temple && Array.isArray(temple.cultural_assets)
   ? temple.cultural_assets
   : [];
-const researchTodos = "research_todos" in temple && Array.isArray(temple.research_todos)
+const visibleCulturalAssets = culturalAssets.filter((asset: any) =>
+  !isCemeteryServiceInfo(`${asset.designation || ""} ${asset.name || ""} ${asset.summary || ""}`)
+);
+const rawResearchTodos = "research_todos" in temple && Array.isArray(temple.research_todos)
   ? temple.research_todos
   : ["創建・沿革", "ご本尊", "参拝情報", "文化財・寺宝", "現地写真"];
-const pageSummary = "page_summary" in temple && temple.page_summary
-  ? temple.page_summary
+const researchTodos = rawResearchTodos.filter((todo: any) => !isCemeteryServiceInfo(todo));
+const visibleSources = temple.sources.filter((source: any) =>
+  !isCemeteryServiceInfo(`${source.title || ""} ${source.note || ""} ${"url" in source ? source.url || "" : ""}`)
+);
+const visiblePageSummary = getTempleDisplaySummary(temple, districtName);
+const visibleHistorySummary = isCemeteryServiceInfo(temple.history_summary)
+  ? visiblePageSummary
   : temple.history_summary;
 const foundedPeriod = "founded_period" in temple && temple.founded_period
   ? temple.founded_period
@@ -62,14 +80,26 @@ const foundedPeriod = "founded_period" in temple && temple.founded_period
 const heritageStatus = "heritage_status" in temple && temple.heritage_status
   ? temple.heritage_status
   : "調査中";
+const visibleFoundedPeriod = isCemeteryServiceInfo(foundedPeriod) ? "調査中" : foundedPeriod;
+const visibleHeritageStatus = isCemeteryServiceInfo(heritageStatus) ? "調査中" : heritageStatus;
 const pilgrimageNote = "pilgrimage_note" in temple && temple.pilgrimage_note
   ? temple.pilgrimage_note
   : null;
+const visiblePilgrimageNote = pilgrimageNote && !isCemeteryServiceInfo(pilgrimageNote) ? pilgrimageNote : null;
 const publicationNotice: any = "publication_notice" in temple && temple.publication_notice
   ? temple.publication_notice
   : null;
 const dankaInfo: any = "danka_info" in temple && temple.danka_info ? temple.danka_info : null;
-const annualEvents = dankaInfo && Array.isArray(dankaInfo.annual_events) ? dankaInfo.annual_events : [];
+const rawAnnualEvents = dankaInfo && Array.isArray(dankaInfo.annual_events) ? dankaInfo.annual_events : [];
+const annualEvents = rawAnnualEvents.filter((event: any) =>
+  !isCemeteryServiceInfo(`${event.name || ""} ${event.timing || ""} ${event.note || ""}`)
+);
+const dankaOrganization = dankaInfo?.organization && !isCemeteryServiceInfo(dankaInfo.organization)
+  ? dankaInfo.organization
+  : null;
+const dankaCommunityRole = dankaInfo?.community_role && !isCemeteryServiceInfo(dankaInfo.community_role)
+  ? dankaInfo.community_role
+  : null;
 const monogatariLinks = getMonogatariLinksBySlug(temple.slug);
 const currentSectName = getSectGroupName(temple.sect);
 const currentSectSlug = allSects.find((sect) => sect.name === currentSectName)?.slug || "";
@@ -98,7 +128,7 @@ const nearbyTemples = currentLatLng
       .slice(0, 5)
       .map((item) => item.temple)
   : [];
-const templeImage = media?.hero_image || "/assets/temples/kokubunji-mitsuke/hondo.webp";
+const templeImage = coverPhoto?.src || "/assets/temples/kokubunji-mitsuke/hondo.webp";
 const siteUrl = "https://temple.atawi.link";
 const structuredData = [
   {
@@ -115,7 +145,7 @@ const structuredData = [
     "@context": "https://schema.org",
     "@type": "Place",
     name: temple.name,
-    description: pageSummary,
+    description: visiblePageSummary,
     url: `${siteUrl}/temples/${temple.slug}/`,
     image: new URL(templeImage, siteUrl).toString(),
     address: {
@@ -172,7 +202,7 @@ const officialSite = dankaInfo?.official_site;
           <small>最終確認 {temple.last_verified_at.replaceAll("-", ".")}</small>
         </div>
       </div>
-      <p class="temple-lead">{pageSummary}</p>
+      <p class="temple-lead">{visiblePageSummary}</p>
       {temple.aliases.length > 0 && (
         <p class="alias-line"><span>別称・関連名称</span>{temple.aliases.join("／")}</p>
       )}
@@ -190,11 +220,11 @@ const officialSite = dankaInfo?.official_site;
     </header>
 
     <section class="temple-visual" aria-label={`${temple.name}の写真`}>
-      {media ? (
+      {coverPhoto ? (
         <>
           <figure class="temple-cover">
-            <img src={media.hero_image} alt={`${temple.name}の主写真`} loading="eager" />
-            <figcaption>現地写真・{getPhotoCategory(media.photos[0]?.category_id)?.label || "寺院外観"}</figcaption>
+            <img src={coverPhoto.src} alt={coverPhoto.alt || `${temple.name}の主写真`} loading="eager" />
+            <figcaption>現地写真・{getPhotoCategory(coverPhoto.category_id)?.label || "寺院外観"}</figcaption>
           </figure>
           <div class="temple-photo-strip">
             {galleryPhotos.slice(0, 5).map((photo) => (
@@ -224,8 +254,8 @@ const officialSite = dankaInfo?.official_site;
 
     <section class="temple-fact-band" aria-label="寺院の要点">
       <div><span>宗派</span><strong>{temple.sect}</strong></div>
-      <div><span>創建・年代</span><strong class={foundedPeriod === "調査中" ? "pending-text" : ""}>{foundedPeriod}</strong></div>
-      <div><span>文化財・史跡</span><strong class={heritageStatus === "調査中" ? "pending-text" : ""}>{heritageStatus}</strong></div>
+      <div><span>創建・年代</span><strong class={visibleFoundedPeriod === "調査中" ? "pending-text" : ""}>{visibleFoundedPeriod}</strong></div>
+      <div><span>文化財・史跡</span><strong class={visibleHeritageStatus === "調査中" ? "pending-text" : ""}>{visibleHeritageStatus}</strong></div>
       <div><span>所在地</span><strong>{temple.area}・磐田市</strong></div>
     </section>
 
@@ -234,7 +264,7 @@ const officialSite = dankaInfo?.official_site;
         <section class="detail-panel">
           <p class="section-number">01</p>
           <h2>この寺院について</h2>
-          <p class="summary-copy">{temple.history_summary}</p>
+          <p class="summary-copy">{visibleHistorySummary}</p>
           {deity.pending && (
             <div class="pending-inline">
               <span>ご本尊</span><strong>{deity.text}</strong><small>寺院資料・現地聞き取りで確認予定</small>
@@ -245,9 +275,9 @@ const officialSite = dankaInfo?.official_site;
         <section class="detail-panel">
           <p class="section-number">02</p>
           <h2>歴史と背景</h2>
-          {historicalSections.length > 0 ? (
+          {visibleHistoricalSections.length > 0 ? (
             <div class="history-timeline">
-              {historicalSections.map((item) => (
+              {visibleHistoricalSections.map((item) => (
                 <article>
                   <h3>{item.heading}</h3>
                   <p>{item.body}</p>
@@ -265,9 +295,9 @@ const officialSite = dankaInfo?.official_site;
         <section class="detail-panel">
           <p class="section-number">03</p>
           <h2>文化財・見どころ</h2>
-          {culturalAssets.length > 0 ? (
+          {visibleCulturalAssets.length > 0 ? (
             <div class="heritage-list">
-              {culturalAssets.map((asset) => (
+              {visibleCulturalAssets.map((asset) => (
                 <article>
                   <div><span>{asset.designation}</span><h3>{asset.name}</h3></div>
                   <p>{asset.summary}</p>
@@ -321,7 +351,7 @@ const officialSite = dankaInfo?.official_site;
         <section class="detail-panel">
           <p class="section-number">05</p>
           <h2>檀家の営み・行事</h2>
-          {dankaInfo && (annualEvents.length > 0 || dankaInfo.cemetery || dankaInfo.organization || dankaInfo.community_role) ? (
+          {dankaInfo && (annualEvents.length > 0 || dankaOrganization || dankaCommunityRole) ? (
             <div class="danka-info-list">
               {annualEvents.length > 0 && (
                 <article>
@@ -333,29 +363,23 @@ const officialSite = dankaInfo?.official_site;
                   </ul>
                 </article>
               )}
-              {dankaInfo.cemetery && (
-                <article>
-                  <h3>供養・墓地</h3>
-                  <p>{dankaInfo.cemetery}</p>
-                </article>
-              )}
-              {dankaInfo.organization && (
+              {dankaOrganization && (
                 <article>
                   <h3>檀家組織</h3>
-                  <p>{dankaInfo.organization}</p>
+                  <p>{dankaOrganization}</p>
                 </article>
               )}
-              {dankaInfo.community_role && (
+              {dankaCommunityRole && (
                 <article>
                   <h3>地域との関わり</h3>
-                  <p>{dankaInfo.community_role}</p>
+                  <p>{dankaCommunityRole}</p>
                 </article>
               )}
             </div>
           ) : (
             <div class="pending-block">
               <strong>檀家向け情報は調査中です</strong>
-              <p>年中行事・法要、供養・墓地、檀家組織、地域との関わりを、寺院公式情報・公的資料から確認して加筆します。</p>
+              <p>年中行事・法要、檀家組織、地域との関わりを、寺院公式情報・公的資料から確認して加筆します。</p>
             </div>
           )}
         </section>
@@ -363,9 +387,9 @@ const officialSite = dankaInfo?.official_site;
         <section class="detail-panel">
           <p class="section-number">06</p>
           <h2>写真で見る境内</h2>
-          {media ? (
+          {visibleMediaPhotos.length > 0 ? (
             <div class="photo-record-list">
-              {media.photos.map((photo) => (
+              {visibleMediaPhotos.map((photo) => (
                 <figure>
                   <img src={photo.src} alt={photo.alt} loading="lazy" />
                   <figcaption>
@@ -396,7 +420,7 @@ const officialSite = dankaInfo?.official_site;
           <p class="section-number">07</p>
           <h2>出典・参考資料</h2>
           <ol class="source-records">
-            {temple.sources.map((source) => (
+            {visibleSources.map((source) => (
               <li>
                 <span>{source.type}</span>
                 {"url" in source && source.url ? (
@@ -419,7 +443,7 @@ const officialSite = dankaInfo?.official_site;
             <div><dt>ご本尊</dt><dd class={deity.pending ? "pending-text" : ""}>{deity.text}</dd></div>
             <div><dt>住所</dt><dd>{temple.address}</dd></div>
             <div><dt>地区</dt><dd>{districtName}</dd></div>
-            {pilgrimageNote && <div><dt>霊場・札所</dt><dd>{pilgrimageNote}</dd></div>}
+            {visiblePilgrimageNote && <div><dt>霊場・札所</dt><dd>{visiblePilgrimageNote}</dd></div>}
             <div>
               <dt>寺院公式サイト</dt>
               <dd class={officialSite?.status === "あり" ? "confirmed-pill" : "pending-pill"}>

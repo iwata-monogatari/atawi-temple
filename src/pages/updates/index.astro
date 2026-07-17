@@ -1,9 +1,10 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { allTempleUpdates, getTempleBySlug } from "../../lib/temples";
+import { allTempleUpdates, getTempleBySlug, isCemeteryServiceInfo } from "../../lib/temples";
 
 const laterUpdates = allTempleUpdates.slice(5).map((update) => ({
   ...update,
+  summary: isCemeteryServiceInfo(update.summary) ? "現地写真と基礎情報を更新しました。" : update.summary,
   temple: getTempleBySlug(update.temple_slug),
 }));
 ---

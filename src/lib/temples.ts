@@ -168,6 +168,27 @@ export function knownValue(value: string | null | undefined, fallback = "確認�
   return isUnknownValue(value) ? fallback : value;
 }
 
+export const cemeteryServiceInfoPattern =
+  /供養・墓地|永代供養|永代納骨|納骨|樹木葬|お墓|墓地|寺院墓地|墓苑|霊園|墓じまい|分譲可能墓地|一般墓|合祀|合葬|ペット供養|動物供養|供養相談|供養受付|供養サービス|石材|eitaikuyo|kuyou/i;
+
+export function isCemeteryServiceInfo(value: unknown) {
+  return cemeteryServiceInfoPattern.test(String(value || ""));
+}
+
+export function getTempleDisplaySummary(temple: Temple, districtName = getDistrictName(temple.district_id)) {
+  const summary = "page_summary" in temple && temple.page_summary
+    ? temple.page_summary
+    : `${districtName}地区に所在する${temple.sect}の寺院です。公式名簿の基礎情報をもとに掲載しています。`;
+  return isCemeteryServiceInfo(summary)
+    ? `${districtName}地区に所在する${temple.sect}の寺院です。公式名簿の基礎情報をもとに掲載しています。`
+    : summary;
+}
+
+export function getVisibleTempleMediaPhotos(slug: string) {
+  const media = getTempleMediaBySlug(slug);
+  return media?.photos.filter((photo) => !isCemeteryServiceInfo(`${photo.alt} ${photo.caption}`)) || [];
+}
+
 export function normalizeSearchText(value: string) {
   return value
     .toLowerCase()

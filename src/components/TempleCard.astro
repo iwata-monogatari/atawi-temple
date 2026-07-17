@@ -1,6 +1,16 @@
 ---
 import type { Temple } from "../lib/temples";
-import { getDistrictName, getTempleMediaBySlug, getTempleStatusLabel, hasDetailPage, isUnknownValue, knownValue } from "../lib/temples";
+import {
+  getDistrictName,
+  getTempleDisplaySummary,
+  getTempleMediaBySlug,
+  getTempleStatusLabel,
+  getVisibleTempleMediaPhotos,
+  hasDetailPage,
+  isCemeteryServiceInfo,
+  isUnknownValue,
+  knownValue,
+} from "../lib/temples";
 
 interface Props {
   temple: Temple;
@@ -11,14 +21,20 @@ const { temple, variant = "default" } = Astro.props;
 const districtName = getDistrictName(temple.district_id);
 const showKana = !isUnknownValue(temple.name_kana);
 const media = getTempleMediaBySlug(temple.slug);
-const cardImage = media?.hero_image ?? media?.photos[0]?.src;
+const visiblePhotos = getVisibleTempleMediaPhotos(temple.slug);
+const cardPhoto = media
+  ? visiblePhotos.find((photo) => photo.src === media.hero_image) || visiblePhotos[0] || null
+  : null;
+const cardImage = cardPhoto?.src;
 const hasCardImage = Boolean(cardImage);
-const cardImageAlt = media?.photos.find((photo) => photo.src === cardImage)?.alt ?? temple.name + "の代表写真";
+const cardImageAlt = cardPhoto?.alt ?? temple.name + "の代表写真";
 const detailPageAvailable = hasDetailPage(temple);
 const isAreaResult = variant === "area-result";
-const cardSummary = "page_summary" in temple && typeof temple.page_summary === "string" && temple.page_summary
-  ? temple.page_summary
-  : `${districtName}地区に所在する${temple.sect}の寺院です。公式名簿の基礎情報をもとに掲載しています。`;
+const cardSummary = getTempleDisplaySummary(temple, districtName);
+const mainDeity = isCemeteryServiceInfo(temple.main_deity) ? null : temple.main_deity;
+const foundedPeriod = "founded_period" in temple && !isCemeteryServiceInfo(temple.founded_period)
+  ? temple.founded_period
+  : null;
 const factItems = isAreaResult
   ? [
       { label: "住所", value: temple.address },
@@ -28,8 +44,8 @@ const factItems = isAreaResult
   : [
       { label: "住所", value: temple.address },
       { label: "宗派", value: temple.sect },
-      { label: "ご本尊", value: knownValue(temple.main_deity) },
-      { label: "創建・年代", value: knownValue("founded_period" in temple ? temple.founded_period : null, "調査中") },
+      { label: "ご本尊", value: knownValue(mainDeity) },
+      { label: "創建・年代", value: knownValue(foundedPeriod, "調査中") },
     ];
 ---
 
