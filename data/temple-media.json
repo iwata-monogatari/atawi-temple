@@ -6513,90 +6513,63 @@
       {
         "photo_id": "jikeian-komaba-ryuyo-01-2026",
         "src": "/assets/temples/jikeian-komaba/ryuyo-01.webp",
-        "alt": "慈慶庵の現地写真 1",
-        "caption": "慈慶庵の現地写真 1",
-        "category_id": "main-building",
+        "alt": "慈慶庵の寺号標と参道",
+        "caption": "慈慶庵の寺号標と参道",
+        "category_id": "entrance-marker",
         "source": "現地写真",
         "status": "published"
       },
       {
         "photo_id": "jikeian-komaba-ryuyo-02-2026",
         "src": "/assets/temples/jikeian-komaba/ryuyo-02.webp",
-        "alt": "慈慶庵の現地写真 2",
-        "caption": "慈慶庵の現地写真 2",
-        "category_id": "entrance-marker",
-        "source": "現地写真",
-        "status": "published"
-      },
-      {
-        "photo_id": "jikeian-komaba-ryuyo-03-2026",
-        "src": "/assets/temples/jikeian-komaba/ryuyo-03.webp",
-        "alt": "慈慶庵の現地写真 3",
-        "caption": "慈慶庵の現地写真 3",
+        "alt": "慈慶庵の境内と観音堂",
+        "caption": "慈慶庵の境内と観音堂",
         "category_id": "grounds",
-        "source": "現地写真",
-        "status": "published"
-      },
-      {
-        "photo_id": "jikeian-komaba-ryuyo-04-2026",
-        "src": "/assets/temples/jikeian-komaba/ryuyo-04.webp",
-        "alt": "慈慶庵の現地写真 4",
-        "caption": "慈慶庵の現地写真 4",
-        "category_id": "stonework",
-        "source": "現地写真",
-        "status": "published"
-      },
-      {
-        "photo_id": "jikeian-komaba-ryuyo-05-2026",
-        "src": "/assets/temples/jikeian-komaba/ryuyo-05.webp",
-        "alt": "慈慶庵の現地写真 5",
-        "caption": "慈慶庵の現地写真 5",
-        "category_id": "signboard",
         "source": "現地写真",
         "status": "published"
       },
       {
         "photo_id": "jikeian-komaba-ryuyo-06-2026",
         "src": "/assets/temples/jikeian-komaba/ryuyo-06.webp",
-        "alt": "慈慶庵の現地写真 6",
-        "caption": "慈慶庵の現地写真 6",
-        "category_id": "other",
+        "alt": "慈慶庵の石造物",
+        "caption": "慈慶庵の石造物",
+        "category_id": "stonework",
         "source": "現地写真",
         "status": "published"
       },
       {
         "photo_id": "jikeian-komaba-ryuyo-07-2026",
         "src": "/assets/temples/jikeian-komaba/ryuyo-07.webp",
-        "alt": "慈慶庵の現地写真 7",
-        "caption": "慈慶庵の現地写真 7",
-        "category_id": "main-building",
+        "alt": "慈慶庵の地蔵堂と石造物",
+        "caption": "慈慶庵の地蔵堂と石造物",
+        "category_id": "stonework",
         "source": "現地写真",
         "status": "published"
       },
       {
         "photo_id": "jikeian-komaba-ryuyo-08-2026",
         "src": "/assets/temples/jikeian-komaba/ryuyo-08.webp",
-        "alt": "慈慶庵の現地写真 8",
-        "caption": "慈慶庵の現地写真 8",
-        "category_id": "entrance-marker",
+        "alt": "慈慶庵の寺号標",
+        "caption": "慈慶庵の寺号標",
+        "category_id": "signboard",
         "source": "現地写真",
         "status": "published"
       },
       {
         "photo_id": "jikeian-komaba-ryuyo-09-2026",
         "src": "/assets/temples/jikeian-komaba/ryuyo-09.webp",
-        "alt": "慈慶庵の現地写真 9",
-        "caption": "慈慶庵の現地写真 9",
-        "category_id": "grounds",
+        "alt": "慈慶庵周辺の参道",
+        "caption": "慈慶庵周辺の参道",
+        "category_id": "entrance-marker",
         "source": "現地写真",
         "status": "published"
       },
       {
         "photo_id": "jikeian-komaba-ryuyo-10-2026",
         "src": "/assets/temples/jikeian-komaba/ryuyo-10.webp",
-        "alt": "慈慶庵の現地写真 10",
-        "caption": "慈慶庵の現地写真 10",
-        "category_id": "stonework",
+        "alt": "慈慶庵の境内植栽",
+        "caption": "慈慶庵の境内植栽",
+        "category_id": "grounds",
         "source": "現地写真",
         "status": "published"
       }
