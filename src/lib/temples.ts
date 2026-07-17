@@ -169,7 +169,7 @@ export function knownValue(value: string | null | undefined, fallback = "確認�
 }
 
 export const cemeteryServiceInfoPattern =
-  /供養・墓地|永代供養|永代納骨|納骨|樹木葬|お墓|墓地|寺院墓地|墓苑|霊園|墓じまい|分譲可能墓地|一般墓|合祀|合葬|ペット供養|動物供養|供養相談|供養受付|供養サービス|石材|eitaikuyo|kuyou/i;
+  /供養・墓地|供養(?!塔)|永代供養|永代納骨|納骨|樹木葬|お墓|墓地|寺院墓地|墓苑|霊園|墓じまい|分譲可能墓地|一般墓|合祀|合葬|ペット供養|動物供養|供養相談|供養受付|供養サービス|石材|eitaikuyo|kuyou/i;
 
 export function isCemeteryServiceInfo(value: unknown) {
   return cemeteryServiceInfoPattern.test(String(value || ""));
