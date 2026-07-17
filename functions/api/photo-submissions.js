@@ -40,7 +40,7 @@ function json(body, init = {}) {
     ...init,
     headers: {
       "content-type": "application/json; charset=utf-8",
-      "cache-control": "public, max-age=60",
+      "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
       ...(init.headers || {}),
     },
   });

@@ -1,7 +1,11 @@
 function json(body, init = {}) {
   return new Response(JSON.stringify(body), {
     ...init,
-    headers: { "content-type": "application/json; charset=utf-8", ...(init.headers || {}) },
+    headers: {
+      "content-type": "application/json; charset=utf-8",
+      "cache-control": "no-store, no-cache, must-revalidate, max-age=0",
+      ...(init.headers || {}),
+    },
   });
 }
 
