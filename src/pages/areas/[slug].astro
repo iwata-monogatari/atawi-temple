@@ -79,6 +79,12 @@ const relatedDistrictIdsByDistrictId: Record<string, string[]> = {
 const relatedDistricts = (relatedDistrictIdsByDistrictId[district.district_id] || [])
   .map((districtId) => allDistricts.find((item) => item.district_id === districtId))
   .filter((item): item is (typeof allDistricts)[number] => Boolean(item));
+const uploadedPhotoTempleData = temples.map((temple) => ({
+  slug: temple.slug,
+  name: temple.name,
+  detail_url: hasDetailPage(temple) ? `/temples/${temple.slug}/` : "",
+}));
+const uploadedPhotoTempleDataJson = JSON.stringify(uploadedPhotoTempleData).replace(/</g, "\\u003c");
 
 const templeGroups = [
   { kind: "photo", heading: "写真掲載あり", note: "現地写真を掲載している寺院です。", temples: templesWithPhoto },
@@ -156,6 +162,103 @@ const templeGroups = [
       </a>
     ))}
   </nav>
+
+  <section class="section uploaded-photo-section" data-uploaded-area-photos hidden>
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Uploaded Photos</p>
+        <h2>保存済み写真</h2>
+      </div>
+      <span class="small" data-uploaded-area-count></span>
+    </div>
+    <div class="photo-grid" data-uploaded-area-grid></div>
+  </section>
+  <script is:inline type="application/json" id="area-uploaded-photo-temples" set:html={uploadedPhotoTempleDataJson} />
+  <script is:inline>
+    // @ts-nocheck
+    (() => {
+      const dataEl = document.getElementById("area-uploaded-photo-temples");
+      const section = document.querySelector("[data-uploaded-area-photos]");
+      const grid = document.querySelector("[data-uploaded-area-grid]");
+      const count = document.querySelector("[data-uploaded-area-count]");
+      if (!dataEl || !section || !grid) return;
+
+      let temples = [];
+      try {
+        temples = JSON.parse(dataEl.textContent || "[]");
+      } catch {
+        temples = [];
+      }
+
+      const templeBySlug = new Map(temples.map((temple) => [temple.slug, temple]));
+      const slugs = temples.map((temple) => temple.slug).filter(Boolean);
+      if (slugs.length === 0) return;
+
+      fetch(`/api/photo-submissions?temple_slugs=${encodeURIComponent(slugs.join(","))}`)
+        .then((response) => response.ok ? response.json() : { photos: [] })
+        .then((result) => {
+          const photos = Array.isArray(result.photos) ? result.photos : [];
+          if (photos.length === 0) return;
+          section.hidden = false;
+          if (count) count.textContent = `${photos.length}枚`;
+          grid.innerHTML = photos.map((photo) => photoCardHtml(photo)).join("");
+          hydratePhotoCards(photos);
+        })
+        .catch(() => {});
+
+      function photoCardHtml(photo) {
+        const temple = templeBySlug.get(photo.temple_slug) || { name: photo.temple_slug, detail_url: "" };
+        const title = temple.detail_url
+          ? `<a href="${escapeHtml(temple.detail_url)}">${escapeHtml(temple.name)}</a>`
+          : escapeHtml(temple.name);
+        return `
+          <figure class="photo-card">
+            <img src="${escapeHtml(photo.url)}" alt="${escapeHtml(temple.name)}の保存済み写真" loading="lazy">
+            <figcaption>
+              <strong>${title}</strong>
+              <span>${escapeHtml(photo.note || photo.file_name || "保存済み写真")}</span>
+            </figcaption>
+          </figure>
+        `;
+      }
+
+      function hydratePhotoCards(photos) {
+        const firstByTemple = new Map();
+        photos.forEach((photo) => {
+          if (!firstByTemple.has(photo.temple_slug)) firstByTemple.set(photo.temple_slug, photo);
+        });
+        firstByTemple.forEach((photo, slug) => {
+          const card = document.querySelector(`[data-temple-card="${escapeSelector(slug)}"]`);
+          if (!card || card.querySelector(".temple-card-photo")) return;
+          const body = card.querySelector(".temple-card-body");
+          if (!body) return;
+          const temple = templeBySlug.get(slug) || { name: slug, detail_url: "" };
+          const wrapper = document.createElement(temple.detail_url ? "a" : "div");
+          wrapper.className = "temple-card-photo";
+          if (temple.detail_url) {
+            wrapper.href = temple.detail_url;
+            wrapper.dataset.trackClick = "temple_detail_click";
+          }
+          wrapper.setAttribute("aria-label", `${temple.name}の保存済み写真`);
+          wrapper.innerHTML = `<img src="${escapeHtml(photo.url)}" alt="${escapeHtml(temple.name)}の保存済み写真" loading="lazy">`;
+          card.insertBefore(wrapper, body);
+          card.classList.remove("temple-card--no-photo");
+        });
+      }
+
+      function escapeSelector(value) {
+        return window.CSS && CSS.escape ? CSS.escape(value) : String(value).replace(/["\\]/g, "\\$&");
+      }
+
+      function escapeHtml(value) {
+        return String(value ?? "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;");
+      }
+    })();
+  </script>
 
   <section class="section area-capabilities" aria-labelledby="area-capabilities-title">
     <div class="section-heading">

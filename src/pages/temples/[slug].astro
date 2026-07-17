@@ -165,6 +165,10 @@ const field = (value: string | null | undefined, pending = "調査中") => ({
 });
 const deity = field(temple.main_deity, "調査中・加筆待ち");
 const officialSite = dankaInfo?.official_site;
+const uploadedPhotoTempleDataJson = JSON.stringify({
+  slug: temple.slug,
+  name: temple.name,
+}).replace(/</g, "\\u003c");
 ---
 
 <BaseLayout
@@ -258,6 +262,63 @@ const officialSite = dankaInfo?.official_site;
       <div><span>文化財・史跡</span><strong class={visibleHeritageStatus === "調査中" ? "pending-text" : ""}>{visibleHeritageStatus}</strong></div>
       <div><span>所在地</span><strong>{temple.area}・磐田市</strong></div>
     </section>
+
+    <section class="section uploaded-photo-section" data-uploaded-temple-photos hidden>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Uploaded Photos</p>
+          <h2>保存済み写真</h2>
+        </div>
+        <span class="small" data-uploaded-temple-count></span>
+      </div>
+      <div class="photo-grid" data-uploaded-temple-grid></div>
+    </section>
+    <script is:inline type="application/json" id="temple-uploaded-photo-data" set:html={uploadedPhotoTempleDataJson} />
+    <script is:inline>
+      // @ts-nocheck
+      (() => {
+        const dataEl = document.getElementById("temple-uploaded-photo-data");
+        const section = document.querySelector("[data-uploaded-temple-photos]");
+        const grid = document.querySelector("[data-uploaded-temple-grid]");
+        const count = document.querySelector("[data-uploaded-temple-count]");
+        if (!dataEl || !section || !grid) return;
+
+        let temple = null;
+        try {
+          temple = JSON.parse(dataEl.textContent || "null");
+        } catch {
+          temple = null;
+        }
+        if (!temple?.slug) return;
+
+        fetch(`/api/photo-submissions?temple_slug=${encodeURIComponent(temple.slug)}`)
+          .then((response) => response.ok ? response.json() : { photos: [] })
+          .then((result) => {
+            const photos = Array.isArray(result.photos) ? result.photos : [];
+            if (photos.length === 0) return;
+            section.hidden = false;
+            if (count) count.textContent = `${photos.length}枚`;
+            grid.innerHTML = photos.map((photo) => `
+              <figure class="photo-card">
+                <img src="${escapeHtml(photo.url)}" alt="${escapeHtml(temple.name)}の保存済み写真" loading="lazy">
+                <figcaption>
+                  <strong>${escapeHtml(temple.name)}</strong>
+                  <span>${escapeHtml(photo.note || photo.file_name || "保存済み写真")}</span>
+                </figcaption>
+              </figure>
+            `).join("");
+          })
+          .catch(() => {});
+
+        function escapeHtml(value) {
+          return String(value ?? "")
+            .replaceAll("&", "&amp;")
+            .replaceAll("<", "&lt;")
+            .replaceAll(">", "&gt;")
+            .replaceAll('"', "&quot;");
+        }
+      })();
+    </script>
 
     <div class="temple-content-grid">
       <main class="temple-main-content">

@@ -49,7 +49,10 @@ const factItems = isAreaResult
     ];
 ---
 
-<article class:list={["temple-card", { "temple-card--area-result": isAreaResult, "temple-card--no-photo": !hasCardImage }]}>
+<article
+  class:list={["temple-card", { "temple-card--area-result": isAreaResult, "temple-card--no-photo": !hasCardImage }]}
+  data-temple-card={temple.slug}
+>
   {
     cardImage ? (
       detailPageAvailable ? (
