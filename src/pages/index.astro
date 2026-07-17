@@ -558,11 +558,11 @@ const galleryPhotos = [
     <div class="section-heading">
       <div>
         <h2>更新情報</h2>
-        <span class="small">寺院ページの追加・更新 / 新着5件</span>
+        <span class="small" data-latest-updates-status>寺院ページの追加・更新 / 新着5件</span>
       </div>
       <a href="/updates/">6件目以降を見る</a>
     </div>
-    <div class="update-list">
+    <div class="update-list" data-latest-updates-list>
       {
         recentUpdates.map((update) => (
           <article class="update-item">
@@ -579,6 +579,88 @@ const galleryPhotos = [
       }
     </div>
   </section>
+  <script>
+    (() => {
+      type LatestUpdate = {
+        date?: string;
+        title?: string;
+        summary?: string;
+        href?: string;
+        temple_slug?: string;
+        temple_name?: string;
+        temple_area?: string;
+      };
+
+      const list = document.querySelector("[data-latest-updates-list]");
+      const status = document.querySelector("[data-latest-updates-status]");
+      if (!(list instanceof HTMLElement)) return;
+      const updateList = list;
+
+      function text(value: unknown) {
+        return String(value || "");
+      }
+
+      function templeHref(update: LatestUpdate) {
+        return update.href || (update.temple_slug ? `/temples/${encodeURIComponent(update.temple_slug)}/` : "/updates/");
+      }
+
+      function renderLatestUpdates(updates: LatestUpdate[]) {
+        if (!Array.isArray(updates) || updates.length === 0) return;
+
+        const fragment = document.createDocumentFragment();
+        for (const update of updates.slice(0, 5)) {
+          const item = document.createElement("article");
+          item.className = "update-item";
+
+          const time = document.createElement("time");
+          time.dateTime = text(update.date);
+          time.textContent = text(update.date).split("-").join(".");
+          item.appendChild(time);
+
+          const body = document.createElement("div");
+          const heading = document.createElement("h3");
+          const link = document.createElement("a");
+          link.href = templeHref(update);
+          link.textContent = text(update.title);
+          heading.appendChild(link);
+          body.appendChild(heading);
+
+          const summary = document.createElement("p");
+          summary.textContent = text(update.summary);
+          body.appendChild(summary);
+
+          const metaParts = [update.temple_name, update.temple_area].filter(Boolean);
+          if (metaParts.length > 0) {
+            const meta = document.createElement("span");
+            meta.className = "small";
+            meta.textContent = metaParts.join(" / ");
+            body.appendChild(meta);
+          }
+
+          item.appendChild(body);
+          fragment.appendChild(item);
+        }
+
+        updateList.replaceChildren(fragment);
+        if (status instanceof HTMLElement) {
+          const latestDate = text(updates[0]?.date).split("-").join(".");
+          status.textContent = latestDate
+            ? `寺院ページの追加・更新 / ${latestDate}時点`
+            : "寺院ページの追加・更新 / 自動取得";
+        }
+      }
+
+      fetch(`/updates/latest.json?ts=${Date.now()}`, {
+        cache: "no-store",
+        headers: { Accept: "application/json" },
+      })
+        .then((response) => (response.ok ? response.json() : null))
+        .then((data) => renderLatestUpdates(data?.updates))
+        .catch(() => {
+          // Static markup remains as the fallback if the latest feed cannot be loaded.
+        });
+    })();
+  </script>
 
   <section class="section">
     <div class="info-grid">

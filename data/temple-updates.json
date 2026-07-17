@@ -1,5 +1,19 @@
 [
   {
+    "update_id": "2026-07-18-jikeian-photo-fix",
+    "date": "2026-07-18",
+    "temple_slug": "jikeian-komaba",
+    "title": "慈慶庵の掲載写真を整理しました",
+    "summary": "慈慶庵の代表写真を寺号標の写真へ差し替え、切れていた写真リンクを整理しました。"
+  },
+  {
+    "update_id": "2026-07-18-ryuyo-photo-banner",
+    "date": "2026-07-18",
+    "temple_slug": "kokuseiji-kaketsuka",
+    "title": "竜洋地区の写真表示を更新しました",
+    "summary": "トップページと竜洋地区ページに國清寺掛塚の境内写真を反映し、地区カードを写真付きで表示するようにしました。"
+  },
+  {
     "update_id": "2026-07-16-hofukuji-photos",
     "date": "2026-07-16",
     "temple_slug": "hofukuji-okubo",
