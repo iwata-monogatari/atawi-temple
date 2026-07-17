@@ -90,6 +90,10 @@ function inIwataBounds(lat, lng) {
     && lng <= iwataBounds.maxLng;
 }
 
+function publicAssetPath(src) {
+  return `public/${src.replace(/^\/+/, "")}`;
+}
+
 function countBy(records, keyFn) {
   return records.reduce((counts, record) => {
     const key = keyFn(record);
@@ -113,6 +117,26 @@ for (const district of districts) {
   requireText(district, "summary", label);
   requireText(district, "description", label);
   if (district.slug) checkSlug(district.slug, label);
+  if (!("hero_image" in district)) {
+    errors.push(`${label}: hero_image must be present as a string or null`);
+  } else if (district.hero_image === null) {
+    if (district.hero_image_alt !== null) {
+      errors.push(`${label}: hero_image_alt must be null when hero_image is null`);
+    }
+  } else if (typeof district.hero_image === "string" && district.hero_image.trim()) {
+    requireText(district, "hero_image_alt", label);
+    if (!district.hero_image.startsWith("/")) {
+      errors.push(`${label}: hero_image must be a root-relative public path`);
+    } else {
+      try {
+        await access(publicAssetPath(district.hero_image));
+      } catch {
+        errors.push(`${label}: hero_image file is missing: ${district.hero_image}`);
+      }
+    }
+  } else {
+    errors.push(`${label}: hero_image must be a non-empty string or null`);
+  }
 }
 
 for (const file of deprecatedDataFiles) {
@@ -289,6 +313,28 @@ const regressionRules = [
   },
 ];
 
+const expectedDistrictHeroImages = {
+  toyoda: "/images/temples/gyokoji-ikeda/gyokoji-ikeda-03-main-hall.webp",
+  koyo: "/assets/temples/zosanji-sagisaka/koyo-banner.webp",
+};
+
+const requiredToyodaTempleSlugs = [
+  "gyokoji-ikeda",
+  "shokoji-miyanoshiki",
+  "chionsai-hitokoto",
+  "anrakuji-tateno",
+  "toyodain-kegojima",
+  "shoi-ji-shimoban-no",
+  "fukuoji-morimoto",
+  "rinshoji-kodateno",
+  "kotokuji-morishita",
+  "yofukuji-shimohongo",
+  "myohoji-ikeda",
+  "seidoin-ikeda",
+  "daienji-kamo",
+  "daizoji-tomei",
+];
+
 for (const rule of regressionRules) {
   const temple = temples.find((item) => item.slug === rule.slug);
   if (!temple) {
@@ -299,6 +345,24 @@ for (const rule of regressionRules) {
     if (temple[field] !== expected) {
       errors.push(`regression: ${rule.slug}.${field} expected "${expected}" but got "${temple[field]}"`);
     }
+  }
+}
+
+for (const [districtId, expectedHeroImage] of Object.entries(expectedDistrictHeroImages)) {
+  const district = districts.find((item) => item.district_id === districtId);
+  if (!district) {
+    errors.push(`regression: required district "${districtId}" is missing`);
+  } else if (district.hero_image !== expectedHeroImage) {
+    errors.push(`regression: ${districtId}.hero_image expected "${expectedHeroImage}" but got "${district.hero_image}"`);
+  }
+}
+
+for (const slug of requiredToyodaTempleSlugs) {
+  const temple = temples.find((item) => item.slug === slug);
+  if (!temple) {
+    errors.push(`regression: required Toyoda temple "${slug}" is missing`);
+  } else if (temple.district_id !== "toyoda") {
+    errors.push(`regression: ${slug}.district_id expected "toyoda" but got "${temple.district_id}"`);
   }
 }
 

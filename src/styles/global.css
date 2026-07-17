@@ -2367,6 +2367,18 @@ button,
   border-radius: 0;
 }
 
+.temple-card--area-result.temple-card--no-photo {
+  grid-template-columns: 1fr;
+  min-height: 0;
+  background:
+    linear-gradient(135deg, rgba(47, 75, 43, 0.04), rgba(193, 154, 73, 0.08)),
+    var(--paper);
+}
+
+.temple-card--area-result.temple-card--no-photo .temple-card-body {
+  padding: 16px 18px;
+}
+
 .temple-card--area-result .temple-card-photo img {
   transition: transform 0.32s ease;
 }

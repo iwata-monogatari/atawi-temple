@@ -12,6 +12,7 @@ const districtName = getDistrictName(temple.district_id);
 const showKana = !isUnknownValue(temple.name_kana);
 const media = getTempleMediaBySlug(temple.slug);
 const cardImage = media?.hero_image ?? media?.photos[0]?.src;
+const hasCardImage = Boolean(cardImage);
 const cardImageAlt = media?.photos.find((photo) => photo.src === cardImage)?.alt ?? temple.name + "の代表写真";
 const detailPageAvailable = hasDetailPage(temple);
 const isAreaResult = variant === "area-result";
@@ -32,7 +33,7 @@ const factItems = isAreaResult
     ];
 ---
 
-<article class:list={["temple-card", { "temple-card--area-result": isAreaResult }]}>
+<article class:list={["temple-card", { "temple-card--area-result": isAreaResult, "temple-card--no-photo": !hasCardImage }]}>
   {
     cardImage ? (
       detailPageAvailable ? (
@@ -49,8 +50,6 @@ const factItems = isAreaResult
           <img src={cardImage} alt={cardImageAlt} loading="lazy" />
         </div>
       )
-    ) : isAreaResult ? (
-      <div class="temple-card-photo temple-card-photo--placeholder" aria-hidden="true"></div>
     ) : null
   }
   <div class="temple-card-body">

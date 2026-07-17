@@ -130,18 +130,6 @@ const iwataMonogatariBannerImage = "/assets/temples/kokubunji-mitsuke/hondo.webp
 
 // 境内の実写真は「境内フォトギャラリー」等の各セクションで使う（華やかさ重視で選定）
 
-const districtPhotoByDistrictId: Record<string, { src: string; alt: string } | null> = {
-  mitsuke: { src: "/assets/temples/kokubunji-mitsuke/hondo.webp", alt: "国分寺の本堂" },
-  nakaizumi: { src: "/assets/temples/daijoin-nakaizumi/approach-gate.webp", alt: "大乗院の参道と門" },
-  toyoda: { src: "/images/temples/gyokoji-ikeda/gyokoji-ikeda-03-main-hall.webp", alt: "行興寺の本堂" },
-  mikuriya: { src: "/assets/temples/renjoji-shingai/sanmon-view-to-hondo.webp", alt: "連城寺の山門越しに見る本堂" },
-  nanbu: { src: "/assets/temples/jurinji-kamiohnogo/romon-gate-and-main-hall.webp", alt: "十輪寺の楼門と本堂" },
-  koyo: { src: "/assets/temples/zosanji-sagisaka/koyo-banner.webp", alt: "増参寺の本堂" },
-  ryuyo: null,
-  fukude: { src: "/assets/temples/sojiji-minamijima/approach-hedges-and-pines.webp", alt: "宗次寺境内の参道と生垣" },
-  toyooka: null,
-};
-
 const galleryPhotos = [
   { slug: "senkoji-mitsuke", index: 4 },
   { slug: "saikoji-mitsuke", index: 2 },
@@ -455,7 +443,9 @@ const galleryPhotos = [
     <div class="district-grid">
       {
         districtCards.map((district) => {
-          const photo = districtPhotoByDistrictId[district.district_id];
+          const photo = district.hero_image
+            ? { src: district.hero_image, alt: district.hero_image_alt || `${district.name}地区の代表写真` }
+            : null;
           return (
             <a
               class={photo ? "district-card district-card--photo" : "district-card"}
