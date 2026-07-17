@@ -6,40 +6,42 @@ const D1_MAX_FILES = 5;
 const D1_MAX_BYTES = 8 * 1024 * 1024;
 const D1_CHUNK_BYTES = 1_750_000;
 
-const SCHEMA = `
-CREATE TABLE IF NOT EXISTS photo_submissions (
-  id TEXT PRIMARY KEY,
-  temple_slug TEXT NOT NULL,
-  note TEXT NOT NULL DEFAULT '',
-  storage TEXT NOT NULL,
-  status TEXT NOT NULL,
-  uploaded_at TEXT NOT NULL,
-  photo_count INTEGER NOT NULL,
-  total_bytes INTEGER NOT NULL
-);
-CREATE TABLE IF NOT EXISTS photo_submission_files (
-  id TEXT PRIMARY KEY,
-  submission_id TEXT NOT NULL,
-  file_index INTEGER NOT NULL,
-  file_name TEXT NOT NULL,
-  content_type TEXT NOT NULL,
-  size INTEGER NOT NULL,
-  category_id TEXT NOT NULL,
-  storage_key TEXT,
-  chunk_count INTEGER NOT NULL DEFAULT 0,
-  created_at TEXT NOT NULL
-);
-CREATE TABLE IF NOT EXISTS photo_submission_chunks (
-  file_id TEXT NOT NULL,
-  chunk_index INTEGER NOT NULL,
-  chunk_data BLOB NOT NULL,
-  PRIMARY KEY (file_id, chunk_index)
-);
-CREATE INDEX IF NOT EXISTS idx_photo_submission_files_submission
-  ON photo_submission_files (submission_id, file_index);
-CREATE INDEX IF NOT EXISTS idx_photo_submissions_uploaded
-  ON photo_submissions (uploaded_at DESC);
-`;
+const SCHEMA_STATEMENTS = [
+  `CREATE TABLE IF NOT EXISTS photo_submissions (
+    id TEXT PRIMARY KEY,
+    temple_slug TEXT NOT NULL,
+    note TEXT NOT NULL DEFAULT '',
+    storage TEXT NOT NULL,
+    status TEXT NOT NULL,
+    uploaded_at TEXT NOT NULL,
+    photo_count INTEGER NOT NULL,
+    total_bytes INTEGER NOT NULL
+  )`,
+  `CREATE TABLE IF NOT EXISTS photo_submission_files (
+    id TEXT PRIMARY KEY,
+    submission_id TEXT NOT NULL,
+    file_index INTEGER NOT NULL,
+    file_name TEXT NOT NULL,
+    content_type TEXT NOT NULL,
+    size INTEGER NOT NULL,
+    category_id TEXT NOT NULL,
+    storage_key TEXT,
+    chunk_count INTEGER NOT NULL DEFAULT 0,
+    created_at TEXT NOT NULL
+  )`,
+  `CREATE TABLE IF NOT EXISTS photo_submission_chunks (
+    file_id TEXT NOT NULL,
+    chunk_index INTEGER NOT NULL,
+    chunk_data BLOB NOT NULL,
+    PRIMARY KEY (file_id, chunk_index)
+  )`,
+  `CREATE INDEX IF NOT EXISTS idx_photo_submission_files_submission
+    ON photo_submission_files (submission_id, file_index)`,
+  `CREATE INDEX IF NOT EXISTS idx_photo_submissions_uploaded
+    ON photo_submissions (uploaded_at DESC)`,
+  `CREATE INDEX IF NOT EXISTS idx_photo_submissions_public_lookup
+    ON photo_submissions (temple_slug, status, uploaded_at DESC)`,
+];
 
 function json(body, init = {}) {
   return new Response(JSON.stringify(body), {
@@ -85,7 +87,9 @@ async function ensureAdmin(request, env) {
 }
 
 async function ensureD1Schema(db) {
-  await db.exec(SCHEMA);
+  for (const statement of SCHEMA_STATEMENTS) {
+    await db.prepare(statement).run();
+  }
 }
 
 function photoCategoryFor(photoCategories, file) {

@@ -1,33 +1,33 @@
-const SCHEMA = `
-CREATE TABLE IF NOT EXISTS photo_submissions (
-  id TEXT PRIMARY KEY,
-  temple_slug TEXT NOT NULL,
-  note TEXT NOT NULL DEFAULT '',
-  storage TEXT NOT NULL,
-  status TEXT NOT NULL,
-  uploaded_at TEXT NOT NULL,
-  photo_count INTEGER NOT NULL,
-  total_bytes INTEGER NOT NULL
-);
-CREATE TABLE IF NOT EXISTS photo_submission_files (
-  id TEXT PRIMARY KEY,
-  submission_id TEXT NOT NULL,
-  file_index INTEGER NOT NULL,
-  file_name TEXT NOT NULL,
-  content_type TEXT NOT NULL,
-  size INTEGER NOT NULL,
-  category_id TEXT NOT NULL,
-  storage_key TEXT,
-  chunk_count INTEGER NOT NULL DEFAULT 0,
-  created_at TEXT NOT NULL
-);
-CREATE TABLE IF NOT EXISTS photo_submission_chunks (
-  file_id TEXT NOT NULL,
-  chunk_index INTEGER NOT NULL,
-  chunk_data BLOB NOT NULL,
-  PRIMARY KEY (file_id, chunk_index)
-);
-`;
+const SCHEMA_STATEMENTS = [
+  `CREATE TABLE IF NOT EXISTS photo_submissions (
+    id TEXT PRIMARY KEY,
+    temple_slug TEXT NOT NULL,
+    note TEXT NOT NULL DEFAULT '',
+    storage TEXT NOT NULL,
+    status TEXT NOT NULL,
+    uploaded_at TEXT NOT NULL,
+    photo_count INTEGER NOT NULL,
+    total_bytes INTEGER NOT NULL
+  )`,
+  `CREATE TABLE IF NOT EXISTS photo_submission_files (
+    id TEXT PRIMARY KEY,
+    submission_id TEXT NOT NULL,
+    file_index INTEGER NOT NULL,
+    file_name TEXT NOT NULL,
+    content_type TEXT NOT NULL,
+    size INTEGER NOT NULL,
+    category_id TEXT NOT NULL,
+    storage_key TEXT,
+    chunk_count INTEGER NOT NULL DEFAULT 0,
+    created_at TEXT NOT NULL
+  )`,
+  `CREATE TABLE IF NOT EXISTS photo_submission_chunks (
+    file_id TEXT NOT NULL,
+    chunk_index INTEGER NOT NULL,
+    chunk_data BLOB NOT NULL,
+    PRIMARY KEY (file_id, chunk_index)
+  )`,
+];
 
 function text(message, status = 404) {
   return new Response(message, {
@@ -66,7 +66,9 @@ function concatChunks(chunks) {
 }
 
 async function ensureD1Schema(db) {
-  await db.exec(SCHEMA);
+  for (const statement of SCHEMA_STATEMENTS) {
+    await db.prepare(statement).run();
+  }
 }
 
 export async function onRequestGet({ params, env }) {
