@@ -12,7 +12,9 @@ async function readBuiltFile(path) {
 }
 
 const toyodaHtml = await readBuiltFile("dist/areas/toyoda/index.html");
+const chionsaiHtml = await readBuiltFile("dist/temples/chionsai-hitokoto/index.html");
 const expectedToyodaHeroImage = "/images/temples/gyokoji-ikeda/gyokoji-ikeda-03-main-hall.webp";
+const expectedChionsaiHeroImage = "/assets/temples/chionsai-hitokoto/748700946_37058201220492041_8019282847618984703_n.jpg";
 const requiredToyodaTempleNames = [
   "行興寺",
   "松向寺",
@@ -47,6 +49,16 @@ if (toyodaHtml) {
 
   if (!toyodaHtml.includes("temple-card--no-photo")) {
     errors.push("areas/toyoda: expected no-photo cards to use temple-card--no-photo");
+  }
+}
+
+if (chionsaiHtml) {
+  if (!chionsaiHtml.includes(expectedChionsaiHeroImage)) {
+    errors.push(`temples/chionsai-hitokoto: expected restored hero image ${expectedChionsaiHeroImage}`);
+  }
+
+  if (!chionsaiHtml.includes("智恩齋")) {
+    errors.push("temples/chionsai-hitokoto: missing temple name");
   }
 }
 

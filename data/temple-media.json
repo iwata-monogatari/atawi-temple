@@ -4327,5 +4327,1013 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "zosanji-sagisaka",
+    "hero_image": "/assets/temples/zosanji-sagisaka/749076644_37058051080507055_2255919997058212250_n.jpg",
+    "photos": [
+      {
+        "photo_id": "zosanji-sagisaka-14",
+        "src": "/assets/temples/zosanji-sagisaka/749076644_37058051080507055_2255919997058212250_n.jpg",
+        "alt": "増参寺本堂の正面",
+        "caption": "増参寺本堂の正面を記録した現地写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zosanji-sagisaka-01",
+        "src": "/assets/temples/zosanji-sagisaka/747962784_37058054550506708_5520229134978868692_n.jpg",
+        "alt": "増参寺の現地写真（01）",
+        "caption": "増参寺を記録した現地写真（01）。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zosanji-sagisaka-02",
+        "src": "/assets/temples/zosanji-sagisaka/748026215_37058044277174402_1444100901382367975_n.jpg",
+        "alt": "増参寺の現地写真（02）",
+        "caption": "増参寺を記録した現地写真（02）。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zosanji-sagisaka-03",
+        "src": "/assets/temples/zosanji-sagisaka/748160881_37058052163840280_7233624959184800221_n.jpg",
+        "alt": "増参寺の現地写真（03）",
+        "caption": "増参寺を記録した現地写真（03）。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zosanji-sagisaka-04",
+        "src": "/assets/temples/zosanji-sagisaka/748231313_37058059150506248_6254013959510758903_n.jpg",
+        "alt": "増参寺の現地写真（04）",
+        "caption": "増参寺を記録した現地写真（04）。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zosanji-sagisaka-05",
+        "src": "/assets/temples/zosanji-sagisaka/748419019_37058046530507510_8080270646902863828_n.jpg",
+        "alt": "増参寺の現地写真（05）",
+        "caption": "増参寺を記録した現地写真（05）。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zosanji-sagisaka-06",
+        "src": "/assets/temples/zosanji-sagisaka/748466436_37057969360515227_4618485017085452226_n.jpg",
+        "alt": "増参寺の現地写真（06）",
+        "caption": "増参寺を記録した現地写真（06）。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zosanji-sagisaka-07",
+        "src": "/assets/temples/zosanji-sagisaka/748480830_37058047683840728_6870732817423731788_n.jpg",
+        "alt": "増参寺の現地写真（07）",
+        "caption": "増参寺を記録した現地写真（07）。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zosanji-sagisaka-08",
+        "src": "/assets/temples/zosanji-sagisaka/748499665_37057968063848690_3675251726648487345_n.jpg",
+        "alt": "増参寺の現地写真（08）",
+        "caption": "増参寺を記録した現地写真（08）。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zosanji-sagisaka-09",
+        "src": "/assets/temples/zosanji-sagisaka/748499673_37058045247174305_7348178168018729576_n.jpg",
+        "alt": "増参寺の現地写真（09）",
+        "caption": "増参寺を記録した現地写真（09）。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zosanji-sagisaka-10",
+        "src": "/assets/temples/zosanji-sagisaka/748520201_37058060397172790_7823664252793973203_n.jpg",
+        "alt": "増参寺の現地写真（10）",
+        "caption": "増参寺を記録した現地写真（10）。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zosanji-sagisaka-11",
+        "src": "/assets/temples/zosanji-sagisaka/748597788_37058056813839815_5699013601814126964_n.jpg",
+        "alt": "増参寺の現地写真（11）",
+        "caption": "増参寺を記録した現地写真（11）。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zosanji-sagisaka-12",
+        "src": "/assets/temples/zosanji-sagisaka/748623928_37057971823848314_1416678126154414263_n.jpg",
+        "alt": "増参寺の現地写真（12）",
+        "caption": "増参寺を記録した現地写真（12）。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zosanji-sagisaka-13",
+        "src": "/assets/temples/zosanji-sagisaka/748787841_37058055643839932_6862421046317914011_n.jpg",
+        "alt": "増参寺の現地写真（13）",
+        "caption": "増参寺を記録した現地写真（13）。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zosanji-sagisaka-15",
+        "src": "/assets/temples/zosanji-sagisaka/749269374_37058053433840153_345256236234843581_n.jpg",
+        "alt": "増参寺の現地写真（15）",
+        "caption": "増参寺を記録した現地写真（15）。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zosanji-sagisaka-16",
+        "src": "/assets/temples/zosanji-sagisaka/749269450_37058058097173020_735466943272818828_n.jpg",
+        "alt": "増参寺の現地写真（16）",
+        "caption": "増参寺を記録した現地写真（16）。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zosanji-sagisaka-17",
+        "src": "/assets/temples/zosanji-sagisaka/749286909_37057966953848801_6693284355720840447_n.jpg",
+        "alt": "増参寺の現地写真（17）",
+        "caption": "増参寺を記録した現地写真（17）。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zosanji-sagisaka-18",
+        "src": "/assets/temples/zosanji-sagisaka/749286931_37058048723840624_3623622611442921229_n.jpg",
+        "alt": "増参寺の現地写真（18）",
+        "caption": "増参寺を記録した現地写真（18）。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zosanji-sagisaka-19",
+        "src": "/assets/temples/zosanji-sagisaka/750274087_37058049913840505_5523433887594926549_n.jpg",
+        "alt": "増参寺の現地写真（19）",
+        "caption": "増参寺を記録した現地写真（19）。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "taigetsuan-sagisaka",
+    "hero_image": "/assets/temples/taigetsuan-sagisaka/747988332_37058168787161951_5605625105398611168_n.jpg",
+    "photos": [
+      {
+        "photo_id": "taigetsuan-main-building-front-2026",
+        "src": "/assets/temples/taigetsuan-sagisaka/747988332_37058168787161951_5605625105398611168_n.jpg",
+        "alt": "太月庵の堂宇正面",
+        "caption": "太月庵跡に残る堂宇を正面から記録した代表写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "taigetsuan-grounds-courtyard-2026",
+        "src": "/assets/temples/taigetsuan-sagisaka/748216147_37058172400494923_7797696889593700046_n.jpg",
+        "alt": "太月庵の堂宇と周辺の境内",
+        "caption": "堂宇脇から見た太月庵跡の境内と周辺環境。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "taigetsuan-ritual-implements-2026",
+        "src": "/assets/temples/taigetsuan-sagisaka/748330340_37058166547162175_6629568895457606133_n.jpg",
+        "alt": "太月庵に残る桶と用具",
+        "caption": "太月庵の堂宇に残る桶や用具を記録した補足写真。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "taigetsuan-hall-plaque-2026",
+        "src": "/assets/temples/taigetsuan-sagisaka/748597788_37058170057161824_5365374342296299476_n.jpg",
+        "alt": "太月庵堂宇の延命地蔵大菩薩の扁額",
+        "caption": "堂宇正面に掲げられた「延命地蔵大菩薩」の扁額。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "taigetsuan-building-side-2026",
+        "src": "/assets/temples/taigetsuan-sagisaka/749161388_37058171140495049_7000427837758757303_n.jpg",
+        "alt": "太月庵堂宇の側面外観",
+        "caption": "太月庵跡に残る堂宇を斜め側面から記録した写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "taigetsuan-ruin-marker-2026",
+        "src": "/assets/temples/taigetsuan-sagisaka/749207853_37058167757162054_4053255671037306064_n.jpg",
+        "alt": "太月庵跡の石標",
+        "caption": "「太月庵跡」と刻まれた石標。寺院跡の位置を示す現地記録。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "taigetsuan-surroundings-2026",
+        "src": "/assets/temples/taigetsuan-sagisaka/749286907_37058173587161471_4797904632230384149_n.jpg",
+        "alt": "太月庵跡周辺の現況",
+        "caption": "太月庵跡周辺の敷地と隣接する住宅地の現況。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "daizoji-tomei",
+    "hero_image": "/assets/temples/daizoji-tomei/749269433_37058065717172258_4217930918715392747_n.jpg",
+    "photos": [
+      {
+        "photo_id": "daizoji-main-building-front-2026",
+        "src": "/assets/temples/daizoji-tomei/749269433_37058065717172258_4217930918715392747_n.jpg",
+        "alt": "大蔵寺の堂宇正面",
+        "caption": "大蔵寺跡に残る堂宇を正面から記録した代表写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-building-and-entrance-2026",
+        "src": "/assets/temples/daizoji-tomei/749119618_37058062610505902_4549958666105667933_n.jpg",
+        "alt": "大蔵寺の堂宇と寺号標",
+        "caption": "大蔵寺の堂宇と入口の寺号標を含む境内の全景。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-entrance-marker-2026",
+        "src": "/assets/temples/daizoji-tomei/748231314_37058063610505802_3490432402202981435_n.jpg",
+        "alt": "大蔵寺入口の寺号標",
+        "caption": "入口に立つ「大蔵寺」「福寿山」の寺号標。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-origin-board-2026",
+        "src": "/assets/temples/daizoji-tomei/748354214_37058066690505494_3722585777319804277_n.jpg",
+        "alt": "大蔵寺の由来板",
+        "caption": "大蔵寺の由来と流れ観音について記した現地の由来板。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-monument-2026",
+        "src": "/assets/temples/daizoji-tomei/749269453_37058067810505382_2282491370020169424_n.jpg",
+        "alt": "大蔵寺境内の石碑",
+        "caption": "大蔵寺境内に残る石碑と石灯籠。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-jizo-shelter-2026",
+        "src": "/assets/temples/daizoji-tomei/748520201_37058064627172367_6966319755880484931_n.jpg",
+        "alt": "大蔵寺境内の小堂と石仏",
+        "caption": "境内に残る小堂と石仏を記録した写真。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-adjacent-building-2026",
+        "src": "/assets/temples/daizoji-tomei/749197893_37058061520506011_5352215678057357877_n.jpg",
+        "alt": "大蔵寺跡周辺の建物",
+        "caption": "大蔵寺跡周辺にある建物と敷地の現況。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-sago-palm-2026",
+        "src": "/assets/temples/daizoji-tomei/749269364_37058068700505293_2411267462998483363_n.jpg",
+        "alt": "大蔵寺境内のソテツ",
+        "caption": "大蔵寺境内に残るソテツと周辺の現況。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-bell-and-building-2026",
+        "src": "/assets/temples/daizoji-tomei/748265528_37058069683838528_4052056311554911182_n.jpg",
+        "alt": "大蔵寺跡周辺の建物と用具庫",
+        "caption": "大蔵寺跡周辺の建物と、現地に残る用具庫の外観。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-disaster-warehouse-2026",
+        "src": "/assets/temples/daizoji-tomei/748665987_37058070590505104_8890306730793831159_n.jpg",
+        "alt": "大蔵寺跡周辺の防災倉庫",
+        "caption": "大蔵寺跡周辺にある中之郷自治防災会の防災倉庫。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "rinshoji-kodateno",
+    "hero_image": "/assets/temples/rinshoji-kodateno/748776948_37058077063837790_1546237763774055936_n.jpg",
+    "photos": [
+      {
+        "photo_id": "rinshoji-main-building-front-2026",
+        "src": "/assets/temples/rinshoji-kodateno/748776948_37058077063837790_1546237763774055936_n.jpg",
+        "alt": "林昌寺薬師堂の正面",
+        "caption": "林昌寺境内の薬師堂を正面から記録した代表写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rinshoji-main-building-wide-2026",
+        "src": "/assets/temples/rinshoji-kodateno/748419188_37058072723838224_8289484916187045167_n.jpg",
+        "alt": "林昌寺の堂宇と境内",
+        "caption": "薬師堂と境内の植栽・周辺環境を含む全景。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rinshoji-entrance-bell-2026",
+        "src": "/assets/temples/rinshoji-kodateno/749036416_37058073703838126_6511965783948712882_n.jpg",
+        "alt": "林昌寺薬師堂の入口と梵鐘",
+        "caption": "薬師堂正面の入口と吊り下げられた梵鐘。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rinshoji-bell-detail-2026",
+        "src": "/assets/temples/rinshoji-kodateno/748053514_37058074743838022_2021521756017232845_n.jpg",
+        "alt": "林昌寺の梵鐘",
+        "caption": "林昌寺の建物入口に吊るされた梵鐘。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rinshoji-main-building-side-2026",
+        "src": "/assets/temples/rinshoji-kodateno/749269386_37058081837170646_4891261508291160554_n.jpg",
+        "alt": "林昌寺薬師堂の側面外観",
+        "caption": "薬師堂の側面と境内の墓地を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rinshoji-grounds-wide-2026",
+        "src": "/assets/temples/rinshoji-kodateno/749269380_37058080693837427_1852490075250640296_n.jpg",
+        "alt": "林昌寺の堂宇と境内",
+        "caption": "堂宇、ソテツ、松を含む林昌寺境内の現況。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rinshoji-grounds-palm-2026",
+        "src": "/assets/temples/rinshoji-kodateno/748016387_37058071727171657_1266863898330790686_n.jpg",
+        "alt": "林昌寺境内のソテツと周辺",
+        "caption": "境内中央のソテツと駐車場側から見た周辺環境。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rinshoji-grounds-parking-2026",
+        "src": "/assets/temples/rinshoji-kodateno/749269390_37058078230504340_3271698136047047539_n.jpg",
+        "alt": "林昌寺境内と周辺の現況",
+        "caption": "林昌寺境内から周辺の建物・道路側を見た現況。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "rinshoji-entrance-marker-2026",
+        "src": "/assets/temples/rinshoji-kodateno/749343265_37058076020504561_6517282768757213933_n.jpg",
+        "alt": "林昌寺の寺号標",
+        "caption": "「曹洞宗 士石山 林昌寺」と刻まれた寺号標。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "chionsai-hitokoto",
+    "hero_image": "/assets/temples/chionsai-hitokoto/748700946_37058201220492041_8019282847618984703_n.jpg",
+    "photos": [
+      {
+        "photo_id": "chionsai-main-building-front-2026",
+        "src": "/assets/temples/chionsai-hitokoto/748700946_37058201220492041_8019282847618984703_n.jpg",
+        "alt": "智恩齋本堂の正面",
+        "caption": "智恩齋本堂を正面から記録した代表写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chionsai-entrance-gate-2026",
+        "src": "/assets/temples/chionsai-hitokoto/747988332_37058192670492896_291514988019806509_n.jpg",
+        "alt": "智恩齋の山門",
+        "caption": "智恩齋の山門と参道。門の向こうに境内の堂宇が見える。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chionsai-kannon-hall-2026",
+        "src": "/assets/temples/chionsai-hitokoto/748216150_37058193587159471_7232883200728367430_n.jpg",
+        "alt": "一言観音堂の外観",
+        "caption": "一言観音に関する案内と奉納幕が見える観音堂の外観。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chionsai-worship-shelter-2026",
+        "src": "/assets/temples/chionsai-hitokoto/748597638_37058205840491579_8030381161232595705_n.jpg",
+        "alt": "智恩齋境内の小堂",
+        "caption": "境内にある瓦屋根の小堂と履物棚。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chionsai-kannon-statue-2026",
+        "src": "/assets/temples/chionsai-hitokoto/748907735_37058200083825488_8574014544902037085_n.jpg",
+        "alt": "智恩齋境内の観音像",
+        "caption": "植栽に囲まれた観音像と小堂。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chionsai-kannon-garden-2026",
+        "src": "/assets/temples/chionsai-hitokoto/748931020_37058198950492268_3943334922808559404_n.jpg",
+        "alt": "智恩齋の観音堂と境内",
+        "caption": "観音堂と観音像、境内の植栽を含む全景。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chionsai-approach-2026",
+        "src": "/assets/temples/chionsai-hitokoto/748954493_37058196730492490_1632299143835800112_n.jpg",
+        "alt": "智恩齋本堂へ続く参道",
+        "caption": "生垣に囲まれた智恩齋本堂への参道。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chionsai-gate-interior-2026",
+        "src": "/assets/temples/chionsai-hitokoto/749269373_37058195693825927_4523484641942221130_n.jpg",
+        "alt": "智恩齋山門から見た境内",
+        "caption": "山門の内側から本堂方向を見た境内の景観。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chionsai-courtyard-2026",
+        "src": "/assets/temples/chionsai-hitokoto/749269380_37058207097158120_4147579367903520884_n.jpg",
+        "alt": "智恩齋境内の全景",
+        "caption": "本堂と境内の建物、履物棚を含む境内全景。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chionsai-main-building-wide-2026",
+        "src": "/assets/temples/chionsai-hitokoto/749286749_37058197800492383_7113106908713501149_n.jpg",
+        "alt": "松と智恩齋本堂",
+        "caption": "松と生垣越しに見た智恩齋本堂。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chionsai-entrance-gate-side-2026",
+        "src": "/assets/temples/chionsai-hitokoto/749286927_37058208350491328_4090717328926608206_n.jpg",
+        "alt": "智恩齋山門の外観",
+        "caption": "道路側から見た智恩齋山門の外観。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chionsai-main-building-plaque-2026",
+        "src": "/assets/temples/chionsai-hitokoto/749286959_37058203413825155_5102676859937291560_n.jpg",
+        "alt": "智恩齋本堂の扁額",
+        "caption": "本堂正面に掲げられた「智恩齋」の扁額。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chionsai-main-building-side-2026",
+        "src": "/assets/temples/chionsai-hitokoto/749315389_37058202360491927_6976131438925653256_n.jpg",
+        "alt": "智恩齋本堂と境内建物",
+        "caption": "本堂正面と隣接する境内建物を斜めから記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chionsai-plaque-detail-2026",
+        "src": "/assets/temples/chionsai-hitokoto/750274087_37058204590491704_7806412157943618632_n.jpg",
+        "alt": "智恩齋の扁額の細部",
+        "caption": "本堂に掲げられた智恩齋の扁額の細部。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "anrakuji-tateno",
+    "hero_image": "/assets/temples/anrakuji-tateno/747931199_37058115633833933_5152730418154105888_n.jpg",
+    "photos": [
+      {
+        "photo_id": "anrakuji-main-building-front-2026",
+        "src": "/assets/temples/anrakuji-tateno/747931199_37058115633833933_5152730418154105888_n.jpg",
+        "alt": "安楽寺本堂の正面",
+        "caption": "安楽寺本堂を正面から広く記録した代表写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "anrakuji-main-building-eaves-2026",
+        "src": "/assets/temples/anrakuji-tateno/747969747_37058117860500377_7172677658676117617_n.jpg",
+        "alt": "安楽寺本堂の軒下と山号額",
+        "caption": "本堂正面の軒下と「醫王山 安楽寺」の山号額。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "anrakuji-main-building-entrance-2026",
+        "src": "/assets/temples/anrakuji-tateno/748134314_37058116677167162_7086705795987698453_n.jpg",
+        "alt": "安楽寺本堂正面の建具",
+        "caption": "本堂正面の建具、紋、木組みを近くから記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "anrakuji-main-building-plaque-2026",
+        "src": "/assets/temples/anrakuji-tateno/748160881_37058119130500250_8692607562967588837_n.jpg",
+        "alt": "安楽寺の山号額",
+        "caption": "安楽寺本堂に掲げられた山号額の細部。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "anrakuji-entrance-wide-2026",
+        "src": "/assets/temples/anrakuji-tateno/748481175_37058112483834248_13351381594533683_n.jpg",
+        "alt": "安楽寺の山門と本堂",
+        "caption": "山門越しに本堂を望む安楽寺の入口全景。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "anrakuji-entrance-close-2026",
+        "src": "/assets/temples/anrakuji-tateno/748639525_37058113517167478_8373827556025710141_n.jpg",
+        "alt": "安楽寺山門から見た本堂",
+        "caption": "山門の石柱越しに見た本堂と参道。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "anrakuji-signboard-2026",
+        "src": "/assets/temples/anrakuji-tateno/748665986_37058178470494316_8368997975148324075_n.jpg",
+        "alt": "安楽寺の案内板",
+        "caption": "安楽寺の山号額と境内案内を掲げた案内板。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "anrakuji-stone-marker-2026",
+        "src": "/assets/temples/anrakuji-tateno/748701065_37058114623834034_7641405260275996170_n.jpg",
+        "alt": "安楽寺境内の石造銘板",
+        "caption": "境内の石造壁面に残る銘板。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "anrakuji-grounds-side-2026",
+        "src": "/assets/temples/anrakuji-tateno/749132938_37058123900499773_5786292317786302610_n.jpg",
+        "alt": "安楽寺境内の庭と堂宇",
+        "caption": "ソテツ、石灯籠、花壇を含む安楽寺境内の景観。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "anrakuji-marker-detail-2026",
+        "src": "/assets/temples/anrakuji-tateno/749270050_37058120247166805_4171242917307432180_n.jpg",
+        "alt": "安楽寺境内の石造銘板の細部",
+        "caption": "安楽寺境内の石造壁面に取り付けられた銘板の細部。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "anrakuji-entrance-gate-front-2026",
+        "src": "/assets/temples/anrakuji-tateno/749286873_37058122187166611_1701523724262622106_n.jpg",
+        "alt": "安楽寺山門正面と本堂",
+        "caption": "山門正面の石柱と、その奥に見える安楽寺本堂。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "shoi-ji-shimoban-no",
+    "hero_image": "/assets/temples/shoi-ji-shimoban-no/748597788_37058189507159879_7872045697075550925_n.jpg",
+    "photos": [
+      {
+        "photo_id": "shoi-main-building-front-2026",
+        "src": "/assets/temples/shoi-ji-shimoban-no/748597788_37058189507159879_7872045697075550925_n.jpg",
+        "alt": "正医寺本堂の正面",
+        "caption": "正医寺本堂を正面から記録した代表写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shoi-main-building-entrance-2026",
+        "src": "/assets/temples/shoi-ji-shimoban-no/749207853_37058186160493547_4706723275030389266_n.jpg",
+        "alt": "正医寺本堂正面の建具",
+        "caption": "本堂正面の木造建具と境内の庭を近くから記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shoi-main-building-side-2026",
+        "src": "/assets/temples/shoi-ji-shimoban-no/748106866_37058184963827000_4864699932077009032_n.jpg",
+        "alt": "正医寺本堂の側面外観",
+        "caption": "松と正医寺本堂の側面外観。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shoi-entrance-signs-2026",
+        "src": "/assets/temples/shoi-ji-shimoban-no/748665993_37058179470494216_1999846876736559490_n.jpg",
+        "alt": "正医寺境内の入口案内",
+        "caption": "正医寺の入口付近にある案内板と木札。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shoi-entrance-gate-banners-2026",
+        "src": "/assets/temples/shoi-ji-shimoban-no/748330339_37058181830493980_7663605251331473832_n.jpg",
+        "alt": "正医寺の境内入口と奉納旗",
+        "caption": "奉納旗が並ぶ正医寺の境内入口。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shoi-entrance-gate-2026",
+        "src": "/assets/temples/shoi-ji-shimoban-no/749286963_37058187280493435_3307206531606799699_n.jpg",
+        "alt": "正医寺の山門と奉納旗",
+        "caption": "正医寺の山門と奉納旗、参道の現況。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shoi-kannon-hall-2026",
+        "src": "/assets/temples/shoi-ji-shimoban-no/748520202_37058191667159663_7944986204632282139_n.jpg",
+        "alt": "正医寺の観音堂",
+        "caption": "正医寺境内の観音堂と祭壇。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shoi-kannon-shelter-2026",
+        "src": "/assets/temples/shoi-ji-shimoban-no/747988332_37058184010493762_5411999675359232546_n.jpg",
+        "alt": "正医寺境内の小堂と案内板",
+        "caption": "墓域脇の小堂と説明板。萬能観音に関わる現地状況を記録。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shoi-kannon-gate-signs-2026",
+        "src": "/assets/temples/shoi-ji-shimoban-no/749269408_37058188413826655_4265020414406273378_n.jpg",
+        "alt": "正医寺観音堂周辺の案内と木札",
+        "caption": "観音堂周辺の木札、案内板、参拝動線。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shoi-stone-monument-jizo-2026",
+        "src": "/assets/temples/shoi-ji-shimoban-no/749036416_37058182840493879_5187227741790721227_n.jpg",
+        "alt": "正医寺境内の石碑と六地蔵",
+        "caption": "境内の大きな石碑と六地蔵を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shoi-stone-monument-wide-2026",
+        "src": "/assets/temples/shoi-ji-shimoban-no/749239218_37058180633827433_6544584221771051665_n.jpg",
+        "alt": "正医寺の石碑と石灯籠",
+        "caption": "石碑、石灯籠、六地蔵が並ぶ境内の一角。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shoi-stone-monument-side-2026",
+        "src": "/assets/temples/shoi-ji-shimoban-no/749269462_37058190430493120_119491130380568489_n.jpg",
+        "alt": "正医寺境内の石碑と六地蔵の側面",
+        "caption": "石碑と六地蔵の位置関係を側面から記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "fukuoji-morimoto",
+    "hero_image": "/assets/temples/fukuoji-morimoto/747912942_37058101547168675_5530573925490351910_n.jpg",
+    "photos": [
+      {
+        "photo_id": "fukuoji-main-building-front-2026",
+        "src": "/assets/temples/fukuoji-morimoto/747912942_37058101547168675_5530573925490351910_n.jpg",
+        "alt": "福王寺本堂の正面",
+        "caption": "福王寺本堂を正面から記録した代表写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-main-building-side-2026",
+        "src": "/assets/temples/fukuoji-morimoto/748776887_37058107630501400_5022634451188159871_n.jpg",
+        "alt": "福王寺本堂と境内の側面",
+        "caption": "福王寺本堂と境内の植栽を斜めから記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-main-building-entrance-2026",
+        "src": "/assets/temples/fukuoji-morimoto/748597576_37058103720501791_3023706689233152457_n.jpg",
+        "alt": "福王寺本堂正面の建具",
+        "caption": "本堂正面の木造建具と縁側を近くから記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-main-building-carving-2026",
+        "src": "/assets/temples/fukuoji-morimoto/748306812_37058102650501898_5651492915412899422_n.jpg",
+        "alt": "福王寺本堂の木彫装飾",
+        "caption": "本堂正面の木彫装飾と軒下の意匠。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-entrance-gate-front-2026",
+        "src": "/assets/temples/fukuoji-morimoto/749269433_37058095663835930_430472131630988977_n.jpg",
+        "alt": "福王寺山門の正面",
+        "caption": "福王寺の山門を正面から記録。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-entrance-gate-wide-2026",
+        "src": "/assets/temples/fukuoji-morimoto/748938748_37058094480502715_4983654111611273040_n.jpg",
+        "alt": "福王寺の参道と山門",
+        "caption": "田園側から見た福王寺の参道と山門。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-entrance-gate-close-2026",
+        "src": "/assets/temples/fukuoji-morimoto/749713909_37058100337168796_7652280200793174768_n.jpg",
+        "alt": "福王寺境内入口の門柱",
+        "caption": "福王寺境内入口の門柱と参道を近くから記録。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-approach-2026",
+        "src": "/assets/temples/fukuoji-morimoto/747962772_37058108957167934_7014746240343561617_n.jpg",
+        "alt": "福王寺境内の参道",
+        "caption": "本堂から山門方向を見た福王寺境内の参道。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-kannon-hall-2026",
+        "src": "/assets/temples/fukuoji-morimoto/748231838_37058105093834987_5320054294248288535_n.jpg",
+        "alt": "福王寺境内の観音堂",
+        "caption": "福王寺境内の小堂と札所に関わる仏像を記録。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-stone-garden-2026",
+        "src": "/assets/temples/fukuoji-morimoto/748043824_37058111410501022_7070165225942617506_n.jpg",
+        "alt": "福王寺境内の石仏と石組み",
+        "caption": "境内の石仏、石組み、堂宇脇の景観。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-statues-2026",
+        "src": "/assets/temples/fukuoji-morimoto/748597576_37058110210501142_3575072256958786075_n.jpg",
+        "alt": "福王寺境内の石仏群",
+        "caption": "樹木と苔に囲まれた福王寺境内の石仏群。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-chozuya-2026",
+        "src": "/assets/temples/fukuoji-morimoto/748665990_37058106430501520_3149909528717001081_n.jpg",
+        "alt": "福王寺境内の手水鉢",
+        "caption": "境内の手水鉢と水屋周辺を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-temple-marker-2026",
+        "src": "/assets/temples/fukuoji-morimoto/749269364_37058093217169508_7924359150477074267_n.jpg",
+        "alt": "慈現山福王寺の寺号標",
+        "caption": "慈現山福王寺と刻まれた寺号標。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-jizo-row-2026",
+        "src": "/assets/temples/fukuoji-morimoto/749269364_37058096840502479_5363143189982066774_n.jpg",
+        "alt": "福王寺境内の地蔵群",
+        "caption": "福王寺境内に並ぶ地蔵群と供養の景観。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "fukuoji-outer-entrance-2026",
+        "src": "/assets/temples/fukuoji-morimoto/747889207_37058097983835698_3288686951852325729_n.jpg",
+        "alt": "福王寺境内入口の参道",
+        "caption": "福王寺境内入口の門柱と石張りの参道。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "kotokuji-morishita",
+    "hero_image": "/assets/temples/kotokuji-morishita/749269371_37058085243836972_3876274150587038825_n.jpg",
+    "photos": [
+      {
+        "photo_id": "kotokuji-main-building-front-2026",
+        "src": "/assets/temples/kotokuji-morishita/749269371_37058085243836972_3876274150587038825_n.jpg",
+        "alt": "興徳寺本堂の正面",
+        "caption": "興徳寺本堂を正面から広く記録した代表写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kotokuji-main-building-side-2026",
+        "src": "/assets/temples/kotokuji-morishita/749315389_37058086277170202_4435698515454877018_n.jpg",
+        "alt": "興徳寺本堂と石灯籠",
+        "caption": "本堂の正面外観と境内の石灯籠を斜めから記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kotokuji-main-building-statue-2026",
+        "src": "/assets/temples/kotokuji-morishita/748254991_37058090983836398_3667416658215502446_n.jpg",
+        "alt": "興徳寺境内の地蔵菩薩像と本堂",
+        "caption": "境内の地蔵菩薩像と本堂を一体で記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kotokuji-main-building-plaque-2026",
+        "src": "/assets/temples/kotokuji-morishita/748648669_37058088423836654_7315177630563550533_n.jpg",
+        "alt": "興徳寺本堂の扁額",
+        "caption": "興徳寺本堂に掲げられた扁額を近くから記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kotokuji-temple-marker-2026",
+        "src": "/assets/temples/kotokuji-morishita/747653555_37058087233836773_1631341143989473430_n.jpg",
+        "alt": "長松山興徳寺の扁額",
+        "caption": "長松山興徳寺と記された木製の扁額。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kotokuji-jizo-row-2026",
+        "src": "/assets/temples/kotokuji-morishita/748106866_37058084020503761_5510946090676664577_n.jpg",
+        "alt": "興徳寺境内の六地蔵",
+        "caption": "興徳寺境内の木造覆屋に並ぶ六地蔵。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kotokuji-grounds-statue-2026",
+        "src": "/assets/temples/kotokuji-morishita/748701064_37058092017169628_5106341412860874148_n.jpg",
+        "alt": "興徳寺境内の仏像と本堂",
+        "caption": "境内の仏像、植栽、本堂の位置関係を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kotokuji-signboard-2026",
+        "src": "/assets/temples/kotokuji-morishita/749207820_37058083017170528_6672807662543314017_n.jpg",
+        "alt": "興徳寺境内の掲示板",
+        "caption": "興徳寺境内の掲示板と周辺の案内状況。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kotokuji-approach-lanterns-2026",
+        "src": "/assets/temples/kotokuji-morishita/749269469_37058089680503195_7441617153923210829_n.jpg",
+        "alt": "興徳寺境内の石灯籠と参道",
+        "caption": "石灯籠に挟まれた興徳寺境内の参道。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]

@@ -241,6 +241,13 @@ for (const media of templeMedia) {
     if (photo.category_id && !photoCategoryIds.has(photo.category_id)) {
       errors.push(`${photoLabel}: category_id "${photo.category_id}" is not in data/photo-categories.json`);
     }
+    if (photo.src && photo.src.startsWith("/")) {
+      try {
+        await access(publicAssetPath(photo.src));
+      } catch {
+        errors.push(`${photoLabel}: photo file is missing: ${photo.src}`);
+      }
+    }
   }
 }
 
@@ -335,6 +342,18 @@ const requiredToyodaTempleSlugs = [
   "daizoji-tomei",
 ];
 
+const requiredRestoredMediaSlugs = [
+  "zosanji-sagisaka",
+  "taigetsuan-sagisaka",
+  "daizoji-tomei",
+  "rinshoji-kodateno",
+  "chionsai-hitokoto",
+  "anrakuji-tateno",
+  "shoi-ji-shimoban-no",
+  "fukuoji-morimoto",
+  "kotokuji-morishita",
+];
+
 for (const rule of regressionRules) {
   const temple = temples.find((item) => item.slug === rule.slug);
   if (!temple) {
@@ -363,6 +382,20 @@ for (const slug of requiredToyodaTempleSlugs) {
     errors.push(`regression: required Toyoda temple "${slug}" is missing`);
   } else if (temple.district_id !== "toyoda") {
     errors.push(`regression: ${slug}.district_id expected "toyoda" but got "${temple.district_id}"`);
+  }
+}
+
+for (const slug of requiredRestoredMediaSlugs) {
+  const media = templeMedia.find((item) => item.temple_slug === slug);
+  if (!media) {
+    errors.push(`regression: restored media for "${slug}" is missing`);
+    continue;
+  }
+  const temple = temples.find((item) => item.slug === slug);
+  if (!temple) {
+    errors.push(`regression: restored media "${slug}" has no temple record`);
+  } else if (temple.visit_status !== "現地写真あり") {
+    errors.push(`regression: ${slug}.visit_status expected "現地写真あり" but got "${temple.visit_status}"`);
   }
 }
 
