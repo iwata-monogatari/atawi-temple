@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">法要当日の基本の流れ</title>
+  <desc id="desc">到着、挨拶、着席、読経、焼香、法話、墓参、会食または解散までの流れ</desc>
+  <rect width="1200" height="640" fill="#f6f1ef"/>
+  <rect x="58" y="56" width="1084" height="528" rx="20" fill="#ffffff" stroke="#d7c4bd" stroke-width="3"/>
+  <text x="92" y="122" font-family="Yu Gothic, Meiryo, sans-serif" font-size="38" font-weight="700" fill="#2c2522">当日は「早めに着く」と半分落ち着く</text>
+  <text x="92" y="166" font-family="Yu Gothic, Meiryo, sans-serif" font-size="22" fill="#665b57">作法の細部より、遅れない、静かに聞く、案内に従うことを優先する。</text>
+  <g font-family="Yu Gothic, Meiryo, sans-serif">
+    <path d="M128 330C210 230 320 230 402 330S594 430 676 330s192-100 274 0" fill="none" stroke="#73816a" stroke-width="8" stroke-linecap="round"/>
+    <g fill="#ffffff" stroke-width="4">
+      <circle cx="128" cy="330" r="48" stroke="#2f5d62"/>
+      <circle cx="268" cy="270" r="48" stroke="#826f38"/>
+      <circle cx="408" cy="330" r="48" stroke="#7c4b43"/>
+      <circle cx="548" cy="390" r="48" stroke="#3f4d71"/>
+      <circle cx="688" cy="330" r="48" stroke="#2f5d62"/>
+      <circle cx="828" cy="270" r="48" stroke="#826f38"/>
+      <circle cx="968" cy="330" r="48" stroke="#7c4b43"/>
+    </g>
+    <g font-size="20" font-weight="700" text-anchor="middle" fill="#27231f">
+      <text x="128" y="337">到着</text>
+      <text x="268" y="277">挨拶</text>
+      <text x="408" y="337">着席</text>
+      <text x="548" y="397">読経</text>
+      <text x="688" y="337">焼香</text>
+      <text x="828" y="277">法話</text>
+      <text x="968" y="337">墓参</text>
+    </g>
+    <g font-size="18" text-anchor="middle" fill="#5e5b55">
+      <text x="128" y="410">10分前ではなく</text><text x="128" y="436">余裕を持つ</text>
+      <text x="268" y="196">施主・親族へ</text><text x="268" y="222">短く一礼</text>
+      <text x="408" y="410">席順は</text><text x="408" y="436">案内優先</text>
+      <text x="548" y="470">読経中は</text><text x="548" y="496">静かに合掌</text>
+      <text x="688" y="410">回数より</text><text x="688" y="436">会場に合わせる</text>
+      <text x="828" y="196">終わりまで</text><text x="828" y="222">急がない</text>
+      <text x="968" y="410">会食または</text><text x="968" y="436">解散へ</text>
+    </g>
+  </g>
+</svg>

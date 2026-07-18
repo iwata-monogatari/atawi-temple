@@ -465,6 +465,29 @@ button,
   max-width: 820px;
 }
 
+.article-figure {
+  max-width: 820px;
+  margin: 28px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  overflow: hidden;
+}
+
+.article-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.article-figure figcaption {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  padding: 12px 16px;
+}
+
 .article-aside {
   position: sticky;
   top: 20px;

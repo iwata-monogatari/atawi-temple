@@ -42,6 +42,12 @@ const faqJson = article.faq ? JSON.stringify({
               <p class="section-number">{String(index + 1).padStart(2, "0")}</p>
               <h2>{section.heading}</h2>
               {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+              {section.figure && (
+                <figure class="article-figure">
+                  <img src={section.figure.src} alt={section.figure.alt} loading="lazy" decoding="async" />
+                  <figcaption>{section.figure.caption}</figcaption>
+                </figure>
+              )}
               {section.bullets && (
                 <ul class="check-list">
                   {section.bullets.map((item) => <li>{item}</li>)}
