@@ -478,6 +478,8 @@ button,
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 1200 / 640;
+  object-fit: contain;
 }
 
 .article-figure figcaption {

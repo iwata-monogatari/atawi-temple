@@ -44,7 +44,7 @@ const faqJson = article.faq ? JSON.stringify({
               {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
               {section.figure && (
                 <figure class="article-figure">
-                  <img src={section.figure.src} alt={section.figure.alt} loading="lazy" decoding="async" />
+                  <img src={section.figure.src} alt={section.figure.alt} width="1200" height="640" loading="lazy" decoding="async" />
                   <figcaption>{section.figure.caption}</figcaption>
                 </figure>
               )}
