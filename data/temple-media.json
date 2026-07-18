@@ -8533,5 +8533,857 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "daizoji-kamiokata",
+    "hero_image": "/assets/temples/daizoji-kamiokata/daizoji-kamiokata-01.webp",
+    "photos": [
+      {
+        "photo_id": "daizoji-kamiokata-01-2026",
+        "src": "/assets/temples/daizoji-kamiokata/daizoji-kamiokata-01.webp",
+        "alt": "大蔵寺の現地写真1",
+        "caption": "大蔵寺の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-kamiokata-02-2026",
+        "src": "/assets/temples/daizoji-kamiokata/daizoji-kamiokata-02.webp",
+        "alt": "大蔵寺の現地写真2",
+        "caption": "大蔵寺の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-kamiokata-03-2026",
+        "src": "/assets/temples/daizoji-kamiokata/daizoji-kamiokata-03.webp",
+        "alt": "大蔵寺の現地写真3",
+        "caption": "大蔵寺の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-kamiokata-04-2026",
+        "src": "/assets/temples/daizoji-kamiokata/daizoji-kamiokata-04.webp",
+        "alt": "大蔵寺の現地写真4",
+        "caption": "大蔵寺の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-kamiokata-05-2026",
+        "src": "/assets/temples/daizoji-kamiokata/daizoji-kamiokata-05.webp",
+        "alt": "大蔵寺の現地写真5",
+        "caption": "大蔵寺の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-kamiokata-06-2026",
+        "src": "/assets/temples/daizoji-kamiokata/daizoji-kamiokata-06.webp",
+        "alt": "大蔵寺の現地写真6",
+        "caption": "大蔵寺の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-kamiokata-07-2026",
+        "src": "/assets/temples/daizoji-kamiokata/daizoji-kamiokata-07.webp",
+        "alt": "大蔵寺の現地写真7",
+        "caption": "大蔵寺の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-kamiokata-08-2026",
+        "src": "/assets/temples/daizoji-kamiokata/daizoji-kamiokata-08.webp",
+        "alt": "大蔵寺の現地写真8",
+        "caption": "大蔵寺の現地写真（8）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-kamiokata-09-2026",
+        "src": "/assets/temples/daizoji-kamiokata/daizoji-kamiokata-09.webp",
+        "alt": "大蔵寺の現地写真9",
+        "caption": "大蔵寺の現地写真（9）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-kamiokata-10-2026",
+        "src": "/assets/temples/daizoji-kamiokata/daizoji-kamiokata-10.webp",
+        "alt": "大蔵寺の現地写真10",
+        "caption": "大蔵寺の現地写真（10）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-kamiokata-11-2026",
+        "src": "/assets/temples/daizoji-kamiokata/daizoji-kamiokata-11.webp",
+        "alt": "大蔵寺の現地写真11",
+        "caption": "大蔵寺の現地写真（11）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-kamiokata-12-2026",
+        "src": "/assets/temples/daizoji-kamiokata/daizoji-kamiokata-12.webp",
+        "alt": "大蔵寺の現地写真12",
+        "caption": "大蔵寺の現地写真（12）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-kamiokata-13-2026",
+        "src": "/assets/temples/daizoji-kamiokata/daizoji-kamiokata-13.webp",
+        "alt": "大蔵寺の現地写真13",
+        "caption": "大蔵寺の現地写真（13）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daizoji-kamiokata-14-2026",
+        "src": "/assets/temples/daizoji-kamiokata/daizoji-kamiokata-14.webp",
+        "alt": "大蔵寺の現地写真14",
+        "caption": "大蔵寺の現地写真（14）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "tenshoji-toyoshima",
+    "hero_image": "/assets/temples/tenshoji-toyoshima/tenshoji-toyoshima-01.webp",
+    "photos": [
+      {
+        "photo_id": "tenshoji-toyoshima-01-2026",
+        "src": "/assets/temples/tenshoji-toyoshima/tenshoji-toyoshima-01.webp",
+        "alt": "天正寺の現地写真1",
+        "caption": "天正寺の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tenshoji-toyoshima-02-2026",
+        "src": "/assets/temples/tenshoji-toyoshima/tenshoji-toyoshima-02.webp",
+        "alt": "天正寺の現地写真2",
+        "caption": "天正寺の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tenshoji-toyoshima-03-2026",
+        "src": "/assets/temples/tenshoji-toyoshima/tenshoji-toyoshima-03.webp",
+        "alt": "天正寺の現地写真3",
+        "caption": "天正寺の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tenshoji-toyoshima-04-2026",
+        "src": "/assets/temples/tenshoji-toyoshima/tenshoji-toyoshima-04.webp",
+        "alt": "天正寺の現地写真4",
+        "caption": "天正寺の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tenshoji-toyoshima-05-2026",
+        "src": "/assets/temples/tenshoji-toyoshima/tenshoji-toyoshima-05.webp",
+        "alt": "天正寺の現地写真5",
+        "caption": "天正寺の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "hojuji-toyoshima",
+    "hero_image": "/assets/temples/hojuji-toyoshima/hojuji-toyoshima-01.webp",
+    "photos": [
+      {
+        "photo_id": "hojuji-toyoshima-01-2026",
+        "src": "/assets/temples/hojuji-toyoshima/hojuji-toyoshima-01.webp",
+        "alt": "寳珠寺の現地写真1",
+        "caption": "寳珠寺の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hojuji-toyoshima-02-2026",
+        "src": "/assets/temples/hojuji-toyoshima/hojuji-toyoshima-02.webp",
+        "alt": "寳珠寺の現地写真2",
+        "caption": "寳珠寺の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hojuji-toyoshima-03-2026",
+        "src": "/assets/temples/hojuji-toyoshima/hojuji-toyoshima-03.webp",
+        "alt": "寳珠寺の現地写真3",
+        "caption": "寳珠寺の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hojuji-toyoshima-04-2026",
+        "src": "/assets/temples/hojuji-toyoshima/hojuji-toyoshima-04.webp",
+        "alt": "寳珠寺の現地写真4",
+        "caption": "寳珠寺の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hojuji-toyoshima-05-2026",
+        "src": "/assets/temples/hojuji-toyoshima/hojuji-toyoshima-05.webp",
+        "alt": "寳珠寺の現地写真5",
+        "caption": "寳珠寺の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hojuji-toyoshima-06-2026",
+        "src": "/assets/temples/hojuji-toyoshima/hojuji-toyoshima-06.webp",
+        "alt": "寳珠寺の現地写真6",
+        "caption": "寳珠寺の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hojuji-toyoshima-07-2026",
+        "src": "/assets/temples/hojuji-toyoshima/hojuji-toyoshima-07.webp",
+        "alt": "寳珠寺の現地写真7",
+        "caption": "寳珠寺の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hojuji-toyoshima-08-2026",
+        "src": "/assets/temples/hojuji-toyoshima/hojuji-toyoshima-08.webp",
+        "alt": "寳珠寺の現地写真8",
+        "caption": "寳珠寺の現地写真（8）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hojuji-toyoshima-09-2026",
+        "src": "/assets/temples/hojuji-toyoshima/hojuji-toyoshima-09.webp",
+        "alt": "寳珠寺の現地写真9",
+        "caption": "寳珠寺の現地写真（9）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "senjuji-senjudou",
+    "hero_image": "/assets/temples/senjuji-senjudou/senjuji-senjudou-01.webp",
+    "photos": [
+      {
+        "photo_id": "senjuji-senjudou-01-2026",
+        "src": "/assets/temples/senjuji-senjudou/senjuji-senjudou-01.webp",
+        "alt": "千手寺の現地写真1",
+        "caption": "千手寺の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senjuji-senjudou-02-2026",
+        "src": "/assets/temples/senjuji-senjudou/senjuji-senjudou-02.webp",
+        "alt": "千手寺の現地写真2",
+        "caption": "千手寺の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senjuji-senjudou-03-2026",
+        "src": "/assets/temples/senjuji-senjudou/senjuji-senjudou-03.webp",
+        "alt": "千手寺の現地写真3",
+        "caption": "千手寺の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senjuji-senjudou-04-2026",
+        "src": "/assets/temples/senjuji-senjudou/senjuji-senjudou-04.webp",
+        "alt": "千手寺の現地写真4",
+        "caption": "千手寺の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senjuji-senjudou-05-2026",
+        "src": "/assets/temples/senjuji-senjudou/senjuji-senjudou-05.webp",
+        "alt": "千手寺の現地写真5",
+        "caption": "千手寺の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senjuji-senjudou-06-2026",
+        "src": "/assets/temples/senjuji-senjudou/senjuji-senjudou-06.webp",
+        "alt": "千手寺の現地写真6",
+        "caption": "千手寺の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senjuji-senjudou-07-2026",
+        "src": "/assets/temples/senjuji-senjudou/senjuji-senjudou-07.webp",
+        "alt": "千手寺の現地写真7",
+        "caption": "千手寺の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senjuji-senjudou-08-2026",
+        "src": "/assets/temples/senjuji-senjudou/senjuji-senjudou-08.webp",
+        "alt": "千手寺の現地写真8",
+        "caption": "千手寺の現地写真（8）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senjuji-senjudou-09-2026",
+        "src": "/assets/temples/senjuji-senjudou/senjuji-senjudou-09.webp",
+        "alt": "千手寺の現地写真9",
+        "caption": "千手寺の現地写真（9）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senjuji-senjudou-10-2026",
+        "src": "/assets/temples/senjuji-senjudou/senjuji-senjudou-10.webp",
+        "alt": "千手寺の現地写真10",
+        "caption": "千手寺の現地写真（10）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "senjuji-senjudou-11-2026",
+        "src": "/assets/temples/senjuji-senjudou/senjuji-senjudou-11.webp",
+        "alt": "千手寺の現地写真11",
+        "caption": "千手寺の現地写真（11）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "manshoji-manshoji",
+    "hero_image": "/assets/temples/manshoji-manshoji/manshoji-manshoji-01.webp",
+    "photos": [
+      {
+        "photo_id": "manshoji-manshoji-01-2026",
+        "src": "/assets/temples/manshoji-manshoji/manshoji-manshoji-01.webp",
+        "alt": "萬勝寺の現地写真1",
+        "caption": "萬勝寺の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "manshoji-manshoji-02-2026",
+        "src": "/assets/temples/manshoji-manshoji/manshoji-manshoji-02.webp",
+        "alt": "萬勝寺の現地写真2",
+        "caption": "萬勝寺の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "manshoji-manshoji-03-2026",
+        "src": "/assets/temples/manshoji-manshoji/manshoji-manshoji-03.webp",
+        "alt": "萬勝寺の現地写真3",
+        "caption": "萬勝寺の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "manshoji-manshoji-04-2026",
+        "src": "/assets/temples/manshoji-manshoji/manshoji-manshoji-04.webp",
+        "alt": "萬勝寺の現地写真4",
+        "caption": "萬勝寺の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "manshoji-manshoji-05-2026",
+        "src": "/assets/temples/manshoji-manshoji/manshoji-manshoji-05.webp",
+        "alt": "萬勝寺の現地写真5",
+        "caption": "萬勝寺の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "manshoji-manshoji-06-2026",
+        "src": "/assets/temples/manshoji-manshoji/manshoji-manshoji-06.webp",
+        "alt": "萬勝寺の現地写真6",
+        "caption": "萬勝寺の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "manshoji-manshoji-07-2026",
+        "src": "/assets/temples/manshoji-manshoji/manshoji-manshoji-07.webp",
+        "alt": "萬勝寺の現地写真7",
+        "caption": "萬勝寺の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "jissaiji-samejima",
+    "hero_image": "/assets/temples/jissaiji-samejima/jissaiji-samejima-01.webp",
+    "photos": [
+      {
+        "photo_id": "jissaiji-samejima-01-2026",
+        "src": "/assets/temples/jissaiji-samejima/jissaiji-samejima-01.webp",
+        "alt": "実際寺の現地写真1",
+        "caption": "実際寺の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jissaiji-samejima-02-2026",
+        "src": "/assets/temples/jissaiji-samejima/jissaiji-samejima-02.webp",
+        "alt": "実際寺の現地写真2",
+        "caption": "実際寺の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jissaiji-samejima-03-2026",
+        "src": "/assets/temples/jissaiji-samejima/jissaiji-samejima-03.webp",
+        "alt": "実際寺の現地写真3",
+        "caption": "実際寺の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jissaiji-samejima-04-2026",
+        "src": "/assets/temples/jissaiji-samejima/jissaiji-samejima-04.webp",
+        "alt": "実際寺の現地写真4",
+        "caption": "実際寺の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jissaiji-samejima-05-2026",
+        "src": "/assets/temples/jissaiji-samejima/jissaiji-samejima-05.webp",
+        "alt": "実際寺の現地写真5",
+        "caption": "実際寺の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jissaiji-samejima-06-2026",
+        "src": "/assets/temples/jissaiji-samejima/jissaiji-samejima-06.webp",
+        "alt": "実際寺の現地写真6",
+        "caption": "実際寺の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jissaiji-samejima-07-2026",
+        "src": "/assets/temples/jissaiji-samejima/jissaiji-samejima-07.webp",
+        "alt": "実際寺の現地写真7",
+        "caption": "実際寺の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jissaiji-samejima-08-2026",
+        "src": "/assets/temples/jissaiji-samejima/jissaiji-samejima-08.webp",
+        "alt": "実際寺の現地写真8",
+        "caption": "実際寺の現地写真（8）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jissaiji-samejima-09-2026",
+        "src": "/assets/temples/jissaiji-samejima/jissaiji-samejima-09.webp",
+        "alt": "実際寺の現地写真9",
+        "caption": "実際寺の現地写真（9）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "jushouji-kusasaki",
+    "hero_image": "/assets/temples/jushouji-kusasaki/jushouji-kusasaki-01.webp",
+    "photos": [
+      {
+        "photo_id": "jushouji-kusasaki-01-2026",
+        "src": "/assets/temples/jushouji-kusasaki/jushouji-kusasaki-01.webp",
+        "alt": "壽正寺の現地写真1",
+        "caption": "壽正寺の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jushouji-kusasaki-02-2026",
+        "src": "/assets/temples/jushouji-kusasaki/jushouji-kusasaki-02.webp",
+        "alt": "壽正寺の現地写真2",
+        "caption": "壽正寺の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jushouji-kusasaki-03-2026",
+        "src": "/assets/temples/jushouji-kusasaki/jushouji-kusasaki-03.webp",
+        "alt": "壽正寺の現地写真3",
+        "caption": "壽正寺の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jushouji-kusasaki-04-2026",
+        "src": "/assets/temples/jushouji-kusasaki/jushouji-kusasaki-04.webp",
+        "alt": "壽正寺の現地写真4",
+        "caption": "壽正寺の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jushouji-kusasaki-05-2026",
+        "src": "/assets/temples/jushouji-kusasaki/jushouji-kusasaki-05.webp",
+        "alt": "壽正寺の現地写真5",
+        "caption": "壽正寺の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jushouji-kusasaki-06-2026",
+        "src": "/assets/temples/jushouji-kusasaki/jushouji-kusasaki-06.webp",
+        "alt": "壽正寺の現地写真6",
+        "caption": "壽正寺の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jushouji-kusasaki-07-2026",
+        "src": "/assets/temples/jushouji-kusasaki/jushouji-kusasaki-07.webp",
+        "alt": "壽正寺の現地写真7",
+        "caption": "壽正寺の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "shokoji-shirabyoshi",
+    "hero_image": "/assets/temples/shokoji-shirabyoshi/shokoji-shirabyoshi-01.webp",
+    "photos": [
+      {
+        "photo_id": "shokoji-shirabyoshi-01-2026",
+        "src": "/assets/temples/shokoji-shirabyoshi/shokoji-shirabyoshi-01.webp",
+        "alt": "正光寺の現地写真1",
+        "caption": "正光寺の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokoji-shirabyoshi-02-2026",
+        "src": "/assets/temples/shokoji-shirabyoshi/shokoji-shirabyoshi-02.webp",
+        "alt": "正光寺の現地写真2",
+        "caption": "正光寺の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokoji-shirabyoshi-03-2026",
+        "src": "/assets/temples/shokoji-shirabyoshi/shokoji-shirabyoshi-03.webp",
+        "alt": "正光寺の現地写真3",
+        "caption": "正光寺の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokoji-shirabyoshi-04-2026",
+        "src": "/assets/temples/shokoji-shirabyoshi/shokoji-shirabyoshi-04.webp",
+        "alt": "正光寺の現地写真4",
+        "caption": "正光寺の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokoji-shirabyoshi-05-2026",
+        "src": "/assets/temples/shokoji-shirabyoshi/shokoji-shirabyoshi-05.webp",
+        "alt": "正光寺の現地写真5",
+        "caption": "正光寺の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokoji-shirabyoshi-06-2026",
+        "src": "/assets/temples/shokoji-shirabyoshi/shokoji-shirabyoshi-06.webp",
+        "alt": "正光寺の現地写真6",
+        "caption": "正光寺の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "mannenji-kusasaki",
+    "hero_image": "/assets/temples/mannenji-kusasaki/mannenji-kusasaki-01.webp",
+    "photos": [
+      {
+        "photo_id": "mannenji-kusasaki-01-2026",
+        "src": "/assets/temples/mannenji-kusasaki/mannenji-kusasaki-01.webp",
+        "alt": "萬然寺の現地写真1",
+        "caption": "萬然寺の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "mannenji-kusasaki-02-2026",
+        "src": "/assets/temples/mannenji-kusasaki/mannenji-kusasaki-02.webp",
+        "alt": "萬然寺の現地写真2",
+        "caption": "萬然寺の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "mannenji-kusasaki-03-2026",
+        "src": "/assets/temples/mannenji-kusasaki/mannenji-kusasaki-03.webp",
+        "alt": "萬然寺の現地写真3",
+        "caption": "萬然寺の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "mannenji-kusasaki-04-2026",
+        "src": "/assets/temples/mannenji-kusasaki/mannenji-kusasaki-04.webp",
+        "alt": "萬然寺の現地写真4",
+        "caption": "萬然寺の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "mannenji-kusasaki-05-2026",
+        "src": "/assets/temples/mannenji-kusasaki/mannenji-kusasaki-05.webp",
+        "alt": "萬然寺の現地写真5",
+        "caption": "萬然寺の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "mannenji-kusasaki-06-2026",
+        "src": "/assets/temples/mannenji-kusasaki/mannenji-kusasaki-06.webp",
+        "alt": "萬然寺の現地写真6",
+        "caption": "萬然寺の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "mannenji-kusasaki-07-2026",
+        "src": "/assets/temples/mannenji-kusasaki/mannenji-kusasaki-07.webp",
+        "alt": "萬然寺の現地写真7",
+        "caption": "萬然寺の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "mannenji-kusasaki-08-2026",
+        "src": "/assets/temples/mannenji-kusasaki/mannenji-kusasaki-08.webp",
+        "alt": "萬然寺の現地写真8",
+        "caption": "萬然寺の現地写真（8）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "jokoji-maeno",
+    "hero_image": "/assets/temples/jokoji-maeno/jokoji-maeno-01.webp",
+    "photos": [
+      {
+        "photo_id": "jokoji-maeno-01-2026",
+        "src": "/assets/temples/jokoji-maeno/jokoji-maeno-01.webp",
+        "alt": "定光寺の現地写真1",
+        "caption": "定光寺の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jokoji-maeno-02-2026",
+        "src": "/assets/temples/jokoji-maeno/jokoji-maeno-02.webp",
+        "alt": "定光寺の現地写真2",
+        "caption": "定光寺の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jokoji-maeno-03-2026",
+        "src": "/assets/temples/jokoji-maeno/jokoji-maeno-03.webp",
+        "alt": "定光寺の現地写真3",
+        "caption": "定光寺の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jokoji-maeno-04-2026",
+        "src": "/assets/temples/jokoji-maeno/jokoji-maeno-04.webp",
+        "alt": "定光寺の現地写真4",
+        "caption": "定光寺の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jokoji-maeno-05-2026",
+        "src": "/assets/temples/jokoji-maeno/jokoji-maeno-05.webp",
+        "alt": "定光寺の現地写真5",
+        "caption": "定光寺の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jokoji-maeno-06-2026",
+        "src": "/assets/temples/jokoji-maeno/jokoji-maeno-06.webp",
+        "alt": "定光寺の現地写真6",
+        "caption": "定光寺の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jokoji-maeno-07-2026",
+        "src": "/assets/temples/jokoji-maeno/jokoji-maeno-07.webp",
+        "alt": "定光寺の現地写真7",
+        "caption": "定光寺の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jokoji-maeno-08-2026",
+        "src": "/assets/temples/jokoji-maeno/jokoji-maeno-08.webp",
+        "alt": "定光寺の現地写真8",
+        "caption": "定光寺の現地写真（8）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jokoji-maeno-09-2026",
+        "src": "/assets/temples/jokoji-maeno/jokoji-maeno-09.webp",
+        "alt": "定光寺の現地写真9",
+        "caption": "定光寺の現地写真（9）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jokoji-maeno-10-2026",
+        "src": "/assets/temples/jokoji-maeno/jokoji-maeno-10.webp",
+        "alt": "定光寺の現地写真10",
+        "caption": "定光寺の現地写真（10）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jokoji-maeno-11-2026",
+        "src": "/assets/temples/jokoji-maeno/jokoji-maeno-11.webp",
+        "alt": "定光寺の現地写真11",
+        "caption": "定光寺の現地写真（11）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jokoji-maeno-12-2026",
+        "src": "/assets/temples/jokoji-maeno/jokoji-maeno-12.webp",
+        "alt": "定光寺の現地写真12",
+        "caption": "定光寺の現地写真（12）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
