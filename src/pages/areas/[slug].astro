@@ -10,7 +10,7 @@ import {
   getTemplesByDistrictId,
   hasDetailPage,
 } from "../../lib/temples";
-import { getMonogatariDistrictUrl, realEstateFunnel } from "../../lib/related-monogatari";
+import { getMonogatariDistrictUrl } from "../../lib/related-monogatari";
 
 export function getStaticPaths() {
   return allDistricts.map((district) => ({
@@ -325,19 +325,6 @@ const templeGroups = [
       </div>
     </section>
   )}
-  {realEstateFunnel.enabled && (
-    <section class="section">
-      <div class="district-monogatari-block fudosan-text-panel">
-        <h2>実家の整理</h2>
-        <p>
-          実家の土地・建物、相続登記、空き家の管理も確認したくなった方は、
-          <a href={realEstateFunnel.link_url} target="_blank" rel="noopener noreferrer">ATAWI FUDOSANのふじがおか実家カルテ</a>
-          から整理を始められます。
-        </p>
-      </div>
-    </section>
-  )}
-
   <section class="section">
     <div class="related-districts-block">
       <div>

@@ -1,22 +1,24 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { publicGuideArticles } from "../../lib/editorial";
+
+const templeGuideArticles = publicGuideArticles.filter((article) => article.slug !== "kisei-check");
 ---
 
 <BaseLayout
-  title="法要・帰省と檀家の基礎ガイド｜ATAWI TEMPLE"
-  description="磐田のお寺を調べる方へ。菩提寺、法要、帰省時の実家確認、檀家の基礎知識を中立に整理します。"
+  title="法要・檀家の基礎ガイド｜ATAWI TEMPLE"
+  description="磐田のお寺を調べる方へ。菩提寺、法要、檀家の基礎知識を中立に整理します。"
 >
   <section class="page-title">
     <p class="eyebrow">Guide</p>
-    <h1>法要・帰省と檀家の基礎ガイド</h1>
-    <p class="lead">寺院情報を調べたあと、家族で何を確認すればよいか。菩提寺、法要、実家の管理を、売却ありきではなく順番に整理します。</p>
+    <h1>法要・檀家の基礎ガイド</h1>
+    <p class="lead">寺院情報を調べる方へ。菩提寺、法要、檀家、寺院への確認事項を、煽らず順番に整理します。</p>
   </section>
 
   <section class="section">
     <div class="article-card-grid">
       {
-        publicGuideArticles.map((article) => (
+        templeGuideArticles.map((article) => (
           <a class="reading-card" href={`/guide/${article.slug}/`}>
             <span>{article.category}</span>
             <h2>{article.title}</h2>

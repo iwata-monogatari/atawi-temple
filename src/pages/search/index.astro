@@ -231,19 +231,6 @@ const districts = JSON.stringify(allDistricts);
       `;
     }
 
-    function bridgeCard() {
-      return `
-        <article class="houyou-bridge houyou-bridge--index-card">
-          <p class="eyebrow">法要のためにお寺を探している方へ</p>
-          <h2>帰省時に実家で見る10項目</h2>
-          <p>菩提寺を確認したら、実家の外観、庭木、郵便物、仏壇、書類も写真で残しておくと、後から家族で話しやすくなります。</p>
-          <div class="houyou-bridge-actions">
-            <a class="button-link" href="/guide/houyou-kisei/" data-track-click="houyou_bridge_click">帰省前チェックリスト</a>
-          </div>
-        </article>
-      `;
-    }
-
     function emptyMessage(values) {
       if (values.district === "__unassigned") {
         return `
@@ -297,7 +284,7 @@ const districts = JSON.stringify(allDistricts);
         ? `地区未分類の寺院：${filtered.length}件`
         : `${filtered.length}件見つかりました`;
       results.innerHTML = filtered.length
-        ? filtered.map((temple, index) => card(temple) + (index === 7 ? bridgeCard() : "")).join("")
+        ? filtered.map((temple) => card(temple)).join("")
         : emptyMessage(values);
     }
 

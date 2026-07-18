@@ -1,6 +1,4 @@
 ---
-import { LINE_URL, karteUrl } from "../lib/editorial";
-
 interface Props {
   variant?: "temple-top" | "temple-mid" | "temple-bottom" | "home" | "index-card" | "guide-bottom";
   compact?: boolean;
@@ -13,9 +11,7 @@ const isBottomBridge = variant === "temple-bottom" || variant === "guide-bottom"
 const isHomeBridge = variant === "home";
 const isIndexCard = variant === "index-card";
 const guideUrl = "/guide/houyou-kisei/";
-const checkUrl = "/guide/kisei-check/";
-const karteTopUrl = karteUrl("houyou-kisei", `${variant}_karte`);
-const sampleUrl = `${karteTopUrl}#sample`;
+const searchUrl = "/search/";
 ---
 
 <section
@@ -28,46 +24,44 @@ const sampleUrl = `${karteTopUrl}#sample`;
 >
   {isTopBridge && (
     <>
-      <p class="eyebrow">法要・帰省の準備</p>
-      <h2>法要・お墓参りで磐田へ帰るご家族へ</h2>
+      <p class="eyebrow">法要前の確認</p>
+      <h2>寺院情報は、寺院情報として確認する</h2>
       <p>
-        菩提寺を調べる機会は、実家のことを家族で確認できる機会でもあります。
-        法要や墓参りで帰省した際に、実家の外観、庭木、郵便物、仏壇・位牌、
-        固定資産税の書類などを写真とメモで残しておくと、後から兄弟姉妹で話しやすくなります。
+        このページでは、寺院名、住所、宗派、公式サイトの有無、確認できた行事情報を整理しています。
+        法要日時、費用、駐車場、連絡方法などは、寺院の公式情報または寺院へ直接ご確認ください。
       </p>
-      <p>売却を決める必要はありません。まずは、分かることだけ整理してください。</p>
       <div class="houyou-bridge-actions">
-        <a class="button-link" href={guideUrl} data-track-click="houyou_bridge_click">法要・帰省前に確認する10項目</a>
-        <a class="button-link secondary-button" href={karteTopUrl} data-track-click="jikka_cta_click">実家を住所から調べる</a>
+        <a class="button-link" href={guideUrl} data-track-click="houyou_bridge_click">法要前の確認項目を見る</a>
+        <a class="button-link secondary-button" href={searchUrl} data-track-click="temple_search_refine">寺院名・地区で探す</a>
       </div>
-      <p class="houyou-bridge-note">査定ではありません／売却営業は行いません／入力約1分　運営元：富士ヶ丘サービス株式会社</p>
+      <p class="houyou-bridge-note">ATAWI TEMPLEは各寺院の公式サイトではありません。</p>
     </>
   )}
 
   {isMidBridge && (
     <>
-      <h2>法要の予定が決まったら、実家についても一つだけ確認</h2>
+      <h2>法要前に寺院へ確認すること</h2>
       <p>
-        帰省後は、気になったことがあっても日常に戻ってしまいます。
-        家、庭、郵便物、仏壇、書類をスマートフォンで撮っておくだけでも、後から役立ちます。
+        公開資料だけでは分からない項目があります。法要日時、参列人数、駐車場、持ち物、
+        会食の有無は、過去の家の記録と寺院からの案内を優先してください。
       </p>
       <div class="houyou-bridge-actions">
-        <a class="button-link" href={checkUrl} data-track-click="houyou_bridge_click">帰省チェックリストを見る</a>
+        <a class="button-link" href={guideUrl} data-track-click="houyou_bridge_click">確認項目を読む</a>
       </div>
     </>
   )}
 
   {isBottomBridge && (
     <>
-      <p class="eyebrow">ふじがおか実家カルテ</p>
-      <h2>磐田の実家を、売る前に調べておく</h2>
+      <p class="eyebrow">編集方針</p>
+      <h2>分からない項目は、推測せず未確認と表示します</h2>
       <p>
-        住所から、名義、道路、法令制限、災害リスクなどを宅建士が整理します。
-        価格査定ではなく、家族で確認するための整理です。
+        寺院ごとの法要、檀家、駐車場、電話番号などは、確認できた情報に限って掲載します。
+        未確認の項目は、寺院の公式情報または寺院へ直接確認してください。
       </p>
       <div class="houyou-bridge-actions">
-        <a class="button-link" href={karteTopUrl} data-track-click="jikka_cta_click">実家カルテを申し込む</a>
-        <a class="button-link secondary-button" href={LINE_URL} target="_blank" rel="noopener" data-track-click="line_click">LINEで「親の家の相談」と送る</a>
+        <a class="button-link" href="/editorial-policy/" data-track-click="editorial_policy_click">編集方針を見る</a>
+        <a class="button-link secondary-button" href="/correction/">訂正・情報提供</a>
       </div>
       <p class="houyou-bridge-note">掲載寺院との提携・紹介関係を示すものではありません。</p>
     </>
@@ -75,16 +69,15 @@ const sampleUrl = `${karteTopUrl}#sample`;
 
   {isHomeBridge && (
     <>
-      <p class="eyebrow">法要で磐田へ帰る方へ</p>
-      <h2>菩提寺の確認と、実家の確認を同じ流れで</h2>
+      <p class="eyebrow">法要前に確認する方へ</p>
+      <h2>菩提寺の名前・住所・宗派を落ち着いて確認する</h2>
       <p>
-        菩提寺の場所や宗派を確認したら、帰省時に実家も一度だけ見ておいてください。
-        全部を決める必要はありません。家、庭、郵便物、仏壇、書類を写真で残すだけでも、
-        後から家族で話しやすくなります。
+        寺院名の読み方、所在地、宗派、公式情報の有無を、公開資料と現地確認をもとに整理しています。
+        法要の詳細は寺院ごとに異なるため、最終的には寺院の案内を優先してください。
       </p>
       <div class="houyou-bridge-actions">
-        <a class="button-link" href={guideUrl} data-track-click="houyou_bridge_click">帰省前チェックリスト</a>
-        <a class="button-link secondary-button" href={karteTopUrl} data-track-click="jikka_cta_click">実家を住所から確認する</a>
+        <a class="button-link" href={guideUrl} data-track-click="houyou_bridge_click">法要前の確認項目</a>
+        <a class="button-link secondary-button" href={searchUrl} data-track-click="temple_search_refine">寺院検索へ</a>
       </div>
     </>
   )}
@@ -92,17 +85,11 @@ const sampleUrl = `${karteTopUrl}#sample`;
   {isIndexCard && (
     <>
       <p class="eyebrow">法要のためにお寺を探している方へ</p>
-      <h2>帰省時に実家で見ておきたい項目も確認できます</h2>
-      <p>菩提寺を確認したら、家・庭・郵便物・仏壇・書類を写真で残すだけでも、帰省後に家族で話しやすくなります。</p>
+      <h2>寺院へ確認する項目を分けて整理</h2>
+      <p>寺院名、住所、宗派はこのサイトで確認できます。法要日時、費用、駐車場、持ち物は寺院の案内を優先してください。</p>
       <div class="houyou-bridge-actions">
-        <a class="button-link" href={guideUrl} data-track-click="houyou_bridge_click">帰省時に見る10項目</a>
+        <a class="button-link" href={guideUrl} data-track-click="houyou_bridge_click">法要前の確認項目</a>
       </div>
     </>
-  )}
-
-  {variant === "guide-bottom" && (
-    <div class="houyou-bridge-secondary">
-      <a href={sampleUrl} data-track-click="karte_sample_view">カルテ見本を見る</a>
-    </div>
   )}
 </section>

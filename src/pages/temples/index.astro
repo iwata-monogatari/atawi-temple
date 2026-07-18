@@ -1,6 +1,5 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import HouyouKiseiBridge from "../../components/HouyouKiseiBridge.astro";
 import TempleCard from "../../components/TempleCard.astro";
 import {
   allDistricts,
@@ -100,12 +99,7 @@ const structuredData = {
     </div>
 
     <div id="temple-index-results" class="card-grid">
-      {initialTemples.map((temple, index) => (
-        <>
-          <TempleCard temple={temple} />
-          {index === 7 && <HouyouKiseiBridge variant="index-card" />}
-        </>
-      ))}
+      {initialTemples.map((temple) => <TempleCard temple={temple} />)}
     </div>
     <div class="temple-index-actions">
       <button id="temple-index-more" type="button" class="button-link" hidden>もっと見る</button>
@@ -213,19 +207,6 @@ const structuredData = {
       `;
     }
 
-    function bridgeCardHtml() {
-      return `
-        <article class="houyou-bridge houyou-bridge--index-card">
-          <p class="eyebrow">法要のためにお寺を探している方へ</p>
-          <h2>帰省時に実家で見ておきたい項目も確認できます</h2>
-          <p>菩提寺を確認したら、家・庭・郵便物・仏壇・書類を写真で残すだけでも、帰省後に家族で話しやすくなります。</p>
-          <div class="houyou-bridge-actions">
-            <a class="button-link" href="/guide/houyou-kisei/" data-track-click="houyou_bridge_click">帰省時に見る10項目</a>
-          </div>
-        </article>
-      `;
-    }
-
     function listHtml(items) {
       return `
         <div class="table-wrap">
@@ -262,7 +243,7 @@ const structuredData = {
       const visible = sorted.slice(0, visibleCount);
       resultsEl.className = mode === "card" ? "card-grid" : "temple-index-list";
       if (mode === "card") {
-        const html = visible.map((temple, index) => cardHtml(temple) + (index === 7 ? bridgeCardHtml() : "")).join("");
+        const html = visible.map((temple) => cardHtml(temple)).join("");
         resultsEl.innerHTML = html;
       } else {
         resultsEl.innerHTML = listHtml(visible);
@@ -293,8 +274,4 @@ const structuredData = {
       renderIndex();
     });
   </script>
-
-  <section class="section">
-    <HouyouKiseiBridge variant="temple-bottom" />
-  </section>
 </BaseLayout>

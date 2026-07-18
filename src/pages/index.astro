@@ -19,7 +19,7 @@ import {
   isUnknownValue,
 } from "../lib/temples";
 import { publicGuideArticles, tokushuArticles } from "../lib/editorial";
-import { getMonogatariLinksBySlug, realEstateFunnel } from "../lib/related-monogatari";
+import { getMonogatariLinksBySlug } from "../lib/related-monogatari";
 
 const districtDisplayOrder = [
   "mitsuke",
@@ -86,7 +86,7 @@ const monogatariPickups = monogatariPickupSlugs
   .map((slug) => ({ temple: getTempleBySlug(slug), link: getMonogatariLinksBySlug(slug)[0], photo: photoAt(slug, 9) }))
   .filter((item): item is { temple: any; link: any; photo: any } => Boolean(item.temple && item.link));
 const topTokushu = tokushuArticles.slice(0, 4);
-const topGuides = publicGuideArticles.slice(0, 3);
+const topGuides = publicGuideArticles.filter((article) => article.slug !== "kisei-check").slice(0, 3);
 
 function photoAt(slug: string, index: number) {
   const photos = getVisibleTempleMediaPhotos(slug);
@@ -157,7 +157,7 @@ const galleryPhotos = [
 
 <BaseLayout
   title="磐田市の菩提寺・お寺を調べる｜ATAWI TEMPLE"
-  description="磐田市の菩提寺・お寺を寺院名、読み方、住所、地区、宗派から検索できます。法要や帰省前に確認したい寺院情報と実家確認の入口です。"
+  description="磐田市の菩提寺・お寺を寺院名、読み方、住所、地区、宗派から検索できます。法要やお墓参りの前に確認したい寺院情報を整理しています。"
 >
   <section class="hero hero--slideshow" data-hero-slideshow>
     <div class="hero-slides" aria-hidden="true">
@@ -329,7 +329,7 @@ const galleryPhotos = [
     <a href="/temples/">全寺院一覧を見る</a>
     <a href="/map/" data-track-click="temple_map_click">地図から探す</a>
     <a href="/search/">条件検索へ</a>
-    <a href="/guide/houyou-kisei/" data-track-click="houyou_bridge_click">法要・帰省の準備</a>
+    <a href="/guide/houyou-kisei/" data-track-click="houyou_bridge_click">法要前の確認</a>
   </nav>
 
   <section class="filter-band" aria-label="主要な絞り込み">
@@ -524,7 +524,7 @@ const galleryPhotos = [
     <div class="section-heading">
       <div>
         <h2>特集・読みもの</h2>
-        <span class="small">お寺を調べたあと、境内・法要・実家のことまで読む</span>
+        <span class="small">お寺を調べたあと、境内・法要・地域のことまで読む</span>
       </div>
       <a href="/tokushu/">特集一覧へ</a>
     </div>
@@ -544,8 +544,8 @@ const galleryPhotos = [
   <section class="section">
     <div class="section-heading">
       <div>
-        <h2>檀家・実家の基礎ガイド</h2>
-        <span class="small">檀家、法要、帰省チェックを中立に整理</span>
+        <h2>檀家・法要の基礎ガイド</h2>
+        <span class="small">檀家、法要、寺院確認を中立に整理</span>
       </div>
       <a href="/guide/">ガイド一覧へ</a>
     </div>
@@ -700,23 +700,6 @@ const galleryPhotos = [
         </p>
         <span class="banner-link">磐田物語を読む</span>
       </a>
-      {realEstateFunnel.enabled && (
-        <a
-          class="info-box image-info-box image-info-box-link fudosan-index-box"
-          href={realEstateFunnel.link_url}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={`background-image: linear-gradient(135deg, rgba(244, 252, 255, 0.16) 0%, rgba(255, 247, 231, 0.24) 100%), url(${realEstateFunnel.image_url})`}
-        >
-          <span>{realEstateFunnel.brand}</span>
-          <p>
-            実家の名義や空き家の整理を確認したい方は
-            <strong>ATAWI FUDOSANのふじがおか実家カルテ</strong>
-            をご覧ください。
-          </p>
-          <span class="banner-link">{realEstateFunnel.link_label}</span>
-        </a>
-      )}
     </div>
   </section>
 </BaseLayout>

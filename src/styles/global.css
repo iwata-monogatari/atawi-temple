@@ -3746,49 +3746,6 @@ th {
   margin: 0 0 1.1rem;
 }
 
-.mobile-sticky-cta {
-  position: fixed;
-  right: 12px;
-  bottom: 12px;
-  left: 12px;
-  z-index: 40;
-  display: grid;
-  grid-template-columns: 1fr 1fr auto;
-  gap: 8px;
-  width: min(520px, calc(100% - 24px));
-  margin: 0 auto;
-  border: 1px solid rgba(47, 75, 43, 0.24);
-  border-radius: 8px;
-  padding: 8px;
-  background: rgba(255, 253, 248, 0.96);
-  box-shadow: 0 14px 34px rgba(32, 32, 29, 0.18);
-  backdrop-filter: blur(10px);
-}
-
-.mobile-sticky-cta[hidden] {
-  display: none;
-}
-
-.mobile-sticky-cta a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 42px;
-  border-radius: 6px;
-  padding: 8px 10px;
-  background: var(--accent-strong);
-  color: #fff;
-  font-size: 0.9rem;
-  font-weight: 800;
-  text-align: center;
-  text-decoration: none;
-}
-
-.mobile-sticky-cta a:nth-child(3) {
-  min-width: 64px;
-  background: #2f5d62;
-}
-
 @media (max-width: 820px) {
   .temple-basic-grid {
     grid-template-columns: 1fr;
@@ -3801,16 +3758,6 @@ th {
   .houyou-bridge-actions .button-link {
     width: 100%;
   }
-
-  .temple-profile {
-    padding-bottom: 118px;
-  }
-}
-
-@media (min-width: 821px) {
-  .mobile-sticky-cta {
-    display: none;
-  }
 }
 
 @media (max-width: 560px) {
@@ -3819,11 +3766,4 @@ th {
     padding: 18px;
   }
 
-  .mobile-sticky-cta {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .mobile-sticky-cta a:nth-child(3) {
-    grid-column: 1 / -1;
-  }
 }

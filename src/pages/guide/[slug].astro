@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import HouyouKiseiBridge from "../../components/HouyouKiseiBridge.astro";
-import { getGuideArticle, jikkaUrl, publicGuideArticles } from "../../lib/editorial";
+import { getGuideArticle, publicGuideArticles } from "../../lib/editorial";
 
 export function getStaticPaths() {
   return publicGuideArticles.map((article) => ({ params: { slug: article.slug } }));
@@ -67,8 +66,6 @@ const faqJson = article.faq ? JSON.stringify({
           </section>
         )}
 
-        <HouyouKiseiBridge variant="guide-bottom" />
-
         <section class="article-section sources-panel">
           <p class="section-number">Sources</p>
           <h2>出典・確認先</h2>
@@ -97,17 +94,6 @@ const faqJson = article.faq ? JSON.stringify({
               >{link.label}</a>
             ))}
           </div>
-        </section>
-        <section class="side-panel conversion-panel">
-          <span>運営元による相談窓口</span>
-          <h2>実家じまい相談室</h2>
-          <p>売ると決めていなくても、荷物・建物・土地・家族の気持ちを分けて相談できます。</p>
-          <a
-            class="button-link"
-            href={jikkaUrl("guide", article.slug)}
-            data-track-click="guide_to_jikka_click"
-          >相談室を読む</a>
-          <p class="small">本相談窓口はサイト運営元によるもので、掲載寺院とは関係ありません。</p>
         </section>
       </aside>
     </div>
