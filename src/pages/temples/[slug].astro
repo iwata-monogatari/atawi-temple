@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import HouyouKiseiBridge from "../../components/HouyouKiseiBridge.astro";
 import {
   allSects,
   allTemples,
@@ -171,12 +172,13 @@ const houyouStatus = annualEvents.length > 0
   ? `${annualEvents.length}件の年中行事・法要情報を掲載`
   : "未確認（寺院へご確認ください）";
 const parkingStatus = "未確認（現地・寺院へご確認ください）";
-const templeDetailTitle = `${temple.name}（磐田市${districtName}）｜住所・宗派・法要前の確認事項｜ATAWI TEMPLE`;
+const templeDetailTitle = `${temple.name}（磐田市${districtName}）｜住所・宗派・法要・帰省の確認事項｜ATAWI TEMPLE`;
 const templeDetailDescription = `磐田市${districtName}の${temple.name}について、住所、読み方、宗派、由緒、確認できた現地写真を掲載。法要やお墓参りの前に確認したい寺院情報を整理します。`;
 const uploadedPhotoTempleDataJson = JSON.stringify({
   slug: temple.slug,
   name: temple.name,
 }).replace(/</g, "\\u003c");
+const showHouyouBridge = temple.status === "existing";
 ---
 
 <BaseLayout
@@ -265,6 +267,8 @@ const uploadedPhotoTempleDataJson = JSON.stringify({
         不明な項目は推測せず、未確認として表示しています。法要、参拝、駐車場、電話での連絡は、寺院の公式情報または寺院へ直接ご確認ください。
       </p>
     </section>
+
+    {showHouyouBridge && <HouyouKiseiBridge variant="temple-top" />}
 
     <section class="temple-visual" aria-label={`${temple.name}の写真`}>
       {coverPhoto ? (
@@ -614,6 +618,23 @@ const uploadedPhotoTempleDataJson = JSON.stringify({
 
         window.addEventListener("load", function () {
           sendEvent("temple_landing");
+          var bridge = document.querySelector("[data-houyou-bridge]");
+          if (!bridge) return;
+          if (!("IntersectionObserver" in window)) {
+            sendEvent("houyou_bridge_view");
+            return;
+          }
+          var seen = false;
+          var observer = new IntersectionObserver(function (entries) {
+            if (seen) return;
+            entries.forEach(function (entry) {
+              if (!entry.isIntersecting) return;
+              seen = true;
+              sendEvent("houyou_bridge_view");
+              observer.disconnect();
+            });
+          }, { threshold: 0.4 });
+          observer.observe(bridge);
         });
       })();
     </script>

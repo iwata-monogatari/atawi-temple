@@ -11,6 +11,7 @@ const isBottomBridge = variant === "temple-bottom" || variant === "guide-bottom"
 const isHomeBridge = variant === "home";
 const isIndexCard = variant === "index-card";
 const guideUrl = "/guide/houyou-kisei/";
+const templeDetailGuideUrl = "/guide/houyou-kisei/?from=temple-detail";
 const searchUrl = "/search/";
 ---
 
@@ -24,23 +25,23 @@ const searchUrl = "/search/";
 >
   {isTopBridge && (
     <>
-      <p class="eyebrow">法要前の確認</p>
-      <h2>寺院情報は、寺院情報として確認する</h2>
+      <p class="eyebrow">法要・お墓参り</p>
+      <h2>この寺院へ帰る予定の方へ</h2>
       <p>
-        このページでは、寺院名、住所、宗派、公式サイトの有無、確認できた行事情報を整理しています。
-        法要日時、費用、駐車場、連絡方法などは、寺院の公式情報または寺院へ直接ご確認ください。
+        菩提寺の名前、住所、宗派を確認できたら、同じ帰省で墓、仏壇、実家も一度だけ見ておくと、
+        次回以降の家族の負担を減らせます。
       </p>
+      <p>売る、残すを決めるためではなく、今の状態を記録するための確認メモです。</p>
       <div class="houyou-bridge-actions">
-        <a class="button-link" href={guideUrl} data-track-click="houyou_bridge_click">法要前の確認項目を見る</a>
-        <a class="button-link secondary-button" href={searchUrl} data-track-click="temple_search_refine">寺院名・地区で探す</a>
+        <a class="button-link" href={templeDetailGuideUrl} data-track-click="houyou_bridge_click">法要・帰省の確認メモを見る</a>
       </div>
-      <p class="houyou-bridge-note">ATAWI TEMPLEは各寺院の公式サイトではありません。</p>
+      <p class="houyou-bridge-note">この寺院ページから運営元の不動産サイトへ直接移動するリンクは置いていません。</p>
     </>
   )}
 
   {isMidBridge && (
     <>
-      <h2>法要前に寺院へ確認すること</h2>
+      <h2>法要・帰省の前に寺院へ確認すること</h2>
       <p>
         公開資料だけでは分からない項目があります。法要日時、参列人数、駐車場、持ち物、
         会食の有無は、過去の家の記録と寺院からの案内を優先してください。
@@ -69,26 +70,35 @@ const searchUrl = "/search/";
 
   {isHomeBridge && (
     <>
-      <p class="eyebrow">法要前に確認する方へ</p>
-      <h2>菩提寺の名前・住所・宗派を落ち着いて確認する</h2>
+      <p class="eyebrow">法要で磐田へ帰る方へ</p>
+      <h2>菩提寺を確認したら、実家も一度だけ見ておく</h2>
       <p>
-        寺院名の読み方、所在地、宗派、公式情報の有無を、公開資料と現地確認をもとに整理しています。
-        法要の詳細は寺院ごとに異なるため、最終的には寺院の案内を優先してください。
+        法要やお墓参りで家族が集まる日は、菩提寺の名前や場所だけでなく、墓、仏壇、位牌、書類、
+        実家の状態を確認できる機会でもあります。
       </p>
+      <p>
+        今すぐ家を売る、残すと決める必要はありません。写真を残し、親の考えを一言だけ聞いておくことで、
+        次に家族で話すべきことが分かります。
+      </p>
+      <ul class="houyou-bridge-icons" aria-label="確認するもの">
+        <li><span aria-hidden="true">寺</span><strong>菩提寺</strong></li>
+        <li><span aria-hidden="true">家</span><strong>実家</strong></li>
+        <li><span aria-hidden="true">記</span><strong>家族メモ</strong></li>
+      </ul>
       <div class="houyou-bridge-actions">
-        <a class="button-link" href={guideUrl} data-track-click="houyou_bridge_click">法要前の確認項目</a>
-        <a class="button-link secondary-button" href={searchUrl} data-track-click="temple_search_refine">寺院検索へ</a>
+        <a class="button-link" href={guideUrl} data-track-click="houyou_bridge_click">法要と実家の確認メモを見る</a>
+        <a class="button-link secondary-button" href={searchUrl} data-track-click="temple_search_refine">寺院名・宗派から探す</a>
       </div>
     </>
   )}
 
   {isIndexCard && (
     <>
-      <p class="eyebrow">法要のためにお寺を探している方へ</p>
-      <h2>寺院へ確認する項目を分けて整理</h2>
-      <p>寺院名、住所、宗派はこのサイトで確認できます。法要日時、費用、駐車場、持ち物は寺院の案内を優先してください。</p>
+      <p class="eyebrow">法要で磐田へ帰る方へ</p>
+      <h2>菩提寺、墓、仏壇、実家を順番に確認する</h2>
+      <p>寺院名、住所、宗派を確認したあと、同じ帰省で家族が見ておく項目を整理します。</p>
       <div class="houyou-bridge-actions">
-        <a class="button-link" href={guideUrl} data-track-click="houyou_bridge_click">法要前の確認項目</a>
+        <a class="button-link" href={guideUrl} data-track-click="houyou_bridge_click">法要・帰省の確認メモ</a>
       </div>
     </>
   )}

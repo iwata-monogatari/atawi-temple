@@ -1,7 +1,5 @@
 export const SITE_ORIGIN = "https://temple.atawi.link";
-export const FUDOSAN_KARTE_URL = "https://fudosan.atawi.link/";
-export const FUDOSAN_JIKKA_URL = "https://fudosan.atawi.link/jikka/";
-export const LINE_URL = "https://line.me/R/ti/p/%40531nwfsc";
+export const FUDOSAN_FROM_TEMPLE_URL = "https://fudosan.atawi.link/from-temple/";
 
 export type EditorialSource = {
   title: string;
@@ -20,6 +18,15 @@ export type EditorialSection = {
   paragraphs: string[];
   bullets?: string[];
   figure?: EditorialFigure;
+  cards?: { heading: string; body: string }[];
+  cta?: {
+    label: string;
+    href: string;
+    event?: string;
+    note?: string;
+    external?: boolean;
+  };
+  note?: string;
 };
 
 export type EditorialArticle = {
@@ -36,12 +43,8 @@ export type EditorialArticle = {
   bridgeLinks: { label: string; href: string; event?: string }[];
 };
 
-export function jikkaUrl(campaign: string, content?: string) {
-  return campaignUrl(FUDOSAN_JIKKA_URL, campaign, content);
-}
-
-export function karteUrl(campaign: string, content?: string) {
-  return campaignUrl(FUDOSAN_KARTE_URL, campaign, content);
+export function fromTempleUrl(content?: string) {
+  return campaignUrl(FUDOSAN_FROM_TEMPLE_URL, "houyou_jikka", content);
 }
 
 function campaignUrl(baseUrl: string, campaign: string, content?: string) {
@@ -93,28 +96,35 @@ export const houyouRows = [
 ];
 
 export const obonChecklist = [
-  "実家の外観、庭木、玄関まわり、道路との関係を写真に撮る",
   "お寺の掲示板、護持会費、行事案内、連絡先を写真に撮る",
-  "実家の雨漏り、天井染み、外壁のひびを確認する",
-  "庭木や草が隣地・道路へ越境していないか見る",
-  "郵便物、回覧物、電気・水道の停止状況を確認する",
-  "仏壇・位牌・遺影・過去帳を今後どうするか、親に一言だけ聞く",
-  "親の「この家をどうしたいか」を一つだけメモする",
-  "兄弟姉妹と、見たことを同じ写真で共有する",
-  "権利証、通帳、固定資産税通知書、保険証券の保管場所を確認する",
-  "家、庭、道路付け、玄関、室内を広めに写真で残す",
+  "墓の場所と、墓地までの行き方を家族で共有する",
+  "仏壇、位牌、遺影、過去帳を確認する",
+  "親に「この家をこれからどうしたいか」を一言だけ聞く",
+  "家の外観、玄関、庭、道路との関係を広めに撮る",
+  "雨漏り、天井の染み、外壁のひびを確認する",
+  "庭木や草が道路・隣地へ出ていないか確認する",
+  "郵便物、回覧物、電気・水道、火災保険を確認する",
+  "権利証、固定資産税通知書などの保管場所を確認する",
+  "写真と親の言葉を兄弟姉妹へ共有する",
 ];
 
 export const guideArticles: EditorialArticle[] = [
   {
     slug: "houyou-kisei",
     title: "法要で磐田へ帰る前に確認すること",
-    subtitle: "菩提寺と法要当日の確認を整理する",
-    description: "法要やお墓参りで磐田へ帰る前に、菩提寺の名称、宗派、所在地、法要当日の確認先を整理するためのメモです。",
+    subtitle: "菩提寺、墓、仏壇、実家まで、遠方から帰る家族が確認したいことを順番に整理します。",
+    description: "法要やお墓参りで磐田へ帰る前に、菩提寺、墓、仏壇、実家の状態を家族で確認するためのメモです。",
     category: "法要・帰省",
     updated: "2026-07-18",
     priority: "P0",
     sections: [
+      {
+        heading: "法要の準備と一緒に確認できること",
+        paragraphs: [
+          "遠方に住んでいると、菩提寺の名前や宗派だけでなく、墓の場所、仏壇の中、実家の書類や建物の状態も、親だけが把握していることがあります。",
+          "法要の準備を済ませたら、同じ帰省で確認できることを一つだけ残しておきます。全部を決める必要はありません。",
+        ],
+      },
       {
         heading: "菩提寺について確認すること",
         paragraphs: [
@@ -129,7 +139,7 @@ export const guideArticles: EditorialArticle[] = [
         ],
       },
       {
-        heading: "法要前に寺院へ確認すること",
+        heading: "法要・帰省の前に寺院へ確認すること",
         paragraphs: [
           "寺院ページに掲載している情報は、公開資料と現地確認で確認できた範囲です。法要の日時、受付場所、読経の場所、参列人数、駐車場、持ち物、お布施や供物の扱いは、寺院または親族の案内を優先してください。",
           "電話番号や駐車場など、当サイトで未確認の項目は推測せず未確認と表示しています。分からないまま進めず、寺院公式サイト、案内状、親族の過去の記録を確認します。",
@@ -150,17 +160,78 @@ export const guideArticles: EditorialArticle[] = [
         ],
       },
       {
-        heading: "帰省後に記録しておくこと",
+        heading: "法要のあと、実家を15分だけ見ておく",
         paragraphs: [
-          "帰省後は、確認できた寺院名、宗派、法要日、墓地の場所、案内状、駐車場の有無、当日困った点を簡単に残します。次回の年忌法要やお墓参りで、家族が同じ情報を見られるようにするためです。",
-          "ATAWI TEMPLEは各寺院の公式サイトではありません。掲載内容に誤りや不足がある場合は、情報提供掲示板からお知らせください。",
+          "法要が終わると、親族との予定や移動で、そのまま帰る時間になることがあります。",
+          "実家へ立ち寄れる場合は、家の外観、庭、玄関、郵便物、雨漏り、仏壇をスマートフォンで撮っておきます。",
+          "今後を決めるためではありません。「今、どうなっているか」を家族で共有できる状態にするためです。",
         ],
         bullets: [
-          "寺院名、宗派、住所、墓地の場所を控える",
-          "案内状や寺院公式サイトのURLを家族内で共有する",
-          "駐車場や集合場所など、当日困った点を残す",
-          "当サイトの掲載情報に不足があれば情報提供する",
+          "家の外観と玄関",
+          "庭木や草の状態",
+          "雨漏りや外壁の傷み",
+          "郵便物や公共料金の通知",
+          "仏壇、位牌、過去帳",
+          "固定資産税通知書や権利証の保管場所",
         ],
+        cta: {
+          label: "帰省で見る10項目を確認する",
+          href: "/guide/kisei-check/",
+          event: "kisei_check_click",
+        },
+      },
+      {
+        heading: "親がしている管理は、いずれ誰かが引き継ぎます",
+        paragraphs: [
+          "親が暮らしている間は、庭木、郵便物、修繕、固定資産税、墓、仏壇、寺院からの案内を、親が自然に管理していることがあります。",
+          "しかし、入院や施設入居、相続などで暮らしが変わると、それらは遠方に住む家族へ移ります。",
+          "今回の帰省で担当を決める必要はありません。まず、親が何をしているのか、家族の誰が知っているのかを確認します。",
+        ],
+        cards: [
+          {
+            heading: "親が今も実家に住んでいる",
+            body: "親の意向と、書類の保管場所を確認します。",
+          },
+          {
+            heading: "入院・施設入居などで長期不在になっている",
+            body: "郵便物、通風、庭、近隣対応を誰が担っているか確認します。",
+          },
+          {
+            heading: "すでに空き家になっている",
+            body: "草木、雨漏り、固定資産税、火災保険、近隣からの連絡状況を確認します。",
+          },
+          {
+            heading: "相続が発生している",
+            body: "名義、相続人、税金、荷物、家族の方針を分けて整理します。",
+          },
+        ],
+      },
+      {
+        heading: "親に聞くのは、一言だけで構いません",
+        paragraphs: [
+          "「この家をどうするの」と結論を迫る必要はありません。",
+          "次のように一言だけ聞き、返ってきた言葉をそのまま残します。",
+          "「この家、これからどうしたいと思っている？」",
+          "または、「自分たちが知っておいた方がいいことはある？」",
+          "「まだ考えていない」という答えも、家族にとって大切な情報です。",
+        ],
+      },
+      {
+        heading: "売る・残すを決める前に、住所から分かることがあります",
+        paragraphs: [
+          "家の外から見える状態だけでは、誰の名義なのか、建て替えができる道路に接しているか、土地の範囲がどこまでか、災害リスクや法令上の制限があるかは分かりません。",
+          "住所をもとに公開資料を確認すると、家族が次に調べることを整理できる場合があります。",
+          "ATAWI TEMPLEは、磐田市で介護と不動産の事業を行う富士ヶ丘サービス株式会社が運営しています。",
+          "法要、親の施設入居、相続などをきっかけに始まる実家の相談について、家、土地、荷物、管理、家族の気持ちを分けて整理しています。",
+        ],
+        cta: {
+          label: "住所から実家の確認項目を見る",
+          href: fromTempleUrl("houyou_guide"),
+          event: "to_fudosan_click",
+          note: "査定ではありません。価格を出す前に、名義、道路、土地、法令制限、災害リスクなどを整理します。",
+          external: true,
+        },
+        note: "運営元・富士ヶ丘サービス株式会社の不動産サイトへ移動します。掲載寺院との提携・紹介関係はありません。",
       },
     ],
     faq: [
@@ -187,7 +258,7 @@ export const guideArticles: EditorialArticle[] = [
     ],
     bridgeLinks: [
       { label: "寺院名・地区で検索する", href: "/search/", event: "temple_search_refine" },
-      { label: "檀家とお布施の基礎知識を見る", href: "/guide/danka/" },
+      { label: "帰省で見る10項目を確認する", href: "/guide/kisei-check/", event: "kisei_check_click" },
       { label: "帰省と法要の作法を見る", href: "/tokushu/houyou-sahou/" },
     ],
   },
@@ -244,7 +315,7 @@ export const guideArticles: EditorialArticle[] = [
       },
     ],
     bridgeLinks: [
-      { label: "実家じまい相談室を読む", href: jikkaUrl("guide", "haka-enpo"), event: "guide_to_jikka_click" },
+      { label: "実家の確認項目を見る", href: fromTempleUrl("houyou_guide"), event: "to_fudosan_click" },
     ],
   },
   {
@@ -354,38 +425,44 @@ export const guideArticles: EditorialArticle[] = [
     ],
     bridgeLinks: [
       { label: "お墓が遠い方の選択肢を見る", href: "/guide/haka-enpo/" },
-      { label: "実家じまい相談室を読む", href: jikkaUrl("guide", "eitaikuyo"), event: "guide_to_jikka_click" },
+      { label: "実家の確認項目を見る", href: fromTempleUrl("houyou_guide"), event: "to_fudosan_click" },
     ],
   },
   {
     slug: "kisei-check",
-    title: "親の家、帰省で見るべき10項目",
-    subtitle: "お盆・年末年始に、写真だけでも残すチェックリスト",
-    description: "帰省時に実家を一度だけ確認するための10項目。お盆後も使える恒常版チェックリストです。",
+    title: "法要・お墓参りで帰省したとき、実家で見る10項目",
+    subtitle: "写真と一言だけでも、家族の次の話し合いに役立ちます。",
+    description: "法要やお墓参りで帰省したときに、菩提寺、墓、仏壇、実家、親の意向を順番に確認する10項目チェックリストです。",
     category: "帰省",
-    updated: "2026-07-14",
+    updated: "2026-07-18",
     sections: [
       {
-        heading: "全部できなくて構いません",
+        heading: "寺院から実家へ、順番に確認します",
         paragraphs: [
           "帰省中は、親の体調、親族の予定、法要、移動だけで時間が過ぎます。実家の確認を完璧にやろうとすると、かえって何もできないまま帰ることがあります。",
-          "このページの10項目は、できる範囲で構いません。最低限、家と庭の写真だけでも、後から必ず役に立ちます。",
+          "この10項目は、寺院から実家へ少しずつ確認の対象を移すための順番です。できる範囲で構いません。",
         ],
         bullets: obonChecklist,
       },
       {
-        heading: "写真は、広めに撮る",
+        heading: "確認した後、結論を出す必要はありません",
         paragraphs: [
-          "雨漏りの染みだけを撮るのではなく、周囲が分かるように広めに撮ってください。道路との関係、隣地との境、庭木の伸び方、家の外観、玄関、室内の全体が分かる写真があると、後で専門家に相談するときも状況を伝えやすくなります。",
-          "お寺の掲示板や護持会費の案内も、スマートフォンで撮っておくと、家族で同じ情報を見ながら話せます。",
+          "このチェックリストは、実家を売るためのものではありません。",
+          "親が住み続ける、家族が住む、遠方から管理する、貸す、売る、建物を解体する。どの選択をする場合でも、最初に必要なのは現在の状態を家族で共有することです。",
         ],
       },
       {
-        heading: "話題にするのは一言だけでよい",
+        heading: "住所から調べられることは、運営元が整理できます",
         paragraphs: [
-          "親に対して『この家をどうするの』と詰める必要はありません。『この家、これからどうしたいと思っている』と一言だけ聞き、返ってきた言葉をメモしておくだけで十分です。",
-          "その一言があると、後から兄弟姉妹と話すとき、親の気持ちを置き去りにしにくくなります。",
+          "ATAWI TEMPLEを運営する富士ヶ丘サービス株式会社では、写真では分からない名義、接道、土地資料、法令制限、災害リスクなどを、住所から調べて整理しています。",
         ],
+        cta: {
+          label: "ふじがおか実家カルテを見る",
+          href: fromTempleUrl("kisei_check"),
+          event: "to_fudosan_click",
+          note: "運営元の不動産サービスへ移動します。査定申込みではありません。",
+          external: true,
+        },
       },
     ],
     faq: [
@@ -400,13 +477,14 @@ export const guideArticles: EditorialArticle[] = [
     ],
     sources: [
       {
-        title: "ATAWI TEMPLE 改修指示書 v2",
-        note: "帰省チェックリスト10項目の構成を参照。",
+        title: "ATAWI TEMPLE 法要・帰省ガイド",
+        url: "/guide/houyou-kisei/",
+        note: "法要、墓、仏壇、実家の確認順序を整理するページ。",
       },
     ],
     bridgeLinks: [
       { label: "お盆版チェックリストを見る", href: "/obon/" },
-      { label: "実家じまい相談室を読む", href: jikkaUrl("guide", "kisei-check"), event: "guide_to_jikka_click" },
+      { label: "法要・帰省の確認メモへ戻る", href: "/guide/houyou-kisei/" },
     ],
   },
 ];
@@ -565,7 +643,7 @@ export const tokushuArticles: EditorialArticle[] = [
         paragraphs: [
           "遠方に住む家族にとって、法要の情報は見えにくいものです。施主を務めた人だけが寺院名、墓地、費用、親族連絡先を知っている状態では、その人が病気になったり亡くなったりしたときに、次の家族が何も分からなくなります。これは珍しい話ではありません。",
           "共有する情報は、必要最小限で構いません。菩提寺名、宗派、寺院住所、電話番号、墓地の場所、直近の法要日、次回年忌、親族の連絡先、寺からの案内の写真。この程度が共有されていれば、いざというときに動き出せます。個人情報や金額をどこまで共有するかは家族で決めますが、少なくとも存在だけは知らせておきます。",
-          "共有方法は、紙のファイル、スマートフォンの共有アルバム、クラウドメモ、家族LINE、USBメモなど、家族が実際に使える形を選びます。高齢の親が紙で管理しているなら、無理にデジタル化を押しつけず、紙を写真で残すだけでも十分です。完璧な管理より、次の人が探せることが大切です。",
+          "共有方法は、紙のファイル、スマートフォンの共有アルバム、クラウドメモ、家族チャット、USBメモなど、家族が実際に使える形を選びます。高齢の親が紙で管理しているなら、無理にデジタル化を押しつけず、紙を写真で残すだけでも十分です。完璧な管理より、次の人が探せることが大切です。",
           "法要をきっかけに、実家の仏壇、墓、寺との関係を家族で確認すると、相続や実家じまいの話も少し進めやすくなります。いきなり墓じまいや離檀の結論を出す必要はありません。まず、誰が何を知っているかをそろえる。それが、遠方家族にとって現実的な第一歩です。",
           "共有メモには、更新した人の名前も入れておきます。誰が寺に電話したのか、誰が会食を予約したのか、誰が墓地の写真を撮ったのかが分かると、次に確認するときの連絡先が明確になります。家族の中で一番詳しい人を固定するのではなく、情報が少しずつ引き継がれる状態を作ります。",
           "共有するときは、全員に同じ負担を求めないことも大切です。近くに住む人は寺や墓地へ行きやすく、遠方の人は日程調整や費用の確認、写真整理を担えるかもしれません。役割を少し分けるだけで、施主一人にかかる負担が減ります。法要の準備は、家族の情報共有の練習にもなります。",

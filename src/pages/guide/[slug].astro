@@ -8,6 +8,7 @@ export function getStaticPaths() {
 
 const article = getGuideArticle(Astro.params.slug || "");
 if (!article) return Astro.redirect("/guide/");
+const guideViewEvent = article.slug === "houyou-kisei" ? "kisei_guide_view" : "";
 
 const faqJson = article.faq ? JSON.stringify({
   "@context": "https://schema.org",
@@ -47,6 +48,35 @@ const faqJson = article.faq ? JSON.stringify({
                   {section.bullets.map((item) => <li>{item}</li>)}
                 </ul>
               )}
+              {section.cards && (
+                <div class="section-card-grid">
+                  {section.cards.map((card) => (
+                    <article class="section-card">
+                      <h3>{card.heading}</h3>
+                      <p>{card.body}</p>
+                    </article>
+                  ))}
+                </div>
+              )}
+              {section.cta && (
+                <div
+                  class="article-section-cta"
+                  data-fujigaoka-intro={section.cta.event === "to_fudosan_click" ? "true" : undefined}
+                >
+                  <a
+                    class="button-link"
+                    href={section.cta.href}
+                    data-track-click={section.cta.event}
+                    target={section.cta.external ? "_blank" : undefined}
+                    rel={section.cta.external ? "noopener noreferrer" : undefined}
+                  >
+                    {section.cta.label}
+                    {section.cta.external && <span class="external-mark">外部</span>}
+                  </a>
+                  {section.cta.note && <p>{section.cta.note}</p>}
+                </div>
+              )}
+              {section.note && <p class="external-service-note">{section.note}</p>}
             </section>
           ))
         }
@@ -98,4 +128,64 @@ const faqJson = article.faq ? JSON.stringify({
       </aside>
     </div>
   </article>
+  <script is:inline define:vars={{ guideViewEvent }}>
+    // @ts-nocheck
+    (function () {
+      function trackerEndpoint() {
+        var tracker = document.querySelector("script[data-fujigaoka-analytics]");
+        if (!tracker || !tracker.src || location.hostname !== "temple.atawi.link") return null;
+        return {
+          url: new URL("/api/click", tracker.src).href,
+          siteId: tracker.getAttribute("data-site") || "atawi-temple",
+        };
+      }
+
+      function sendEvent(eventName) {
+        var endpoint = trackerEndpoint();
+        if (!endpoint || !eventName) return;
+        var payload = JSON.stringify({
+          site_id: endpoint.siteId,
+          path: location.pathname + location.search,
+          url: location.href,
+          referrer: document.referrer || "",
+          event_name: eventName,
+        });
+        if (navigator.sendBeacon) {
+          navigator.sendBeacon(endpoint.url, new Blob([payload], { type: "application/json" }));
+          return;
+        }
+        if (window.fetch) {
+          fetch(endpoint.url, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: payload,
+            mode: "cors",
+            credentials: "omit",
+            keepalive: true,
+          }).catch(function () {});
+        }
+      }
+
+      window.addEventListener("load", function () {
+        sendEvent(guideViewEvent);
+        var intro = document.querySelector("[data-fujigaoka-intro]");
+        if (!intro) return;
+        if (!("IntersectionObserver" in window)) {
+          sendEvent("fujigaoka_intro_view");
+          return;
+        }
+        var seen = false;
+        var observer = new IntersectionObserver(function (entries) {
+          if (seen) return;
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            seen = true;
+            sendEvent("fujigaoka_intro_view");
+            observer.disconnect();
+          });
+        }, { threshold: 0.4 });
+        observer.observe(intro);
+      });
+    })();
+  </script>
 </BaseLayout>
