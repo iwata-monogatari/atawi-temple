@@ -7186,5 +7186,1352 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "jushouji-hiruike",
+    "hero_image": "/assets/temples/jushouji-hiruike/main-hall-front.webp",
+    "photos": [
+      {
+        "photo_id": "jushouji-hiruike-main-hall-front-2026",
+        "src": "/assets/temples/jushouji-hiruike/main-hall-front.webp",
+        "alt": "寿正寺の本堂正面",
+        "caption": "寿正寺の本堂正面。参道奥の堂宇を主写真として掲載。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jushouji-hiruike-approach-to-main-hall-2026",
+        "src": "/assets/temples/jushouji-hiruike/approach-to-main-hall.webp",
+        "alt": "寿正寺の参道と堂宇",
+        "caption": "木立の間の参道から堂宇を望む境内景観。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jushouji-hiruike-entrance-stone-marker-2026",
+        "src": "/assets/temples/jushouji-hiruike/entrance-stone-marker.webp",
+        "alt": "寿正寺の入口石標",
+        "caption": "「松龍山 寿正寺」と刻まれた入口石標と参道。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jushouji-hiruike-front-grounds-2026",
+        "src": "/assets/temples/jushouji-hiruike/front-grounds.webp",
+        "alt": "寿正寺境内の前庭",
+        "caption": "堂宇前の境内と木立。参道と建物配置を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jushouji-hiruike-tree-lined-approach-2026",
+        "src": "/assets/temples/jushouji-hiruike/tree-lined-approach.webp",
+        "alt": "寿正寺の木立に囲まれた参道",
+        "caption": "木立に囲まれた寿正寺境内の参道。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jushouji-hiruike-lotus-near-hall-2026",
+        "src": "/assets/temples/jushouji-hiruike/lotus-near-hall.webp",
+        "alt": "寿正寺境内の蓮",
+        "caption": "堂宇脇に見える蓮と境内の植栽。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jushouji-hiruike-building-side-approach-2026",
+        "src": "/assets/temples/jushouji-hiruike/building-side-approach.webp",
+        "alt": "寿正寺の堂宇側面",
+        "caption": "堂宇側面と縁側、境内の通路を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jushouji-hiruike-side-garden-path-2026",
+        "src": "/assets/temples/jushouji-hiruike/side-garden-path.webp",
+        "alt": "寿正寺堂宇脇の庭と飛び石",
+        "caption": "堂宇脇の庭木と飛び石のある境内景観。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jushouji-hiruike-wooded-path-2026",
+        "src": "/assets/temples/jushouji-hiruike/wooded-path.webp",
+        "alt": "寿正寺境内の木立の小径",
+        "caption": "境内奥へ続く木立の小径。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jushouji-hiruike-stone-marker-close-2026",
+        "src": "/assets/temples/jushouji-hiruike/stone-marker-close.webp",
+        "alt": "寿正寺入口石標の銘文",
+        "caption": "入口石標の側面に刻まれた銘文。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jushouji-hiruike-small-hall-stone-images-2026",
+        "src": "/assets/temples/jushouji-hiruike/small-hall-stone-images.webp",
+        "alt": "寿正寺境内の小堂と石仏",
+        "caption": "境内の小堂に祀られた石仏群。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jushouji-hiruike-small-hall-front-2026",
+        "src": "/assets/temples/jushouji-hiruike/small-hall-front.webp",
+        "alt": "寿正寺境内の小堂正面",
+        "caption": "境内小堂の正面外観。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "zohonji-ikago",
+    "hero_image": "/assets/temples/zohonji-ikago/main-hall-front.webp",
+    "photos": [
+      {
+        "photo_id": "zohonji-ikago-main-hall-front-2026",
+        "src": "/assets/temples/zohonji-ikago/main-hall-front.webp",
+        "alt": "蔵本寺の本堂正面",
+        "caption": "蔵本寺の本堂正面。境内中央から堂宇を正面に見る。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zohonji-ikago-jizo-hall-2026",
+        "src": "/assets/temples/zohonji-ikago/jizo-hall.webp",
+        "alt": "蔵本寺境内の地蔵堂",
+        "caption": "境内に立つ地蔵堂と石仏を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zohonji-ikago-brick-gate-nameplate-2026",
+        "src": "/assets/temples/zohonji-ikago/brick-gate-nameplate.webp",
+        "alt": "蔵本寺門柱の寺名表示",
+        "caption": "煉瓦門柱に付けられた「金源山 蔵本寺」の表示。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zohonji-ikago-entrance-stone-marker-2026",
+        "src": "/assets/temples/zohonji-ikago/entrance-stone-marker.webp",
+        "alt": "蔵本寺の入口石標と門柱",
+        "caption": "入口の寺号標と煉瓦門柱。奥に境内を望む。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zohonji-ikago-hall-and-garden-2026",
+        "src": "/assets/temples/zohonji-ikago/hall-and-garden.webp",
+        "alt": "蔵本寺の堂宇と庭",
+        "caption": "堂宇前の庭木と境内の様子。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zohonji-ikago-grounds-tree-2026",
+        "src": "/assets/temples/zohonji-ikago/grounds-tree.webp",
+        "alt": "蔵本寺境内の樹木",
+        "caption": "境内に植えられた樹木と参道周辺。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zohonji-ikago-stone-lantern-and-hall-2026",
+        "src": "/assets/temples/zohonji-ikago/stone-lantern-and-hall.webp",
+        "alt": "蔵本寺の石灯籠と本堂",
+        "caption": "本堂前の石灯籠と堂宇をあわせて記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zohonji-ikago-stone-monument-2026",
+        "src": "/assets/temples/zohonji-ikago/stone-monument.webp",
+        "alt": "蔵本寺境内の石塔",
+        "caption": "境内に立つ石塔と石碑群。銘文は今後の確認対象。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zohonji-ikago-stone-lantern-2026",
+        "src": "/assets/temples/zohonji-ikago/stone-lantern.webp",
+        "alt": "蔵本寺境内の石灯籠",
+        "caption": "参道脇に立つ石灯籠。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zohonji-ikago-grounds-tree-wide-2026",
+        "src": "/assets/temples/zohonji-ikago/grounds-tree-wide.webp",
+        "alt": "蔵本寺境内の庭木",
+        "caption": "境内の庭木と周辺の通路。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "zohonji-ikago-gate-and-stone-marker-2026",
+        "src": "/assets/temples/zohonji-ikago/gate-and-stone-marker.webp",
+        "alt": "蔵本寺の門柱と寺号標",
+        "caption": "入口から門柱、寺号標、境内を見通す。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "daisenji-toyohamanakano",
+    "hero_image": "/assets/temples/daisenji-toyohamanakano/site-stone-marker.webp",
+    "photos": [
+      {
+        "photo_id": "daisenji-toyohamanakano-site-stone-marker-2026",
+        "src": "/assets/temples/daisenji-toyohamanakano/site-stone-marker.webp",
+        "alt": "大泉寺跡の石標",
+        "caption": "「大泉寺跡」と刻まれた石標。寺院跡の所在確認写真として掲載。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daisenji-toyohamanakano-site-around-building-2026",
+        "src": "/assets/temples/daisenji-toyohamanakano/site-around-building.webp",
+        "alt": "大泉寺跡周辺の建物と植栽",
+        "caption": "大泉寺跡周辺の建物と植栽を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "daisenji-toyohamanakano-small-hall-2026",
+        "src": "/assets/temples/daisenji-toyohamanakano/small-hall.webp",
+        "alt": "大泉寺跡付近の小堂",
+        "caption": "大泉寺跡付近に立つ小堂の外観。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "saifukuji-toyohamanakano",
+    "hero_image": "/assets/temples/saifukuji-toyohamanakano/name-sign.webp",
+    "photos": [
+      {
+        "photo_id": "saifukuji-toyohamanakano-name-sign-2026",
+        "src": "/assets/temples/saifukuji-toyohamanakano/name-sign.webp",
+        "alt": "西福寺の寺名表示",
+        "caption": "「曹洞宗 蔵海山 西福寺」と記された寺名表示。寺院跡の所在確認写真として掲載。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saifukuji-toyohamanakano-site-surroundings-2026",
+        "src": "/assets/temples/saifukuji-toyohamanakano/site-surroundings.webp",
+        "alt": "西福寺跡周辺の道路沿い景観",
+        "caption": "道路沿いから見た西福寺跡周辺の景観。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saifukuji-toyohamanakano-stone-buddha-hall-2026",
+        "src": "/assets/temples/saifukuji-toyohamanakano/stone-buddha-hall.webp",
+        "alt": "西福寺跡付近の石仏堂",
+        "caption": "西福寺跡付近に立つ石仏堂と石仏。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "keishoji-fukude",
+    "hero_image": "/assets/temples/keishoji-fukude/main-hall-front.webp",
+    "photos": [
+      {
+        "photo_id": "keishoji-fukude-main-hall-front-2026",
+        "src": "/assets/temples/keishoji-fukude/main-hall-front.webp",
+        "alt": "慶昌寺の本堂正面",
+        "caption": "慶昌寺の本堂正面。参道から堂宇全体を望む主写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keishoji-fukude-main-hall-entrance-2026",
+        "src": "/assets/temples/keishoji-fukude/main-hall-entrance.webp",
+        "alt": "慶昌寺本堂の入口",
+        "caption": "本堂正面の入口と「慶昌寺」の寺号額。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keishoji-fukude-gate-front-2026",
+        "src": "/assets/temples/keishoji-fukude/gate-front.webp",
+        "alt": "慶昌寺の山門正面",
+        "caption": "慶昌寺の山門正面。門柱に寺名表示を確認できる。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keishoji-fukude-gate-nameboard-2026",
+        "src": "/assets/temples/keishoji-fukude/gate-nameboard.webp",
+        "alt": "慶昌寺山門の寺名表示",
+        "caption": "山門脇に掲げられた「慶昌寺」の寺名表示。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keishoji-fukude-temple-nameboard-close-2026",
+        "src": "/assets/temples/keishoji-fukude/temple-nameboard-close.webp",
+        "alt": "慶昌寺本堂の寺号額",
+        "caption": "本堂正面に掲げられた「慶昌寺」の寺号額。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keishoji-fukude-stone-pillar-kokizan-2026",
+        "src": "/assets/temples/keishoji-fukude/stone-pillar-kokizan.webp",
+        "alt": "慶昌寺の山号石柱",
+        "caption": "「岡福山」と刻まれた石柱。山号を確認できる現地写真。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keishoji-fukude-stone-pillar-name-2026",
+        "src": "/assets/temples/keishoji-fukude/stone-pillar-name.webp",
+        "alt": "慶昌寺の寺名石柱",
+        "caption": "「慶昌寺」と刻まれた石柱。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keishoji-fukude-stone-statue-area-2026",
+        "src": "/assets/temples/keishoji-fukude/stone-statue-area.webp",
+        "alt": "慶昌寺境内の石造物",
+        "caption": "境内に祀られた石造物と供花を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keishoji-fukude-garden-grounds-2026",
+        "src": "/assets/temples/keishoji-fukude/garden-grounds.webp",
+        "alt": "慶昌寺境内の庭木",
+        "caption": "本堂前の庭木と境内景観。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keishoji-fukude-stone-lantern-garden-2026",
+        "src": "/assets/temples/keishoji-fukude/stone-lantern-garden.webp",
+        "alt": "慶昌寺境内の石灯籠",
+        "caption": "庭木の間に立つ石灯籠と本堂周辺。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keishoji-fukude-grounds-pine-tree-2026",
+        "src": "/assets/temples/keishoji-fukude/grounds-pine-tree.webp",
+        "alt": "慶昌寺境内の松",
+        "caption": "境内に広がる松の枝と参道周辺。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keishoji-fukude-lotus-flower-2026",
+        "src": "/assets/temples/keishoji-fukude/lotus-flower.webp",
+        "alt": "慶昌寺境内の蓮",
+        "caption": "境内の鉢に咲く蓮の花。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keishoji-fukude-jizo-hall-2026",
+        "src": "/assets/temples/keishoji-fukude/jizo-hall.webp",
+        "alt": "慶昌寺境内の地蔵堂",
+        "caption": "境内に立つ地蔵堂と石仏。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "keishoji-fukude-lotus-planter-2026",
+        "src": "/assets/temples/keishoji-fukude/lotus-planter.webp",
+        "alt": "慶昌寺境内の蓮鉢",
+        "caption": "参道脇に置かれた蓮鉢。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "myofukuji-fukude",
+    "hero_image": "/assets/temples/myofukuji-fukude/hall-exterior.webp",
+    "photos": [
+      {
+        "photo_id": "myofukuji-fukude-hall-exterior-2026",
+        "src": "/assets/temples/myofukuji-fukude/hall-exterior.webp",
+        "alt": "妙福寺の堂宇外観",
+        "caption": "妙福寺の堂宇外観。説明板のある正面側を主写真として掲載。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myofukuji-fukude-temple-explanation-board-2026",
+        "src": "/assets/temples/myofukuji-fukude/temple-explanation-board.webp",
+        "alt": "長徳山妙福寺の説明板",
+        "caption": "「日蓮宗 長徳山 妙福寺」と記された現地説明板。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myofukuji-fukude-nichiren-statue-2026",
+        "src": "/assets/temples/myofukuji-fukude/nichiren-statue.webp",
+        "alt": "妙福寺境内の日蓮上人像",
+        "caption": "境内に立つ日蓮上人像と石灯籠。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myofukuji-fukude-stone-monument-and-hall-2026",
+        "src": "/assets/temples/myofukuji-fukude/stone-monument-and-hall.webp",
+        "alt": "妙福寺境内の石碑と堂宇",
+        "caption": "境内の石碑と堂宇外観をあわせて記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myofukuji-fukude-hall-entrance-2026",
+        "src": "/assets/temples/myofukuji-fukude/hall-entrance.webp",
+        "alt": "妙福寺の堂宇入口",
+        "caption": "堂宇入口と掲示、説明板のある正面。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myofukuji-fukude-hall-front-interior-2026",
+        "src": "/assets/temples/myofukuji-fukude/hall-front-interior.webp",
+        "alt": "妙福寺堂宇正面の扁額と内陣",
+        "caption": "堂宇正面から扁額と内陣を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myofukuji-fukude-small-hall-2026",
+        "src": "/assets/temples/myofukuji-fukude/small-hall.webp",
+        "alt": "妙福寺境内の小堂",
+        "caption": "境内に立つ小堂と幟を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myofukuji-fukude-temple-nameboard-close-2026",
+        "src": "/assets/temples/myofukuji-fukude/temple-nameboard-close.webp",
+        "alt": "妙福寺堂宇の山号扁額",
+        "caption": "堂宇正面に掲げられた山号扁額。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "kannonji-fukude",
+    "hero_image": "/assets/temples/kannonji-fukude/main-hall-with-stone-marker.webp",
+    "photos": [
+      {
+        "photo_id": "kannonji-fukude-main-hall-with-stone-marker-2026",
+        "src": "/assets/temples/kannonji-fukude/main-hall-with-stone-marker.webp",
+        "alt": "観音寺の本堂正面と寺号標",
+        "caption": "観音寺の本堂正面と寺号標。境内中央から堂宇を望む主写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-sanmon-front-2026",
+        "src": "/assets/temples/kannonji-fukude/sanmon-front.webp",
+        "alt": "観音寺の山門正面",
+        "caption": "観音寺の山門正面。境内への入口を示す写真。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-main-hall-front-close-2026",
+        "src": "/assets/temples/kannonji-fukude/main-hall-front-close.webp",
+        "alt": "観音寺本堂の正面",
+        "caption": "本堂正面と「円通山」の扁額を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-entsuzan-nameboard-close-2026",
+        "src": "/assets/temples/kannonji-fukude/entsuzan-nameboard-close.webp",
+        "alt": "観音寺本堂の円通山扁額",
+        "caption": "本堂正面に掲げられた「円通山」の扁額。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-main-hall-and-garden-2026",
+        "src": "/assets/temples/kannonji-fukude/main-hall-and-garden.webp",
+        "alt": "観音寺の本堂と境内庭木",
+        "caption": "庭木越しに見る本堂正面。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-sanmon-and-stone-marker-2026",
+        "src": "/assets/temples/kannonji-fukude/sanmon-and-stone-marker.webp",
+        "alt": "観音寺の山門と寺号標",
+        "caption": "山門と寺号標をあわせて記録。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-main-hall-wide-2026",
+        "src": "/assets/temples/kannonji-fukude/main-hall-wide.webp",
+        "alt": "観音寺の本堂全景",
+        "caption": "境内から見た観音寺の本堂全景。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-hitokoto-jizo-hall-2026",
+        "src": "/assets/temples/kannonji-fukude/hitokoto-jizo-hall.webp",
+        "alt": "観音寺境内のひとこと地蔵堂",
+        "caption": "境内に祀られたひとこと地蔵堂。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-explanation-board-01-2026",
+        "src": "/assets/temples/kannonji-fukude/explanation-board-01.webp",
+        "alt": "観音寺境内の現地説明板",
+        "caption": "観音寺境内に掲示された現地説明板。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-stone-monument-area-2026",
+        "src": "/assets/temples/kannonji-fukude/stone-monument-area.webp",
+        "alt": "観音寺境内の石碑と石仏",
+        "caption": "境内に残る石碑と石仏、供養塔を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-explanation-board-02-2026",
+        "src": "/assets/temples/kannonji-fukude/explanation-board-02.webp",
+        "alt": "観音寺境内の現地説明板と樹木",
+        "caption": "樹木脇に掲示された現地説明板。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-explanation-board-03-2026",
+        "src": "/assets/temples/kannonji-fukude/explanation-board-03.webp",
+        "alt": "観音寺境内の案内板",
+        "caption": "境内に掲示された案内板。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-chozu-basin-2026",
+        "src": "/assets/temples/kannonji-fukude/chozu-basin.webp",
+        "alt": "観音寺境内の手水鉢",
+        "caption": "境内の手水鉢を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-grounds-to-hall-2026",
+        "src": "/assets/temples/kannonji-fukude/grounds-to-hall.webp",
+        "alt": "観音寺境内の参道と本堂",
+        "caption": "境内の参道から本堂側を望む。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-stone-monument-2026",
+        "src": "/assets/temples/kannonji-fukude/stone-monument.webp",
+        "alt": "観音寺境内の石塔",
+        "caption": "境内に立つ石塔と供養塔を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-guidance-board-2026",
+        "src": "/assets/temples/kannonji-fukude/guidance-board.webp",
+        "alt": "観音寺境内の掲示板",
+        "caption": "「今日の道しるべ」と記された境内掲示板。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-legend-board-2026",
+        "src": "/assets/temples/kannonji-fukude/legend-board.webp",
+        "alt": "観音寺境内の伝承説明板",
+        "caption": "観音寺境内に掲示された伝承説明板。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-grounds-wide-2026",
+        "src": "/assets/temples/kannonji-fukude/grounds-wide.webp",
+        "alt": "観音寺境内の広場と通路",
+        "caption": "境内の広場と通路、周辺の植栽を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-gyorin-kannon-board-2026",
+        "src": "/assets/temples/kannonji-fukude/gyorin-kannon-board.webp",
+        "alt": "魚籃観音の説明板",
+        "caption": "観音寺境内に掲示された魚籃観音の説明板。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-jizo-hall-2026",
+        "src": "/assets/temples/kannonji-fukude/jizo-hall.webp",
+        "alt": "観音寺境内の地蔵堂",
+        "caption": "境内に立つ地蔵堂と石仏。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-pilgrimage-stone-marker-2026",
+        "src": "/assets/temples/kannonji-fukude/pilgrimage-stone-marker.webp",
+        "alt": "遠州観音霊場の石標",
+        "caption": "遠州観音霊場に関する石標を記録。",
+        "category_id": "map-pilgrimage",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-temple-stone-marker-2026",
+        "src": "/assets/temples/kannonji-fukude/temple-stone-marker.webp",
+        "alt": "円通山観音寺の寺号標",
+        "caption": "「円通山 観音寺」と刻まれた寺号標。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-stonework-small-hall-2026",
+        "src": "/assets/temples/kannonji-fukude/stonework-small-hall.webp",
+        "alt": "観音寺境内の石造物と小堂",
+        "caption": "境内の石造物と小堂をあわせて記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "kannonji-fukude-prayer-board-and-main-hall-2026",
+        "src": "/assets/temples/kannonji-fukude/prayer-board-and-main-hall.webp",
+        "alt": "観音寺の礼拝供養案内板と本堂",
+        "caption": "本堂前に置かれた礼拝供養案内板と堂宇正面。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "yofukuji-shimohongo",
+    "hero_image": "/assets/temples/yofukuji-shimohongo/main-hall-approach.webp",
+    "photos": [
+      {
+        "photo_id": "yofukuji-shimohongo-main-hall-approach-2026",
+        "src": "/assets/temples/yofukuji-shimohongo/main-hall-approach.webp",
+        "alt": "養福寺の本堂正面と参道",
+        "caption": "養福寺の本堂正面と参道。境内の中心動線を示す主写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "yofukuji-shimohongo-gate-and-main-hall-2026",
+        "src": "/assets/temples/yofukuji-shimohongo/gate-and-main-hall.webp",
+        "alt": "養福寺の入口石柱と本堂",
+        "caption": "入口石柱の間から参道と本堂を望む。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "yofukuji-shimohongo-entrance-stone-marker-2026",
+        "src": "/assets/temples/yofukuji-shimohongo/entrance-stone-marker.webp",
+        "alt": "養福寺の寺号石柱",
+        "caption": "入口に立つ養福寺の寺号石柱と本堂。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "yofukuji-shimohongo-gate-side-board-2026",
+        "src": "/assets/temples/yofukuji-shimohongo/gate-side-board.webp",
+        "alt": "養福寺境内の掲示板と門塀",
+        "caption": "入口脇の掲示板と門塀を記録。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "yofukuji-shimohongo-entrance-garden-stone-marker-2026",
+        "src": "/assets/temples/yofukuji-shimohongo/entrance-garden-stone-marker.webp",
+        "alt": "養福寺の入口周辺と石柱",
+        "caption": "入口周辺の石柱、植栽、石仏列をあわせて記録。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "yofukuji-shimohongo-main-hall-side-2026",
+        "src": "/assets/temples/yofukuji-shimohongo/main-hall-side.webp",
+        "alt": "養福寺本堂の側面外観",
+        "caption": "本堂側面と縁側、境内通路を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "yofukuji-shimohongo-ryushozan-nameboard-close-2026",
+        "src": "/assets/temples/yofukuji-shimohongo/ryushozan-nameboard-close.webp",
+        "alt": "養福寺本堂の龍祥山扁額",
+        "caption": "本堂正面に掲げられた「龍祥山」の扁額。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "yofukuji-shimohongo-ryushozan-nameboard-wide-2026",
+        "src": "/assets/temples/yofukuji-shimohongo/ryushozan-nameboard-wide.webp",
+        "alt": "養福寺本堂正面の龍祥山扁額",
+        "caption": "本堂正面と「龍祥山」の扁額をあわせて記録。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "yofukuji-shimohongo-grounds-from-hall-2026",
+        "src": "/assets/temples/yofukuji-shimohongo/grounds-from-hall.webp",
+        "alt": "養福寺本堂前から見た境内",
+        "caption": "本堂前から参道、入口、庭木を見渡す境内景観。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "yofukuji-shimohongo-stone-paved-approach-2026",
+        "src": "/assets/temples/yofukuji-shimohongo/stone-paved-approach.webp",
+        "alt": "養福寺の石畳参道",
+        "caption": "本堂前へ続く石畳参道と境内の砂利敷き。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "yofukuji-shimohongo-main-hall-veranda-2026",
+        "src": "/assets/temples/yofukuji-shimohongo/main-hall-veranda.webp",
+        "alt": "養福寺本堂の縁側",
+        "caption": "本堂の縁側と柱まわりを記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "yofukuji-shimohongo-stone-buddha-row-2026",
+        "src": "/assets/temples/yofukuji-shimohongo/stone-buddha-row.webp",
+        "alt": "養福寺境内の石仏列",
+        "caption": "境内に並ぶ石仏列。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "yofukuji-shimohongo-stone-buddha-row-wide-2026",
+        "src": "/assets/temples/yofukuji-shimohongo/stone-buddha-row-wide.webp",
+        "alt": "養福寺境内の石仏列全景",
+        "caption": "境内の石仏列を正面から記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "yofukuji-shimohongo-small-stone-statue-2026",
+        "src": "/assets/temples/yofukuji-shimohongo/small-stone-statue.webp",
+        "alt": "養福寺境内の石像",
+        "caption": "境内に祀られた石像。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "toyodain-kegojima",
+    "hero_image": "/assets/temples/toyodain-kegojima/main-hall-front.webp",
+    "photos": [
+      {
+        "photo_id": "toyodain-kegojima-main-hall-front-2026",
+        "src": "/assets/temples/toyodain-kegojima/main-hall-front.webp",
+        "alt": "豊田院の堂宇正面",
+        "caption": "豊田院の堂宇正面。境内から建物全体を望む主写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "toyodain-kegojima-nameboard-and-entrance-2026",
+        "src": "/assets/temples/toyodain-kegojima/nameboard-and-entrance.webp",
+        "alt": "豊田院の寺名扁額と入口",
+        "caption": "堂宇入口上に掲げられた豊田院の寺名扁額。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "toyodain-kegojima-entrance-stone-pillars-2026",
+        "src": "/assets/temples/toyodain-kegojima/entrance-stone-pillars.webp",
+        "alt": "豊田院の入口石柱",
+        "caption": "豊田院入口の石柱と境内への通路。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "toyodain-kegojima-building-side-2026",
+        "src": "/assets/temples/toyodain-kegojima/building-side.webp",
+        "alt": "豊田院の堂宇側面",
+        "caption": "道路側から見た豊田院の堂宇側面。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "toyodain-kegojima-torii-and-small-shrine-2026",
+        "src": "/assets/temples/toyodain-kegojima/torii-and-small-shrine.webp",
+        "alt": "豊田院付近の鳥居と小祠",
+        "caption": "豊田院付近の鳥居と小祠を記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "chosenji-fukudenakajima",
+    "hero_image": "/assets/temples/chosenji-fukudenakajima/main-hall-front.webp",
+    "photos": [
+      {
+        "photo_id": "chosenji-fukudenakajima-main-hall-front-2026",
+        "src": "/assets/temples/chosenji-fukudenakajima/main-hall-front.webp",
+        "alt": "長泉寺の本堂正面",
+        "caption": "長泉寺の本堂正面。境内から堂宇全体を望む主写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chosenji-fukudenakajima-entrance-pillars-and-main-hall-2026",
+        "src": "/assets/temples/chosenji-fukudenakajima/entrance-pillars-and-main-hall.webp",
+        "alt": "長泉寺の入口石柱と本堂",
+        "caption": "入口石柱の間から参道と本堂を望む。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chosenji-fukudenakajima-zuikozan-nameboard-2026",
+        "src": "/assets/temples/chosenji-fukudenakajima/zuikozan-nameboard.webp",
+        "alt": "長泉寺本堂の瑞光山長泉寺扁額",
+        "caption": "本堂正面に掲げられた「瑞光山長泉寺」の扁額。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chosenji-fukudenakajima-temple-stone-marker-2026",
+        "src": "/assets/temples/chosenji-fukudenakajima/temple-stone-marker.webp",
+        "alt": "長泉寺の寺号標",
+        "caption": "境内入口に立つ「長泉寺」の寺号標。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chosenji-fukudenakajima-chozu-basin-2026",
+        "src": "/assets/temples/chosenji-fukudenakajima/chozu-basin.webp",
+        "alt": "長泉寺境内の手水鉢",
+        "caption": "境内に置かれた手水鉢を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chosenji-fukudenakajima-grounds-garden-2026",
+        "src": "/assets/temples/chosenji-fukudenakajima/grounds-garden.webp",
+        "alt": "長泉寺の境内庭木と参道",
+        "caption": "参道沿いの庭木と境内の様子。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chosenji-fukudenakajima-main-hall-side-2026",
+        "src": "/assets/temples/chosenji-fukudenakajima/main-hall-side.webp",
+        "alt": "長泉寺本堂の側面",
+        "caption": "本堂側面と前庭を斜めから見る。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chosenji-fukudenakajima-approach-flags-2026",
+        "src": "/assets/temples/chosenji-fukudenakajima/approach-flags.webp",
+        "alt": "長泉寺の参道沿いの幟",
+        "caption": "参道脇に幟が並ぶ境内入口周辺。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "chosenji-fukudenakajima-entrance-wide-2026",
+        "src": "/assets/temples/chosenji-fukudenakajima/entrance-wide.webp",
+        "alt": "長泉寺の入口全景",
+        "caption": "入口から本堂方向を望む全景。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "ryuhoin-ohara",
+    "hero_image": "/assets/temples/ryuhoin-ohara/main-hall-approach.webp",
+    "photos": [
+      {
+        "photo_id": "ryuhoin-ohara-main-hall-approach-2026",
+        "src": "/assets/temples/ryuhoin-ohara/main-hall-approach.webp",
+        "alt": "龍法院の本堂と参道",
+        "caption": "龍法院の参道正面から本堂を望む主写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryuhoin-ohara-main-hall-front-2026",
+        "src": "/assets/temples/ryuhoin-ohara/main-hall-front.webp",
+        "alt": "龍法院本堂の正面",
+        "caption": "本堂正面と「潮音山」の扁額を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryuhoin-ohara-entrance-stone-marker-2026",
+        "src": "/assets/temples/ryuhoin-ohara/entrance-stone-marker.webp",
+        "alt": "龍法院の入口寺号標",
+        "caption": "道路沿いに立つ「龍法院」の寺号標と案内板。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryuhoin-ohara-entrance-marker-and-board-2026",
+        "src": "/assets/temples/ryuhoin-ohara/entrance-marker-and-board.webp",
+        "alt": "龍法院の寺号標と案内板",
+        "caption": "入口寺号標、案内板、本堂屋根をあわせて見る。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryuhoin-ohara-chionzan-nameboard-2026",
+        "src": "/assets/temples/ryuhoin-ohara/chionzan-nameboard.webp",
+        "alt": "龍法院本堂の潮音山扁額",
+        "caption": "本堂正面に掲げられた「潮音山」の扁額。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryuhoin-ohara-temple-name-board-and-stonework-2026",
+        "src": "/assets/temples/ryuhoin-ohara/temple-name-board-and-stonework.webp",
+        "alt": "龍法院の寺名板と石造物",
+        "caption": "境内入口付近の寺名板と石造物。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryuhoin-ohara-small-hall-and-stone-statue-2026",
+        "src": "/assets/temples/ryuhoin-ohara/small-hall-and-stone-statue.webp",
+        "alt": "龍法院境内の小堂と石仏",
+        "caption": "小堂の脇に置かれた石仏と石造物を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryuhoin-ohara-stone-statue-by-gate-2026",
+        "src": "/assets/temples/ryuhoin-ohara/stone-statue-by-gate.webp",
+        "alt": "龍法院門前の石仏",
+        "caption": "門前に立つ石仏と参道入口。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryuhoin-ohara-stone-monument-2026",
+        "src": "/assets/temples/ryuhoin-ohara/stone-monument.webp",
+        "alt": "龍法院境内の石碑",
+        "caption": "境内の石碑と周囲の庭木。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryuhoin-ohara-garden-and-stonework-2026",
+        "src": "/assets/temples/ryuhoin-ohara/garden-and-stonework.webp",
+        "alt": "龍法院の庭木と石造物",
+        "caption": "境内庭木と石造物の配置が分かる写真。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryuhoin-ohara-main-hall-side-entrance-2026",
+        "src": "/assets/temples/ryuhoin-ohara/main-hall-side-entrance.webp",
+        "alt": "龍法院本堂の入口側",
+        "caption": "本堂入口側と前庭を斜めから見る。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryuhoin-ohara-approach-lane-2026",
+        "src": "/assets/temples/ryuhoin-ohara/approach-lane.webp",
+        "alt": "龍法院脇の参道沿い通路",
+        "caption": "生垣に沿う境内脇の通路。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryuhoin-ohara-gate-to-main-hall-2026",
+        "src": "/assets/temples/ryuhoin-ohara/gate-to-main-hall.webp",
+        "alt": "龍法院の門柱と本堂",
+        "caption": "門柱の間から参道と本堂を望む。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryuhoin-ohara-grounds-from-pagoda-2026",
+        "src": "/assets/temples/ryuhoin-ohara/grounds-from-pagoda.webp",
+        "alt": "龍法院境内から見た参道",
+        "caption": "石塔脇から門前方向を見た境内景観。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "tamonji-nakano",
+    "hero_image": "/assets/temples/tamonji-nakano/hall-and-grounds.webp",
+    "photos": [
+      {
+        "photo_id": "tamonji-nakano-hall-and-grounds-2026",
+        "src": "/assets/temples/tamonji-nakano/hall-and-grounds.webp",
+        "alt": "多聞寺の堂宇と境内",
+        "caption": "多聞寺の堂宇と境内を広く収めた主写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tamonji-nakano-hall-front-2026",
+        "src": "/assets/temples/tamonji-nakano/hall-front.webp",
+        "alt": "多聞寺堂宇の正面",
+        "caption": "堂宇正面の玄関まわりを記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tamonji-nakano-approach-to-hall-2026",
+        "src": "/assets/temples/tamonji-nakano/approach-to-hall.webp",
+        "alt": "多聞寺の参道と堂宇",
+        "caption": "生垣の間を進む参道から堂宇を望む。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tamonji-nakano-grounds-edge-2026",
+        "src": "/assets/temples/tamonji-nakano/grounds-edge.webp",
+        "alt": "多聞寺境内の植栽",
+        "caption": "境内入口付近の植栽と周辺環境。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tamonji-nakano-hall-side-2026",
+        "src": "/assets/temples/tamonji-nakano/hall-side.webp",
+        "alt": "多聞寺堂宇の側面",
+        "caption": "堂宇側面と庭石、植栽を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tamonji-nakano-courtyard-wide-2026",
+        "src": "/assets/temples/tamonji-nakano/courtyard-wide.webp",
+        "alt": "多聞寺の境内全景",
+        "caption": "境内中央から堂宇と庭木を広く見る。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tamonji-nakano-temple-bell-2026",
+        "src": "/assets/temples/tamonji-nakano/temple-bell.webp",
+        "alt": "多聞寺堂内の梵鐘",
+        "caption": "堂宇内に吊られた梵鐘を記録。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "shogenin-kojima",
+    "hero_image": "/assets/temples/shogenin-kojima/main-hall-approach.webp",
+    "photos": [
+      {
+        "photo_id": "shogenin-kojima-main-hall-approach-2026",
+        "src": "/assets/temples/shogenin-kojima/main-hall-approach.webp",
+        "alt": "正眼院の本堂正面と参道",
+        "caption": "正眼院の参道正面から本堂を望む主写真。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shogenin-kojima-main-hall-front-wide-2026",
+        "src": "/assets/temples/shogenin-kojima/main-hall-front-wide.webp",
+        "alt": "正眼院本堂の正面",
+        "caption": "本堂正面をやや近くから記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shogenin-kojima-front-gate-2026",
+        "src": "/assets/temples/shogenin-kojima/front-gate.webp",
+        "alt": "正眼院の山門",
+        "caption": "参道入口に立つ山門を正面から見る。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shogenin-kojima-main-hall-front-stairs-2026",
+        "src": "/assets/temples/shogenin-kojima/main-hall-front-stairs.webp",
+        "alt": "正眼院本堂の階段と拈華山扁額",
+        "caption": "本堂階段と正面の扁額を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shogenin-kojima-nengezan-nameboard-2026",
+        "src": "/assets/temples/shogenin-kojima/nengezan-nameboard.webp",
+        "alt": "正眼院本堂の拈華山扁額",
+        "caption": "本堂正面に掲げられた「拈華山」の扁額。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shogenin-kojima-nengezan-nameboard-close-2026",
+        "src": "/assets/temples/shogenin-kojima/nengezan-nameboard-close.webp",
+        "alt": "拈華山扁額の近景",
+        "caption": "「拈華山」の扁額を近くから記録。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shogenin-kojima-kannon-statue-and-stone-lanterns-2026",
+        "src": "/assets/temples/shogenin-kojima/kannon-statue-and-stone-lanterns.webp",
+        "alt": "正眼院境内の像と石灯籠",
+        "caption": "境内に立つ像と石灯籠、庭石を記録。",
+        "category_id": "stonework",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shogenin-kojima-hall-side-and-kuri-2026",
+        "src": "/assets/temples/shogenin-kojima/hall-side-and-kuri.webp",
+        "alt": "正眼院本堂側面と庫裏",
+        "caption": "本堂側面から庫裏方向を見る。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shogenin-kojima-foundation-plaque-2026",
+        "src": "/assets/temples/shogenin-kojima/foundation-plaque.webp",
+        "alt": "正眼院本堂の定礎板",
+        "caption": "本堂壁面の定礎板を記録。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shogenin-kojima-approach-to-gate-2026",
+        "src": "/assets/temples/shogenin-kojima/approach-to-gate.webp",
+        "alt": "正眼院の参道と山門",
+        "caption": "参道から山門方向を望む境内景観。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shogenin-kojima-gate-and-guide-board-2026",
+        "src": "/assets/temples/shogenin-kojima/gate-and-guide-board.webp",
+        "alt": "正眼院の山門と由緒板",
+        "caption": "山門脇に掲げられた由緒板と周辺の様子。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shogenin-kojima-road-side-entrance-2026",
+        "src": "/assets/temples/shogenin-kojima/road-side-entrance.webp",
+        "alt": "正眼院の道路側入口",
+        "caption": "道路側から見た正眼院入口と門柱。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shogenin-kojima-small-hall-2026",
+        "src": "/assets/temples/shogenin-kojima/small-hall.webp",
+        "alt": "正眼院境内の小堂",
+        "caption": "境内に建つ小堂を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shogenin-kojima-history-board-close-2026",
+        "src": "/assets/temples/shogenin-kojima/history-board-close.webp",
+        "alt": "正眼院由緒板の近景",
+        "caption": "正眼院の由緒を記した現地説明板。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shogenin-kojima-main-hall-side-garden-2026",
+        "src": "/assets/temples/shogenin-kojima/main-hall-side-garden.webp",
+        "alt": "正眼院本堂脇の庭木",
+        "caption": "本堂脇の庭木と石組みを記録。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shogenin-kojima-history-board-wide-2026",
+        "src": "/assets/temples/shogenin-kojima/history-board-wide.webp",
+        "alt": "正眼院由緒板と山門",
+        "caption": "山門脇の由緒板を広く収めた写真。",
+        "category_id": "signboard",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shogenin-kojima-hall-side-2026",
+        "src": "/assets/temples/shogenin-kojima/hall-side.webp",
+        "alt": "正眼院本堂側面",
+        "caption": "本堂側面と隣接建物を記録。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
