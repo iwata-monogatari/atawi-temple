@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import HouyouKiseiBridge from "../components/HouyouKiseiBridge.astro";
 import {
   allTemples,
   allTempleUpdates,
@@ -154,7 +155,10 @@ const galleryPhotos = [
   .filter((item): item is { temple: any; photo: any } => Boolean(item));
 ---
 
-<BaseLayout>
+<BaseLayout
+  title="磐田市の菩提寺・お寺を調べる｜ATAWI TEMPLE"
+  description="磐田市の菩提寺・お寺を寺院名、読み方、住所、地区、宗派から検索できます。法要や帰省前に確認したい寺院情報と実家確認の入口です。"
+>
   <section class="hero hero--slideshow" data-hero-slideshow>
     <div class="hero-slides" aria-hidden="true">
       {heroSlides.map((slide, index) => (
@@ -171,10 +175,11 @@ const galleryPhotos = [
       ))}
     </div>
     <div class="hero-content">
-      <p class="eyebrow">公開資料と現地訪問で整理する地域寺院情報</p>
+      <p class="eyebrow">公開資料と現地確認をもとに整理しています</p>
       <span class="hero-rule" aria-hidden="true"></span>
-      <h1>磐田市のお寺・寺院<br />データベース</h1>
+      <h1>磐田市の菩提寺・お寺を調べる</h1>
       <p class="brand-name">ATAWI TEMPLE</p>
+      <p class="hero-support-copy">寺院名、読み方、住所、地区、宗派から検索できます。運営：磐田市の富士ヶ丘サービス株式会社</p>
       {firstHeroSlide && (
         <div class="hero-photo-meta" aria-live="polite">
           <a id="hero-slide-link" href={firstHeroSlide.href} data-track-click="temple_detail_click">
@@ -298,6 +303,8 @@ const galleryPhotos = [
     </article>
   </section>
 
+  <HouyouKiseiBridge variant="home" />
+
   <section class="discovery-actions" aria-label="基本の探し方">
     <a class="discovery-card" href="/areas/" data-track-click="temple_area_click">
       <span>地区から探す</span>
@@ -322,6 +329,7 @@ const galleryPhotos = [
     <a href="/temples/">全寺院一覧を見る</a>
     <a href="/map/" data-track-click="temple_map_click">地図から探す</a>
     <a href="/search/">条件検索へ</a>
+    <a href="/guide/houyou-kisei/" data-track-click="houyou_bridge_click">法要・帰省の準備</a>
   </nav>
 
   <section class="filter-band" aria-label="主要な絞り込み">

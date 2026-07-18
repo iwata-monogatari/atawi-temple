@@ -1,4 +1,5 @@
 export const SITE_ORIGIN = "https://temple.atawi.link";
+export const FUDOSAN_KARTE_URL = "https://fudosan.atawi.link/";
 export const FUDOSAN_JIKKA_URL = "https://fudosan.atawi.link/jikka/";
 export const LINE_URL = "https://line.me/R/ti/p/%40531nwfsc";
 
@@ -29,13 +30,21 @@ export type EditorialArticle = {
 };
 
 export function jikkaUrl(campaign: string, content?: string) {
+  return campaignUrl(FUDOSAN_JIKKA_URL, campaign, content);
+}
+
+export function karteUrl(campaign: string, content?: string) {
+  return campaignUrl(FUDOSAN_KARTE_URL, campaign, content);
+}
+
+function campaignUrl(baseUrl: string, campaign: string, content?: string) {
   const params = new URLSearchParams({
     utm_source: "temple",
     utm_medium: "referral",
     utm_campaign: campaign,
   });
   if (content) params.set("utm_content", content);
-  return `${FUDOSAN_JIKKA_URL}?${params.toString()}`;
+  return `${baseUrl}?${params.toString()}`;
 }
 
 export const houyouRows = [
@@ -90,6 +99,85 @@ export const obonChecklist = [
 ];
 
 export const guideArticles: EditorialArticle[] = [
+  {
+    slug: "houyou-kisei",
+    title: "法要で磐田へ帰る前に確認すること",
+    subtitle: "菩提寺・実家・家族の準備を一度に整理する",
+    description: "法要やお墓参りで磐田へ帰る前に、菩提寺の確認、実家の写真、親に聞くこと、帰省後の整理までをまとめたチェックリストです。",
+    category: "法要・帰省",
+    updated: "2026-07-18",
+    priority: "P0",
+    sections: [
+      {
+        heading: "菩提寺について確認すること",
+        paragraphs: [
+          "法要の準備では、まず菩提寺の名前、宗派、住所、電話番号、法要日時、墓地の場所、駐車場、参列人数、会食場所を分けて確認します。分からない項目は推測せず、寺院や親族に確認してください。",
+          "ATAWI TEMPLEでは、磐田市内の寺院名、読み方、住所、地区、宗派を検索できるように整理しています。個別ページで確認できる情報と、寺院へ直接確認すべき情報を分けて見てください。",
+        ],
+        bullets: [
+          "寺院名、読み方、宗派、住所",
+          "法要日時、参列人数、会食場所",
+          "墓地の場所、駐車場、当日の集合場所",
+          "お布施や持ち物は、過去の家の記録と菩提寺の案内を優先",
+        ],
+      },
+      {
+        heading: "実家で写真を撮るもの",
+        paragraphs: [
+          "法要や墓参りで帰省したときは、実家も一度だけ見ておくと、帰省後に家族で話しやすくなります。全部を決める必要はありません。写真とメモだけでも十分です。",
+          "雨漏りや庭木だけを拡大して撮るのではなく、建物全体、道路との関係、隣地境界、玄関、郵便物、仏壇、位牌、固定資産税通知書などを、あとから状況が分かるように残します。",
+        ],
+        bullets: obonChecklist,
+      },
+      {
+        heading: "親に聞くこと",
+        paragraphs: [
+          "「この家をどうするの」と結論を迫る必要はありません。法要の場では親族も集まりやすいため、『この家を今後どうしたいと思っているか、いつか教えて』と一言だけ聞く形で構いません。",
+          "その一言と写真があるだけで、兄弟姉妹の間で話を始めやすくなります。親の気持ち、家の状態、書類の場所を混ぜずに分けて整理してください。",
+        ],
+      },
+      {
+        heading: "帰省後に行うこと",
+        paragraphs: [
+          "帰省後は、撮った写真を兄弟姉妹へ共有し、名義人、固定資産税通知書、相続登記の状況、管理を誰が行うかを確認します。分からない項目が多い場合は、住所から調べる方法を使うと、次に確認すべき点が見えます。",
+          "富士ヶ丘サービスのふじがおか実家カルテは価格査定ではありません。住所をもとに、名義、権利、道路、土地、法令制限、災害リスクなどを宅建士が整理します。売却を決めていない段階でも利用できます。",
+        ],
+        bullets: [
+          "兄弟姉妹へ写真を共有する",
+          "名義人と相続登記の状況を確認する",
+          "固定資産税通知書や権利証の保管場所を確認する",
+          "課題が分からなければ、住所から実家カルテで整理する",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "法要の準備と実家の確認を同じ日にしてよいですか。",
+        answer: "構いません。ただし、法要の場で結論を迫らず、写真と資料を残す程度にとどめると家族で話しやすくなります。",
+      },
+      {
+        question: "売ると決めていない段階で実家カルテを使えますか。",
+        answer: "使えます。ふじがおか実家カルテは価格査定ではなく、住所から今後支障になりそうな点を整理する入口です。",
+      },
+    ],
+    sources: [
+      {
+        title: "ATAWI TEMPLE 寺院検索",
+        url: "/search/",
+        note: "磐田市内寺院の名称、住所、地区、宗派を確認する入口。",
+      },
+      {
+        title: "ふじがおか実家カルテ",
+        url: FUDOSAN_KARTE_URL,
+        note: "住所から名義、道路、法令制限、災害リスクなどを整理する運営元サービス。",
+      },
+    ],
+    bridgeLinks: [
+      { label: "寺院名・地区で検索する", href: "/search/", event: "temple_search_refine" },
+      { label: "実家カルテを申し込む", href: karteUrl("houyou-kisei", "guide"), event: "jikka_cta_click" },
+      { label: "LINEで相談する", href: LINE_URL, event: "line_click" },
+    ],
+  },
   {
     slug: "haka-enpo",
     title: "お墓が遠い方へ",

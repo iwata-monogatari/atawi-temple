@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import HouyouKiseiBridge from "../../components/HouyouKiseiBridge.astro";
 import { getGuideArticle, jikkaUrl, publicGuideArticles } from "../../lib/editorial";
 
 export function getStaticPaths() {
@@ -66,6 +67,8 @@ const faqJson = article.faq ? JSON.stringify({
           </section>
         )}
 
+        <HouyouKiseiBridge variant="guide-bottom" />
+
         <section class="article-section sources-panel">
           <p class="section-number">Sources</p>
           <h2>出典・確認先</h2>
@@ -86,7 +89,12 @@ const faqJson = article.faq ? JSON.stringify({
           <h2>次に読む</h2>
           <div class="side-link-list">
             {article.bridgeLinks.map((link) => (
-              <a href={link.href} data-track-click={link.event}>{link.label}</a>
+              <a
+                href={link.href}
+                data-track-click={link.event}
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+              >{link.label}</a>
             ))}
           </div>
         </section>
