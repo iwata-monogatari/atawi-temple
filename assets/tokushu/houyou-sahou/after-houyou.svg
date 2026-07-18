@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">法要後に残す記録</title>
+  <desc id="desc">お布施、寺院連絡先、墓地、次回年忌、親族連絡を記録する図</desc>
+  <rect width="1200" height="640" fill="#f5f2ec"/>
+  <rect x="58" y="56" width="1084" height="528" rx="20" fill="#ffffff" stroke="#d5c9b8" stroke-width="3"/>
+  <text x="92" y="122" font-family="Yu Gothic, Meiryo, sans-serif" font-size="38" font-weight="700" fill="#27231f">法要後は、次の家族が困らない記録を残す</text>
+  <text x="92" y="166" font-family="Yu Gothic, Meiryo, sans-serif" font-size="22" fill="#665f55">その場で終わらせず、寺・墓・親族・次回予定を一つのメモにまとめる。</text>
+  <g font-family="Yu Gothic, Meiryo, sans-serif">
+    <rect x="110" y="235" width="980" height="260" rx="22" fill="#f8faf7" stroke="#cfd8ca" stroke-width="3"/>
+    <line x1="110" y1="300" x2="1090" y2="300" stroke="#d8ded4" stroke-width="3"/>
+    <line x1="110" y1="365" x2="1090" y2="365" stroke="#d8ded4" stroke-width="3"/>
+    <line x1="110" y1="430" x2="1090" y2="430" stroke="#d8ded4" stroke-width="3"/>
+    <line x1="355" y1="235" x2="355" y2="495" stroke="#d8ded4" stroke-width="3"/>
+    <text x="146" y="278" font-size="23" font-weight="700" fill="#2f5d62">寺院連絡先</text>
+    <text x="390" y="278" font-size="20" fill="#33312c">寺院名、電話、担当者、次の連絡時期</text>
+    <text x="146" y="343" font-size="23" font-weight="700" fill="#826f38">お布施・供物</text>
+    <text x="390" y="343" font-size="20" fill="#33312c">包んだ金額、表書き、寺からの案内</text>
+    <text x="146" y="408" font-size="23" font-weight="700" fill="#7c4b43">墓地・納骨</text>
+    <text x="390" y="408" font-size="20" fill="#33312c">墓地の区画、納骨の有無、写真、地図</text>
+    <text x="146" y="473" font-size="23" font-weight="700" fill="#3f4d71">次回年忌</text>
+    <text x="390" y="473" font-size="20" fill="#33312c">誰の何回忌か、施主候補、親族連絡先</text>
+  </g>
+</svg>

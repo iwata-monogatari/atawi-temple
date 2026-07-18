@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">遠方家族で共有する法要メモ</title>
+  <desc id="desc">施主、親、兄弟姉妹、菩提寺、葬儀社が同じ情報を見るための共有メモの図</desc>
+  <rect width="1200" height="640" fill="#f3f5f2"/>
+  <rect x="58" y="54" width="1084" height="532" rx="20" fill="#ffffff" stroke="#ccd6cc" stroke-width="3"/>
+  <text x="92" y="122" font-family="Yu Gothic, Meiryo, sans-serif" font-size="38" font-weight="700" fill="#222820">法要の情報は、施主一人に閉じ込めない</text>
+  <text x="92" y="166" font-family="Yu Gothic, Meiryo, sans-serif" font-size="22" fill="#5d665b">遠方の兄弟姉妹も同じメモを見られる状態にしておく。</text>
+  <g font-family="Yu Gothic, Meiryo, sans-serif">
+    <rect x="450" y="240" width="300" height="178" rx="18" fill="#2f5d62"/>
+    <text x="600" y="308" font-size="30" font-weight="700" text-anchor="middle" fill="#ffffff">共有メモ</text>
+    <text x="600" y="352" font-size="19" text-anchor="middle" fill="#e8f2f0">寺院名・日時・持ち物</text>
+    <text x="600" y="385" font-size="19" text-anchor="middle" fill="#e8f2f0">お布施・墓地・次回年忌</text>
+    <rect x="118" y="250" width="190" height="88" rx="14" fill="#efe4d4" stroke="#cdb99d" stroke-width="3"/>
+    <text x="213" y="304" font-size="24" font-weight="700" text-anchor="middle" fill="#4b3928">親世代</text>
+    <rect x="118" y="395" width="190" height="88" rx="14" fill="#f2dddd" stroke="#d5aeaa" stroke-width="3"/>
+    <text x="213" y="449" font-size="24" font-weight="700" text-anchor="middle" fill="#59302d">兄弟姉妹</text>
+    <rect x="892" y="250" width="190" height="88" rx="14" fill="#e8edf8" stroke="#abb9da" stroke-width="3"/>
+    <text x="987" y="304" font-size="24" font-weight="700" text-anchor="middle" fill="#2d3a58">菩提寺</text>
+    <rect x="892" y="395" width="190" height="88" rx="14" fill="#eef0e8" stroke="#b8beaa" stroke-width="3"/>
+    <text x="987" y="449" font-size="24" font-weight="700" text-anchor="middle" fill="#4a5340">葬儀社等</text>
+    <g stroke="#6b746d" stroke-width="5" stroke-linecap="round" fill="none">
+      <path d="M316 294h118"/><path d="M420 277l22 17-22 17"/>
+      <path d="M316 439h118"/><path d="M420 422l22 17-22 17"/>
+      <path d="M884 294H766"/><path d="M780 277l-22 17 22 17"/>
+      <path d="M884 439H766"/><path d="M780 422l-22 17 22 17"/>
+    </g>
+    <text x="92" y="548" font-size="20" fill="#343931">写真で残し、ファイル名やメモに日付を入れる。後から見た人が状況を再現できることが大切。</text>
+  </g>
+</svg>
