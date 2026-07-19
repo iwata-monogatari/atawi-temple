@@ -10,7 +10,14 @@ import {
   getStatusLabel,
 } from "../../lib/temples";
 
+import { allRefurbFacts, getGradeLabel } from "../../lib/refurb";
+
 const statusCounts = countTemplesByStatus();
+const refurbFacts = allRefurbFacts();
+const gradeCounts = { T1: 0, T2: 0, T3: 0 } as Record<string, number>;
+for (const facts of refurbFacts) {
+  if (facts.grade in gradeCounts) gradeCounts[facts.grade] += 1;
+}
 const districtCounts = countTemplesByDistrict();
 const sectCounts = countTemplesBySect();
 const unknownDistrictCount = countUnassignedDistrictTemples();
@@ -56,6 +63,30 @@ const sectTotal = sectCounts.reduce((total, sect) => total + sect.count, 0);
       </article>
     </div>
   </section>
+
+  {refurbFacts.length > 0 && (
+    <section class="section">
+      <h2>ページ充実度（品質等級）</h2>
+      <p class="small">
+        2026年7月の全面改修で再判定した等級です。T1（充実）＝本文6,000字以上・出典12件以上、
+        T2（標準）＝4,500字以上・出典8件以上、T3（基礎情報）＝2,500字以上・出典5件以上。
+      </p>
+      <div class="stats-grid">
+        <article class="stat-card">
+          <span>全面改修済み</span>
+          <strong>{refurbFacts.length}</strong>
+          <small>個別ページのある寺院のうち改修完了した件数</small>
+        </article>
+        {(["T1", "T2", "T3"] as const).map((grade) => (
+          <article class="stat-card">
+            <span>{grade}（{getGradeLabel(grade)}）</span>
+            <strong>{gradeCounts[grade]}</strong>
+            <small>機械検証（出典・字数・表記）を通過</small>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
 
   <section class="section two-column">
     <div>
