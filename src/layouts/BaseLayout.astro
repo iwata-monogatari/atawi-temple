@@ -1,5 +1,6 @@
 ---
 import FujigaokaAnalytics from "../components/FujigaokaAnalytics.astro";
+import { fromTempleUrl } from "../lib/editorial";
 import "../styles/global.css";
 
 interface Props {
@@ -20,6 +21,7 @@ const {
 const siteUrl = Astro.site?.toString().replace(/\/+$/, "") || "https://temple.atawi.link";
 const canonicalUrl = new URL(Astro.url.pathname, siteUrl).toString();
 const ogImageUrl = new URL(ogImage, siteUrl).toString();
+const footerFudosanUrl = fromTempleUrl("site_footer");
 const pageStructuredData = Array.isArray(structuredData) ? structuredData : [structuredData];
 const sharedStructuredData = [
   {
@@ -105,6 +107,12 @@ const structuredDataItems = [...sharedStructuredData, ...pageStructuredData].fil
         <a href="/guide/houyou-kisei/">法要・帰省の確認</a>
         <a href="/guide/">基礎ガイド</a>
         <a href="/tokushu/">特集・読みもの</a>
+        <a
+          href={footerFudosanUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-track-click="to_fudosan_click"
+        >実家・空き家の相談</a>
         <a href="/editorial-policy/">編集方針</a>
         <a href="/correction/">情報提供掲示板</a>
         <a href="/privacy/">プライバシーポリシー</a>

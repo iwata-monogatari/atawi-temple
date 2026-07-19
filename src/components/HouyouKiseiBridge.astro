@@ -1,4 +1,6 @@
 ---
+import { fromTempleUrl } from "../lib/editorial";
+
 interface Props {
   variant?: "temple-top" | "temple-mid" | "temple-bottom" | "home" | "index-card" | "guide-bottom";
   compact?: boolean;
@@ -13,6 +15,9 @@ const isIndexCard = variant === "index-card";
 const guideUrl = "/guide/houyou-kisei/";
 const templeDetailGuideUrl = "/guide/houyou-kisei/?from=temple-detail";
 const searchUrl = "/search/";
+const templeDetailFudosanUrl = fromTempleUrl("temple_detail_top");
+const homeFudosanUrl = fromTempleUrl("home_bridge");
+const indexCardFudosanUrl = fromTempleUrl("index_card");
 ---
 
 <section
@@ -31,11 +36,22 @@ const searchUrl = "/search/";
         菩提寺の名前、住所、宗派を確認できたら、同じ帰省で墓、仏壇、実家も一度だけ見ておくと、
         次回以降の家族の負担を減らせます。
       </p>
-      <p>売る、残すを決めるためではなく、今の状態を記録するための確認メモです。</p>
+      <p>売る、残すを今すぐ決める必要はありません。名義、道路、管理、空き家化のリスクを先に整理できます。</p>
       <div class="houyou-bridge-actions">
         <a class="button-link" href={templeDetailGuideUrl} data-track-click="houyou_bridge_click">法要・帰省の確認メモを見る</a>
+        <a
+          class="button-link secondary-button"
+          href={templeDetailFudosanUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-track-click="to_fudosan_click"
+        >
+          実家・空き家の相談窓口へ<span class="external-mark">外部</span>
+        </a>
       </div>
-      <p class="houyou-bridge-note">この寺院ページから運営元の不動産サイトへ直接移動するリンクは置いていません。</p>
+      <p class="houyou-bridge-note">
+        運営元の不動産サービスへ移動します。掲載寺院との提携・紹介関係はありません。寺院への法要・供養相談は寺院へ直接確認してください。
+      </p>
     </>
   )}
 
@@ -87,8 +103,18 @@ const searchUrl = "/search/";
       </ul>
       <div class="houyou-bridge-actions">
         <a class="button-link" href={guideUrl} data-track-click="houyou_bridge_click">法要と実家の確認メモを見る</a>
+        <a
+          class="button-link secondary-button"
+          href={homeFudosanUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-track-click="to_fudosan_click"
+        >
+          実家の確認を相談する<span class="external-mark">外部</span>
+        </a>
         <a class="button-link secondary-button" href={searchUrl} data-track-click="temple_search_refine">寺院名・宗派から探す</a>
       </div>
+      <p class="houyou-bridge-note">運営元の不動産サービスへ移動します。掲載寺院との提携・紹介関係はありません。</p>
     </>
   )}
 
@@ -99,6 +125,15 @@ const searchUrl = "/search/";
       <p>寺院名、住所、宗派を確認したあと、同じ帰省で家族が見ておく項目を整理します。</p>
       <div class="houyou-bridge-actions">
         <a class="button-link" href={guideUrl} data-track-click="houyou_bridge_click">法要・帰省の確認メモ</a>
+        <a
+          class="button-link secondary-button"
+          href={indexCardFudosanUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-track-click="to_fudosan_click"
+        >
+          実家・空き家の相談<span class="external-mark">外部</span>
+        </a>
       </div>
     </>
   )}
