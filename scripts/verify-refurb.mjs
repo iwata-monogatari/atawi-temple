@@ -12,8 +12,16 @@ const onlySlug = process.argv.includes("--slug")
   ? process.argv[process.argv.indexOf("--slug") + 1]
   : null;
 
-// TLS証明書エラー等が既知のドメイン（出典としては注記付きで許容、警告扱い）
-const HTTP_WARN_ONLY_HOSTS = new Set(["enshu33.com", "www.enshu33.com"]);
+// TLS証明書エラー・bot遮断・一時ダウン等が既知のドメイン（出典としては注記付きで許容、警告扱い）
+// enshu33=SSL証明書エラー / facebook=bot遮断(400) / sotozen-navi=2026-07-19時点サイトダウン /
+// linkdata=不安定(500) / omairi.club=bot遮断(403)
+const HTTP_WARN_ONLY_HOSTS = new Set([
+  "enshu33.com", "www.enshu33.com",
+  "facebook.com", "www.facebook.com", "m.facebook.com",
+  "sotozen-navi.com", "www.sotozen-navi.com",
+  "linkdata.org",
+  "omairi.club",
+]);
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36";
 
 const temples = await loadJson("data/temples.json");
