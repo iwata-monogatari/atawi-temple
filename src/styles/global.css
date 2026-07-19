@@ -3584,7 +3584,33 @@ th {
 .same-district-grid a {
   display: grid;
   gap: 5px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.related-temple-card-body {
+  display: grid;
+  gap: 5px;
+  align-content: start;
   padding: 16px;
+}
+
+.related-temple-photo {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background: #e8eee5;
+}
+
+.related-temple-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.18s ease;
+}
+
+.related-temple-card:hover .related-temple-photo img {
+  transform: scale(1.04);
 }
 
 .same-district-grid em {

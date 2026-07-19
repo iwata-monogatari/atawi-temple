@@ -121,6 +121,13 @@ const sameSectTemples = allTemples
     a.name.localeCompare(b.name, "ja")
   )
   .slice(0, 5);
+function getRelatedTemplePhoto(item: typeof allTemples[number]) {
+  const itemMedia = getTempleMediaBySlug(item.slug);
+  const itemPhotos = getVisibleTempleMediaPhotos(item.slug);
+  return itemMedia
+    ? itemPhotos.find((photo) => photo.src === itemMedia.hero_image) || itemPhotos[0] || null
+    : null;
+}
 const currentLatLng = getTempleLatLng(temple);
 const nearbyTemples = currentLatLng
   ? allTemples
@@ -134,6 +141,18 @@ const nearbyTemples = currentLatLng
       .slice(0, 5)
       .map((item) => item.temple)
   : [];
+const sameDistrictTempleCards = sameDistrictTemples.map((item) => ({
+  temple: item,
+  photo: getRelatedTemplePhoto(item),
+}));
+const sameSectTempleCards = sameSectTemples.map((item) => ({
+  temple: item,
+  photo: getRelatedTemplePhoto(item),
+}));
+const nearbyTempleCards = nearbyTemples.map((item) => ({
+  temple: item,
+  photo: getRelatedTemplePhoto(item),
+}));
 const templeImage = coverPhoto?.src || "/assets/temples/kokubunji-mitsuke/hondo.webp";
 const siteUrl = "https://temple.atawi.link";
 const seoLocation = district ? `磐田市${districtName}` : "磐田市内";
@@ -705,11 +724,22 @@ const showHouyouBridge = temple.status === "existing";
           <a href={districtUrl}>{districtName}地区の寺院をもっと見る</a>
         </div>
         <div class="same-district-grid">
-          {sameDistrictTemples.map((item) => (
-            <a href={`/temples/${item.slug}/`} data-track-click="temple_related_temple_click">
-              <span>{getTempleStatusLabel(item)}</span>
-              <strong>{item.name}</strong>
-              <em>{item.area} / {item.sect}</em>
+          {sameDistrictTempleCards.map(({ temple: item, photo }) => (
+            <a
+              class:list={["related-temple-card", { "related-temple-card--with-photo": photo }]}
+              href={`/temples/${item.slug}/`}
+              data-track-click="temple_related_temple_click"
+            >
+              {photo && (
+                <div class="related-temple-photo">
+                  <img src={photo.src} alt={photo.alt || `${item.name}の代表写真`} loading="lazy" />
+                </div>
+              )}
+              <div class="related-temple-card-body">
+                <span>{getTempleStatusLabel(item)}</span>
+                <strong>{item.name}</strong>
+                <em>{item.area} / {item.sect}</em>
+              </div>
             </a>
           ))}
         </div>
@@ -725,11 +755,22 @@ const showHouyouBridge = temple.status === "existing";
           {currentSectSlug && <a href={`/sects/${currentSectSlug}/`}>磐田市の{currentSectName}の寺院一覧</a>}
         </div>
         <div class="same-district-grid">
-          {sameSectTemples.map((item) => (
-            <a href={`/temples/${item.slug}/`} data-track-click="temple_related_temple_click">
-              <span>{getTempleStatusLabel(item)}</span>
-              <strong>{item.name}</strong>
-              <em>{getDistrictName(item.district_id)} / {item.sect}</em>
+          {sameSectTempleCards.map(({ temple: item, photo }) => (
+            <a
+              class:list={["related-temple-card", { "related-temple-card--with-photo": photo }]}
+              href={`/temples/${item.slug}/`}
+              data-track-click="temple_related_temple_click"
+            >
+              {photo && (
+                <div class="related-temple-photo">
+                  <img src={photo.src} alt={photo.alt || `${item.name}の代表写真`} loading="lazy" />
+                </div>
+              )}
+              <div class="related-temple-card-body">
+                <span>{getTempleStatusLabel(item)}</span>
+                <strong>{item.name}</strong>
+                <em>{getDistrictName(item.district_id)} / {item.sect}</em>
+              </div>
             </a>
           ))}
         </div>
@@ -745,11 +786,22 @@ const showHouyouBridge = temple.status === "existing";
           <a href={mapPageUrl} data-track-click="temple_map_click">地図で見る</a>
         </div>
         <div class="same-district-grid">
-          {nearbyTemples.map((item) => (
-            <a href={`/temples/${item.slug}/`} data-track-click="temple_related_temple_click">
-              <span>{getTempleStatusLabel(item)}</span>
-              <strong>{item.name}</strong>
-              <em>{getDistrictName(item.district_id)} / {item.sect}</em>
+          {nearbyTempleCards.map(({ temple: item, photo }) => (
+            <a
+              class:list={["related-temple-card", { "related-temple-card--with-photo": photo }]}
+              href={`/temples/${item.slug}/`}
+              data-track-click="temple_related_temple_click"
+            >
+              {photo && (
+                <div class="related-temple-photo">
+                  <img src={photo.src} alt={photo.alt || `${item.name}の代表写真`} loading="lazy" />
+                </div>
+              )}
+              <div class="related-temple-card-body">
+                <span>{getTempleStatusLabel(item)}</span>
+                <strong>{item.name}</strong>
+                <em>{getDistrictName(item.district_id)} / {item.sect}</em>
+              </div>
             </a>
           ))}
         </div>
