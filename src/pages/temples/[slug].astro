@@ -292,7 +292,7 @@ const templeStickyFudosanUrl = fromTempleUrl("temple_detail_sticky");
       </dl>
       <div class="temple-primary-actions" aria-label="寺院ページ上部の導線">
         <a class="button-link" href={districtUrl}>同じ地区の寺院を見る</a>
-        <a class="button-link secondary-button" href={mapPageUrl} data-track-click="temple_map_click">地図で見る</a>
+        <a class="button-link secondary-button" href={mapPageUrl} data-track-click="temple_map_click">住所一覧で見る</a>
         <a class="button-link secondary-button" href="/temples/">寺院一覧へ戻る</a>
       </div>
       {showHouyouBridge && (
@@ -823,7 +823,7 @@ const templeStickyFudosanUrl = fromTempleUrl("temple_detail_sticky");
             <p class="eyebrow">Nearby</p>
             <h2>近くのお寺</h2>
           </div>
-          <a href={mapPageUrl} data-track-click="temple_map_click">地図で見る</a>
+          <a href={mapPageUrl} data-track-click="temple_map_click">住所一覧で見る</a>
         </div>
         <div class="same-district-grid">
           {nearbyTempleCards.map(({ temple: item, photo }) => (

@@ -5,21 +5,15 @@ import {
   allTemples,
   countTemplesBySect,
   countTemplesByStatus,
-  countTemplesWithPhotos,
-  getDistrictColor,
   getDistrictName,
   getSectGroupName,
   getStatusLabel,
-  getTempleLatLng,
   getTempleMediaBySlug,
   getTempleStatusLabel,
   googleMapsUrl,
-  googleMapsWebEmbedUrl,
   hasDetailPage,
 } from "../lib/temples";
 
-const mapsApiKey = import.meta.env.PUBLIC_GOOGLE_MAPS_BROWSER_KEY || "";
-const mapId = import.meta.env.PUBLIC_GOOGLE_MAPS_MAP_ID || "DEMO_MAP_ID";
 const sects = countTemplesBySect();
 const statusCounts = countTemplesByStatus();
 const statuses = Object.keys(statusCounts).map((status) => ({
@@ -32,7 +26,6 @@ const quickMapDistricts = quickMapDistrictIds
   .map((districtId) => allDistricts.find((district) => district.district_id === districtId))
   .filter((district): district is (typeof allDistricts)[number] => Boolean(district));
 const mapItems = allTemples.map((temple) => {
-  const latLng = getTempleLatLng(temple);
   const media = getTempleMediaBySlug(temple.slug);
   return {
     slug: temple.slug,
@@ -41,32 +34,29 @@ const mapItems = allTemples.map((temple) => {
     address: temple.address,
     districtId: temple.district_id || "__unassigned",
     districtName: getDistrictName(temple.district_id),
-    districtColor: getDistrictColor(temple.district_id),
     sect: temple.sect,
     sectGroup: getSectGroupName(temple.sect),
     status: temple.status,
     statusLabel: getTempleStatusLabel(temple),
-    lat: latLng?.lat ?? null,
-    lng: latLng?.lng ?? null,
     detailUrl: hasDetailPage(temple) ? `/temples/${temple.slug}/` : null,
     mapUrl: googleMapsUrl(temple),
     image: media?.hero_image ?? media?.photos?.[0]?.src ?? null,
     imageAlt: media?.photos?.[0]?.alt ?? `${temple.name}の写真`,
   };
 });
-const markerCount = mapItems.filter((item) => item.lat !== null && item.lng !== null).length;
-const fallbackMapEmbedUrl = googleMapsWebEmbedUrl();
+const addressCount = allTemples.filter((temple) => temple.address).length;
+const googleMapsLinkCount = mapItems.filter((item) => item.mapUrl).length;
 const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
 ---
 
 <BaseLayout
-  title="地図から探す｜ATAWI TEMPLE"
-  description="磐田市内の寺院を地区、宗派、状態で絞り込み、地図と一覧から探せるATAWI TEMPLEの地図ページです。"
+  title="住所一覧・Googleマップで開く｜ATAWI TEMPLE"
+  description="磐田市内の寺院を地区、宗派、状態で絞り込み、住所一覧とGoogleマップリンクから確認できるATAWI TEMPLEの一覧ページです。"
 >
   <section class="page-title">
-    <p class="eyebrow">Map</p>
-    <h1>地図から探す</h1>
-    <p>地区カラーで寺院の位置を確認し、近くのお寺や現地確認ルートを探せるページです。</p>
+    <p class="eyebrow">Address List</p>
+    <h1>住所一覧・Googleマップで開く</h1>
+    <p>地区・宗派・状態で絞り込み、各寺院の住所とGoogleマップリンクを一覧で確認できます。</p>
   </section>
 
   <section class="section">
@@ -77,27 +67,25 @@ const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
         <small>寺院・関連宗教法人の総数</small>
       </article>
       <article class="stat-card">
-        <span>地図座標登録</span>
-        <strong>{markerCount}</strong>
-        <small>lat/lng登録済みの件数</small>
+        <span>住所掲載</span>
+        <strong>{addressCount}</strong>
+        <small>所在地を確認できる件数</small>
       </article>
       <article class="stat-card">
-        <span>座標登録待ち</span>
-        <strong>{allTemples.length - markerCount}</strong>
-        <small>ジオコーディング後に地図へ反映</small>
+        <span>地区分類</span>
+        <strong>{allDistricts.length}</strong>
+        <small>9地区の分類で絞り込み</small>
       </article>
       <article class="stat-card">
-        <span>現地写真掲載</span>
-        <strong>{countTemplesWithPhotos()}</strong>
-        <small>写真データから自動集計</small>
+        <span>Googleマップリンク</span>
+        <strong>{googleMapsLinkCount}</strong>
+        <small>各寺院を外部地図で開く</small>
       </article>
     </div>
   </section>
 
   <section
     class="section temple-map-shell"
-    data-map-api-key={mapsApiKey}
-    data-map-id={mapId}
   >
     <div class="map-quick-filter" aria-label="主要地区フィルタ">
       <span>地区フィルタ</span>
@@ -137,20 +125,8 @@ const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
       <button type="submit" data-track-click="temple_search_refine">絞り込み</button>
     </form>
 
-    <div id="temple-map-canvas" class="temple-map-canvas" data-fallback-map-src={fallbackMapEmbedUrl}>
-      <iframe
-        class="map-fallback-frame"
-        title="磐田市寺院のGoogleマップ"
-        src={fallbackMapEmbedUrl}
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen
-      ></iframe>
-    </div>
-    <p class="map-runtime-note" hidden></p>
-
     <div class="map-list-heading">
-      <h2>寺院リスト</h2>
+      <h2>住所一覧</h2>
       <span id="map-result-count" class="small" aria-live="polite"></span>
     </div>
     <div id="map-results" class="map-result-grid"></div>
@@ -159,21 +135,12 @@ const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
 
   <script is:inline>
     // @ts-nocheck
-    const mapShell = document.querySelector("[data-map-api-key]");
     const mapForm = document.querySelector("#map-filter-form");
-    const mapCanvas = document.querySelector("#temple-map-canvas");
     const mapResults = document.querySelector("#map-results");
     const mapResultCount = document.querySelector("#map-result-count");
-    const mapRuntimeNoteEl = document.querySelector(".map-runtime-note");
     const mapQuickButtons = document.querySelectorAll("[data-map-district]");
     const mapDataEl = document.querySelector("#map-temple-data");
     const mapItems = JSON.parse(mapDataEl?.textContent || "[]");
-    const apiKey = mapShell?.dataset.mapApiKey || "";
-    const mapId = mapShell?.dataset.mapId || "DEMO_MAP_ID";
-    const hasCoordinates = mapItems.some((item) => Number.isFinite(item.lat) && Number.isFinite(item.lng));
-    let googleMap = null;
-    let infoWindow = null;
-    const markerRecords = [];
 
     function escapeHtml(value) {
       return String(value || "")
@@ -259,120 +226,12 @@ const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
       }).join("");
     }
 
-    function markerContent(item) {
-      const pin = document.createElement("button");
-      pin.type = "button";
-      pin.className = item.status === "unknown" ? "temple-map-marker temple-map-marker--hollow" : "temple-map-marker";
-      pin.style.setProperty("--pin-color", item.districtColor);
-      pin.setAttribute("aria-label", item.name);
-      return pin;
-    }
-
-    function updateMarkers(items) {
-      if (!googleMap) return;
-      const visible = new Set(items.map((item) => item.slug));
-      const bounds = new google.maps.LatLngBounds();
-      let visibleCount = 0;
-      for (const record of markerRecords) {
-        const shouldShow = visible.has(record.item.slug);
-        record.marker.map = shouldShow ? googleMap : null;
-        if (shouldShow) {
-          bounds.extend(record.marker.position);
-          visibleCount += 1;
-        }
-      }
-      if (visibleCount > 0) {
-        googleMap.fitBounds(bounds, 72);
-      }
-    }
-
     function applyFilters() {
       const items = filteredItems();
       const values = valuesFromForm();
       writeMapParams(values);
       updateQuickDistrictState(values.district);
       renderList(items);
-      updateMarkers(items);
-    }
-
-    function setMapRuntimeNote(message) {
-      if (!mapRuntimeNoteEl) return;
-      if (message) {
-        mapRuntimeNoteEl.textContent = message;
-        mapRuntimeNoteEl.hidden = false;
-      } else {
-        mapRuntimeNoteEl.textContent = "";
-        mapRuntimeNoteEl.hidden = true;
-      }
-    }
-    function quotaBlockedMessage(reason) {
-      if (reason === "monthly_cap_reached") return "地図の詳細表示は一時停止中です。寺院リストのGoogleマップリンクをご利用ください。";
-      if (reason === "disabled" || reason === "cap_not_configured") return "地図の詳細表示は一時停止中です。寺院リストから各寺院の場所を確認できます。";
-      return "地図の詳細表示を利用できません。寺院リストから各寺院の場所を確認できます。";
-    }
-
-    async function reserveDynamicMapLoad() {
-      try {
-        const response = await fetch("/api/maps-quota", {
-          method: "POST",
-          headers: { "content-type": "application/json" },
-          body: JSON.stringify({ feature: "dynamic-map" }),
-          cache: "no-store",
-        });
-        if (!response.ok) return { allowed: false, reason: "quota_request_failed" };
-        return response.json();
-      } catch {
-        return { allowed: false, reason: "quota_request_failed" };
-      }
-    }
-
-    async function loadGoogleMap() {
-      if (!apiKey || !hasCoordinates || !mapCanvas) return;
-      const quota = await reserveDynamicMapLoad();
-      if (!quota.allowed) {
-        setMapRuntimeNote(quotaBlockedMessage(quota.reason));
-        return;
-      }
-      await new Promise((resolve, reject) => {
-        const script = document.createElement("script");
-        script.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(apiKey)}&v=weekly&loading=async`;
-        script.async = true;
-        script.onload = resolve;
-        script.onerror = reject;
-        document.head.appendChild(script);
-      });
-      const { Map, InfoWindow } = await google.maps.importLibrary("maps");
-      const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
-      mapCanvas.innerHTML = "";
-      googleMap = new Map(mapCanvas, {
-        center: { lat: 34.717, lng: 137.851 },
-        zoom: 12,
-        mapId,
-        mapTypeControl: false,
-        streetViewControl: false,
-        fullscreenControl: true,
-      });
-      infoWindow = new InfoWindow();
-      for (const item of mapItems.filter((entry) => Number.isFinite(entry.lat) && Number.isFinite(entry.lng))) {
-        const marker = new AdvancedMarkerElement({
-          map: googleMap,
-          position: { lat: item.lat, lng: item.lng },
-          title: item.name,
-          content: markerContent(item),
-        });
-        marker.addListener("click", () => {
-          infoWindow.setContent(`
-            <div class="map-info-window">
-              <strong>${escapeHtml(item.name)}</strong>
-              <span>${escapeHtml(item.districtName)} / ${escapeHtml(item.sectGroup)}</span>
-              <a href="${escapeHtml(item.detailUrl || item.mapUrl)}" ${item.detailUrl ? `data-track-click="temple_detail_click"` : ""}>${item.detailUrl ? "詳細ページ" : "Googleマップ"}</a>
-            </div>
-          `);
-          infoWindow.open({ map: googleMap, anchor: marker });
-        });
-        markerRecords.push({ item, marker });
-      }
-      applyFilters();
     }
 
     if (mapForm) {
@@ -391,13 +250,5 @@ const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
     });
     readMapParams();
     applyFilters();
-    loadGoogleMap().catch(() => {
-      if (mapCanvas) {
-        const fallbackMapSrc = mapCanvas.dataset.fallbackMapSrc || "";
-        mapCanvas.innerHTML = fallbackMapSrc
-          ? `<iframe class="map-fallback-frame" title="磐田市寺院のGoogleマップ" src="${escapeHtml(fallbackMapSrc)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>`
-          : `<div class="map-placeholder"><strong>地図を読み込めませんでした</strong><span>下の寺院リストから各寺院の地図を開けます。</span></div>`;
-      }
-    });
   </script>
 </BaseLayout>
