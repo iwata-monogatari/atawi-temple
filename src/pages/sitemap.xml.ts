@@ -1,5 +1,5 @@
 import type { APIRoute } from "astro";
-import { guideArticles, tokushuArticles } from "../lib/editorial";
+import { publicGuideArticles, tokushuArticles } from "../lib/editorial";
 import { allDistricts, allSects, allTempleUpdates, allTemples, hasDetailPage } from "../lib/temples";
 
 const staticPaths = [
@@ -30,7 +30,7 @@ export const GET: APIRoute = ({ site }) => {
     ...staticPaths.map((path) => ({ path, lastmod: latestSiteDate })),
     ...allDistricts.map((district) => ({ path: `/areas/${district.slug}/`, lastmod: latestSiteDate })),
     ...allSects.map((sect) => ({ path: `/sects/${sect.slug}/`, lastmod: latestSiteDate })),
-    ...guideArticles.map((article) => ({ path: `/guide/${article.slug}/`, lastmod: latestSiteDate })),
+    ...publicGuideArticles.map((article) => ({ path: `/guide/${article.slug}/`, lastmod: latestSiteDate })),
     ...tokushuArticles.map((article) => ({ path: `/tokushu/${article.slug}/`, lastmod: latestSiteDate })),
     ...allTemples.filter(hasDetailPage).map((temple) => ({
       path: `/temples/${temple.slug}/`,
