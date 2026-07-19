@@ -301,14 +301,15 @@ button,
 }
 
 .button-link.cta-hot {
-  background: #c75812;
-  color: #fff;
-  box-shadow: 0 8px 18px rgba(199, 88, 18, 0.22);
+  border: 1px solid rgba(138, 90, 38, 0.32);
+  background: rgba(255, 253, 248, 0.86);
+  color: #6d4a22;
+  box-shadow: none;
 }
 
 .button-link.cta-hot .external-mark {
-  border-color: rgba(255, 255, 255, 0.45);
-  color: #fff;
+  border-color: rgba(109, 74, 34, 0.28);
+  color: #6d4a22;
 }
 
 .seasonal-banner {
@@ -317,13 +318,13 @@ button,
   gap: 12px;
   align-items: center;
   width: min(1100px, calc(100% - 32px));
-  margin: 0 auto 14px;
-  border: 1px solid #d06d2a;
+  margin: 0 auto 10px;
+  border: 1px solid rgba(71, 102, 66, 0.18);
   border-radius: 8px;
-  background: #fff3e8;
-  color: #8c3406;
-  padding: 10px 12px 10px 16px;
-  box-shadow: 0 10px 22px rgba(140, 52, 6, 0.1);
+  background: rgba(255, 253, 248, 0.78);
+  color: var(--muted);
+  padding: 8px 12px 8px 14px;
+  box-shadow: none;
 }
 
 .seasonal-banner[hidden] {
@@ -331,18 +332,20 @@ button,
 }
 
 .seasonal-banner a {
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
-  color: #8c3406;
+  color: var(--accent-strong);
+  font-size: 0.92rem;
+  line-height: 1.55;
 }
 
 .seasonal-banner button {
-  width: 34px;
-  height: 34px;
-  border: 1px solid #efc4a4;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--line);
   border-radius: 50%;
   background: #fff;
-  color: #8c3406;
+  color: var(--muted);
   padding: 0;
   line-height: 1;
 }
@@ -2793,13 +2796,35 @@ th {
 }
 
 @media (max-width: 820px) {
-  .site-header,
   .two-column {
     display: block;
   }
 
+  .site-header {
+    display: grid;
+    gap: 14px;
+    padding: 16px;
+  }
+
   .site-header nav {
-    margin-top: 16px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 0;
+  }
+
+  .site-header nav a {
+    display: flex;
+    min-height: 42px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 253, 248, 0.76);
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.88rem;
+    line-height: 1.3;
   }
 
   .hero {
@@ -3577,17 +3602,17 @@ th {
   display: grid;
   gap: 5px;
   margin-top: 18px;
-  border: 2px solid #c75812;
+  border: 1px solid rgba(47, 93, 98, 0.18);
   border-radius: 8px;
-  background: #fff8f2;
+  background: rgba(255, 253, 248, 0.78);
   color: #1f2f37;
   padding: 16px 18px;
   text-decoration: none;
-  box-shadow: 0 12px 24px rgba(199, 88, 18, 0.12);
+  box-shadow: none;
 }
 
 .temple-jikka-primary-cta span {
-  color: #a74508;
+  color: #2f5d62;
   font-size: 0.82rem;
   font-weight: 800;
 }
@@ -3612,7 +3637,7 @@ th {
   align-items: center;
   margin-top: 20px;
   margin-bottom: 22px;
-  border: 1px solid rgba(199, 88, 18, 0.28);
+  border: 1px solid rgba(47, 93, 98, 0.18);
   border-radius: 8px;
   background: #fffdf8;
   padding: 22px;
@@ -3639,7 +3664,7 @@ th {
 }
 
 .temple-jikka-checklist li {
-  border-left: 4px solid #c75812;
+  border-left: 3px solid rgba(47, 93, 98, 0.34);
   border-radius: 6px;
   background: #fff;
   padding: 10px 12px;
@@ -4025,23 +4050,11 @@ th {
   }
 
   .temple-profile:has(.temple-jikka-sticky-cta) {
-    padding-bottom: 92px;
+    padding-bottom: 0;
   }
 
   .temple-jikka-sticky-cta {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 50;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 10px;
-    align-items: center;
-    border-top: 1px solid rgba(199, 88, 18, 0.32);
-    background: rgba(255, 253, 248, 0.98);
-    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
-    box-shadow: 0 -12px 24px rgba(47, 75, 43, 0.14);
+    display: none;
   }
 
   .temple-jikka-sticky-cta div {

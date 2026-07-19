@@ -225,7 +225,7 @@ export const guideArticles: EditorialArticle[] = [
           "法要、親の施設入居、相続などをきっかけに始まる実家の相談について、家、土地、荷物、管理、家族の気持ちを分けて整理しています。",
         ],
         cta: {
-          label: "8月無料チェックを見る",
+          label: "関連サービスを見る",
           href: fromTempleUrl("houyou_guide"),
           event: "to_fudosan_click",
           note: "査定ではありません。価格を出す前に、名義、道路、土地、法令制限、災害リスクなどを整理します。",
@@ -315,7 +315,7 @@ export const guideArticles: EditorialArticle[] = [
       },
     ],
     bridgeLinks: [
-      { label: "8月無料チェックを見る", href: fromTempleUrl("houyou_guide"), event: "to_fudosan_click" },
+      { label: "関連サービスを見る", href: fromTempleUrl("houyou_guide"), event: "to_fudosan_click" },
     ],
   },
   {
@@ -425,7 +425,7 @@ export const guideArticles: EditorialArticle[] = [
     ],
     bridgeLinks: [
       { label: "お墓が遠い方の選択肢を見る", href: "/guide/haka-enpo/" },
-      { label: "8月無料チェックを見る", href: fromTempleUrl("houyou_guide"), event: "to_fudosan_click" },
+      { label: "関連サービスを見る", href: fromTempleUrl("houyou_guide"), event: "to_fudosan_click" },
     ],
   },
   {
@@ -457,7 +457,7 @@ export const guideArticles: EditorialArticle[] = [
           "ATAWI TEMPLEを運営する富士ヶ丘サービス株式会社では、写真では分からない名義、接道、土地資料、法令制限、災害リスクなどを、住所から調べて整理しています。",
         ],
         cta: {
-          label: "8月無料チェックを見る",
+          label: "関連サービスを見る",
           href: fromTempleUrl("kisei_check"),
           event: "to_fudosan_click",
           note: "運営元の不動産サービスへ移動します。査定申込みではありません。",
