@@ -264,5 +264,425 @@
     "temple_slug": "senkoji-mitsuke",
     "title": "宣光寺の歴史・文化財情報を追記しました",
     "summary": "県指定文化財の木造地蔵菩薩坐像・木造毘沙門天立像、徳川家康施主と伝わる天正15年（1587年）の梵鐘（市指定）、遠州三十三観音第17番の札所情報を出典付きで追記しました。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-anrakuji-tateno",
+    "date": "2026-07-19",
+    "temple_slug": "anrakuji-tateno",
+    "title": "安楽寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-anzenji-iwai",
+    "date": "2026-07-19",
+    "temple_slug": "anzenji-iwai",
+    "title": "安全寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-chionsai-hitokoto",
+    "date": "2026-07-19",
+    "temple_slug": "chionsai-hitokoto",
+    "title": "智恩齋のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-daienji-kamo",
+    "date": "2026-07-19",
+    "temple_slug": "daienji-kamo",
+    "title": "大圓寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-daijoin-nakaizumi",
+    "date": "2026-07-19",
+    "temple_slug": "daijoin-nakaizumi",
+    "title": "大乗院のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-daisenji-toyohamanakano",
+    "date": "2026-07-19",
+    "temple_slug": "daisenji-toyohamanakano",
+    "title": "大泉寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T3・基礎情報）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-eianji-shikiji",
+    "date": "2026-07-19",
+    "temple_slug": "eianji-shikiji",
+    "title": "永安寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T3・基礎情報）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-eifukuji-nishikaizuka",
+    "date": "2026-07-19",
+    "temple_slug": "eifukuji-nishikaizuka",
+    "title": "永福寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-fukushoji-nishihiramatsu",
+    "date": "2026-07-19",
+    "temple_slug": "fukushoji-nishihiramatsu",
+    "title": "福生寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-genmyoji-mitsuke",
+    "date": "2026-07-19",
+    "temple_slug": "genmyoji-mitsuke",
+    "title": "玄妙寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-gyokoji-ikeda",
+    "date": "2026-07-19",
+    "temple_slug": "gyokoji-ikeda",
+    "title": "行興寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-hojuin-jurojima",
+    "date": "2026-07-19",
+    "temple_slug": "hojuin-jurojima",
+    "title": "寶珠院のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-hoonan-kaminobe",
+    "date": "2026-07-19",
+    "temple_slug": "hoonan-kaminobe",
+    "title": "法音庵のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-hounji-mukasa",
+    "date": "2026-07-19",
+    "temple_slug": "hounji-mukasa",
+    "title": "法雲寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-ichiunsai-shimonobe",
+    "date": "2026-07-19",
+    "temple_slug": "ichiunsai-shimonobe",
+    "title": "一雲斉のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-ioji-kamada",
+    "date": "2026-07-19",
+    "temple_slug": "ioji-kamada",
+    "title": "醫王寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-jokoji-maeno",
+    "date": "2026-07-19",
+    "temple_slug": "jokoji-maeno",
+    "title": "定光寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-jorakuji-horinochi",
+    "date": "2026-07-19",
+    "temple_slug": "jorakuji-horinochi",
+    "title": "常楽寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-jurinji-kamiohnogo",
+    "date": "2026-07-19",
+    "temple_slug": "jurinji-kamiohnogo",
+    "title": "十輪寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-jushouji-hiruike",
+    "date": "2026-07-19",
+    "temple_slug": "jushouji-hiruike",
+    "title": "寿正寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-jushouji-kusasaki",
+    "date": "2026-07-19",
+    "temple_slug": "jushouji-kusasaki",
+    "title": "壽正寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-kannonji-fukude",
+    "date": "2026-07-19",
+    "temple_slug": "kannonji-fukude",
+    "title": "観音寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-keiganji-mitsuke",
+    "date": "2026-07-19",
+    "temple_slug": "keiganji-mitsuke",
+    "title": "慶岩寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-keishoji-fukude",
+    "date": "2026-07-19",
+    "temple_slug": "keishoji-fukude",
+    "title": "慶昌寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-kenshoji-mitsuke",
+    "date": "2026-07-19",
+    "temple_slug": "kenshoji-mitsuke",
+    "title": "見性寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-kinzoji-toyooka",
+    "date": "2026-07-19",
+    "temple_slug": "kinzoji-toyooka",
+    "title": "金藏寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-kokubunji-mitsuke",
+    "date": "2026-07-19",
+    "temple_slug": "kokubunji-mitsuke",
+    "title": "国分寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-kokuseiji-kaketsuka",
+    "date": "2026-07-19",
+    "temple_slug": "kokuseiji-kaketsuka",
+    "title": "國清寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-kotokuji-morishita",
+    "date": "2026-07-19",
+    "temple_slug": "kotokuji-morishita",
+    "title": "興徳寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-myofukuji-fukude",
+    "date": "2026-07-19",
+    "temple_slug": "myofukuji-fukude",
+    "title": "妙福寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-myohoji-ikeda",
+    "date": "2026-07-19",
+    "temple_slug": "myohoji-ikeda",
+    "title": "妙法寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-myomanji-kaminobe",
+    "date": "2026-07-19",
+    "temple_slug": "myomanji-kaminobe",
+    "title": "妙満寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-nipponzan-myohoji-iwata",
+    "date": "2026-07-19",
+    "temple_slug": "nipponzan-myohoji-iwata",
+    "title": "日本山妙法寺磐田小僧伽のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T3・基礎情報）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-rendaiji-yashiroyama",
+    "date": "2026-07-19",
+    "temple_slug": "rendaiji-yashiroyama",
+    "title": "蓮台寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T3・基礎情報）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-rengakuji-ryuyonakajima",
+    "date": "2026-07-19",
+    "temple_slug": "rengakuji-ryuyonakajima",
+    "title": "蓮覚寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-renjoji-shingai",
+    "date": "2026-07-19",
+    "temple_slug": "renjoji-shingai",
+    "title": "連城寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-renpukuji-ninomiya",
+    "date": "2026-07-19",
+    "temple_slug": "renpukuji-ninomiya",
+    "title": "連福寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-rinshoji-kodateno",
+    "date": "2026-07-19",
+    "temple_slug": "rinshoji-kodateno",
+    "title": "林昌寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-ryounan-shikiji",
+    "date": "2026-07-19",
+    "temple_slug": "ryounan-shikiji",
+    "title": "龍雲庵のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T3・基礎情報）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-ryuhoin-ohara",
+    "date": "2026-07-19",
+    "temple_slug": "ryuhoin-ohara",
+    "title": "龍法院のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-saifukuji-toyohamanakano",
+    "date": "2026-07-19",
+    "temple_slug": "saifukuji-toyohamanakano",
+    "title": "西福寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T3・基礎情報）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-saiganji-nakaizumi",
+    "date": "2026-07-19",
+    "temple_slug": "saiganji-nakaizumi",
+    "title": "西願寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-saikoji-matsunokijima",
+    "date": "2026-07-19",
+    "temple_slug": "saikoji-matsunokijima",
+    "title": "最廣寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-saikoji-mitsuke",
+    "date": "2026-07-19",
+    "temple_slug": "saikoji-mitsuke",
+    "title": "西光寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-seidoin-ikeda",
+    "date": "2026-07-19",
+    "temple_slug": "seidoin-ikeda",
+    "title": "誓渡院のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-senkoji-mitsuke",
+    "date": "2026-07-19",
+    "temple_slug": "senkoji-mitsuke",
+    "title": "宣光寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-senryuji-kawabukuro",
+    "date": "2026-07-19",
+    "temple_slug": "senryuji-kawabukuro",
+    "title": "潜龍寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-shingetsuji-ebijima",
+    "date": "2026-07-19",
+    "temple_slug": "shingetsuji-ebijima",
+    "title": "心月寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-shinpoin-mukasa",
+    "date": "2026-07-19",
+    "temple_slug": "shinpoin-mukasa",
+    "title": "新豊院のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-shogenin-kojima",
+    "date": "2026-07-19",
+    "temple_slug": "shogenin-kojima",
+    "title": "正眼院のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-shojuji-oka",
+    "date": "2026-07-19",
+    "temple_slug": "shojuji-oka",
+    "title": "聖寿寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-sojiji-minamijima",
+    "date": "2026-07-19",
+    "temple_slug": "sojiji-minamijima",
+    "title": "宗次寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-taigetsuan-sagisaka",
+    "date": "2026-07-19",
+    "temple_slug": "taigetsuan-sagisaka",
+    "title": "太月庵のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T3・基礎情報）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-tamonji-nakano",
+    "date": "2026-07-19",
+    "temple_slug": "tamonji-nakano",
+    "title": "多聞寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-tenryuin-kaminobe",
+    "date": "2026-07-19",
+    "temple_slug": "tenryuin-kaminobe",
+    "title": "天龍院のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-toyodain-kegojima",
+    "date": "2026-07-19",
+    "temple_slug": "toyodain-kegojima",
+    "title": "豊田院のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-yofukuji-shimohongo",
+    "date": "2026-07-19",
+    "temple_slug": "yofukuji-shimohongo",
+    "title": "養福寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-zendoji-mitsuke",
+    "date": "2026-07-19",
+    "temple_slug": "zendoji-mitsuke",
+    "title": "善導寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-zenkaiji-nishijima",
+    "date": "2026-07-19",
+    "temple_slug": "zenkaiji-nishijima",
+    "title": "全海寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T1・充実）。"
+  },
+  {
+    "update_id": "2026-07-19-refurb-zosanji-sagisaka",
+    "date": "2026-07-19",
+    "temple_slug": "zosanji-sagisaka",
+    "title": "増参寺のページを全面改稿しました",
+    "summary": "深掘り調査に基づき本文・出典・「これから調べること」を全面的に書き直し、宗派と本尊の解説、地域とのつながり、よくある質問を新設しました（充実度T2・標準）。"
   }
 ]

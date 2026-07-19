@@ -16,6 +16,16 @@ const REPLACEMENTS = new Map([
     "https://www.pref.shizuoka.jp/kensei/gyoseikaikaku/kouekihoujin/1002313/1011670.html",
     "https://web.archive.org/web/20260512043736/https://www.pref.shizuoka.jp/kensei/gyoseikaikaku/kouekihoujin/1002313/1011670.html",
   ],
+  // 磐田市「文化財だより」No.226 PDF（市サイトから消滅）
+  [
+    "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/002/024/dayori226.pdf",
+    "https://web.archive.org/web/20240903165243/https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/002/024/dayori226.pdf",
+  ],
+  // 正眼院公式サイト（閉鎖・404化）
+  [
+    "https://www.syougenninn28.com/",
+    "https://web.archive.org/web/20240830150006/https://www.syougenninn28.com/",
+  ],
 ]);
 const ARCHIVE_NOTE = "県サイト改編により2026年5月時点のアーカイブ版を参照";
 
