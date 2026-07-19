@@ -300,6 +300,17 @@ button,
   justify-content: center;
 }
 
+.button-link.cta-hot {
+  background: #c75812;
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(199, 88, 18, 0.22);
+}
+
+.button-link.cta-hot .external-mark {
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #fff;
+}
+
 .seasonal-banner {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
@@ -307,11 +318,12 @@ button,
   align-items: center;
   width: min(1100px, calc(100% - 32px));
   margin: 0 auto 14px;
-  border: 1px solid #c9d7c3;
+  border: 1px solid #d06d2a;
   border-radius: 8px;
-  background: #eaf1e6;
-  color: var(--accent-strong);
+  background: #fff3e8;
+  color: #8c3406;
   padding: 10px 12px 10px 16px;
+  box-shadow: 0 10px 22px rgba(140, 52, 6, 0.1);
 }
 
 .seasonal-banner[hidden] {
@@ -321,15 +333,16 @@ button,
 .seasonal-banner a {
   font-weight: 700;
   text-decoration: none;
+  color: #8c3406;
 }
 
 .seasonal-banner button {
   width: 34px;
   height: 34px;
-  border: 1px solid #c9d7c3;
+  border: 1px solid #efc4a4;
   border-radius: 50%;
-  background: var(--paper);
-  color: var(--accent-strong);
+  background: #fff;
+  color: #8c3406;
   padding: 0;
   line-height: 1;
 }

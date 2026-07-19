@@ -22,6 +22,7 @@ const siteUrl = Astro.site?.toString().replace(/\/+$/, "") || "https://temple.at
 const canonicalUrl = new URL(Astro.url.pathname, siteUrl).toString();
 const ogImageUrl = new URL(ogImage, siteUrl).toString();
 const footerFudosanUrl = fromTempleUrl("site_footer");
+const seasonalFudosanUrl = fromTempleUrl("seasonal_banner");
 const pageStructuredData = Array.isArray(structuredData) ? structuredData : [structuredData];
 const sharedStructuredData = [
   {
@@ -91,7 +92,12 @@ const structuredDataItems = [...sharedStructuredData, ...pageStructuredData].fil
       </nav>
     </header>
     <aside class="seasonal-banner" data-obon-banner hidden>
-      <a href="/guide/houyou-kisei/" data-track-click="houyou_bridge_click">法要で磐田へ帰る方へ ─ 菩提寺・仏壇・実家の確認メモ →</a>
+      <a
+        href={seasonalFudosanUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-track-click="to_fudosan_click"
+      >8月31日まで標準調査0円｜お盆前に実家の売却・空き家リスクを見る →</a>
       <button type="button" data-obon-banner-close aria-label="お知らせを閉じる">×</button>
     </aside>
     <main>
@@ -112,7 +118,7 @@ const structuredDataItems = [...sharedStructuredData, ...pageStructuredData].fil
           target="_blank"
           rel="noopener noreferrer"
           data-track-click="to_fudosan_click"
-        >実家カルテを頼む</a>
+        >8月無料チェック</a>
         <a href="/editorial-policy/">編集方針</a>
         <a href="/correction/">情報提供掲示板</a>
         <a href="/privacy/">プライバシーポリシー</a>
