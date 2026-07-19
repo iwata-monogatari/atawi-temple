@@ -41,14 +41,17 @@ function compareAreaTemples(a: Temple, b: Temple) {
 
 const bottomListedTempleSlugs = district.district_id === "koyo" ? new Set(["senshoji-iwai"]) : new Set<string>();
 const isBottomListedTemple = (temple: Temple) => bottomListedTempleSlugs.has(temple.slug);
+const isPendingLocalConfirmation = (temple: Temple) => !hasDetailPage(temple) || (temple.status === "unknown" && !templeHasPhoto(temple));
 
 const temples = [...getTemplesByDistrictId(district.district_id)].sort(compareAreaTemples);
 const detailedTemples = temples.filter((temple) => hasDetailPage(temple));
 const bottomListedTemples = detailedTemples.filter(isBottomListedTemple);
-const standardDetailedTemples = detailedTemples.filter((temple) => !isBottomListedTemple(temple));
+const standardDetailedTemples = detailedTemples.filter(
+  (temple) => !isBottomListedTemple(temple) && !isPendingLocalConfirmation(temple),
+);
 const templesWithPhoto = standardDetailedTemples.filter((temple) => templeHasPhoto(temple));
 const templesWithoutPhoto = standardDetailedTemples.filter((temple) => !templeHasPhoto(temple));
-const unresearchedTemples = temples.filter((temple) => !hasDetailPage(temple));
+const unresearchedTemples = temples.filter(isPendingLocalConfirmation);
 const monogatariDistrictUrl = getMonogatariDistrictUrl(district.district_id);
 const districtColor = districtColors[district.district_id] || districtColors.unassigned;
 const fallbackAreaHeroImage = templesWithPhoto.map((temple) => getTempleCardImage(temple)).find(Boolean);
