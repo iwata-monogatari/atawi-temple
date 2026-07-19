@@ -27,6 +27,7 @@ import {
   getMonogatariLinksBySlug,
   getMonogatariRelationLabel,
 } from "../../lib/related-monogatari";
+import { fromTempleUrl } from "../../lib/editorial";
 
 export function getStaticPaths() {
   return allTemples.filter(hasDetailPage).map((temple) => ({ params: { slug: temple.slug } }));
@@ -240,6 +241,7 @@ const uploadedPhotoTempleDataJson = JSON.stringify({
   name: temple.name,
 }).replace(/</g, "\\u003c");
 const showHouyouBridge = temple.status === "existing";
+const templePrimaryFudosanUrl = fromTempleUrl("temple_detail_primary_context");
 ---
 
 <BaseLayout
@@ -292,6 +294,19 @@ const showHouyouBridge = temple.status === "existing";
         <a class="button-link secondary-button" href={mapPageUrl} data-track-click="temple_map_click">地図で見る</a>
         <a class="button-link secondary-button" href="/temples/">寺院一覧へ戻る</a>
       </div>
+      {showHouyouBridge && (
+        <a
+          class="temple-jikka-primary-cta"
+          href={templePrimaryFudosanUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-track-click="to_fudosan_click"
+        >
+          <span>法要・墓参りで磐田へ戻る方へ</span>
+          <strong>菩提寺を確認したら、実家の名義・空き家リスクも住所から見る</strong>
+          <em>8月31日まで標準調査0円／売却未定OK／運営元の不動産サービスへ移動</em>
+        </a>
+      )}
     </header>
 
     <section class="temple-basic-panel" aria-label="寺院の基本情報と確認状況">
@@ -331,6 +346,30 @@ const showHouyouBridge = temple.status === "existing";
         不明な項目は推測せず、確認中として表示しています。法要、参拝、駐車場、電話での連絡は、寺院の公式情報または寺院へ直接ご確認ください。
       </p>
     </section>
+
+    {showHouyouBridge && (
+      <section class="temple-jikka-checklist" aria-label="寺院確認後の実家確認">
+        <div>
+          <p class="eyebrow">Jikka Check</p>
+          <h2>{temple.name}を調べたあとに、実家で見る3つ</h2>
+          <p>法要や墓参りの日は、親族が集まり、菩提寺・墓・仏壇・実家の話がつながりやすい日です。売る話を始める前に、まず事実をそろえます。</p>
+        </div>
+        <ul>
+          <li><b>家の状態</b><span>庭木、郵便物、雨漏り、道路との接し方を写真で残す</span></li>
+          <li><b>書類の場所</b><span>固定資産税通知書、権利証、保険、寺からの封筒を確認する</span></li>
+          <li><b>家族の次の一手</b><span>売る、残す、管理する前に、名義・道路・農地を確認する</span></li>
+        </ul>
+        <a
+          class="button-link cta-hot"
+          href={fromTempleUrl("temple_detail_checklist")}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-track-click="to_fudosan_click"
+        >
+          実家の無料チェックへ進む<span class="external-mark">外部</span>
+        </a>
+      </section>
+    )}
 
     {showHouyouBridge && <HouyouKiseiBridge variant="temple-top" />}
 

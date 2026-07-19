@@ -3567,6 +3567,99 @@ th {
   gap: 10px;
 }
 
+.temple-jikka-primary-cta,
+.temple-jikka-checklist {
+  width: min(1060px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.temple-jikka-primary-cta {
+  display: grid;
+  gap: 5px;
+  margin-top: 18px;
+  border: 2px solid #c75812;
+  border-radius: 8px;
+  background: #fff8f2;
+  color: #1f2f37;
+  padding: 16px 18px;
+  text-decoration: none;
+  box-shadow: 0 12px 24px rgba(199, 88, 18, 0.12);
+}
+
+.temple-jikka-primary-cta span {
+  color: #a74508;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.temple-jikka-primary-cta strong {
+  color: #082f49;
+  font-size: clamp(1.05rem, 2vw, 1.32rem);
+  line-height: 1.45;
+}
+
+.temple-jikka-primary-cta em {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.temple-jikka-checklist {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr) auto;
+  gap: 18px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 22px;
+  border: 1px solid rgba(199, 88, 18, 0.28);
+  border-radius: 8px;
+  background: #fffdf8;
+  padding: 22px;
+}
+
+.temple-jikka-checklist h2 {
+  margin: 0 0 8px;
+  color: #082f49;
+  font-size: clamp(1.25rem, 2.2vw, 1.65rem);
+}
+
+.temple-jikka-checklist p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.temple-jikka-checklist ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.temple-jikka-checklist li {
+  border-left: 4px solid #c75812;
+  border-radius: 6px;
+  background: #fff;
+  padding: 10px 12px;
+}
+
+.temple-jikka-checklist b,
+.temple-jikka-checklist span {
+  display: block;
+}
+
+.temple-jikka-checklist b {
+  color: #082f49;
+}
+
+.temple-jikka-checklist li span {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
 .secondary-button {
   border: 1px solid var(--line);
   background: var(--paper);
@@ -3917,6 +4010,14 @@ th {
 @media (max-width: 820px) {
   .temple-basic-grid {
     grid-template-columns: 1fr;
+  }
+
+  .temple-jikka-checklist {
+    grid-template-columns: 1fr;
+  }
+
+  .temple-jikka-checklist .button-link {
+    width: 100%;
   }
 
   .temple-basic-grid > div {
