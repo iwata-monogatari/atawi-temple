@@ -6,7 +6,7 @@
 宗派
 <select name="sect" data-track-click="temple_search_refine"> <option value="">すべて</option> <option value="曹洞宗">曹洞宗（62）</option><option value="臨済宗妙心寺派">臨済宗妙心寺派（21）</option><option value="浄土宗">浄土宗（6）</option><option value="臨済宗方広寺派">臨済宗方広寺派（6）</option><option value="日蓮宗">日蓮宗（5）</option><option value="時宗">時宗（4）</option><option value="真宗大谷派">真宗大谷派（3）</option><option value="その他・関連宗教法人">その他・関連宗教法人（2）</option><option value="真言宗智山派">真言宗智山派（2）</option><option value="浄土真宗本願寺派">浄土真宗本願寺派（1）</option><option value="新義真言宗">新義真言宗（1）</option><option value="真言宗醍醐派">真言宗醍醐派（1）</option><option value="真宗高田派">真宗高田派（1）</option><option value="単立">単立（1）</option><option value="日本山妙法寺大僧伽">日本山妙法寺大僧伽（1）</option><option value="日蓮正宗">日蓮正宗（1）</option> </select> </label> <label>
 状態
-<select name="status" data-track-click="temple_search_refine"> <option value="">すべて</option> <option value="existing">現存（96）</option><option value="unknown">状況不明（現地痕跡未確認）（17）</option><option value="ruin">寺院跡・廃寺（5）</option> </select> </label> <button type="submit" data-track-click="temple_search_refine">検索</button> </form> <p id="result-count" class="result-count" aria-live="polite"></p> <div class="search-return-links" aria-label="検索から戻るリンク"> <span id="active-district-return"></span> <a href="/areas/" data-track-click="temple_area_click">地区一覧へ戻る</a> <a href="/temples/">全寺院一覧へ戻る</a> <a href="/map/" data-track-click="temple_map_click">地図から探す</a> <a href="/search/" data-track-click="temple_search_refine">条件を変更する</a> </div> <div id="results" class="card-grid"></div> </section> <script>
+<select name="status" data-track-click="temple_search_refine"> <option value="">すべて</option> <option value="existing">現存（96）</option><option value="unknown">状況不明（現地痕跡未確認）（17）</option><option value="ruin">寺院跡・廃寺（5）</option> </select> </label> <button type="submit" data-track-click="temple_search_refine">検索</button> </form> <p id="result-count" class="result-count" aria-live="polite"></p> <div class="search-return-links" aria-label="検索から戻るリンク"> <span id="active-district-return"></span> <a href="/areas/" data-track-click="temple_area_click">地区一覧へ戻る</a> <a href="/temples/">全寺院一覧へ戻る</a> <a href="/map/" data-track-click="temple_map_click">住所一覧を見る</a> <a href="/search/" data-track-click="temple_search_refine">条件を変更する</a> </div> <div id="results" class="card-grid"></div> </section> <script>
     // @ts-nocheck
     const panel = document.querySelector("[data-temples]");
     const form = document.querySelector("#search-form");
@@ -139,7 +139,7 @@
           <div class="plain-actions">
             <a href="/search/" data-track-click="temple_search_refine">条件を変更する</a>
             <a href="/areas/" data-track-click="temple_area_click">地区一覧へ戻る</a>
-            <a href="/map/" data-track-click="temple_map_click">地図から探す</a>
+            <a href="/map/" data-track-click="temple_map_click">住所一覧を見る</a>
           </div>
         </div>
       `;
@@ -182,7 +182,7 @@
       event.preventDefault();
       render();
     });
-  </script>  </main> <footer class="site-footer"> <p>運営：富士ヶ丘サービス</p> <nav aria-label="フッターナビゲーション"> <a href="/about/">運営者情報</a> <a href="/map/">地図</a> <a href="/status/">調査状況</a> <a href="/sects/">宗派・関連法人</a> <a href="/guide/houyou-kisei/">法要・帰省の確認</a> <a href="/guide/">基礎ガイド</a> <a href="/tokushu/">特集・読みもの</a> <a href="https://fudosan.atawi.link/from-temple/?utm_source=temple&utm_medium=referral&utm_campaign=houyou_jikka&utm_content=site_footer" target="_blank" rel="noopener noreferrer" data-track-click="to_fudosan_click">8月無料チェック</a> <a href="/editorial-policy/">編集方針</a> <a href="/correction/">情報提供掲示板</a> <a href="/privacy/">プライバシーポリシー</a> <a href="https://iwata-monogatari.net/">磐田物語</a> </nav> <p class="small">姉妹サイト：磐田物語 ─ 磐田の歴史読み物</p> <p class="small">ATAWI TEMPLEは各寺院の公式サイトではありません。</p> </footer> <script>
+  </script>  </main> <footer class="site-footer"> <p>運営：富士ヶ丘サービス</p> <nav aria-label="フッターナビゲーション"> <a href="/about/">運営者情報</a> <a href="/map/">住所一覧</a> <a href="/status/">調査状況</a> <a href="/sects/">宗派・関連法人</a> <a href="/guide/houyou-kisei/">法要・帰省の確認</a> <a href="/guide/">基礎ガイド</a> <a href="/tokushu/">特集・読みもの</a> <a href="https://fudosan.atawi.link/from-temple/?utm_source=temple&utm_medium=referral&utm_campaign=houyou_jikka&utm_content=site_footer" target="_blank" rel="noopener noreferrer" data-track-click="to_fudosan_click">8月無料チェック</a> <a href="/editorial-policy/">編集方針</a> <a href="/correction/">情報提供掲示板</a> <a href="/privacy/">プライバシーポリシー</a> <a href="https://iwata-monogatari.net/">磐田物語</a> </nav> <p class="small">姉妹サイト：磐田物語 ─ 磐田の歴史読み物</p> <p class="small">ATAWI TEMPLEは各寺院の公式サイトではありません。</p> </footer> <script>
       // @ts-nocheck
       (function () {
         var banner = document.querySelector("[data-obon-banner]");
