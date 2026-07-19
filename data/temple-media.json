@@ -9385,5 +9385,1538 @@
         "status": "published"
       }
     ]
+  },
+  {
+    "temple_slug": "shinnyoji-sagisaka",
+    "hero_image": "/assets/temples/shinnyoji-sagisaka/shinnyoji-sagisaka-01.webp",
+    "photos": [
+      {
+        "photo_id": "shinnyoji-sagisaka-01-2026",
+        "src": "/assets/temples/shinnyoji-sagisaka/shinnyoji-sagisaka-01.webp",
+        "alt": "眞如寺の現地写真1",
+        "caption": "眞如寺の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinnyoji-sagisaka-02-2026",
+        "src": "/assets/temples/shinnyoji-sagisaka/shinnyoji-sagisaka-02.webp",
+        "alt": "眞如寺の現地写真2",
+        "caption": "眞如寺の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinnyoji-sagisaka-03-2026",
+        "src": "/assets/temples/shinnyoji-sagisaka/shinnyoji-sagisaka-03.webp",
+        "alt": "眞如寺の現地写真3",
+        "caption": "眞如寺の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinnyoji-sagisaka-04-2026",
+        "src": "/assets/temples/shinnyoji-sagisaka/shinnyoji-sagisaka-04.webp",
+        "alt": "眞如寺の現地写真4",
+        "caption": "眞如寺の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinnyoji-sagisaka-05-2026",
+        "src": "/assets/temples/shinnyoji-sagisaka/shinnyoji-sagisaka-05.webp",
+        "alt": "眞如寺の現地写真5",
+        "caption": "眞如寺の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinnyoji-sagisaka-06-2026",
+        "src": "/assets/temples/shinnyoji-sagisaka/shinnyoji-sagisaka-06.webp",
+        "alt": "眞如寺の現地写真6",
+        "caption": "眞如寺の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinnyoji-sagisaka-07-2026",
+        "src": "/assets/temples/shinnyoji-sagisaka/shinnyoji-sagisaka-07.webp",
+        "alt": "眞如寺の現地写真7",
+        "caption": "眞如寺の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shinnyoji-sagisaka-08-2026",
+        "src": "/assets/temples/shinnyoji-sagisaka/shinnyoji-sagisaka-08.webp",
+        "alt": "眞如寺の現地写真8",
+        "caption": "眞如寺の現地写真（8）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "saikoji-matsunokijima",
+    "hero_image": "/assets/temples/saikoji-matsunokijima/saikoji-matsunokijima-01.webp",
+    "photos": [
+      {
+        "photo_id": "saikoji-matsunokijima-01-2026",
+        "src": "/assets/temples/saikoji-matsunokijima/saikoji-matsunokijima-01.webp",
+        "alt": "最廣寺の現地写真1",
+        "caption": "最廣寺の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-matsunokijima-02-2026",
+        "src": "/assets/temples/saikoji-matsunokijima/saikoji-matsunokijima-02.webp",
+        "alt": "最廣寺の現地写真2",
+        "caption": "最廣寺の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-matsunokijima-03-2026",
+        "src": "/assets/temples/saikoji-matsunokijima/saikoji-matsunokijima-03.webp",
+        "alt": "最廣寺の現地写真3",
+        "caption": "最廣寺の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-matsunokijima-04-2026",
+        "src": "/assets/temples/saikoji-matsunokijima/saikoji-matsunokijima-04.webp",
+        "alt": "最廣寺の現地写真4",
+        "caption": "最廣寺の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-matsunokijima-05-2026",
+        "src": "/assets/temples/saikoji-matsunokijima/saikoji-matsunokijima-05.webp",
+        "alt": "最廣寺の現地写真5",
+        "caption": "最廣寺の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-matsunokijima-06-2026",
+        "src": "/assets/temples/saikoji-matsunokijima/saikoji-matsunokijima-06.webp",
+        "alt": "最廣寺の現地写真6",
+        "caption": "最廣寺の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-matsunokijima-07-2026",
+        "src": "/assets/temples/saikoji-matsunokijima/saikoji-matsunokijima-07.webp",
+        "alt": "最廣寺の現地写真7",
+        "caption": "最廣寺の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-matsunokijima-08-2026",
+        "src": "/assets/temples/saikoji-matsunokijima/saikoji-matsunokijima-08.webp",
+        "alt": "最廣寺の現地写真8",
+        "caption": "最廣寺の現地写真（8）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-matsunokijima-09-2026",
+        "src": "/assets/temples/saikoji-matsunokijima/saikoji-matsunokijima-09.webp",
+        "alt": "最廣寺の現地写真9",
+        "caption": "最廣寺の現地写真（9）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-matsunokijima-10-2026",
+        "src": "/assets/temples/saikoji-matsunokijima/saikoji-matsunokijima-10.webp",
+        "alt": "最廣寺の現地写真10",
+        "caption": "最廣寺の現地写真（10）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-matsunokijima-11-2026",
+        "src": "/assets/temples/saikoji-matsunokijima/saikoji-matsunokijima-11.webp",
+        "alt": "最廣寺の現地写真11",
+        "caption": "最廣寺の現地写真（11）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "saikoji-matsunokijima-12-2026",
+        "src": "/assets/temples/saikoji-matsunokijima/saikoji-matsunokijima-12.webp",
+        "alt": "最廣寺の現地写真12",
+        "caption": "最廣寺の現地写真（12）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "shokyuin-mitsue",
+    "hero_image": "/assets/temples/shokyuin-mitsue/shokyuin-mitsue-01.webp",
+    "photos": [
+      {
+        "photo_id": "shokyuin-mitsue-01-2026",
+        "src": "/assets/temples/shokyuin-mitsue/shokyuin-mitsue-01.webp",
+        "alt": "松久院の現地写真1",
+        "caption": "松久院の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokyuin-mitsue-02-2026",
+        "src": "/assets/temples/shokyuin-mitsue/shokyuin-mitsue-02.webp",
+        "alt": "松久院の現地写真2",
+        "caption": "松久院の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokyuin-mitsue-03-2026",
+        "src": "/assets/temples/shokyuin-mitsue/shokyuin-mitsue-03.webp",
+        "alt": "松久院の現地写真3",
+        "caption": "松久院の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokyuin-mitsue-04-2026",
+        "src": "/assets/temples/shokyuin-mitsue/shokyuin-mitsue-04.webp",
+        "alt": "松久院の現地写真4",
+        "caption": "松久院の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokyuin-mitsue-05-2026",
+        "src": "/assets/temples/shokyuin-mitsue/shokyuin-mitsue-05.webp",
+        "alt": "松久院の現地写真5",
+        "caption": "松久院の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokyuin-mitsue-06-2026",
+        "src": "/assets/temples/shokyuin-mitsue/shokyuin-mitsue-06.webp",
+        "alt": "松久院の現地写真6",
+        "caption": "松久院の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokyuin-mitsue-07-2026",
+        "src": "/assets/temples/shokyuin-mitsue/shokyuin-mitsue-07.webp",
+        "alt": "松久院の現地写真7",
+        "caption": "松久院の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokyuin-mitsue-08-2026",
+        "src": "/assets/temples/shokyuin-mitsue/shokyuin-mitsue-08.webp",
+        "alt": "松久院の現地写真8",
+        "caption": "松久院の現地写真（8）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokyuin-mitsue-09-2026",
+        "src": "/assets/temples/shokyuin-mitsue/shokyuin-mitsue-09.webp",
+        "alt": "松久院の現地写真9",
+        "caption": "松久院の現地写真（9）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "shokyuin-mitsue-10-2026",
+        "src": "/assets/temples/shokyuin-mitsue/shokyuin-mitsue-10.webp",
+        "alt": "松久院の現地写真10",
+        "caption": "松久院の現地写真（10）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "jigenji-kamikandamasu",
+    "hero_image": "/assets/temples/jigenji-kamikandamasu/jigenji-kamikandamasu-01.webp",
+    "photos": [
+      {
+        "photo_id": "jigenji-kamikandamasu-01-2026",
+        "src": "/assets/temples/jigenji-kamikandamasu/jigenji-kamikandamasu-01.webp",
+        "alt": "慈眼寺の現地写真1",
+        "caption": "慈眼寺の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jigenji-kamikandamasu-02-2026",
+        "src": "/assets/temples/jigenji-kamikandamasu/jigenji-kamikandamasu-02.webp",
+        "alt": "慈眼寺の現地写真2",
+        "caption": "慈眼寺の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jigenji-kamikandamasu-03-2026",
+        "src": "/assets/temples/jigenji-kamikandamasu/jigenji-kamikandamasu-03.webp",
+        "alt": "慈眼寺の現地写真3",
+        "caption": "慈眼寺の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jigenji-kamikandamasu-04-2026",
+        "src": "/assets/temples/jigenji-kamikandamasu/jigenji-kamikandamasu-04.webp",
+        "alt": "慈眼寺の現地写真4",
+        "caption": "慈眼寺の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jigenji-kamikandamasu-05-2026",
+        "src": "/assets/temples/jigenji-kamikandamasu/jigenji-kamikandamasu-05.webp",
+        "alt": "慈眼寺の現地写真5",
+        "caption": "慈眼寺の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jigenji-kamikandamasu-06-2026",
+        "src": "/assets/temples/jigenji-kamikandamasu/jigenji-kamikandamasu-06.webp",
+        "alt": "慈眼寺の現地写真6",
+        "caption": "慈眼寺の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jigenji-kamikandamasu-07-2026",
+        "src": "/assets/temples/jigenji-kamikandamasu/jigenji-kamikandamasu-07.webp",
+        "alt": "慈眼寺の現地写真7",
+        "caption": "慈眼寺の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jigenji-kamikandamasu-08-2026",
+        "src": "/assets/temples/jigenji-kamikandamasu/jigenji-kamikandamasu-08.webp",
+        "alt": "慈眼寺の現地写真8",
+        "caption": "慈眼寺の現地写真（8）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jigenji-kamikandamasu-09-2026",
+        "src": "/assets/temples/jigenji-kamikandamasu/jigenji-kamikandamasu-09.webp",
+        "alt": "慈眼寺の現地写真9",
+        "caption": "慈眼寺の現地写真（9）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jigenji-kamikandamasu-10-2026",
+        "src": "/assets/temples/jigenji-kamikandamasu/jigenji-kamikandamasu-10.webp",
+        "alt": "慈眼寺の現地写真10",
+        "caption": "慈眼寺の現地写真（10）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jigenji-kamikandamasu-11-2026",
+        "src": "/assets/temples/jigenji-kamikandamasu/jigenji-kamikandamasu-11.webp",
+        "alt": "慈眼寺の現地写真11",
+        "caption": "慈眼寺の現地写真（11）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jigenji-kamikandamasu-12-2026",
+        "src": "/assets/temples/jigenji-kamikandamasu/jigenji-kamikandamasu-12.webp",
+        "alt": "慈眼寺の現地写真12",
+        "caption": "慈眼寺の現地写真（12）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jigenji-kamikandamasu-13-2026",
+        "src": "/assets/temples/jigenji-kamikandamasu/jigenji-kamikandamasu-13.webp",
+        "alt": "慈眼寺の現地写真13",
+        "caption": "慈眼寺の現地写真（13）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "jigenji-kamikandamasu-14-2026",
+        "src": "/assets/temples/jigenji-kamikandamasu/jigenji-kamikandamasu-14.webp",
+        "alt": "慈眼寺の現地写真14",
+        "caption": "慈眼寺の現地写真（14）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "hoonan-kaminobe",
+    "hero_image": "/assets/temples/hoonan-kaminobe/hoonan-kaminobe-01.webp",
+    "photos": [
+      {
+        "photo_id": "hoonan-kaminobe-01-2026",
+        "src": "/assets/temples/hoonan-kaminobe/hoonan-kaminobe-01.webp",
+        "alt": "法音庵の現地写真1",
+        "caption": "法音庵の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hoonan-kaminobe-02-2026",
+        "src": "/assets/temples/hoonan-kaminobe/hoonan-kaminobe-02.webp",
+        "alt": "法音庵の現地写真2",
+        "caption": "法音庵の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hoonan-kaminobe-03-2026",
+        "src": "/assets/temples/hoonan-kaminobe/hoonan-kaminobe-03.webp",
+        "alt": "法音庵の現地写真3",
+        "caption": "法音庵の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hoonan-kaminobe-04-2026",
+        "src": "/assets/temples/hoonan-kaminobe/hoonan-kaminobe-04.webp",
+        "alt": "法音庵の現地写真4",
+        "caption": "法音庵の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hoonan-kaminobe-05-2026",
+        "src": "/assets/temples/hoonan-kaminobe/hoonan-kaminobe-05.webp",
+        "alt": "法音庵の現地写真5",
+        "caption": "法音庵の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hoonan-kaminobe-06-2026",
+        "src": "/assets/temples/hoonan-kaminobe/hoonan-kaminobe-06.webp",
+        "alt": "法音庵の現地写真6",
+        "caption": "法音庵の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hoonan-kaminobe-07-2026",
+        "src": "/assets/temples/hoonan-kaminobe/hoonan-kaminobe-07.webp",
+        "alt": "法音庵の現地写真7",
+        "caption": "法音庵の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hoonan-kaminobe-08-2026",
+        "src": "/assets/temples/hoonan-kaminobe/hoonan-kaminobe-08.webp",
+        "alt": "法音庵の現地写真8",
+        "caption": "法音庵の現地写真（8）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hoonan-kaminobe-09-2026",
+        "src": "/assets/temples/hoonan-kaminobe/hoonan-kaminobe-09.webp",
+        "alt": "法音庵の現地写真9",
+        "caption": "法音庵の現地写真（9）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "hoonan-kaminobe-10-2026",
+        "src": "/assets/temples/hoonan-kaminobe/hoonan-kaminobe-10.webp",
+        "alt": "法音庵の現地写真10",
+        "caption": "法音庵の現地写真（10）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "tenryuin-kaminobe",
+    "hero_image": "/assets/temples/tenryuin-kaminobe/tenryuin-kaminobe-01.webp",
+    "photos": [
+      {
+        "photo_id": "tenryuin-kaminobe-01-2026",
+        "src": "/assets/temples/tenryuin-kaminobe/tenryuin-kaminobe-01.webp",
+        "alt": "天龍院の現地写真1",
+        "caption": "天龍院の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tenryuin-kaminobe-02-2026",
+        "src": "/assets/temples/tenryuin-kaminobe/tenryuin-kaminobe-02.webp",
+        "alt": "天龍院の現地写真2",
+        "caption": "天龍院の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tenryuin-kaminobe-03-2026",
+        "src": "/assets/temples/tenryuin-kaminobe/tenryuin-kaminobe-03.webp",
+        "alt": "天龍院の現地写真3",
+        "caption": "天龍院の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tenryuin-kaminobe-04-2026",
+        "src": "/assets/temples/tenryuin-kaminobe/tenryuin-kaminobe-04.webp",
+        "alt": "天龍院の現地写真4",
+        "caption": "天龍院の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tenryuin-kaminobe-05-2026",
+        "src": "/assets/temples/tenryuin-kaminobe/tenryuin-kaminobe-05.webp",
+        "alt": "天龍院の現地写真5",
+        "caption": "天龍院の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tenryuin-kaminobe-06-2026",
+        "src": "/assets/temples/tenryuin-kaminobe/tenryuin-kaminobe-06.webp",
+        "alt": "天龍院の現地写真6",
+        "caption": "天龍院の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tenryuin-kaminobe-07-2026",
+        "src": "/assets/temples/tenryuin-kaminobe/tenryuin-kaminobe-07.webp",
+        "alt": "天龍院の現地写真7",
+        "caption": "天龍院の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tenryuin-kaminobe-08-2026",
+        "src": "/assets/temples/tenryuin-kaminobe/tenryuin-kaminobe-08.webp",
+        "alt": "天龍院の現地写真8",
+        "caption": "天龍院の現地写真（8）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tenryuin-kaminobe-09-2026",
+        "src": "/assets/temples/tenryuin-kaminobe/tenryuin-kaminobe-09.webp",
+        "alt": "天龍院の現地写真9",
+        "caption": "天龍院の現地写真（9）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tenryuin-kaminobe-10-2026",
+        "src": "/assets/temples/tenryuin-kaminobe/tenryuin-kaminobe-10.webp",
+        "alt": "天龍院の現地写真10",
+        "caption": "天龍院の現地写真（10）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tenryuin-kaminobe-11-2026",
+        "src": "/assets/temples/tenryuin-kaminobe/tenryuin-kaminobe-11.webp",
+        "alt": "天龍院の現地写真11",
+        "caption": "天龍院の現地写真（11）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tenryuin-kaminobe-12-2026",
+        "src": "/assets/temples/tenryuin-kaminobe/tenryuin-kaminobe-12.webp",
+        "alt": "天龍院の現地写真12",
+        "caption": "天龍院の現地写真（12）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tenryuin-kaminobe-13-2026",
+        "src": "/assets/temples/tenryuin-kaminobe/tenryuin-kaminobe-13.webp",
+        "alt": "天龍院の現地写真13",
+        "caption": "天龍院の現地写真（13）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "tenryuin-kaminobe-14-2026",
+        "src": "/assets/temples/tenryuin-kaminobe/tenryuin-kaminobe-14.webp",
+        "alt": "天龍院の現地写真14",
+        "caption": "天龍院の現地写真（14）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "myomanji-kaminobe",
+    "hero_image": "/assets/temples/myomanji-kaminobe/myomanji-kaminobe-01.webp",
+    "photos": [
+      {
+        "photo_id": "myomanji-kaminobe-01-2026",
+        "src": "/assets/temples/myomanji-kaminobe/myomanji-kaminobe-01.webp",
+        "alt": "妙満寺の現地写真1",
+        "caption": "妙満寺の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myomanji-kaminobe-02-2026",
+        "src": "/assets/temples/myomanji-kaminobe/myomanji-kaminobe-02.webp",
+        "alt": "妙満寺の現地写真2",
+        "caption": "妙満寺の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myomanji-kaminobe-03-2026",
+        "src": "/assets/temples/myomanji-kaminobe/myomanji-kaminobe-03.webp",
+        "alt": "妙満寺の現地写真3",
+        "caption": "妙満寺の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myomanji-kaminobe-04-2026",
+        "src": "/assets/temples/myomanji-kaminobe/myomanji-kaminobe-04.webp",
+        "alt": "妙満寺の現地写真4",
+        "caption": "妙満寺の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myomanji-kaminobe-05-2026",
+        "src": "/assets/temples/myomanji-kaminobe/myomanji-kaminobe-05.webp",
+        "alt": "妙満寺の現地写真5",
+        "caption": "妙満寺の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myomanji-kaminobe-06-2026",
+        "src": "/assets/temples/myomanji-kaminobe/myomanji-kaminobe-06.webp",
+        "alt": "妙満寺の現地写真6",
+        "caption": "妙満寺の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myomanji-kaminobe-07-2026",
+        "src": "/assets/temples/myomanji-kaminobe/myomanji-kaminobe-07.webp",
+        "alt": "妙満寺の現地写真7",
+        "caption": "妙満寺の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myomanji-kaminobe-08-2026",
+        "src": "/assets/temples/myomanji-kaminobe/myomanji-kaminobe-08.webp",
+        "alt": "妙満寺の現地写真8",
+        "caption": "妙満寺の現地写真（8）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "myomanji-kaminobe-09-2026",
+        "src": "/assets/temples/myomanji-kaminobe/myomanji-kaminobe-09.webp",
+        "alt": "妙満寺の現地写真9",
+        "caption": "妙満寺の現地写真（9）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "ichiunsai-shimonobe",
+    "hero_image": "/assets/temples/ichiunsai-shimonobe/ichiunsai-shimonobe-01.webp",
+    "photos": [
+      {
+        "photo_id": "ichiunsai-shimonobe-01-2026",
+        "src": "/assets/temples/ichiunsai-shimonobe/ichiunsai-shimonobe-01.webp",
+        "alt": "一雲斉の現地写真1",
+        "caption": "一雲斉の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ichiunsai-shimonobe-02-2026",
+        "src": "/assets/temples/ichiunsai-shimonobe/ichiunsai-shimonobe-02.webp",
+        "alt": "一雲斉の現地写真2",
+        "caption": "一雲斉の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ichiunsai-shimonobe-03-2026",
+        "src": "/assets/temples/ichiunsai-shimonobe/ichiunsai-shimonobe-03.webp",
+        "alt": "一雲斉の現地写真3",
+        "caption": "一雲斉の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ichiunsai-shimonobe-04-2026",
+        "src": "/assets/temples/ichiunsai-shimonobe/ichiunsai-shimonobe-04.webp",
+        "alt": "一雲斉の現地写真4",
+        "caption": "一雲斉の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ichiunsai-shimonobe-05-2026",
+        "src": "/assets/temples/ichiunsai-shimonobe/ichiunsai-shimonobe-05.webp",
+        "alt": "一雲斉の現地写真5",
+        "caption": "一雲斉の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ichiunsai-shimonobe-06-2026",
+        "src": "/assets/temples/ichiunsai-shimonobe/ichiunsai-shimonobe-06.webp",
+        "alt": "一雲斉の現地写真6",
+        "caption": "一雲斉の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ichiunsai-shimonobe-07-2026",
+        "src": "/assets/temples/ichiunsai-shimonobe/ichiunsai-shimonobe-07.webp",
+        "alt": "一雲斉の現地写真7",
+        "caption": "一雲斉の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ichiunsai-shimonobe-08-2026",
+        "src": "/assets/temples/ichiunsai-shimonobe/ichiunsai-shimonobe-08.webp",
+        "alt": "一雲斉の現地写真8",
+        "caption": "一雲斉の現地写真（8）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ichiunsai-shimonobe-09-2026",
+        "src": "/assets/temples/ichiunsai-shimonobe/ichiunsai-shimonobe-09.webp",
+        "alt": "一雲斉の現地写真9",
+        "caption": "一雲斉の現地写真（9）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ichiunsai-shimonobe-10-2026",
+        "src": "/assets/temples/ichiunsai-shimonobe/ichiunsai-shimonobe-10.webp",
+        "alt": "一雲斉の現地写真10",
+        "caption": "一雲斉の現地写真（10）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ichiunsai-shimonobe-11-2026",
+        "src": "/assets/temples/ichiunsai-shimonobe/ichiunsai-shimonobe-11.webp",
+        "alt": "一雲斉の現地写真11",
+        "caption": "一雲斉の現地写真（11）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ichiunsai-shimonobe-12-2026",
+        "src": "/assets/temples/ichiunsai-shimonobe/ichiunsai-shimonobe-12.webp",
+        "alt": "一雲斉の現地写真12",
+        "caption": "一雲斉の現地写真（12）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ichiunsai-shimonobe-13-2026",
+        "src": "/assets/temples/ichiunsai-shimonobe/ichiunsai-shimonobe-13.webp",
+        "alt": "一雲斉の現地写真13",
+        "caption": "一雲斉の現地写真（13）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ichiunsai-shimonobe-14-2026",
+        "src": "/assets/temples/ichiunsai-shimonobe/ichiunsai-shimonobe-14.webp",
+        "alt": "一雲斉の現地写真14",
+        "caption": "一雲斉の現地写真（14）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ichiunsai-shimonobe-15-2026",
+        "src": "/assets/temples/ichiunsai-shimonobe/ichiunsai-shimonobe-15.webp",
+        "alt": "一雲斉の現地写真15",
+        "caption": "一雲斉の現地写真（15）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "eianji-shikiji",
+    "hero_image": "/assets/temples/eianji-shikiji/eianji-shikiji-01.webp",
+    "photos": [
+      {
+        "photo_id": "eianji-shikiji-01-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-01.webp",
+        "alt": "永安寺の現地写真1",
+        "caption": "永安寺の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-02-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-02.webp",
+        "alt": "永安寺の現地写真2",
+        "caption": "永安寺の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-03-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-03.webp",
+        "alt": "永安寺の現地写真3",
+        "caption": "永安寺の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-04-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-04.webp",
+        "alt": "永安寺の現地写真4",
+        "caption": "永安寺の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-05-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-05.webp",
+        "alt": "永安寺の現地写真5",
+        "caption": "永安寺の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-06-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-06.webp",
+        "alt": "永安寺の現地写真6",
+        "caption": "永安寺の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-07-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-07.webp",
+        "alt": "永安寺の現地写真7",
+        "caption": "永安寺の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-08-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-08.webp",
+        "alt": "永安寺の現地写真8",
+        "caption": "永安寺の現地写真（8）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-09-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-09.webp",
+        "alt": "永安寺の現地写真9",
+        "caption": "永安寺の現地写真（9）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-10-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-10.webp",
+        "alt": "永安寺の現地写真10",
+        "caption": "永安寺の現地写真（10）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-11-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-11.webp",
+        "alt": "永安寺の現地写真11",
+        "caption": "永安寺の現地写真（11）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-12-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-12.webp",
+        "alt": "永安寺の現地写真12",
+        "caption": "永安寺の現地写真（12）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-13-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-13.webp",
+        "alt": "永安寺の現地写真13",
+        "caption": "永安寺の現地写真（13）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-14-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-14.webp",
+        "alt": "永安寺の現地写真14",
+        "caption": "永安寺の現地写真（14）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-15-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-15.webp",
+        "alt": "永安寺の現地写真15",
+        "caption": "永安寺の現地写真（15）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-16-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-16.webp",
+        "alt": "永安寺の現地写真16",
+        "caption": "永安寺の現地写真（16）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-17-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-17.webp",
+        "alt": "永安寺の現地写真17",
+        "caption": "永安寺の現地写真（17）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-18-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-18.webp",
+        "alt": "永安寺の現地写真18",
+        "caption": "永安寺の現地写真（18）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-19-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-19.webp",
+        "alt": "永安寺の現地写真19",
+        "caption": "永安寺の現地写真（19）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-20-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-20.webp",
+        "alt": "永安寺の現地写真20",
+        "caption": "永安寺の現地写真（20）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-21-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-21.webp",
+        "alt": "永安寺の現地写真21",
+        "caption": "永安寺の現地写真（21）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-22-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-22.webp",
+        "alt": "永安寺の現地写真22",
+        "caption": "永安寺の現地写真（22）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eianji-shikiji-23-2026",
+        "src": "/assets/temples/eianji-shikiji/eianji-shikiji-23.webp",
+        "alt": "永安寺の現地写真23",
+        "caption": "永安寺の現地写真（23）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "eimeiji-shikiji",
+    "hero_image": "/assets/temples/eimeiji-shikiji/eimeiji-shikiji-01.webp",
+    "photos": [
+      {
+        "photo_id": "eimeiji-shikiji-01-2026",
+        "src": "/assets/temples/eimeiji-shikiji/eimeiji-shikiji-01.webp",
+        "alt": "永明寺の現地写真1",
+        "caption": "永明寺の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eimeiji-shikiji-02-2026",
+        "src": "/assets/temples/eimeiji-shikiji/eimeiji-shikiji-02.webp",
+        "alt": "永明寺の現地写真2",
+        "caption": "永明寺の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eimeiji-shikiji-03-2026",
+        "src": "/assets/temples/eimeiji-shikiji/eimeiji-shikiji-03.webp",
+        "alt": "永明寺の現地写真3",
+        "caption": "永明寺の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "eimeiji-shikiji-04-2026",
+        "src": "/assets/temples/eimeiji-shikiji/eimeiji-shikiji-04.webp",
+        "alt": "永明寺の現地写真4",
+        "caption": "永明寺の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "ryounan-shikiji",
+    "hero_image": "/assets/temples/ryounan-shikiji/ryounan-shikiji-01.webp",
+    "photos": [
+      {
+        "photo_id": "ryounan-shikiji-01-2026",
+        "src": "/assets/temples/ryounan-shikiji/ryounan-shikiji-01.webp",
+        "alt": "龍雲庵の現地写真1",
+        "caption": "龍雲庵の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryounan-shikiji-02-2026",
+        "src": "/assets/temples/ryounan-shikiji/ryounan-shikiji-02.webp",
+        "alt": "龍雲庵の現地写真2",
+        "caption": "龍雲庵の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryounan-shikiji-03-2026",
+        "src": "/assets/temples/ryounan-shikiji/ryounan-shikiji-03.webp",
+        "alt": "龍雲庵の現地写真3",
+        "caption": "龍雲庵の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryounan-shikiji-04-2026",
+        "src": "/assets/temples/ryounan-shikiji/ryounan-shikiji-04.webp",
+        "alt": "龍雲庵の現地写真4",
+        "caption": "龍雲庵の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryounan-shikiji-05-2026",
+        "src": "/assets/temples/ryounan-shikiji/ryounan-shikiji-05.webp",
+        "alt": "龍雲庵の現地写真5",
+        "caption": "龍雲庵の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryounan-shikiji-06-2026",
+        "src": "/assets/temples/ryounan-shikiji/ryounan-shikiji-06.webp",
+        "alt": "龍雲庵の現地写真6",
+        "caption": "龍雲庵の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryounan-shikiji-07-2026",
+        "src": "/assets/temples/ryounan-shikiji/ryounan-shikiji-07.webp",
+        "alt": "龍雲庵の現地写真7",
+        "caption": "龍雲庵の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryounan-shikiji-08-2026",
+        "src": "/assets/temples/ryounan-shikiji/ryounan-shikiji-08.webp",
+        "alt": "龍雲庵の現地写真8",
+        "caption": "龍雲庵の現地写真（8）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryounan-shikiji-09-2026",
+        "src": "/assets/temples/ryounan-shikiji/ryounan-shikiji-09.webp",
+        "alt": "龍雲庵の現地写真9",
+        "caption": "龍雲庵の現地写真（9）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryounan-shikiji-10-2026",
+        "src": "/assets/temples/ryounan-shikiji/ryounan-shikiji-10.webp",
+        "alt": "龍雲庵の現地写真10",
+        "caption": "龍雲庵の現地写真（10）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "ryounan-shikiji-11-2026",
+        "src": "/assets/temples/ryounan-shikiji/ryounan-shikiji-11.webp",
+        "alt": "龍雲庵の現地写真11",
+        "caption": "龍雲庵の現地写真（11）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "seiryo-in-iwamuro",
+    "hero_image": "/assets/temples/seiryo-in-iwamuro/seiryo-in-iwamuro-01.webp",
+    "photos": [
+      {
+        "photo_id": "seiryo-in-iwamuro-01-2026",
+        "src": "/assets/temples/seiryo-in-iwamuro/seiryo-in-iwamuro-01.webp",
+        "alt": "清凉院の現地写真1",
+        "caption": "清凉院の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "seiryo-in-iwamuro-02-2026",
+        "src": "/assets/temples/seiryo-in-iwamuro/seiryo-in-iwamuro-02.webp",
+        "alt": "清凉院の現地写真2",
+        "caption": "清凉院の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "seiryo-in-iwamuro-03-2026",
+        "src": "/assets/temples/seiryo-in-iwamuro/seiryo-in-iwamuro-03.webp",
+        "alt": "清凉院の現地写真3",
+        "caption": "清凉院の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "seiryo-in-iwamuro-04-2026",
+        "src": "/assets/temples/seiryo-in-iwamuro/seiryo-in-iwamuro-04.webp",
+        "alt": "清凉院の現地写真4",
+        "caption": "清凉院の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "seiryo-in-iwamuro-05-2026",
+        "src": "/assets/temples/seiryo-in-iwamuro/seiryo-in-iwamuro-05.webp",
+        "alt": "清凉院の現地写真5",
+        "caption": "清凉院の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "seiryo-in-iwamuro-06-2026",
+        "src": "/assets/temples/seiryo-in-iwamuro/seiryo-in-iwamuro-06.webp",
+        "alt": "清凉院の現地写真6",
+        "caption": "清凉院の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "seiryo-in-iwamuro-07-2026",
+        "src": "/assets/temples/seiryo-in-iwamuro/seiryo-in-iwamuro-07.webp",
+        "alt": "清凉院の現地写真7",
+        "caption": "清凉院の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "seiryo-in-iwamuro-08-2026",
+        "src": "/assets/temples/seiryo-in-iwamuro/seiryo-in-iwamuro-08.webp",
+        "alt": "清凉院の現地写真8",
+        "caption": "清凉院の現地写真（8）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "seiryo-in-iwamuro-09-2026",
+        "src": "/assets/temples/seiryo-in-iwamuro/seiryo-in-iwamuro-09.webp",
+        "alt": "清凉院の現地写真9",
+        "caption": "清凉院の現地写真（9）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "seiryo-in-iwamuro-10-2026",
+        "src": "/assets/temples/seiryo-in-iwamuro/seiryo-in-iwamuro-10.webp",
+        "alt": "清凉院の現地写真10",
+        "caption": "清凉院の現地写真（10）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "seiryo-in-iwamuro-11-2026",
+        "src": "/assets/temples/seiryo-in-iwamuro/seiryo-in-iwamuro-11.webp",
+        "alt": "清凉院の現地写真11",
+        "caption": "清凉院の現地写真（11）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "seiryo-in-iwamuro-12-2026",
+        "src": "/assets/temples/seiryo-in-iwamuro/seiryo-in-iwamuro-12.webp",
+        "alt": "清凉院の現地写真12",
+        "caption": "清凉院の現地写真（12）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "seiryo-in-iwamuro-13-2026",
+        "src": "/assets/temples/seiryo-in-iwamuro/seiryo-in-iwamuro-13.webp",
+        "alt": "清凉院の現地写真13",
+        "caption": "清凉院の現地写真（13）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "seiryo-in-iwamuro-14-2026",
+        "src": "/assets/temples/seiryo-in-iwamuro/seiryo-in-iwamuro-14.webp",
+        "alt": "清凉院の現地写真14",
+        "caption": "清凉院の現地写真（14）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "entsuji-ohira",
+    "hero_image": "/assets/temples/entsuji-ohira/entsuji-ohira-01.webp",
+    "photos": [
+      {
+        "photo_id": "entsuji-ohira-01-2026",
+        "src": "/assets/temples/entsuji-ohira/entsuji-ohira-01.webp",
+        "alt": "圓通寺の現地写真1",
+        "caption": "圓通寺の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "entsuji-ohira-02-2026",
+        "src": "/assets/temples/entsuji-ohira/entsuji-ohira-02.webp",
+        "alt": "圓通寺の現地写真2",
+        "caption": "圓通寺の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "entsuji-ohira-03-2026",
+        "src": "/assets/temples/entsuji-ohira/entsuji-ohira-03.webp",
+        "alt": "圓通寺の現地写真3",
+        "caption": "圓通寺の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "entsuji-ohira-04-2026",
+        "src": "/assets/temples/entsuji-ohira/entsuji-ohira-04.webp",
+        "alt": "圓通寺の現地写真4",
+        "caption": "圓通寺の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "entsuji-ohira-05-2026",
+        "src": "/assets/temples/entsuji-ohira/entsuji-ohira-05.webp",
+        "alt": "圓通寺の現地写真5",
+        "caption": "圓通寺の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "entsuji-ohira-06-2026",
+        "src": "/assets/temples/entsuji-ohira/entsuji-ohira-06.webp",
+        "alt": "圓通寺の現地写真6",
+        "caption": "圓通寺の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "entsuji-ohira-07-2026",
+        "src": "/assets/temples/entsuji-ohira/entsuji-ohira-07.webp",
+        "alt": "圓通寺の現地写真7",
+        "caption": "圓通寺の現地写真（7）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "entsuji-ohira-08-2026",
+        "src": "/assets/temples/entsuji-ohira/entsuji-ohira-08.webp",
+        "alt": "圓通寺の現地写真8",
+        "caption": "圓通寺の現地写真（8）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "entsuji-ohira-09-2026",
+        "src": "/assets/temples/entsuji-ohira/entsuji-ohira-09.webp",
+        "alt": "圓通寺の現地写真9",
+        "caption": "圓通寺の現地写真（9）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "entsuji-ohira-10-2026",
+        "src": "/assets/temples/entsuji-ohira/entsuji-ohira-10.webp",
+        "alt": "圓通寺の現地写真10",
+        "caption": "圓通寺の現地写真（10）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "entsuji-ohira-11-2026",
+        "src": "/assets/temples/entsuji-ohira/entsuji-ohira-11.webp",
+        "alt": "圓通寺の現地写真11",
+        "caption": "圓通寺の現地写真（11）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
+  },
+  {
+    "temple_slug": "mushuoji-mushuo",
+    "hero_image": "/assets/temples/mushuoji-mushuo/mushuoji-mushuo-01.webp",
+    "photos": [
+      {
+        "photo_id": "mushuoji-mushuo-01-2026",
+        "src": "/assets/temples/mushuoji-mushuo/mushuoji-mushuo-01.webp",
+        "alt": "虫生寺の現地写真1",
+        "caption": "虫生寺の現地写真（1）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "main-building",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "mushuoji-mushuo-02-2026",
+        "src": "/assets/temples/mushuoji-mushuo/mushuoji-mushuo-02.webp",
+        "alt": "虫生寺の現地写真2",
+        "caption": "虫生寺の現地写真（2）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "grounds",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "mushuoji-mushuo-03-2026",
+        "src": "/assets/temples/mushuoji-mushuo/mushuoji-mushuo-03.webp",
+        "alt": "虫生寺の現地写真3",
+        "caption": "虫生寺の現地写真（3）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "entrance-marker",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "mushuoji-mushuo-04-2026",
+        "src": "/assets/temples/mushuoji-mushuo/mushuoji-mushuo-04.webp",
+        "alt": "虫生寺の現地写真4",
+        "caption": "虫生寺の現地写真（4）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "mushuoji-mushuo-05-2026",
+        "src": "/assets/temples/mushuoji-mushuo/mushuoji-mushuo-05.webp",
+        "alt": "虫生寺の現地写真5",
+        "caption": "虫生寺の現地写真（5）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      },
+      {
+        "photo_id": "mushuoji-mushuo-06-2026",
+        "src": "/assets/temples/mushuoji-mushuo/mushuoji-mushuo-06.webp",
+        "alt": "虫生寺の現地写真6",
+        "caption": "虫生寺の現地写真（6）。所在地確認とページ掲載のための記録写真です。",
+        "category_id": "other",
+        "source": "現地写真",
+        "status": "published"
+      }
+    ]
   }
 ]
