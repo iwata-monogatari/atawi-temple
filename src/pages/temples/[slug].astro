@@ -242,6 +242,7 @@ const uploadedPhotoTempleDataJson = JSON.stringify({
 }).replace(/</g, "\\u003c");
 const showHouyouBridge = temple.status === "existing";
 const templePrimaryFudosanUrl = fromTempleUrl("temple_detail_primary_context");
+const templeStickyFudosanUrl = fromTempleUrl("temple_detail_sticky");
 ---
 
 <BaseLayout
@@ -845,6 +846,23 @@ const templePrimaryFudosanUrl = fromTempleUrl("temple_detail_primary_context");
           ))}
         </div>
       </section>
+    )}
+    {showHouyouBridge && (
+      <aside class="temple-jikka-sticky-cta" aria-label="実家無料チェックへの固定導線">
+        <div>
+          <span>法要・墓参りのあとに</span>
+          <strong>実家の売却・空き家リスクを無料確認</strong>
+        </div>
+        <a
+          class="button-link cta-hot"
+          href={templeStickyFudosanUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-track-click="to_fudosan_click"
+        >
+          無料チェック
+        </a>
+      </aside>
     )}
   </article>
 </BaseLayout>

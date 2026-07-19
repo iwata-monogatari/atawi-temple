@@ -3660,6 +3660,10 @@ th {
   line-height: 1.55;
 }
 
+.temple-jikka-sticky-cta {
+  display: none;
+}
+
 .secondary-button {
   border: 1px solid var(--line);
   background: var(--paper);
@@ -4018,6 +4022,53 @@ th {
 
   .temple-jikka-checklist .button-link {
     width: 100%;
+  }
+
+  .temple-profile:has(.temple-jikka-sticky-cta) {
+    padding-bottom: 92px;
+  }
+
+  .temple-jikka-sticky-cta {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px;
+    align-items: center;
+    border-top: 1px solid rgba(199, 88, 18, 0.32);
+    background: rgba(255, 253, 248, 0.98);
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    box-shadow: 0 -12px 24px rgba(47, 75, 43, 0.14);
+  }
+
+  .temple-jikka-sticky-cta div {
+    min-width: 0;
+  }
+
+  .temple-jikka-sticky-cta span,
+  .temple-jikka-sticky-cta strong {
+    display: block;
+    line-height: 1.35;
+  }
+
+  .temple-jikka-sticky-cta span {
+    color: #a74508;
+    font-size: 0.72rem;
+    font-weight: 800;
+  }
+
+  .temple-jikka-sticky-cta strong {
+    color: #082f49;
+    font-size: 0.92rem;
+  }
+
+  .temple-jikka-sticky-cta .button-link {
+    min-width: 112px;
+    padding: 10px 12px;
+    white-space: nowrap;
   }
 
   .temple-basic-grid > div {
