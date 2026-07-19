@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HouyouKiseiBridge from "../../components/HouyouKiseiBridge.astro";
+import RefurbMain from "../../components/RefurbMain.astro";
+import { getRefurbFacts, getGradeLabel } from "../../lib/refurb";
 import {
   allSects,
   allTemples,
@@ -33,6 +35,8 @@ export function getStaticPaths() {
 const temple = getTempleBySlug(Astro.params.slug || "");
 if (!temple || !hasDetailPage(temple)) return Astro.redirect("/temples/");
 
+const refurb = getRefurbFacts(temple.slug);
+
 const districtName = getDistrictName(temple.district_id);
 const district = getDistrictById(temple.district_id);
 const districtUrl = district ? `/areas/${district.slug}/` : "/areas/";
@@ -63,9 +67,11 @@ const culturalAssets = "cultural_assets" in temple && Array.isArray(temple.cultu
 const visibleCulturalAssets = culturalAssets.filter((asset: any) =>
   !isCemeteryServiceInfo(`${asset.designation || ""} ${asset.name || ""} ${asset.summary || ""}`)
 );
-const rawResearchTodos = "research_todos" in temple && Array.isArray(temple.research_todos)
-  ? temple.research_todos
-  : ["創建・沿革", "ご本尊", "参拝情報", "文化財・寺宝", "現地写真"];
+const rawResearchTodos = refurb?.research_todos && refurb.research_todos.length > 0
+  ? refurb.research_todos
+  : "research_todos" in temple && Array.isArray(temple.research_todos)
+    ? temple.research_todos
+    : ["創建・沿革", "ご本尊", "参拝情報", "文化財・寺宝", "現地写真"];
 const researchTodos = rawResearchTodos.filter((todo: any) => !isCemeteryServiceInfo(todo));
 const visibleSources = temple.sources.filter((source: any) =>
   !isCemeteryServiceInfo(`${source.title || ""} ${source.note || ""} ${"url" in source ? source.url || "" : ""}`)
@@ -157,6 +163,17 @@ const structuredData = [
     },
     ...(currentLatLng ? { geo: { "@type": "GeoCoordinates", latitude: currentLatLng.lat, longitude: currentLatLng.lng } } : {}),
   },
+  ...(refurb?.faq && refurb.faq.length > 0
+    ? [{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: refurb.faq.map((item) => ({
+          "@type": "Question",
+          name: item.q,
+          acceptedAnswer: { "@type": "Answer", text: item.a },
+        })),
+      }]
+    : []),
 ];
 
 const field = (value: string | null | undefined, pending = "調査中") => ({
@@ -173,7 +190,9 @@ const houyouStatus = annualEvents.length > 0
   : "未確認（寺院へご確認ください）";
 const parkingStatus = "未確認（現地・寺院へご確認ください）";
 const templeDetailTitle = `${temple.name}（磐田市${districtName}）｜住所・宗派・法要・帰省の確認事項｜ATAWI TEMPLE`;
-const templeDetailDescription = `磐田市${districtName}の${temple.name}について、住所、読み方、宗派、由緒、確認できた現地写真を掲載。法要やお墓参りの前に確認したい寺院情報を整理します。`;
+const templeDetailDescription = refurb
+  ? refurb.lead
+  : `磐田市${districtName}の${temple.name}について、住所、読み方、宗派、由緒、確認できた現地写真を掲載。法要やお墓参りの前に確認したい寺院情報を整理します。`;
 const uploadedPhotoTempleDataJson = JSON.stringify({
   slug: temple.slug,
   name: temple.name,
@@ -212,11 +231,11 @@ const showHouyouBridge = temple.status === "existing";
         </div>
         <div class="research-badge">
           <span>ページ充実度</span>
-          <strong>{media ? "現地写真・資料あり" : "基礎情報・調査中"}</strong>
-          <small>最終確認 {temple.last_verified_at.replaceAll("-", ".")}</small>
+          <strong>{refurb ? getGradeLabel(refurb.grade) : media ? "現地写真・資料あり" : "基礎情報・調査中"}</strong>
+          <small>最終確認 {(refurb?.last_verified_at || temple.last_verified_at).replaceAll("-", ".")}</small>
         </div>
       </div>
-      <p class="temple-lead">{visiblePageSummary}</p>
+      <p class="temple-lead">{refurb ? refurb.lead : visiblePageSummary}</p>
       {temple.aliases.length > 0 && (
         <p class="alias-line"><span>別称・関連名称</span>{temple.aliases.join("／")}</p>
       )}
@@ -369,6 +388,16 @@ const showHouyouBridge = temple.status === "existing";
 
     <div class="temple-content-grid">
       <main class="temple-main-content">
+        {refurb ? (
+          <RefurbMain
+            temple={temple}
+            refurb={refurb}
+            monogatariLinks={monogatariLinks}
+            visibleMediaPhotos={visibleMediaPhotos}
+            publicationNotice={publicationNotice}
+          />
+        ) : (
+        <>
         <section class="detail-panel">
           <p class="section-number">01</p>
           <h2>この寺院について</h2>
@@ -524,6 +553,8 @@ const showHouyouBridge = temple.status === "existing";
             ))}
           </ol>
         </section>
+        </>
+        )}
 
       </main>
 

@@ -1,0 +1,240 @@
+---
+// 2026-07-19 全面改修後の寺院個別ページ本文（01〜09）。
+// facts（data/temples/<slug>.json）が存在する寺院のみ [slug].astro から使われる。
+import type { RefurbFacts } from "../lib/refurb";
+import { getSectModule, getDeityModule } from "../lib/refurb";
+import { getPhotoCategory } from "../lib/temples";
+import { getMonogatariRelationLabel } from "../lib/related-monogatari";
+
+interface Props {
+  temple: any;
+  refurb: RefurbFacts;
+  monogatariLinks: any[];
+  visibleMediaPhotos: any[];
+  publicationNotice: any;
+}
+
+const { temple, refurb, monogatariLinks, visibleMediaPhotos, publicationNotice } = Astro.props;
+
+const sectModule = getSectModule(refurb.sect_deity?.sect_module_id);
+const deityModule = getDeityModule(refurb.sect_deity?.deity_module_id);
+const culturalAssets = refurb.cultural_assets || [];
+const communityBody = refurb.community?.body || [];
+const ruinNote = refurb.community?.ruin_note || null;
+const worship = refurb.worship_guide || null;
+const annualEvents = worship?.annual_events || [];
+const visitNotes = worship?.visit_notes || [];
+const worshipPending = worship?.pending || [];
+const faq = refurb.faq || [];
+const sources = refurb.sources || [];
+
+// セクション番号は存在するセクションだけで連番にする
+let sectionCounter = 0;
+const num = () => String(++sectionCounter).padStart(2, "0");
+const anchorLabels: Record<string, string> = {
+  about: "この寺院について",
+  history: "歴史と背景",
+  heritage: "文化財・見どころ",
+  "sect-deity": "宗派と本尊",
+  community: "地域とのつながり",
+  worship: "年中行事・参拝の手引き",
+};
+---
+
+<section class="detail-panel" id="about">
+  <p class="section-number">{num()}</p>
+  <h2>この寺院について</h2>
+  {refurb.about.map((paragraph) => <p class="summary-copy">{paragraph}</p>)}
+</section>
+
+<section class="detail-panel" id="history">
+  <p class="section-number">{num()}</p>
+  <h2>歴史と背景</h2>
+  <div class="history-timeline">
+    {refurb.history_sections.map((item) => (
+      <article>
+        <h3>{item.heading}</h3>
+        <p>{item.body}</p>
+      </article>
+    ))}
+  </div>
+</section>
+
+{culturalAssets.length > 0 && (
+  <section class="detail-panel" id="heritage">
+    <p class="section-number">{num()}</p>
+    <h2>文化財・見どころ</h2>
+    <div class="heritage-list">
+      {culturalAssets.map((asset) => (
+        <article>
+          <div><span>{asset.designation || "境内の見どころ"}</span><h3>{asset.name}</h3></div>
+          <p>{asset.summary}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+)}
+
+{refurb.sect_deity && (
+  <section class="detail-panel" id="sect-deity">
+    <p class="section-number">{num()}</p>
+    <h2>宗派と本尊を知る</h2>
+    <p class="sect-deity-intro">{refurb.sect_deity.intro}</p>
+    {sectModule && (
+      <article class="knowledge-module">
+        <h3>{sectModule.name}とは</h3>
+        {sectModule.body.map((paragraph) => <p>{paragraph}</p>)}
+        {(sectModule.sources || []).length > 0 && (
+          <p class="module-sources">
+            参考: {(sectModule.sources || []).map((s, i) => (
+              <>{i > 0 && "／"}{s.url ? <a href={s.url} target="_blank" rel="noreferrer">{s.title}</a> : s.title}</>
+            ))}
+          </p>
+        )}
+      </article>
+    )}
+    {deityModule && (
+      <article class="knowledge-module">
+        <h3>{deityModule.name}という仏さま</h3>
+        {deityModule.body.map((paragraph) => <p>{paragraph}</p>)}
+        {(deityModule.sources || []).length > 0 && (
+          <p class="module-sources">
+            参考: {(deityModule.sources || []).map((s, i) => (
+              <>{i > 0 && "／"}{s.url ? <a href={s.url} target="_blank" rel="noreferrer">{s.title}</a> : s.title}</>
+            ))}
+          </p>
+        )}
+      </article>
+    )}
+  </section>
+)}
+
+<section class="detail-panel" id="community">
+  <p class="section-number">{num()}</p>
+  <h2>地域とのつながり</h2>
+  {communityBody.map((paragraph) => <p>{paragraph}</p>)}
+  {ruinNote && (
+    <article class="ruin-note">
+      <h3>跡地の現況</h3>
+      <p>{ruinNote}</p>
+    </article>
+  )}
+  {monogatariLinks.length > 0 && (
+    <div class="monogatari-embed">
+      <h3>磐田物語で読む</h3>
+      <p class="monogatari-lead">この寺院やゆかりの土地の歴史を、姉妹サイト「磐田物語」の読み物でご覧いただけます。</p>
+      <ul class="monogatari-link-list">
+        {monogatariLinks.map((link) => (
+          <li>
+            <a href={link.url}>
+              {link.relation === "direct" && (
+                <span class="monogatari-relation-label">{getMonogatariRelationLabel(link.relation)}</span>
+              )}
+              <span class="monogatari-link-title">{link.title}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+</section>
+
+{worship && (
+  <section class="detail-panel" id="worship">
+    <p class="section-number">{num()}</p>
+    <h2>年中行事・参拝の手引き</h2>
+    {annualEvents.length > 0 && (
+      <article class="worship-block">
+        <h3>年中行事・法要</h3>
+        <ul class="annual-event-list">
+          {annualEvents.map((event) => (
+            <li><strong>{event.name}</strong>{event.timing && <span>（{event.timing}）</span>}{event.note && <p>{event.note}</p>}</li>
+          ))}
+        </ul>
+      </article>
+    )}
+    {visitNotes.length > 0 && (
+      <article class="worship-block">
+        <h3>参拝・法要で訪れる方へ</h3>
+        {visitNotes.map((note) => <p>{note}</p>)}
+      </article>
+    )}
+    {worshipPending.length > 0 && (
+      <div class="pending-block">
+        <strong>調査中の項目</strong>
+        <ul>
+          {worshipPending.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+    )}
+    <p class="small">行事の日程・受付は年により変わることがあります。最新の情報は寺院の公式情報または寺院へ直接ご確認ください。</p>
+  </section>
+)}
+
+{faq.length > 0 && (
+  <section class="detail-panel faq-panel" id="faq">
+    <p class="section-number">{num()}</p>
+    <h2>よくある質問</h2>
+    <dl class="faq-list">
+      {faq.map((item) => (
+        <div class="faq-item">
+          <dt>{item.q}</dt>
+          <dd>
+            <p>{item.a}</p>
+            {item.anchor && anchorLabels[item.anchor] && (
+              <a class="faq-anchor" href={`#${item.anchor}`}>本文「{anchorLabels[item.anchor]}」を読む</a>
+            )}
+          </dd>
+        </div>
+      ))}
+    </dl>
+  </section>
+)}
+
+<section class="detail-panel" id="photos">
+  <p class="section-number">{num()}</p>
+  <h2>写真で見る境内</h2>
+  {visibleMediaPhotos.length > 0 ? (
+    <div class="photo-record-list">
+      {visibleMediaPhotos.map((photo) => (
+        <figure>
+          <img src={photo.src} alt={photo.alt} loading="lazy" />
+          <figcaption>
+            <strong>{getPhotoCategory(photo.category_id)?.label || "現地写真"}</strong>
+            <span>{photo.caption}</span>
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  ) : (
+    <div class="pending-block">
+      {publicationNotice ? (
+        <>
+          <strong>写真掲載を見合わせています</strong>
+          <p>関係者からの明確な意思表示を受け、当サイトでの写真掲載を行っていません。</p>
+        </>
+      ) : (
+        <>
+          <strong>現地写真を準備しています</strong>
+          <p>現地訪問後に、本堂・境内・入口・説明板の写真を掲載します。</p>
+        </>
+      )}
+    </div>
+  )}
+</section>
+
+<section class="detail-panel sources-panel" id="sources">
+  <p class="section-number">{num()}</p>
+  <h2>出典・参考資料</h2>
+  <ol class="source-records">
+    {sources.map((source) => (
+      <li>
+        <span>{source.type}</span>
+        {source.url ? (
+          <a href={source.url} target="_blank" rel="noreferrer">{source.title}</a>
+        ) : <strong>{source.title}</strong>}
+        <p>{source.note}</p>
+      </li>
+    ))}
+  </ol>
+</section>

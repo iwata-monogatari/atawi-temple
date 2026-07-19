@@ -3900,3 +3900,122 @@ th {
   }
 
 }
+
+/* ---- 2026-07-19 全面改修: 寺院ページ新セクション ---- */
+.sect-deity-intro {
+  font-size: 1.02rem;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.knowledge-module {
+  background: var(--soft);
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+  padding: 18px 20px;
+  margin-bottom: 16px;
+}
+
+.knowledge-module h3 {
+  margin-bottom: 10px;
+  color: var(--accent-strong);
+}
+
+.knowledge-module p {
+  line-height: 1.9;
+  margin-bottom: 10px;
+}
+
+.knowledge-module .module-sources {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.ruin-note {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 16px 18px;
+  margin-top: 16px;
+  background: var(--paper);
+}
+
+.ruin-note h3 {
+  margin-bottom: 8px;
+}
+
+.monogatari-embed {
+  margin-top: 22px;
+  border-top: 1px dashed var(--line);
+  padding-top: 18px;
+}
+
+.monogatari-embed h3 {
+  margin-bottom: 8px;
+}
+
+.worship-block {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+}
+
+.worship-block h3 {
+  margin-bottom: 10px;
+}
+
+.annual-event-list {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.annual-event-list li {
+  border-left: 3px solid var(--gold);
+  padding-left: 12px;
+  line-height: 1.8;
+}
+
+.annual-event-list li span {
+  color: var(--muted);
+}
+
+.annual-event-list li p {
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.faq-list {
+  display: grid;
+  gap: 14px;
+}
+
+.faq-item {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 14px 18px;
+  background: var(--paper);
+}
+
+.faq-item dt {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.faq-item dt::before {
+  content: "Q. ";
+  color: var(--accent-strong);
+}
+
+.faq-item dd p {
+  line-height: 1.85;
+  margin-bottom: 6px;
+}
+
+.faq-anchor {
+  font-size: 0.85rem;
+}
+
+.detail-panel .summary-copy + .summary-copy {
+  margin-top: 12px;
+}
