@@ -80,32 +80,38 @@ const districts = JSON.stringify(allDistricts);
 
   <section class="search-panel" data-temples={data} data-districts={districts}>
     <form id="search-form" class="search-form">
-      <label>
-        キーワード
-        <input name="q" type="search" placeholder="寺院名・読み方・住所・宗派・ご本尊" data-track-click="temple_search_refine" />
-      </label>
-      <label>
-        地区
-        <select name="district" data-track-click="temple_search_refine">
+      <div class="search-field">
+        <label for="search-q">キーワード</label>
+        <input
+          id="search-q"
+          name="q"
+          type="search"
+          placeholder="寺院名・読み方・住所・宗派・ご本尊"
+          data-track-click="temple_search_refine"
+        />
+      </div>
+      <div class="search-field">
+        <label for="search-district">地区</label>
+        <select id="search-district" name="district" data-track-click="temple_search_refine">
           <option value="">すべて</option>
           {allDistricts.map((district) => <option value={district.district_id}>{district.name}</option>)}
           <option value="__unassigned">地区未確定</option>
         </select>
-      </label>
-      <label>
-        宗派
-        <select name="sect" data-track-click="temple_search_refine">
+      </div>
+      <div class="search-field">
+        <label for="search-sect">宗派</label>
+        <select id="search-sect" name="sect" data-track-click="temple_search_refine">
           <option value="">すべて</option>
           {sects.map((sect) => <option value={sect.name}>{sect.name}（{sect.count}）</option>)}
         </select>
-      </label>
-      <label>
-        状態
-        <select name="status" data-track-click="temple_search_refine">
+      </div>
+      <div class="search-field">
+        <label for="search-status">状態</label>
+        <select id="search-status" name="status" data-track-click="temple_search_refine">
           <option value="">すべて</option>
           {statuses.map((item) => <option value={item.status}>{item.label}（{item.count}）</option>)}
         </select>
-      </label>
+      </div>
       <button type="submit" data-track-click="temple_search_refine">検索</button>
     </form>
     <p id="result-count" class="result-count" aria-live="polite"></p>

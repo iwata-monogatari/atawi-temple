@@ -1,4 +1,5 @@
-import { readFile } from "node:fs/promises";
+import { access, readFile, readdir } from "node:fs/promises";
+import path from "node:path";
 
 const errors = [];
 
@@ -11,8 +12,57 @@ async function readBuiltFile(path) {
   }
 }
 
+async function fileExists(filePath) {
+  try {
+    await access(filePath);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function listHtmlFiles(dir) {
+  const entries = await readdir(dir, { withFileTypes: true });
+  const files = [];
+  for (const entry of entries) {
+    const entryPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      files.push(...await listHtmlFiles(entryPath));
+    } else if (entry.isFile() && entry.name.endsWith(".html")) {
+      files.push(entryPath);
+    }
+  }
+  return files;
+}
+
+function decodeHtmlAttribute(value) {
+  return value
+    .replaceAll("&quot;", "\"")
+    .replaceAll("&#34;", "\"")
+    .replaceAll("&apos;", "'")
+    .replaceAll("&#39;", "'")
+    .replaceAll("&lt;", "<")
+    .replaceAll("&gt;", ">")
+    .replaceAll("&amp;", "&");
+}
+
+function sitemapPathToFile(pathname) {
+  const normalizedPath = pathname === "/" ? "index.html" : pathname.replace(/^\/+/, "");
+  if (normalizedPath.endsWith("/")) {
+    return path.join("dist", normalizedPath, "index.html");
+  }
+  if (path.extname(normalizedPath)) {
+    return path.join("dist", normalizedPath);
+  }
+  return path.join("dist", normalizedPath, "index.html");
+}
+
 const toyodaHtml = await readBuiltFile("dist/areas/toyoda/index.html");
 const chionsaiHtml = await readBuiltFile("dist/temples/chionsai-hitokoto/index.html");
+const indexHtml = await readBuiltFile("dist/index.html");
+const searchHtml = await readBuiltFile("dist/search/index.html");
+const sitemapXml = await readBuiltFile("dist/sitemap.xml");
+const templesJson = JSON.parse(await readFile("data/temples.json", "utf8"));
 const expectedToyodaHeroImage = "/images/temples/gyokoji-ikeda/gyokoji-ikeda-03-main-hall.webp";
 const expectedChionsaiHeroImage = "/assets/temples/chionsai-hitokoto/748700946_37058201220492041_8019282847618984703_n.jpg";
 const requiredToyodaTempleNames = [
@@ -59,6 +109,55 @@ if (chionsaiHtml) {
 
   if (!chionsaiHtml.includes("智恩齋")) {
     errors.push("temples/chionsai-hitokoto: missing temple name");
+  }
+}
+
+if (indexHtml) {
+  if (indexHtml.indexOf("ピックアップ寺院") > indexHtml.indexOf("菩提寺を確認したら、実家も一度だけ見ておく")) {
+    errors.push("index: related service block must appear after the pickup temples section");
+  }
+}
+
+if (searchHtml) {
+  const dataMatch = searchHtml.match(/data-temples="([^"]*)"/);
+  if (!dataMatch) {
+    errors.push("search: missing embedded temple search data");
+  } else {
+    try {
+      const searchData = JSON.parse(decodeHtmlAttribute(dataMatch[1]));
+      if (!Array.isArray(searchData)) {
+        errors.push("search: embedded temple search data must be an array");
+      } else if (searchData.length !== templesJson.length) {
+        errors.push(`search: embedded temple count ${searchData.length} does not match data/temples.json ${templesJson.length}`);
+      }
+    } catch (error) {
+      errors.push(`search: embedded temple search data is not valid JSON (${error.message})`);
+    }
+  }
+}
+
+if (sitemapXml) {
+  const locs = [...sitemapXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+  if (locs.length === 0) {
+    errors.push("sitemap: no URLs found");
+  }
+  for (const loc of locs) {
+    const url = new URL(loc);
+    const filePath = sitemapPathToFile(url.pathname);
+    if (!await fileExists(filePath)) {
+      errors.push(`sitemap: ${url.pathname} does not map to a built file (${filePath})`);
+    }
+  }
+}
+
+for (const filePath of await listHtmlFiles("dist")) {
+  const html = await readFile(filePath, "utf8");
+  const relativePath = path.relative("dist", filePath).replaceAll("\\", "/");
+  const imgTags = html.match(/<img\b[^>]*>/g) || [];
+  for (const tag of imgTags) {
+    if (!/\balt\s*=/.test(tag)) {
+      errors.push(`${relativePath}: image tag is missing alt attribute`);
+    }
   }
 }
 

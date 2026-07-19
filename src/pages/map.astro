@@ -96,32 +96,32 @@ const mapItemsJson = JSON.stringify(mapItems).replace(/</g, "\\u003c");
     </div>
 
     <form id="map-filter-form" class="search-form map-filter-form">
-      <label>
-        キーワード
-        <input name="q" type="search" placeholder="寺院名・住所・宗派" />
-      </label>
-      <label>
-        地区
-        <select name="district">
+      <div class="search-field">
+        <label for="map-q">キーワード</label>
+        <input id="map-q" name="q" type="search" placeholder="寺院名・住所・宗派" />
+      </div>
+      <div class="search-field">
+        <label for="map-district">地区</label>
+        <select id="map-district" name="district">
           <option value="">すべて</option>
           {allDistricts.map((district) => <option value={district.district_id}>{district.name}</option>)}
           <option value="__unassigned">地区未確定</option>
         </select>
-      </label>
-      <label>
-        宗派・関連法人
-        <select name="sect">
+      </div>
+      <div class="search-field">
+        <label for="map-sect">宗派・関連法人</label>
+        <select id="map-sect" name="sect">
           <option value="">すべて</option>
           {sects.map((sect) => <option value={sect.name}>{sect.name}（{sect.count}）</option>)}
         </select>
-      </label>
-      <label>
-        状態
-        <select name="status">
+      </div>
+      <div class="search-field">
+        <label for="map-status">状態</label>
+        <select id="map-status" name="status">
           <option value="">すべて</option>
           {statuses.map((item) => <option value={item.status}>{item.label}（{item.count}）</option>)}
         </select>
-      </label>
+      </div>
       <button type="submit" data-track-click="temple_search_refine">絞り込み</button>
     </form>
 
