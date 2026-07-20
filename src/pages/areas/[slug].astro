@@ -1,11 +1,13 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import TempleCard from "../../components/TempleCard.astro";
+import { fromTempleUrl } from "../../lib/editorial";
 import type { Temple } from "../../lib/temples";
 import {
   allDistricts,
   districtColors,
   getDistrictBySlug,
+  getSectGroupName,
   getTempleMediaBySlug,
   getTemplesByDistrictId,
   hasDetailPage,
@@ -59,6 +61,17 @@ const areaHeroImage = district.hero_image || fallbackAreaHeroImage;
 const sectCount = new Set(detailedTemples.map((temple) => temple.sect)).size;
 const searchUrl = `/search/?district=${district.district_id}`;
 const mapUrl = `/map/?district=${district.district_id}`;
+const areaConsultUrl = fromTempleUrl(`area_${district.slug}_check`);
+const areaSectSummary = Array.from(
+  temples.reduce((map, temple) => {
+    const name = getSectGroupName(temple.sect);
+    map.set(name, (map.get(name) || 0) + 1);
+    return map;
+  }, new Map<string, number>()),
+)
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ja"))
+  .slice(0, 3)
+  .map(([name, count]) => `${name}${count}件`);
 const heroStyle = `--district-color: ${districtColor};${areaHeroImage ? ` --area-hero-image: url("${areaHeroImage}");` : ""}`;
 const structuredData = {
   "@context": "https://schema.org",
@@ -152,6 +165,44 @@ const templeGroups = [
     <p class="eyebrow">Area Guide</p>
     <h2 id="area-intro-title">{district.name}地区の寺院と地域史</h2>
     <p>{district.description}</p>
+  </section>
+
+  <section class="section area-seo-section" aria-labelledby="area-seo-title">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Search Context</p>
+        <h2 id="area-seo-title">{district.name}地区で寺院を探す前に</h2>
+      </div>
+    </div>
+    <div class="area-seo-grid">
+      <article>
+        <span>寺院数</span>
+        <strong>{temples.length}件</strong>
+        <p>{district.name}地区の現存寺院、寺院跡、確認中の登録をまとめています。</p>
+      </article>
+      <article>
+        <span>主な宗派・関連法人</span>
+        <strong>{areaSectSummary.length ? areaSectSummary.join(" / ") : "確認中"}</strong>
+        <p>宗派名は公的資料と寺院ごとの確認情報に基づき、検索しやすい表記へ整理しています。</p>
+      </article>
+      <article>
+        <span>住所から探す</span>
+        <strong>住所一覧・Googleマップ</strong>
+        <p>寺院名があいまいな場合は、住所や地区から候補を絞り込めます。</p>
+        <a href={mapUrl} data-track-click="temple_map_click">この地区の住所一覧を見る</a>
+      </article>
+      <article>
+        <span>実家整理との接点</span>
+        <strong>墓・仏壇・書類を分けて確認</strong>
+        <p>法要や墓参りでこの地区へ戻る時期は、実家の名義や空き家管理も確認しやすいタイミングです。</p>
+        <a
+          href={areaConsultUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-track-click="to_fudosan_click"
+        >実家・お墓まわりの確認だけ相談する</a>
+      </article>
+    </div>
   </section>
 
   <nav class="area-switcher" style={`--district-color: ${districtColor};`} aria-label="地区を切り替える">

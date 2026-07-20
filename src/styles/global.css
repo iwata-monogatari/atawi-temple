@@ -1790,6 +1790,57 @@ button,
   font-size: 1.03rem;
 }
 
+.area-seo-section {
+  padding-top: 12px;
+}
+
+.area-seo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.area-seo-grid article {
+  display: grid;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  padding: 16px;
+}
+
+.area-seo-grid span {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.area-seo-grid strong {
+  color: var(--ink);
+  font-size: 1.06rem;
+  line-height: 1.45;
+}
+
+.area-seo-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.area-seo-grid a {
+  color: var(--accent-strong);
+  font-size: 0.92rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+@media (max-width: 820px) {
+  .area-seo-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .area-hero {
   --district-color: var(--accent);
   --area-hero-image: linear-gradient(135deg, rgba(47, 75, 43, 0.92), rgba(32, 32, 29, 0.86));
