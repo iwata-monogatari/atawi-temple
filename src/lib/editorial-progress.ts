@@ -202,6 +202,13 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 7,
       href: "/research/senkoji-ieyasu-bell-inscription-territorial-rule/",
     } as const;
+    const senkojiCommunityPublication = {
+      title: "地蔵小路・和算額・見付学校と宣光寺",
+      characterCount: 6239,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/senkoji-jizo-lane-wasan-mitsuke-school-public-sphere/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -223,6 +230,8 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? senkojiHeritagePublication
           : temple.slug === "senkoji-mitsuke" && angle.key === "history"
             ? senkojiHistoryPublication
+          : temple.slug === "senkoji-mitsuke" && angle.key === "community"
+            ? senkojiCommunityPublication
           : undefined;
 
     return {
