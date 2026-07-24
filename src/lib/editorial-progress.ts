@@ -160,6 +160,13 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 7,
       href: "/research/daijoin-koshinzuka-kofun-layered-cultural-landscape/",
     } as const;
+    const daijoinCommunityPublication = {
+      title: "大乗院三仭坊における祈願・供養・地域公共圏",
+      characterCount: 6689,
+      illustrationCount: 5,
+      sourceCount: 8,
+      href: "/research/daijoin-mihirobo-community-ritual-public-space/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -169,6 +176,8 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? daijoinHistoryPublication
           : temple.slug === "daijoin-nakaizumi" && angle.key === "heritage"
             ? daijoinHeritagePublication
+          : temple.slug === "daijoin-nakaizumi" && angle.key === "community"
+            ? daijoinCommunityPublication
           : undefined;
 
     return {
