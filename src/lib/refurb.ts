@@ -30,6 +30,8 @@ export interface RefurbFacts {
     sect_module_id?: string | null;
     deity_module_id?: string | null;
     intro: string;
+    historical_display?: string;
+    current_status?: string;
   };
   community?: { body?: string[]; ruin_note?: string };
   worship_guide?: {

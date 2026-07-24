@@ -113,8 +113,14 @@ if (chionsaiHtml) {
 }
 
 if (indexHtml) {
-  if (indexHtml.indexOf("ピックアップ寺院") > indexHtml.indexOf("菩提寺を確認したら、実家も一度だけ見ておく")) {
-    errors.push("index: related service block must appear after the pickup temples section");
+  const pickupIndex = indexHtml.indexOf("ピックアップ寺院");
+  const districtIndex = indexHtml.indexOf("9地区から探す");
+  const updatesIndex = indexHtml.indexOf("更新情報");
+  if (!(pickupIndex >= 0 && districtIndex > pickupIndex && updatesIndex > districtIndex)) {
+    errors.push("index: primary flow must be pickup temples, districts, then recent updates");
+  }
+  if (indexHtml.includes("菩提寺を確認したら、実家も一度だけ見ておく")) {
+    errors.push("index: related service promotion must not interrupt the primary discovery flow");
   }
 }
 
@@ -129,6 +135,10 @@ if (searchHtml) {
         errors.push("search: embedded temple search data must be an array");
       } else if (searchData.length !== templesJson.length) {
         errors.push(`search: embedded temple count ${searchData.length} does not match data/temples.json ${templesJson.length}`);
+      } else if (!searchData.some((temple) => temple.slug === "anrakuji-tateno"
+        && temple.main_deity.includes("薬師如来")
+        && temple.main_deity_status === "未確認")) {
+        errors.push("search: historical deity information and current confirmation status must be kept separate");
       }
     } catch (error) {
       errors.push(`search: embedded temple search data is not valid JSON (${error.message})`);

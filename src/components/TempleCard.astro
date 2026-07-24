@@ -91,7 +91,7 @@ const factItems = isAreaResult
       ))}
     </dl>
     <p class="temple-card-summary">{cardSummary}</p>
-    {detailPageAvailable && isAreaResult && (
+    {detailPageAvailable && (
       <a class="temple-card-action" href={`/temples/${temple.slug}/`} data-track-click="temple_detail_click">詳細を見る</a>
     )}
     {!detailPageAvailable && <p class="pending-text">個別ページは公開していません。検索記録として表示しています。</p>}

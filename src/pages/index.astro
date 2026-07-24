@@ -1,6 +1,5 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HouyouKiseiBridge from "../components/HouyouKiseiBridge.astro";
 import {
   allTemples,
   allTempleUpdates,
@@ -18,8 +17,6 @@ import {
   isCemeteryServiceInfo,
   isUnknownValue,
 } from "../lib/temples";
-import { publicGuideArticles, tokushuArticles } from "../lib/editorial";
-import { getMonogatariLinksBySlug } from "../lib/related-monogatari";
 
 const districtDisplayOrder = [
   "mitsuke",
@@ -81,13 +78,6 @@ const pickupPool = allTemples
 const pickupPoolJson = JSON.stringify(pickupPool).replace(/</g, "\\u003c");
 const pinnedPickupSlugsJson = JSON.stringify(pinnedPickupSlugs).replace(/</g, "\\u003c");
 
-const monogatariPickupSlugs = ["kokubunji-mitsuke", "daijoin-nakaizumi", "gyokoji-ikeda", "ioji-kamada"];
-const monogatariPickups = monogatariPickupSlugs
-  .map((slug) => ({ temple: getTempleBySlug(slug), link: getMonogatariLinksBySlug(slug)[0], photo: photoAt(slug, 9) }))
-  .filter((item): item is { temple: any; link: any; photo: any } => Boolean(item.temple && item.link));
-const topTokushu = tokushuArticles.slice(0, 4);
-const topGuides = publicGuideArticles.filter((article) => article.slug !== "kisei-check").slice(0, 3);
-
 function photoAt(slug: string, index: number) {
   const photos = getVisibleTempleMediaPhotos(slug);
   const photo = photos[index] ?? photos[0];
@@ -135,24 +125,6 @@ const firstHeroSlide = heroSlides[0];
 const heroSlidesJson = JSON.stringify(heroSlides).replace(/</g, "\\u003c");
 const iwataMonogatariBannerImage = "/assets/temples/kokubunji-mitsuke/hondo.webp";
 
-// 境内の実写真は「境内フォトギャラリー」等の各セクションで使う（華やかさ重視で選定）
-
-const galleryPhotos = [
-  { slug: "senkoji-mitsuke", index: 4 },
-  { slug: "saikoji-mitsuke", index: 2 },
-  { slug: "honshoji-kounodai", index: 1 },
-  { slug: "daienji-kamo", index: 1 },
-  { slug: "myohoji-ikeda", index: 3 },
-  { slug: "shokoji-miyanoshiki", index: 4 },
-  { slug: "genmyoji-mitsuke", index: 3 },
-  { slug: "jionji-mitsuke", index: 4 },
-]
-  .map(({ slug, index }) => {
-    const temple = getTempleBySlug(slug);
-    const photo = photoAt(slug, index);
-    return temple && photo ? { temple, photo } : null;
-  })
-  .filter((item): item is { temple: any; photo: any } => Boolean(item));
 ---
 
 <BaseLayout
@@ -447,8 +419,6 @@ const galleryPhotos = [
     </script>
   </section>
 
-  <HouyouKiseiBridge variant="home" />
-
   <section class="section">
     <div class="section-heading">
       <h2>9地区から探す</h2>
@@ -484,82 +454,6 @@ const galleryPhotos = [
         <a href="/search/?district=__unassigned">地区未確定の寺院を見る</a>
       </p>
     )}
-  </section>
-
-  <section class="section">
-    <div class="section-heading">
-      <h2>境内フォトギャラリー</h2>
-      <a href="/temples/">寺院一覧へ</a>
-    </div>
-    <div class="temple-gallery-grid">
-      {galleryPhotos.map(({ temple, photo }) => (
-        <a class="temple-gallery-card" href={`/temples/${temple.slug}/`}>
-          <img src={photo.src} alt={photo.alt} loading="lazy" />
-          <span>{temple.name}</span>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-heading">
-      <h2>磐田物語で読む登録寺院</h2>
-      <a href="https://iwata-monogatari.net/">磐田物語へ</a>
-    </div>
-    <div class="monogatari-pickup-grid">
-      {monogatariPickups.map(({ temple, link, photo }) => (
-        <a
-          class={photo ? "monogatari-pickup-card monogatari-pickup-card--photo" : "monogatari-pickup-card"}
-          href={link.url}
-          style={photo ? `background-image: linear-gradient(180deg, rgba(20,26,18,.1) 0%, rgba(20,26,18,.85) 100%), url(${photo.src})` : undefined}
-        >
-          <span class="monogatari-pickup-temple">{temple.name}（{getDistrictName(temple.district_id)}地区）</span>
-          <span class="monogatari-pickup-title">{link.title}</span>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-heading">
-      <div>
-        <h2>特集・読みもの</h2>
-        <span class="small">お寺を調べたあと、境内・法要・地域のことまで読む</span>
-      </div>
-      <a href="/tokushu/">特集一覧へ</a>
-    </div>
-    <div class="article-card-grid">
-      {
-        topTokushu.map((article) => (
-          <a class="reading-card" href={`/tokushu/${article.slug}/`}>
-            <span>{article.category}</span>
-            <h3>{article.title}</h3>
-            <p>{article.subtitle}</p>
-          </a>
-        ))
-      }
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-heading">
-      <div>
-        <h2>檀家・法要の基礎ガイド</h2>
-        <span class="small">檀家、法要、寺院確認を中立に整理</span>
-      </div>
-      <a href="/guide/">ガイド一覧へ</a>
-    </div>
-    <div class="article-card-grid guide-card-grid">
-      {
-        topGuides.map((article) => (
-          <a class="reading-card" href={`/guide/${article.slug}/`}>
-            <span>{article.category}</span>
-            <h3>{article.title}</h3>
-            <p>{article.subtitle}</p>
-          </a>
-        ))
-      }
-    </div>
   </section>
 
   <section class="section updates-section">
@@ -678,6 +572,11 @@ const galleryPhotos = [
           静岡県知事所轄宗教法人名簿に掲載された磐田市内の寺院・関連宗教法人を基礎データとして公開しています。
           地区分類、宗派分類、検索から、調べたい寺院へすばやく移動できます。
         </p>
+        <div class="plain-actions">
+          <a href="/tokushu/">特集・読みもの</a>
+          <a href="/guide/">檀家・法要の基礎ガイド</a>
+          <a href="/temples/">写真のある寺院を見る</a>
+        </div>
       </div>
       <div class="info-box">
         <h2>情報提供について</h2>

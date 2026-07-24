@@ -27,7 +27,6 @@ import {
   getMonogatariLinksBySlug,
   getMonogatariRelationLabel,
 } from "../../lib/related-monogatari";
-import { fromTempleUrl } from "../../lib/editorial";
 
 export function getStaticPaths() {
   return allTemples.filter(hasDetailPage).map((temple) => ({ params: { slug: temple.slug } }));
@@ -158,8 +157,8 @@ const templeImage = coverPhoto?.src || "/assets/temples/kokubunji-mitsuke/hondo.
 const siteUrl = "https://temple.atawi.link";
 const seoLocation = district ? `磐田市${districtName}` : "磐田市内";
 const templeNameWithKana = showKana ? `${temple.name}（${temple.name_kana}）` : temple.name;
-const templeDetailTitle = `${temple.name}（${seoLocation}）- ${temple.sect}の基本情報・アクセス｜ATAWI TEMPLE`;
-const templeDetailDescription = `静岡県${seoLocation}にある${temple.sect}の寺院「${templeNameWithKana}」の住所、アクセス、駐車場情報などを掲載しています。法要やお墓参り、帰省の前の確認にご活用ください。`;
+const templeDetailTitle = `${temple.name}（${seoLocation}）- ${temple.sect}の基本情報・確認状況｜ATAWI TEMPLE`;
+const templeDetailDescription = `静岡県${seoLocation}にある${temple.sect}の寺院「${templeNameWithKana}」の住所、宗派、文化財、公開資料に基づく情報と現在の確認状況を掲載しています。`;
 const structuredData = [
   {
     "@context": "https://schema.org",
@@ -205,7 +204,11 @@ const field = (value: string | null | undefined, pending = "調査中") => ({
   text: isUnknownValue(value) ? pending : value,
   pending: isUnknownValue(value),
 });
-const deity = field(temple.main_deity, "調査中・加筆待ち");
+const historicalDeityDisplay = refurb?.sect_deity?.historical_display;
+const currentDeityStatus = refurb?.sect_deity?.current_status;
+const deity = historicalDeityDisplay
+  ? { text: historicalDeityDisplay, pending: false }
+  : field(temple.main_deity, "調査中・加筆待ち");
 const officialSite = dankaInfo?.official_site;
 const officialSiteStatus = officialSite?.status || "未確認";
 const officialSiteLabel = officialSite?.status === "あり" ? "公式サイトあり" : officialSiteStatus;
@@ -241,14 +244,13 @@ const uploadedPhotoTempleDataJson = JSON.stringify({
   name: temple.name,
 }).replace(/</g, "\\u003c");
 const showHouyouBridge = temple.status === "existing";
-const templePrimaryFudosanUrl = fromTempleUrl("temple_detail_primary_context");
-const templeStickyFudosanUrl = fromTempleUrl("temple_detail_sticky");
 ---
 
 <BaseLayout
   title={templeDetailTitle}
   description={templeDetailDescription}
   ogImage={templeImage}
+  hideSeasonalBanner={true}
   structuredData={structuredData}
 >
   <article class="temple-profile">
@@ -295,19 +297,6 @@ const templeStickyFudosanUrl = fromTempleUrl("temple_detail_sticky");
         <a class="button-link secondary-button" href={mapPageUrl} data-track-click="temple_map_click">住所一覧で見る</a>
         <a class="button-link secondary-button" href="/temples/">寺院一覧へ戻る</a>
       </div>
-      {showHouyouBridge && (
-        <a
-          class="temple-jikka-primary-cta"
-          href={templePrimaryFudosanUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-track-click="to_fudosan_click"
-        >
-          <span>法要・墓参りで磐田へ戻る方へ</span>
-          <strong>寺院・お墓を確認したら、実家まわりも一度だけ整理する</strong>
-          <em>必要な方は、運営元の関連サービスで名義・空き家リスクを確認だけ相談できます</em>
-        </a>
-      )}
     </header>
 
     <section class="temple-basic-panel" aria-label="寺院の基本情報と確認状況">
@@ -323,6 +312,13 @@ const templeStickyFudosanUrl = fromTempleUrl("temple_detail_sticky");
         <div><dt>読み方</dt><dd class={!showKana ? "pending-text" : ""}>{showKana ? temple.name_kana : "未確認"}</dd></div>
         <div><dt>地区</dt><dd>{districtName}</dd></div>
         <div><dt>宗派</dt><dd>{temple.sect}</dd></div>
+        <div><dt>ご本尊（資料上）</dt><dd class={deity.pending ? "pending-text" : ""}>{deity.text}</dd></div>
+        <div>
+          <dt>ご本尊の現在の確認状況</dt>
+          <dd class={currentDeityStatus || deity.pending ? "pending-text" : ""}>
+            {currentDeityStatus || (deity.pending ? "未確認" : "公開資料で確認済み")}
+          </dd>
+        </div>
         <div><dt>住所</dt><dd>{temple.address}</dd></div>
         <div><dt>Googleマップ</dt><dd><a href={mapUrl} target="_blank" rel="noreferrer" data-track-click="temple_map_click">Googleマップで開く</a></dd></div>
         <div>
@@ -347,30 +343,6 @@ const templeStickyFudosanUrl = fromTempleUrl("temple_detail_sticky");
         不明な項目は推測せず、確認中として表示しています。法要、参拝、駐車場、電話での連絡は、寺院の公式情報または寺院へ直接ご確認ください。
       </p>
     </section>
-
-    {showHouyouBridge && (
-      <section class="temple-jikka-checklist" aria-label="寺院確認後の実家確認">
-        <div>
-          <p class="eyebrow">Jikka Check</p>
-          <h2>{temple.name}を調べたあとに、実家で見る3つ</h2>
-          <p>法要や墓参りの日は、親族が集まり、菩提寺・墓・仏壇・実家の話がつながりやすい日です。売る話を始める前に、まず事実をそろえます。</p>
-        </div>
-        <ul>
-          <li><b>家の状態</b><span>庭木、郵便物、雨漏り、道路との接し方を写真で残す</span></li>
-          <li><b>書類の場所</b><span>固定資産税通知書、権利証、保険、寺からの封筒を確認する</span></li>
-          <li><b>家族の次の一手</b><span>売る、残す、管理する前に、名義・道路・農地を確認する</span></li>
-        </ul>
-        <a
-          class="button-link cta-hot"
-          href={fromTempleUrl("temple_detail_checklist")}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-track-click="to_fudosan_click"
-        >
-          実家・お墓まわりの確認だけ相談する<span class="external-mark">外部</span>
-        </a>
-      </section>
-    )}
 
     {showHouyouBridge && <HouyouKiseiBridge variant="temple-top" />}
 
@@ -846,23 +818,6 @@ const templeStickyFudosanUrl = fromTempleUrl("temple_detail_sticky");
           ))}
         </div>
       </section>
-    )}
-    {showHouyouBridge && (
-      <aside class="temple-jikka-sticky-cta" aria-label="実家確認関連サービスへの導線">
-        <div>
-          <span>法要・墓参りのあとに</span>
-          <strong>実家・お墓まわりの確認だけ相談できます</strong>
-        </div>
-        <a
-          class="button-link cta-hot"
-          href={templeStickyFudosanUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-track-click="to_fudosan_click"
-        >
-          確認だけ相談
-        </a>
-      </aside>
     )}
   </article>
 </BaseLayout>

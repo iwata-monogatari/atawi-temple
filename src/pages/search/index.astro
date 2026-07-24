@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getRefurbFacts } from "../../lib/refurb";
 import {
   allDistricts,
   allTemples,
@@ -31,6 +32,9 @@ const data = JSON.stringify(allTemples.map((temple) => {
     ? temple.founded_period
     : "";
   const pageSummary = getTempleDisplaySummary(temple, districtName);
+  const refurb = getRefurbFacts(temple.slug);
+  const deityDisplay = refurb?.sect_deity?.historical_display || mainDeity;
+  const deityStatus = refurb?.sect_deity?.current_status || (mainDeity ? "公開資料で確認済み" : "未確認");
   const aliases = temple.aliases.filter((alias) => !isCemeteryServiceInfo(alias));
   const searchText = normalizeSearchText([
     temple.name,
@@ -58,7 +62,8 @@ const data = JSON.stringify(allTemples.map((temple) => {
     sect_group: sectGroup,
     status: temple.status,
     display_status_label: displayStatusLabel,
-    main_deity: mainDeity,
+    main_deity: deityDisplay,
+    main_deity_status: deityStatus,
     founded_period: foundedPeriod,
     page_summary: pageSummary,
     detail_page: hasDetailPage(temple),
@@ -229,10 +234,13 @@ const districts = JSON.stringify(allDistricts);
             <div><dt>住所</dt><dd>${escapeHtml(temple.address)}</dd></div>
             <div><dt>地区</dt><dd>${escapeHtml(districtName)}</dd></div>
             <div><dt>宗派</dt><dd>${escapeHtml(temple.sect)}</dd></div>
-            <div><dt>ご本尊</dt><dd>${escapeHtml(knownValue(temple.main_deity))}</dd></div>
+            <div><dt>ご本尊（資料上）</dt><dd>${escapeHtml(knownValue(temple.main_deity))}</dd></div>
+            <div><dt>現在の確認状況</dt><dd>${escapeHtml(temple.main_deity_status || "未確認")}</dd></div>
             <div><dt>創建・年代</dt><dd>${escapeHtml(knownValue(temple.founded_period, "調査中"))}</dd></div>
           </dl>
-          <p>${escapeHtml(summary)}</p>` + detailNotice + `
+          <p>${escapeHtml(summary)}</p>
+          ${detailPageAvailable ? `<a class="temple-card-action" href="/temples/${escapeHtml(temple.slug)}/" data-track-click="temple_detail_click">詳細を見る</a>` : ""}
+          ` + detailNotice + `
         </article>
       `;
     }
