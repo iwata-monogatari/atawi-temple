@@ -123,17 +123,27 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
         href: "/research/kokubunji-continuity-and-discontinuity/",
       },
     } as const;
+    const iojiPublications = {
+      history: {
+        title: "鎌田山医王寺の歴史叙述と史料層位",
+        characterCount: 6006,
+        illustrationCount: 4,
+        sourceCount: 6,
+        href: "/research/ioji-kamada-history-documentary-layers/",
+      },
+      heritage: {
+        title: "医王寺庭園及び参道の文化的景観",
+        characterCount: 6599,
+        illustrationCount: 4,
+        sourceCount: 7,
+        href: "/research/ioji-kamada-garden-approach-cultural-landscape/",
+      },
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
-        : temple.slug === "ioji-kamada" && angle.key === "history"
-          ? {
-              title: "鎌田山医王寺の歴史叙述と史料層位",
-              characterCount: 6006,
-              illustrationCount: 4,
-              sourceCount: 6,
-              href: "/research/ioji-kamada-history-documentary-layers/",
-            }
+        : temple.slug === "ioji-kamada" && angle.key in iojiPublications
+          ? iojiPublications[angle.key as keyof typeof iojiPublications]
           : undefined;
 
     return {
