@@ -13,6 +13,8 @@ const zosanjiSourceFile = "src/lib/research-articles-zosanji.ts";
 const zosanjiTempFile = path.resolve(".astro", "research-articles-zosanji.mjs");
 const senkojiSourceFile = "src/lib/research-articles-senkoji.ts";
 const senkojiTempFile = path.resolve(".astro", "research-articles-senkoji.mjs");
+const shinpoinSourceFile = "src/lib/research-articles-shinpoin.ts";
+const shinpoinTempFile = path.resolve(".astro", "research-articles-shinpoin.mjs");
 
 await fs.mkdir(path.dirname(tempFile), { recursive: true });
 const source = await fs.readFile(sourceFile, "utf8");
@@ -54,13 +56,22 @@ const senkojiTranspiled = ts.transpileModule(senkojiSource, {
   },
 });
 await fs.writeFile(senkojiTempFile, senkojiTranspiled.outputText, "utf8");
+const shinpoinSource = await fs.readFile(shinpoinSourceFile, "utf8");
+const shinpoinTranspiled = ts.transpileModule(shinpoinSource, {
+  compilerOptions: {
+    module: ts.ModuleKind.ESNext,
+    target: ts.ScriptTarget.ES2022,
+  },
+});
+await fs.writeFile(shinpoinTempFile, shinpoinTranspiled.outputText, "utf8");
 await fs.writeFile(
   tempFile,
   transpiled.outputText
     .replace("./research-articles-ioji", "./research-articles-ioji.mjs")
     .replace("./research-articles-daijoin", "./research-articles-daijoin.mjs")
     .replace("./research-articles-zosanji", "./research-articles-zosanji.mjs")
-    .replace("./research-articles-senkoji", "./research-articles-senkoji.mjs"),
+    .replace("./research-articles-senkoji", "./research-articles-senkoji.mjs")
+    .replace("./research-articles-shinpoin", "./research-articles-shinpoin.mjs"),
   "utf8",
 );
 

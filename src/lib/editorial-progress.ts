@@ -209,6 +209,13 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 8,
       href: "/research/senkoji-jizo-lane-wasan-mitsuke-school-public-sphere/",
     } as const;
+    const shinpoinHistoryPublication = {
+      title: "新豊院の開創伝承と向笠氏・可睡斎",
+      characterCount: 6149,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/shinpoin-mukasa-foundation-kasuisai-temple-network/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -232,6 +239,8 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? senkojiHistoryPublication
           : temple.slug === "senkoji-mitsuke" && angle.key === "community"
             ? senkojiCommunityPublication
+          : temple.slug === "shinpoin-mukasa" && angle.key === "history"
+            ? shinpoinHistoryPublication
           : undefined;
 
     return {
