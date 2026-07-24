@@ -1,12 +1,16 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { researchArticles } from "../../lib/research-articles";
-import { getTempleBySlug } from "../../lib/temples";
+import { getDistrictName, getTempleBySlug } from "../../lib/temples";
 
 const normalizedArticles = researchArticles
   .map((article) => ({
     ...article,
     temple: article.templeSlug ? getTempleBySlug(article.templeSlug) : undefined,
+    districtId: article.templeSlug ? getTempleBySlug(article.templeSlug)?.district_id || "unassigned" : "general",
+    districtName: article.templeSlug
+      ? getDistrictName(getTempleBySlug(article.templeSlug)?.district_id || "unassigned")
+      : "全市・総合",
   }))
   .sort((a, b) => b.updated.localeCompare(a.updated) || a.title.localeCompare(b.title, "ja"));
 
@@ -14,15 +18,35 @@ const templeGroups = Array.from(
   normalizedArticles.reduce((groups, article) => {
     const key = article.templeSlug || "general";
     const label = article.temple?.name || "磐田の寺院・総合研究";
-    const current = groups.get(key) || { key, label, articles: [] as typeof normalizedArticles };
+    const current = groups.get(key) || {
+      key,
+      label,
+      districtId: article.districtId,
+      districtName: article.districtName,
+      articles: [] as typeof normalizedArticles,
+    };
     current.articles.push(article);
     groups.set(key, current);
     return groups;
-  }, new Map<string, { key: string; label: string; articles: typeof normalizedArticles }>())
+  }, new Map<string, {
+    key: string;
+    label: string;
+    districtId: string;
+    districtName: string;
+    articles: typeof normalizedArticles;
+  }>())
   .values(),
 ).sort((a, b) => a.label.localeCompare(b.label, "ja"));
 
 const seriesOptions = Array.from(new Set(normalizedArticles.map((article) => article.series)));
+const districtOptions = Array.from(
+  new Map(
+    normalizedArticles.map((article) => [
+      article.districtId,
+      { id: article.districtId, name: article.districtName },
+    ]),
+  ).values(),
+).sort((a, b) => a.name.localeCompare(b.name, "ja"));
 ---
 
 <BaseLayout
@@ -56,6 +80,17 @@ const seriesOptions = Array.from(new Set(normalizedArticles.map((article) => art
       </select>
     </div>
     <div>
+      <label for="research-district">地区から選ぶ</label>
+      <select id="research-district" data-research-district>
+        <option value="">すべての地区</option>
+        {districtOptions.map((district) => (
+          <option value={district.id}>
+            {district.name}（{normalizedArticles.filter((article) => article.districtId === district.id).length}）
+          </option>
+        ))}
+      </select>
+    </div>
+    <div>
       <label for="research-series">研究区分</label>
       <select id="research-series" data-research-series>
         <option value="">すべての区分</option>
@@ -73,6 +108,7 @@ const seriesOptions = Array.from(new Set(normalizedArticles.map((article) => art
           <div>
             <p class="eyebrow">TEMPLE RESEARCH</p>
             <h2>{group.label}</h2>
+            <p class="research-group-district">{group.districtName}地区</p>
           </div>
           {group.key !== "general" && <a href={`/temples/${group.key}/`}>寺院詳細を見る</a>}
         </header>
@@ -82,6 +118,7 @@ const seriesOptions = Array.from(new Set(normalizedArticles.map((article) => art
               class="research-index-card"
               data-research-card
               data-temple={group.key}
+              data-district={article.districtId}
               data-series={article.series}
               data-search={`${group.label} ${article.title} ${article.subtitle} ${article.description} ${article.keywords.join(" ")}`.toLowerCase()}
             >
@@ -113,6 +150,7 @@ const seriesOptions = Array.from(new Set(normalizedArticles.map((article) => art
   <script>
     const queryInput = document.querySelector<HTMLInputElement>("[data-research-query]");
     const templeSelect = document.querySelector<HTMLSelectElement>("[data-research-temple]");
+    const districtSelect = document.querySelector<HTMLSelectElement>("[data-research-district]");
     const seriesSelect = document.querySelector<HTMLSelectElement>("[data-research-series]");
     const resetButton = document.querySelector<HTMLButtonElement>("[data-research-reset]");
     const count = document.querySelector<HTMLElement>("[data-research-count]");
@@ -127,14 +165,16 @@ const seriesOptions = Array.from(new Set(normalizedArticles.map((article) => art
     function applyFilters() {
       const query = normalize(queryInput?.value || "");
       const temple = templeSelect?.value || "";
+      const district = districtSelect?.value || "";
       const series = seriesSelect?.value || "";
       let visibleCount = 0;
 
       cards.forEach((card) => {
         const matchesQuery = !query || normalize(card.dataset.search || "").includes(query);
         const matchesTemple = !temple || card.dataset.temple === temple;
+        const matchesDistrict = !district || card.dataset.district === district;
         const matchesSeries = !series || card.dataset.series === series;
-        const visible = matchesQuery && matchesTemple && matchesSeries;
+        const visible = matchesQuery && matchesTemple && matchesDistrict && matchesSeries;
         card.hidden = !visible;
         if (visible) visibleCount += 1;
       });
@@ -148,10 +188,12 @@ const seriesOptions = Array.from(new Set(normalizedArticles.map((article) => art
 
     queryInput?.addEventListener("input", applyFilters);
     templeSelect?.addEventListener("change", applyFilters);
+    districtSelect?.addEventListener("change", applyFilters);
     seriesSelect?.addEventListener("change", applyFilters);
     resetButton?.addEventListener("click", () => {
       if (queryInput) queryInput.value = "";
       if (templeSelect) templeSelect.value = "";
+      if (districtSelect) districtSelect.value = "";
       if (seriesSelect) seriesSelect.value = "";
       applyFilters();
       queryInput?.focus();

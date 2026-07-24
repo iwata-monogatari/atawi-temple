@@ -4582,7 +4582,7 @@ th {
 
 .research-index-tools {
   display: grid;
-  grid-template-columns: minmax(240px, 1.5fr) minmax(180px, 1fr) minmax(180px, 1fr) auto;
+  grid-template-columns: minmax(230px, 1.4fr) repeat(3, minmax(155px, 1fr)) auto;
   gap: 14px;
   align-items: end;
   max-width: 1180px;
@@ -4628,6 +4628,7 @@ th {
 .research-temple-group { margin-bottom: 60px; }
 .research-temple-group > header { display: flex; justify-content: space-between; gap: 20px; align-items: end; margin-bottom: 20px; padding-bottom: 14px; border-bottom: 2px solid #334b31; }
 .research-temple-group h2 { margin: 3px 0 0; font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 1.8rem; font-weight: 600; }
+.research-group-district { margin: 5px 0 0; color: #687066; font-size: .78rem; }
 .research-temple-group > header > a { font-size: .85rem; }
 .research-article-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .research-index-card { display: flex; flex-direction: column; min-height: 330px; padding: 26px; border: 1px solid #d8ddd5; background: #fff; box-shadow: 0 8px 24px rgba(32, 48, 30, .05); }
