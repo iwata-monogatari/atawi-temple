@@ -1,0 +1,172 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  allEditorialProgressItems,
+  editorialProgressMeta,
+  editorialStatusLabels,
+  pillarProgressItems,
+  templeProgressItems,
+  type EditorialStatus,
+} from "../../lib/editorial-progress";
+
+const statuses = Object.keys(editorialStatusLabels) as EditorialStatus[];
+const counts = Object.fromEntries(
+  statuses.map((status) => [
+    status,
+    allEditorialProgressItems.filter((item) => item.status === status).length,
+  ]),
+) as Record<EditorialStatus, number>;
+const completedCount = counts.published;
+const completionRate = Math.round((completedCount / editorialProgressMeta.totalCount) * 100);
+const templeGroups = templeProgressItems.reduce((groups, item) => {
+  const key = item.templeName || "";
+  const current = groups.get(key) || [];
+  current.push(item);
+  groups.set(key, current);
+  return groups;
+}, new Map<string, typeof templeProgressItems>());
+---
+
+<BaseLayout
+  title="記事制作進捗｜ATAWI TEMPLE"
+  description="ATAWI TEMPLEで制作する総合記事50本と、現存96寺院の個別記事288本の進捗状況です。"
+  noindex={true}
+>
+  <section class="page-title progress-title">
+    <p class="eyebrow">Editorial Progress</p>
+    <h1>記事制作進捗</h1>
+    <p>総合50本＋現存96寺院×3本。企画・調査・執筆・校閲・公開の状態を記録します。</p>
+    <p class="small">最終更新：{editorialProgressMeta.updatedAt}</p>
+  </section>
+
+  <section class="progress-summary" aria-label="全体進捗">
+    <div class="progress-meter">
+      <div>
+        <strong>{completedCount} / {editorialProgressMeta.totalCount}</strong>
+        <span>公開完了</span>
+      </div>
+      <div class="progress-track" aria-label={`公開進捗 ${completionRate}%`}>
+        <span style={`width:${completionRate}%`}></span>
+      </div>
+      <b>{completionRate}%</b>
+    </div>
+    <div class="progress-stats">
+      {statuses.map((status) => (
+        <article>
+          <strong>{counts[status]}</strong>
+          <span>{editorialStatusLabels[status]}</span>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section progress-standards">
+    <div class="section-heading">
+      <h2>制作基準</h2>
+    </div>
+    <dl>
+      <div><dt>本文</dt><dd>各6,000文字以上</dd></div>
+      <div><dt>挿絵</dt><dd>約2,000文字につき1点（最低3点）</dd></div>
+      <div><dt>見出し</dt><dd>1,000文字未満の間隔では追加しない</dd></div>
+      <div><dt>対象</dt><dd>現存寺院96件。寺院跡・状況不明・関連宗教法人は除外</dd></div>
+      <div><dt>著者</dt><dd>大石浩之（富士ヶ丘サービス株式会社 代表取締役）</dd></div>
+      <div><dt>出典</dt><dd>一次資料、公的資料、宗派公式資料を優先</dd></div>
+    </dl>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <div>
+        <h2>総合・テーマ記事</h2>
+        <span class="small">{pillarProgressItems.length}本</span>
+      </div>
+    </div>
+    <div class="progress-table-wrap">
+      <table class="progress-table">
+        <thead><tr><th>番号</th><th>仮題</th><th>状態</th><th>文字</th><th>挿絵</th></tr></thead>
+        <tbody>
+          {pillarProgressItems.map((item, index) => (
+            <tr>
+              <td>{index + 1}</td>
+              <td>{item.title}</td>
+              <td><span class={`progress-status status-${item.status}`}>{editorialStatusLabels[item.status]}</span></td>
+              <td>{item.characterCount.toLocaleString("ja-JP")}</td>
+              <td>{item.illustrationCount}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <div>
+        <h2>個別寺院記事</h2>
+        <span class="small">{editorialProgressMeta.templeCount}寺院・{editorialProgressMeta.templeArticleCount}本</span>
+      </div>
+    </div>
+    <div class="temple-progress-grid">
+      {[...templeGroups.entries()].map(([templeName, items]) => (
+        <article class="temple-progress-card">
+          <div>
+            <h3>{templeName}</h3>
+            <span>{items[0]?.district}地区</span>
+          </div>
+          <ul>
+            {items.map((item) => (
+              <li>
+                <span>{item.angle}</span>
+                <b class={`progress-status status-${item.status}`}>{editorialStatusLabels[item.status]}</b>
+                <small>出典登録 {item.sourceCount}件</small>
+              </li>
+            ))}
+          </ul>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <style>
+    .progress-title { margin-bottom: 24px; }
+    .progress-summary { display: grid; gap: 20px; margin: 0 auto 48px; max-width: 1160px; }
+    .progress-meter { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 18px; padding: 22px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); }
+    .progress-meter div:first-child { display: grid; }
+    .progress-meter strong { font-size: 1.5rem; color: var(--accent-strong); }
+    .progress-meter span { color: var(--muted); }
+    .progress-track { height: 12px; overflow: hidden; border-radius: 999px; background: var(--soft); }
+    .progress-track span { display: block; height: 100%; background: var(--accent); }
+    .progress-stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+    .progress-stats article { display: grid; gap: 2px; padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); text-align: center; }
+    .progress-stats strong { font-size: 1.45rem; color: var(--accent-strong); }
+    .progress-standards dl { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .progress-standards dl div { padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
+    .progress-standards dt { margin-bottom: 4px; font-weight: 800; color: var(--accent-strong); }
+    .progress-standards dd { margin: 0; }
+    .progress-table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; }
+    .progress-table { width: 100%; border-collapse: collapse; background: var(--paper); }
+    .progress-table th, .progress-table td { padding: 12px 14px; border-bottom: 1px solid var(--line); text-align: left; }
+    .progress-table th { background: var(--soft); white-space: nowrap; }
+    .progress-status { display: inline-block; min-width: 3.4em; padding: 2px 8px; border-radius: 999px; background: var(--soft); color: var(--accent-strong); font-size: .78rem; font-weight: 800; text-align: center; }
+    .status-researching { background: #fff1c9; color: #765300; }
+    .status-drafting { background: #dcebf8; color: #174d74; }
+    .status-reviewing { background: #eadff4; color: #593176; }
+    .status-published { background: #dcebd8; color: #244f24; }
+    .temple-progress-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .temple-progress-card { padding: 18px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
+    .temple-progress-card > div { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+    .temple-progress-card h3 { margin: 0; }
+    .temple-progress-card > div span { color: var(--muted); font-size: .84rem; }
+    .temple-progress-card ul { display: grid; gap: 8px; margin: 14px 0 0; padding: 0; list-style: none; }
+    .temple-progress-card li { display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: 10px; padding-top: 8px; border-top: 1px solid var(--line); }
+    .temple-progress-card small { color: var(--muted); }
+    @media (max-width: 720px) {
+      .progress-meter { grid-template-columns: 1fr auto; }
+      .progress-track { grid-column: 1 / -1; grid-row: 2; }
+      .progress-stats { grid-template-columns: repeat(5, minmax(62px, 1fr)); overflow-x: auto; }
+      .progress-standards dl, .temple-progress-grid { grid-template-columns: 1fr; }
+      .temple-progress-card li { grid-template-columns: 1fr auto; }
+      .temple-progress-card small { grid-column: 1 / -1; }
+    }
+  </style>
+</BaseLayout>
