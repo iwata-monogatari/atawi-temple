@@ -195,6 +195,13 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 7,
       href: "/research/senkoji-jizo-bishamonten-object-biography/",
     } as const;
+    const senkojiHistoryPublication = {
+      title: "宣光寺梵鐘と徳川家康の遠江支配",
+      characterCount: 6126,
+      illustrationCount: 6,
+      sourceCount: 7,
+      href: "/research/senkoji-ieyasu-bell-inscription-territorial-rule/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -214,6 +221,8 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? zosanjiCommunityPublication
           : temple.slug === "senkoji-mitsuke" && angle.key === "heritage"
             ? senkojiHeritagePublication
+          : temple.slug === "senkoji-mitsuke" && angle.key === "history"
+            ? senkojiHistoryPublication
           : undefined;
 
     return {
