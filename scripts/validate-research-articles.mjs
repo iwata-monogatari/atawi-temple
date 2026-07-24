@@ -11,6 +11,8 @@ const daijoinSourceFile = "src/lib/research-articles-daijoin.ts";
 const daijoinTempFile = path.resolve(".astro", "research-articles-daijoin.mjs");
 const zosanjiSourceFile = "src/lib/research-articles-zosanji.ts";
 const zosanjiTempFile = path.resolve(".astro", "research-articles-zosanji.mjs");
+const senkojiSourceFile = "src/lib/research-articles-senkoji.ts";
+const senkojiTempFile = path.resolve(".astro", "research-articles-senkoji.mjs");
 
 await fs.mkdir(path.dirname(tempFile), { recursive: true });
 const source = await fs.readFile(sourceFile, "utf8");
@@ -44,12 +46,21 @@ const zosanjiTranspiled = ts.transpileModule(zosanjiSource, {
   },
 });
 await fs.writeFile(zosanjiTempFile, zosanjiTranspiled.outputText, "utf8");
+const senkojiSource = await fs.readFile(senkojiSourceFile, "utf8");
+const senkojiTranspiled = ts.transpileModule(senkojiSource, {
+  compilerOptions: {
+    module: ts.ModuleKind.ESNext,
+    target: ts.ScriptTarget.ES2022,
+  },
+});
+await fs.writeFile(senkojiTempFile, senkojiTranspiled.outputText, "utf8");
 await fs.writeFile(
   tempFile,
   transpiled.outputText
     .replace("./research-articles-ioji", "./research-articles-ioji.mjs")
     .replace("./research-articles-daijoin", "./research-articles-daijoin.mjs")
-    .replace("./research-articles-zosanji", "./research-articles-zosanji.mjs"),
+    .replace("./research-articles-zosanji", "./research-articles-zosanji.mjs")
+    .replace("./research-articles-senkoji", "./research-articles-senkoji.mjs"),
   "utf8",
 );
 
@@ -118,6 +129,8 @@ for (const article of researchArticles) {
 await fs.rm(tempFile, { force: true });
 await fs.rm(relatedTempFile, { force: true });
 await fs.rm(daijoinTempFile, { force: true });
+await fs.rm(zosanjiTempFile, { force: true });
+await fs.rm(senkojiTempFile, { force: true });
 
 if (failures.length) {
   console.error("\n研究記事の品質検査に失敗しました:");

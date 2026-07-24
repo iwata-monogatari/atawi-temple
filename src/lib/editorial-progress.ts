@@ -188,6 +188,13 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 6,
       href: "/research/zosanji-daimeshi-tokoji-community-ritual/",
     } as const;
+    const senkojiHeritagePublication = {
+      title: "宣光寺の延命地蔵と毘沙門天",
+      characterCount: 6094,
+      illustrationCount: 6,
+      sourceCount: 7,
+      href: "/research/senkoji-jizo-bishamonten-object-biography/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -205,6 +212,8 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? zosanjiHeritagePublication
           : temple.slug === "zosanji-sagisaka" && angle.key === "community"
             ? zosanjiCommunityPublication
+          : temple.slug === "senkoji-mitsuke" && angle.key === "heritage"
+            ? senkojiHeritagePublication
           : undefined;
 
     return {
