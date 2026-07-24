@@ -12,6 +12,7 @@ const staticPaths = [
   "/obon/",
   "/guide/",
   "/tokushu/",
+  "/research/",
   "/updates/",
   "/status/",
   "/search/",
