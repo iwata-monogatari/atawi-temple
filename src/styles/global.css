@@ -4287,16 +4287,67 @@ th {
 }
 
 /* ---- ATAWI TEMPLE 研究紀要 ---- */
+.research-page {
+  --research-ink: #171717;
+  --research-muted: #565656;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 72px 34px 100px;
+  background: #fff;
+  color: var(--research-ink);
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
+}
+
 .research-hero {
-  background: linear-gradient(135deg, #f4f0e5, #fbfaf5);
-  border-bottom: 1px solid var(--line);
+  padding: 0 0 30px;
+  border-bottom: 1px solid #222;
+  text-align: center;
+}
+
+.research-journal {
+  margin: 0 0 48px;
+  color: var(--research-muted);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: .76rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.research-hero h1 {
+  max-width: 780px;
+  margin: 0 auto;
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 600;
+  letter-spacing: .02em;
+  line-height: 1.45;
+}
+
+.research-hero .article-subtitle {
+  max-width: 720px;
+  margin: 18px auto 30px;
+  color: var(--research-muted);
+  font-size: 1.04rem;
+  line-height: 1.8;
+}
+
+.research-author {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.research-affiliation {
+  margin: 6px 0 0;
+  color: var(--research-muted);
+  font-size: .78rem;
 }
 
 .research-meta {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 12px 28px;
-  margin-top: 20px;
+  gap: 8px 26px;
+  margin: 24px 0 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .research-meta div {
@@ -4305,38 +4356,188 @@ th {
 }
 
 .research-meta dt {
-  color: var(--muted);
-  font-size: 0.85rem;
+  color: var(--research-muted);
+  font-size: 0.74rem;
 }
 
 .research-meta dd {
-  font-weight: 700;
+  margin: 0;
+  font-size: .74rem;
+  font-weight: 500;
+}
+
+.research-body {
+  max-width: 760px;
+  margin: 0 auto;
+  counter-reset: research-figure;
 }
 
 .research-abstract {
-  border: 1px solid var(--line);
-  border-left: 5px solid var(--accent);
-  background: var(--soft);
-  padding: 22px;
-  margin-bottom: 34px;
+  margin: 50px 0 42px;
+  padding: 26px 30px;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  background: transparent;
 }
 
 .research-abstract h2 {
-  margin: 0 0 12px;
-  font-size: 1.2rem;
+  margin: 0 0 14px;
+  font-size: 1rem;
+  letter-spacing: .15em;
+  text-align: center;
 }
 
 .research-abstract p,
 .research-section p,
-.author-disclosure p {
-  line-height: 2.05;
+.author-note p {
+  line-height: 2;
 }
 
-.research-section p {
+.research-abstract p {
+  margin: 0 0 12px;
+  font-size: .94rem;
   text-align: justify;
   text-justify: inter-ideograph;
 }
 
-.author-disclosure {
-  border-top: 4px double var(--line);
+.research-toc {
+  margin: 0 0 58px;
+  padding: 22px 26px;
+  border: 1px solid #d6d6d6;
+  background: #fafafa;
+}
+
+.research-toc h2 {
+  margin: 0 0 12px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: .8rem;
+  letter-spacing: .14em;
+}
+
+.research-toc ol {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding-left: 1.6em;
+  font-size: .88rem;
+}
+
+.research-toc a {
+  color: #222;
+  text-decoration-color: #aaa;
+  text-underline-offset: 3px;
+}
+
+.research-section {
+  margin: 0 0 66px;
+  scroll-margin-top: 24px;
+}
+
+.research-section h2 {
+  margin: 0 0 28px;
+  padding: 0 0 12px;
+  border-bottom: 1px solid #222;
+  color: var(--research-ink);
+  font-size: 1.42rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+  line-height: 1.65;
+}
+
+.research-section p {
+  margin: 0 0 1.2em;
+  font-size: 1rem;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+.research-page .article-figure {
+  counter-increment: research-figure;
+  max-width: 680px;
+  margin: 38px auto 0;
+}
+
+.research-page .article-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+  border-radius: 0;
+}
+
+.research-page .article-figure figcaption {
+  margin-top: 10px;
+  color: var(--research-muted);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: .78rem;
+  line-height: 1.65;
+}
+
+.research-page .article-figure figcaption::before {
+  content: "Figure " counter(research-figure) ". ";
+  color: #222;
+  font-weight: 700;
+}
+
+.research-references,
+.author-note {
+  margin-top: 70px;
+  padding-top: 24px;
+  border-top: 1px solid #222;
+}
+
+.research-references h2,
+.author-note h2 {
+  margin: 0 0 22px;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.research-references ol {
+  display: grid;
+  gap: 13px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: .84rem;
+  line-height: 1.75;
+}
+
+.research-references li {
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+}
+
+.research-references li span:last-child {
+  color: var(--research-muted);
+}
+
+.reference-number {
+  display: inline-block;
+  width: 2.4em;
+  color: var(--research-muted);
+  text-indent: 0;
+}
+
+.author-note {
+  color: var(--research-muted);
+  font-size: .84rem;
+}
+
+@media (max-width: 720px) {
+  .research-page {
+    padding: 42px 20px 72px;
+  }
+
+  .research-journal {
+    margin-bottom: 32px;
+  }
+
+  .research-abstract {
+    padding: 22px 0;
+  }
+
+  .research-toc {
+    padding: 18px;
+  }
 }

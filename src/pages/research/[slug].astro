@@ -45,26 +45,36 @@ const structuredData = {
   structuredData={structuredData}
 >
   <article class="research-page">
-    <header class="article-hero research-hero">
-      <p class="eyebrow">{article.series}</p>
+    <header class="research-hero">
+      <p class="research-journal">ATAWI TEMPLE 地域寺院研究紀要</p>
       <h1>{article.title}</h1>
       <p class="article-subtitle">{article.subtitle}</p>
+      <p class="research-author">大石浩之<sup>1</sup></p>
+      <p class="research-affiliation"><sup>1</sup> 富士ヶ丘サービス株式会社 代表取締役</p>
       <dl class="research-meta">
-        <div><dt>公開日</dt><dd>{article.published.replaceAll("-", ".")}</dd></div>
-        <div><dt>検証状態</dt><dd>{article.verificationStatus}</dd></div>
+        <div><dt>受理・公開</dt><dd>{article.published.replaceAll("-", ".")}</dd></div>
+        <div><dt>資料状態</dt><dd>{article.verificationStatus}</dd></div>
       </dl>
     </header>
 
-    <div class="article-layout">
-      <main class="article-body">
+    <main class="research-body">
         <section class="research-abstract" aria-labelledby="abstract-title">
           <h2 id="abstract-title">要旨</h2>
           <p>{article.abstract}</p>
           <p class="small"><strong>キーワード：</strong>{article.keywords.join("／")}</p>
         </section>
 
-        {article.sections.map((section) => (
-          <section class="article-section research-section">
+        <nav class="research-toc" aria-label="論文目次">
+          <h2>目次</h2>
+          <ol>
+            {article.sections.map((section, index) => (
+              <li><a href={`#section-${index + 1}`}>{section.heading}</a></li>
+            ))}
+          </ol>
+        </nav>
+
+        {article.sections.map((section, index) => (
+          <section class="research-section" id={`section-${index + 1}`}>
             <h2>{section.heading}</h2>
             {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
             {section.figure && (
@@ -83,42 +93,28 @@ const structuredData = {
           </section>
         ))}
 
-        <section class="article-section sources-panel">
-          <h2>参照資料</h2>
-          <ol class="source-records">
-            {article.sources.map((source) => (
+        <section class="research-references">
+          <h2>参考文献・資料</h2>
+          <ol>
+            {article.sources.map((source, index) => (
               <li>
-                <span>{source.publisher}</span>
-                <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a>
-                <p>{source.note}（最終確認：{source.accessed}）</p>
+                <span class="reference-number">[{index + 1}]</span>
+                {source.publisher}「<a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a>」。
+                <span>{source.note} 最終閲覧日：{source.accessed}。</span>
               </li>
             ))}
           </ol>
         </section>
 
-        <section class="article-section author-disclosure">
-          <h2>著者および利害関係の開示</h2>
-          <p><strong>著者：大石浩之</strong>（富士ヶ丘サービス株式会社 代表取締役）</p>
+        <section class="author-note">
+          <h2>著者情報</h2>
           <p>
-            著者は静岡県磐田市を拠点に、介護事業および不動産事業を運営しています。本稿はATAWI
-            TEMPLEの地域文化研究として執筆したものであり、寺院・宗派の公式見解を代弁するものではありません。事業上の相談誘導を本文へ混在させず、資料の出所、確認できた事実、著者による分析、未確認事項を区別しています。
+            大石浩之。富士ヶ丘サービス株式会社代表取締役。静岡県磐田市を拠点として介護事業および不動産事業を運営する一方、ATAWI TEMPLEにおいて地域寺院資料の収集・整理・公開に取り組む。本論文は寺院・宗派の公式見解ではなく、表示した資料に基づく著者の研究成果である。
           </p>
           <p>
-            誤りや追加資料がある場合は、<a href="/correction/">情報提供・訂正窓口</a>からお知らせください。根拠を確認し、訂正履歴を残して更新します。
+            資料の追加および記載の訂正は、<a href="/correction/">情報提供・訂正窓口</a>で受け付けている。
           </p>
         </section>
-      </main>
-
-      <aside class="article-aside">
-        <section class="side-panel">
-          <h2>研究対象</h2>
-          <div class="side-link-list">
-            {article.templeSlug && <a href={`/temples/${article.templeSlug}/`}>国分寺の寺院詳細</a>}
-            <a href="/editorial-policy/">編集・検証方針</a>
-            <a href="/editorial-progress/">全記事の制作進捗</a>
-          </div>
-        </section>
-      </aside>
-    </div>
+    </main>
   </article>
 </BaseLayout>
