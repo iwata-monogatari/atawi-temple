@@ -181,6 +181,13 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 8,
       href: "/research/zosanji-sotetsu-chikaraishi-cultural-landscape/",
     } as const;
+    const zosanjiCommunityPublication = {
+      title: "増参寺・旧東光寺と大めし祭り",
+      characterCount: 6002,
+      illustrationCount: 6,
+      sourceCount: 6,
+      href: "/research/zosanji-daimeshi-tokoji-community-ritual/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -196,6 +203,8 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? zosanjiHistoryPublication
           : temple.slug === "zosanji-sagisaka" && angle.key === "heritage"
             ? zosanjiHeritagePublication
+          : temple.slug === "zosanji-sagisaka" && angle.key === "community"
+            ? zosanjiCommunityPublication
           : undefined;
 
     return {
