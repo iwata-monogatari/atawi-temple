@@ -50,6 +50,17 @@ for (const article of researchArticles) {
     failures.push(`${article.slug}: 結論節がない`);
   }
   if (!article.verificationStatus) failures.push(`${article.slug}: 検証状態がない`);
+  const kanjiNumeralPattern =
+    /[〇一二三四五六七八九十百千]+(?:年|年度|月|日|メートル|センチメートル|基|棟|例|冊|種類|側面|分類|段階)/u;
+  const kanjiNumeralMatch = articlePlainText(article).match(kanjiNumeralPattern);
+  if (kanjiNumeralMatch) {
+    failures.push(`${article.slug}: 数字「${kanjiNumeralMatch[0]}」が漢数字表記`);
+  }
+  for (const section of article.sections) {
+    if (/^[一二三四五六七八九十]\s/u.test(section.heading)) {
+      failures.push(`${article.slug}: 章番号「${section.heading}」が漢数字表記`);
+    }
+  }
   for (const source of article.sources) {
     if (!source.url.startsWith("https://")) failures.push(`${article.slug}: HTTPSでない出典 ${source.url}`);
     if (!source.accessed) failures.push(`${article.slug}: 出典確認日がない ${source.title}`);

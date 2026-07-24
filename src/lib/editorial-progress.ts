@@ -100,28 +100,47 @@ export const pillarProgressItems: EditorialProgressItem[] = pillarTitles.map((ti
 
 export const templeProgressItems: EditorialProgressItem[] = existingTemples.flatMap((temple) =>
   templeAngles.map((angle) => {
-    const isPublishedKokubunjiHistory =
-      temple.slug === "kokubunji-mitsuke" && angle.key === "history";
+    const kokubunjiPublications = {
+      history: {
+        title: "遠江国分寺の成立と空間構成",
+        characterCount: 6196,
+        illustrationCount: 4,
+        sourceCount: 6,
+        href: "/research/totomi-kokubunji-state-buddhism/",
+      },
+      heritage: {
+        title: "遠江国分寺跡の発掘・保存・公共史",
+        characterCount: 6003,
+        illustrationCount: 4,
+        sourceCount: 6,
+        href: "/research/kokubunji-archaeology-conservation-public-history/",
+      },
+      community: {
+        title: "遠江国分寺における継承と断絶",
+        characterCount: 6029,
+        illustrationCount: 4,
+        sourceCount: 7,
+        href: "/research/kokubunji-continuity-and-discontinuity/",
+      },
+    } as const;
+    const publication =
+      temple.slug === "kokubunji-mitsuke" ? kokubunjiPublications[angle.key] : undefined;
 
     return {
       id: `${temple.slug}-${angle.key}`,
       kind: "temple" as const,
-      title: isPublishedKokubunjiHistory
-        ? "遠江国分寺の成立と空間構成"
-        : `${temple.name}研究――${angle.label}`,
+      title: publication?.title || `${temple.name}研究――${angle.label}`,
       templeName: temple.name,
       district: getDistrictName(temple.district_id),
       angle: angle.label,
-      status: isPublishedKokubunjiHistory ? "published" as const : "planned" as const,
-      characterCount: isPublishedKokubunjiHistory ? 6173 : 0,
-      illustrationCount: isPublishedKokubunjiHistory ? 4 : 0,
-      sourceCount: isPublishedKokubunjiHistory
-        ? 6
+      status: publication ? "published" as const : "planned" as const,
+      characterCount: publication?.characterCount || 0,
+      illustrationCount: publication?.illustrationCount || 0,
+      sourceCount: publication
+        ? publication.sourceCount
         : Array.isArray(temple.sources) ? temple.sources.length : 0,
-      href: isPublishedKokubunjiHistory
-        ? "/research/totomi-kokubunji-state-buddhism/"
-        : undefined,
-      updatedAt: isPublishedKokubunjiHistory ? "2026-07-24" : undefined,
+      href: publication?.href,
+      updatedAt: publication ? "2026-07-24" : undefined,
     };
   }),
 );
