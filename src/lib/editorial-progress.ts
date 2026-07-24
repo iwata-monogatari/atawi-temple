@@ -138,6 +138,13 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
         sourceCount: 7,
         href: "/research/ioji-kamada-garden-approach-cultural-landscape/",
       },
+      community: {
+        title: "医王寺と御厨地域の公共圏",
+        characterCount: 6415,
+        illustrationCount: 4,
+        sourceCount: 7,
+        href: "/research/ioji-kamada-community-faith-public-memory/",
+      },
     } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
