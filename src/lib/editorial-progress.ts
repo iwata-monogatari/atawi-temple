@@ -293,6 +293,69 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 9,
       href: "/research/zendoji-nehan-scroll-annual-rites-chant-community/",
     } as const;
+    const tokuoinHistoryPublication = {
+      title: "徳翁院の創建と良純法親王・呑誉禿翁",
+      characterCount: 6059,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/tokuoin-foundation-ryojun-donyo-source-criticism/",
+    } as const;
+    const tokuoinHeritagePublication = {
+      title: "徳翁院の十一面観音と念持仏伝承",
+      characterCount: 6028,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/tokuoin-eleven-faced-kannon-nenjibutsu-biography/",
+    } as const;
+    const tokuoinCommunityPublication = {
+      title: "徳翁院の観音堂・稲荷社と見付の祭礼景観",
+      characterCount: 6016,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/tokuoin-kannon-inari-mitsuke-ritual-landscape/",
+    } as const;
+    const keiganjiHistoryPublication = {
+      title: "慶岩寺の1562年開創伝承と知恩院末寺制",
+      characterCount: 6034,
+      illustrationCount: 6,
+      sourceCount: 9,
+      href: "/research/keiganji-noko-1562-chionin-lineage/",
+    } as const;
+    const keiganjiHeritagePublication = {
+      title: "慶岩寺北向地蔵の移動・倒壊・再建",
+      characterCount: 6016,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/keiganji-kitamuki-jizo-movement-reconstruction/",
+    } as const;
+    const keiganjiCommunityPublication = {
+      title: "慶岩寺から読む見付宿の都市宗教空間",
+      characterCount: 6057,
+      illustrationCount: 6,
+      sourceCount: 13,
+      href: "/research/keiganji-mitsuke-shukuba-urban-religious-space/",
+    } as const;
+    const daikenjiHistoryPublication = {
+      title: "大見寺と見付端城の重層景観",
+      characterCount: 6010,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/daikenji-mitsuke-hajijo-map-temple-landscape/",
+    } as const;
+    const daikenjiHeritagePublication = {
+      title: "大見寺の良純法親王供養塔と徳翁院",
+      characterCount: 6005,
+      illustrationCount: 6,
+      sourceCount: 6,
+      href: "/research/daikenji-ryojun-prince-tokuoin-memorial-network/",
+    } as const;
+    const daikenjiCommunityPublication = {
+      title: "大見寺と鳥人・浮田幸吉の記憶",
+      characterCount: 6084,
+      illustrationCount: 6,
+      sourceCount: 6,
+      href: "/research/daikenji-ukita-kokichi-flight-memory-evidence/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -340,6 +403,24 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? zendojiHeritagePublication
           : temple.slug === "zendoji-mitsuke" && angle.key === "community"
             ? zendojiCommunityPublication
+          : temple.slug === "tokuoin-mitsuke" && angle.key === "history"
+            ? tokuoinHistoryPublication
+          : temple.slug === "tokuoin-mitsuke" && angle.key === "heritage"
+            ? tokuoinHeritagePublication
+          : temple.slug === "tokuoin-mitsuke" && angle.key === "community"
+            ? tokuoinCommunityPublication
+          : temple.slug === "keiganji-mitsuke" && angle.key === "history"
+            ? keiganjiHistoryPublication
+          : temple.slug === "keiganji-mitsuke" && angle.key === "heritage"
+            ? keiganjiHeritagePublication
+          : temple.slug === "keiganji-mitsuke" && angle.key === "community"
+            ? keiganjiCommunityPublication
+          : temple.slug === "daikenji-mitsuke" && angle.key === "history"
+            ? daikenjiHistoryPublication
+          : temple.slug === "daikenji-mitsuke" && angle.key === "heritage"
+            ? daikenjiHeritagePublication
+          : temple.slug === "daikenji-mitsuke" && angle.key === "community"
+            ? daikenjiCommunityPublication
           : undefined;
 
     return {

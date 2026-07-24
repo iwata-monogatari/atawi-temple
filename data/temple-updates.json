@@ -1,5 +1,77 @@
 [
   {
+    "update_id": "2026-07-24-daikenji-memory-research",
+    "date": "2026-07-24",
+    "temple_slug": "daikenji-mitsuke",
+    "title": "大見寺研究論文「大見寺と鳥人・浮田幸吉の記憶」を公開しました",
+    "summary": "浮田幸吉の飛行伝承、過去帳、墓、模型展示を証拠層ごとに検証した6084字の研究論文です。",
+    "href": "/research/daikenji-ukita-kokichi-flight-memory-evidence/"
+  },
+  {
+    "update_id": "2026-07-24-daikenji-memorial-research",
+    "date": "2026-07-24",
+    "temple_slug": "daikenji-mitsuke",
+    "title": "大見寺研究論文「大見寺の良純法親王供養塔と徳翁院」を公開しました",
+    "summary": "良純法親王供養塔、呑誉禿翁、徳翁院との関係を検証した6005字の研究論文です。",
+    "href": "/research/daikenji-ryojun-prince-tokuoin-memorial-network/"
+  },
+  {
+    "update_id": "2026-07-24-daikenji-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "daikenji-mitsuke",
+    "title": "大見寺研究論文「大見寺と見付端城の重層景観」を公開しました",
+    "summary": "見付端城、1698年大見寺絵図、寺院化した土地利用を検証した6010字の研究論文です。",
+    "href": "/research/daikenji-mitsuke-hajijo-map-temple-landscape/"
+  },
+  {
+    "update_id": "2026-07-24-keiganji-community-research",
+    "date": "2026-07-24",
+    "temple_slug": "keiganji-mitsuke",
+    "title": "慶岩寺研究論文「慶岩寺から読む見付宿の都市宗教空間」を公開しました",
+    "summary": "見付宿の道、町場、寺院配置、地域公共性を検証した6057字の研究論文です。",
+    "href": "/research/keiganji-mitsuke-shukuba-urban-religious-space/"
+  },
+  {
+    "update_id": "2026-07-24-keiganji-jizo-research",
+    "date": "2026-07-24",
+    "temple_slug": "keiganji-mitsuke",
+    "title": "慶岩寺研究論文「慶岩寺北向地蔵の移動・倒壊・再建」を公開しました",
+    "summary": "北向地蔵の移動、災害による倒壊、再建と信仰継承を検証した6016字の研究論文です。",
+    "href": "/research/keiganji-kitamuki-jizo-movement-reconstruction/"
+  },
+  {
+    "update_id": "2026-07-24-keiganji-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "keiganji-mitsuke",
+    "title": "慶岩寺研究論文「慶岩寺の1562年開創伝承と知恩院末寺制」を公開しました",
+    "summary": "1562年開創伝承、開山・能皐、知恩院末寺制を検証した6034字の研究論文です。",
+    "href": "/research/keiganji-noko-1562-chionin-lineage/"
+  },
+  {
+    "update_id": "2026-07-24-tokuoin-community-research",
+    "date": "2026-07-24",
+    "temple_slug": "tokuoin-mitsuke",
+    "title": "徳翁院研究論文「徳翁院の観音堂・稲荷社と見付の祭礼景観」を公開しました",
+    "summary": "観音堂、稲荷社、見付の祭礼と寺院周辺景観を検証した6016字の研究論文です。",
+    "href": "/research/tokuoin-kannon-inari-mitsuke-ritual-landscape/"
+  },
+  {
+    "update_id": "2026-07-24-tokuoin-kannon-research",
+    "date": "2026-07-24",
+    "temple_slug": "tokuoin-mitsuke",
+    "title": "徳翁院研究論文「徳翁院の十一面観音と念持仏伝承」を公開しました",
+    "summary": "十一面観音、良純法親王の念持仏伝承、礼拝空間を検証した6028字の研究論文です。",
+    "href": "/research/tokuoin-eleven-faced-kannon-nenjibutsu-biography/"
+  },
+  {
+    "update_id": "2026-07-24-tokuoin-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "tokuoin-mitsuke",
+    "title": "徳翁院研究論文「徳翁院の創建と良純法親王・呑誉禿翁」を公開しました",
+    "summary": "創建伝承、良純法親王、呑誉禿翁を史料批判から検証した6059字の研究論文です。",
+    "href": "/research/tokuoin-foundation-ryojun-donyo-source-criticism/"
+  },
+  {
     "update_id": "2026-07-24-zendoji-rites-research",
     "date": "2026-07-24",
     "temple_slug": "zendoji-mitsuke",
