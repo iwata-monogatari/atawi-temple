@@ -167,6 +167,13 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 8,
       href: "/research/daijoin-mihirobo-community-ritual-public-space/",
     } as const;
+    const zosanjiHistoryPublication = {
+      title: "岩田山増参寺の成立と匂坂氏",
+      characterCount: 6534,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/zosanji-sagisaka-history-source-criticism/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -178,6 +185,8 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? daijoinHeritagePublication
           : temple.slug === "daijoin-nakaizumi" && angle.key === "community"
             ? daijoinCommunityPublication
+          : temple.slug === "zosanji-sagisaka" && angle.key === "history"
+            ? zosanjiHistoryPublication
           : undefined;
 
     return {

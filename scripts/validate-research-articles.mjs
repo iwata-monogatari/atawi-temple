@@ -9,6 +9,8 @@ const relatedSourceFile = "src/lib/research-articles-ioji.ts";
 const relatedTempFile = path.resolve(".astro", "research-articles-ioji.mjs");
 const daijoinSourceFile = "src/lib/research-articles-daijoin.ts";
 const daijoinTempFile = path.resolve(".astro", "research-articles-daijoin.mjs");
+const zosanjiSourceFile = "src/lib/research-articles-zosanji.ts";
+const zosanjiTempFile = path.resolve(".astro", "research-articles-zosanji.mjs");
 
 await fs.mkdir(path.dirname(tempFile), { recursive: true });
 const source = await fs.readFile(sourceFile, "utf8");
@@ -34,11 +36,20 @@ const daijoinTranspiled = ts.transpileModule(daijoinSource, {
   },
 });
 await fs.writeFile(daijoinTempFile, daijoinTranspiled.outputText, "utf8");
+const zosanjiSource = await fs.readFile(zosanjiSourceFile, "utf8");
+const zosanjiTranspiled = ts.transpileModule(zosanjiSource, {
+  compilerOptions: {
+    module: ts.ModuleKind.ESNext,
+    target: ts.ScriptTarget.ES2022,
+  },
+});
+await fs.writeFile(zosanjiTempFile, zosanjiTranspiled.outputText, "utf8");
 await fs.writeFile(
   tempFile,
   transpiled.outputText
     .replace("./research-articles-ioji", "./research-articles-ioji.mjs")
-    .replace("./research-articles-daijoin", "./research-articles-daijoin.mjs"),
+    .replace("./research-articles-daijoin", "./research-articles-daijoin.mjs")
+    .replace("./research-articles-zosanji", "./research-articles-zosanji.mjs"),
   "utf8",
 );
 
