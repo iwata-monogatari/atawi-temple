@@ -35,6 +35,7 @@ export type ResearchArticle = {
 };
 
 import { iojiResearchArticles } from "./research-articles-ioji";
+import { daijoinResearchArticles } from "./research-articles-daijoin";
 
 const kokubunjiFigures = {
   hall: {
@@ -382,6 +383,7 @@ export const researchArticles: ResearchArticle[] = [
   kokubunjiContinuityArticle,
   kokubunjiPublicHistoryArticle,
   ...iojiResearchArticles,
+  ...daijoinResearchArticles,
 ];
 
 export function getResearchArticle(slug: string) {

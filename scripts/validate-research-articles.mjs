@@ -7,6 +7,8 @@ const sourceFile = "src/lib/research-articles.ts";
 const tempFile = path.resolve(".astro", `research-validation-${process.pid}.mjs`);
 const relatedSourceFile = "src/lib/research-articles-ioji.ts";
 const relatedTempFile = path.resolve(".astro", "research-articles-ioji.mjs");
+const daijoinSourceFile = "src/lib/research-articles-daijoin.ts";
+const daijoinTempFile = path.resolve(".astro", "research-articles-daijoin.mjs");
 
 await fs.mkdir(path.dirname(tempFile), { recursive: true });
 const source = await fs.readFile(sourceFile, "utf8");
@@ -24,9 +26,19 @@ const relatedTranspiled = ts.transpileModule(relatedSource, {
   },
 });
 await fs.writeFile(relatedTempFile, relatedTranspiled.outputText, "utf8");
+const daijoinSource = await fs.readFile(daijoinSourceFile, "utf8");
+const daijoinTranspiled = ts.transpileModule(daijoinSource, {
+  compilerOptions: {
+    module: ts.ModuleKind.ESNext,
+    target: ts.ScriptTarget.ES2022,
+  },
+});
+await fs.writeFile(daijoinTempFile, daijoinTranspiled.outputText, "utf8");
 await fs.writeFile(
   tempFile,
-  transpiled.outputText.replace("./research-articles-ioji", "./research-articles-ioji.mjs"),
+  transpiled.outputText
+    .replace("./research-articles-ioji", "./research-articles-ioji.mjs")
+    .replace("./research-articles-daijoin", "./research-articles-daijoin.mjs"),
   "utf8",
 );
 
@@ -94,6 +106,7 @@ for (const article of researchArticles) {
 
 await fs.rm(tempFile, { force: true });
 await fs.rm(relatedTempFile, { force: true });
+await fs.rm(daijoinTempFile, { force: true });
 
 if (failures.length) {
   console.error("\n研究記事の品質検査に失敗しました:");

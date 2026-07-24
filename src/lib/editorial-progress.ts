@@ -146,11 +146,20 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
         href: "/research/ioji-kamada-community-faith-public-memory/",
       },
     } as const;
+    const daijoinHistoryPublication = {
+      title: "大乗院三仭坊の形成と制度的重層",
+      characterCount: 6277,
+      illustrationCount: 4,
+      sourceCount: 7,
+      href: "/research/daijoin-mihirobo-history-institutional-layers/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
         : temple.slug === "ioji-kamada" && angle.key in iojiPublications
           ? iojiPublications[angle.key as keyof typeof iojiPublications]
+          : temple.slug === "daijoin-nakaizumi" && angle.key === "history"
+            ? daijoinHistoryPublication
           : undefined;
 
     return {
