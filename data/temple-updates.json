@@ -1,5 +1,77 @@
 [
   {
+    "update_id": "2026-07-24-zendoji-rites-research",
+    "date": "2026-07-24",
+    "temple_slug": "zendoji-mitsuke",
+    "title": "善導寺研究論文「善導寺の大涅槃絵軸と念仏儀礼」を公開しました",
+    "summary": "大涅槃絵軸、涅槃会、十夜、詠唱、地域講の関係を検証した6270字の研究論文です。",
+    "href": "/research/zendoji-nehan-scroll-annual-rites-chant-community/"
+  },
+  {
+    "update_id": "2026-07-24-zendoji-camphor-research",
+    "date": "2026-07-24",
+    "temple_slug": "zendoji-mitsuke",
+    "title": "善導寺研究論文「善導寺の大樟と1967年移転」を公開しました",
+    "summary": "市指定天然記念物の大樟と1967年の境内移転を、駅周辺の都市形成と文化財継承から検証した6526字の研究論文です。",
+    "href": "/research/zendoji-camphor-tree-relocation-station-urban-heritage/"
+  },
+  {
+    "update_id": "2026-07-24-zendoji-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "zendoji-mitsuke",
+    "title": "善導寺研究論文「善導寺の応安開創伝承と念仏法脈」を公開しました",
+    "summary": "応安年間の開創伝承、善導・法然の念仏法脈、近世以降の記憶形成を検証した6241字の研究論文です。",
+    "href": "/research/zendoji-oan-foundation-zendo-honen-lineage/"
+  },
+  {
+    "update_id": "2026-07-24-jushouji-community-research",
+    "date": "2026-07-24",
+    "temple_slug": "jushouji-hiruike",
+    "title": "寿正寺研究論文「蛭池寿正寺の寺領4石・末寺網・薬師巡礼」を公開しました",
+    "summary": "寺領4石、末寺関係、地蔵本尊と薬師堂、遠州の薬師巡礼を検証した6088字の研究論文です。",
+    "href": "/research/jushouji-four-koku-branch-temples-yakushi-pilgrimage/"
+  },
+  {
+    "update_id": "2026-07-24-jushouji-landscape-research",
+    "date": "2026-07-24",
+    "temple_slug": "jushouji-hiruike",
+    "title": "寿正寺研究論文「寿正寺の薬師堂移転と震災再建」を公開しました",
+    "summary": "中曽根の堂、戦国期の兵火、1707年・1854年地震と再建による境内変容を検証した6045字の研究論文です。",
+    "href": "/research/jushouji-yakushido-earthquake-reconstruction-landscape/"
+  },
+  {
+    "update_id": "2026-07-24-jushouji-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "jushouji-hiruike",
+    "title": "寿正寺研究論文「蛭池寿正寺の成立年代と松秀寺門流」を公開しました",
+    "summary": "地蔵堂前身説、1575年寺号成立説、1604年再興説を史料層ごとに検証した6236字の研究論文です。",
+    "href": "/research/jushouji-hiruike-foundation-matsuhideji-lineage/"
+  },
+  {
+    "update_id": "2026-07-24-kenshoji-memory-research",
+    "date": "2026-07-24",
+    "temple_slug": "kenshoji-mitsuke",
+    "title": "見性寺研究論文「見性寺に集積する処刑・俳諧・観音巡礼の記憶」を公開しました",
+    "summary": "日本左衛門供養塔、境内句碑、豊田郡33観音第1番を公共史として検証した6001字の研究論文です。",
+    "href": "/research/kenshoji-nihonzaemon-haiku-kannon-memory/"
+  },
+  {
+    "update_id": "2026-07-24-kenshoji-heritage-research",
+    "date": "2026-07-24",
+    "temple_slug": "kenshoji-mitsuke",
+    "title": "見性寺研究論文「見性寺の移動文化財と3件の寺宝」を公開しました",
+    "summary": "不動3尊立像、刺繍16羅漢図、五鈷鈴の伝来と再文脈化を検証した6000字の研究論文です。",
+    "href": "/research/kenshoji-mobile-heritage-fudo-arhats-gokorei/"
+  },
+  {
+    "update_id": "2026-07-24-kenshoji-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "kenshoji-mitsuke",
+    "title": "見性寺研究論文「見性寺遺跡と見付の水陸交通史」を公開しました",
+    "summary": "縄文貝塚、古代国府関連施設、丸木舟材、寺院造営を層位から検証した6080字の研究論文です。",
+    "href": "/research/kenshoji-site-lagoon-water-land-transport/"
+  },
+  {
     "update_id": "2026-07-24-shinpoin-community-research",
     "date": "2026-07-24",
     "temple_slug": "shinpoin-mukasa",

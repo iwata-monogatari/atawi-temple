@@ -5,75 +5,31 @@ import path from "node:path";
 
 const sourceFile = "src/lib/research-articles.ts";
 const tempFile = path.resolve(".astro", `research-validation-${process.pid}.mjs`);
-const relatedSourceFile = "src/lib/research-articles-ioji.ts";
-const relatedTempFile = path.resolve(".astro", "research-articles-ioji.mjs");
-const daijoinSourceFile = "src/lib/research-articles-daijoin.ts";
-const daijoinTempFile = path.resolve(".astro", "research-articles-daijoin.mjs");
-const zosanjiSourceFile = "src/lib/research-articles-zosanji.ts";
-const zosanjiTempFile = path.resolve(".astro", "research-articles-zosanji.mjs");
-const senkojiSourceFile = "src/lib/research-articles-senkoji.ts";
-const senkojiTempFile = path.resolve(".astro", "research-articles-senkoji.mjs");
-const shinpoinSourceFile = "src/lib/research-articles-shinpoin.ts";
-const shinpoinTempFile = path.resolve(".astro", "research-articles-shinpoin.mjs");
+const researchLibDir = path.resolve("src/lib");
+const compilerOptions = {
+  module: ts.ModuleKind.ESNext,
+  target: ts.ScriptTarget.ES2022,
+};
 
 await fs.mkdir(path.dirname(tempFile), { recursive: true });
 const source = await fs.readFile(sourceFile, "utf8");
 const transpiled = ts.transpileModule(source, {
-  compilerOptions: {
-    module: ts.ModuleKind.ESNext,
-    target: ts.ScriptTarget.ES2022,
-  },
+  compilerOptions,
 });
-const relatedSource = await fs.readFile(relatedSourceFile, "utf8");
-const relatedTranspiled = ts.transpileModule(relatedSource, {
-  compilerOptions: {
-    module: ts.ModuleKind.ESNext,
-    target: ts.ScriptTarget.ES2022,
-  },
-});
-await fs.writeFile(relatedTempFile, relatedTranspiled.outputText, "utf8");
-const daijoinSource = await fs.readFile(daijoinSourceFile, "utf8");
-const daijoinTranspiled = ts.transpileModule(daijoinSource, {
-  compilerOptions: {
-    module: ts.ModuleKind.ESNext,
-    target: ts.ScriptTarget.ES2022,
-  },
-});
-await fs.writeFile(daijoinTempFile, daijoinTranspiled.outputText, "utf8");
-const zosanjiSource = await fs.readFile(zosanjiSourceFile, "utf8");
-const zosanjiTranspiled = ts.transpileModule(zosanjiSource, {
-  compilerOptions: {
-    module: ts.ModuleKind.ESNext,
-    target: ts.ScriptTarget.ES2022,
-  },
-});
-await fs.writeFile(zosanjiTempFile, zosanjiTranspiled.outputText, "utf8");
-const senkojiSource = await fs.readFile(senkojiSourceFile, "utf8");
-const senkojiTranspiled = ts.transpileModule(senkojiSource, {
-  compilerOptions: {
-    module: ts.ModuleKind.ESNext,
-    target: ts.ScriptTarget.ES2022,
-  },
-});
-await fs.writeFile(senkojiTempFile, senkojiTranspiled.outputText, "utf8");
-const shinpoinSource = await fs.readFile(shinpoinSourceFile, "utf8");
-const shinpoinTranspiled = ts.transpileModule(shinpoinSource, {
-  compilerOptions: {
-    module: ts.ModuleKind.ESNext,
-    target: ts.ScriptTarget.ES2022,
-  },
-});
-await fs.writeFile(shinpoinTempFile, shinpoinTranspiled.outputText, "utf8");
-await fs.writeFile(
-  tempFile,
-  transpiled.outputText
-    .replace("./research-articles-ioji", "./research-articles-ioji.mjs")
-    .replace("./research-articles-daijoin", "./research-articles-daijoin.mjs")
-    .replace("./research-articles-zosanji", "./research-articles-zosanji.mjs")
-    .replace("./research-articles-senkoji", "./research-articles-senkoji.mjs")
-    .replace("./research-articles-shinpoin", "./research-articles-shinpoin.mjs"),
-  "utf8",
-);
+const relatedFiles = (await fs.readdir(researchLibDir))
+  .filter((name) => /^research-articles-.+\.ts$/.test(name))
+  .sort();
+let validationSource = transpiled.outputText;
+
+for (const fileName of relatedFiles) {
+  const relatedSource = await fs.readFile(path.join(researchLibDir, fileName), "utf8");
+  const relatedTranspiled = ts.transpileModule(relatedSource, { compilerOptions });
+  const moduleName = fileName.replace(/\.ts$/, "");
+  await fs.writeFile(path.resolve(".astro", `${moduleName}.mjs`), relatedTranspiled.outputText, "utf8");
+  validationSource = validationSource.replaceAll(`./${moduleName}`, `./${moduleName}.mjs`);
+}
+
+await fs.writeFile(tempFile, validationSource, "utf8");
 
 const { researchArticles, articlePlainText } = await import(`${pathToFileURL(tempFile).href}?v=${Date.now()}`);
 const failures = [];
@@ -138,10 +94,10 @@ for (const article of researchArticles) {
 }
 
 await fs.rm(tempFile, { force: true });
-await fs.rm(relatedTempFile, { force: true });
-await fs.rm(daijoinTempFile, { force: true });
-await fs.rm(zosanjiTempFile, { force: true });
-await fs.rm(senkojiTempFile, { force: true });
+for (const fileName of relatedFiles) {
+  const moduleName = fileName.replace(/\.ts$/, "");
+  await fs.rm(path.resolve(".astro", `${moduleName}.mjs`), { force: true });
+}
 
 if (failures.length) {
   console.error("\n研究記事の品質検査に失敗しました:");

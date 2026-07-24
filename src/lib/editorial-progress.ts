@@ -230,6 +230,69 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 9,
       href: "/research/shinpoin-kokuzo-hachiman-pilgrimage-mukasa-landscape/",
     } as const;
+    const kenshojiHistoryPublication = {
+      title: "見性寺遺跡と見付の水陸交通史",
+      characterCount: 6080,
+      illustrationCount: 6,
+      sourceCount: 9,
+      href: "/research/kenshoji-site-lagoon-water-land-transport/",
+    } as const;
+    const kenshojiHeritagePublication = {
+      title: "見性寺の移動文化財と3件の寺宝",
+      characterCount: 6000,
+      illustrationCount: 6,
+      sourceCount: 7,
+      href: "/research/kenshoji-mobile-heritage-fudo-arhats-gokorei/",
+    } as const;
+    const kenshojiCommunityPublication = {
+      title: "見性寺に集積する処刑・俳諧・観音巡礼の記憶",
+      characterCount: 6001,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/kenshoji-nihonzaemon-haiku-kannon-memory/",
+    } as const;
+    const jushoujiHistoryPublication = {
+      title: "蛭池寿正寺の成立年代と松秀寺門流",
+      characterCount: 6236,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/jushouji-hiruike-foundation-matsuhideji-lineage/",
+    } as const;
+    const jushoujiHeritagePublication = {
+      title: "寿正寺の薬師堂移転と震災再建",
+      characterCount: 6045,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/jushouji-yakushido-earthquake-reconstruction-landscape/",
+    } as const;
+    const jushoujiCommunityPublication = {
+      title: "蛭池寿正寺の寺領4石・末寺網・薬師巡礼",
+      characterCount: 6088,
+      illustrationCount: 6,
+      sourceCount: 9,
+      href: "/research/jushouji-four-koku-branch-temples-yakushi-pilgrimage/",
+    } as const;
+    const zendojiHistoryPublication = {
+      title: "善導寺の応安開創伝承と念仏法脈",
+      characterCount: 6241,
+      illustrationCount: 6,
+      sourceCount: 9,
+      href: "/research/zendoji-oan-foundation-zendo-honen-lineage/",
+    } as const;
+    const zendojiHeritagePublication = {
+      title: "善導寺の大樟と1967年移転",
+      characterCount: 6526,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/zendoji-camphor-tree-relocation-station-urban-heritage/",
+    } as const;
+    const zendojiCommunityPublication = {
+      title: "善導寺の大涅槃絵軸と念仏儀礼",
+      characterCount: 6270,
+      illustrationCount: 6,
+      sourceCount: 9,
+      href: "/research/zendoji-nehan-scroll-annual-rites-chant-community/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -259,6 +322,24 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? shinpoinHeritagePublication
           : temple.slug === "shinpoin-mukasa" && angle.key === "community"
             ? shinpoinCommunityPublication
+          : temple.slug === "kenshoji-mitsuke" && angle.key === "history"
+            ? kenshojiHistoryPublication
+          : temple.slug === "kenshoji-mitsuke" && angle.key === "heritage"
+            ? kenshojiHeritagePublication
+          : temple.slug === "kenshoji-mitsuke" && angle.key === "community"
+            ? kenshojiCommunityPublication
+          : temple.slug === "jushouji-hiruike" && angle.key === "history"
+            ? jushoujiHistoryPublication
+          : temple.slug === "jushouji-hiruike" && angle.key === "heritage"
+            ? jushoujiHeritagePublication
+          : temple.slug === "jushouji-hiruike" && angle.key === "community"
+            ? jushoujiCommunityPublication
+          : temple.slug === "zendoji-mitsuke" && angle.key === "history"
+            ? zendojiHistoryPublication
+          : temple.slug === "zendoji-mitsuke" && angle.key === "heritage"
+            ? zendojiHeritagePublication
+          : temple.slug === "zendoji-mitsuke" && angle.key === "community"
+            ? zendojiCommunityPublication
           : undefined;
 
     return {
