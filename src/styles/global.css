@@ -4541,3 +4541,112 @@ th {
     padding: 18px;
   }
 }
+
+.research-index-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(300px, .6fr);
+  gap: 48px;
+  align-items: end;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 76px 24px 42px;
+}
+
+.research-index-hero h1 {
+  margin: 8px 0 18px;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: clamp(2.4rem, 6vw, 4.8rem);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.research-index-hero > div > p:last-child {
+  max-width: 720px;
+  margin: 0;
+  color: #4e554d;
+  line-height: 1.9;
+}
+
+.research-index-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  border-block: 1px solid #cfd5cc;
+}
+
+.research-index-stats div { padding: 18px 10px; text-align: center; }
+.research-index-stats dt { color: #687066; font-size: .72rem; letter-spacing: .08em; }
+.research-index-stats dd { margin: 6px 0 0; color: #233522; font-size: 1.8rem; font-weight: 700; }
+.research-index-stats dd span { margin-left: 2px; font-size: .72rem; font-weight: 400; }
+.research-index-stats dd.date { padding-top: 7px; font-size: .9rem; }
+
+.research-index-tools {
+  display: grid;
+  grid-template-columns: minmax(240px, 1.5fr) minmax(180px, 1fr) minmax(180px, 1fr) auto;
+  gap: 14px;
+  align-items: end;
+  max-width: 1180px;
+  margin: 0 auto 44px;
+  padding: 24px;
+  border: 1px solid #d8ddd5;
+  background: #f7f8f5;
+}
+
+.research-index-tools label {
+  display: block;
+  margin-bottom: 7px;
+  color: #465046;
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+.research-index-tools input,
+.research-index-tools select {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 13px;
+  border: 1px solid #bfc8bb;
+  border-radius: 3px;
+  background: #fff;
+  color: #202820;
+  font: inherit;
+}
+
+.research-filter-reset {
+  min-height: 48px;
+  padding: 0 18px;
+  border: 1px solid #687866;
+  border-radius: 3px;
+  background: transparent;
+  color: #354633;
+  cursor: pointer;
+}
+
+.research-result-count { grid-column: 1 / -1; margin: 2px 0 -4px; color: #687066; font-size: .85rem; }
+.research-result-count strong { margin-right: 3px; color: #243722; font-size: 1.1rem; }
+.research-index-results { max-width: 1180px; margin: 0 auto; padding: 0 24px 100px; }
+.research-temple-group { margin-bottom: 60px; }
+.research-temple-group > header { display: flex; justify-content: space-between; gap: 20px; align-items: end; margin-bottom: 20px; padding-bottom: 14px; border-bottom: 2px solid #334b31; }
+.research-temple-group h2 { margin: 3px 0 0; font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 1.8rem; font-weight: 600; }
+.research-temple-group > header > a { font-size: .85rem; }
+.research-article-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.research-index-card { display: flex; flex-direction: column; min-height: 330px; padding: 26px; border: 1px solid #d8ddd5; background: #fff; box-shadow: 0 8px 24px rgba(32, 48, 30, .05); }
+.research-card-meta, .research-card-footer { display: flex; justify-content: space-between; gap: 16px; color: #6a7368; font-size: .75rem; }
+.research-index-card h3 { margin: 16px 0 8px; font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 1.35rem; line-height: 1.55; }
+.research-card-subtitle { margin: 0 0 14px; color: #526150; font-weight: 600; }
+.research-index-card > p:not(.research-card-subtitle) { margin: 0; color: #596158; font-size: .9rem; line-height: 1.75; }
+.research-index-card ul { display: flex; flex-wrap: wrap; gap: 6px; margin: 18px 0 22px; padding: 0; list-style: none; }
+.research-index-card li { padding: 4px 9px; border-radius: 999px; background: #edf1e9; color: #455543; font-size: .72rem; }
+.research-card-footer { align-items: center; margin-top: auto; padding-top: 16px; border-top: 1px solid #e1e4df; }
+.research-card-footer a { font-weight: 700; }
+.research-empty { padding: 70px 24px; border: 1px dashed #bfc8bb; text-align: center; }
+
+@media (max-width: 780px) {
+  .research-index-hero { grid-template-columns: 1fr; gap: 28px; padding-top: 48px; }
+  .research-index-tools { grid-template-columns: 1fr; margin-inline: 16px; padding: 18px; }
+  .research-result-count { grid-column: auto; }
+  .research-index-results { padding-inline: 16px; }
+  .research-article-list { grid-template-columns: 1fr; }
+  .research-temple-group > header { align-items: start; flex-direction: column; }
+  .research-index-card { min-height: 0; padding: 21px; }
+}

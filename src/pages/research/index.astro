@@ -1,28 +1,160 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { researchArticles } from "../../lib/research-articles";
+import { getTempleBySlug } from "../../lib/temples";
+
+const normalizedArticles = researchArticles
+  .map((article) => ({
+    ...article,
+    temple: article.templeSlug ? getTempleBySlug(article.templeSlug) : undefined,
+  }))
+  .sort((a, b) => b.updated.localeCompare(a.updated) || a.title.localeCompare(b.title, "ja"));
+
+const templeGroups = Array.from(
+  normalizedArticles.reduce((groups, article) => {
+    const key = article.templeSlug || "general";
+    const label = article.temple?.name || "磐田の寺院・総合研究";
+    const current = groups.get(key) || { key, label, articles: [] as typeof normalizedArticles };
+    current.articles.push(article);
+    groups.set(key, current);
+    return groups;
+  }, new Map<string, { key: string; label: string; articles: typeof normalizedArticles }>())
+  .values(),
+).sort((a, b) => a.label.localeCompare(b.label, "ja"));
+
+const seriesOptions = Array.from(new Set(normalizedArticles.map((article) => article.series)));
 ---
 
 <BaseLayout
-  title="研究紀要｜ATAWI TEMPLE"
-  description="磐田市の寺院を、公的資料・現地記録・学術資料に基づいて検証するATAWI TEMPLE研究紀要です。"
+  title="研究論文一覧 | ATAWI TEMPLE"
+  description="磐田市の寺院史、文化財、地域社会を、公開資料と現地記録に基づいて検証するATAWI TEMPLEの研究論文一覧です。寺院名・題名・キーワードから検索できます。"
   hideSeasonalBanner={true}
 >
-  <section class="page-hero">
-    <p class="eyebrow">ATAWI TEMPLE RESEARCH</p>
-    <h1>研究紀要</h1>
-    <p>確認事実・分析・伝承・未確認事項を区別し、磐田の寺院史を検証可能な形で公開します。</p>
+  <section class="research-index-hero">
+    <div>
+      <p class="eyebrow">ATAWI TEMPLE RESEARCH</p>
+      <h1>研究論文一覧</h1>
+      <p>寺院ごとに論文を整理し、題名・寺院名・キーワードから検索できます。伝承、確認事実、研究上の推定を区別して公開しています。</p>
+    </div>
+    <dl class="research-index-stats" aria-label="研究論文の公開状況">
+      <div><dt>公開論文</dt><dd>{normalizedArticles.length}<span>本</span></dd></div>
+      <div><dt>対象寺院</dt><dd>{templeGroups.filter((group) => group.key !== "general").length}<span>寺院</span></dd></div>
+      <div><dt>最終更新</dt><dd class="date">{normalizedArticles[0]?.updated.replaceAll("-", ".")}</dd></div>
+    </dl>
   </section>
-  <section class="content-section">
-    <div class="card-grid">
-      {researchArticles.map((article) => (
-        <article class="content-card">
-          <p class="eyebrow">{article.series}</p>
-          <h2><a href={`/research/${article.slug}/`}>{article.title}</a></h2>
-          <p>{article.description}</p>
-          <p class="small">{article.verificationStatus}／更新 {article.updated.replaceAll("-", ".")}</p>
-        </article>
-      ))}
+
+  <section class="research-index-tools" aria-label="研究論文を絞り込む">
+    <div class="research-search-field">
+      <label for="research-query">論文を検索</label>
+      <input id="research-query" type="search" placeholder="寺院名・題名・キーワードを入力" autocomplete="off" data-research-query />
+    </div>
+    <div>
+      <label for="research-temple">寺院から選ぶ</label>
+      <select id="research-temple" data-research-temple>
+        <option value="">すべての寺院</option>
+        {templeGroups.map((group) => <option value={group.key}>{group.label}（{group.articles.length}）</option>)}
+      </select>
+    </div>
+    <div>
+      <label for="research-series">研究区分</label>
+      <select id="research-series" data-research-series>
+        <option value="">すべての区分</option>
+        {seriesOptions.map((series) => <option value={series}>{series}</option>)}
+      </select>
+    </div>
+    <button type="button" class="research-filter-reset" data-research-reset>条件を解除</button>
+    <p class="research-result-count" aria-live="polite"><strong data-research-count>{normalizedArticles.length}</strong>本を表示</p>
+  </section>
+
+  <section class="research-index-results" data-research-results>
+    {templeGroups.map((group) => (
+      <section class="research-temple-group" data-research-group={group.key}>
+        <header>
+          <div>
+            <p class="eyebrow">TEMPLE RESEARCH</p>
+            <h2>{group.label}</h2>
+          </div>
+          {group.key !== "general" && <a href={`/temples/${group.key}/`}>寺院詳細を見る</a>}
+        </header>
+        <div class="research-article-list">
+          {group.articles.map((article) => (
+            <article
+              class="research-index-card"
+              data-research-card
+              data-temple={group.key}
+              data-series={article.series}
+              data-search={`${group.label} ${article.title} ${article.subtitle} ${article.description} ${article.keywords.join(" ")}`.toLowerCase()}
+            >
+              <div class="research-card-meta">
+                <span>{article.series}</span>
+                <time datetime={article.updated}>{article.updated.replaceAll("-", ".")}</time>
+              </div>
+              <h3><a href={`/research/${article.slug}/`}>{article.title}</a></h3>
+              <p class="research-card-subtitle">{article.subtitle}</p>
+              <p>{article.description}</p>
+              <ul aria-label="キーワード">
+                {article.keywords.slice(0, 5).map((keyword) => <li>{keyword}</li>)}
+              </ul>
+              <div class="research-card-footer">
+                <span>{article.verificationStatus}</span>
+                <a href={`/research/${article.slug}/`}>論文を読む</a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    ))}
+    <div class="research-empty" data-research-empty hidden>
+      <h2>該当する論文がありません</h2>
+      <p>検索語を短くするか、絞り込み条件を解除してください。</p>
     </div>
   </section>
+
+  <script>
+    const queryInput = document.querySelector<HTMLInputElement>("[data-research-query]");
+    const templeSelect = document.querySelector<HTMLSelectElement>("[data-research-temple]");
+    const seriesSelect = document.querySelector<HTMLSelectElement>("[data-research-series]");
+    const resetButton = document.querySelector<HTMLButtonElement>("[data-research-reset]");
+    const count = document.querySelector<HTMLElement>("[data-research-count]");
+    const empty = document.querySelector<HTMLElement>("[data-research-empty]");
+    const cards = Array.from(document.querySelectorAll<HTMLElement>("[data-research-card]"));
+    const groups = Array.from(document.querySelectorAll<HTMLElement>("[data-research-group]"));
+
+    function normalize(value: string) {
+      return value.toLowerCase().normalize("NFKC").replace(/\s+/g, " ").trim();
+    }
+
+    function applyFilters() {
+      const query = normalize(queryInput?.value || "");
+      const temple = templeSelect?.value || "";
+      const series = seriesSelect?.value || "";
+      let visibleCount = 0;
+
+      cards.forEach((card) => {
+        const matchesQuery = !query || normalize(card.dataset.search || "").includes(query);
+        const matchesTemple = !temple || card.dataset.temple === temple;
+        const matchesSeries = !series || card.dataset.series === series;
+        const visible = matchesQuery && matchesTemple && matchesSeries;
+        card.hidden = !visible;
+        if (visible) visibleCount += 1;
+      });
+
+      groups.forEach((group) => {
+        group.hidden = !Array.from(group.querySelectorAll<HTMLElement>("[data-research-card]")).some((card) => !card.hidden);
+      });
+      if (count) count.textContent = String(visibleCount);
+      if (empty) empty.hidden = visibleCount !== 0;
+    }
+
+    queryInput?.addEventListener("input", applyFilters);
+    templeSelect?.addEventListener("change", applyFilters);
+    seriesSelect?.addEventListener("change", applyFilters);
+    resetButton?.addEventListener("click", () => {
+      if (queryInput) queryInput.value = "";
+      if (templeSelect) templeSelect.value = "";
+      if (seriesSelect) seriesSelect.value = "";
+      applyFilters();
+      queryInput?.focus();
+    });
+  </script>
 </BaseLayout>
