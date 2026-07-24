@@ -1,5 +1,101 @@
 [
   {
+    "update_id": "2026-07-25-saikoji-kaketsuka-port-research",
+    "date": "2026-07-25",
+    "temple_slug": "saikoji-kaketsuka",
+    "title": "掛塚西光寺研究論文「掛塚湊の地域景観と西光寺の『稱名山』額」を公開しました",
+    "summary": "港町史、山号額、物質資料の関係を検証した6005字の研究論文です。",
+    "href": "/research/saikoji-kaketsuka-port-calligraphy-landscape/"
+  },
+  {
+    "update_id": "2026-07-25-saikoji-kaketsuka-ritual-research",
+    "date": "2026-07-25",
+    "temple_slug": "saikoji-kaketsuka",
+    "title": "掛塚西光寺研究論文「掛塚西光寺の年中法要と戸別念仏」を公開しました",
+    "summary": "寺院内法要と戸別訪問を地域の念仏暦として検証した6024字の研究論文です。",
+    "href": "/research/saikoji-kaketsuka-annual-ritual-household-nenbutsu/"
+  },
+  {
+    "update_id": "2026-07-25-saikoji-kaketsuka-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "saikoji-kaketsuka",
+    "title": "掛塚西光寺研究論文「1521年創建伝承と掛塚西光寺の寺号形成」を公開しました",
+    "summary": "創建、開山、寺号、山号の成立を史料層ごとに検証した6049字の研究論文です。",
+    "href": "/research/saikoji-kaketsuka-1521-founder-name/"
+  },
+  {
+    "update_id": "2026-07-25-shinshinkyo-honbu-archive-research",
+    "date": "2026-07-25",
+    "temple_slug": "shinshinkyo-honbu-mitsuke",
+    "title": "神心教本部研究論文「公開情報の少ない神心教本部をどう記録するか」を公開しました",
+    "summary": "法人資料、現地表象、口述史を結ぶ地域宗教アーカイブを検討した6009字の研究論文です。",
+    "href": "/research/shinshinkyo-honbu-mitsuke-religious-archive-method/"
+  },
+  {
+    "update_id": "2026-07-25-shinshinkyo-honbu-signs-research",
+    "date": "2026-07-25",
+    "temple_slug": "shinshinkyo-honbu-mitsuke",
+    "title": "神心教本部研究論文「神心教本部の『お題目』『立正安国』表象」を公開しました",
+    "summary": "現地看板、僧形像、団参記事から教義を断定せず検証した6030字の研究論文です。",
+    "href": "/research/shinshinkyo-honbu-signs-odaimoku-rissho-ankoku/"
+  },
+  {
+    "update_id": "2026-07-25-shinshinkyo-honbu-structure-research",
+    "date": "2026-07-25",
+    "temple_slug": "shinshinkyo-honbu-mitsuke",
+    "title": "神心教本部研究論文「神心教本部と包括宗教法人神心教の法人構造」を公開しました",
+    "summary": "見付206、見付243、法人番号を区別して宗務行政史を検証した6105字の研究論文です。",
+    "href": "/research/shinshinkyo-honbu-corporate-structure-206-243/"
+  },
+  {
+    "update_id": "2026-07-25-shinshinkyo-archive-research",
+    "date": "2026-07-25",
+    "temple_slug": "shinshinkyo-mitsuke",
+    "title": "神心教研究論文「見付の地域宗教史に神心教をどう保存するか」を公開しました",
+    "summary": "地域宗教情報の保存と識別方法を検討した6115字の研究論文です。",
+    "href": "/research/shinshinkyo-mitsuke-local-religion-digital-archive/"
+  },
+  {
+    "update_id": "2026-07-25-shinshinkyo-classification-research",
+    "date": "2026-07-25",
+    "temple_slug": "shinshinkyo-mitsuke",
+    "title": "神心教研究論文「『神心教』はなぜ仏教系に分類されるのか」を公開しました",
+    "summary": "宗教年鑑と法人名簿から分類史と類似団体識別を検証した6023字の研究論文です。",
+    "href": "/research/shinshinkyo-mitsuke-buddhist-classification-name-comparison/"
+  },
+  {
+    "update_id": "2026-07-25-shinshinkyo-structure-research",
+    "date": "2026-07-25",
+    "temple_slug": "shinshinkyo-mitsuke",
+    "title": "神心教研究論文「見付の神心教における包括法人・本部法人・所在地の制度史」を公開しました",
+    "summary": "複数年の宗教年鑑と県名簿から法人構造を検証した6121字の研究論文です。",
+    "href": "/research/shinshinkyo-mitsuke-corporate-structure-record-history/"
+  },
+  {
+    "update_id": "2026-07-25-senshoji-landscape-research",
+    "date": "2026-07-25",
+    "temple_slug": "senshoji-iwai",
+    "title": "宣正寺研究論文「岩井の地域景観と宣正寺の位置」を公開しました",
+    "summary": "旧岩井村、磐田原台地、桶ケ谷沼と寺院固有史を分けて検証した6014字の研究論文です。",
+    "href": "/research/senshoji-iwai-landscape-context/"
+  },
+  {
+    "update_id": "2026-07-25-senshoji-geography-research",
+    "date": "2026-07-25",
+    "temple_slug": "senshoji-iwai",
+    "title": "宣正寺研究論文「宣正寺の宗教法人・布教区・地域分類」を公開しました",
+    "summary": "法制度、宗派運営、行政住所、地域生活圏を分けて検証した6014字の研究論文です。",
+    "href": "/research/senshoji-religious-corporation-denominational-geography/"
+  },
+  {
+    "update_id": "2026-07-25-senshoji-archive-research",
+    "date": "2026-07-25",
+    "temple_slug": "senshoji-iwai",
+    "title": "宣正寺研究論文「宣正寺の『史料空白』を研究する」を公開しました",
+    "summary": "公開史料の空白を寺院史の不存在と誤認しない方法を検討した6021字の研究論文です。",
+    "href": "/research/senshoji-source-criticism-sparse-archive/"
+  },
+  {
     "update_id": "2026-07-25-genmyoji-folklore-research",
     "date": "2026-07-25",
     "temple_slug": "genmyoji-mitsuke",

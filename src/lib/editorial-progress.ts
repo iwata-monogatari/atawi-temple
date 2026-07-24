@@ -85,9 +85,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "senshoji-iwai", name: "宣正寺", stage: "調査・執筆" },
-  { slug: "shinshinkyo-mitsuke", name: "神心教", stage: "調査・執筆" },
-  { slug: "shinshinkyo-honbu-mitsuke", name: "神心教本部", stage: "調査・執筆" },
+  { slug: "manpukuji-kaketsuka-819", name: "満福寺", stage: "調査・執筆" },
+  { slug: "manpukuji-kaketsuka-799", name: "萬福寺", stage: "調査・執筆" },
+  { slug: "kokuseiji-kaketsuka", name: "國清寺", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -1077,6 +1077,90 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 15,
       href: "/research/genmyoji-omeiko-child-sandals-imaura-folklore/",
     } as const;
+    const senshojiHistoryPublication = {
+      title: "宣正寺の「史料空白」を研究する",
+      characterCount: 6021,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/senshoji-source-criticism-sparse-archive/",
+    } as const;
+    const senshojiHeritagePublication = {
+      title: "宣正寺の宗教法人・布教区・地域分類",
+      characterCount: 6014,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/senshoji-religious-corporation-denominational-geography/",
+    } as const;
+    const senshojiCommunityPublication = {
+      title: "岩井の地域景観と宣正寺の位置",
+      characterCount: 6014,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/senshoji-iwai-landscape-context/",
+    } as const;
+    const shinshinkyoHistoryPublication = {
+      title: "見付の神心教における包括法人・本部法人・所在地の制度史",
+      characterCount: 6121,
+      illustrationCount: 6,
+      sourceCount: 17,
+      href: "/research/shinshinkyo-mitsuke-corporate-structure-record-history/",
+    } as const;
+    const shinshinkyoHeritagePublication = {
+      title: "「神心教」はなぜ仏教系に分類されるのか",
+      characterCount: 6023,
+      illustrationCount: 6,
+      sourceCount: 17,
+      href: "/research/shinshinkyo-mitsuke-buddhist-classification-name-comparison/",
+    } as const;
+    const shinshinkyoCommunityPublication = {
+      title: "見付の地域宗教史に神心教をどう保存するか",
+      characterCount: 6115,
+      illustrationCount: 6,
+      sourceCount: 17,
+      href: "/research/shinshinkyo-mitsuke-local-religion-digital-archive/",
+    } as const;
+    const shinshinkyoHonbuHistoryPublication = {
+      title: "神心教本部と包括宗教法人神心教の法人構造",
+      characterCount: 6105,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/shinshinkyo-honbu-corporate-structure-206-243/",
+    } as const;
+    const shinshinkyoHonbuHeritagePublication = {
+      title: "神心教本部の「お題目」「立正安国」表象",
+      characterCount: 6030,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/shinshinkyo-honbu-signs-odaimoku-rissho-ankoku/",
+    } as const;
+    const shinshinkyoHonbuCommunityPublication = {
+      title: "公開情報の少ない神心教本部をどう記録するか",
+      characterCount: 6009,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/shinshinkyo-honbu-mitsuke-religious-archive-method/",
+    } as const;
+    const saikojiKaketsukaHistoryPublication = {
+      title: "1521年創建伝承と掛塚西光寺の寺号形成",
+      characterCount: 6049,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/saikoji-kaketsuka-1521-founder-name/",
+    } as const;
+    const saikojiKaketsukaHeritagePublication = {
+      title: "掛塚湊の地域景観と西光寺の「稱名山」額",
+      characterCount: 6005,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/saikoji-kaketsuka-port-calligraphy-landscape/",
+    } as const;
+    const saikojiKaketsukaCommunityPublication = {
+      title: "掛塚西光寺の年中法要と戸別念仏",
+      characterCount: 6024,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/saikoji-kaketsuka-annual-ritual-household-nenbutsu/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -1346,6 +1430,30 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? genmyojiHeritagePublication
           : temple.slug === "genmyoji-mitsuke" && angle.key === "community"
             ? genmyojiCommunityPublication
+          : temple.slug === "senshoji-iwai" && angle.key === "history"
+            ? senshojiHistoryPublication
+          : temple.slug === "senshoji-iwai" && angle.key === "heritage"
+            ? senshojiHeritagePublication
+          : temple.slug === "senshoji-iwai" && angle.key === "community"
+            ? senshojiCommunityPublication
+          : temple.slug === "shinshinkyo-mitsuke" && angle.key === "history"
+            ? shinshinkyoHistoryPublication
+          : temple.slug === "shinshinkyo-mitsuke" && angle.key === "heritage"
+            ? shinshinkyoHeritagePublication
+          : temple.slug === "shinshinkyo-mitsuke" && angle.key === "community"
+            ? shinshinkyoCommunityPublication
+          : temple.slug === "shinshinkyo-honbu-mitsuke" && angle.key === "history"
+            ? shinshinkyoHonbuHistoryPublication
+          : temple.slug === "shinshinkyo-honbu-mitsuke" && angle.key === "heritage"
+            ? shinshinkyoHonbuHeritagePublication
+          : temple.slug === "shinshinkyo-honbu-mitsuke" && angle.key === "community"
+            ? shinshinkyoHonbuCommunityPublication
+          : temple.slug === "saikoji-kaketsuka" && angle.key === "history"
+            ? saikojiKaketsukaHistoryPublication
+          : temple.slug === "saikoji-kaketsuka" && angle.key === "heritage"
+            ? saikojiKaketsukaHeritagePublication
+          : temple.slug === "saikoji-kaketsuka" && angle.key === "community"
+            ? saikojiKaketsukaCommunityPublication
           : undefined;
 
     return {
