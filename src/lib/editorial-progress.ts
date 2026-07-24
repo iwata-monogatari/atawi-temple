@@ -85,9 +85,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "shokoji-shirabyoshi", name: "正光寺", stage: "調査・執筆" },
-  { slug: "hounji-mukasa", name: "法雲寺", stage: "調査・執筆" },
-  { slug: "anzenji-iwai", name: "安全寺", stage: "調査・執筆" },
+  { slug: "hofukuji-okubo", name: "保福寺", stage: "調査・執筆" },
+  { slug: "shogenin-kojima", name: "正眼院", stage: "調査・執筆" },
+  { slug: "mannenji-kusasaki", name: "萬然寺", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -678,6 +678,69 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 13,
       href: "/research/jissaiji-samejima-village-water-newfield-coastal-landscape/",
     } as const;
+    const shokojiShirabyoshiHistoryPublication = {
+      title: "白拍子正光寺の1602年創建伝承と曹洞宗法系",
+      characterCount: 6176,
+      illustrationCount: 6,
+      sourceCount: 6,
+      href: "/research/shokoji-shirabyoshi-1602-koshu-shojuji-lineage/",
+    } as const;
+    const shokojiShirabyoshiHeritagePublication = {
+      title: "正光寺本尊・虚空蔵菩薩の信仰史",
+      characterCount: 6308,
+      illustrationCount: 6,
+      sourceCount: 7,
+      href: "/research/shokoji-shirabyoshi-kokuzo-honzon-faith/",
+    } as const;
+    const shokojiShirabyoshiCommunityPublication = {
+      title: "白拍子村の正光寺と千手前伝説",
+      characterCount: 6222,
+      illustrationCount: 6,
+      sourceCount: 7,
+      href: "/research/shokoji-shirabyoshi-senju-legend-lowland-landscape/",
+    } as const;
+    const hounjiHistoryPublication = {
+      title: "法雲庵から法雲寺へ",
+      characterCount: 6047,
+      illustrationCount: 6,
+      sourceCount: 9,
+      href: "/research/hounji-hounan-1634-shinpoin-lineage-hochi/",
+    } as const;
+    const hounjiHeritagePublication = {
+      title: "法雲寺の阿弥陀如来記録と聖観世音菩薩",
+      characterCount: 6159,
+      illustrationCount: 6,
+      sourceCount: 11,
+      href: "/research/hounji-amida-shokannon-enshu-pilgrimage/",
+    } as const;
+    const hounjiCommunityPublication = {
+      title: "法雲寺の養心閣・子供会・あじさい景観",
+      characterCount: 6045,
+      illustrationCount: 6,
+      sourceCount: 11,
+      href: "/research/hounji-yoshinkaku-children-hydrangea-public-temple/",
+    } as const;
+    const anzenjiHistoryPublication = {
+      title: "安全寺1513年開創伝承と雲山宗越",
+      characterCount: 6019,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/anzenji-1513-unzan-sotsu-kaizoji-lineage-critique/",
+    } as const;
+    const anzenjiHeritagePublication = {
+      title: "『安全寺記録』と鶴ヶ池の源頼朝伝承",
+      characterCount: 6006,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/anzenji-record-tsurugaike-yoritomo-legend-textual-history/",
+    } as const;
+    const anzenjiCommunityPublication = {
+      title: "安全寺と岩井の湿地文化景観",
+      characterCount: 6022,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/anzenji-iwai-tsurugaike-okegaya-wetland-cultural-landscape/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -833,6 +896,24 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? jissaijiHeritagePublication
           : temple.slug === "jissaiji-samejima" && angle.key === "community"
             ? jissaijiCommunityPublication
+          : temple.slug === "shokoji-shirabyoshi" && angle.key === "history"
+            ? shokojiShirabyoshiHistoryPublication
+          : temple.slug === "shokoji-shirabyoshi" && angle.key === "heritage"
+            ? shokojiShirabyoshiHeritagePublication
+          : temple.slug === "shokoji-shirabyoshi" && angle.key === "community"
+            ? shokojiShirabyoshiCommunityPublication
+          : temple.slug === "hounji-mukasa" && angle.key === "history"
+            ? hounjiHistoryPublication
+          : temple.slug === "hounji-mukasa" && angle.key === "heritage"
+            ? hounjiHeritagePublication
+          : temple.slug === "hounji-mukasa" && angle.key === "community"
+            ? hounjiCommunityPublication
+          : temple.slug === "anzenji-iwai" && angle.key === "history"
+            ? anzenjiHistoryPublication
+          : temple.slug === "anzenji-iwai" && angle.key === "heritage"
+            ? anzenjiHeritagePublication
+          : temple.slug === "anzenji-iwai" && angle.key === "community"
+            ? anzenjiCommunityPublication
           : undefined;
 
     return {

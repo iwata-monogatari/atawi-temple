@@ -1,5 +1,77 @@
 [
   {
+    "update_id": "2026-07-24-anzenji-landscape-research",
+    "date": "2026-07-24",
+    "temple_slug": "anzenji-iwai",
+    "title": "安全寺研究論文「安全寺と岩井の湿地文化景観」を公開しました",
+    "summary": "鶴ヶ池用水、桶ケ谷沼、台地縁辺の寺域を統合して検証した6022字の研究論文です。",
+    "href": "/research/anzenji-iwai-tsurugaike-okegaya-wetland-cultural-landscape/"
+  },
+  {
+    "update_id": "2026-07-24-anzenji-record-research",
+    "date": "2026-07-24",
+    "temple_slug": "anzenji-iwai",
+    "title": "安全寺研究論文「『安全寺記録』と鶴ヶ池の源頼朝伝承」を公開しました",
+    "summary": "1183年平癒祈願説と1190年放生会説を史料層ごとに比較した6006字の研究論文です。",
+    "href": "/research/anzenji-record-tsurugaike-yoritomo-legend-textual-history/"
+  },
+  {
+    "update_id": "2026-07-24-anzenji-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "anzenji-iwai",
+    "title": "安全寺研究論文「安全寺1513年開創伝承と雲山宗越」を公開しました",
+    "summary": "開創年月、雲山宗越、海蔵寺末寺網を批判的に検証した6019字の研究論文です。",
+    "href": "/research/anzenji-1513-unzan-sotsu-kaizoji-lineage-critique/"
+  },
+  {
+    "update_id": "2026-07-24-hounji-community-research",
+    "date": "2026-07-24",
+    "temple_slug": "hounji-mukasa",
+    "title": "法雲寺研究論文「法雲寺の養心閣・子供会・あじさい景観」を公開しました",
+    "summary": "戦後の青少年教化と地域に開かれた寺への展開を検証した6045字の研究論文です。",
+    "href": "/research/hounji-yoshinkaku-children-hydrangea-public-temple/"
+  },
+  {
+    "update_id": "2026-07-24-hounji-kannon-research",
+    "date": "2026-07-24",
+    "temple_slug": "hounji-mukasa",
+    "title": "法雲寺研究論文「法雲寺の阿弥陀如来記録と聖観世音菩薩」を公開しました",
+    "summary": "本尊記録、遠州三十三観音第29番、御詠歌を史料層ごとに検証した6159字の研究論文です。",
+    "href": "/research/hounji-amida-shokannon-enshu-pilgrimage/"
+  },
+  {
+    "update_id": "2026-07-24-hounji-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "hounji-mukasa",
+    "title": "法雲寺研究論文「法雲庵から法雲寺へ」を公開しました",
+    "summary": "1634年開創、新豊院法系、法地昇格を段階的形成として検証した6047字の研究論文です。",
+    "href": "/research/hounji-hounan-1634-shinpoin-lineage-hochi/"
+  },
+  {
+    "update_id": "2026-07-24-shokoji-shirabyoshi-community-research",
+    "date": "2026-07-24",
+    "temple_slug": "shokoji-shirabyoshi",
+    "title": "正光寺研究論文「白拍子村の正光寺と千手前伝説」を公開しました",
+    "summary": "仿僧川低地の地名、治水、女性芸能者の地域記憶を検証した6222字の研究論文です。",
+    "href": "/research/shokoji-shirabyoshi-senju-legend-lowland-landscape/"
+  },
+  {
+    "update_id": "2026-07-24-shokoji-shirabyoshi-kokuzo-research",
+    "date": "2026-07-24",
+    "temple_slug": "shokoji-shirabyoshi",
+    "title": "正光寺研究論文「正光寺本尊・虚空蔵菩薩の信仰史」を公開しました",
+    "summary": "1921年郡誌、求聞持法、宝珠図像から本尊信仰を検証した6308字の研究論文です。",
+    "href": "/research/shokoji-shirabyoshi-kokuzo-honzon-faith/"
+  },
+  {
+    "update_id": "2026-07-24-shokoji-shirabyoshi-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "shokoji-shirabyoshi",
+    "title": "正光寺研究論文「白拍子正光寺の1602年創建伝承と曹洞宗法系」を公開しました",
+    "summary": "鈴木藤右衛門、甲州の同名寺、聖寿寺法系を検証した6176字の研究論文です。",
+    "href": "/research/shokoji-shirabyoshi-1602-koshu-shojuji-lineage/"
+  },
+  {
     "update_id": "2026-07-24-jissaiji-landscape-research",
     "date": "2026-07-24",
     "temple_slug": "jissaiji-samejima",
