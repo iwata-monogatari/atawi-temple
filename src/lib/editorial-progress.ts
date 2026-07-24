@@ -85,9 +85,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "hofukuji-okubo", name: "保福寺", stage: "調査・執筆" },
-  { slug: "shogenin-kojima", name: "正眼院", stage: "調査・執筆" },
-  { slug: "mannenji-kusasaki", name: "萬然寺", stage: "調査・執筆" },
+  { slug: "jushouji-kusasaki", name: "壽正寺", stage: "調査・執筆" },
+  { slug: "zenkaiji-nishijima", name: "善海寺", stage: "調査・執筆" },
+  { slug: "toshoji-higashikaizuka", name: "東昌寺", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -741,6 +741,69 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 14,
       href: "/research/anzenji-iwai-tsurugaike-okegaya-wetland-cultural-landscape/",
     } as const;
+    const hofukujiHistoryPublication = {
+      title: "保福院から大久山保福寺へ",
+      characterCount: 6217,
+      illustrationCount: 6,
+      sourceCount: 9,
+      href: "/research/hofukuji-hofukuin-1642-1752-reconstruction/",
+    } as const;
+    const hofukujiHeritagePublication = {
+      title: "保福寺の釈迦如来と境内記憶",
+      characterCount: 6159,
+      illustrationCount: 6,
+      sourceCount: 10,
+      href: "/research/hofukuji-shaka-stone-monuments-memory/",
+    } as const;
+    const hofukujiCommunityPublication = {
+      title: "保福寺の椿寒桜と季節文化景観",
+      characterCount: 6073,
+      illustrationCount: 6,
+      sourceCount: 10,
+      href: "/research/hofukuji-tsubakikanzakura-seasonal-landscape/",
+    } as const;
+    const shogeninHistoryPublication = {
+      title: "正眼院の平景清開基伝承をどう読むか",
+      characterCount: 6124,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/shogenin-kagekiyo-foundation-tradition-source-criticism/",
+    } as const;
+    const shogeninHeritagePublication = {
+      title: "1515年の正眼院再興と雲林寺門流",
+      characterCount: 6172,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/shogenin-1515-unrinji-lineage-and-subtemple-network/",
+    } as const;
+    const shogeninCommunityPublication = {
+      title: "正眼院領20石と2つの三十三観音霊場",
+      characterCount: 6054,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/shogenin-twenty-koku-estate-and-kannon-pilgrimage/",
+    } as const;
+    const mannenjiHistoryPublication = {
+      title: "萬然寺の元亀期薬師堂伝承と1613年の寺院化",
+      characterCount: 6063,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/mannenji-yakushido-1613-chiden-seijuji/",
+    } as const;
+    const mannenjiHeritagePublication = {
+      title: "萬然寺の薬師如来本尊と地蔵・石仏群",
+      characterCount: 6040,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/mannenji-yakushi-jizo-stone-devotion/",
+    } as const;
+    const mannenjiCommunityPublication = {
+      title: "草崎字中雨垂の萬然寺と低地寺院景観",
+      characterCount: 6071,
+      illustrationCount: 6,
+      sourceCount: 13,
+      href: "/research/mannenji-nakaamadare-kusasaki-temple-lowland/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -914,6 +977,24 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? anzenjiHeritagePublication
           : temple.slug === "anzenji-iwai" && angle.key === "community"
             ? anzenjiCommunityPublication
+          : temple.slug === "hofukuji-okubo" && angle.key === "history"
+            ? hofukujiHistoryPublication
+          : temple.slug === "hofukuji-okubo" && angle.key === "heritage"
+            ? hofukujiHeritagePublication
+          : temple.slug === "hofukuji-okubo" && angle.key === "community"
+            ? hofukujiCommunityPublication
+          : temple.slug === "shogenin-kojima" && angle.key === "history"
+            ? shogeninHistoryPublication
+          : temple.slug === "shogenin-kojima" && angle.key === "heritage"
+            ? shogeninHeritagePublication
+          : temple.slug === "shogenin-kojima" && angle.key === "community"
+            ? shogeninCommunityPublication
+          : temple.slug === "mannenji-kusasaki" && angle.key === "history"
+            ? mannenjiHistoryPublication
+          : temple.slug === "mannenji-kusasaki" && angle.key === "heritage"
+            ? mannenjiHeritagePublication
+          : temple.slug === "mannenji-kusasaki" && angle.key === "community"
+            ? mannenjiCommunityPublication
           : undefined;
 
     return {

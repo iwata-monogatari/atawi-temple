@@ -1,5 +1,77 @@
 [
   {
+    "update_id": "2026-07-24-mannenji-landscape-research",
+    "date": "2026-07-24",
+    "temple_slug": "mannenji-kusasaki",
+    "title": "萬然寺研究論文「草崎字中雨垂の萬然寺と低地寺院景観」を公開しました",
+    "summary": "天竜川、排水、草崎の5寺院、境内石造物を地域史として検証した6071字の研究論文です。",
+    "href": "/research/mannenji-nakaamadare-kusasaki-temple-lowland/"
+  },
+  {
+    "update_id": "2026-07-24-mannenji-devotion-research",
+    "date": "2026-07-24",
+    "temple_slug": "mannenji-kusasaki",
+    "title": "萬然寺研究論文「萬然寺の薬師如来本尊と地蔵・石仏群」を公開しました",
+    "summary": "前身薬師堂から現代境内までの複層信仰を検証した6040字の研究論文です。",
+    "href": "/research/mannenji-yakushi-jizo-stone-devotion/"
+  },
+  {
+    "update_id": "2026-07-24-mannenji-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "mannenji-kusasaki",
+    "title": "萬然寺研究論文「萬然寺の元亀期薬師堂伝承と1613年の寺院化」を公開しました",
+    "summary": "知伝、村民、聖寿寺法系から段階的成立を検証した6063字の研究論文です。",
+    "href": "/research/mannenji-yakushido-1613-chiden-seijuji/"
+  },
+  {
+    "update_id": "2026-07-24-shogenin-pilgrimage-research",
+    "date": "2026-07-24",
+    "temple_slug": "shogenin-kojima",
+    "title": "正眼院研究論文「正眼院領20石と2つの三十三観音霊場」を公開しました",
+    "summary": "寺院経済、千手観音信仰、地域移動を統合分析した6054字の研究論文です。",
+    "href": "/research/shogenin-twenty-koku-estate-and-kannon-pilgrimage/"
+  },
+  {
+    "update_id": "2026-07-24-shogenin-lineage-research",
+    "date": "2026-07-24",
+    "temple_slug": "shogenin-kojima",
+    "title": "正眼院研究論文「1515年の正眼院再興と雲林寺門流」を公開しました",
+    "summary": "孤山堯隣、末寺11か寺伝承、心月寺から曹洞宗寺院網を検証した6172字の研究論文です。",
+    "href": "/research/shogenin-1515-unrinji-lineage-and-subtemple-network/"
+  },
+  {
+    "update_id": "2026-07-24-shogenin-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "shogenin-kojima",
+    "title": "正眼院研究論文「正眼院の平景清開基伝承をどう読むか」を公開しました",
+    "summary": "治承年中、旧真言宗、寺領95石という由緒を史料批判した6124字の研究論文です。",
+    "href": "/research/shogenin-kagekiyo-foundation-tradition-source-criticism/"
+  },
+  {
+    "update_id": "2026-07-24-hofukuji-landscape-research",
+    "date": "2026-07-24",
+    "temple_slug": "hofukuji-okubo",
+    "title": "保福寺研究論文「保福寺の椿寒桜と季節文化景観」を公開しました",
+    "summary": "多品種サクラ、境内植栽、参拝観光を長期記録から検証した6073字の研究論文です。",
+    "href": "/research/hofukuji-tsubakikanzakura-seasonal-landscape/"
+  },
+  {
+    "update_id": "2026-07-24-hofukuji-worship-research",
+    "date": "2026-07-24",
+    "temple_slug": "hofukuji-okubo",
+    "title": "保福寺研究論文「保福寺の釈迦如来と境内記憶」を公開しました",
+    "summary": "曹洞宗本尊、六地蔵、英霊之碑を異なる史料層として検証した6159字の研究論文です。",
+    "href": "/research/hofukuji-shaka-stone-monuments-memory/"
+  },
+  {
+    "update_id": "2026-07-24-hofukuji-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "hofukuji-okubo",
+    "title": "保福寺研究論文「保福院から大久山保福寺へ」を公開しました",
+    "summary": "1642年開創、栗野林太夫、1752年再建を大藤村形成史から検証した6217字の研究論文です。",
+    "href": "/research/hofukuji-hofukuin-1642-1752-reconstruction/"
+  },
+  {
     "update_id": "2026-07-24-anzenji-landscape-research",
     "date": "2026-07-24",
     "temple_slug": "anzenji-iwai",
