@@ -4285,3 +4285,58 @@ th {
 .detail-panel .summary-copy + .summary-copy {
   margin-top: 12px;
 }
+
+/* ---- ATAWI TEMPLE 研究紀要 ---- */
+.research-hero {
+  background: linear-gradient(135deg, #f4f0e5, #fbfaf5);
+  border-bottom: 1px solid var(--line);
+}
+
+.research-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin-top: 20px;
+}
+
+.research-meta div {
+  display: flex;
+  gap: 8px;
+}
+
+.research-meta dt {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.research-meta dd {
+  font-weight: 700;
+}
+
+.research-abstract {
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--accent);
+  background: var(--soft);
+  padding: 22px;
+  margin-bottom: 34px;
+}
+
+.research-abstract h2 {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+}
+
+.research-abstract p,
+.research-section p,
+.author-disclosure p {
+  line-height: 2.05;
+}
+
+.research-section p {
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+.author-disclosure {
+  border-top: 4px double var(--line);
+}

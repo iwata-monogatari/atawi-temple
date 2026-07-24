@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { researchArticles } from "../../lib/research-articles";
+---
+
+<BaseLayout
+  title="研究紀要｜ATAWI TEMPLE"
+  description="磐田市の寺院を、公的資料・現地記録・学術資料に基づいて検証するATAWI TEMPLE研究紀要です。"
+  hideSeasonalBanner={true}
+>
+  <section class="page-hero">
+    <p class="eyebrow">ATAWI TEMPLE RESEARCH</p>
+    <h1>研究紀要</h1>
+    <p>確認事実・分析・伝承・未確認事項を区別し、磐田の寺院史を検証可能な形で公開します。</p>
+  </section>
+  <section class="content-section">
+    <div class="card-grid">
+      {researchArticles.map((article) => (
+        <article class="content-card">
+          <p class="eyebrow">{article.series}</p>
+          <h2><a href={`/research/${article.slug}/`}>{article.title}</a></h2>
+          <p>{article.description}</p>
+          <p class="small">{article.verificationStatus}／更新 {article.updated.replaceAll("-", ".")}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

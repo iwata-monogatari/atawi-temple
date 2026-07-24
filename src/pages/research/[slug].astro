@@ -1,0 +1,124 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getResearchArticle, researchArticles } from "../../lib/research-articles";
+
+export function getStaticPaths() {
+  return researchArticles.map((article) => ({ params: { slug: article.slug } }));
+}
+
+const article = getResearchArticle(Astro.params.slug || "");
+if (!article) return Astro.redirect("/research/");
+
+const author = {
+  "@type": "Person",
+  name: "大石浩之",
+  jobTitle: "代表取締役",
+  worksFor: {
+    "@type": "Organization",
+    name: "富士ヶ丘サービス株式会社",
+  },
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  headline: article.title,
+  description: article.description,
+  datePublished: article.published,
+  dateModified: article.updated,
+  inLanguage: "ja",
+  author,
+  publisher: {
+    "@type": "Organization",
+    name: "ATAWI TEMPLE",
+    url: "https://temple.atawi.link/",
+  },
+  keywords: article.keywords.join(", "),
+};
+---
+
+<BaseLayout
+  title={`${article.title}｜研究紀要｜ATAWI TEMPLE`}
+  description={article.description}
+  ogImage={article.sections.find((section) => section.figure)?.figure?.src}
+  hideSeasonalBanner={true}
+  structuredData={structuredData}
+>
+  <article class="research-page">
+    <header class="article-hero research-hero">
+      <p class="eyebrow">{article.series}</p>
+      <h1>{article.title}</h1>
+      <p class="article-subtitle">{article.subtitle}</p>
+      <dl class="research-meta">
+        <div><dt>公開日</dt><dd>{article.published.replaceAll("-", ".")}</dd></div>
+        <div><dt>検証状態</dt><dd>{article.verificationStatus}</dd></div>
+      </dl>
+    </header>
+
+    <div class="article-layout">
+      <main class="article-body">
+        <section class="research-abstract" aria-labelledby="abstract-title">
+          <h2 id="abstract-title">要旨</h2>
+          <p>{article.abstract}</p>
+          <p class="small"><strong>キーワード：</strong>{article.keywords.join("／")}</p>
+        </section>
+
+        {article.sections.map((section) => (
+          <section class="article-section research-section">
+            <h2>{section.heading}</h2>
+            {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+            {section.figure && (
+              <figure class="article-figure">
+                <img
+                  src={section.figure.src}
+                  alt={section.figure.alt}
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>{section.figure.caption}</figcaption>
+              </figure>
+            )}
+          </section>
+        ))}
+
+        <section class="article-section sources-panel">
+          <h2>参照資料</h2>
+          <ol class="source-records">
+            {article.sources.map((source) => (
+              <li>
+                <span>{source.publisher}</span>
+                <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a>
+                <p>{source.note}（最終確認：{source.accessed}）</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section class="article-section author-disclosure">
+          <h2>著者および利害関係の開示</h2>
+          <p><strong>著者：大石浩之</strong>（富士ヶ丘サービス株式会社 代表取締役）</p>
+          <p>
+            著者は静岡県磐田市を拠点に、介護事業および不動産事業を運営しています。本稿はATAWI
+            TEMPLEの地域文化研究として執筆したものであり、寺院・宗派の公式見解を代弁するものではありません。事業上の相談誘導を本文へ混在させず、資料の出所、確認できた事実、著者による分析、未確認事項を区別しています。
+          </p>
+          <p>
+            誤りや追加資料がある場合は、<a href="/correction/">情報提供・訂正窓口</a>からお知らせください。根拠を確認し、訂正履歴を残して更新します。
+          </p>
+        </section>
+      </main>
+
+      <aside class="article-aside">
+        <section class="side-panel">
+          <h2>研究対象</h2>
+          <div class="side-link-list">
+            {article.templeSlug && <a href={`/temples/${article.templeSlug}/`}>国分寺の寺院詳細</a>}
+            <a href="/editorial-policy/">編集・検証方針</a>
+            <a href="/editorial-progress/">全記事の制作進捗</a>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </article>
+</BaseLayout>

@@ -13,6 +13,7 @@ export type EditorialProgressItem = {
   characterCount: number;
   illustrationCount: number;
   sourceCount: number;
+  href?: string;
   updatedAt?: string;
 };
 
@@ -98,18 +99,31 @@ export const pillarProgressItems: EditorialProgressItem[] = pillarTitles.map((ti
 }));
 
 export const templeProgressItems: EditorialProgressItem[] = existingTemples.flatMap((temple) =>
-  templeAngles.map((angle) => ({
-    id: `${temple.slug}-${angle.key}`,
-    kind: "temple" as const,
-    title: `${temple.name}研究――${angle.label}`,
-    templeName: temple.name,
-    district: getDistrictName(temple.district_id),
-    angle: angle.label,
-    status: "planned" as const,
-    characterCount: 0,
-    illustrationCount: 0,
-    sourceCount: Array.isArray(temple.sources) ? temple.sources.length : 0,
-  })),
+  templeAngles.map((angle) => {
+    const isPublishedKokubunjiHistory =
+      temple.slug === "kokubunji-mitsuke" && angle.key === "history";
+
+    return {
+      id: `${temple.slug}-${angle.key}`,
+      kind: "temple" as const,
+      title: isPublishedKokubunjiHistory
+        ? "遠江国分寺の成立と空間構成"
+        : `${temple.name}研究――${angle.label}`,
+      templeName: temple.name,
+      district: getDistrictName(temple.district_id),
+      angle: angle.label,
+      status: isPublishedKokubunjiHistory ? "published" as const : "planned" as const,
+      characterCount: isPublishedKokubunjiHistory ? 6173 : 0,
+      illustrationCount: isPublishedKokubunjiHistory ? 4 : 0,
+      sourceCount: isPublishedKokubunjiHistory
+        ? 6
+        : Array.isArray(temple.sources) ? temple.sources.length : 0,
+      href: isPublishedKokubunjiHistory
+        ? "/research/totomi-kokubunji-state-buddhism/"
+        : undefined,
+      updatedAt: isPublishedKokubunjiHistory ? "2026-07-24" : undefined,
+    };
+  }),
 );
 
 export const allEditorialProgressItems = [...pillarProgressItems, ...templeProgressItems];

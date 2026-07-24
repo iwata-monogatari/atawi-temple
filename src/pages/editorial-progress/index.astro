@@ -116,9 +116,13 @@ const templeGroups = templeProgressItems.reduce((groups, item) => {
           <ul>
             {items.map((item) => (
               <li>
-                <span>{item.angle}</span>
+                <span>{item.href ? <a href={item.href}>{item.angle}</a> : item.angle}</span>
                 <b class={`progress-status status-${item.status}`}>{editorialStatusLabels[item.status]}</b>
-                <small>出典登録 {item.sourceCount}件</small>
+                <small>
+                  {item.status === "published"
+                    ? `${item.characterCount.toLocaleString("ja-JP")}字・図版${item.illustrationCount}点・出典${item.sourceCount}件`
+                    : `出典登録 ${item.sourceCount}件`}
+                </small>
               </li>
             ))}
           </ul>
