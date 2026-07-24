@@ -34,6 +34,8 @@ export type ResearchArticle = {
   sources: ResearchSource[];
 };
 
+import { iojiResearchArticles } from "./research-articles-ioji";
+
 const kokubunjiFigures = {
   hall: {
     src: "/assets/temples/kokubunji-mitsuke/hondo.webp",
@@ -379,6 +381,7 @@ export const researchArticles: ResearchArticle[] = [
   },
   kokubunjiContinuityArticle,
   kokubunjiPublicHistoryArticle,
+  ...iojiResearchArticles,
 ];
 
 export function getResearchArticle(slug: string) {

@@ -124,7 +124,17 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       },
     } as const;
     const publication =
-      temple.slug === "kokubunji-mitsuke" ? kokubunjiPublications[angle.key] : undefined;
+      temple.slug === "kokubunji-mitsuke"
+        ? kokubunjiPublications[angle.key]
+        : temple.slug === "ioji-kamada" && angle.key === "history"
+          ? {
+              title: "鎌田山医王寺の歴史叙述と史料層位",
+              characterCount: 6006,
+              illustrationCount: 4,
+              sourceCount: 6,
+              href: "/research/ioji-kamada-history-documentary-layers/",
+            }
+          : undefined;
 
     return {
       id: `${temple.slug}-${angle.key}`,
