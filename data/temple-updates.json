@@ -1,5 +1,101 @@
 [
   {
+    "update_id": "2026-07-25-renjoji-practice-research",
+    "date": "2026-07-25",
+    "temple_slug": "renjoji-shingai",
+    "title": "連城寺研究論文「連城寺の涅槃会・大草家供養・永代供養」を公開しました",
+    "summary": "年中行事と追悼施設から近現代寺院の公共性を検証した6046字の研究論文です。",
+    "href": "/research/renjoji-nehan-eitakuyo-okusa-memorial-practice/"
+  },
+  {
+    "update_id": "2026-07-25-renjoji-heritage-research",
+    "date": "2026-07-25",
+    "temple_slug": "renjoji-shingai",
+    "title": "連城寺研究論文「連城寺と御厨古墳群・経塚古墳出土鏡」を公開しました",
+    "summary": "国指定史跡、失われた古墳、寺院保管文化財を統合して検証した6083字の研究論文です。",
+    "href": "/research/renjoji-mikuriya-kofun-bronze-mirror/"
+  },
+  {
+    "update_id": "2026-07-25-renjoji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "renjoji-shingai",
+    "title": "連城寺研究論文「連城寺の1179年創建伝承と1644年曹洞宗再興」を公開しました",
+    "summary": "平重盛、遠州三連寺、大草太郎左衛門政信を段階的形成として検証した6057字の研究論文です。",
+    "href": "/research/renjoji-shigemori-1179-okusa-1644/"
+  },
+  {
+    "update_id": "2026-07-25-toshoji-landscape-research",
+    "date": "2026-07-25",
+    "temple_slug": "toshoji-higashikaizuka",
+    "title": "東昌寺研究論文「東貝塚字中原の東昌寺と御厨文化景観」を公開しました",
+    "summary": "村落、寺領、古墳群、境内祠を時間層として検証した6027字の研究論文です。",
+    "href": "/research/toshoji-higashikaizuka-mikuriya-cultural-landscape/"
+  },
+  {
+    "update_id": "2026-07-25-toshoji-yakushi-research",
+    "date": "2026-07-25",
+    "temple_slug": "toshoji-higashikaizuka",
+    "title": "東昌寺研究論文「東昌寺の薬師如来と遠江49薬師第47番」を公開しました",
+    "summary": "郡誌本尊、霊場石碑、巡礼ネットワークを史料批判した6007字の研究論文です。",
+    "href": "/research/toshoji-yakushi-enshu-49-reijo/"
+  },
+  {
+    "update_id": "2026-07-25-toshoji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "toshoji-higashikaizuka",
+    "title": "東昌寺研究論文「東昌寺領2石と福王寺末・法地格」を公開しました",
+    "summary": "正保郷帳から旧高旧領取調帳までの寺院制度を検証した6092字の研究論文です。",
+    "href": "/research/toshoji-two-koku-fukuoji-hochi/"
+  },
+  {
+    "update_id": "2026-07-25-zenkaiji-community-research",
+    "date": "2026-07-25",
+    "temple_slug": "zenkaiji-nishijima",
+    "title": "全海寺研究論文「宗門改帳・寺院争論・下馬地蔵からみる全海寺」を公開しました",
+    "summary": "身分登録、廃寺継承、街道伝承、近代教育を検証した6041字の研究論文です。",
+    "href": "/research/zenkaiji-shumon-register-dispute-geba-jizo-and-school/"
+  },
+  {
+    "update_id": "2026-07-25-zenkaiji-estate-research",
+    "date": "2026-07-25",
+    "temple_slug": "zenkaiji-nishijima",
+    "title": "全海寺研究論文「全海寺朱印寺領3石余と東海道西島村」を公開しました",
+    "summary": "郷帳、道中記録、旗本菅谷氏知行から寺院経済と交通景観を検証した6072字の研究論文です。",
+    "href": "/research/zenkaiji-shuin-estate-tokaido-and-nishijima-village/"
+  },
+  {
+    "update_id": "2026-07-25-zenkaiji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "zenkaiji-nishijima",
+    "title": "全海寺研究論文「全海寺1542年草創説と『金海寺』表記の史料批判」を公開しました",
+    "summary": "天龍院末、真超開山、1656年法地化を寺院制度史として検証した6127字の研究論文です。",
+    "href": "/research/zenkaiji-1542-foundation-name-variant-and-tenryuin-lineage/"
+  },
+  {
+    "update_id": "2026-07-25-jushouji-kusasaki-network-research",
+    "date": "2026-07-25",
+    "temple_slug": "jushouji-kusasaki",
+    "title": "壽正寺研究論文「壽正寺と草崎5寺の曹洞宗ネットワーク」を公開しました",
+    "summary": "聖寿寺末、仿僧川流域、村落寺院群の形成を比較した6059字の研究論文です。",
+    "href": "/research/jushouji-kusasaki-shojuji-five-temple-network/"
+  },
+  {
+    "update_id": "2026-07-25-jushouji-kusasaki-land-research",
+    "date": "2026-07-25",
+    "temple_slug": "jushouji-kusasaki",
+    "title": "壽正寺研究論文「壽正寺観音堂領8石2斗余の実像」を公開しました",
+    "summary": "1649年朱印状、元禄高帳、僧録司記録から寺院経済を検証した6034字の研究論文です。",
+    "href": "/research/jushouji-kusasaki-kannon-1649-shuin-land/"
+  },
+  {
+    "update_id": "2026-07-25-jushouji-kusasaki-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "jushouji-kusasaki",
+    "title": "壽正寺研究論文「草崎壽正寺の平重盛伝承と1482年再興」を公開しました",
+    "summary": "七堂伽藍、六所神社、如海を異なる史料層から検証した6039字の研究論文です。",
+    "href": "/research/jushouji-kusasaki-shigemori-1482-nyokai/"
+  },
+  {
     "update_id": "2026-07-24-mannenji-landscape-research",
     "date": "2026-07-24",
     "temple_slug": "mannenji-kusasaki",

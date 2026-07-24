@@ -48,7 +48,7 @@ const districtProgress = [...templeGroups.values()].reduce((districts, items) =>
   districts.set(district, current);
   return districts;
 }, new Map<string, { district: string; published: number; total: number; temples: number; completedTemples: number }>());
-const latestPublishedTempleNames = new Set(["保福寺", "正眼院", "萬然寺"]);
+const latestPublishedTempleNames = new Set(["壽正寺", "全海寺", "東昌寺", "連城寺"]);
 const latestPublished = [...templeGroups.entries()]
   .filter(([templeName]) => latestPublishedTempleNames.has(templeName))
   .map(([templeName, items]) => ({ templeName, items }));

@@ -26,7 +26,9 @@ for (const fileName of relatedFiles) {
   const relatedTranspiled = ts.transpileModule(relatedSource, { compilerOptions });
   const moduleName = fileName.replace(/\.ts$/, "");
   await fs.writeFile(path.resolve(".astro", `${moduleName}.mjs`), relatedTranspiled.outputText, "utf8");
-  validationSource = validationSource.replaceAll(`./${moduleName}`, `./${moduleName}.mjs`);
+  validationSource = validationSource
+    .replaceAll(`"./${moduleName}"`, `"./${moduleName}.mjs"`)
+    .replaceAll(`'./${moduleName}'`, `'./${moduleName}.mjs'`);
 }
 
 await fs.writeFile(tempFile, validationSource, "utf8");

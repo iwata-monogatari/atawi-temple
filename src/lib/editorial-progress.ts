@@ -85,9 +85,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "jushouji-kusasaki", name: "壽正寺", stage: "調査・執筆" },
-  { slug: "zenkaiji-nishijima", name: "善海寺", stage: "調査・執筆" },
-  { slug: "toshoji-higashikaizuka", name: "東昌寺", stage: "調査・執筆" },
+  { slug: "zenkyuin-kamada", name: "全久院", stage: "調査・執筆" },
+  { slug: "fukuoji-jonosaki", name: "福王寺", stage: "調査・執筆" },
+  { slug: "gasshoji-nakaizumi", name: "合掌寺", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -804,6 +804,90 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 13,
       href: "/research/mannenji-nakaamadare-kusasaki-temple-lowland/",
     } as const;
+    const jushoujiKusasakiHistoryPublication = {
+      title: "草崎壽正寺の平重盛伝承と1482年再興",
+      characterCount: 6039,
+      illustrationCount: 6,
+      sourceCount: 9,
+      href: "/research/jushouji-kusasaki-shigemori-1482-nyokai/",
+    } as const;
+    const jushoujiKusasakiHeritagePublication = {
+      title: "壽正寺観音堂領8石2斗余の実像",
+      characterCount: 6034,
+      illustrationCount: 6,
+      sourceCount: 9,
+      href: "/research/jushouji-kusasaki-kannon-1649-shuin-land/",
+    } as const;
+    const jushoujiKusasakiCommunityPublication = {
+      title: "壽正寺と草崎5寺の曹洞宗ネットワーク",
+      characterCount: 6059,
+      illustrationCount: 6,
+      sourceCount: 10,
+      href: "/research/jushouji-kusasaki-shojuji-five-temple-network/",
+    } as const;
+    const zenkaijiHistoryPublication = {
+      title: "全海寺1542年草創説と「金海寺」表記の史料批判",
+      characterCount: 6127,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/zenkaiji-1542-foundation-name-variant-and-tenryuin-lineage/",
+    } as const;
+    const zenkaijiHeritagePublication = {
+      title: "全海寺朱印寺領3石余と東海道西島村",
+      characterCount: 6072,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/zenkaiji-shuin-estate-tokaido-and-nishijima-village/",
+    } as const;
+    const zenkaijiCommunityPublication = {
+      title: "宗門改帳・寺院争論・下馬地蔵からみる全海寺",
+      characterCount: 6041,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/zenkaiji-shumon-register-dispute-geba-jizo-and-school/",
+    } as const;
+    const toshojiHistoryPublication = {
+      title: "東昌寺領2石と福王寺末・法地格",
+      characterCount: 6092,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/toshoji-two-koku-fukuoji-hochi/",
+    } as const;
+    const toshojiHeritagePublication = {
+      title: "東昌寺の薬師如来と遠江49薬師第47番",
+      characterCount: 6007,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/toshoji-yakushi-enshu-49-reijo/",
+    } as const;
+    const toshojiCommunityPublication = {
+      title: "東貝塚字中原の東昌寺と御厨文化景観",
+      characterCount: 6027,
+      illustrationCount: 6,
+      sourceCount: 11,
+      href: "/research/toshoji-higashikaizuka-mikuriya-cultural-landscape/",
+    } as const;
+    const renjojiHistoryPublication = {
+      title: "連城寺の1179年創建伝承と1644年曹洞宗再興",
+      characterCount: 6057,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/renjoji-shigemori-1179-okusa-1644/",
+    } as const;
+    const renjojiHeritagePublication = {
+      title: "連城寺と御厨古墳群・経塚古墳出土鏡",
+      characterCount: 6083,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/renjoji-mikuriya-kofun-bronze-mirror/",
+    } as const;
+    const renjojiCommunityPublication = {
+      title: "連城寺の涅槃会・大草家供養・永代供養",
+      characterCount: 6046,
+      illustrationCount: 6,
+      sourceCount: 11,
+      href: "/research/renjoji-nehan-eitakuyo-okusa-memorial-practice/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -995,6 +1079,30 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? mannenjiHeritagePublication
           : temple.slug === "mannenji-kusasaki" && angle.key === "community"
             ? mannenjiCommunityPublication
+          : temple.slug === "jushouji-kusasaki" && angle.key === "history"
+            ? jushoujiKusasakiHistoryPublication
+          : temple.slug === "jushouji-kusasaki" && angle.key === "heritage"
+            ? jushoujiKusasakiHeritagePublication
+          : temple.slug === "jushouji-kusasaki" && angle.key === "community"
+            ? jushoujiKusasakiCommunityPublication
+          : temple.slug === "zenkaiji-nishijima" && angle.key === "history"
+            ? zenkaijiHistoryPublication
+          : temple.slug === "zenkaiji-nishijima" && angle.key === "heritage"
+            ? zenkaijiHeritagePublication
+          : temple.slug === "zenkaiji-nishijima" && angle.key === "community"
+            ? zenkaijiCommunityPublication
+          : temple.slug === "toshoji-higashikaizuka" && angle.key === "history"
+            ? toshojiHistoryPublication
+          : temple.slug === "toshoji-higashikaizuka" && angle.key === "heritage"
+            ? toshojiHeritagePublication
+          : temple.slug === "toshoji-higashikaizuka" && angle.key === "community"
+            ? toshojiCommunityPublication
+          : temple.slug === "renjoji-shingai" && angle.key === "history"
+            ? renjojiHistoryPublication
+          : temple.slug === "renjoji-shingai" && angle.key === "heritage"
+            ? renjojiHeritagePublication
+          : temple.slug === "renjoji-shingai" && angle.key === "community"
+            ? renjojiCommunityPublication
           : undefined;
 
     return {
@@ -1015,7 +1123,7 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
         ? publication.sourceCount
         : Array.isArray(temple.sources) ? temple.sources.length : 0,
       href: publication?.href,
-      updatedAt: publication || activeResearchTempleSlugs.has(temple.slug) ? "2026-07-24" : undefined,
+      updatedAt: publication || activeResearchTempleSlugs.has(temple.slug) ? "2026-07-25" : undefined,
     };
   }),
 );
@@ -1023,7 +1131,7 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
 export const allEditorialProgressItems = [...pillarProgressItems, ...templeProgressItems];
 
 export const editorialProgressMeta = {
-  updatedAt: "2026-07-24",
+  updatedAt: "2026-07-25",
   targetCharacterCount: 6000,
   targetIllustrations: 3,
   targetHeadingMax: 6,
