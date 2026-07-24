@@ -419,6 +419,69 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 10,
       href: "/research/gyosenji-1921-precinct-danto-continuity/",
     } as const;
+    const kindaijiHistoryPublication = {
+      title: "金台寺の成立記録と時宗寺院網",
+      characterCount: 6032,
+      illustrationCount: 6,
+      sourceCount: 7,
+      href: "/research/kindaiji-1472-jishu-shokoji-institutional-history/",
+    } as const;
+    const kindaijiHeritagePublication = {
+      title: "金台寺の阿弥陀本尊と薬師霊場",
+      characterCount: 6023,
+      illustrationCount: 6,
+      sourceCount: 7,
+      href: "/research/kindaiji-amida-yakushi-pilgrimage-dual-devotion/",
+    } as const;
+    const kindaijiCommunityPublication = {
+      title: "蛭子森の金台寺と渡河・冥界の宗教景観",
+      characterCount: 6046,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/kindaiji-ebisumori-ferry-enma-religious-landscape/",
+    } as const;
+    const shokojiHistoryPublication = {
+      title: "省光寺の時宗改宗と足利氏外護伝承",
+      characterCount: 6209,
+      illustrationCount: 6,
+      sourceCount: 6,
+      href: "/research/shokoji-mitsuke-jishu-conversion-ashikaga-gosho-dojo/",
+    } as const;
+    const shokojiHeritagePublication = {
+      title: "省光寺の阿弥陀三尊・イチョウ・近代公共圏",
+      characterCount: 6067,
+      illustrationCount: 6,
+      sourceCount: 7,
+      href: "/research/shokoji-mitsuke-amida-ginkgo-earthquake-school-landscape/",
+    } as const;
+    const shokojiCommunityPublication = {
+      title: "省光寺出身・第51代遊行上人賦存の廻国",
+      characterCount: 6045,
+      illustrationCount: 6,
+      sourceCount: 5,
+      href: "/research/shokoji-mitsuke-yugyo-shonin-fuzon-jishu-network/",
+    } as const;
+    const saikojiHistoryPublication = {
+      title: "西光寺の一遍来訪伝承と中世時宗文化",
+      characterCount: 6521,
+      illustrationCount: 6,
+      sourceCount: 9,
+      href: "/research/saikoji-mitsuke-ippen-jishu-medieval-heritage/",
+    } as const;
+    const saikojiHeritagePublication = {
+      title: "西光寺に集積した徳川権威の記憶",
+      characterCount: 6215,
+      illustrationCount: 6,
+      sourceCount: 10,
+      href: "/research/saikoji-mitsuke-tokugawa-memory-gate-higiri-jizo/",
+    } as const;
+    const saikojiCommunityPublication = {
+      title: "西光寺と見付宿の文化的景観",
+      characterCount: 6147,
+      illustrationCount: 6,
+      sourceCount: 10,
+      href: "/research/saikoji-mitsuke-shukuba-heritage-cultural-landscape/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -502,6 +565,24 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? gyosenjiHeritagePublication
           : temple.slug === "gyosenji-mitsuke" && angle.key === "community"
             ? gyosenjiCommunityPublication
+          : temple.slug === "kindaiji-tenryu" && angle.key === "history"
+            ? kindaijiHistoryPublication
+          : temple.slug === "kindaiji-tenryu" && angle.key === "heritage"
+            ? kindaijiHeritagePublication
+          : temple.slug === "kindaiji-tenryu" && angle.key === "community"
+            ? kindaijiCommunityPublication
+          : temple.slug === "shokoji-mitsuke" && angle.key === "history"
+            ? shokojiHistoryPublication
+          : temple.slug === "shokoji-mitsuke" && angle.key === "heritage"
+            ? shokojiHeritagePublication
+          : temple.slug === "shokoji-mitsuke" && angle.key === "community"
+            ? shokojiCommunityPublication
+          : temple.slug === "saikoji-mitsuke" && angle.key === "history"
+            ? saikojiHistoryPublication
+          : temple.slug === "saikoji-mitsuke" && angle.key === "heritage"
+            ? saikojiHeritagePublication
+          : temple.slug === "saikoji-mitsuke" && angle.key === "community"
+            ? saikojiCommunityPublication
           : undefined;
 
     return {

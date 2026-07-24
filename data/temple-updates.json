@@ -1,5 +1,77 @@
 [
   {
+    "update_id": "2026-07-24-saikoji-landscape-research",
+    "date": "2026-07-24",
+    "temple_slug": "saikoji-mitsuke",
+    "title": "西光寺研究論文「西光寺と見付宿の文化的景観」を公開しました",
+    "summary": "寺院境内、宿場街路、周辺文化財の関係を検証した6147字の研究論文です。",
+    "href": "/research/saikoji-mitsuke-shukuba-heritage-cultural-landscape/"
+  },
+  {
+    "update_id": "2026-07-24-saikoji-tokugawa-research",
+    "date": "2026-07-24",
+    "temple_slug": "saikoji-mitsuke",
+    "title": "西光寺研究論文「西光寺に集積した徳川権威の記憶」を公開しました",
+    "summary": "徳川家ゆかりの伝承、山門、日限地蔵を記憶継承の観点から検証した6215字の研究論文です。",
+    "href": "/research/saikoji-mitsuke-tokugawa-memory-gate-higiri-jizo/"
+  },
+  {
+    "update_id": "2026-07-24-saikoji-ippen-research",
+    "date": "2026-07-24",
+    "temple_slug": "saikoji-mitsuke",
+    "title": "西光寺研究論文「西光寺の一遍来訪伝承と中世時宗文化」を公開しました",
+    "summary": "一遍来訪伝承を時宗史料・地域史・中世文化から検証した6521字の研究論文です。",
+    "href": "/research/saikoji-mitsuke-ippen-jishu-medieval-heritage/"
+  },
+  {
+    "update_id": "2026-07-24-shokoji-public-sphere-research",
+    "date": "2026-07-24",
+    "temple_slug": "shokoji-mitsuke",
+    "title": "省光寺研究論文「省光寺の阿弥陀三尊・イチョウ・近代公共圏」を公開しました",
+    "summary": "阿弥陀三尊、境内のイチョウ、震災と学校利用を検証した6067字の研究論文です。",
+    "href": "/research/shokoji-mitsuke-amida-ginkgo-earthquake-school-landscape/"
+  },
+  {
+    "update_id": "2026-07-24-shokoji-fuzon-research",
+    "date": "2026-07-24",
+    "temple_slug": "shokoji-mitsuke",
+    "title": "省光寺研究論文「省光寺出身・第51代遊行上人賦存の廻国」を公開しました",
+    "summary": "第51代遊行上人賦存と省光寺の関係、廻国、時宗寺院網を検証した6045字の研究論文です。",
+    "href": "/research/shokoji-mitsuke-yugyo-shonin-fuzon-jishu-network/"
+  },
+  {
+    "update_id": "2026-07-24-shokoji-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "shokoji-mitsuke",
+    "title": "省光寺研究論文「省光寺の時宗改宗と足利氏外護伝承」を公開しました",
+    "summary": "時宗改宗、足利氏外護、御所道場伝承を史料批判から検証した6209字の研究論文です。",
+    "href": "/research/shokoji-mitsuke-jishu-conversion-ashikaga-gosho-dojo/"
+  },
+  {
+    "update_id": "2026-07-24-kindaiji-landscape-research",
+    "date": "2026-07-24",
+    "temple_slug": "kindaiji-tenryu",
+    "title": "金台寺研究論文「蛭子森の金台寺と渡河・冥界の宗教景観」を公開しました",
+    "summary": "蛭子森、天竜川渡河、閻魔信仰を地域宗教景観として検証した6046字の研究論文です。",
+    "href": "/research/kindaiji-ebisumori-ferry-enma-religious-landscape/"
+  },
+  {
+    "update_id": "2026-07-24-kindaiji-pilgrimage-research",
+    "date": "2026-07-24",
+    "temple_slug": "kindaiji-tenryu",
+    "title": "金台寺研究論文「金台寺の阿弥陀本尊と薬師霊場」を公開しました",
+    "summary": "阿弥陀本尊と薬師霊場という複合的信仰を検証した6023字の研究論文です。",
+    "href": "/research/kindaiji-amida-yakushi-pilgrimage-dual-devotion/"
+  },
+  {
+    "update_id": "2026-07-24-kindaiji-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "kindaiji-tenryu",
+    "title": "金台寺研究論文「金台寺の成立記録と時宗寺院網」を公開しました",
+    "summary": "1472年の成立記録と時宗寺院網を公開史料から検証した6032字の研究論文です。",
+    "href": "/research/kindaiji-1472-jishu-shokoji-institutional-history/"
+  },
+  {
     "update_id": "2026-07-24-gyosenji-community-research",
     "date": "2026-07-24",
     "temple_slug": "gyosenji-mitsuke",
