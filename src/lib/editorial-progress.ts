@@ -85,9 +85,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "zenkyuin-kamada", name: "全久院", stage: "調査・執筆" },
-  { slug: "fukuoji-jonosaki", name: "福王寺", stage: "調査・執筆" },
-  { slug: "gasshoji-nakaizumi", name: "合掌寺", stage: "調査・執筆" },
+  { slug: "jurinji-kamiohnogo", name: "十輪寺", stage: "調査・執筆" },
+  { slug: "eifukuji-nishikaizuka", name: "永福寺", stage: "調査・執筆" },
+  { slug: "kongoji-mitsuke", name: "金剛寺", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -888,6 +888,69 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 11,
       href: "/research/renjoji-nehan-eitakuyo-okusa-memorial-practice/",
     } as const;
+    const zenkyuinHistoryPublication = {
+      title: "全久院の白鳳期伝承と1558年曹洞宗改宗",
+      characterCount: 6029,
+      illustrationCount: 6,
+      sourceCount: 10,
+      href: "/research/zenkyuin-672-1558-shingon-soto-conversion/",
+    } as const;
+    const zenkyuinHeritagePublication = {
+      title: "全久院寺子屋の長期継続と災害復興",
+      characterCount: 6101,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/zenkyuin-terakoya-earthquake-fire-reconstruction/",
+    } as const;
+    const zenkyuinCommunityPublication = {
+      title: "全久院の虚空蔵・薬師・観音・役行者信仰",
+      characterCount: 6262,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/zenkyuin-kokuzo-yakushi-kannon-ennogyosha/",
+    } as const;
+    const fukuojiJonosakiHistoryPublication = {
+      title: "福王寺の安倍晴明伝承と1444年曹洞宗再興",
+      characterCount: 6004,
+      illustrationCount: 6,
+      sourceCount: 9,
+      href: "/research/fukuoji-seimei-1444-soto-restoration/",
+    } as const;
+    const fukuojiJonosakiHeritagePublication = {
+      title: "福王寺の聖観音像・ケヤキ・アキザキヤツシロラン",
+      characterCount: 6002,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/fukuoji-seikannon-keyaki-yatsushiroran/",
+    } as const;
+    const fukuojiJonosakiCommunityPublication = {
+      title: "福王寺の観音霊場・坐禅・風祭り",
+      characterCount: 6001,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/fukuoji-kannon-pilgrimage-zazen-kazamatsuri/",
+    } as const;
+    const gasshojiHistoryPublication = {
+      title: "合掌寺の史料上の初見と「記録の空白」",
+      characterCount: 6027,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/gasshoji-archival-silence-first-attestation-and-chronology/",
+    } as const;
+    const gasshojiHeritagePublication = {
+      title: "小祠・石碑・石仏・手水鉢が構成する合掌寺",
+      characterCount: 6024,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/gasshoji-minimal-religious-landscape-material-culture/",
+    } as const;
+    const gasshojiCommunityPublication = {
+      title: "中泉市街地の合掌寺をどう位置付けるか",
+      characterCount: 6026,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/gasshoji-nakaizumi-urbanization-corporation-place-memory/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -1103,6 +1166,24 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? renjojiHeritagePublication
           : temple.slug === "renjoji-shingai" && angle.key === "community"
             ? renjojiCommunityPublication
+          : temple.slug === "zenkyuin-kamada" && angle.key === "history"
+            ? zenkyuinHistoryPublication
+          : temple.slug === "zenkyuin-kamada" && angle.key === "heritage"
+            ? zenkyuinHeritagePublication
+          : temple.slug === "zenkyuin-kamada" && angle.key === "community"
+            ? zenkyuinCommunityPublication
+          : temple.slug === "fukuoji-jonosaki" && angle.key === "history"
+            ? fukuojiJonosakiHistoryPublication
+          : temple.slug === "fukuoji-jonosaki" && angle.key === "heritage"
+            ? fukuojiJonosakiHeritagePublication
+          : temple.slug === "fukuoji-jonosaki" && angle.key === "community"
+            ? fukuojiJonosakiCommunityPublication
+          : temple.slug === "gasshoji-nakaizumi" && angle.key === "history"
+            ? gasshojiHistoryPublication
+          : temple.slug === "gasshoji-nakaizumi" && angle.key === "heritage"
+            ? gasshojiHeritagePublication
+          : temple.slug === "gasshoji-nakaizumi" && angle.key === "community"
+            ? gasshojiCommunityPublication
           : undefined;
 
     return {

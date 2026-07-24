@@ -1,5 +1,77 @@
 [
   {
+    "update_id": "2026-07-25-gasshoji-urban-research",
+    "date": "2026-07-25",
+    "temple_slug": "gasshoji-nakaizumi",
+    "title": "合掌寺研究論文「中泉市街地の合掌寺をどう位置付けるか」を公開しました",
+    "summary": "宗教法人、所在地、都市化、地域記憶を分離して再統合した6026字の研究論文です。",
+    "href": "/research/gasshoji-nakaizumi-urbanization-corporation-place-memory/"
+  },
+  {
+    "update_id": "2026-07-25-gasshoji-material-research",
+    "date": "2026-07-25",
+    "temple_slug": "gasshoji-nakaizumi",
+    "title": "合掌寺研究論文「小祠・石碑・石仏・手水鉢が構成する合掌寺」を公開しました",
+    "summary": "最小規模宗教景観の物質文化、記録、保存を検証した6024字の研究論文です。",
+    "href": "/research/gasshoji-minimal-religious-landscape-material-culture/"
+  },
+  {
+    "update_id": "2026-07-25-gasshoji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "gasshoji-nakaizumi",
+    "title": "合掌寺研究論文「合掌寺の史料上の初見と『記録の空白』」を公開しました",
+    "summary": "郡誌、寺院大鑑、現行法人名簿から年代論を構築した6027字の研究論文です。",
+    "href": "/research/gasshoji-archival-silence-first-attestation-and-chronology/"
+  },
+  {
+    "update_id": "2026-07-25-fukuoji-practice-research",
+    "date": "2026-07-25",
+    "temple_slug": "fukuoji-jonosaki",
+    "title": "福王寺研究論文「福王寺の観音霊場・坐禅・風祭り」を公開しました",
+    "summary": "複数霊場と曹洞宗実践が形成する寺院の公共性を検証した6001字の研究論文です。",
+    "href": "/research/fukuoji-kannon-pilgrimage-zazen-kazamatsuri/"
+  },
+  {
+    "update_id": "2026-07-25-fukuoji-heritage-research",
+    "date": "2026-07-25",
+    "temple_slug": "fukuoji-jonosaki",
+    "title": "福王寺研究論文「福王寺の聖観音像・ケヤキ・アキザキヤツシロラン」を公開しました",
+    "summary": "彫刻文化財と境内生態系の統合的保存を検証した6002字の研究論文です。",
+    "href": "/research/fukuoji-seikannon-keyaki-yatsushiroran/"
+  },
+  {
+    "update_id": "2026-07-25-fukuoji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "fukuoji-jonosaki",
+    "title": "福王寺研究論文「福王寺の安倍晴明伝承と1444年曹洞宗再興」を公開しました",
+    "summary": "風祭山、天翁義一、今川範国墓所、寺領寄進を史料層として検証した6004字の研究論文です。",
+    "href": "/research/fukuoji-seimei-1444-soto-restoration/"
+  },
+  {
+    "update_id": "2026-07-25-zenkyuin-faith-research",
+    "date": "2026-07-25",
+    "temple_slug": "zenkyuin-kamada",
+    "title": "全久院研究論文「全久院の虚空蔵・薬師・観音・役行者信仰」を公開しました",
+    "summary": "本尊、巡礼網、境内堂宇から御厨の複合信仰を検証した6262字の研究論文です。",
+    "href": "/research/zenkyuin-kokuzo-yakushi-kannon-ennogyosha/"
+  },
+  {
+    "update_id": "2026-07-25-zenkyuin-terakoya-research",
+    "date": "2026-07-25",
+    "temple_slug": "zenkyuin-kamada",
+    "title": "全久院研究論文「全久院寺子屋の長期継続と災害復興」を公開しました",
+    "summary": "寺子屋、1854年地震、1861年火災、1868年再建を検証した6101字の研究論文です。",
+    "href": "/research/zenkyuin-terakoya-earthquake-fire-reconstruction/"
+  },
+  {
+    "update_id": "2026-07-25-zenkyuin-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "zenkyuin-kamada",
+    "title": "全久院研究論文「全久院の白鳳期伝承と1558年曹洞宗改宗」を公開しました",
+    "summary": "法相宗、真言宗、松秀寺法系、寺領2石を史料階層から検証した6029字の研究論文です。",
+    "href": "/research/zenkyuin-672-1558-shingon-soto-conversion/"
+  },
+  {
     "update_id": "2026-07-25-renjoji-practice-research",
     "date": "2026-07-25",
     "temple_slug": "renjoji-shingai",
