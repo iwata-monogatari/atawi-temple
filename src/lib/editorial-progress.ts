@@ -356,6 +356,69 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 6,
       href: "/research/daikenji-ukita-kokichi-flight-memory-evidence/",
     } as const;
+    const mantokujiHistoryPublication = {
+      title: "満徳寺「中泉富士」の建築史",
+      characterCount: 6101,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/mantokuji-nakaizumi-fuji-architecture-carving/",
+    } as const;
+    const mantokujiHeritagePublication = {
+      title: "満徳寺経蔵の黄檗版一切経と81面天井画",
+      characterCount: 6019,
+      illustrationCount: 6,
+      sourceCount: 11,
+      href: "/research/mantokuji-obaku-canon-ceiling-paintings/",
+    } as const;
+    const mantokujiCommunityPublication = {
+      title: "満徳寺と中泉代官林鶴梁の家族墓",
+      characterCount: 6001,
+      illustrationCount: 6,
+      sourceCount: 11,
+      href: "/research/mantokuji-hayashi-kakuryo-grave-disaster-relief/",
+    } as const;
+    const saiganjiHistoryPublication = {
+      title: "弘誓山西願寺と陣屋町中泉の真宗史",
+      characterCount: 6168,
+      illustrationCount: 6,
+      sourceCount: 13,
+      href: "/research/saiganji-shinshu-nakaizumi-urban-temple-history/",
+    } as const;
+    const saiganjiHeritagePublication = {
+      title: "西願寺山門と旧中泉御殿裏門の建築史",
+      characterCount: 6110,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/saiganji-nakaizumi-goten-back-gate-architecture/",
+    } as const;
+    const saiganjiCommunityPublication = {
+      title: "西願寺と中泉御殿の分散する記憶景観",
+      characterCount: 6220,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/saiganji-nakaizumi-goten-relocation-memory-landscape/",
+    } as const;
+    const gyosenjiHistoryPublication = {
+      title: "行泉寺の1573年開創伝承と高田派教線",
+      characterCount: 6138,
+      illustrationCount: 6,
+      sourceCount: 10,
+      href: "/research/gyosenji-1573-ryuzan-takada-network/",
+    } as const;
+    const gyosenjiHeritagePublication = {
+      title: "行泉寺の「中泉字南裏」と見付3080番地",
+      characterCount: 6043,
+      illustrationCount: 6,
+      sourceCount: 10,
+      href: "/research/gyosenji-nakaizumi-mitsuke-historical-geography/",
+    } as const;
+    const gyosenjiCommunityPublication = {
+      title: "行泉寺の境内513坪・檀徒30戸を読む",
+      characterCount: 6027,
+      illustrationCount: 6,
+      sourceCount: 10,
+      href: "/research/gyosenji-1921-precinct-danto-continuity/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -421,6 +484,24 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? daikenjiHeritagePublication
           : temple.slug === "daikenji-mitsuke" && angle.key === "community"
             ? daikenjiCommunityPublication
+          : temple.slug === "mantokuji-nakaizumi" && angle.key === "history"
+            ? mantokujiHistoryPublication
+          : temple.slug === "mantokuji-nakaizumi" && angle.key === "heritage"
+            ? mantokujiHeritagePublication
+          : temple.slug === "mantokuji-nakaizumi" && angle.key === "community"
+            ? mantokujiCommunityPublication
+          : temple.slug === "saiganji-nakaizumi" && angle.key === "history"
+            ? saiganjiHistoryPublication
+          : temple.slug === "saiganji-nakaizumi" && angle.key === "heritage"
+            ? saiganjiHeritagePublication
+          : temple.slug === "saiganji-nakaizumi" && angle.key === "community"
+            ? saiganjiCommunityPublication
+          : temple.slug === "gyosenji-mitsuke" && angle.key === "history"
+            ? gyosenjiHistoryPublication
+          : temple.slug === "gyosenji-mitsuke" && angle.key === "heritage"
+            ? gyosenjiHeritagePublication
+          : temple.slug === "gyosenji-mitsuke" && angle.key === "community"
+            ? gyosenjiCommunityPublication
           : undefined;
 
     return {

@@ -1,5 +1,77 @@
 [
   {
+    "update_id": "2026-07-24-gyosenji-community-research",
+    "date": "2026-07-24",
+    "temple_slug": "gyosenji-mitsuke",
+    "title": "行泉寺研究論文「行泉寺の境内513坪・檀徒30戸を読む」を公開しました",
+    "summary": "1921年郡誌の境内513坪・檀徒30戸を、寺院維持と地域継承から検証した6027字の研究論文です。",
+    "href": "/research/gyosenji-1921-precinct-danto-continuity/"
+  },
+  {
+    "update_id": "2026-07-24-gyosenji-geography-research",
+    "date": "2026-07-24",
+    "temple_slug": "gyosenji-mitsuke",
+    "title": "行泉寺研究論文「行泉寺の『中泉字南裏』と見付3080番地」を公開しました",
+    "summary": "旧所在地表記と現住所の差を、行政区画・地名・寺院移動の観点から検証した6043字の研究論文です。",
+    "href": "/research/gyosenji-nakaizumi-mitsuke-historical-geography/"
+  },
+  {
+    "update_id": "2026-07-24-gyosenji-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "gyosenji-mitsuke",
+    "title": "行泉寺研究論文「行泉寺の1573年開創伝承と高田派教線」を公開しました",
+    "summary": "1573年開創伝承、開基龍山、高田派教線を史料層ごとに検証した6138字の研究論文です。",
+    "href": "/research/gyosenji-1573-ryuzan-takada-network/"
+  },
+  {
+    "update_id": "2026-07-24-saiganji-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "saiganji-nakaizumi",
+    "title": "西願寺研究論文「弘誓山西願寺と陣屋町中泉の真宗史」を公開しました",
+    "summary": "西願寺の寺院史を、真宗教団と陣屋町中泉の形成から検証した6168字の研究論文です。",
+    "href": "/research/saiganji-shinshu-nakaizumi-urban-temple-history/"
+  },
+  {
+    "update_id": "2026-07-24-saiganji-landscape-research",
+    "date": "2026-07-24",
+    "temple_slug": "saiganji-nakaizumi",
+    "title": "西願寺研究論文「西願寺と中泉御殿の分散する記憶景観」を公開しました",
+    "summary": "移築建築、地名、案内表示に分散する中泉御殿の記憶を検証した6220字の研究論文です。",
+    "href": "/research/saiganji-nakaizumi-goten-relocation-memory-landscape/"
+  },
+  {
+    "update_id": "2026-07-24-saiganji-gate-research",
+    "date": "2026-07-24",
+    "temple_slug": "saiganji-nakaizumi",
+    "title": "西願寺研究論文「西願寺山門と旧中泉御殿裏門の建築史」を公開しました",
+    "summary": "山門の旧中泉御殿裏門伝承を、建築形式・移築史・保存から検証した6110字の研究論文です。",
+    "href": "/research/saiganji-nakaizumi-goten-back-gate-architecture/"
+  },
+  {
+    "update_id": "2026-07-24-mantokuji-community-research",
+    "date": "2026-07-24",
+    "temple_slug": "mantokuji-nakaizumi",
+    "title": "満徳寺研究論文「満徳寺と中泉代官林鶴梁の家族墓」を公開しました",
+    "summary": "林鶴梁の家族墓、代官支配、災害救済の記憶を検証した6001字の研究論文です。",
+    "href": "/research/mantokuji-hayashi-kakuryo-grave-disaster-relief/"
+  },
+  {
+    "update_id": "2026-07-24-mantokuji-canon-research",
+    "date": "2026-07-24",
+    "temple_slug": "mantokuji-nakaizumi",
+    "title": "満徳寺研究論文「満徳寺経蔵の黄檗版一切経と81面天井画」を公開しました",
+    "summary": "経蔵、黄檗版一切経、81面天井画の制作・受容・保存を検証した6019字の研究論文です。",
+    "href": "/research/mantokuji-obaku-canon-ceiling-paintings/"
+  },
+  {
+    "update_id": "2026-07-24-mantokuji-architecture-research",
+    "date": "2026-07-24",
+    "temple_slug": "mantokuji-nakaizumi",
+    "title": "満徳寺研究論文「満徳寺『中泉富士』の建築史」を公開しました",
+    "summary": "本堂・山門の建築と彫刻を「中泉富士」の呼称と地域評価から検証した6101字の研究論文です。",
+    "href": "/research/mantokuji-nakaizumi-fuji-architecture-carving/"
+  },
+  {
     "update_id": "2026-07-24-daikenji-memory-research",
     "date": "2026-07-24",
     "temple_slug": "daikenji-mitsuke",
