@@ -174,6 +174,13 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 8,
       href: "/research/zosanji-sagisaka-history-source-criticism/",
     } as const;
+    const zosanjiHeritagePublication = {
+      title: "増参寺のソテツ・力石・六地蔵と境内景観",
+      characterCount: 6062,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/zosanji-sotetsu-chikaraishi-cultural-landscape/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -187,6 +194,8 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? daijoinCommunityPublication
           : temple.slug === "zosanji-sagisaka" && angle.key === "history"
             ? zosanjiHistoryPublication
+          : temple.slug === "zosanji-sagisaka" && angle.key === "heritage"
+            ? zosanjiHeritagePublication
           : undefined;
 
     return {
