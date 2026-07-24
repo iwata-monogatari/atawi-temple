@@ -19,6 +19,15 @@ await fs.writeFile(tempFile, transpiled.outputText, "utf8");
 const { researchArticles, articlePlainText } = await import(`${pathToFileURL(tempFile).href}?v=${Date.now()}`);
 const failures = [];
 const strip = (value) => value.replace(/\s/g, "");
+const prohibitedEditorialPhrases = [
+  "ATAWI TEMPLEは、確認済み",
+  "品質基準",
+  "制作目標",
+  "内部指示",
+  "この記事を量産",
+  "文字数を満たす",
+  "今後の優先課題",
+];
 
 for (const article of researchArticles) {
   const bodyChars = strip(article.sections.flatMap((section) => section.paragraphs).join("")).length;
@@ -35,6 +44,8 @@ for (const article of researchArticles) {
     failures.push(`${article.slug}: 図版 ${figureCount}点（本文${bodyChars}字には${requiredFigures}点必要）`);
   }
   if (article.sources.length < 3) failures.push(`${article.slug}: 出典が3件未満`);
+  if (strip(article.abstract).length < 200) failures.push(`${article.slug}: 要旨が200字未満`);
+  if (article.keywords.length < 4) failures.push(`${article.slug}: キーワードが4語未満`);
   if (!article.sections.some((section) => section.heading.includes("結論"))) {
     failures.push(`${article.slug}: 結論節がない`);
   }
@@ -42,6 +53,13 @@ for (const article of researchArticles) {
   for (const source of article.sources) {
     if (!source.url.startsWith("https://")) failures.push(`${article.slug}: HTTPSでない出典 ${source.url}`);
     if (!source.accessed) failures.push(`${article.slug}: 出典確認日がない ${source.title}`);
+    if (!source.publisher) failures.push(`${article.slug}: 出版者がない ${source.title}`);
+    if (!source.note) failures.push(`${article.slug}: 資料の使用範囲がない ${source.title}`);
+  }
+  for (const phrase of prohibitedEditorialPhrases) {
+    if (articlePlainText(article).includes(phrase)) {
+      failures.push(`${article.slug}: 編集工程向けの文言「${phrase}」が本文に含まれる`);
+    }
   }
 
   console.log(
