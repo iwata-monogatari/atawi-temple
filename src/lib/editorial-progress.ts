@@ -216,6 +216,20 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 8,
       href: "/research/shinpoin-mukasa-foundation-kasuisai-temple-network/",
     } as const;
+    const shinpoinHeritagePublication = {
+      title: "新豊院山古墳群と三角縁神獣鏡",
+      characterCount: 6136,
+      illustrationCount: 6,
+      sourceCount: 9,
+      href: "/research/shinpoinyama-kofun-mirror-transition-landscape/",
+    } as const;
+    const shinpoinCommunityPublication = {
+      title: "新豊院の虚空蔵・八幡・観音札所",
+      characterCount: 6017,
+      illustrationCount: 6,
+      sourceCount: 9,
+      href: "/research/shinpoin-kokuzo-hachiman-pilgrimage-mukasa-landscape/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -241,6 +255,10 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? senkojiCommunityPublication
           : temple.slug === "shinpoin-mukasa" && angle.key === "history"
             ? shinpoinHistoryPublication
+          : temple.slug === "shinpoin-mukasa" && angle.key === "heritage"
+            ? shinpoinHeritagePublication
+          : temple.slug === "shinpoin-mukasa" && angle.key === "community"
+            ? shinpoinCommunityPublication
           : undefined;
 
     return {
