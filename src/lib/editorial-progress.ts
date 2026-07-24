@@ -85,9 +85,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "jokoji-maeno", name: "定光寺", stage: "調査・執筆" },
-  { slug: "jissaiji-samejima", name: "実際寺", stage: "調査・執筆" },
-  { slug: "koganji-kusasaki", name: "光嚴寺", stage: "調査・執筆" },
+  { slug: "shokoji-shirabyoshi", name: "正光寺", stage: "調査・執筆" },
+  { slug: "hounji-mukasa", name: "法雲寺", stage: "調査・執筆" },
+  { slug: "anzenji-iwai", name: "安全寺", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -615,6 +615,69 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 9,
       href: "/research/shinnyoji-bankei-kokushi-fusho-zen-kaizan-memory/",
     } as const;
+    const jokojiHistoryPublication = {
+      title: "定光寺の曹洞宗中興と朱印寺院化",
+      characterCount: 6081,
+      illustrationCount: 6,
+      sourceCount: 6,
+      href: "/research/jokoji-kasuisai-conversion-shuin-relocation/",
+    } as const;
+    const jokojiHeritagePublication = {
+      title: "定光寺木造千手観音菩薩立像の物質的伝記",
+      characterCount: 6076,
+      illustrationCount: 6,
+      sourceCount: 7,
+      href: "/research/jokoji-senju-kannon-rengeji-restoration/",
+    } as const;
+    const jokojiCommunityPublication = {
+      title: "前野村の定光寺と末寺・観音信仰ネットワーク",
+      characterCount: 6004,
+      illustrationCount: 6,
+      sourceCount: 7,
+      href: "/research/jokoji-maeno-village-subtemples-kannon-network/",
+    } as const;
+    const koganjiHistoryPublication = {
+      title: "光嚴寺の1605年開創伝承と聖寿寺法系",
+      characterCount: 6013,
+      illustrationCount: 6,
+      sourceCount: 9,
+      href: "/research/koganji-giden-1605-seijuji-lineage/",
+    } as const;
+    const koganjiHeritagePublication = {
+      title: "光嚴寺の医王薬師如来と草崎の現世救済",
+      characterCount: 6010,
+      illustrationCount: 6,
+      sourceCount: 11,
+      href: "/research/koganji-io-yakushi-local-healing-faith/",
+    } as const;
+    const koganjiCommunityPublication = {
+      title: "光嚴寺と草崎の寺院集積・水辺景観",
+      characterCount: 6034,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/koganji-kusasaki-temple-cluster-water-landscape/",
+    } as const;
+    const jissaijiHistoryPublication = {
+      title: "実際寺の天正創建伝承と曹洞宗本末制",
+      characterCount: 6263,
+      illustrationCount: 6,
+      sourceCount: 13,
+      href: "/research/jissaiji-tensho-sonshuku-jurinji-kasuisai-genealogy/",
+    } as const;
+    const jissaijiHeritagePublication = {
+      title: "実際寺朱印寺領と鮫島の神明社・天神社",
+      characterCount: 6173,
+      illustrationCount: 6,
+      sourceCount: 13,
+      href: "/research/jissaiji-red-seal-estate-shinmei-tenjin-shinbutsu/",
+    } as const;
+    const jissaijiCommunityPublication = {
+      title: "実際寺と鮫島村の水・新田・海岸景観",
+      characterCount: 6091,
+      illustrationCount: 6,
+      sourceCount: 13,
+      href: "/research/jissaiji-samejima-village-water-newfield-coastal-landscape/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -752,6 +815,24 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? shinnyojiHeritagePublication
           : temple.slug === "shinnyoji-sagisaka" && angle.key === "community"
             ? shinnyojiCommunityPublication
+          : temple.slug === "jokoji-maeno" && angle.key === "history"
+            ? jokojiHistoryPublication
+          : temple.slug === "jokoji-maeno" && angle.key === "heritage"
+            ? jokojiHeritagePublication
+          : temple.slug === "jokoji-maeno" && angle.key === "community"
+            ? jokojiCommunityPublication
+          : temple.slug === "koganji-kusasaki" && angle.key === "history"
+            ? koganjiHistoryPublication
+          : temple.slug === "koganji-kusasaki" && angle.key === "heritage"
+            ? koganjiHeritagePublication
+          : temple.slug === "koganji-kusasaki" && angle.key === "community"
+            ? koganjiCommunityPublication
+          : temple.slug === "jissaiji-samejima" && angle.key === "history"
+            ? jissaijiHistoryPublication
+          : temple.slug === "jissaiji-samejima" && angle.key === "heritage"
+            ? jissaijiHeritagePublication
+          : temple.slug === "jissaiji-samejima" && angle.key === "community"
+            ? jissaijiCommunityPublication
           : undefined;
 
     return {

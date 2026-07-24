@@ -1,5 +1,77 @@
 [
   {
+    "update_id": "2026-07-24-jissaiji-landscape-research",
+    "date": "2026-07-24",
+    "temple_slug": "jissaiji-samejima",
+    "title": "実際寺研究論文「実際寺と鮫島村の水・新田・海岸景観」を公開しました",
+    "summary": "仿僧川、寺谷用水、浜新田から実際寺の立地を再検討した6091字の研究論文です。",
+    "href": "/research/jissaiji-samejima-village-water-newfield-coastal-landscape/"
+  },
+  {
+    "update_id": "2026-07-24-jissaiji-estate-research",
+    "date": "2026-07-24",
+    "temple_slug": "jissaiji-samejima",
+    "title": "実際寺研究論文「実際寺朱印寺領と鮫島の神明社・天神社」を公開しました",
+    "summary": "寺領2石、両社領2石、朱印状6通から近世村落信仰を検証した6173字の研究論文です。",
+    "href": "/research/jissaiji-red-seal-estate-shinmei-tenjin-shinbutsu/"
+  },
+  {
+    "update_id": "2026-07-24-jissaiji-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "jissaiji-samejima",
+    "title": "実際寺研究論文「実際寺の天正創建伝承と曹洞宗本末制」を公開しました",
+    "summary": "存祝、十輪寺、可睡斎を結ぶ寺院系譜を史料批判した6263字の研究論文です。",
+    "href": "/research/jissaiji-tensho-sonshuku-jurinji-kasuisai-genealogy/"
+  },
+  {
+    "update_id": "2026-07-24-koganji-landscape-research",
+    "date": "2026-07-24",
+    "temple_slug": "koganji-kusasaki",
+    "title": "光嚴寺研究論文「光嚴寺と草崎の寺院集積・水辺景観」を公開しました",
+    "summary": "字中村、低湿地、複数寺庵の配置から草崎の地域文化資産を再構成した6034字の研究論文です。",
+    "href": "/research/koganji-kusasaki-temple-cluster-water-landscape/"
+  },
+  {
+    "update_id": "2026-07-24-koganji-yakushi-research",
+    "date": "2026-07-24",
+    "temple_slug": "koganji-kusasaki",
+    "title": "光嚴寺研究論文「光嚴寺の医王薬師如来と草崎の現世救済」を公開しました",
+    "summary": "本尊記録、薬師信仰、近隣薬師寺院を区別して検証した6010字の研究論文です。",
+    "href": "/research/koganji-io-yakushi-local-healing-faith/"
+  },
+  {
+    "update_id": "2026-07-24-koganji-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "koganji-kusasaki",
+    "title": "光嚴寺研究論文「光嚴寺の1605年開創伝承と聖寿寺法系」を公開しました",
+    "summary": "全雄、儀伝、草崎への曹洞宗展開を段階的寺院形成として検証した6013字の研究論文です。",
+    "href": "/research/koganji-giden-1605-seijuji-lineage/"
+  },
+  {
+    "update_id": "2026-07-24-jokoji-community-research",
+    "date": "2026-07-24",
+    "temple_slug": "jokoji-maeno",
+    "title": "定光寺研究論文「前野村の定光寺と末寺・観音信仰ネットワーク」を公開しました",
+    "summary": "仿僧川流域の蓮華寺、松長院、第7番札所を村落空間から復元した6004字の研究論文です。",
+    "href": "/research/jokoji-maeno-village-subtemples-kannon-network/"
+  },
+  {
+    "update_id": "2026-07-24-jokoji-kannon-research",
+    "date": "2026-07-24",
+    "temple_slug": "jokoji-maeno",
+    "title": "定光寺研究論文「定光寺木造千手観音菩薩立像の物質的伝記」を公開しました",
+    "summary": "旧蓮華寺本尊、2005年市指定、2023年から2026年の修復を検証した6076字の研究論文です。",
+    "href": "/research/jokoji-senju-kannon-rengeji-restoration/"
+  },
+  {
+    "update_id": "2026-07-24-jokoji-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "jokoji-maeno",
+    "title": "定光寺研究論文「定光寺の曹洞宗中興と朱印寺院化」を公開しました",
+    "summary": "1598年改宗、1648年寺領朱印、1697年移転を制度史として検証した6081字の研究論文です。",
+    "href": "/research/jokoji-kasuisai-conversion-shuin-relocation/"
+  },
+  {
     "update_id": "2026-07-24-shinnyoji-bankei-research",
     "date": "2026-07-24",
     "temple_slug": "shinnyoji-sagisaka",
