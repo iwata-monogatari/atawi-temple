@@ -85,9 +85,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "rinpoin-nishikaizuka", name: "林宝院", stage: "調査・執筆" },
-  { slug: "honshoji-kounodai", name: "本性寺", stage: "調査・執筆" },
-  { slug: "genmyoji-mitsuke", name: "玄妙寺", stage: "調査・執筆" },
+  { slug: "senshoji-iwai", name: "宣正寺", stage: "調査・執筆" },
+  { slug: "shinshinkyo-mitsuke", name: "神心教", stage: "調査・執筆" },
+  { slug: "shinshinkyo-honbu-mitsuke", name: "神心教本部", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -1014,6 +1014,69 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 15,
       href: "/research/kongoji-terakoya-hotoku-omine-zazen-public-history/",
     } as const;
+    const rinpoinHistoryPublication = {
+      title: "1519年開創の林宝院と「隣浦庵」の寺院形成",
+      characterCount: 6017,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/rinpoin-1519-rinpoan-fukuoji-network/",
+    } as const;
+    const rinpoinHeritagePublication = {
+      title: "1604年伊奈忠次手形と林宝院領3石",
+      characterCount: 6044,
+      illustrationCount: 6,
+      sourceCount: 13,
+      href: "/research/rinpoin-1604-ina-tadatsugu-document-jochi/",
+    } as const;
+    const rinpoinCommunityPublication = {
+      title: "1889年西貝尋常小学校と林宝院の公共空間史",
+      characterCount: 6030,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/rinpoin-1889-school-jomon-site-public-space/",
+    } as const;
+    const honshojiHistoryPublication = {
+      title: "本性寺の1626年日遷開創と住所変遷",
+      characterCount: 6081,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/honshoji-1626-nissen-hontokuji-address-history/",
+    } as const;
+    const honshojiHeritagePublication = {
+      title: "本性寺の十界諸尊・七面堂・境内慰霊空間",
+      characterCount: 6062,
+      illustrationCount: 6,
+      sourceCount: 11,
+      href: "/research/honshoji-jikkai-shoson-shichimen-memorial-landscape/",
+    } as const;
+    const honshojiCommunityPublication = {
+      title: "本性寺の寺子屋活動と国府台地域社会",
+      characterCount: 6045,
+      illustrationCount: 6,
+      sourceCount: 11,
+      href: "/research/honshoji-terakoya-kounodai-community-publicness/",
+    } as const;
+    const genmyojiHistoryPublication = {
+      title: "1385年玄妙寺開創と日什置文の本寺構想",
+      characterCount: 6009,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/genmyoji-1385-nichiju-okibumi-three-head-temples/",
+    } as const;
+    const genmyojiHeritagePublication = {
+      title: "玄妙寺経蔵と三和土ブロック塀の近代建築史",
+      characterCount: 6014,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/genmyoji-1934-concrete-kyozo-tataki-wall/",
+    } as const;
+    const genmyojiCommunityPublication = {
+      title: "玄妙寺御命講と子育て草履の民俗史",
+      characterCount: 6010,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/genmyoji-omeiko-child-sandals-imaura-folklore/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -1265,6 +1328,24 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? kongojiHeritagePublication
           : temple.slug === "kongoji-mitsuke" && angle.key === "community"
             ? kongojiCommunityPublication
+          : temple.slug === "rinpoin-nishikaizuka" && angle.key === "history"
+            ? rinpoinHistoryPublication
+          : temple.slug === "rinpoin-nishikaizuka" && angle.key === "heritage"
+            ? rinpoinHeritagePublication
+          : temple.slug === "rinpoin-nishikaizuka" && angle.key === "community"
+            ? rinpoinCommunityPublication
+          : temple.slug === "honshoji-kounodai" && angle.key === "history"
+            ? honshojiHistoryPublication
+          : temple.slug === "honshoji-kounodai" && angle.key === "heritage"
+            ? honshojiHeritagePublication
+          : temple.slug === "honshoji-kounodai" && angle.key === "community"
+            ? honshojiCommunityPublication
+          : temple.slug === "genmyoji-mitsuke" && angle.key === "history"
+            ? genmyojiHistoryPublication
+          : temple.slug === "genmyoji-mitsuke" && angle.key === "heritage"
+            ? genmyojiHeritagePublication
+          : temple.slug === "genmyoji-mitsuke" && angle.key === "community"
+            ? genmyojiCommunityPublication
           : undefined;
 
     return {

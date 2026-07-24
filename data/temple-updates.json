@@ -1,5 +1,77 @@
 [
   {
+    "update_id": "2026-07-25-genmyoji-folklore-research",
+    "date": "2026-07-25",
+    "temple_slug": "genmyoji-mitsuke",
+    "title": "玄妙寺研究論文「玄妙寺御命講と子育て草履の民俗史」を公開しました",
+    "summary": "母形鬼子母神、今井浦3霊宝、身体発達祈願を複合的な民俗実践として検証した6010字の研究論文です。",
+    "href": "/research/genmyoji-omeiko-child-sandals-imaura-folklore/"
+  },
+  {
+    "update_id": "2026-07-25-genmyoji-architecture-research",
+    "date": "2026-07-25",
+    "temple_slug": "genmyoji-mitsuke",
+    "title": "玄妙寺研究論文「玄妙寺経蔵と三和土ブロック塀の近代建築史」を公開しました",
+    "summary": "1934年の経典防災と2014年登録文化財評価を史料と建築技術から検証した6014字の研究論文です。",
+    "href": "/research/genmyoji-1934-concrete-kyozo-tataki-wall/"
+  },
+  {
+    "update_id": "2026-07-25-genmyoji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "genmyoji-mitsuke",
+    "title": "玄妙寺研究論文「1385年玄妙寺開創と日什置文の本寺構想」を公開しました",
+    "summary": "得道の寺、直授日蓮、什門3本山を史料批判した6009字の研究論文です。",
+    "href": "/research/genmyoji-1385-nichiju-okibumi-three-head-temples/"
+  },
+  {
+    "update_id": "2026-07-25-honshoji-community-research",
+    "date": "2026-07-25",
+    "temple_slug": "honshoji-kounodai",
+    "title": "本性寺研究論文「本性寺の寺子屋活動と国府台地域社会」を公開しました",
+    "summary": "寺子屋活動と地域教育、宗教施設の公共性を検証した6045字の研究論文です。",
+    "href": "/research/honshoji-terakoya-kounodai-community-publicness/"
+  },
+  {
+    "update_id": "2026-07-25-honshoji-heritage-research",
+    "date": "2026-07-25",
+    "temple_slug": "honshoji-kounodai",
+    "title": "本性寺研究論文「本性寺の十界諸尊・七面堂・境内慰霊空間」を公開しました",
+    "summary": "本尊、七面堂、境内慰霊施設を物質文化と空間構成から検証した6062字の研究論文です。",
+    "href": "/research/honshoji-jikkai-shoson-shichimen-memorial-landscape/"
+  },
+  {
+    "update_id": "2026-07-25-honshoji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "honshoji-kounodai",
+    "title": "本性寺研究論文「本性寺の1626年日遷開創と住所変遷」を公開しました",
+    "summary": "開創伝承、本徳寺との関係、所在地表記の変遷を史料批判した6081字の研究論文です。",
+    "href": "/research/honshoji-1626-nissen-hontokuji-address-history/"
+  },
+  {
+    "update_id": "2026-07-25-rinpoin-community-research",
+    "date": "2026-07-25",
+    "temple_slug": "rinpoin-nishikaizuka",
+    "title": "林宝院研究論文「1889年西貝尋常小学校と林宝院の公共空間史」を公開しました",
+    "summary": "学校、縄文遺跡、寺院、地域公共空間の時間層を検証した6030字の研究論文です。",
+    "href": "/research/rinpoin-1889-school-jomon-site-public-space/"
+  },
+  {
+    "update_id": "2026-07-25-rinpoin-document-research",
+    "date": "2026-07-25",
+    "temple_slug": "rinpoin-nishikaizuka",
+    "title": "林宝院研究論文「1604年伊奈忠次手形と林宝院領3石」を公開しました",
+    "summary": "寺院文書、除地、助郷負担から西貝塚村の寺院経済を検証した6044字の研究論文です。",
+    "href": "/research/rinpoin-1604-ina-tadatsugu-document-jochi/"
+  },
+  {
+    "update_id": "2026-07-25-rinpoin-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "rinpoin-nishikaizuka",
+    "title": "林宝院研究論文「1519年開創の林宝院と『隣浦庵』の寺院形成」を公開しました",
+    "summary": "旧称、山号、福王寺末寺網、地蔵信仰を史料層から検証した6017字の研究論文です。",
+    "href": "/research/rinpoin-1519-rinpoan-fukuoji-network/"
+  },
+  {
     "update_id": "2026-07-25-kongoji-community-research",
     "date": "2026-07-25",
     "temple_slug": "kongoji-mitsuke",
