@@ -153,6 +153,13 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 7,
       href: "/research/daijoin-mihirobo-history-institutional-layers/",
     } as const;
+    const daijoinHeritagePublication = {
+      title: "庚申塚古墳上に形成された大乗院三仭坊の境内景観",
+      characterCount: 6075,
+      illustrationCount: 6,
+      sourceCount: 7,
+      href: "/research/daijoin-koshinzuka-kofun-layered-cultural-landscape/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -160,6 +167,8 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
           ? iojiPublications[angle.key as keyof typeof iojiPublications]
           : temple.slug === "daijoin-nakaizumi" && angle.key === "history"
             ? daijoinHistoryPublication
+          : temple.slug === "daijoin-nakaizumi" && angle.key === "heritage"
+            ? daijoinHeritagePublication
           : undefined;
 
     return {
