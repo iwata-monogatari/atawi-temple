@@ -1,5 +1,149 @@
 [
   {
+    "update_id": "2026-07-24-shinnyoji-bankei-research",
+    "date": "2026-07-24",
+    "temple_slug": "shinnyoji-sagisaka",
+    "title": "眞如寺研究論文「眞如寺の盤珪国師開山伝承」を公開しました",
+    "summary": "1667年の請来、不生禅、妙心寺法系、勧請開山の記憶を検証した6042字の研究論文です。",
+    "href": "/research/shinnyoji-bankei-kokushi-fusho-zen-kaizan-memory/"
+  },
+  {
+    "update_id": "2026-07-24-shinnyoji-naiji-research",
+    "date": "2026-07-24",
+    "temple_slug": "shinnyoji-sagisaka",
+    "title": "眞如寺研究論文「眞如寺と匂坂氏の内寺」を公開しました",
+    "summary": "匂坂氏の内寺、高木氏知行、武家菩提と屋敷内寺の構造を検証した6047字の研究論文です。",
+    "href": "/research/shinnyoji-sagisaka-clan-naiji-takagi-domain/"
+  },
+  {
+    "update_id": "2026-07-24-shinnyoji-institution-research",
+    "date": "2026-07-24",
+    "temple_slug": "shinnyoji-sagisaka",
+    "title": "眞如寺研究論文「眞如寺の道休庵から妙心寺直末への制度化」を公開しました",
+    "summary": "1472年草創、1667年開山請来、1704年改称を段階的寺院形成として検証した6002字の研究論文です。",
+    "href": "/research/shinnyoji-dokyuan-shinnyoan-myoshinji-jikimatsu/"
+  },
+  {
+    "update_id": "2026-07-24-jionji-pilgrimage-research",
+    "date": "2026-07-24",
+    "temple_slug": "jionji-mitsuke",
+    "title": "慈恩寺研究論文「慈恩寺の観音・薬師信仰と重層する巡礼網」を公開しました",
+    "summary": "遠江四十九薬師第49番、豊田郡観音第2番、旧瑠璃光寺の記憶を検証した6021字の研究論文です。",
+    "href": "/research/jionji-kannon-yakushi-rurikoji-pilgrimage-networks/"
+  },
+  {
+    "update_id": "2026-07-24-jionji-education-research",
+    "date": "2026-07-24",
+    "temple_slug": "jionji-mitsuke",
+    "title": "慈恩寺研究論文「慈恩寺の中興史と見付の寺子屋教育」を公開しました",
+    "summary": "応永開創、天文中興、1634年再興から寺子屋教育までを検証した6064字の研究論文です。",
+    "href": "/research/jionji-revival-terakoya-mitsuke-education-history/"
+  },
+  {
+    "update_id": "2026-07-24-jionji-unpan-research",
+    "date": "2026-07-24",
+    "temple_slug": "jionji-mitsuke",
+    "title": "慈恩寺研究論文「慈恩寺所蔵1419年銘雲板の物質史」を公開しました",
+    "summary": "上西郷庄滝泉禅寺から見付へ移動した雲板を物の履歴として検証した6064字の研究論文です。",
+    "href": "/research/jionji-unpan-1419-takisenji-kamisaigo-object-biography/"
+  },
+  {
+    "update_id": "2026-07-24-renpukuji-kofun-research",
+    "date": "2026-07-24",
+    "temple_slug": "renpukuji-ninomiya",
+    "title": "連福寺研究論文「連福寺古墳と三角縁神獣鏡」を公開しました",
+    "summary": "失われた前方後円墳、1965年の発見、同笵鏡から二之宮の古代景観を検証した6079字の研究論文です。",
+    "href": "/research/renpukuji-kofun-triangular-rim-mirror-ninomiya/"
+  },
+  {
+    "update_id": "2026-07-24-renpukuji-enma-research",
+    "date": "2026-07-24",
+    "temple_slug": "renpukuji-ninomiya",
+    "title": "連福寺研究論文「連福寺の木造閻魔大王坐像と移動の履歴」を公開しました",
+    "summary": "国分寺から十輪寺、1881年の連福寺安置へ至る文化財の物質的伝記を検証した6051字の研究論文です。",
+    "href": "/research/renpukuji-enma-statue-object-biography/"
+  },
+  {
+    "update_id": "2026-07-24-renpukuji-origin-research",
+    "date": "2026-07-24",
+    "temple_slug": "renpukuji-ninomiya",
+    "title": "連福寺研究論文「連福寺の開創伝承と平重盛の3連寺」を公開しました",
+    "summary": "807年弘福密寺説、1156年伽藍建立説、臨済宗妙心寺派への転換を検証した6627字の研究論文です。",
+    "href": "/research/renpukuji-kobo-shigemori-sanrenji-origin-traditions/"
+  },
+  {
+    "update_id": "2026-07-24-senzoji-daikan-research",
+    "date": "2026-07-24",
+    "temple_slug": "senzoji-nakaizumi",
+    "title": "泉蔵寺研究論文「泉蔵寺の秋鹿氏五輪塔群と中泉代官支配」を公開しました",
+    "summary": "秋鹿氏五輪塔群と中泉代官支配の関係を検証した6036字の研究論文です。",
+    "href": "/research/senzoji-aika-daikan-gorinto-nakaizumi-governance/"
+  },
+  {
+    "update_id": "2026-07-24-senzoji-yakushi-research",
+    "date": "2026-07-24",
+    "temple_slug": "senzoji-nakaizumi",
+    "title": "泉蔵寺研究論文「泉蔵寺の寅薬師と複合信仰」を公開しました",
+    "summary": "寅薬師、薬師霊場、境内の複合的信仰を検証した6179字の研究論文です。",
+    "href": "/research/senzoji-tora-yakushi-reijo-multi-deity-worship/"
+  },
+  {
+    "update_id": "2026-07-24-senzoji-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "senzoji-nakaizumi",
+    "title": "泉蔵寺研究論文「泉蔵寺の1504年開創伝承と黙宗」を公開しました",
+    "summary": "1504年開創伝承、開山黙宗、妙心寺派法脈を検証した6061字の研究論文です。",
+    "href": "/research/senzoji-nakaizumi-1504-mokuso-myoshinji-lineage/"
+  },
+  {
+    "update_id": "2026-07-24-chusenji-practice-research",
+    "date": "2026-07-24",
+    "temple_slug": "chusenji-nakaizumi",
+    "title": "中泉寺研究論文「中泉寺の虚空蔵・子安地蔵・観音・坐禅」を公開しました",
+    "summary": "虚空蔵、子安地蔵、観音、坐禅会を複合的宗教実践として検証した6137字の研究論文です。",
+    "href": "/research/chusenji-kokuzo-koyasu-jizo-kannon-zazen-practice/"
+  },
+  {
+    "update_id": "2026-07-24-chusenji-daikan-research",
+    "date": "2026-07-24",
+    "temple_slug": "chusenji-nakaizumi",
+    "title": "中泉寺研究論文「中泉寺の中泉代官墓と幕府行政の記憶」を公開しました",
+    "summary": "中泉代官墓、平岡氏・岡崎氏、幕府行政の地域記憶を検証した6168字の研究論文です。",
+    "href": "/research/chusenji-nakaizumi-magistrates-hiraoka-okazaki-memorial/"
+  },
+  {
+    "update_id": "2026-07-24-chusenji-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "chusenji-nakaizumi",
+    "title": "中泉寺研究論文「中泉寺創建伝承と徳川家康・中泉御殿」を公開しました",
+    "summary": "1562年創建伝承と1587年中泉御殿築造を分離して検証した6141字の研究論文です。",
+    "href": "/research/chusenji-foundation-ieyasu-nakaizumi-goten-chronology/"
+  },
+  {
+    "update_id": "2026-07-24-tamonji-land-research",
+    "date": "2026-07-24",
+    "temple_slug": "tamonji-nakano",
+    "title": "多聞寺研究論文「多聞寺の寺領1石余と中野村」を公開しました",
+    "summary": "伊奈忠次、寺領1石余、中野村の地域秩序を検証した6040字の研究論文です。",
+    "href": "/research/tamonji-ina-tadatsugu-temple-land-nakano-village/"
+  },
+  {
+    "update_id": "2026-07-24-tamonji-bishamonten-research",
+    "date": "2026-07-24",
+    "temple_slug": "tamonji-nakano",
+    "title": "多聞寺研究論文「多聞寺の毘沙門天と作者伝承」を公開しました",
+    "summary": "毘沙門天像と作者伝承を比較作例・宗派資料から検証した6112字の研究論文です。",
+    "href": "/research/tamonji-bishamonten-tamonten-taishi-attribution/"
+  },
+  {
+    "update_id": "2026-07-24-tamonji-history-research",
+    "date": "2026-07-24",
+    "temple_slug": "tamonji-nakano",
+    "title": "多聞寺研究論文「多聞寺の1553年開山記録と見性寺末寺網」を公開しました",
+    "summary": "1553年開山記録、黙宗、見性寺末寺網を検証した6026字の研究論文です。",
+    "href": "/research/tamonji-1553-mokuso-kenshoji-temple-network/"
+  },
+  {
     "update_id": "2026-07-24-saikoji-landscape-research",
     "date": "2026-07-24",
     "temple_slug": "saikoji-mitsuke",

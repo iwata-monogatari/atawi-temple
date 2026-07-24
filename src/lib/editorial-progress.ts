@@ -84,6 +84,13 @@ const templeAngles = [
   { key: "community", label: "地域社会・信仰・現代的役割" },
 ] as const;
 
+export const activeResearchTemples = [
+  { slug: "jokoji-maeno", name: "定光寺", stage: "調査・執筆" },
+  { slug: "jissaiji-samejima", name: "実際寺", stage: "調査・執筆" },
+  { slug: "koganji-kusasaki", name: "光嚴寺", stage: "調査・執筆" },
+] as const;
+const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
+
 const existingTemples = allTemples.filter(
   (temple) => temple.status === "existing" && hasDetailPage(temple),
 );
@@ -482,6 +489,132 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 10,
       href: "/research/saikoji-mitsuke-shukuba-heritage-cultural-landscape/",
     } as const;
+    const tamonjiHistoryPublication = {
+      title: "多聞寺の1553年開山記録と見性寺末寺網",
+      characterCount: 6026,
+      illustrationCount: 6,
+      sourceCount: 7,
+      href: "/research/tamonji-1553-mokuso-kenshoji-temple-network/",
+    } as const;
+    const tamonjiHeritagePublication = {
+      title: "多聞寺の毘沙門天と作者伝承",
+      characterCount: 6112,
+      illustrationCount: 6,
+      sourceCount: 7,
+      href: "/research/tamonji-bishamonten-tamonten-taishi-attribution/",
+    } as const;
+    const tamonjiCommunityPublication = {
+      title: "多聞寺の寺領1石余と中野村",
+      characterCount: 6040,
+      illustrationCount: 6,
+      sourceCount: 9,
+      href: "/research/tamonji-ina-tadatsugu-temple-land-nakano-village/",
+    } as const;
+    const chusenjiHistoryPublication = {
+      title: "中泉寺創建伝承と徳川家康・中泉御殿",
+      characterCount: 6141,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/chusenji-foundation-ieyasu-nakaizumi-goten-chronology/",
+    } as const;
+    const chusenjiHeritagePublication = {
+      title: "中泉寺の中泉代官墓と幕府行政の記憶",
+      characterCount: 6168,
+      illustrationCount: 6,
+      sourceCount: 7,
+      href: "/research/chusenji-nakaizumi-magistrates-hiraoka-okazaki-memorial/",
+    } as const;
+    const chusenjiCommunityPublication = {
+      title: "中泉寺の虚空蔵・子安地蔵・観音・坐禅",
+      characterCount: 6137,
+      illustrationCount: 6,
+      sourceCount: 6,
+      href: "/research/chusenji-kokuzo-koyasu-jizo-kannon-zazen-practice/",
+    } as const;
+    const senzojiHistoryPublication = {
+      title: "泉蔵寺の1504年開創伝承と黙宗",
+      characterCount: 6061,
+      illustrationCount: 6,
+      sourceCount: 7,
+      href: "/research/senzoji-nakaizumi-1504-mokuso-myoshinji-lineage/",
+    } as const;
+    const senzojiHeritagePublication = {
+      title: "泉蔵寺の寅薬師と複合信仰",
+      characterCount: 6179,
+      illustrationCount: 6,
+      sourceCount: 10,
+      href: "/research/senzoji-tora-yakushi-reijo-multi-deity-worship/",
+    } as const;
+    const senzojiCommunityPublication = {
+      title: "泉蔵寺の秋鹿氏五輪塔群と中泉代官支配",
+      characterCount: 6036,
+      illustrationCount: 6,
+      sourceCount: 10,
+      href: "/research/senzoji-aika-daikan-gorinto-nakaizumi-governance/",
+    } as const;
+    const renpukujiHistoryPublication = {
+      title: "連福寺の開創伝承と平重盛の3連寺",
+      characterCount: 6627,
+      illustrationCount: 6,
+      sourceCount: 6,
+      href: "/research/renpukuji-kobo-shigemori-sanrenji-origin-traditions/",
+    } as const;
+    const renpukujiHeritagePublication = {
+      title: "連福寺の木造閻魔大王坐像と移動の履歴",
+      characterCount: 6051,
+      illustrationCount: 6,
+      sourceCount: 6,
+      href: "/research/renpukuji-enma-statue-object-biography/",
+    } as const;
+    const renpukujiCommunityPublication = {
+      title: "連福寺古墳と三角縁神獣鏡",
+      characterCount: 6079,
+      illustrationCount: 6,
+      sourceCount: 6,
+      href: "/research/renpukuji-kofun-triangular-rim-mirror-ninomiya/",
+    } as const;
+    const jionjiHistoryPublication = {
+      title: "慈恩寺所蔵1419年銘雲板の物質史",
+      characterCount: 6064,
+      illustrationCount: 6,
+      sourceCount: 7,
+      href: "/research/jionji-unpan-1419-takisenji-kamisaigo-object-biography/",
+    } as const;
+    const jionjiHeritagePublication = {
+      title: "慈恩寺の中興史と見付の寺子屋教育",
+      characterCount: 6064,
+      illustrationCount: 6,
+      sourceCount: 5,
+      href: "/research/jionji-revival-terakoya-mitsuke-education-history/",
+    } as const;
+    const jionjiCommunityPublication = {
+      title: "慈恩寺の観音・薬師信仰と重層する巡礼網",
+      characterCount: 6021,
+      illustrationCount: 6,
+      sourceCount: 5,
+      href: "/research/jionji-kannon-yakushi-rurikoji-pilgrimage-networks/",
+    } as const;
+    const shinnyojiHistoryPublication = {
+      title: "眞如寺の道休庵から妙心寺直末への制度化",
+      characterCount: 6002,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/shinnyoji-dokyuan-shinnyoan-myoshinji-jikimatsu/",
+    } as const;
+    const shinnyojiHeritagePublication = {
+      title: "眞如寺と匂坂氏の内寺",
+      characterCount: 6047,
+      illustrationCount: 6,
+      sourceCount: 6,
+      href: "/research/shinnyoji-sagisaka-clan-naiji-takagi-domain/",
+    } as const;
+    const shinnyojiCommunityPublication = {
+      title: "眞如寺の盤珪国師開山伝承",
+      characterCount: 6042,
+      illustrationCount: 6,
+      sourceCount: 9,
+      href: "/research/shinnyoji-bankei-kokushi-fusho-zen-kaizan-memory/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -583,6 +716,42 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? saikojiHeritagePublication
           : temple.slug === "saikoji-mitsuke" && angle.key === "community"
             ? saikojiCommunityPublication
+          : temple.slug === "tamonji-nakano" && angle.key === "history"
+            ? tamonjiHistoryPublication
+          : temple.slug === "tamonji-nakano" && angle.key === "heritage"
+            ? tamonjiHeritagePublication
+          : temple.slug === "tamonji-nakano" && angle.key === "community"
+            ? tamonjiCommunityPublication
+          : temple.slug === "chusenji-nakaizumi" && angle.key === "history"
+            ? chusenjiHistoryPublication
+          : temple.slug === "chusenji-nakaizumi" && angle.key === "heritage"
+            ? chusenjiHeritagePublication
+          : temple.slug === "chusenji-nakaizumi" && angle.key === "community"
+            ? chusenjiCommunityPublication
+          : temple.slug === "senzoji-nakaizumi" && angle.key === "history"
+            ? senzojiHistoryPublication
+          : temple.slug === "senzoji-nakaizumi" && angle.key === "heritage"
+            ? senzojiHeritagePublication
+          : temple.slug === "senzoji-nakaizumi" && angle.key === "community"
+            ? senzojiCommunityPublication
+          : temple.slug === "renpukuji-ninomiya" && angle.key === "history"
+            ? renpukujiHistoryPublication
+          : temple.slug === "renpukuji-ninomiya" && angle.key === "heritage"
+            ? renpukujiHeritagePublication
+          : temple.slug === "renpukuji-ninomiya" && angle.key === "community"
+            ? renpukujiCommunityPublication
+          : temple.slug === "jionji-mitsuke" && angle.key === "history"
+            ? jionjiHistoryPublication
+          : temple.slug === "jionji-mitsuke" && angle.key === "heritage"
+            ? jionjiHeritagePublication
+          : temple.slug === "jionji-mitsuke" && angle.key === "community"
+            ? jionjiCommunityPublication
+          : temple.slug === "shinnyoji-sagisaka" && angle.key === "history"
+            ? shinnyojiHistoryPublication
+          : temple.slug === "shinnyoji-sagisaka" && angle.key === "heritage"
+            ? shinnyojiHeritagePublication
+          : temple.slug === "shinnyoji-sagisaka" && angle.key === "community"
+            ? shinnyojiCommunityPublication
           : undefined;
 
     return {
@@ -592,14 +761,18 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       templeName: temple.name,
       district: getDistrictName(temple.district_id),
       angle: angle.label,
-      status: publication ? "published" as const : "planned" as const,
+      status: publication
+        ? "published" as const
+        : activeResearchTempleSlugs.has(temple.slug)
+          ? "researching" as const
+          : "planned" as const,
       characterCount: publication?.characterCount || 0,
       illustrationCount: publication?.illustrationCount || 0,
       sourceCount: publication
         ? publication.sourceCount
         : Array.isArray(temple.sources) ? temple.sources.length : 0,
       href: publication?.href,
-      updatedAt: publication ? "2026-07-24" : undefined,
+      updatedAt: publication || activeResearchTempleSlugs.has(temple.slug) ? "2026-07-24" : undefined,
     };
   }),
 );

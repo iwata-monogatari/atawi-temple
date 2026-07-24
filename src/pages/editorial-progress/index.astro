@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import {
+  activeResearchTemples,
   allEditorialProgressItems,
   editorialProgressMeta,
   editorialStatusLabels,
@@ -17,7 +18,18 @@ const counts = Object.fromEntries(
   ]),
 ) as Record<EditorialStatus, number>;
 const completedCount = counts.published;
-const completionRate = Math.round((completedCount / editorialProgressMeta.totalCount) * 100);
+const completionRate = (completedCount / editorialProgressMeta.totalCount) * 100;
+const remainingCount = editorialProgressMeta.totalCount - completedCount;
+const publishedTempleItems = templeProgressItems.filter((item) => item.status === "published");
+const publishedTempleCount = new Set(publishedTempleItems.map((item) => item.templeName)).size;
+const templeCompletionRate = (publishedTempleItems.length / editorialProgressMeta.templeArticleCount) * 100;
+const publishedIllustrations = publishedTempleItems.reduce((sum, item) => sum + item.illustrationCount, 0);
+const publishedSources = publishedTempleItems.reduce((sum, item) => sum + item.sourceCount, 0);
+const averageSources = publishedTempleItems.length
+  ? (publishedSources / publishedTempleItems.length).toFixed(1)
+  : "0.0";
+const nextMilestone = Math.ceil(editorialProgressMeta.totalCount * 0.25);
+const toNextMilestone = Math.max(0, nextMilestone - completedCount);
 const templeGroups = templeProgressItems.reduce((groups, item) => {
   const key = item.templeName || "";
   const current = groups.get(key) || [];
@@ -25,12 +37,26 @@ const templeGroups = templeProgressItems.reduce((groups, item) => {
   groups.set(key, current);
   return groups;
 }, new Map<string, typeof templeProgressItems>());
+const districtProgress = [...templeGroups.values()].reduce((districts, items) => {
+  const district = items[0]?.district || "未分類";
+  const current = districts.get(district) || { district, published: 0, total: 0, temples: 0, completedTemples: 0 };
+  const published = items.filter((item) => item.status === "published").length;
+  current.published += published;
+  current.total += items.length;
+  current.temples += 1;
+  if (published === items.length) current.completedTemples += 1;
+  districts.set(district, current);
+  return districts;
+}, new Map<string, { district: string; published: number; total: number; temples: number; completedTemples: number }>());
+const latestPublishedTempleNames = new Set(["連福寺", "慈恩寺", "眞如寺"]);
+const latestPublished = [...templeGroups.entries()]
+  .filter(([templeName]) => latestPublishedTempleNames.has(templeName))
+  .map(([templeName, items]) => ({ templeName, items }));
 ---
 
 <BaseLayout
   title="記事制作進捗｜ATAWI TEMPLE"
   description="ATAWI TEMPLEで制作する総合記事50本と、現存96寺院の個別記事288本の進捗状況です。"
-  noindex={true}
 >
   <section class="page-title progress-title">
     <p class="eyebrow">Editorial Progress</p>
@@ -39,22 +65,137 @@ const templeGroups = templeProgressItems.reduce((groups, item) => {
     <p class="small">最終更新：{editorialProgressMeta.updatedAt}</p>
   </section>
 
-  <section class="progress-summary" aria-label="全体進捗">
-    <div class="progress-meter">
-      <div>
-        <strong>{completedCount} / {editorialProgressMeta.totalCount}</strong>
-        <span>公開完了</span>
+  <section class="dashboard" aria-label="研究論文制作ダッシュボード">
+    <article class="dashboard-hero">
+      <div
+        class="progress-ring"
+        style={`--progress:${completionRate * 3.6}deg`}
+        aria-label={`計画全体の公開進捗 ${completionRate.toFixed(1)}%`}
+      >
+        <div>
+          <strong>{completionRate.toFixed(1)}%</strong>
+          <span>計画全体</span>
+        </div>
       </div>
-      <div class="progress-track" aria-label={`公開進捗 ${completionRate}%`}>
-        <span style={`width:${completionRate}%`}></span>
+      <div class="dashboard-hero-copy">
+        <p class="dashboard-label">PUBLICATION PROGRESS</p>
+        <h2>{completedCount}<small>／{editorialProgressMeta.totalCount}本</small></h2>
+        <p>現存96寺院の個別研究288本と、総合研究50本を対象にした公開進捗です。</p>
+        <div class="progress-track" aria-hidden="true">
+          <span style={`width:${completionRate}%`}></span>
+        </div>
+        <p class="milestone">次の節目25%まで、あと<strong>{toNextMilestone}本</strong></p>
       </div>
-      <b>{completionRate}%</b>
+    </article>
+
+    <div class="metric-grid">
+      <article><span>公開完了</span><strong>{completedCount}</strong><small>本</small></article>
+      <article><span>残り</span><strong>{remainingCount}</strong><small>本</small></article>
+      <article><span>完了寺院</span><strong>{publishedTempleCount}</strong><small>／96寺院</small></article>
+      <article><span>現在進行</span><strong>{activeResearchTemples.length}</strong><small>寺院・{activeResearchTemples.length * 3}本</small></article>
     </div>
-    <div class="progress-stats">
+
+    <div class="dashboard-panels">
+      <article class="dashboard-panel">
+        <div class="panel-heading">
+          <div><p class="dashboard-label">BREAKDOWN</p><h2>計画内訳</h2></div>
+          <span>{remainingCount}本残り</span>
+        </div>
+        <div class="breakdown-row">
+          <div><strong>個別寺院研究</strong><span>{publishedTempleItems.length}／{editorialProgressMeta.templeArticleCount}本</span></div>
+          <div class="mini-track"><span style={`width:${templeCompletionRate}%`}></span></div>
+          <b>{templeCompletionRate.toFixed(1)}%</b>
+        </div>
+        <div class="breakdown-row">
+          <div><strong>総合・テーマ研究</strong><span>{counts.published - publishedTempleItems.length}／50本</span></div>
+          <div class="mini-track"><span style="width:0%"></span></div>
+          <b>0.0%</b>
+        </div>
+      </article>
+
+      <article class="dashboard-panel active-panel">
+        <div class="panel-heading">
+          <div><p class="dashboard-label">IN PROGRESS</p><h2>現在の並列執筆</h2></div>
+          <span class="live-badge">進行中</span>
+        </div>
+        <ol>
+          {activeResearchTemples.map((temple, index) => (
+            <li>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <strong>{temple.name}</strong>
+              <small>{temple.stage}・3本</small>
+            </li>
+          ))}
+        </ol>
+      </article>
+
+      <article class="dashboard-panel quality-panel">
+        <div class="panel-heading">
+          <div><p class="dashboard-label">QUALITY GATE</p><h2>公開済み品質審査</h2></div>
+          <span>全件合格</span>
+        </div>
+        <dl>
+          <div><dt>本文基準</dt><dd>{publishedTempleItems.length}／{publishedTempleItems.length}本</dd></div>
+          <div><dt>掲載図版</dt><dd>{publishedIllustrations.toLocaleString("ja-JP")}点</dd></div>
+          <div><dt>平均出典</dt><dd>{averageSources}件／本</dd></div>
+          <div><dt>表記検査</dt><dd>算用数字・禁止文言</dd></div>
+        </dl>
+      </article>
+    </div>
+
+    <div class="pipeline-strip" aria-label="工程別件数">
       {statuses.map((status) => (
-        <article>
-          <strong>{counts[status]}</strong>
+        <article class={`pipeline-${status}`}>
           <span>{editorialStatusLabels[status]}</span>
+          <strong>{counts[status]}</strong>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section dashboard-section">
+    <div class="section-heading">
+      <div>
+        <p class="dashboard-label">DISTRICT PROGRESS</p>
+        <h2>地区別の公開状況</h2>
+      </div>
+      <span class="small">個別寺院研究のみ</span>
+    </div>
+    <div class="district-grid">
+      {[...districtProgress.values()].map((district) => {
+        const rate = district.total ? (district.published / district.total) * 100 : 0;
+        return (
+          <article>
+            <div>
+              <h3>{district.district}</h3>
+              <span>{district.completedTemples}／{district.temples}寺院</span>
+            </div>
+            <strong>{rate.toFixed(1)}%</strong>
+            <div class="mini-track"><span style={`width:${rate}%`}></span></div>
+            <small>{district.published}／{district.total}本公開</small>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+
+  <section class="section latest-section">
+    <div class="section-heading">
+      <div>
+        <p class="dashboard-label">LATEST RELEASE</p>
+        <h2>直近の公開</h2>
+      </div>
+      <a href="/research/">研究論文一覧へ</a>
+    </div>
+    <div class="latest-grid">
+      {latestPublished.map(({ templeName, items }) => (
+        <article>
+          <div><span>3本公開</span><h3>{templeName}</h3></div>
+          <ul>
+            {items.map((item) => (
+              <li><a href={item.href}>{item.title}</a><small>{item.characterCount.toLocaleString("ja-JP")}字</small></li>
+            ))}
+          </ul>
         </article>
       ))}
     </div>
@@ -106,9 +247,33 @@ const templeGroups = templeProgressItems.reduce((groups, item) => {
         <span class="small">{editorialProgressMeta.templeCount}寺院・{editorialProgressMeta.templeArticleCount}本</span>
       </div>
     </div>
-    <div class="temple-progress-grid">
+    <div class="progress-tools" aria-label="寺院進捗の絞り込み">
+      <label>
+        <span>寺院名・地区・論文名</span>
+        <input id="temple-progress-search" type="search" placeholder="例：見付、国分寺、文化財" />
+      </label>
+      <label>
+        <span>状態</span>
+        <select id="temple-progress-status">
+          <option value="all">すべて</option>
+          <option value="published">公開済み</option>
+          <option value="researching">調査・執筆中</option>
+          <option value="planned">未着手</option>
+        </select>
+      </label>
+      <p><strong id="temple-progress-result">{templeGroups.size}</strong>寺院を表示</p>
+    </div>
+    <div class="temple-progress-grid" id="temple-progress-grid">
       {[...templeGroups.entries()].map(([templeName, items]) => (
-        <article class="temple-progress-card">
+        <article
+          class="temple-progress-card"
+          data-search={`${templeName} ${items[0]?.district} ${items.map((item) => `${item.angle} ${item.title}`).join(" ")}`.toLowerCase()}
+          data-status={items.every((item) => item.status === "published")
+            ? "published"
+            : items.some((item) => item.status === "researching")
+              ? "researching"
+              : "planned"}
+        >
           <div>
             <h3>{templeName}</h3>
             <span>{items[0]?.district}地区</span>
@@ -131,18 +296,94 @@ const templeGroups = templeProgressItems.reduce((groups, item) => {
     </div>
   </section>
 
+  <script is:inline>
+    (() => {
+      const search = document.querySelector("#temple-progress-search");
+      const status = document.querySelector("#temple-progress-status");
+      const result = document.querySelector("#temple-progress-result");
+      const cards = [...document.querySelectorAll("#temple-progress-grid .temple-progress-card")];
+      const filter = () => {
+        const query = search.value.trim().toLowerCase();
+        const selectedStatus = status.value;
+        let visible = 0;
+        cards.forEach((card) => {
+          const matchesQuery = !query || card.dataset.search.includes(query);
+          const matchesStatus = selectedStatus === "all" || card.dataset.status === selectedStatus;
+          const show = matchesQuery && matchesStatus;
+          card.hidden = !show;
+          if (show) visible += 1;
+        });
+        result.textContent = String(visible);
+      };
+      search.addEventListener("input", filter);
+      status.addEventListener("change", filter);
+    })();
+  </script>
+
   <style>
     .progress-title { margin-bottom: 24px; }
-    .progress-summary { display: grid; gap: 20px; margin: 0 auto 48px; max-width: 1160px; }
-    .progress-meter { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 18px; padding: 22px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); }
-    .progress-meter div:first-child { display: grid; }
-    .progress-meter strong { font-size: 1.5rem; color: var(--accent-strong); }
-    .progress-meter span { color: var(--muted); }
-    .progress-track { height: 12px; overflow: hidden; border-radius: 999px; background: var(--soft); }
-    .progress-track span { display: block; height: 100%; background: var(--accent); }
-    .progress-stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
-    .progress-stats article { display: grid; gap: 2px; padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); text-align: center; }
-    .progress-stats strong { font-size: 1.45rem; color: var(--accent-strong); }
+    .dashboard { display: grid; gap: 16px; margin: 0 auto 52px; max-width: 1160px; }
+    .dashboard-hero { display: grid; grid-template-columns: 176px 1fr; align-items: center; gap: 32px; padding: 30px 34px; border: 1px solid #c9c2b4; border-radius: 12px; background: linear-gradient(135deg, #f9f7f1 0%, #f1ede3 100%); box-shadow: 0 12px 32px rgba(54, 45, 31, .08); }
+    .progress-ring { display: grid; place-items: center; width: 156px; aspect-ratio: 1; border-radius: 50%; background: conic-gradient(var(--accent-strong) var(--progress), #ddd7ca 0); }
+    .progress-ring::before { content: ""; grid-area: 1 / 1; width: 122px; aspect-ratio: 1; border-radius: 50%; background: #f9f7f1; box-shadow: inset 0 0 0 1px #d8d1c4; }
+    .progress-ring > div { z-index: 1; grid-area: 1 / 1; display: grid; text-align: center; }
+    .progress-ring strong { font: 800 1.8rem/1.1 ui-monospace, "SFMono-Regular", Consolas, monospace; color: var(--accent-strong); }
+    .progress-ring span { margin-top: 4px; color: var(--muted); font-size: .76rem; letter-spacing: .08em; }
+    .dashboard-label { margin: 0 0 5px; color: #756a59; font: 700 .72rem/1.2 ui-monospace, "SFMono-Regular", Consolas, monospace; letter-spacing: .14em; }
+    .dashboard-hero-copy h2 { margin: 0; font: 800 2.65rem/1.1 ui-monospace, "SFMono-Regular", Consolas, monospace; color: #2f3d32; }
+    .dashboard-hero-copy h2 small { margin-left: 7px; font-size: 1rem; color: var(--muted); }
+    .dashboard-hero-copy > p:not(.dashboard-label, .milestone) { margin: 9px 0 18px; color: var(--muted); }
+    .progress-track, .mini-track { overflow: hidden; border-radius: 999px; background: #ddd7ca; }
+    .progress-track { height: 10px; }
+    .mini-track { height: 7px; }
+    .progress-track span, .mini-track span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #496750, #7c9b79); }
+    .milestone { margin: 9px 0 0; color: var(--muted); font-size: .84rem; }
+    .milestone strong { margin-left: 4px; color: var(--accent-strong); }
+    .metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .metric-grid article { display: grid; grid-template-columns: 1fr auto; align-items: end; padding: 17px 18px; border: 1px solid var(--line); border-radius: 9px; background: var(--paper); }
+    .metric-grid span { grid-column: 1 / -1; color: var(--muted); font-size: .78rem; font-weight: 700; }
+    .metric-grid strong { margin-top: 4px; font: 800 1.75rem/1 ui-monospace, "SFMono-Regular", Consolas, monospace; color: var(--accent-strong); }
+    .metric-grid small { color: var(--muted); }
+    .dashboard-panels { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 12px; }
+    .dashboard-panel { padding: 20px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); }
+    .panel-heading { display: flex; align-items: start; justify-content: space-between; gap: 14px; margin-bottom: 18px; }
+    .panel-heading h2 { margin: 0; font-size: 1.05rem; }
+    .panel-heading > span { color: var(--muted); font-size: .76rem; }
+    .breakdown-row { display: grid; grid-template-columns: 1fr 82px; gap: 7px 12px; margin-top: 15px; }
+    .breakdown-row > div:first-child { display: flex; justify-content: space-between; gap: 10px; font-size: .82rem; }
+    .breakdown-row > div:first-child span { color: var(--muted); }
+    .breakdown-row .mini-track { align-self: center; }
+    .breakdown-row b { grid-column: 2; grid-row: 1 / 3; align-self: center; text-align: right; font: 700 .9rem ui-monospace, monospace; color: var(--accent-strong); }
+    .live-badge { padding: 3px 8px; border-radius: 999px; background: #fff1c9; color: #765300 !important; font-weight: 800; }
+    .active-panel ol { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+    .active-panel li { display: grid; grid-template-columns: 28px 1fr auto; align-items: center; gap: 7px; padding: 9px 0; border-top: 1px solid var(--line); }
+    .active-panel li > span { color: #8f8473; font: 700 .72rem ui-monospace, monospace; }
+    .active-panel small { color: var(--muted); }
+    .quality-panel dl { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 0; }
+    .quality-panel dl div { padding: 10px; border-radius: 6px; background: var(--soft); }
+    .quality-panel dt { color: var(--muted); font-size: .72rem; }
+    .quality-panel dd { margin: 4px 0 0; font-weight: 800; color: var(--accent-strong); }
+    .pipeline-strip { display: grid; grid-template-columns: repeat(5, 1fr); overflow: hidden; border: 1px solid var(--line); border-radius: 9px; background: var(--paper); }
+    .pipeline-strip article { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; padding: 12px 15px; border-right: 1px solid var(--line); }
+    .pipeline-strip article:last-child { border-right: 0; }
+    .pipeline-strip span { color: var(--muted); font-size: .76rem; }
+    .pipeline-strip strong { font: 800 1rem ui-monospace, monospace; color: var(--accent-strong); }
+    .dashboard-section { padding-top: 6px; }
+    .district-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .district-grid article { display: grid; grid-template-columns: 1fr auto; gap: 8px 12px; padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
+    .district-grid article > div:first-child { display: flex; align-items: baseline; gap: 8px; }
+    .district-grid h3 { margin: 0; font-size: 1rem; }
+    .district-grid div span, .district-grid small { color: var(--muted); font-size: .76rem; }
+    .district-grid > article > strong { font: 800 .95rem ui-monospace, monospace; color: var(--accent-strong); }
+    .district-grid .mini-track, .district-grid small { grid-column: 1 / -1; }
+    .latest-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .latest-grid article { padding: 17px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
+    .latest-grid article > div { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+    .latest-grid article > div span { order: 2; color: var(--muted); font-size: .76rem; }
+    .latest-grid h3 { margin: 0; }
+    .latest-grid ul { display: grid; gap: 8px; margin: 13px 0 0; padding: 0; list-style: none; }
+    .latest-grid li { display: grid; grid-template-columns: 1fr auto; gap: 8px; padding-top: 8px; border-top: 1px solid var(--line); }
+    .latest-grid small { color: var(--muted); white-space: nowrap; }
     .progress-standards dl { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
     .progress-standards dl div { padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
     .progress-standards dt { margin-bottom: 4px; font-weight: 800; color: var(--accent-strong); }
@@ -156,18 +397,39 @@ const templeGroups = templeProgressItems.reduce((groups, item) => {
     .status-drafting { background: #dcebf8; color: #174d74; }
     .status-reviewing { background: #eadff4; color: #593176; }
     .status-published { background: #dcebd8; color: #244f24; }
+    .progress-tools { display: grid; grid-template-columns: minmax(220px, 1fr) 190px auto; align-items: end; gap: 12px; margin-bottom: 14px; padding: 15px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
+    .progress-tools label { display: grid; gap: 5px; }
+    .progress-tools label span { color: var(--muted); font-size: .75rem; font-weight: 700; }
+    .progress-tools input, .progress-tools select { width: 100%; min-height: 42px; padding: 8px 11px; border: 1px solid #bdb5a7; border-radius: 6px; background: #fff; color: inherit; font: inherit; }
+    .progress-tools p { margin: 0 0 10px; color: var(--muted); white-space: nowrap; }
+    .progress-tools p strong { margin-right: 3px; color: var(--accent-strong); font: 800 1.05rem ui-monospace, monospace; }
     .temple-progress-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
     .temple-progress-card { padding: 18px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
+    .temple-progress-card[hidden] { display: none; }
     .temple-progress-card > div { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
     .temple-progress-card h3 { margin: 0; }
     .temple-progress-card > div span { color: var(--muted); font-size: .84rem; }
     .temple-progress-card ul { display: grid; gap: 8px; margin: 14px 0 0; padding: 0; list-style: none; }
     .temple-progress-card li { display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: 10px; padding-top: 8px; border-top: 1px solid var(--line); }
     .temple-progress-card small { color: var(--muted); }
+    @media (max-width: 980px) {
+      .dashboard-panels { grid-template-columns: 1fr 1fr; }
+      .dashboard-panel:first-child { grid-column: 1 / -1; }
+      .district-grid { grid-template-columns: repeat(2, 1fr); }
+      .latest-grid { grid-template-columns: 1fr; }
+    }
     @media (max-width: 720px) {
-      .progress-meter { grid-template-columns: 1fr auto; }
-      .progress-track { grid-column: 1 / -1; grid-row: 2; }
-      .progress-stats { grid-template-columns: repeat(5, minmax(62px, 1fr)); overflow-x: auto; }
+      .dashboard-hero { grid-template-columns: 1fr; padding: 24px 20px; }
+      .progress-ring { width: 140px; margin: 0 auto; }
+      .progress-ring::before { width: 108px; }
+      .dashboard-hero-copy { text-align: center; }
+      .metric-grid { grid-template-columns: repeat(2, 1fr); }
+      .dashboard-panels, .district-grid { grid-template-columns: 1fr; }
+      .dashboard-panel:first-child { grid-column: auto; }
+      .pipeline-strip { grid-template-columns: repeat(5, minmax(76px, 1fr)); overflow-x: auto; }
+      .pipeline-strip article { display: grid; }
+      .progress-tools { grid-template-columns: 1fr; }
+      .progress-tools p { margin: 0; }
       .progress-standards dl, .temple-progress-grid { grid-template-columns: 1fr; }
       .temple-progress-card li { grid-template-columns: 1fr auto; }
       .temple-progress-card small { grid-column: 1 / -1; }
