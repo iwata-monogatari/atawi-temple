@@ -471,7 +471,7 @@ const iwataMonogatariBannerImage = "/assets/temples/kokubunji-mitsuke/hondo.webp
             <time datetime={update.date}>{update.date.replaceAll("-", ".")}</time>
             <div>
               <h3>
-                <a href={`/temples/${update.temple_slug}/`}>{update.title}</a>
+                <a href={"href" in update && update.href ? update.href : `/temples/${update.temple_slug}/`}>{update.title}</a>
               </h3>
               <p>{update.summary}</p>
               {update.temple && <span class="small">{update.temple.name} / {update.temple.area}</span>}
