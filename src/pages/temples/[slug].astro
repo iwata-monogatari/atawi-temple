@@ -27,6 +27,7 @@ import {
   getMonogatariLinksBySlug,
   getMonogatariRelationLabel,
 } from "../../lib/related-monogatari";
+import { researchArticles } from "../../lib/research-articles";
 
 export function getStaticPaths() {
   return allTemples.filter(hasDetailPage).map((temple) => ({ params: { slug: temple.slug } }));
@@ -34,6 +35,7 @@ export function getStaticPaths() {
 
 const temple = getTempleBySlug(Astro.params.slug || "");
 if (!temple || !hasDetailPage(temple)) return Astro.redirect("/temples/");
+const templeResearchArticles = researchArticles.filter((article) => article.templeSlug === temple.slug);
 
 const refurb = getRefurbFacts(temple.slug);
 
@@ -298,6 +300,28 @@ const showHouyouBridge = temple.status === "existing";
         <a class="button-link secondary-button" href="/temples/">寺院一覧へ戻る</a>
       </div>
     </header>
+
+    {templeResearchArticles.length > 0 && (
+      <section class="temple-basic-panel" aria-label={`${temple.name}の研究論文`}>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">ATAWI TEMPLE RESEARCH</p>
+            <h2>{temple.name}の研究論文</h2>
+          </div>
+          <a href="/research/">研究論文一覧</a>
+        </div>
+        <div class="card-grid">
+          {templeResearchArticles.map((article) => (
+            <article class="content-card">
+              <p class="eyebrow">{article.series}</p>
+              <h3><a href={`/research/${article.slug}/`}>{article.title}</a></h3>
+              <p>{article.description}</p>
+              <p class="small">{article.verificationStatus}・更新 {article.updated.replaceAll("-", ".")}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
 
     <section class="temple-basic-panel" aria-label="寺院の基本情報と確認状況">
       <div class="section-heading">

@@ -2,7 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { allTempleUpdates, getTempleBySlug, isCemeteryServiceInfo } from "../../lib/temples";
 
-const laterUpdates = allTempleUpdates.slice(5).map((update) => ({
+const laterUpdates = allTempleUpdates.map((update) => ({
   ...update,
   summary: isCemeteryServiceInfo(update.summary) ? "現地写真と基礎情報を更新しました。" : update.summary,
   temple: getTempleBySlug(update.temple_slug),
@@ -33,7 +33,7 @@ const laterUpdates = allTempleUpdates.slice(5).map((update) => ({
                 <time datetime={update.date}>{update.date.replaceAll("-", ".")}</time>
                 <div>
                   <h3>
-                    <a href={`/temples/${update.temple_slug}/`}>{update.title}</a>
+                    <a href={"href" in update && update.href ? update.href : `/temples/${update.temple_slug}/`}>{update.title}</a>
                   </h3>
                   <p>{update.summary}</p>
                   {update.temple && <span class="small">{update.temple.name} / {update.temple.area}</span>}

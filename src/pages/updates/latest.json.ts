@@ -11,7 +11,7 @@ const recentUpdates = allTempleUpdates.slice(0, 5).map((update) => {
     summary: isCemeteryServiceInfo(update.summary)
       ? "現地写真と基礎情報を更新しました。"
       : update.summary,
-    href: `/temples/${update.temple_slug}/`,
+    href: "href" in update && update.href ? update.href : `/temples/${update.temple_slug}/`,
     temple_name: temple?.name || "",
     temple_area: temple?.area || "",
   };
