@@ -4,8 +4,8 @@ const assetBase = "/assets/temples/zosanji-sagisaka";
 const figures = {
   overview: {
     src: `${assetBase}/748026215_37058044277174402_1444100901382367975_n.jpg`,
-    alt: "磐田市匂坂中の岩田山増参寺境内",
-    caption: "岩田山増参寺の境内。現在の寺観は、中世の草庵伝承、磐田寺との統合、近世以後の地域寺院化を経た結果である。撮影：ATAWI TEMPLE、2026年。",
+    alt: "増参寺門前の六地蔵覆堂",
+    caption: "増参寺門前の六地蔵覆堂。石仏、覆屋、供花を含む現在の姿は、寺院史が建物だけでなく日常的な供養によって継承されることを示す。撮影：ATAWI TEMPLE、2026年。",
   },
   hondo: {
     src: `${assetBase}/748160881_37058052163840280_7233624959184800221_n.jpg`,
@@ -19,8 +19,8 @@ const figures = {
   },
   grounds: {
     src: `${assetBase}/748419019_37058046530507510_8080270646902863828_n.jpg`,
-    alt: "増参寺境内の石造物と植栽",
-    caption: "増参寺境内。石造物・植栽・墓域を含む構成は、文献だけでは分からない寺院利用の継続を示す。撮影：ATAWI TEMPLE、2026年。",
+    alt: "増参寺参道から望む本堂",
+    caption: "植栽と石敷きの参道越しに望む増参寺本堂。現在の境内構成は、文献だけでは分からない寺院利用の継続を示す。撮影：ATAWI TEMPLE、2026年。",
   },
 } satisfies Record<string, ResearchFigure>;
 
