@@ -28,7 +28,8 @@ const publishedSources = publishedTempleItems.reduce((sum, item) => sum + item.s
 const averageSources = publishedTempleItems.length
   ? (publishedSources / publishedTempleItems.length).toFixed(1)
   : "0.0";
-const nextMilestone = Math.ceil(editorialProgressMeta.totalCount * 0.25);
+const nextMilestoneRate = Math.min(100, Math.ceil((completionRate + 0.001) / 25) * 25);
+const nextMilestone = Math.ceil(editorialProgressMeta.totalCount * (nextMilestoneRate / 100));
 const toNextMilestone = Math.max(0, nextMilestone - completedCount);
 const templeGroups = templeProgressItems.reduce((groups, item) => {
   const key = item.templeName || "";
@@ -48,10 +49,11 @@ const districtProgress = [...templeGroups.values()].reduce((districts, items) =>
   districts.set(district, current);
   return districts;
 }, new Map<string, { district: string; published: number; total: number; temples: number; completedTemples: number }>());
-const latestPublishedTempleNames = new Set(["全久院", "福王寺", "合掌寺"]);
+const latestPublishedTempleNames = new Set(["十輪寺", "永福寺", "金剛寺"]);
 const latestPublished = [...templeGroups.entries()]
   .filter(([templeName]) => latestPublishedTempleNames.has(templeName))
   .map(([templeName, items]) => ({ templeName, items }));
+const progressSignature = `${completedCount}:${activeResearchTemples.map((temple) => temple.slug).join(",")}:${editorialProgressMeta.updatedAt}`;
 ---
 
 <BaseLayout
@@ -63,6 +65,29 @@ const latestPublished = [...templeGroups.entries()]
     <h1>記事制作進捗</h1>
     <p>総合50本＋現存96寺院×3本。企画・調査・執筆・校閲・公開の状態を記録します。</p>
     <p class="small">最終更新：{editorialProgressMeta.updatedAt}</p>
+  </section>
+
+  <section
+    class="work-activity"
+    aria-label="現在の執筆稼働状況"
+    data-progress-signature={progressSignature}
+  >
+    <div class="activity-status">
+      <span class="activity-pulse" aria-hidden="true"></span>
+      <div>
+        <p class="activity-kicker">自動確認中</p>
+        <strong>3寺院・9本を並行して調査・執筆しています</strong>
+      </div>
+    </div>
+    <div class="activity-temples" aria-label="現在執筆中の寺院">
+      {activeResearchTemples.map((temple) => <span>{temple.name}</span>)}
+    </div>
+    <div class="activity-monitor" aria-live="polite">
+      <span id="progress-check-state">進捗データを確認しています</span>
+      <time id="progress-check-time">--:--:--</time>
+      <small id="progress-check-countdown">次回確認 00:30</small>
+    </div>
+    <span class="activity-scan" aria-hidden="true"></span>
   </section>
 
   <section class="dashboard" aria-label="研究論文制作ダッシュボード">
@@ -84,7 +109,7 @@ const latestPublished = [...templeGroups.entries()]
         <div class="progress-track" aria-hidden="true">
           <span style={`width:${completionRate}%`}></span>
         </div>
-        <p class="milestone">次の節目25%まで、あと<strong>{toNextMilestone}本</strong></p>
+        <p class="milestone">次の節目{nextMilestoneRate}%まで、あと<strong>{toNextMilestone}本</strong></p>
       </div>
     </article>
 
@@ -317,11 +342,85 @@ const latestPublished = [...templeGroups.entries()]
       };
       search.addEventListener("input", filter);
       status.addEventListener("change", filter);
+
+      const activity = document.querySelector(".work-activity");
+      const state = document.querySelector("#progress-check-state");
+      const checkedAt = document.querySelector("#progress-check-time");
+      const countdown = document.querySelector("#progress-check-countdown");
+      let remaining = 30;
+      let checking = false;
+
+      const formatTime = (date) =>
+        new Intl.DateTimeFormat("ja-JP", {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false,
+        }).format(date);
+
+      const setChecked = (message) => {
+        state.textContent = message;
+        checkedAt.textContent = formatTime(new Date());
+      };
+
+      const checkProgress = async () => {
+        if (checking) return;
+        checking = true;
+        state.textContent = "公開状況を照合中";
+        try {
+          const response = await fetch(`/editorial-progress/?progress_check=${Date.now()}`, {
+            cache: "no-store",
+            headers: { "X-Progress-Check": "1" },
+          });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const html = await response.text();
+          const nextDocument = new DOMParser().parseFromString(html, "text/html");
+          const nextActivity = nextDocument.querySelector(".work-activity");
+          const currentSignature = activity?.dataset.progressSignature;
+          const nextSignature = nextActivity?.dataset.progressSignature;
+          if (currentSignature && nextSignature && currentSignature !== nextSignature) {
+            state.textContent = "新しい公開進捗を検出";
+            location.replace(`/editorial-progress/?v=${Date.now()}`);
+            return;
+          }
+          setChecked("公開状況を確認済み");
+        } catch {
+          setChecked("再確認を継続中");
+        } finally {
+          checking = false;
+          remaining = 30;
+        }
+      };
+
+      setChecked("執筆工程を稼働確認");
+      window.setInterval(() => {
+        remaining -= 1;
+        countdown.textContent = `次回確認 00:${String(Math.max(remaining, 0)).padStart(2, "0")}`;
+        if (remaining <= 0) checkProgress();
+      }, 1000);
     })();
   </script>
 
   <style is:inline>
     .progress-title { margin-bottom: 24px; }
+    .work-activity { position: relative; display: grid; grid-template-columns: minmax(280px, 1.4fr) minmax(230px, 1fr) auto; align-items: center; gap: 18px; overflow: hidden; max-width: 1160px; margin: -8px auto 18px; padding: 14px 18px; border: 1px solid #d8d1c4; border-radius: 10px; background: rgba(249, 247, 241, .72); color: #70685d; box-shadow: 0 6px 18px rgba(54, 45, 31, .04); }
+    .activity-status { display: flex; align-items: center; gap: 12px; min-width: 0; }
+    .activity-status strong { display: block; color: #596158; font-size: .84rem; font-weight: 600; }
+    .activity-pulse { flex: 0 0 auto; width: 9px; height: 9px; border-radius: 50%; background: #6f936c; box-shadow: 0 0 0 0 rgba(111, 147, 108, .34); animation: activity-pulse 2s ease-out infinite; }
+    .activity-kicker { margin: 0 0 2px; color: #9a9185; font-size: .69rem; font-weight: 500; letter-spacing: .12em; }
+    .activity-temples { display: flex; flex-wrap: wrap; gap: 5px; }
+    .activity-temples span { padding: 3px 8px; border: 1px solid #ddd6ca; border-radius: 999px; color: #81786c; background: rgba(255, 255, 255, .5); font-size: .71rem; }
+    .activity-monitor { display: grid; grid-template-columns: auto auto; justify-content: end; gap: 1px 9px; color: #9a9185; font: 500 .68rem/1.45 ui-monospace, "SFMono-Regular", Consolas, monospace; text-align: right; }
+    .activity-monitor time { color: #778276; }
+    .activity-monitor small { grid-column: 1 / -1; color: #aaa298; font: inherit; }
+    .activity-scan { position: absolute; right: 0; bottom: 0; left: 0; height: 2px; background: linear-gradient(90deg, transparent 0%, rgba(111, 147, 108, .12) 25%, rgba(111, 147, 108, .55) 50%, rgba(111, 147, 108, .12) 75%, transparent 100%); transform: translateX(-100%); animation: activity-scan 3.6s linear infinite; }
+    @keyframes activity-pulse {
+      0% { box-shadow: 0 0 0 0 rgba(111, 147, 108, .36); }
+      65%, 100% { box-shadow: 0 0 0 8px rgba(111, 147, 108, 0); }
+    }
+    @keyframes activity-scan {
+      to { transform: translateX(100%); }
+    }
     .dashboard { display: grid; gap: 16px; margin: 0 auto 52px; max-width: 1160px; }
     .dashboard-hero { display: grid; grid-template-columns: 176px 1fr; align-items: center; gap: 32px; padding: 30px 34px; border: 1px solid #c9c2b4; border-radius: 12px; background: linear-gradient(135deg, #f9f7f1 0%, #f1ede3 100%); box-shadow: 0 12px 32px rgba(54, 45, 31, .08); }
     .progress-ring { display: grid; place-items: center; width: 156px; aspect-ratio: 1; border-radius: 50%; background: conic-gradient(var(--accent-strong) var(--progress), #ddd7ca 0); }
@@ -419,6 +518,8 @@ const latestPublished = [...templeGroups.entries()]
       .latest-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 720px) {
+      .work-activity { grid-template-columns: 1fr; gap: 10px; padding: 14px; }
+      .activity-monitor { grid-template-columns: auto auto; justify-content: start; text-align: left; }
       .dashboard-hero { grid-template-columns: 1fr; padding: 24px 20px; }
       .progress-ring { width: 140px; margin: 0 auto; }
       .progress-ring::before { width: 108px; }

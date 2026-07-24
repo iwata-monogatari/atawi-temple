@@ -1,5 +1,77 @@
 [
   {
+    "update_id": "2026-07-25-kongoji-community-research",
+    "date": "2026-07-25",
+    "temple_slug": "kongoji-mitsuke",
+    "title": "金剛寺研究論文「寺子屋・報徳・大峰講・坐禅会の金剛寺」を公開しました",
+    "summary": "学習、報徳運動、民間信仰、坐禅、悲嘆支援を公共性の変遷として検証した6003字の研究論文です。",
+    "href": "/research/kongoji-terakoya-hotoku-omine-zazen-public-history/"
+  },
+  {
+    "update_id": "2026-07-25-kongoji-lineage-research",
+    "date": "2026-07-25",
+    "temple_slug": "kongoji-mitsuke",
+    "title": "金剛寺研究論文「海蔵寺―金剛寺―興徳寺の曹洞宗門流」を公開しました",
+    "summary": "1593年改宗、1599年末寺再編、三等法地から遠江の寺院ネットワークを検証した6003字の研究論文です。",
+    "href": "/research/kongoji-kaizoji-kotokuji-soto-lineage-network/"
+  },
+  {
+    "update_id": "2026-07-25-kongoji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "kongoji-mitsuke",
+    "title": "金剛寺研究論文「金剛寺の1424年・1593年・1610年代をどう読むか」を公開しました",
+    "summary": "旧真言宗、曹洞宗改宗、開基伝承を多段階成立史として検証した6013字の研究論文です。",
+    "href": "/research/kongoji-1424-1593-1610s-foundation-chronology/"
+  },
+  {
+    "update_id": "2026-07-25-eifukuji-community-research",
+    "date": "2026-07-25",
+    "temple_slug": "eifukuji-nishikaizuka",
+    "title": "永福寺研究論文「永福寺の観音巡礼と西貝塚地域社会」を公開しました",
+    "summary": "遠州第20番、磐田郡第24番、御詠歌、今浦山を地域宗教ネットワークとして検証した6003字の研究論文です。",
+    "href": "/research/eifukuji-kannon-pilgrimage-nishikaizuka-community/"
+  },
+  {
+    "update_id": "2026-07-25-eifukuji-heritage-research",
+    "date": "2026-07-25",
+    "temple_slug": "eifukuji-nishikaizuka",
+    "title": "永福寺研究論文「永福寺の阿弥陀三尊・十一面観音・十王像」を公開しました",
+    "summary": "本尊、札所本尊、追善供養像が共存する寺院物質文化を検証した6004字の研究論文です。",
+    "href": "/research/eifukuji-amida-kannon-juo-material-culture/"
+  },
+  {
+    "update_id": "2026-07-25-eifukuji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "eifukuji-nishikaizuka",
+    "title": "永福寺研究論文「永福寺の1504年開創と福王寺末寺関係」を公開しました",
+    "summary": "近世文書、除地、1859年風災、1882年と1997年の再建を検証した6005字の研究論文です。",
+    "href": "/research/eifukuji-1504-fukuoji-temple-network-reconstruction/"
+  },
+  {
+    "update_id": "2026-07-25-jurinji-pilgrimage-research",
+    "date": "2026-07-25",
+    "temple_slug": "jurinji-kamiohnogo",
+    "title": "十輪寺研究論文「1919年磐田郡33観音第2番十輪寺の巡礼景観」を公開しました",
+    "summary": "観音像、楼門、仁王像、本堂、庭園を移動と視線の構成から検証した6132字の研究論文です。",
+    "href": "/research/jurinji-1919-kannon-romon-nio-landscape/"
+  },
+  {
+    "update_id": "2026-07-25-jurinji-network-research",
+    "date": "2026-07-25",
+    "temple_slug": "jurinji-kamiohnogo",
+    "title": "十輪寺研究論文「十輪寺末寺実際寺と移動文化財の寺院間ネットワーク」を公開しました",
+    "summary": "可睡斎孫末、長応寺併合、閻魔像の移動を寺院間ネットワークとして検証した6129字の研究論文です。",
+    "href": "/research/jurinji-jissaiji-enma-mobile-heritage-network/"
+  },
+  {
+    "update_id": "2026-07-25-jurinji-yakushi-research",
+    "date": "2026-07-25",
+    "temple_slug": "jurinji-kamiohnogo",
+    "title": "十輪寺研究論文「十輪寺と長応寺薬師如来立像の移動史」を公開しました",
+    "summary": "1952年併合、薬師堂、おかめ寺、2005年市指定を文化財の伝来から検証した6208字の研究論文です。",
+    "href": "/research/jurinji-chooji-yakushi-statue-object-biography/"
+  },
+  {
     "update_id": "2026-07-25-gasshoji-urban-research",
     "date": "2026-07-25",
     "temple_slug": "gasshoji-nakaizumi",

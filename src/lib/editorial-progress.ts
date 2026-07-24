@@ -85,9 +85,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "jurinji-kamiohnogo", name: "十輪寺", stage: "調査・執筆" },
-  { slug: "eifukuji-nishikaizuka", name: "永福寺", stage: "調査・執筆" },
-  { slug: "kongoji-mitsuke", name: "金剛寺", stage: "調査・執筆" },
+  { slug: "rinpoin-nishikaizuka", name: "林宝院", stage: "調査・執筆" },
+  { slug: "honshoji-kounodai", name: "本性寺", stage: "調査・執筆" },
+  { slug: "genmyoji-mitsuke", name: "玄妙寺", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -951,6 +951,69 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 14,
       href: "/research/gasshoji-nakaizumi-urbanization-corporation-place-memory/",
     } as const;
+    const jurinjiHistoryPublication = {
+      title: "十輪寺と長応寺薬師如来立像の移動史",
+      characterCount: 6208,
+      illustrationCount: 6,
+      sourceCount: 11,
+      href: "/research/jurinji-chooji-yakushi-statue-object-biography/",
+    } as const;
+    const jurinjiHeritagePublication = {
+      title: "十輪寺末寺実際寺と移動文化財の寺院間ネットワーク",
+      characterCount: 6129,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/jurinji-jissaiji-enma-mobile-heritage-network/",
+    } as const;
+    const jurinjiCommunityPublication = {
+      title: "1919年磐田郡33観音第2番十輪寺の巡礼景観",
+      characterCount: 6132,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/jurinji-1919-kannon-romon-nio-landscape/",
+    } as const;
+    const eifukujiHistoryPublication = {
+      title: "永福寺の1504年開創と福王寺末寺関係",
+      characterCount: 6005,
+      illustrationCount: 6,
+      sourceCount: 8,
+      href: "/research/eifukuji-1504-fukuoji-temple-network-reconstruction/",
+    } as const;
+    const eifukujiHeritagePublication = {
+      title: "永福寺の阿弥陀三尊・十一面観音・十王像",
+      characterCount: 6004,
+      illustrationCount: 6,
+      sourceCount: 11,
+      href: "/research/eifukuji-amida-kannon-juo-material-culture/",
+    } as const;
+    const eifukujiCommunityPublication = {
+      title: "永福寺の観音巡礼と西貝塚地域社会",
+      characterCount: 6003,
+      illustrationCount: 6,
+      sourceCount: 11,
+      href: "/research/eifukuji-kannon-pilgrimage-nishikaizuka-community/",
+    } as const;
+    const kongojiHistoryPublication = {
+      title: "金剛寺の1424年・1593年・1610年代をどう読むか",
+      characterCount: 6013,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/kongoji-1424-1593-1610s-foundation-chronology/",
+    } as const;
+    const kongojiHeritagePublication = {
+      title: "海蔵寺―金剛寺―興徳寺の曹洞宗門流",
+      characterCount: 6003,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/kongoji-kaizoji-kotokuji-soto-lineage-network/",
+    } as const;
+    const kongojiCommunityPublication = {
+      title: "寺子屋・報徳・大峰講・坐禅会の金剛寺",
+      characterCount: 6003,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/kongoji-terakoya-hotoku-omine-zazen-public-history/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -1184,6 +1247,24 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? gasshojiHeritagePublication
           : temple.slug === "gasshoji-nakaizumi" && angle.key === "community"
             ? gasshojiCommunityPublication
+          : temple.slug === "jurinji-kamiohnogo" && angle.key === "history"
+            ? jurinjiHistoryPublication
+          : temple.slug === "jurinji-kamiohnogo" && angle.key === "heritage"
+            ? jurinjiHeritagePublication
+          : temple.slug === "jurinji-kamiohnogo" && angle.key === "community"
+            ? jurinjiCommunityPublication
+          : temple.slug === "eifukuji-nishikaizuka" && angle.key === "history"
+            ? eifukujiHistoryPublication
+          : temple.slug === "eifukuji-nishikaizuka" && angle.key === "heritage"
+            ? eifukujiHeritagePublication
+          : temple.slug === "eifukuji-nishikaizuka" && angle.key === "community"
+            ? eifukujiCommunityPublication
+          : temple.slug === "kongoji-mitsuke" && angle.key === "history"
+            ? kongojiHistoryPublication
+          : temple.slug === "kongoji-mitsuke" && angle.key === "heritage"
+            ? kongojiHeritagePublication
+          : temple.slug === "kongoji-mitsuke" && angle.key === "community"
+            ? kongojiCommunityPublication
           : undefined;
 
     return {
