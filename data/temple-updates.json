@@ -1,5 +1,101 @@
 [
   {
+    "update_id": "2026-07-25-myohoji-pilgrimage-research",
+    "date": "2026-07-25",
+    "temple_slug": "myohoji-ikeda",
+    "title": "妙法寺研究論文「池田妙法寺の薬師・観音・新四国札所の重層」を公開しました",
+    "summary": "異なる3霊場と境内諸尊を検証した6197字の研究論文です。",
+    "href": "/research/myohoji-ikeda-yakushi-kannon-pilgrimage/"
+  },
+  {
+    "update_id": "2026-07-25-myohoji-community-research",
+    "date": "2026-07-25",
+    "temple_slug": "myohoji-ikeda",
+    "title": "妙法寺研究論文「池田宿・天竜川渡船と妙法寺領3石」を公開しました",
+    "summary": "渡船村・寺領・河川交通を検証した6257字の研究論文です。",
+    "href": "/research/myohoji-ikeda-ferry-village-land/"
+  },
+  {
+    "update_id": "2026-07-25-myohoji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "myohoji-ikeda",
+    "title": "妙法寺研究論文「池田妙法寺の1412年草創と1602年曹洞宗化」を公開しました",
+    "summary": "草創伝承・中絶・宗派再編を検証した6328字の研究論文です。",
+    "href": "/research/myohoji-ikeda-1412-1602-conversion/"
+  },
+  {
+    "update_id": "2026-07-25-yofukuji-community-research",
+    "date": "2026-07-25",
+    "temple_slug": "yofukuji-shimohongo",
+    "title": "養福寺研究論文「養福寺の稲荷勧請・祭礼と地域的公共性」を公開しました",
+    "summary": "境内稲荷・祭礼・地域利用を検証した7413字の研究論文です。",
+    "href": "/research/yofukuji-shimohongo-inari-community/"
+  },
+  {
+    "update_id": "2026-07-25-yofukuji-disaster-research",
+    "date": "2026-07-25",
+    "temple_slug": "yofukuji-shimohongo",
+    "title": "養福寺研究論文「養福寺の火災・安政東海地震と1000日勧化」を公開しました",
+    "summary": "火災・地震・勧化による再建史を検証した7503字の研究論文です。",
+    "href": "/research/yofukuji-shimohongo-fires-1854-reconstruction/"
+  },
+  {
+    "update_id": "2026-07-25-yofukuji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "yofukuji-shimohongo",
+    "title": "養福寺研究論文「養福寺の1599年阿弥陀庵と1724年開山」を公開しました",
+    "summary": "庵室・寺領・曹洞宗法系の3段階成立を検証した7522字の研究論文です。",
+    "href": "/research/yofukuji-shimohongo-1599-1724-hermitage/"
+  },
+  {
+    "update_id": "2026-07-25-rinshoji-community-research",
+    "date": "2026-07-25",
+    "temple_slug": "rinshoji-kodateno",
+    "title": "林昌寺研究論文「小立野村の開墾・東海道・池田の渡しと林昌寺」を公開しました",
+    "summary": "村落形成・旧道・渡船の地域史を検証した6139字の研究論文です。",
+    "href": "/research/rinshoji-kodateno-village-tokaido-ikeda/"
+  },
+  {
+    "update_id": "2026-07-25-rinshoji-heritage-research",
+    "date": "2026-07-25",
+    "temple_slug": "rinshoji-kodateno",
+    "title": "林昌寺研究論文「林昌寺木造薬師三尊仏の物質文化史」を公開しました",
+    "summary": "薬師三尊仏の制作・伝来・保存史を検証した6159字の研究論文です。",
+    "href": "/research/rinshoji-kodateno-yakushi-triad-heritage/"
+  },
+  {
+    "update_id": "2026-07-25-rinshoji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "rinshoji-kodateno",
+    "title": "林昌寺研究論文「林昌寺の天正年間改宗と1650年法地格」を公開しました",
+    "summary": "宗派転換・本末関係・法地格を検証した6161字の研究論文です。",
+    "href": "/research/rinshoji-kodateno-tensho-conversion-hochi/"
+  },
+  {
+    "update_id": "2026-07-25-fukuoji-morimoto-network-research",
+    "date": "2026-07-25",
+    "temple_slug": "fukuoji-morimoto",
+    "title": "福王寺研究論文「森本福王寺を結節点とする龍泉院法系と末寺群」を公開しました",
+    "summary": "山間本寺と天竜川東岸の末寺網を検証した6215字の研究論文です。",
+    "href": "/research/fukuoji-morimoto-ryusenin-subtemple-network/"
+  },
+  {
+    "update_id": "2026-07-25-fukuoji-morimoto-land-research",
+    "date": "2026-07-25",
+    "temple_slug": "fukuoji-morimoto",
+    "title": "福王寺研究論文「森本福王寺の黒印3石・朱印27石2斗再検討」を公開しました",
+    "summary": "異なる寺領数値と文書系統を検証した6248字の研究論文です。",
+    "href": "/research/fukuoji-morimoto-black-red-seal-land/"
+  },
+  {
+    "update_id": "2026-07-25-fukuoji-morimoto-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "fukuoji-morimoto",
+    "title": "福王寺研究論文「森本福王寺の弘治年間開創と1593年曹洞宗化」を公開しました",
+    "summary": "臨済宗開創・曹洞宗化・法地格を検証した6287字の研究論文です。",
+    "href": "/research/fukuoji-morimoto-1555-1593-conversion/"
+  },
+  {
     "update_id": "2026-07-25-toyodain-material-research",
     "date": "2026-07-25",
     "temple_slug": "toyodain-kegojima",

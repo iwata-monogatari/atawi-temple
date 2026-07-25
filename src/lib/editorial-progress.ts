@@ -86,8 +86,8 @@ const templeAngles = [
 
 export const activeResearchTemples = [
   { slug: "kotokuji-morishita", name: "興徳寺", stage: "調査・執筆" },
-  { slug: "yofukuji-shimohongo", name: "養福寺", stage: "調査・執筆" },
-  { slug: "myohoji-ikeda", name: "妙法寺", stage: "調査・執筆" },
+  { slug: "seidoin-ikeda", name: "誓渡院", stage: "調査・執筆" },
+  { slug: "daienji-kamo", name: "大圓寺", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -1812,6 +1812,90 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 14,
       href: "/research/toyodain-kegojima-1493-1589-1596/",
     } as const;
+    const fukuojiMorimotoHistoryPublication = {
+      title: "森本福王寺の弘治年間開創と1593年曹洞宗化",
+      characterCount: 6287,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/fukuoji-morimoto-1555-1593-conversion/",
+    } as const;
+    const fukuojiMorimotoHeritagePublication = {
+      title: "森本福王寺の黒印3石・朱印27石2斗再検討",
+      characterCount: 6248,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/fukuoji-morimoto-black-red-seal-land/",
+    } as const;
+    const fukuojiMorimotoCommunityPublication = {
+      title: "森本福王寺を結節点とする龍泉院法系と末寺群",
+      characterCount: 6215,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/fukuoji-morimoto-ryusenin-subtemple-network/",
+    } as const;
+    const rinshojiHistoryPublication = {
+      title: "林昌寺の天正年間改宗と1650年法地格",
+      characterCount: 6161,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/rinshoji-kodateno-tensho-conversion-hochi/",
+    } as const;
+    const rinshojiHeritagePublication = {
+      title: "林昌寺木造薬師三尊仏の物質文化史",
+      characterCount: 6159,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/rinshoji-kodateno-yakushi-triad-heritage/",
+    } as const;
+    const rinshojiCommunityPublication = {
+      title: "小立野村の開墾・東海道・池田の渡しと林昌寺",
+      characterCount: 6139,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/rinshoji-kodateno-village-tokaido-ikeda/",
+    } as const;
+    const yofukujiHistoryPublication = {
+      title: "養福寺の1599年阿弥陀庵と1724年開山",
+      characterCount: 7522,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/yofukuji-shimohongo-1599-1724-hermitage/",
+    } as const;
+    const yofukujiHeritagePublication = {
+      title: "養福寺の火災・安政東海地震と1000日勧化",
+      characterCount: 7503,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/yofukuji-shimohongo-fires-1854-reconstruction/",
+    } as const;
+    const yofukujiCommunityPublication = {
+      title: "養福寺の稲荷勧請・祭礼と地域的公共性",
+      characterCount: 7413,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/yofukuji-shimohongo-inari-community/",
+    } as const;
+    const myohojiHistoryPublication = {
+      title: "池田妙法寺の1412年草創と1602年曹洞宗化",
+      characterCount: 6328,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/myohoji-ikeda-1412-1602-conversion/",
+    } as const;
+    const myohojiHeritagePublication = {
+      title: "池田妙法寺の薬師・観音・新四国札所の重層",
+      characterCount: 6197,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/myohoji-ikeda-yakushi-kannon-pilgrimage/",
+    } as const;
+    const myohojiCommunityPublication = {
+      title: "池田宿・天竜川渡船と妙法寺領3石",
+      characterCount: 6257,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/myohoji-ikeda-ferry-village-land/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -2291,6 +2375,30 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? toyodainHeritagePublication
           : temple.slug === "toyodain-kegojima" && angle.key === "community"
             ? toyodainCommunityPublication
+          : temple.slug === "fukuoji-morimoto" && angle.key === "history"
+            ? fukuojiMorimotoHistoryPublication
+          : temple.slug === "fukuoji-morimoto" && angle.key === "heritage"
+            ? fukuojiMorimotoHeritagePublication
+          : temple.slug === "fukuoji-morimoto" && angle.key === "community"
+            ? fukuojiMorimotoCommunityPublication
+          : temple.slug === "rinshoji-kodateno" && angle.key === "history"
+            ? rinshojiHistoryPublication
+          : temple.slug === "rinshoji-kodateno" && angle.key === "heritage"
+            ? rinshojiHeritagePublication
+          : temple.slug === "rinshoji-kodateno" && angle.key === "community"
+            ? rinshojiCommunityPublication
+          : temple.slug === "yofukuji-shimohongo" && angle.key === "history"
+            ? yofukujiHistoryPublication
+          : temple.slug === "yofukuji-shimohongo" && angle.key === "heritage"
+            ? yofukujiHeritagePublication
+          : temple.slug === "yofukuji-shimohongo" && angle.key === "community"
+            ? yofukujiCommunityPublication
+          : temple.slug === "myohoji-ikeda" && angle.key === "history"
+            ? myohojiHistoryPublication
+          : temple.slug === "myohoji-ikeda" && angle.key === "heritage"
+            ? myohojiHeritagePublication
+          : temple.slug === "myohoji-ikeda" && angle.key === "community"
+            ? myohojiCommunityPublication
           : undefined;
 
     return {
