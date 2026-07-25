@@ -87,7 +87,7 @@ const templeAngles = [
 export const activeResearchTemples = [
   { slug: "kinzoji-toyooka", name: "金蔵寺", stage: "調査・執筆" },
   { slug: "shojuji-oka", name: "聖寿寺", stage: "調査・執筆" },
-  { slug: "shingetsuji-ebijima", name: "心月寺", stage: "調査・執筆" },
+  { slug: "yushoji-toyooka", name: "雄照寺", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -596,7 +596,7 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
     } as const;
     const shinnyojiHistoryPublication = {
       title: "眞如寺の道休庵から妙心寺直末への制度化",
-      characterCount: 6002,
+      characterCount: 6001,
       illustrationCount: 6,
       sourceCount: 8,
       href: "/research/shinnyoji-dokyuan-shinnyoan-myoshinji-jikimatsu/",
@@ -1534,7 +1534,7 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
     } as const;
     const zohonjiCommunityPublication = {
       title: "五十子村字東本田と蔵本寺領",
-      characterCount: 6011,
+      characterCount: 6009,
       illustrationCount: 6,
       sourceCount: 14,
       href: "/research/zohonji-ikago-temple-land-1722/",
@@ -1555,7 +1555,7 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
     } as const;
     const rengakujiCommunityPublication = {
       title: "1873年中島分校と蓮覚寺本堂",
-      characterCount: 6005,
+      characterCount: 6004,
       illustrationCount: 6,
       sourceCount: 18,
       href: "/research/rengakuji-1873-nakajima-branch-school/",
@@ -1580,6 +1580,48 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       illustrationCount: 6,
       sourceCount: 10,
       href: "/research/jikeian-komaba-jukeian-name-three-koku/",
+    } as const;
+    const ganjojiHistoryPublication = {
+      title: "平間願成寺の1533年開基と明堂",
+      characterCount: 6045,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/ganjoji-1533-meido-shojuji-lineage/",
+    } as const;
+    const ganjojiHeritagePublication = {
+      title: "地蔵本尊の願成寺が観音霊場第6番となる構造",
+      characterCount: 6020,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/ganjoji-jizo-iwata-33-kannon-no6/",
+    } as const;
+    const ganjojiCommunityPublication = {
+      title: "平間願成寺の寺子屋と「高山師」",
+      characterCount: 6029,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/ganjoji-takayama-terakoya-hirama-education/",
+    } as const;
+    const shingetsujiHistoryPublication = {
+      title: "海老島心月寺の1575年宗哲再興と正眼院末寺制",
+      characterCount: 6002,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/shingetsuji-1575-soganin-sotetsu-two-koku/",
+    } as const;
+    const shingetsujiHeritagePublication = {
+      title: "心月寺1854年倒潰記録と1838年本堂再建の年代矛盾",
+      characterCount: 6011,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/shingetsuji-1854-collapse-1838-chronology/",
+    } as const;
+    const shingetsujiCommunityPublication = {
+      title: "心月寺仮校舎と海老島小学校の1872年・1873年問題",
+      characterCount: 6005,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/shingetsuji-1873-ebijima-school-temple/",
     } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
@@ -1994,6 +2036,18 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? jikeianHeritagePublication
           : temple.slug === "jikeian-komaba" && angle.key === "community"
             ? jikeianCommunityPublication
+          : temple.slug === "ganjoji-hirama" && angle.key === "history"
+            ? ganjojiHistoryPublication
+          : temple.slug === "ganjoji-hirama" && angle.key === "heritage"
+            ? ganjojiHeritagePublication
+          : temple.slug === "ganjoji-hirama" && angle.key === "community"
+            ? ganjojiCommunityPublication
+          : temple.slug === "shingetsuji-ebijima" && angle.key === "history"
+            ? shingetsujiHistoryPublication
+          : temple.slug === "shingetsuji-ebijima" && angle.key === "heritage"
+            ? shingetsujiHeritagePublication
+          : temple.slug === "shingetsuji-ebijima" && angle.key === "community"
+            ? shingetsujiCommunityPublication
           : undefined;
 
     return {

@@ -1,5 +1,53 @@
 [
   {
+    "update_id": "2026-07-25-shingetsuji-school-research",
+    "date": "2026-07-25",
+    "temple_slug": "shingetsuji-ebijima",
+    "title": "心月寺研究論文「心月寺仮校舎と海老島小学校の1872年・1873年問題」を公開しました",
+    "summary": "学制・寺院空間・村落公共性・学校跡記憶を検証した6004字の研究論文です。",
+    "href": "/research/shingetsuji-1873-ebijima-school-temple/"
+  },
+  {
+    "update_id": "2026-07-25-shingetsuji-earthquake-research",
+    "date": "2026-07-25",
+    "temple_slug": "shingetsuji-ebijima",
+    "title": "心月寺研究論文「心月寺1854年倒潰記録と1838年本堂再建の年代矛盾」を公開しました",
+    "summary": "安政東海地震の寺院被害記録を建築史から検証した6009字の研究論文です。",
+    "href": "/research/shingetsuji-1854-collapse-1838-chronology/"
+  },
+  {
+    "update_id": "2026-07-25-shingetsuji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "shingetsuji-ebijima",
+    "title": "心月寺研究論文「海老島心月寺の1575年宗哲再興と正眼院末寺制」を公開しました",
+    "summary": "開創伝承・寺領2石・聖観音札所を再構成した6001字の研究論文です。",
+    "href": "/research/shingetsuji-1575-soganin-sotetsu-two-koku/"
+  },
+  {
+    "update_id": "2026-07-25-ganjoji-education-research",
+    "date": "2026-07-25",
+    "temple_slug": "ganjoji-hirama",
+    "title": "願成寺研究論文「平間願成寺の寺子屋と『高山師』」を公開しました",
+    "summary": "学制以前の教育を人物・教材・境内空間から検証した6029字の研究論文です。",
+    "href": "/research/ganjoji-takayama-terakoya-hirama-education/"
+  },
+  {
+    "update_id": "2026-07-25-ganjoji-pilgrimage-research",
+    "date": "2026-07-25",
+    "temple_slug": "ganjoji-hirama",
+    "title": "願成寺研究論文「地蔵本尊の願成寺が観音霊場第6番となる構造」を公開しました",
+    "summary": "寺院本尊・札所本尊・再選定説を分離した6020字の研究論文です。",
+    "href": "/research/ganjoji-jizo-iwata-33-kannon-no6/"
+  },
+  {
+    "update_id": "2026-07-25-ganjoji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "ganjoji-hirama",
+    "title": "願成寺研究論文「平間願成寺の1533年開基と明堂」を公開しました",
+    "summary": "聖寿寺第5世恵才から伸びる曹洞宗法系を検証した6045字の研究論文です。",
+    "href": "/research/ganjoji-1533-meido-shojuji-lineage/"
+  },
+  {
     "update_id": "2026-07-25-jikeian-amida-research",
     "date": "2026-07-25",
     "temple_slug": "jikeian-komaba",
