@@ -86,7 +86,7 @@ const templeAngles = [
 
 export const activeResearchTemples = [
   { slug: "ganjoji-hirama", name: "願成寺", stage: "調査・執筆" },
-  { slug: "jikeian-komaba", name: "慈慶庵", stage: "調査・執筆" },
+  { slug: "shojuji-oka", name: "聖寿寺", stage: "調査・執筆" },
   { slug: "shingetsuji-ebijima", name: "心月寺", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
@@ -1560,6 +1560,27 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 18,
       href: "/research/rengakuji-1873-nakajima-branch-school/",
     } as const;
+    const jikeianHistoryPublication = {
+      title: "1633年頃の末寺帳にみえる慈慶庵",
+      characterCount: 6050,
+      illustrationCount: 6,
+      sourceCount: 10,
+      href: "/research/jikeian-komaba-1633-terminal-register/",
+    } as const;
+    const jikeianHeritagePublication = {
+      title: "福聚山慈慶庵の阿弥陀仏記録と庵寺景観",
+      characterCount: 6035,
+      illustrationCount: 6,
+      sourceCount: 10,
+      href: "/research/jikeian-komaba-amida-hermitage/",
+    } as const;
+    const jikeianCommunityPublication = {
+      title: "寿慶庵から慈慶庵へ―名称と3石寺領",
+      characterCount: 6000,
+      illustrationCount: 6,
+      sourceCount: 10,
+      href: "/research/jikeian-komaba-jukeian-name-three-koku/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -1967,6 +1988,12 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? rengakujiHeritagePublication
           : temple.slug === "rengakuji-ryuyonakajima" && angle.key === "community"
             ? rengakujiCommunityPublication
+          : temple.slug === "jikeian-komaba" && angle.key === "history"
+            ? jikeianHistoryPublication
+          : temple.slug === "jikeian-komaba" && angle.key === "heritage"
+            ? jikeianHeritagePublication
+          : temple.slug === "jikeian-komaba" && angle.key === "community"
+            ? jikeianCommunityPublication
           : undefined;
 
     return {

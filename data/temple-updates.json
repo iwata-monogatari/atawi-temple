@@ -1,5 +1,29 @@
 [
   {
+    "update_id": "2026-07-25-jikeian-amida-research",
+    "date": "2026-07-25",
+    "temple_slug": "jikeian-komaba",
+    "title": "慈慶庵研究論文「福聚山慈慶庵の阿弥陀仏記録と庵寺景観」を公開しました",
+    "summary": "本尊記録・庵という寺号・字屋敷廻・現況建物を検証した6035字の研究論文です。",
+    "href": "/research/jikeian-komaba-amida-hermitage/"
+  },
+  {
+    "update_id": "2026-07-25-jikeian-name-research",
+    "date": "2026-07-25",
+    "temple_slug": "jikeian-komaba",
+    "title": "慈慶庵研究論文「寿慶庵から慈慶庵へ―名称と3石寺領」を公開しました",
+    "summary": "異名・改称・翻刻差と3石寺領を史料照合した6000字の研究論文です。",
+    "href": "/research/jikeian-komaba-jukeian-name-three-koku/"
+  },
+  {
+    "update_id": "2026-07-25-jikeian-register-research",
+    "date": "2026-07-25",
+    "temple_slug": "jikeian-komaba",
+    "title": "慈慶庵研究論文「1633年頃の末寺帳にみえる慈慶庵」を公開しました",
+    "summary": "聖寿寺末・駒場村・3石という初期近世記録を検証した6050字の研究論文です。",
+    "href": "/research/jikeian-komaba-1633-terminal-register/"
+  },
+  {
     "update_id": "2026-07-25-rengakuji-school-research",
     "date": "2026-07-25",
     "temple_slug": "rengakuji-ryuyonakajima",
