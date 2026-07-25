@@ -85,9 +85,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "myofukuji-fukude", name: "妙福寺", stage: "調査・執筆" },
-  { slug: "ichiunsai-shimonobe", name: "一雲斉", stage: "調査・執筆" },
-  { slug: "saikoji-matsunokijima", name: "最廣寺", stage: "調査・執筆" },
+  { slug: "pillar-10-12", name: "総合研究10〜12", stage: "調査・執筆" },
+  { slug: "pillar-13-15", name: "総合研究13〜15", stage: "調査・執筆" },
+  { slug: "pillar-16-18", name: "総合研究16〜18", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -95,15 +95,86 @@ const existingTemples = allTemples.filter(
   (temple) => temple.status === "existing" && hasDetailPage(temple),
 );
 
-export const pillarProgressItems: EditorialProgressItem[] = pillarTitles.map((title, index) => ({
-  id: `pillar-${String(index + 1).padStart(2, "0")}`,
-  kind: "pillar",
-  title,
-  status: "planned",
-  characterCount: 0,
-  illustrationCount: 0,
-  sourceCount: 0,
-}));
+const pillarPublications = [
+  {
+    title: "磐田市の寺院史をどう読むか――古代寺院から現代寺院まで",
+    characterCount: 6010,
+    illustrationCount: 6,
+    sourceCount: 19,
+    href: "/research/iwata-temple-history-reading-ancient-to-modern/",
+  },
+  {
+    title: "磐田市の寺院分布――9地区と地形・街道・集落の関係",
+    characterCount: 6034,
+    illustrationCount: 6,
+    sourceCount: 19,
+    href: "/research/iwata-temple-distribution-nine-districts/",
+  },
+  {
+    title: "遠江国府と寺院――見付に重なる政治・宗教空間",
+    characterCount: 6045,
+    illustrationCount: 6,
+    sourceCount: 19,
+    href: "/research/totomi-kokufu-temples-mitsuke-political-religious-space/",
+  },
+  {
+    title: "遠江国分寺の成立と変容――古代国家仏教の地域的展開",
+    characterCount: 7274,
+    illustrationCount: 6,
+    sourceCount: 12,
+    href: "/research/iwata-pillar-04-totomi-kokubunji-regional-development/",
+  },
+  {
+    title: "磐田市の廃寺と寺院跡――失われた宗教空間を復元する",
+    characterCount: 6208,
+    illustrationCount: 6,
+    sourceCount: 13,
+    href: "/research/iwata-pillar-05-abandoned-temples-religious-spaces/",
+  },
+  {
+    title: "東海道見付宿と寺院――宿場町の葬送・祈願・地域秩序",
+    characterCount: 6105,
+    illustrationCount: 6,
+    sourceCount: 14,
+    href: "/research/iwata-pillar-06-mitsuke-post-town-temples/",
+  },
+  {
+    title: "天竜川と磐田の寺院――水害・渡河・治水の歴史",
+    characterCount: 7451,
+    illustrationCount: 6,
+    sourceCount: 12,
+    href: "/research/iwata-pillar-07-tenryu-river-temples/",
+  },
+  {
+    title: "遠州灘沿岸の寺院――漁業・海上安全・津波伝承",
+    characterCount: 7144,
+    illustrationCount: 6,
+    sourceCount: 12,
+    href: "/research/iwata-pillar-08-enshu-coast-temples/",
+  },
+  {
+    title: "磐田原台地の寺院――古墳・集落・信仰景観",
+    characterCount: 6996,
+    illustrationCount: 6,
+    sourceCount: 12,
+    href: "/research/iwata-pillar-09-iwatahara-plateau-temples/",
+  },
+] as const;
+
+export const pillarProgressItems: EditorialProgressItem[] = pillarTitles.map((title, index) => {
+  const publication = pillarPublications[index];
+  return {
+    id: `pillar-${String(index + 1).padStart(2, "0")}`,
+    kind: "pillar",
+    title: publication?.title || title,
+    status: publication ? "published" : "planned",
+    characterCount: publication?.characterCount || 0,
+    illustrationCount: publication?.illustrationCount || 0,
+    sourceCount: publication?.sourceCount || 0,
+    href: publication?.href,
+    updatedAt: publication ? "2026-07-25" : undefined,
+  };
+});
 
 export const templeProgressItems: EditorialProgressItem[] = existingTemples.flatMap((temple) =>
   templeAngles.map((angle) => {
@@ -435,7 +506,7 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
     } as const;
     const kindaijiHeritagePublication = {
       title: "金台寺の阿弥陀本尊と薬師霊場",
-      characterCount: 6023,
+      characterCount: 6613,
       illustrationCount: 6,
       sourceCount: 7,
       href: "/research/kindaiji-amida-yakushi-pilgrimage-dual-devotion/",
@@ -1191,7 +1262,7 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
     } as const;
     const manpukuji819HeritagePublication = {
       title: "掛塚の満福寺・萬福寺と「万福寺領3石」",
-      characterCount: 6055,
+      characterCount: 6612,
       illustrationCount: 6,
       sourceCount: 14,
       href: "/research/manpukuji-kaketsuka-819-namesake-temples-three-koku/",
@@ -1527,7 +1598,7 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
     } as const;
     const zohonjiHeritagePublication = {
       title: "蔵本寺の地蔵菩薩記録と境内石造物",
-      characterCount: 6002,
+      characterCount: 6614,
       illustrationCount: 6,
       sourceCount: 14,
       href: "/research/zohonji-ikago-jizo-material-culture/",
@@ -1569,7 +1640,7 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
     } as const;
     const jikeianHeritagePublication = {
       title: "福聚山慈慶庵の阿弥陀仏記録と庵寺景観",
-      characterCount: 6035,
+      characterCount: 6590,
       illustrationCount: 6,
       sourceCount: 10,
       href: "/research/jikeian-komaba-amida-hermitage/",
@@ -1958,6 +2029,195 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       illustrationCount: 6,
       sourceCount: 18,
       href: "/research/daienji-kamo-teradani-water-memorial/",
+    } as const;
+    const shokyuinHistoryPublication = {
+      title: "1624年開創伝承と松久院・永江院の寺院ネットワーク",
+      characterCount: 6035,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/shokyuin-mitsue-1624-yokoin-network/",
+    } as const;
+    const shokyuinHeritagePublication = {
+      title: "松久院と1875年三家学校",
+      characterCount: 6574,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/shokyuin-mitsue-mitsue-school-1875/",
+    } as const;
+    const shokyuinCommunityPublication = {
+      title: "松久院境内の永照塔・袖ケ浦33観音・遠州大念仏",
+      characterCount: 6583,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/shokyuin-mitsue-eisho-pilgrimage-dainenbutsu/",
+    } as const;
+    const hoonanHistoryPublication = {
+      title: "上野部法音庵の1472年開創と川僧慧済",
+      characterCount: 6110,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/hoonan-kaminobe-1472-sosen-keisai/",
+    } as const;
+    const hoonanHeritagePublication = {
+      title: "法音庵の十一面観音・六地蔵・2002年伽藍更新",
+      characterCount: 6038,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/hoonan-kaminobe-kannon-six-jizo-rebuilding/",
+    } as const;
+    const hoonanCommunityPublication = {
+      title: "一雲斎から法音庵・東林庵へ広がる15世紀末庵網",
+      characterCount: 6042,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/hoonan-kaminobe-ichigunsai-branch-network/",
+    } as const;
+    const tenryuinHistoryPublication = {
+      title: "天龍院の1528年創立と松井氏菩提寺形成",
+      characterCount: 7335,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/tenryuin-kaminobe-1528-matsui-eigenji/",
+    } as const;
+    const tenryuinHeritagePublication = {
+      title: "天龍院の松井氏首塚と供養塔",
+      characterCount: 7342,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/tenryuin-kaminobe-matsui-head-mound/",
+    } as const;
+    const tenryuinCommunityPublication = {
+      title: "天龍院の朱印高9石・末寺4宇と観音札所",
+      characterCount: 7357,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/tenryuin-kaminobe-nine-koku-temple-network/",
+    } as const;
+    const saikojiMatsunokijimaHistoryPublication = {
+      title: "最廣寺の1592年開創と高薗・学園寺法系",
+      characterCount: 7268,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/saikoji-matsunokijima-1592-kozo-lineage/",
+    } as const;
+    const saikojiMatsunokijimaHeritagePublication = {
+      title: "輪中集落・松之木島と最廣寺",
+      characterCount: 7277,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/saikoji-matsunokijima-waju-flood-village/",
+    } as const;
+    const saikojiMatsunokijimaCommunityPublication = {
+      title: "最廣寺・最広寺・西広寺の表記史",
+      characterCount: 7302,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/saikoji-matsunokijima-school-name-variants/",
+    } as const;
+    const ichiunsaiHistoryPublication = {
+      title: "一雲斉の1418年創建伝承と如仲・真巌",
+      characterCount: 6034,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/ichiunsai-shimonobe-1418-nyochu-shingan/",
+    } as const;
+    const ichiunsaiHeritagePublication = {
+      title: "一雲斉の朱印高15石・1579年禁伐文書・本尊記録",
+      characterCount: 6012,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/ichiunsai-shimonobe-15-koku-1579-deities/",
+    } as const;
+    const ichiunsaiCommunityPublication = {
+      title: "一雲斉第3世川僧慧済と末庵ネットワーク",
+      characterCount: 6071,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/ichiunsai-shimonobe-sosen-keisai-network/",
+    } as const;
+    const myofukujiHistoryPublication = {
+      title: "妙福寺の1888〜2014年制度史",
+      characterCount: 6023,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/myofukuji-fukude-1888-2014-institutional-history/",
+    } as const;
+    const myofukujiHeritagePublication = {
+      title: "妙福寺旧蔵1894年鰹釣船絵馬の再同定",
+      characterCount: 6055,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/myofukuji-fukude-1894-bonito-votive-painting/",
+    } as const;
+    const myofukujiCommunityPublication = {
+      title: "妙福寺の清正公・鬼子母尊神と祈祷道場",
+      characterCount: 6002,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/myofukuji-fukude-seishoko-kishimojin-prayer/",
+    } as const;
+    const chikyoinHistoryPublication = {
+      title: "1921年郡誌に見えない智教院",
+      characterCount: 7189,
+      illustrationCount: 6,
+      sourceCount: 16,
+      href: "/research/chikyoin-shiraha-1921-absence/",
+    } as const;
+    const chikyoinHeritagePublication = {
+      title: "白羽・掛塚湊の地域空間と智教院",
+      characterCount: 7129,
+      illustrationCount: 6,
+      sourceCount: 16,
+      href: "/research/chikyoin-shiraha-kakezuka-coastal-history/",
+    } as const;
+    const chikyoinCommunityPublication = {
+      title: "磐田市の日蓮宗5寺と智教院",
+      characterCount: 7172,
+      illustrationCount: 6,
+      sourceCount: 16,
+      href: "/research/chikyoin-shiraha-nichiren-network/",
+    } as const;
+    const honmyoinHistoryPublication = {
+      title: "本妙院の単立寺院としての制度的位置",
+      characterCount: 9088,
+      illustrationCount: 5,
+      sourceCount: 16,
+      href: "/research/honmyoin-iwai-independent-status/",
+    } as const;
+    const honmyoinHeritagePublication = {
+      title: "岩井・磐田原台地の歴史景観と本妙院",
+      characterCount: 9030,
+      illustrationCount: 5,
+      sourceCount: 16,
+      href: "/research/honmyoin-iwai-iwatahara-landscape/",
+    } as const;
+    const honmyoinCommunityPublication = {
+      title: "同名寺院から本妙院を識別する方法",
+      characterCount: 9044,
+      illustrationCount: 5,
+      sourceCount: 16,
+      href: "/research/honmyoin-iwai-identity-disambiguation/",
+    } as const;
+    const myomanjiHistoryPublication = {
+      title: "妙満寺「宝永17年」草創記録の史料批判",
+      characterCount: 6073,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/myomanji-kaminobe-hoei-17-nikkan/",
+    } as const;
+    const myomanjiHeritagePublication = {
+      title: "妙満寺の七面堂・祈祷案内・慰霊空間",
+      characterCount: 6000,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/myomanji-kaminobe-shichimendo-prayer-memory/",
+    } as const;
+    const myomanjiCommunityPublication = {
+      title: "妙恩寺末・妙満寺の天竜川横断ネットワーク",
+      characterCount: 6048,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/myomanji-kaminobe-myo-onji-tenryu-network/",
     } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
@@ -2480,6 +2740,60 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? daienjiHeritagePublication
           : temple.slug === "daienji-kamo" && angle.key === "community"
             ? daienjiCommunityPublication
+          : temple.slug === "shokyuin-mitsue" && angle.key === "history"
+            ? shokyuinHistoryPublication
+          : temple.slug === "shokyuin-mitsue" && angle.key === "heritage"
+            ? shokyuinHeritagePublication
+          : temple.slug === "shokyuin-mitsue" && angle.key === "community"
+            ? shokyuinCommunityPublication
+          : temple.slug === "hoonan-kaminobe" && angle.key === "history"
+            ? hoonanHistoryPublication
+          : temple.slug === "hoonan-kaminobe" && angle.key === "heritage"
+            ? hoonanHeritagePublication
+          : temple.slug === "hoonan-kaminobe" && angle.key === "community"
+            ? hoonanCommunityPublication
+          : temple.slug === "tenryuin-kaminobe" && angle.key === "history"
+            ? tenryuinHistoryPublication
+          : temple.slug === "tenryuin-kaminobe" && angle.key === "heritage"
+            ? tenryuinHeritagePublication
+          : temple.slug === "tenryuin-kaminobe" && angle.key === "community"
+            ? tenryuinCommunityPublication
+          : temple.slug === "saikoji-matsunokijima" && angle.key === "history"
+            ? saikojiMatsunokijimaHistoryPublication
+          : temple.slug === "saikoji-matsunokijima" && angle.key === "heritage"
+            ? saikojiMatsunokijimaHeritagePublication
+          : temple.slug === "saikoji-matsunokijima" && angle.key === "community"
+            ? saikojiMatsunokijimaCommunityPublication
+          : temple.slug === "ichiunsai-shimonobe" && angle.key === "history"
+            ? ichiunsaiHistoryPublication
+          : temple.slug === "ichiunsai-shimonobe" && angle.key === "heritage"
+            ? ichiunsaiHeritagePublication
+          : temple.slug === "ichiunsai-shimonobe" && angle.key === "community"
+            ? ichiunsaiCommunityPublication
+          : temple.slug === "myofukuji-fukude" && angle.key === "history"
+            ? myofukujiHistoryPublication
+          : temple.slug === "myofukuji-fukude" && angle.key === "heritage"
+            ? myofukujiHeritagePublication
+          : temple.slug === "myofukuji-fukude" && angle.key === "community"
+            ? myofukujiCommunityPublication
+          : temple.slug === "chikyoin-shiraha" && angle.key === "history"
+            ? chikyoinHistoryPublication
+          : temple.slug === "chikyoin-shiraha" && angle.key === "heritage"
+            ? chikyoinHeritagePublication
+          : temple.slug === "chikyoin-shiraha" && angle.key === "community"
+            ? chikyoinCommunityPublication
+          : temple.slug === "honmyoin-iwai" && angle.key === "history"
+            ? honmyoinHistoryPublication
+          : temple.slug === "honmyoin-iwai" && angle.key === "heritage"
+            ? honmyoinHeritagePublication
+          : temple.slug === "honmyoin-iwai" && angle.key === "community"
+            ? honmyoinCommunityPublication
+          : temple.slug === "myomanji-kaminobe" && angle.key === "history"
+            ? myomanjiHistoryPublication
+          : temple.slug === "myomanji-kaminobe" && angle.key === "heritage"
+            ? myomanjiHeritagePublication
+          : temple.slug === "myomanji-kaminobe" && angle.key === "community"
+            ? myomanjiCommunityPublication
           : undefined;
 
     return {

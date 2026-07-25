@@ -49,7 +49,17 @@ const districtProgress = [...templeGroups.values()].reduce((districts, items) =>
   districts.set(district, current);
   return districts;
 }, new Map<string, { district: string; published: number; total: number; temples: number; completedTemples: number }>());
-const latestPublishedTempleNames = new Set(["興徳寺", "誓渡院", "大圓寺"]);
+const latestPublishedTempleNames = new Set([
+  "松久院",
+  "法音庵",
+  "天龍院",
+  "最廣寺",
+  "一雲斉",
+  "妙福寺",
+  "智教院",
+  "妙満寺",
+  "本妙院",
+]);
 const latestPublished = [...templeGroups.entries()]
   .filter(([templeName]) => latestPublishedTempleNames.has(templeName))
   .map(([templeName, items]) => ({ templeName, items }));
@@ -76,10 +86,10 @@ const progressSignature = `${completedCount}:${activeResearchTemples.map((temple
       <span class="activity-pulse" aria-hidden="true"></span>
       <div>
         <p class="activity-kicker">自動確認中</p>
-        <strong>3寺院・9本を並行して調査・執筆しています</strong>
+        <strong>総合研究3枠・9本を並行して調査・執筆しています</strong>
       </div>
     </div>
-    <div class="activity-temples" aria-label="現在執筆中の寺院">
+    <div class="activity-temples" aria-label="現在執筆中の総合研究">
       {activeResearchTemples.map((temple) => <span>{temple.name}</span>)}
     </div>
     <div class="activity-monitor" aria-live="polite">
@@ -117,7 +127,7 @@ const progressSignature = `${completedCount}:${activeResearchTemples.map((temple
       <article><span>公開完了</span><strong>{completedCount}</strong><small>本</small></article>
       <article><span>残り</span><strong>{remainingCount}</strong><small>本</small></article>
       <article><span>完了寺院</span><strong>{publishedTempleCount}</strong><small>／96寺院</small></article>
-      <article><span>現在進行</span><strong>{activeResearchTemples.length}</strong><small>寺院・{activeResearchTemples.length * 3}本</small></article>
+      <article><span>現在進行</span><strong>{activeResearchTemples.length}</strong><small>並行枠・{activeResearchTemples.length * 3}本</small></article>
     </div>
 
     <div class="dashboard-panels">

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">天龍院・松井氏・二俣城関連年表</title>
+  <desc id="desc">1514年の松井氏二俣入城、1528年の天龍院創立、1560年の桶狭間、1572年の二俣城落城、1603年の朱印高9石を配置した史料批判年表。</desc>
+  <rect width="1200" height="720" fill="#f7f7f5"/>
+  <text x="65" y="62" font-family="'Noto Serif JP',serif" font-size="30" font-weight="700" fill="#262626">天龍院・松井氏・二俣城の時間配置</text>
+  <text x="65" y="98" font-family="'Noto Sans JP',sans-serif" font-size="17" fill="#666">後代編纂史料が伝える記事内容年を、政治史上の画期と照合</text>
+  <line x1="100" y1="300" x2="1100" y2="300" stroke="#333" stroke-width="3"/>
+  <g font-family="'Noto Sans JP',sans-serif">
+    <g transform="translate(155 300)">
+      <circle r="12" fill="#406f8f"/>
+      <line y1="-12" y2="-76" stroke="#406f8f" stroke-width="2"/>
+      <text x="-35" y="-105" font-size="22" font-weight="700" fill="#406f8f">1514</text>
+      <text x="-74" y="-75" font-size="16" fill="#222">松井氏二俣入城</text>
+    </g>
+    <g transform="translate(305 300)">
+      <circle r="12" fill="#2f6f5e"/>
+      <line y1="12" y2="76" stroke="#2f6f5e" stroke-width="2"/>
+      <text x="-35" y="110" font-size="22" font-weight="700" fill="#2f6f5e">1528</text>
+      <text x="-73" y="140" font-size="16" fill="#222">天龍院創立・一貞開山</text>
+    </g>
+    <g transform="translate(540 300)">
+      <circle r="12" fill="#9d4b47"/>
+      <line y1="-12" y2="-76" stroke="#9d4b47" stroke-width="2"/>
+      <text x="-35" y="-105" font-size="22" font-weight="700" fill="#9d4b47">1560</text>
+      <text x="-83" y="-75" font-size="16" fill="#222">桶狭間・宗信戦死</text>
+    </g>
+    <g transform="translate(730 300)">
+      <circle r="12" fill="#c17d24"/>
+      <line y1="12" y2="76" stroke="#c17d24" stroke-width="2"/>
+      <text x="-35" y="110" font-size="22" font-weight="700" fill="#c17d24">1572</text>
+      <text x="-75" y="140" font-size="16" fill="#222">二俣城落城</text>
+      <text x="-106" y="165" font-size="14" fill="#666">郡誌「元亀元年」と要照合</text>
+    </g>
+    <g transform="translate(980 300)">
+      <circle r="12" fill="#76558d"/>
+      <line y1="-12" y2="-76" stroke="#76558d" stroke-width="2"/>
+      <text x="-35" y="-105" font-size="22" font-weight="700" fill="#76558d">1603</text>
+      <text x="-85" y="-75" font-size="16" fill="#222">徳川家康朱印高9石</text>
+    </g>
+  </g>
+  <rect x="95" y="505" width="1010" height="128" rx="7" fill="#e8ece9"/>
+  <text x="120" y="540" font-family="'Noto Sans JP',sans-serif" font-size="17" fill="#333">史料上の注意</text>
+  <text x="120" y="572" font-family="'Noto Sans JP',sans-serif" font-size="16" fill="#333">1528年・1603年は1921年刊『静岡県磐田郡誌』等に記載された記事内容年。</text>
+  <text x="120" y="602" font-family="'Noto Sans JP',sans-serif" font-size="16" fill="#333">首塚・供養塔の指定年代は室町時代だが、個々の石造物の造立年と宗信埋葬年の一致は別途検証を要する。</text>
+  <text x="65" y="682" font-family="'Noto Sans JP',sans-serif" font-size="14" fill="#777">出典：『静岡県磐田郡誌』、磐田市公開資料、二俣城関係資料を基にATAWI TEMPLE作成。</text>
+</svg>

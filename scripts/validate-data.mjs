@@ -255,7 +255,9 @@ for (const update of templeUpdates) {
   const label = `temple update ${update.update_id || "(missing id)"}`;
   requireText(update, "update_id", label);
   requireText(update, "date", label);
-  requireText(update, "temple_slug", label);
+  if (update.kind !== "research") {
+    requireText(update, "temple_slug", label);
+  }
   requireText(update, "title", label);
   requireText(update, "summary", label);
   if (update.temple_slug && !templeSlugs.has(update.temple_slug)) {

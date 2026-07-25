@@ -121,6 +121,18 @@ import { myohojiIkedaResearchArticles } from "./research-articles-myohoji-ikeda"
 import { kotokujiResearchArticles } from "./research-articles-kotokuji-morishita";
 import { seidoinIkedaResearchArticles } from "./research-articles-seidoin-ikeda";
 import { daienjiKamoResearchArticles } from "./research-articles-daienji-kamo";
+import { shokyuinMitsueResearchArticles } from "./research-articles-shokyuin-mitsue";
+import { hoonanKaminobeResearchArticles } from "./research-articles-hoonan-kaminobe";
+import { tenryuinKaminobeResearchArticles } from "./research-articles-tenryuin-kaminobe";
+import { saikojiMatsunokijimaResearchArticles } from "./research-articles-saikoji-matsunokijima";
+import { ichiunsaiShimonobeResearchArticles } from "./research-articles-ichiunsai-shimonobe";
+import { myofukujiFukudeResearchArticles } from "./research-articles-myofukuji-fukude";
+import { chikyoinShirahaResearchArticles } from "./research-articles-chikyoin-shiraha";
+import { myomanjiKaminobeResearchArticles } from "./research-articles-myomanji-kaminobe";
+import { honmyoinIwaiResearchArticles } from "./research-articles-honmyoin-iwai";
+import { pillarResearchArticles01To03 } from "./research-articles-pillars-01-03";
+import { pillarResearchArticles04to06 } from "./research-articles-pillars-04-06";
+import { pillarResearchArticles07to09 } from "./research-articles-pillars-07-09";
 
 const kokubunjiFigures = {
   hall: {
@@ -554,6 +566,18 @@ export const researchArticles: ResearchArticle[] = [
   ...kotokujiResearchArticles,
   ...seidoinIkedaResearchArticles,
   ...daienjiKamoResearchArticles,
+  ...shokyuinMitsueResearchArticles,
+  ...hoonanKaminobeResearchArticles,
+  ...tenryuinKaminobeResearchArticles,
+  ...saikojiMatsunokijimaResearchArticles,
+  ...ichiunsaiShimonobeResearchArticles,
+  ...myofukujiFukudeResearchArticles,
+  ...chikyoinShirahaResearchArticles,
+  ...myomanjiKaminobeResearchArticles,
+  ...honmyoinIwaiResearchArticles,
+  ...pillarResearchArticles01To03,
+  ...pillarResearchArticles04to06,
+  ...pillarResearchArticles07to09,
 ];
 
 export function getResearchArticle(slug: string) {

@@ -1,5 +1,302 @@
 [
   {
+    "update_id": "2026-07-25-pillar-09-iwatahara",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田原台地の寺院」を公開しました",
+    "summary": "古墳・集落・信仰景観を検証した6996字の総合研究です。",
+    "href": "/research/iwata-pillar-09-iwatahara-plateau-temples/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-08-enshu-coast",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「遠州灘沿岸の寺院」を公開しました",
+    "summary": "漁業・海上安全・津波伝承を検証した7144字の総合研究です。",
+    "href": "/research/iwata-pillar-08-enshu-coast-temples/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-07-tenryu-river",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「天竜川と磐田の寺院」を公開しました",
+    "summary": "水害・渡河・治水の歴史を検証した7451字の総合研究です。",
+    "href": "/research/iwata-pillar-07-tenryu-river-temples/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-06-mitsuke-post-town",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「東海道見付宿と寺院」を公開しました",
+    "summary": "宿場町の葬送・祈願・地域秩序を検証した6105字の総合研究です。",
+    "href": "/research/iwata-pillar-06-mitsuke-post-town-temples/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-05-abandoned-temples",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の廃寺と寺院跡」を公開しました",
+    "summary": "失われた宗教空間の復元方法を検証した6208字の総合研究です。",
+    "href": "/research/iwata-pillar-05-abandoned-temples-religious-spaces/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-04-kokubunji",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「遠江国分寺の成立と変容」を公開しました",
+    "summary": "古代国家仏教の地域的展開を検証した7274字の総合研究です。",
+    "href": "/research/iwata-pillar-04-totomi-kokubunji-regional-development/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-03-kokufu",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「遠江国府と寺院」を公開しました",
+    "summary": "見付に重なる政治・宗教空間を検証した6045字の総合研究です。",
+    "href": "/research/totomi-kokufu-temples-mitsuke-political-religious-space/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-02-distribution",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の寺院分布」を公開しました",
+    "summary": "9地区と地形・街道・集落の関係を検証した6034字の総合研究です。",
+    "href": "/research/iwata-temple-distribution-nine-districts/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-01-history",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の寺院史をどう読むか」を公開しました",
+    "summary": "古代寺院から現代寺院までの史料読解を検証した6010字の総合研究です。",
+    "href": "/research/iwata-temple-history-reading-ancient-to-modern/"
+  },
+  {
+    "update_id": "2026-07-25-myomanji-material-research",
+    "date": "2026-07-25",
+    "temple_slug": "myomanji-kaminobe",
+    "title": "妙満寺研究論文「七面堂・祈祷案内・慰霊空間」を公開しました",
+    "summary": "現地写真から宗教実践の時間層を検証した6000字の研究論文です。",
+    "href": "/research/myomanji-kaminobe-shichimendo-prayer-memory/"
+  },
+  {
+    "update_id": "2026-07-25-myomanji-network-research",
+    "date": "2026-07-25",
+    "temple_slug": "myomanji-kaminobe",
+    "title": "妙満寺研究論文「妙恩寺末・天竜川横断ネットワーク」を公開しました",
+    "summary": "本末関係と河川交通を検証した6048字の研究論文です。",
+    "href": "/research/myomanji-kaminobe-myo-onji-tenryu-network/"
+  },
+  {
+    "update_id": "2026-07-25-myomanji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "myomanji-kaminobe",
+    "title": "妙満寺研究論文「宝永17年草創記録の史料批判」を公開しました",
+    "summary": "成立しない元号と日閑草創説を検証した6073字の研究論文です。",
+    "href": "/research/myomanji-kaminobe-hoei-17-nikkan/"
+  },
+  {
+    "update_id": "2026-07-25-honmyoin-identity-research",
+    "date": "2026-07-25",
+    "temple_slug": "honmyoin-iwai",
+    "title": "本妙院研究論文「同名寺院から本妙院を識別する方法」を公開しました",
+    "summary": "複合識別子と出典グラフを検討した9044字の研究論文です。",
+    "href": "/research/honmyoin-iwai-identity-disambiguation/"
+  },
+  {
+    "update_id": "2026-07-25-honmyoin-landscape-research",
+    "date": "2026-07-25",
+    "temple_slug": "honmyoin-iwai",
+    "title": "本妙院研究論文「岩井・磐田原台地の歴史景観」を公開しました",
+    "summary": "地番・GIS・筆界時系列を検討した9030字の研究論文です。",
+    "href": "/research/honmyoin-iwai-iwatahara-landscape/"
+  },
+  {
+    "update_id": "2026-07-25-honmyoin-status-research",
+    "date": "2026-07-25",
+    "temple_slug": "honmyoin-iwai",
+    "title": "本妙院研究論文「単立寺院としての制度的位置」を公開しました",
+    "summary": "法人制度と宗派情報を検証した9088字の研究論文です。",
+    "href": "/research/honmyoin-iwai-independent-status/"
+  },
+  {
+    "update_id": "2026-07-25-chikyoin-network-research",
+    "date": "2026-07-25",
+    "temple_slug": "chikyoin-shiraha",
+    "title": "智教院研究論文「磐田市の日蓮宗5寺と智教院」を公開しました",
+    "summary": "現行所属と歴史的法系を区別した7172字の研究論文です。",
+    "href": "/research/chikyoin-shiraha-nichiren-network/"
+  },
+  {
+    "update_id": "2026-07-25-chikyoin-coastal-research",
+    "date": "2026-07-25",
+    "temple_slug": "chikyoin-shiraha",
+    "title": "智教院研究論文「白羽・掛塚湊の地域空間」を公開しました",
+    "summary": "港湾生活圏と寺院立地を検証した7129字の研究論文です。",
+    "href": "/research/chikyoin-shiraha-kakezuka-coastal-history/"
+  },
+  {
+    "update_id": "2026-07-25-chikyoin-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "chikyoin-shiraha",
+    "title": "智教院研究論文「1921年郡誌に見えない智教院」を公開しました",
+    "summary": "不掲載という負の証拠を検証した7189字の研究論文です。",
+    "href": "/research/chikyoin-shiraha-1921-absence/"
+  },
+  {
+    "update_id": "2026-07-25-myofukuji-votive-research",
+    "date": "2026-07-25",
+    "temple_slug": "myofukuji-fukude",
+    "title": "妙福寺研究論文「旧蔵1894年鰹釣船絵馬の再同定」を公開しました",
+    "summary": "2点の奉納絵馬を識別した6612字の研究論文です。",
+    "href": "/research/myofukuji-fukude-1894-bonito-votive-painting/"
+  },
+  {
+    "update_id": "2026-07-25-myofukuji-prayer-research",
+    "date": "2026-07-25",
+    "temple_slug": "myofukuji-fukude",
+    "title": "妙福寺研究論文「清正公・鬼子母尊神と祈祷道場」を公開しました",
+    "summary": "複合的な礼拝実践を検証した6614字の研究論文です。",
+    "href": "/research/myofukuji-fukude-seishoko-kishimojin-prayer/"
+  },
+  {
+    "update_id": "2026-07-25-myofukuji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "myofukuji-fukude",
+    "title": "妙福寺研究論文「1888〜2014年制度史」を公開しました",
+    "summary": "説教庵から善徳山再建までを検証した6613字の研究論文です。",
+    "href": "/research/myofukuji-fukude-1888-2014-institutional-history/"
+  },
+  {
+    "update_id": "2026-07-25-ichiunsai-land-research",
+    "date": "2026-07-25",
+    "temple_slug": "ichiunsai-shimonobe",
+    "title": "一雲斉研究論文「朱印高15石・1579年禁伐文書・本尊記録」を公開しました",
+    "summary": "土地秩序・資源管理・尊名記録を検証した6012字の研究論文です。",
+    "href": "/research/ichiunsai-shimonobe-15-koku-1579-deities/"
+  },
+  {
+    "update_id": "2026-07-25-ichiunsai-network-research",
+    "date": "2026-07-25",
+    "temple_slug": "ichiunsai-shimonobe",
+    "title": "一雲斉研究論文「第3世川僧慧済と末庵ネットワーク」を公開しました",
+    "summary": "總持寺輪住伝承と末庵形成を検証した6071字の研究論文です。",
+    "href": "/research/ichiunsai-shimonobe-sosen-keisai-network/"
+  },
+  {
+    "update_id": "2026-07-25-ichiunsai-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "ichiunsai-shimonobe",
+    "title": "一雲斉研究論文「1418年創建伝承と如仲・真巌」を公開しました",
+    "summary": "請開山と開創者を分けて検証した6034字の研究論文です。",
+    "href": "/research/ichiunsai-shimonobe-1418-nyochu-shingan/"
+  },
+  {
+    "update_id": "2026-07-25-saikoji-matsunokijima-school-research",
+    "date": "2026-07-25",
+    "temple_slug": "saikoji-matsunokijima",
+    "title": "最廣寺研究論文「最廣寺・最広寺・西広寺の表記史」を公開しました",
+    "summary": "寺院名の異表記と学校所在を検証した7302字の研究論文です。",
+    "href": "/research/saikoji-matsunokijima-school-name-variants/"
+  },
+  {
+    "update_id": "2026-07-25-saikoji-matsunokijima-flood-research",
+    "date": "2026-07-25",
+    "temple_slug": "saikoji-matsunokijima",
+    "title": "最廣寺研究論文「輪中集落・松之木島と最廣寺」を公開しました",
+    "summary": "天竜川低地の寺院環境史を検証した7277字の研究論文です。",
+    "href": "/research/saikoji-matsunokijima-waju-flood-village/"
+  },
+  {
+    "update_id": "2026-07-25-saikoji-matsunokijima-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "saikoji-matsunokijima",
+    "title": "最廣寺研究論文「1592年開創と高薗・学園寺法系」を公開しました",
+    "summary": "成立伝承と本末関係を検証した7268字の研究論文です。",
+    "href": "/research/saikoji-matsunokijima-1592-kozo-lineage/"
+  },
+  {
+    "update_id": "2026-07-25-tenryuin-network-research",
+    "date": "2026-07-25",
+    "temple_slug": "tenryuin-kaminobe",
+    "title": "天龍院研究論文「朱印高9石・末寺4宇と観音札所」を公開しました",
+    "summary": "土地制度・法系・巡礼・講を検証した7357字の研究論文です。",
+    "href": "/research/tenryuin-kaminobe-nine-koku-temple-network/"
+  },
+  {
+    "update_id": "2026-07-25-tenryuin-memorial-research",
+    "date": "2026-07-25",
+    "temple_slug": "tenryuin-kaminobe",
+    "title": "天龍院研究論文「松井氏首塚と供養塔」を公開しました",
+    "summary": "首級埋葬伝承と指定史跡を検証した7342字の研究論文です。",
+    "href": "/research/tenryuin-kaminobe-matsui-head-mound/"
+  },
+  {
+    "update_id": "2026-07-25-tenryuin-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "tenryuin-kaminobe",
+    "title": "天龍院研究論文「1528年創立と松井氏菩提寺形成」を公開しました",
+    "summary": "松井氏・一貞和尚・永源寺法系を検証した7335字の研究論文です。",
+    "href": "/research/tenryuin-kaminobe-1528-matsui-eigenji/"
+  },
+  {
+    "update_id": "2026-07-25-hoonan-worship-research",
+    "date": "2026-07-25",
+    "temple_slug": "hoonan-kaminobe",
+    "title": "法音庵研究論文「十一面観音・六地蔵・2002年伽藍更新」を公開しました",
+    "summary": "礼拝対象と伽藍更新を検証した6038字の研究論文です。",
+    "href": "/research/hoonan-kaminobe-kannon-six-jizo-rebuilding/"
+  },
+  {
+    "update_id": "2026-07-25-hoonan-network-research",
+    "date": "2026-07-25",
+    "temple_slug": "hoonan-kaminobe",
+    "title": "法音庵研究論文「一雲斎から広がる15世紀末庵網」を公開しました",
+    "summary": "分派開創と授戒の地域網を検証した6042字の研究論文です。",
+    "href": "/research/hoonan-kaminobe-ichigunsai-branch-network/"
+  },
+  {
+    "update_id": "2026-07-25-hoonan-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "hoonan-kaminobe",
+    "title": "法音庵研究論文「1472年開創と川僧慧済」を公開しました",
+    "summary": "開創伝承と僧侶法系を検証した6110字の研究論文です。",
+    "href": "/research/hoonan-kaminobe-1472-sosen-keisai/"
+  },
+  {
+    "update_id": "2026-07-25-shokyuin-memory-research",
+    "date": "2026-07-25",
+    "temple_slug": "shokyuin-mitsue",
+    "title": "松久院研究論文「永照塔・袖ケ浦33観音・遠州大念仏」を公開しました",
+    "summary": "記念物・巡礼・儀礼を検証した6583字の研究論文です。",
+    "href": "/research/shokyuin-mitsue-eisho-pilgrimage-dainenbutsu/"
+  },
+  {
+    "update_id": "2026-07-25-shokyuin-school-research",
+    "date": "2026-07-25",
+    "temple_slug": "shokyuin-mitsue",
+    "title": "松久院研究論文「松久院と1875年三家学校」を公開しました",
+    "summary": "寺院と近代教育の接続を検証した6574字の研究論文です。",
+    "href": "/research/shokyuin-mitsue-mitsue-school-1875/"
+  },
+  {
+    "update_id": "2026-07-25-shokyuin-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "shokyuin-mitsue",
+    "title": "松久院研究論文「1624年開創伝承と永江院ネットワーク」を公開しました",
+    "summary": "開創・本末・移築伝承を検証した6590字の研究論文です。",
+    "href": "/research/shokyuin-mitsue-1624-yokoin-network/"
+  },
+  {
     "update_id": "2026-07-25-daienji-community-research",
     "date": "2026-07-25",
     "temple_slug": "daienji-kamo",
