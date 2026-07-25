@@ -133,6 +133,8 @@ import { honmyoinIwaiResearchArticles } from "./research-articles-honmyoin-iwai"
 import { pillarResearchArticles01To03 } from "./research-articles-pillars-01-03";
 import { pillarResearchArticles04to06 } from "./research-articles-pillars-04-06";
 import { pillarResearchArticles07to09 } from "./research-articles-pillars-07-09";
+import { pillarResearchArticles10To12 } from "./research-articles-pillars-10-12";
+import { pillarResearchArticles13To15 } from "./research-articles-pillars-13-15";
 
 const kokubunjiFigures = {
   hall: {
@@ -578,6 +580,8 @@ export const researchArticles: ResearchArticle[] = [
   ...pillarResearchArticles01To03,
   ...pillarResearchArticles04to06,
   ...pillarResearchArticles07to09,
+  ...pillarResearchArticles10To12,
+  ...pillarResearchArticles13To15,
 ];
 
 export function getResearchArticle(slug: string) {

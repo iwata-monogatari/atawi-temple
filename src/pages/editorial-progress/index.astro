@@ -21,7 +21,7 @@ const completedCount = counts.published;
 const completionRate = (completedCount / editorialProgressMeta.totalCount) * 100;
 const remainingCount = editorialProgressMeta.totalCount - completedCount;
 const publishedTempleItems = templeProgressItems.filter((item) => item.status === "published");
-const publishedTempleCount = new Set(publishedTempleItems.map((item) => item.templeName)).size;
+const publishedTempleCount = new Set(publishedTempleItems.map((item) => item.templeSlug)).size;
 const templeCompletionRate = (publishedTempleItems.length / editorialProgressMeta.templeArticleCount) * 100;
 const publishedIllustrations = publishedTempleItems.reduce((sum, item) => sum + item.illustrationCount, 0);
 const publishedSources = publishedTempleItems.reduce((sum, item) => sum + item.sourceCount, 0);
@@ -32,7 +32,7 @@ const nextMilestoneRate = Math.min(100, Math.ceil((completionRate + 0.001) / 25)
 const nextMilestone = Math.ceil(editorialProgressMeta.totalCount * (nextMilestoneRate / 100));
 const toNextMilestone = Math.max(0, nextMilestone - completedCount);
 const templeGroups = templeProgressItems.reduce((groups, item) => {
-  const key = item.templeName || "";
+  const key = item.templeSlug || item.templeName || "";
   const current = groups.get(key) || [];
   current.push(item);
   groups.set(key, current);
@@ -61,8 +61,8 @@ const latestPublishedTempleNames = new Set([
   "本妙院",
 ]);
 const latestPublished = [...templeGroups.entries()]
-  .filter(([templeName]) => latestPublishedTempleNames.has(templeName))
-  .map(([templeName, items]) => ({ templeName, items }));
+  .filter(([, items]) => latestPublishedTempleNames.has(items[0]?.templeName || ""))
+  .map(([, items]) => ({ templeName: items[0]?.templeName || "", items }));
 const progressSignature = `${completedCount}:${activeResearchTemples.map((temple) => temple.slug).join(",")}:${editorialProgressMeta.updatedAt}`;
 ---
 
@@ -299,10 +299,10 @@ const progressSignature = `${completedCount}:${activeResearchTemples.map((temple
       <p><strong id="temple-progress-result">{templeGroups.size}</strong>寺院を表示</p>
     </div>
     <div class="temple-progress-grid" id="temple-progress-grid">
-      {[...templeGroups.entries()].map(([templeName, items]) => (
+      {[...templeGroups.values()].map((items) => (
         <article
           class="temple-progress-card"
-          data-search={`${templeName} ${items[0]?.district} ${items.map((item) => `${item.angle} ${item.title}`).join(" ")}`.toLowerCase()}
+          data-search={`${items[0]?.templeName} ${items[0]?.district} ${items.map((item) => `${item.angle} ${item.title}`).join(" ")}`.toLowerCase()}
           data-status={items.every((item) => item.status === "published")
             ? "published"
             : items.some((item) => item.status === "researching")
@@ -310,7 +310,7 @@ const progressSignature = `${completedCount}:${activeResearchTemples.map((temple
               : "planned"}
         >
           <div>
-            <h3>{templeName}</h3>
+            <h3>{items[0]?.templeName}</h3>
             <span>{items[0]?.district}地区</span>
           </div>
           <ul>

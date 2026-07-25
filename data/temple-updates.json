@@ -1,5 +1,59 @@
 [
   {
+    "update_id": "2026-07-25-pillar-15-nichiren",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の日蓮宗寺院」を公開しました",
+    "summary": "法華信仰と地域ネットワークを検証した6026字の総合研究です。",
+    "href": "/research/iwata-nichiren-temples-lotus-faith-regional-network/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-14-shin",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の真宗寺院」を公開しました",
+    "summary": "門徒組織と家の継承を検証した6034字の総合研究です。",
+    "href": "/research/iwata-shin-temples-monto-house-succession/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-13-jodo",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の浄土宗寺院」を公開しました",
+    "summary": "念仏信仰と近世地域社会を検証した6078字の総合研究です。",
+    "href": "/research/iwata-jodo-temples-nenbutsu-early-modern-community/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-12-rinzai",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の臨済宗寺院」を公開しました",
+    "summary": "妙心寺派・方広寺派の系譜を検証した6108字の総合研究です。",
+    "href": "/research/iwata-rinzai-myoshinji-hokoji-lineages/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-11-soto",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の曹洞宗寺院」を公開しました",
+    "summary": "本末関係と地域的展開を検証した6007字の総合研究です。",
+    "href": "/research/iwata-soto-temples-honmatsu-regional-expansion/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-10-yamadera-satodera",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の山寺と里寺」を公開しました",
+    "summary": "立地から寺院機能を検証した6005字の総合研究です。",
+    "href": "/research/iwata-yamadera-satodera-location-functions/"
+  },
+  {
     "update_id": "2026-07-25-pillar-09-iwatahara",
     "kind": "research",
     "date": "2026-07-25",

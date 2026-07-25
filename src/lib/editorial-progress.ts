@@ -1,4 +1,6 @@
 import { allTemples, getDistrictName, hasDetailPage } from "./temples";
+import { pillarResearchArticles10To12 } from "./research-articles-pillars-10-12";
+import { pillarResearchArticles13To15 } from "./research-articles-pillars-13-15";
 
 export type EditorialStatus = "planned" | "researching" | "drafting" | "reviewing" | "published";
 
@@ -7,6 +9,7 @@ export type EditorialProgressItem = {
   kind: "pillar" | "temple";
   title: string;
   templeName?: string;
+  templeSlug?: string;
   district?: string;
   angle?: string;
   status: EditorialStatus;
@@ -85,9 +88,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "pillar-10-12", name: "総合研究10〜12", stage: "調査・執筆" },
-  { slug: "pillar-13-15", name: "総合研究13〜15", stage: "調査・執筆" },
   { slug: "pillar-16-18", name: "総合研究16〜18", stage: "調査・執筆" },
+  { slug: "pillar-19-21", name: "総合研究19〜21", stage: "調査・執筆" },
+  { slug: "pillar-22-24", name: "総合研究22〜24", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -159,6 +162,16 @@ const pillarPublications = [
     sourceCount: 12,
     href: "/research/iwata-pillar-09-iwatahara-plateau-temples/",
   },
+  ...[...pillarResearchArticles10To12, ...pillarResearchArticles13To15].map((article) => ({
+    title: article.title,
+    characterCount: article.sections
+      .flatMap((section) => section.paragraphs)
+      .join("")
+      .replace(/\s/g, "").length,
+    illustrationCount: article.sections.filter((section) => section.figure).length,
+    sourceCount: article.sources.length,
+    href: `/research/${article.slug}/`,
+  })),
 ] as const;
 
 export const pillarProgressItems: EditorialProgressItem[] = pillarTitles.map((title, index) => {
@@ -2801,6 +2814,7 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       kind: "temple" as const,
       title: publication?.title || `${temple.name}研究――${angle.label}`,
       templeName: temple.name,
+      templeSlug: temple.slug,
       district: getDistrictName(temple.district_id),
       angle: angle.label,
       status: publication
