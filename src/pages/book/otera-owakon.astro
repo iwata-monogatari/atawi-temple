@@ -1,0 +1,150 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageNumbers = Array.from({ length: 41 }, (_, index) => index + 1);
+const title = "お寺は、なぜオワコンになったのか。";
+const subtitle = "価値を失ったのは、お寺ではなく、私たちだった。";
+const description =
+  "Amazon Kindleへ出版申請中の処女作『お寺は、なぜオワコンになったのか。』の内容紹介と、概要版41ページの全ページ公開です。";
+const pdfUrl = "/assets/books/otera-owakon/otera-owakon-overview-41pages.pdf";
+---
+
+<BaseLayout
+  title={`${title}｜ATAWI TEMPLE`}
+  description={description}
+  ogImage="/assets/books/otera-owakon/pages/page-01.webp"
+>
+  <article class="book-launch">
+    <header class="book-launch-hero">
+      <div class="book-launch-cover">
+        <img src="/assets/books/otera-owakon/pages/page-01.webp" alt={`『${title}』概要版表紙`} width="700" height="993" />
+      </div>
+      <div class="book-launch-copy">
+        <span class="book-status">Amazon Kindle 出版申請中</span>
+        <p class="book-kicker">処女作を書き上げました</p>
+        <h1>{title}</h1>
+        <p class="book-subtitle">──{subtitle}</p>
+        <p>
+          ついに、人生で初めての本を書き上げました。現在、Amazon Kindleへ出版申請を出したところです。
+          審査が終わるまでの約72時間、少し緊張しながら待ちたいと思います。
+        </p>
+        <div class="book-actions">
+          <a class="button-link" href="#book-preview">概要版を最初から読む</a>
+          <a class="button-link secondary" href={pdfUrl} target="_blank" rel="noopener">PDFで全41ページを開く</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="book-introduction section">
+      <div class="book-prose">
+        <h2>この本について</h2>
+        <p>
+          この問いに答えるため、著者は静岡県磐田市を中心に100を超える寺院を歩き、
+          一つひとつの歴史を調べ、現地に足を運びました。
+        </p>
+        <p>
+          本書は、お寺の歴史を紹介する本ではありません。また、「お寺をこう変えるべきだ」と提言する本でもありません。
+          寺院を見つめ続けた先に見えてきたのは、人口減少、少子高齢化、地域コミュニティの変化、
+          家族のあり方、そして私たち自身の価値観の変化でした。
+        </p>
+        <p>
+          かつて、お寺は学びの場であり、集いの場であり、人生の節目を支える場所でした。
+          しかし現代では、その役割の多くを学校、行政、病院、インターネット、そしてAIが担うようになりました。
+        </p>
+        <blockquote>
+          <p>では、本当に価値を失ったのは、お寺なのでしょうか。</p>
+          <p>それとも、私たち自身なのでしょうか。</p>
+        </blockquote>
+        <p>
+          本書は、実際の寺院調査と地域史研究をもとに、「地域とは何か」「人は何を求めているのか」
+          「本当に残すべき価値とは何か」を問い直します。
+        </p>
+      </div>
+
+      <aside class="book-themes" aria-label="本書で扱うテーマ">
+        <h2>本書で扱うテーマ</h2>
+        <ul>
+          <li>なぜお寺は「オワコン」と言われるようになったのか</li>
+          <li>寺院を歩いて見えてきた地域社会の変化</li>
+          <li>人口減少と寺院の未来</li>
+          <li>地域コミュニティのこれから</li>
+          <li>AI時代だからこそ残る「人にしかできない価値」</li>
+          <li>私たちは何を失い、何を残すべきなのか</li>
+        </ul>
+        <p class="book-mirror">お寺は、社会を映す鏡である。</p>
+        <p>これは、お寺についての本であると同時に、私たち自身について考えるための一冊です。</p>
+      </aside>
+    </section>
+
+    <section id="book-preview" class="book-preview section" aria-labelledby="book-preview-title">
+      <div class="section-heading">
+        <div>
+          <span class="book-status">概要版・全ページ公開</span>
+          <h2 id="book-preview-title">41ページをすべて読む</h2>
+          <p class="small">画像を上から順にスクロールすると、概要版を最初から最後まで読めます。</p>
+        </div>
+        <a href={pdfUrl} target="_blank" rel="noopener">PDFで開く</a>
+      </div>
+      <ol class="book-pages">
+        {pageNumbers.map((pageNumber) => (
+          <li>
+            <figure>
+              <img
+                src={`/assets/books/otera-owakon/pages/page-${String(pageNumber).padStart(2, "0")}.webp`}
+                alt={`『${title}』概要版 ${pageNumber}ページ`}
+                width="700"
+                height="993"
+                loading={pageNumber <= 2 ? "eager" : "lazy"}
+                decoding="async"
+              />
+              <figcaption>{pageNumber} / 41</figcaption>
+            </figure>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <footer class="book-launch-footer section">
+      <p>
+        お寺に関心のある方だけでなく、地方創生、地域コミュニティ、人口減少、空き家問題、
+        歴史、文化、まちづくり、そして日本の未来を考えたい方に読んでいただきたい一冊です。
+      </p>
+      <p>審査が無事に終わり、販売が始まったら、あらためてお知らせします。</p>
+      <a class="button-link" href="/">ATAWI TEMPLE トップへ戻る</a>
+    </footer>
+  </article>
+</BaseLayout>
+
+<style>
+  .book-launch { padding-bottom: 72px; }
+  .book-launch-hero {
+    display: grid; grid-template-columns: minmax(240px, 360px) minmax(0, 1fr);
+    gap: 64px; align-items: center; width: min(1100px, calc(100% - 32px));
+    margin: 0 auto; padding: 72px 0;
+  }
+  .book-launch-cover img { display: block; width: 100%; height: auto; box-shadow: 0 22px 48px rgba(32,32,29,.24); }
+  .book-status { color: var(--accent-strong); font-size: .82rem; font-weight: 800; letter-spacing: .05em; }
+  .book-kicker { margin: 12px 0 6px; color: var(--muted); }
+  .book-launch-copy h1 { margin-bottom: 16px; font-size: clamp(2.2rem, 5vw, 4.5rem); }
+  .book-subtitle { color: var(--accent-strong); font-size: clamp(1.1rem, 2.5vw, 1.5rem); font-weight: 700; }
+  .book-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+  .book-actions .secondary { border: 1px solid var(--accent); background: transparent; color: var(--accent-strong); }
+  .book-introduction { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr); gap: 48px; }
+  .book-prose { font-size: 1.05rem; }
+  .book-prose blockquote { margin: 28px 0; border-left: 4px solid var(--gold); padding: 18px 24px; background: var(--paper); }
+  .book-prose blockquote p:last-child { margin-bottom: 0; }
+  .book-themes { align-self: start; border: 1px solid var(--line); border-radius: 8px; padding: 26px; background: var(--paper); }
+  .book-themes ul { display: grid; gap: 10px; padding-left: 1.3em; }
+  .book-mirror { margin-top: 24px; color: var(--accent-strong); font-weight: 800; }
+  .book-preview { border-top: 1px solid var(--line); }
+  .book-pages { display: grid; gap: 24px; max-width: 760px; margin: 30px auto 0; padding: 0; list-style: none; }
+  .book-pages figure { margin: 0; border: 1px solid var(--line); background: #fff; box-shadow: 0 14px 30px rgba(32,32,29,.09); }
+  .book-pages img { display: block; width: 100%; height: auto; }
+  .book-pages figcaption { border-top: 1px solid var(--line); padding: 8px 12px; color: var(--muted); text-align: right; }
+  .book-launch-footer { max-width: 820px; border-top: 1px solid var(--line); text-align: center; }
+  @media (max-width: 760px) {
+    .book-launch-hero, .book-introduction { grid-template-columns: 1fr; gap: 34px; }
+    .book-launch-cover { max-width: 280px; margin: 0 auto; }
+    .book-launch-hero { padding-top: 44px; }
+  }
+</style>

@@ -281,18 +281,31 @@ const iwataMonogatariBannerImage = "/assets/temples/kokubunji-mitsuke/hondo.webp
       <strong>ATAWI TEMPLE 研究論文一覧</strong>
       <em>磐田の寺院史・文化財・地域社会を、出典に基づく論文で読む</em>
     </a>
-    <a class="discovery-card" href="/map/" data-track-click="temple_map_click">
-      <span>住所一覧・Googleマップ</span>
-      <strong>住所と外部地図で確認</strong>
-      <em>地区フィルタとGoogleマップリンクを一覧で確認</em>
+    <a class="discovery-card publication-card" href="/book/otera-owakon/" data-track-click="book_preview_click">
+      <img
+        src="/assets/books/otera-owakon/pages/page-01.webp"
+        alt="『お寺は、なぜオワコンになったのか。』概要版表紙"
+        width="700"
+        height="993"
+      />
+      <span>Amazon Kindle 出版申請中</span>
+      <strong>処女作を書き上げました</strong>
+      <em>概要版41ページを全ページ公開しています</em>
     </a>
-    <form class="discovery-card discovery-search" action="/search/" method="get">
-      <label for="home-q">寺院名で探す</label>
-      <div>
-        <input id="home-q" name="q" type="search" placeholder="寺院名・読み方・住所" />
-        <button type="submit" data-track-click="temple_search_refine">検索</button>
-      </div>
-    </form>
+    <div class="discovery-card discovery-search">
+      <form action="/search/" method="get">
+        <label for="home-q">寺院名で探す</label>
+        <div>
+          <input id="home-q" name="q" type="search" placeholder="寺院名・読み方・住所" />
+          <button type="submit" data-track-click="temple_search_refine">検索</button>
+        </div>
+      </form>
+      <a class="discovery-map-link" href="/map/" data-track-click="temple_map_click">
+        <span>住所一覧・Googleマップ</span>
+        <strong>住所と外部地図で確認</strong>
+        <em>地区フィルタとGoogleマップリンクを一覧で確認</em>
+      </a>
+    </div>
   </section>
 
   <nav class="top-primary-links" aria-label="上部の主要リンク">
@@ -602,3 +615,58 @@ const iwataMonogatariBannerImage = "/assets/temples/kokubunji-mitsuke/hondo.webp
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .publication-card {
+    position: relative;
+    min-height: 220px;
+    overflow: hidden;
+    padding-left: 148px;
+    background: linear-gradient(135deg, #fffdf8 0%, #f2eadc 100%);
+  }
+
+  .publication-card img {
+    position: absolute;
+    inset: 18px auto 18px 18px;
+    width: 108px;
+    height: calc(100% - 36px);
+    border-radius: 4px;
+    object-fit: cover;
+    box-shadow: 0 10px 22px rgba(32, 32, 29, 0.2);
+  }
+
+  .discovery-search {
+    gap: 18px;
+  }
+
+  .discovery-search form {
+    display: grid;
+    gap: 10px;
+  }
+
+  .discovery-map-link {
+    display: grid;
+    gap: 4px;
+    border-top: 1px solid var(--line);
+    padding-top: 16px;
+    text-decoration: none;
+  }
+
+  .discovery-map-link span,
+  .discovery-map-link em {
+    color: var(--muted);
+    font-size: 0.82rem;
+    font-style: normal;
+  }
+
+  @media (max-width: 560px) {
+    .publication-card {
+      min-height: 190px;
+      padding-left: 122px;
+    }
+
+    .publication-card img {
+      width: 86px;
+    }
+  }
+</style>
