@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">最廣寺と松之木島村の史料年表</title>
+  <desc id="desc">天正年間の高薗からの草分け伝承、1592年の最廣寺開創、1611年・1660年・1671年の検地、1884年の松ノ木島学校、1921年の郡誌刊行を配置した図。</desc>
+  <rect width="1200" height="720" fill="#f7f7f5"/>
+  <text x="65" y="62" font-family="'Noto Serif JP',serif" font-size="30" font-weight="700" fill="#262626">最廣寺・松之木島村の時間配置</text>
+  <text x="65" y="98" font-family="'Noto Sans JP',sans-serif" font-size="17" fill="#666">村の形成、寺院開創、検地、学校設置、編纂史料を別層として表示</text>
+  <line x1="90" y1="310" x2="1110" y2="310" stroke="#333" stroke-width="3"/>
+  <g font-family="'Noto Sans JP',sans-serif">
+    <g transform="translate(145 310)">
+      <circle r="11" fill="#4477aa"/>
+      <line y1="-11" y2="-72" stroke="#4477aa" stroke-width="2"/>
+      <text x="-50" y="-102" font-size="20" font-weight="700" fill="#4477aa">1573–1592</text>
+      <text x="-77" y="-72" font-size="16" fill="#222">高薗から草分け伝承</text>
+    </g>
+    <g transform="translate(325 310)">
+      <circle r="12" fill="#2f6f5e"/>
+      <line y1="12" y2="72" stroke="#2f6f5e" stroke-width="2"/>
+      <text x="-35" y="105" font-size="22" font-weight="700" fill="#2f6f5e">1592</text>
+      <text x="-82" y="135" font-size="16" fill="#222">満室銀重による開創</text>
+    </g>
+    <g transform="translate(470 310)">
+      <circle r="10" fill="#c17d24"/>
+      <text x="-35" y="-30" font-size="19" font-weight="700" fill="#c17d24">1611</text>
+      <text x="-28" y="42" font-size="15" fill="#222">検地</text>
+    </g>
+    <g transform="translate(610 310)">
+      <circle r="10" fill="#c17d24"/>
+      <text x="-35" y="48" font-size="19" font-weight="700" fill="#c17d24">1660</text>
+      <text x="-28" y="-30" font-size="15" fill="#222">検地</text>
+    </g>
+    <g transform="translate(720 310)">
+      <circle r="10" fill="#c17d24"/>
+      <text x="-35" y="-30" font-size="19" font-weight="700" fill="#c17d24">1671</text>
+      <text x="-28" y="42" font-size="15" fill="#222">検地</text>
+    </g>
+    <g transform="translate(925 310)">
+      <circle r="12" fill="#8c5a9e"/>
+      <line y1="12" y2="72" stroke="#8c5a9e" stroke-width="2"/>
+      <text x="-35" y="105" font-size="22" font-weight="700" fill="#8c5a9e">1884</text>
+      <text x="-92" y="135" font-size="16" fill="#222">松ノ木島学校の設置</text>
+    </g>
+    <g transform="translate(1060 310)">
+      <circle r="11" fill="#555"/>
+      <line y1="-11" y2="-72" stroke="#555" stroke-width="2"/>
+      <text x="-35" y="-102" font-size="20" font-weight="700" fill="#555">1921</text>
+      <text x="-74" y="-72" font-size="16" fill="#222">磐田郡誌刊行</text>
+    </g>
+  </g>
+  <rect x="92" y="505" width="1018" height="125" rx="7" fill="#e8ece9"/>
+  <text x="120" y="540" font-family="'Noto Sans JP',sans-serif" font-size="17" fill="#333">史料上の注意</text>
+  <text x="120" y="572" font-family="'Noto Sans JP',sans-serif" font-size="16" fill="#333">1592年は1921年刊郡誌が伝える記事内容年。草分け伝承との因果関係は同時代文書を要する。</text>
+  <text x="120" y="602" font-family="'Noto Sans JP',sans-serif" font-size="16" fill="#333">学校所在地「西広寺」と寺院項「最廣寺」の同一性は未確定で、表記差を結論へ先取りしない。</text>
+  <text x="65" y="681" font-family="'Noto Sans JP',sans-serif" font-size="14" fill="#777">出典：『静岡県磐田郡誌』、『日本歴史地名大系』等を基にATAWI TEMPLE作成。</text>
+</svg>
