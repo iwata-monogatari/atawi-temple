@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#fbfaf7"/>
+  <text x="70" y="75" font-family="'Noto Serif JP','Yu Mincho',serif" font-size="32" font-weight="700" fill="#263238">追加調査の優先順位</text>
+  <text x="70" y="112" font-family="'Noto Sans JP','Yu Gothic',sans-serif" font-size="18" fill="#667078">学術的効果と実行可能性を2軸で配置する</text>
+  <g stroke="#d5d9d7" stroke-width="1"><path d="M170 540H1080"/><path d="M170 540V170"/><path d="M170 355H1080"/><path d="M625 170V540"/></g>
+  <g font-family="'Noto Sans JP','Yu Gothic',sans-serif" fill="#667078" font-size="17">
+    <text x="930" y="585">実行可能性 高</text><text x="85" y="185" transform="rotate(-90 85 185)">学術的効果 高</text>
+  </g>
+  <g font-family="'Noto Sans JP','Yu Gothic',sans-serif" text-anchor="middle">
+    <circle cx="865" cy="220" r="45" fill="#d06b42" opacity=".9"/><text x="865" y="217" font-size="18" font-weight="700" fill="#fff">寺号標・</text><text x="865" y="241" font-size="18" font-weight="700" fill="#fff">位牌銘</text>
+    <circle cx="700" cy="270" r="50" fill="#395f78" opacity=".9"/><text x="700" y="266" font-size="18" font-weight="700" fill="#fff">寺蔵文書</text><text x="700" y="291" font-size="16" fill="#fff">目録化</text>
+    <circle cx="450" cy="235" r="52" fill="#54744b" opacity=".9"/><text x="450" y="231" font-size="18" font-weight="700" fill="#fff">檀家文書</text><text x="450" y="256" font-size="16" fill="#fff">所在調査</text>
+    <circle cx="920" cy="405" r="42" fill="#b3995d" opacity=".9"/><text x="920" y="411" font-size="17" font-weight="700" fill="#fff">現況写真</text>
+    <circle cx="545" cy="425" r="44" fill="#7a6c91" opacity=".9"/><text x="545" y="421" font-size="17" font-weight="700" fill="#fff">旧地籍図</text><text x="545" y="443" font-size="15" fill="#fff">重ね合わせ</text>
+    <circle cx="335" cy="445" r="40" fill="#8b7f72" opacity=".9"/><text x="335" y="451" font-size="16" font-weight="700" fill="#fff">聞き取り</text>
+  </g>
+  <text x="70" y="630" font-family="'Noto Sans JP','Yu Gothic',sans-serif" font-size="16" fill="#667078">配置は現段階の研究設計。個人情報・信仰上の非公開事項は公開同意を前提とする。</text>
+</svg>

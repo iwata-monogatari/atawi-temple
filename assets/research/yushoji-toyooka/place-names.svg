@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#fbfaf7"/>
+  <text x="70" y="75" font-family="'Noto Serif JP','Yu Mincho',serif" font-size="32" font-weight="700" fill="#263238">所在地表記の変遷と不変の地域核</text>
+  <text x="70" y="112" font-family="'Noto Sans JP','Yu Gothic',sans-serif" font-size="18" fill="#667078">行政名の更新を、寺院移転の証拠と誤認しないための対照</text>
+  <g stroke="#d5d9d7"><path d="M120 230H1080M120 330H1080M120 430H1080"/></g>
+  <g font-family="'Noto Sans JP','Yu Gothic',sans-serif">
+    <text x="120" y="190" font-size="18" fill="#667078">江戸期の集落</text><rect x="120" y="215" width="210" height="72" rx="7" fill="#dce8ee"/><text x="225" y="260" text-anchor="middle" font-size="24" font-weight="700" fill="#263238">西堀村</text>
+    <path d="M330 251H400" stroke="#395f78" stroke-width="4"/><path d="M385 241L400 251L385 261" fill="none" stroke="#395f78" stroke-width="4"/>
+    <text x="400" y="190" font-size="18" fill="#667078">近代の表記</text><rect x="400" y="215" width="230" height="72" rx="7" fill="#e7efe0"/><text x="515" y="260" text-anchor="middle" font-size="24" font-weight="700" fill="#263238">掛塚町豊岡</text>
+    <path d="M630 251H700" stroke="#395f78" stroke-width="4"/><path d="M685 241L700 251L685 261" fill="none" stroke="#395f78" stroke-width="4"/>
+    <text x="700" y="190" font-size="18" fill="#667078">合併前</text><rect x="700" y="215" width="210" height="72" rx="7" fill="#f4e1d8"/><text x="805" y="260" text-anchor="middle" font-size="24" font-weight="700" fill="#263238">竜洋町豊岡</text>
+    <path d="M910 251H980" stroke="#395f78" stroke-width="4"/><path d="M965 241L980 251L965 261" fill="none" stroke="#395f78" stroke-width="4"/>
+    <rect x="980" y="215" width="180" height="72" rx="7" fill="#efe5c8"/><text x="1070" y="246" text-anchor="middle" font-size="21" font-weight="700" fill="#263238">磐田市豊岡</text><text x="1070" y="270" text-anchor="middle" font-size="15" fill="#667078">1053-1</text>
+    <text x="120" y="380" font-size="18" fill="#667078">史料の接続点</text>
+    <rect x="120" y="405" width="1040" height="105" rx="8" fill="#ffffff" stroke="#d06b42" stroke-width="3"/>
+    <text x="640" y="452" text-anchor="middle" font-size="26" font-weight="700" fill="#263238">「豊岡元西堀」</text>
+    <text x="640" y="486" text-anchor="middle" font-size="18" fill="#667078">1921年郡誌が旧村名と当時の行政表記を同時に残す</text>
+    <text x="120" y="585" font-size="17" fill="#667078">現在住所と旧村名は競合せず、異なる時点の空間識別子として相互補完する。</text>
+  </g>
+</svg>

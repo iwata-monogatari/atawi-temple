@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#fbfaf7"/>
+  <text x="70" y="75" font-family="'Noto Serif JP','Yu Mincho',serif" font-size="32" font-weight="700" fill="#263238">雄照寺情報の根拠強度</text>
+  <text x="70" y="112" font-family="'Noto Sans JP','Yu Gothic',sans-serif" font-size="18" fill="#667078">現在情報と歴史情報を、資料の時点と性格から評価する</text>
+  <g font-family="'Noto Sans JP','Yu Gothic',sans-serif">
+    <text x="300" y="165" font-size="17" fill="#667078">弱い</text><text x="1030" y="165" font-size="17" fill="#667078">強い</text>
+    <g stroke="#d5d9d7"><path d="M300 180V570M475 180V570M650 180V570M825 180V570M1000 180V570"/></g>
+    <g fill="#263238" font-size="20"><text x="90" y="230">寺名・読み</text><text x="90" y="300">現在住所</text><text x="90" y="370">宗派</text><text x="90" y="440">1645年創立</text><text x="90" y="510">本尊・山号</text><text x="90" y="580">現在の行事</text></g>
+    <g stroke="#395f78" stroke-width="10" stroke-linecap="round"><path d="M300 223H1000"/><path d="M300 293H1000"/><path d="M300 363H1000"/></g>
+    <g stroke="#d06b42" stroke-width="10" stroke-linecap="round"><path d="M300 433H690"/><path d="M300 503H650"/><path d="M300 573H340"/></g>
+    <g fill="#263238"><circle cx="1000" cy="223" r="12"/><circle cx="1000" cy="293" r="12"/><circle cx="1000" cy="363" r="12"/><circle cx="690" cy="433" r="12"/><circle cx="650" cy="503" r="12"/><circle cx="340" cy="573" r="12"/></g>
+    <text x="70" y="635" font-size="16" fill="#667078">評価は公開資料に基づく相対尺度。寺蔵文書・現地銘文・聞き取りの追加で更新される。</text>
+  </g>
+</svg>

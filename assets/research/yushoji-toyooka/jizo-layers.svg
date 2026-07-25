@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#fbfaf7"/>
+  <text x="70" y="75" font-family="'Noto Serif JP','Yu Mincho',serif" font-size="32" font-weight="700" fill="#263238">「本尊は地蔵菩薩」を読む3層</text>
+  <text x="70" y="112" font-family="'Noto Sans JP','Yu Gothic',sans-serif" font-size="18" fill="#667078">尊格の一般論、1921年の記録、現在の安置状況を混同しない</text>
+  <g font-family="'Noto Sans JP','Yu Gothic',sans-serif" text-anchor="middle">
+    <circle cx="600" cy="360" r="215" fill="#dce8ee"/><circle cx="600" cy="360" r="145" fill="#e7efe0"/><circle cx="600" cy="360" r="75" fill="#f4e1d8"/>
+    <text x="600" y="205" font-size="22" font-weight="700" fill="#263238">仏教史上の地蔵菩薩</text><text x="600" y="235" font-size="16" fill="#667078">救済・追善・境界の諸信仰</text>
+    <text x="600" y="305" font-size="22" font-weight="700" fill="#263238">1921年郡誌</text><text x="600" y="333" font-size="16" fill="#667078">雄照寺の本尊と記録</text>
+    <text x="600" y="355" font-size="18" font-weight="700" fill="#263238">現在</text><text x="600" y="385" font-size="16" fill="#667078">未確認</text>
+    <path d="M825 220L1030 155" stroke="#395f78" stroke-width="2"/><text x="1040" y="145" text-anchor="end" font-size="17" fill="#667078">一般論は個別寺院の実態を証明しない</text>
+    <path d="M735 355L1030 355" stroke="#54744b" stroke-width="2"/><text x="1040" y="345" text-anchor="end" font-size="17" fill="#667078">郡誌は1921年時点の記録</text>
+    <path d="M675 415L1030 520" stroke="#d06b42" stroke-width="2"/><text x="1040" y="548" text-anchor="end" font-size="17" fill="#667078">現況は寺院・現地で照合する</text>
+  </g>
+</svg>
