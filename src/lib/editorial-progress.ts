@@ -85,9 +85,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "fukushoji-nishihiramatsu", name: "福生寺", stage: "調査・執筆" },
-  { slug: "ryuunji-toyohama", name: "竜雲寺", stage: "調査・執筆" },
-  { slug: "sojiji-minamijima", name: "宗次寺", stage: "調査・執筆" },
+  { slug: "keishoji-fukude", name: "慶昌寺", stage: "調査・執筆" },
+  { slug: "chosenji-fukudenakajima", name: "長泉寺", stage: "調査・執筆" },
+  { slug: "kannonji-fukude", name: "観音寺", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -1371,6 +1371,69 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 23,
       href: "/research/koshuji-1854-ansei-earthquake-reconstruction/",
     } as const;
+    const fukushojiHistoryPublication = {
+      title: "1582年宣存開山伝承と西平松福生寺",
+      characterCount: 6144,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/fukushoji-nishihiramatsu-1582-senzon-keisai/",
+    } as const;
+    const fukushojiHeritagePublication = {
+      title: "福生寺と『遠淡海地志』の福正寺をどう識別するか",
+      characterCount: 6121,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/fukushoji-nishihiramatsu-fukushoji-fukushoji-identification/",
+    } as const;
+    const fukushojiCommunityPublication = {
+      title: "西平松村の福生寺と虚空蔵菩薩記録",
+      characterCount: 6059,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/fukushoji-nishihiramatsu-village-kokuzo/",
+    } as const;
+    const ryuunjiHistoryPublication = {
+      title: "豊浜竜雲寺の1578年7月6日開創伝承",
+      characterCount: 6298,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/ryuunji-1578-monju-shoshuji-lineage/",
+    } as const;
+    const ryuunjiHeritagePublication = {
+      title: "豊浜竜雲寺の観音・秋葉山・石造物",
+      characterCount: 6055,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/ryuunji-kannon-akiba-stone-faith/",
+    } as const;
+    const ryuunjiCommunityPublication = {
+      title: "雁代竜雲寺と豊浜沿岸地域の歴史",
+      characterCount: 6113,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/ryuunji-ganjiro-coastal-community-disaster/",
+    } as const;
+    const sojijiHistoryPublication = {
+      title: "宗寿寺から宗次寺へ―1588年火災と曹洞宗再興",
+      characterCount: 6106,
+      illustrationCount: 6,
+      sourceCount: 21,
+      href: "/research/sojiji-sojuji-1588-soto-reconstitution/",
+    } as const;
+    const sojijiHeritagePublication = {
+      title: "磐田郡三十三観音第33番・宗次寺の結願構造",
+      characterCount: 6068,
+      illustrationCount: 6,
+      sourceCount: 21,
+      href: "/research/sojiji-33rd-kannon-pilgrimage-batokannon/",
+    } as const;
+    const sojijiCommunityPublication = {
+      title: "1854年安政東海地震と宗次寺の1866年再建",
+      characterCount: 6085,
+      illustrationCount: 6,
+      sourceCount: 21,
+      href: "/research/sojiji-1854-1866-earthquake-reconstruction/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -1724,6 +1787,24 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? koshujiHeritagePublication
           : temple.slug === "koshuji-kaketsuka" && angle.key === "community"
             ? koshujiCommunityPublication
+          : temple.slug === "fukushoji-nishihiramatsu" && angle.key === "history"
+            ? fukushojiHistoryPublication
+          : temple.slug === "fukushoji-nishihiramatsu" && angle.key === "heritage"
+            ? fukushojiHeritagePublication
+          : temple.slug === "fukushoji-nishihiramatsu" && angle.key === "community"
+            ? fukushojiCommunityPublication
+          : temple.slug === "ryuunji-toyohama" && angle.key === "history"
+            ? ryuunjiHistoryPublication
+          : temple.slug === "ryuunji-toyohama" && angle.key === "heritage"
+            ? ryuunjiHeritagePublication
+          : temple.slug === "ryuunji-toyohama" && angle.key === "community"
+            ? ryuunjiCommunityPublication
+          : temple.slug === "sojiji-minamijima" && angle.key === "history"
+            ? sojijiHistoryPublication
+          : temple.slug === "sojiji-minamijima" && angle.key === "heritage"
+            ? sojijiHeritagePublication
+          : temple.slug === "sojiji-minamijima" && angle.key === "community"
+            ? sojijiCommunityPublication
           : undefined;
 
     return {

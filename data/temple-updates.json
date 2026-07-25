@@ -1,5 +1,77 @@
 [
   {
+    "update_id": "2026-07-25-sojiji-reconstruction-research",
+    "date": "2026-07-25",
+    "temple_slug": "sojiji-minamijima",
+    "title": "宗次寺研究論文「1854年安政東海地震と宗次寺の1866年再建」を公開しました",
+    "summary": "南島低地の被害と12年間の復興過程を検証した6085字の研究論文です。",
+    "href": "/research/sojiji-1854-1866-earthquake-reconstruction/"
+  },
+  {
+    "update_id": "2026-07-25-sojiji-kannon-research",
+    "date": "2026-07-25",
+    "temple_slug": "sojiji-minamijima",
+    "title": "宗次寺研究論文「磐田郡三十三観音第33番・宗次寺の結願構造」を公開しました",
+    "summary": "聖観音・馬頭観音・御詠歌・山号を重層的に検証した6068字の研究論文です。",
+    "href": "/research/sojiji-33rd-kannon-pilgrimage-batokannon/"
+  },
+  {
+    "update_id": "2026-07-25-sojiji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "sojiji-minamijima",
+    "title": "宗次寺研究論文「宗寿寺から宗次寺へ―1588年火災と曹洞宗再興」を公開しました",
+    "summary": "火災・再興・本末関係・寺領記録を検証した6106字の研究論文です。",
+    "href": "/research/sojiji-sojuji-1588-soto-reconstitution/"
+  },
+  {
+    "update_id": "2026-07-25-ryuunji-community-research",
+    "date": "2026-07-25",
+    "temple_slug": "ryuunji-toyohama",
+    "title": "竜雲寺研究論文「雁代竜雲寺と豊浜沿岸地域の歴史」を公開しました",
+    "summary": "福田湊・大木・防災倉庫から寺院と自治組織を検証した6113字の研究論文です。",
+    "href": "/research/ryuunji-ganjiro-coastal-community-disaster/"
+  },
+  {
+    "update_id": "2026-07-25-ryuunji-faith-research",
+    "date": "2026-07-25",
+    "temple_slug": "ryuunji-toyohama",
+    "title": "竜雲寺研究論文「豊浜竜雲寺の観音・秋葉山・石造物」を公開しました",
+    "summary": "雁代境内の火防・供養・地域信仰を物質文化から検証した6055字の研究論文です。",
+    "href": "/research/ryuunji-kannon-akiba-stone-faith/"
+  },
+  {
+    "update_id": "2026-07-25-ryuunji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "ryuunji-toyohama",
+    "title": "竜雲寺研究論文「豊浜竜雲寺の1578年7月6日開創伝承」を公開しました",
+    "summary": "閏室文歳と曹洞宗本末関係を史料批判した6298字の研究論文です。",
+    "href": "/research/ryuunji-1578-monju-shoshuji-lineage/"
+  },
+  {
+    "update_id": "2026-07-25-fukushoji-community-research",
+    "date": "2026-07-25",
+    "temple_slug": "fukushoji-nishihiramatsu",
+    "title": "福生寺研究論文「西平松村の福生寺と虚空蔵菩薩記録」を公開しました",
+    "summary": "分村・寺地・農村景観・本尊を異なる証拠層で検証した6059字の研究論文です。",
+    "href": "/research/fukushoji-nishihiramatsu-village-kokuzo/"
+  },
+  {
+    "update_id": "2026-07-25-fukushoji-identification-research",
+    "date": "2026-07-25",
+    "temple_slug": "fukushoji-nishihiramatsu",
+    "title": "福生寺研究論文「福生寺と『遠淡海地志』の福正寺をどう識別するか」を公開しました",
+    "summary": "寺名表記・本寺・村名・法系による史料照合を行った6121字の研究論文です。",
+    "href": "/research/fukushoji-nishihiramatsu-fukushoji-fukushoji-identification/"
+  },
+  {
+    "update_id": "2026-07-25-fukushoji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "fukushoji-nishihiramatsu",
+    "title": "福生寺研究論文「1582年宣存開山伝承と西平松福生寺」を公開しました",
+    "summary": "聖寿寺5世恵才の法系から袖浦の曹洞宗展開を検証した6144字の研究論文です。",
+    "href": "/research/fukushoji-nishihiramatsu-1582-senzon-keisai/"
+  },
+  {
     "update_id": "2026-07-25-koshuji-earthquake-research",
     "date": "2026-07-25",
     "temple_slug": "koshuji-kaketsuka",
