@@ -85,9 +85,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "ryuhoin-ohara", name: "龍法院", stage: "調査・執筆" },
-  { slug: "zohonji-ikago", name: "蔵本寺", stage: "調査・執筆" },
-  { slug: "rengakuji-ryuyonakajima", name: "蓮覚寺", stage: "調査・執筆" },
+  { slug: "ganjoji-hirama", name: "願成寺", stage: "調査・執筆" },
+  { slug: "jikeian-komaba", name: "慈慶庵", stage: "調査・執筆" },
+  { slug: "shingetsuji-ebijima", name: "心月寺", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -190,7 +190,7 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
     } as const;
     const zosanjiCommunityPublication = {
       title: "増参寺・旧東光寺と大めし祭り",
-      characterCount: 6002,
+      characterCount: 6003,
       illustrationCount: 6,
       sourceCount: 6,
       href: "/research/zosanji-daimeshi-tokoji-community-ritual/",
@@ -1497,6 +1497,69 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 20,
       href: "/research/kannonji-fukude-sea-gyorin-goeika/",
     } as const;
+    const ryuhoinHistoryPublication = {
+      title: "大原龍法院の1593年草創と「文甫作公」",
+      characterCount: 6085,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/ryuhoin-1593-villagers-bunposakuko-foundation/",
+    } as const;
+    const ryuhoinHeritagePublication = {
+      title: "龍法院1706年中興と昌室文久の年代矛盾",
+      characterCount: 6015,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/ryuhoin-1706-shoshitsu-bunkyu-chronology/",
+    } as const;
+    const ryuhoinCommunityPublication = {
+      title: "龍法院の延命地蔵・1856年再建・1873年大原分校",
+      characterCount: 6056,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/ryuhoin-jizo-reconstruction-ohara-school/",
+    } as const;
+    const zohonjiHistoryPublication = {
+      title: "1597年潤室文歳開創と1708年林教中興の蔵本寺",
+      characterCount: 6113,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/zohonji-ikago-1597-1708-foundation/",
+    } as const;
+    const zohonjiHeritagePublication = {
+      title: "蔵本寺の地蔵菩薩記録と境内石造物",
+      characterCount: 6002,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/zohonji-ikago-jizo-material-culture/",
+    } as const;
+    const zohonjiCommunityPublication = {
+      title: "五十子村字東本田と蔵本寺領",
+      characterCount: 6011,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/zohonji-ikago-temple-land-1722/",
+    } as const;
+    const rengakujiHistoryPublication = {
+      title: "蓮覚寺1175年平重盛創建伝承と遠州三連寺",
+      characterCount: 6360,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/rengakuji-1175-shigemori-three-renji/",
+    } as const;
+    const rengakujiHeritagePublication = {
+      title: "蓮覚寺1842年山門の地震・修復・移設史",
+      characterCount: 6010,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/rengakuji-1842-gate-earthquakes-relocation/",
+    } as const;
+    const rengakujiCommunityPublication = {
+      title: "1873年中島分校と蓮覚寺本堂",
+      characterCount: 6005,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/rengakuji-1873-nakajima-branch-school/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -1886,6 +1949,24 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? kannonjiHeritagePublication
           : temple.slug === "kannonji-fukude" && angle.key === "community"
             ? kannonjiCommunityPublication
+          : temple.slug === "ryuhoin-ohara" && angle.key === "history"
+            ? ryuhoinHistoryPublication
+          : temple.slug === "ryuhoin-ohara" && angle.key === "heritage"
+            ? ryuhoinHeritagePublication
+          : temple.slug === "ryuhoin-ohara" && angle.key === "community"
+            ? ryuhoinCommunityPublication
+          : temple.slug === "zohonji-ikago" && angle.key === "history"
+            ? zohonjiHistoryPublication
+          : temple.slug === "zohonji-ikago" && angle.key === "heritage"
+            ? zohonjiHeritagePublication
+          : temple.slug === "zohonji-ikago" && angle.key === "community"
+            ? zohonjiCommunityPublication
+          : temple.slug === "rengakuji-ryuyonakajima" && angle.key === "history"
+            ? rengakujiHistoryPublication
+          : temple.slug === "rengakuji-ryuyonakajima" && angle.key === "heritage"
+            ? rengakujiHeritagePublication
+          : temple.slug === "rengakuji-ryuyonakajima" && angle.key === "community"
+            ? rengakujiCommunityPublication
           : undefined;
 
     return {

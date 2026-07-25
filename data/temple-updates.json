@@ -1,5 +1,77 @@
 [
   {
+    "update_id": "2026-07-25-rengakuji-school-research",
+    "date": "2026-07-25",
+    "temple_slug": "rengakuji-ryuyonakajima",
+    "title": "蓮覚寺研究論文「1873年中島分校と蓮覚寺本堂」を公開しました",
+    "summary": "寺院空間から竜洋北小学校へ至る地域公共性を検証した6005字の研究論文です。",
+    "href": "/research/rengakuji-1873-nakajima-branch-school/"
+  },
+  {
+    "update_id": "2026-07-25-rengakuji-gate-research",
+    "date": "2026-07-25",
+    "temple_slug": "rengakuji-ryuyonakajima",
+    "title": "蓮覚寺研究論文「蓮覚寺1842年山門の地震・修復・移設史」を公開しました",
+    "summary": "薬医門の倒壊・移設・傾斜・修復履歴を検証した6010字の研究論文です。",
+    "href": "/research/rengakuji-1842-gate-earthquakes-relocation/"
+  },
+  {
+    "update_id": "2026-07-25-rengakuji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "rengakuji-ryuyonakajima",
+    "title": "蓮覚寺研究論文「蓮覚寺1175年平重盛創建伝承と遠州三連寺」を公開しました",
+    "summary": "宮本旧地・寺号異表記・宗派転換を検証した6360字の研究論文です。",
+    "href": "/research/rengakuji-1175-shigemori-three-renji/"
+  },
+  {
+    "update_id": "2026-07-25-zohonji-land-research",
+    "date": "2026-07-25",
+    "temple_slug": "zohonji-ikago",
+    "title": "蔵本寺研究論文「五十子村字東本田と蔵本寺領」を公開しました",
+    "summary": "1325年頃の伊加子荒野から1722年村況文書までを検証した6011字の研究論文です。",
+    "href": "/research/zohonji-ikago-temple-land-1722/"
+  },
+  {
+    "update_id": "2026-07-25-zohonji-jizo-research",
+    "date": "2026-07-25",
+    "temple_slug": "zohonji-ikago",
+    "title": "蔵本寺研究論文「蔵本寺の地蔵菩薩記録と境内石造物」を公開しました",
+    "summary": "本尊・地蔵堂・石灯籠・石碑を分離して検証した6003字の研究論文です。",
+    "href": "/research/zohonji-ikago-jizo-material-culture/"
+  },
+  {
+    "update_id": "2026-07-25-zohonji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "zohonji-ikago",
+    "title": "蔵本寺研究論文「1597年潤室文歳開創と1708年林教中興の蔵本寺」を公開しました",
+    "summary": "開創・建替・中興と全久院門流を検証した6113字の研究論文です。",
+    "href": "/research/zohonji-ikago-1597-1708-foundation/"
+  },
+  {
+    "update_id": "2026-07-25-ryuhoin-community-research",
+    "date": "2026-07-25",
+    "temple_slug": "ryuhoin-ohara",
+    "title": "龍法院研究論文「龍法院の延命地蔵・1856年再建・1873年大原分校」を公開しました",
+    "summary": "祈願・震災復旧・近代教育が重なる村寺空間を検証した6056字の研究論文です。",
+    "href": "/research/ryuhoin-jizo-reconstruction-ohara-school/"
+  },
+  {
+    "update_id": "2026-07-25-ryuhoin-chronology-research",
+    "date": "2026-07-25",
+    "temple_slug": "ryuhoin-ohara",
+    "title": "龍法院研究論文「龍法院1706年中興と昌室文久の年代矛盾」を公開しました",
+    "summary": "全久院第4世・金泉寺1628年記事から年代矛盾を検証した6015字の研究論文です。",
+    "href": "/research/ryuhoin-1706-shoshitsu-bunkyu-chronology/"
+  },
+  {
+    "update_id": "2026-07-25-ryuhoin-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "ryuhoin-ohara",
+    "title": "龍法院研究論文「大原龍法院の1593年草創と『文甫作公』」を公開しました",
+    "summary": "村人共同建立伝承を人物・土地・編纂過程から検証した6085字の研究論文です。",
+    "href": "/research/ryuhoin-1593-villagers-bunposakuko-foundation/"
+  },
+  {
     "update_id": "2026-07-25-kannonji-sea-research",
     "date": "2026-07-25",
     "temple_slug": "kannonji-fukude",
