@@ -85,9 +85,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "ryusenji-shiraha", name: "竜泉寺", stage: "調査・執筆" },
-  { slug: "senryuji-kawabukuro", name: "潜龍寺", stage: "調査・執筆" },
-  { slug: "hojuin-jurojima", name: "寶珠院", stage: "調査・執筆" },
+  { slug: "koshuji-kaketsuka", name: "香集寺", stage: "調査・執筆" },
+  { slug: "jorakuji-horinochi", name: "常楽寺", stage: "調査・執筆" },
+  { slug: "fukushoji-nishihiramatsu", name: "福生寺", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -1224,6 +1224,111 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 18,
       href: "/research/gyokoji-ikeda-dojo-ferry-documents/",
     } as const;
+    const manpukuji799HistoryPublication = {
+      title: "1527年融円開創伝承と掛塚横町の萬福寺",
+      characterCount: 6199,
+      illustrationCount: 6,
+      sourceCount: 16,
+      href: "/research/manpukuji-kaketsuka-799-1527-yuen-higashi-honganji/",
+    } as const;
+    const manpukuji799HeritagePublication = {
+      title: "掛塚の萬福寺と満福寺をどう識別するか",
+      characterCount: 6166,
+      illustrationCount: 6,
+      sourceCount: 16,
+      href: "/research/manpukuji-kaketsuka-799-819-disambiguation-territory/",
+    } as const;
+    const manpukuji799CommunityPublication = {
+      title: "掛塚湊・横町と真宗大谷派萬福寺",
+      characterCount: 6171,
+      illustrationCount: 6,
+      sourceCount: 16,
+      href: "/research/manpukuji-kaketsuka-799-port-yokomachi-shinshu-community/",
+    } as const;
+    const shorinjiHistoryPublication = {
+      title: "松隣庵・正林庵から富景山松林寺へ",
+      characterCount: 6084,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/shorinji-kawabukuro-shorinan-shorinji-name-history/",
+    } as const;
+    const shorinjiHeritagePublication = {
+      title: "長谷川輝貞・青岩と川袋松林寺の祈願所伝承",
+      characterCount: 6006,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/shorinji-kawabukuro-hasegawa-imagawa-kannon-jizo/",
+    } as const;
+    const shorinjiCommunityPublication = {
+      title: "河勾庄・川袋村と松林寺領の歴史地理",
+      characterCount: 6033,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/shorinji-kawabukuro-kawawa-sho-landholding-landscape/",
+    } as const;
+    const hojuinHistoryPublication = {
+      title: "寶珠院の1596年開山・1600年分派伝承",
+      characterCount: 6114,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/hojuin-1596-1600-hokoji-lineage/",
+    } as const;
+    const hojuinHeritagePublication = {
+      title: "寶珠院本尊「高王観世音菩薩」の経典・像・信仰",
+      characterCount: 6060,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/hojuin-gaowang-kannon-text-image-faith/",
+    } as const;
+    const hojuinCommunityPublication = {
+      title: "十郎島輪中の歴史地理と寶珠院",
+      characterCount: 6038,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/hojuin-jurojima-wajyu-flood-community/",
+    } as const;
+    const ryusenjiHistoryPublication = {
+      title: "白羽龍泉寺の1624年草創と心叟禅師",
+      characterCount: 6264,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/ryusenji-shiraha-founder-shinso-1624/",
+    } as const;
+    const ryusenjiHeritagePublication = {
+      title: "白羽龍泉寺と1854年安政東海地震",
+      characterCount: 6001,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/ryusenji-shiraha-1854-earthquake-reconstruction/",
+    } as const;
+    const ryusenjiCommunityPublication = {
+      title: "白羽龍泉寺の芋瀬移転説と天竜川",
+      characterCount: 6117,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/ryusenji-shiraha-imose-tenryu-river/",
+    } as const;
+    const senryujiHistoryPublication = {
+      title: "1377年在徳和尚開創伝承と潜龍寺の年代論",
+      characterCount: 6053,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/senryuji-kawabukuro-1377-zaitoku-chronology/",
+    } as const;
+    const senryujiHeritagePublication = {
+      title: "潜龍寺の廃絶伝承と1596年金叔和尚中興",
+      characterCount: 6056,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/senryuji-kawabukuro-1596-kinshuku-revival/",
+    } as const;
+    const senryujiCommunityPublication = {
+      title: "川袋463の潜龍寺と満願虚空蔵菩薩記録",
+      characterCount: 6086,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/senryuji-kawabukuro-place-kokuzo-record/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -1535,6 +1640,36 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? gyokojiHeritagePublication
           : temple.slug === "gyokoji-ikeda" && angle.key === "community"
             ? gyokojiCommunityPublication
+          : temple.slug === "manpukuji-kaketsuka-799" && angle.key === "history"
+            ? manpukuji799HistoryPublication
+          : temple.slug === "manpukuji-kaketsuka-799" && angle.key === "heritage"
+            ? manpukuji799HeritagePublication
+          : temple.slug === "manpukuji-kaketsuka-799" && angle.key === "community"
+            ? manpukuji799CommunityPublication
+          : temple.slug === "shorinji-kawabukuro" && angle.key === "history"
+            ? shorinjiHistoryPublication
+          : temple.slug === "shorinji-kawabukuro" && angle.key === "heritage"
+            ? shorinjiHeritagePublication
+          : temple.slug === "shorinji-kawabukuro" && angle.key === "community"
+            ? shorinjiCommunityPublication
+          : temple.slug === "hojuin-jurojima" && angle.key === "history"
+            ? hojuinHistoryPublication
+          : temple.slug === "hojuin-jurojima" && angle.key === "heritage"
+            ? hojuinHeritagePublication
+          : temple.slug === "hojuin-jurojima" && angle.key === "community"
+            ? hojuinCommunityPublication
+          : temple.slug === "ryusenji-shiraha" && angle.key === "history"
+            ? ryusenjiHistoryPublication
+          : temple.slug === "ryusenji-shiraha" && angle.key === "heritage"
+            ? ryusenjiHeritagePublication
+          : temple.slug === "ryusenji-shiraha" && angle.key === "community"
+            ? ryusenjiCommunityPublication
+          : temple.slug === "senryuji-kawabukuro" && angle.key === "history"
+            ? senryujiHistoryPublication
+          : temple.slug === "senryuji-kawabukuro" && angle.key === "heritage"
+            ? senryujiHeritagePublication
+          : temple.slug === "senryuji-kawabukuro" && angle.key === "community"
+            ? senryujiCommunityPublication
           : undefined;
 
     return {

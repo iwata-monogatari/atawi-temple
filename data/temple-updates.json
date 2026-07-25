@@ -1,5 +1,125 @@
 [
   {
+    "update_id": "2026-07-25-senryuji-place-research",
+    "date": "2026-07-25",
+    "temple_slug": "senryuji-kawabukuro",
+    "title": "潜龍寺研究論文「川袋463の潜龍寺と満願虚空蔵菩薩記録」を公開しました",
+    "summary": "所在地表記・輪中地理・本尊記録を分離して検証した6086字の研究論文です。",
+    "href": "/research/senryuji-kawabukuro-place-kokuzo-record/"
+  },
+  {
+    "update_id": "2026-07-25-senryuji-revival-research",
+    "date": "2026-07-25",
+    "temple_slug": "senryuji-kawabukuro",
+    "title": "潜龍寺研究論文「潜龍寺の廃絶伝承と1596年金叔和尚中興」を公開しました",
+    "summary": "寺院史の断絶・再編・継承を史料層別に検証した6056字の研究論文です。",
+    "href": "/research/senryuji-kawabukuro-1596-kinshuku-revival/"
+  },
+  {
+    "update_id": "2026-07-25-senryuji-chronology-research",
+    "date": "2026-07-25",
+    "temple_slug": "senryuji-kawabukuro",
+    "title": "潜龍寺研究論文「1377年在徳和尚開創伝承と潜龍寺の年代論」を公開しました",
+    "summary": "方広寺開山直後とする開創伝承を再検証した6053字の研究論文です。",
+    "href": "/research/senryuji-kawabukuro-1377-zaitoku-chronology/"
+  },
+  {
+    "update_id": "2026-07-25-ryusenji-earthquake-research",
+    "date": "2026-07-25",
+    "temple_slug": "ryusenji-shiraha",
+    "title": "龍泉寺研究論文「白羽龍泉寺と1854年安政東海地震」を公開しました",
+    "summary": "本堂倒壊・再建・本尊記録を災害史と建築史から検証した6001字の研究論文です。",
+    "href": "/research/ryusenji-shiraha-1854-earthquake-reconstruction/"
+  },
+  {
+    "update_id": "2026-07-25-ryusenji-river-research",
+    "date": "2026-07-25",
+    "temple_slug": "ryusenji-shiraha",
+    "title": "龍泉寺研究論文「白羽龍泉寺の芋瀬移転説と天竜川」を公開しました",
+    "summary": "移転説・除地高・河道変化・対岸檀家を検証した6117字の研究論文です。",
+    "href": "/research/ryusenji-shiraha-imose-tenryu-river/"
+  },
+  {
+    "update_id": "2026-07-25-ryusenji-founder-research",
+    "date": "2026-07-25",
+    "temple_slug": "ryusenji-shiraha",
+    "title": "龍泉寺研究論文「白羽龍泉寺の1624年草創と心叟禅師」を公開しました",
+    "summary": "郡誌・宗派資料・地域寺院ネットワークを照合した6264字の研究論文です。",
+    "href": "/research/ryusenji-shiraha-founder-shinso-1624/"
+  },
+  {
+    "update_id": "2026-07-25-hojuin-flood-community-research",
+    "date": "2026-07-25",
+    "temple_slug": "hojuin-jurojima",
+    "title": "寶珠院研究論文「十郎島輪中の歴史地理と寶珠院」を公開しました",
+    "summary": "水害地形・集落形成・寺院空間の関係を検証した6038字の研究論文です。",
+    "href": "/research/hojuin-jurojima-wajyu-flood-community/"
+  },
+  {
+    "update_id": "2026-07-25-hojuin-kannon-research",
+    "date": "2026-07-25",
+    "temple_slug": "hojuin-jurojima",
+    "title": "寶珠院研究論文「寶珠院本尊『高王観世音菩薩』の経典・像・信仰」を公開しました",
+    "summary": "尊格名・経典・造像・地域信仰を史料批判した6060字の研究論文です。",
+    "href": "/research/hojuin-gaowang-kannon-text-image-faith/"
+  },
+  {
+    "update_id": "2026-07-25-hojuin-lineage-research",
+    "date": "2026-07-25",
+    "temple_slug": "hojuin-jurojima",
+    "title": "寶珠院研究論文「寶珠院の1596年開山・1600年分派伝承」を公開しました",
+    "summary": "開山・分派年代と法系伝承の証拠水準を検証した6114字の研究論文です。",
+    "href": "/research/hojuin-1596-1600-hokoji-lineage/"
+  },
+  {
+    "update_id": "2026-07-25-shorinji-landholding-research",
+    "date": "2026-07-25",
+    "temple_slug": "shorinji-kawabukuro",
+    "title": "松林寺研究論文「河勾庄・川袋村と松林寺領の歴史地理」を公開しました",
+    "summary": "荘園・村落・寺領を地域景観の変化として検証した6033字の研究論文です。",
+    "href": "/research/shorinji-kawabukuro-kawawa-sho-landholding-landscape/"
+  },
+  {
+    "update_id": "2026-07-25-shorinji-prayer-research",
+    "date": "2026-07-25",
+    "temple_slug": "shorinji-kawabukuro",
+    "title": "松林寺研究論文「長谷川輝貞・青岩と川袋松林寺の祈願所伝承」を公開しました",
+    "summary": "人物伝承・今川氏・観音地蔵信仰を照合した6006字の研究論文です。",
+    "href": "/research/shorinji-kawabukuro-hasegawa-imagawa-kannon-jizo/"
+  },
+  {
+    "update_id": "2026-07-25-shorinji-name-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "shorinji-kawabukuro",
+    "title": "松林寺研究論文「松隣庵・正林庵から富景山松林寺へ」を公開しました",
+    "summary": "庵号・寺号・山号の変遷を史料層別に検証した6084字の研究論文です。",
+    "href": "/research/shorinji-kawabukuro-shorinan-shorinji-name-history/"
+  },
+  {
+    "update_id": "2026-07-25-manpukuji799-community-research",
+    "date": "2026-07-25",
+    "temple_slug": "manpukuji-kaketsuka-799",
+    "title": "萬福寺研究論文「掛塚湊・横町と真宗大谷派萬福寺」を公開しました",
+    "summary": "港町・横町・真宗寺院の社会関係を検証した6171字の研究論文です。",
+    "href": "/research/manpukuji-kaketsuka-799-port-yokomachi-shinshu-community/"
+  },
+  {
+    "update_id": "2026-07-25-manpukuji799-disambiguation-research",
+    "date": "2026-07-25",
+    "temple_slug": "manpukuji-kaketsuka-799",
+    "title": "萬福寺研究論文「掛塚の萬福寺と満福寺をどう識別するか」を公開しました",
+    "summary": "同名異寺院を典拠・所在地・宗派から識別した6166字の研究論文です。",
+    "href": "/research/manpukuji-kaketsuka-799-819-disambiguation-territory/"
+  },
+  {
+    "update_id": "2026-07-25-manpukuji799-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "manpukuji-kaketsuka-799",
+    "title": "萬福寺研究論文「1527年融円開創伝承と掛塚横町の萬福寺」を公開しました",
+    "summary": "開創伝承・真宗教団史・掛塚横町の地域史を検証した6199字の研究論文です。",
+    "href": "/research/manpukuji-kaketsuka-799-1527-yuen-higashi-honganji/"
+  },
+  {
     "update_id": "2026-07-25-gyokoji-documents-research",
     "date": "2026-07-25",
     "temple_slug": "gyokoji-ikeda",
