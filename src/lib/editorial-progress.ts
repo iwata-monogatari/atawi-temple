@@ -85,7 +85,7 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "ganjoji-hirama", name: "願成寺", stage: "調査・執筆" },
+  { slug: "kinzoji-toyooka", name: "金蔵寺", stage: "調査・執筆" },
   { slug: "shojuji-oka", name: "聖寿寺", stage: "調査・執筆" },
   { slug: "shingetsuji-ebijima", name: "心月寺", stage: "調査・執筆" },
 ] as const;
