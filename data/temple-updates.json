@@ -1,5 +1,125 @@
 [
   {
+    "update_id": "2026-07-25-toyodain-material-research",
+    "date": "2026-07-25",
+    "temple_slug": "toyodain-kegojima",
+    "title": "豊田院研究論文「豊田院・蔵六庵・境内小祠の物質資料」を公開しました",
+    "summary": "扁額・本尊記録・境内小祠を証拠層別に検証した6361字の研究論文です。",
+    "href": "/research/toyodain-zorokuan-shrine-jizo/"
+  },
+  {
+    "update_id": "2026-07-25-toyodain-community-research",
+    "date": "2026-07-25",
+    "temple_slug": "toyodain-kegojima",
+    "title": "豊田院研究論文「1493年写経・1589年定書・1596年豊田院」を公開しました",
+    "summary": "気子島の3史料系列と地域形成を検証した6304字の研究論文です。",
+    "href": "/research/toyodain-kegojima-1493-1589-1596/"
+  },
+  {
+    "update_id": "2026-07-25-toyodain-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "toyodain-kegojima",
+    "title": "豊田院研究論文「豊田院1596年開創と正医寺法系の年代矛盾」を公開しました",
+    "summary": "開創年と本寺開山年の前後関係を検証した6300字の研究論文です。",
+    "href": "/research/toyodain-1596-seiji-lineage/"
+  },
+  {
+    "update_id": "2026-07-25-shoi-ji-pilgrimage-research",
+    "date": "2026-07-25",
+    "temple_slug": "shoi-ji-shimoban-no",
+    "title": "正医寺研究論文「正医寺の薬師如来・萬能観音と複数霊場」を公開しました",
+    "summary": "本尊・観音堂・複数霊場を分離して検証した6071字の研究論文です。",
+    "href": "/research/shoi-ji-shimoban-no-yakushi-kannon-pilgrimage/"
+  },
+  {
+    "update_id": "2026-07-25-shoi-ji-network-research",
+    "date": "2026-07-25",
+    "temple_slug": "shoi-ji-shimoban-no",
+    "title": "正医寺研究論文「東光山正医寺と末寺9寺の地域ネットワーク」を公開しました",
+    "summary": "末寺9寺と僧侶法系の地域展開を検証した6097字の研究論文です。",
+    "href": "/research/shoi-ji-shimoban-no-nine-branch-temples/"
+  },
+  {
+    "update_id": "2026-07-25-shoi-ji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "shoi-ji-shimoban-no",
+    "title": "正医寺研究論文「正医寺の782年草創伝承と1600年曹洞宗開山」を公開しました",
+    "summary": "古代草創伝承と近世の宗派形成を検証した6085字の研究論文です。",
+    "href": "/research/shoi-ji-shimoban-no-782-1600-foundation/"
+  },
+  {
+    "update_id": "2026-07-25-anrakuji-rakan-research",
+    "date": "2026-07-25",
+    "temple_slug": "anrakuji-tateno",
+    "title": "安楽寺研究論文「安楽寺所蔵・大須賀陶山筆十六羅漢画像の研究設計」を公開しました",
+    "summary": "作者・連作構造・禅宗儀礼・保存史を検証した6302字の研究論文です。",
+    "href": "/research/anrakuji-osuga-tozan-sixteen-arhats/"
+  },
+  {
+    "update_id": "2026-07-25-anrakuji-land-research",
+    "date": "2026-07-25",
+    "temple_slug": "anrakuji-tateno",
+    "title": "安楽寺研究論文「安楽寺所蔵1601年伊奈忠次判物と寺領3石」を公開しました",
+    "summary": "判物・寺領・中泉代官支配を検証した6275字の研究論文です。",
+    "href": "/research/anrakuji-1601-ina-tadatsugu-temple-land/"
+  },
+  {
+    "update_id": "2026-07-25-anrakuji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "anrakuji-tateno",
+    "title": "安楽寺研究論文「安楽寺の元久年間草創伝承と1595年曹洞宗再編」を公開しました",
+    "summary": "草創・宗派転換・法系形成を検証した6302字の研究論文です。",
+    "href": "/research/anrakuji-1204-1595-sectarian-reorganization/"
+  },
+  {
+    "update_id": "2026-07-25-chionsai-worship-research",
+    "date": "2026-07-25",
+    "temple_slug": "chionsai-hitokoto",
+    "title": "智恩齋研究論文「智恩齋の虚空蔵菩薩と一言山」を公開しました",
+    "summary": "本尊・境内堂・山号・地名の関係を検証した6207字の研究論文です。",
+    "href": "/research/chionsai-hitokoto-kokuzo-hitokotozan/"
+  },
+  {
+    "update_id": "2026-07-25-chionsai-memory-research",
+    "date": "2026-07-25",
+    "temple_slug": "chionsai-hitokoto",
+    "title": "智恩齋研究論文「一言観音と1572年一言坂合戦の記憶」を公開しました",
+    "summary": "戦闘史・観音伝承・地域記憶を検証した6206字の研究論文です。",
+    "href": "/research/chionsai-hitokoto-kannon-1572-memory/"
+  },
+  {
+    "update_id": "2026-07-25-chionsai-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "chionsai-hitokoto",
+    "title": "智恩齋研究論文「智恩齋の1641年伝法開祖と1642年法地格」を公開しました",
+    "summary": "伝法開祖・法地格・山号変更を検証した6259字の研究論文です。",
+    "href": "/research/chionsai-hitokoto-1641-sozawa-hochi/"
+  },
+  {
+    "update_id": "2026-07-25-shokoji-miyanoshiki-kannon-research",
+    "date": "2026-07-25",
+    "temple_slug": "shokoji-miyanoshiki",
+    "title": "松向寺研究論文「松向寺の11面観音と豊田郡33観音第21番」を公開しました",
+    "summary": "本尊・札所・旧東海道交通を検証した6022字の研究論文です。",
+    "href": "/research/shokoji-miyanoshiki-kannon-route/"
+  },
+  {
+    "update_id": "2026-07-25-shokoji-miyanoshiki-merger-research",
+    "date": "2026-07-25",
+    "temple_slug": "shokoji-miyanoshiki",
+    "title": "松向寺研究論文「1874年の地蔵寺合併と松向寺」を公開しました",
+    "summary": "異宗派寺院の合併と地域記憶を検証した6007字の研究論文です。",
+    "href": "/research/shokoji-miyanoshiki-1874-jizoji-merger/"
+  },
+  {
+    "update_id": "2026-07-25-shokoji-miyanoshiki-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "shokoji-miyanoshiki",
+    "title": "松向寺研究論文「松向寺の1601年黒印と1619年草創」を公開しました",
+    "summary": "草創以前の黒印記事と寺号変遷を検証した6012字の研究論文です。",
+    "href": "/research/shokoji-miyanoshiki-1601-1619-chronology/"
+  },
+  {
     "update_id": "2026-07-25-shuzoji-worship-research",
     "date": "2026-07-25",
     "temple_slug": "shuzoji-toyooka",

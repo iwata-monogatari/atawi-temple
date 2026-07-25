@@ -85,9 +85,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "toyodain-kegojima", name: "豊田院", stage: "調査・執筆" },
-  { slug: "fukuoji-morimoto", name: "福王寺", stage: "調査・執筆" },
-  { slug: "rinshoji-kodateno", name: "林昌寺", stage: "調査・執筆" },
+  { slug: "kotokuji-morishita", name: "興徳寺", stage: "調査・執筆" },
+  { slug: "yofukuji-shimohongo", name: "養福寺", stage: "調査・執筆" },
+  { slug: "myohoji-ikeda", name: "妙法寺", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -1707,6 +1707,111 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 12,
       href: "/research/shuzoji-toyooka-13koku-7-temples/",
     } as const;
+    const shokojiMiyanoshikiHistoryPublication = {
+      title: "松向寺の1601年黒印と1619年草創",
+      characterCount: 6012,
+      illustrationCount: 6,
+      sourceCount: 16,
+      href: "/research/shokoji-miyanoshiki-1601-1619-chronology/",
+    } as const;
+    const shokojiMiyanoshikiHeritagePublication = {
+      title: "松向寺の11面観音と豊田郡33観音第21番",
+      characterCount: 6022,
+      illustrationCount: 6,
+      sourceCount: 16,
+      href: "/research/shokoji-miyanoshiki-kannon-route/",
+    } as const;
+    const shokojiMiyanoshikiCommunityPublication = {
+      title: "1874年の地蔵寺合併と松向寺",
+      characterCount: 6007,
+      illustrationCount: 6,
+      sourceCount: 16,
+      href: "/research/shokoji-miyanoshiki-1874-jizoji-merger/",
+    } as const;
+    const chionsaiHistoryPublication = {
+      title: "智恩齋の1641年伝法開祖と1642年法地格",
+      characterCount: 6259,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/chionsai-hitokoto-1641-sozawa-hochi/",
+    } as const;
+    const chionsaiHeritagePublication = {
+      title: "智恩齋の虚空蔵菩薩と一言山",
+      characterCount: 6207,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/chionsai-hitokoto-kokuzo-hitokotozan/",
+    } as const;
+    const chionsaiCommunityPublication = {
+      title: "一言観音と1572年一言坂合戦の記憶",
+      characterCount: 6206,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/chionsai-hitokoto-kannon-1572-memory/",
+    } as const;
+    const anrakujiHistoryPublication = {
+      title: "安楽寺の元久年間草創伝承と1595年曹洞宗再編",
+      characterCount: 6302,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/anrakuji-1204-1595-sectarian-reorganization/",
+    } as const;
+    const anrakujiHeritagePublication = {
+      title: "安楽寺所蔵・大須賀陶山筆十六羅漢画像の研究設計",
+      characterCount: 6302,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/anrakuji-osuga-tozan-sixteen-arhats/",
+    } as const;
+    const anrakujiCommunityPublication = {
+      title: "安楽寺所蔵1601年伊奈忠次判物と寺領3石",
+      characterCount: 6275,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/anrakuji-1601-ina-tadatsugu-temple-land/",
+    } as const;
+    const shoiJiHistoryPublication = {
+      title: "正医寺の782年草創伝承と1600年曹洞宗開山",
+      characterCount: 6085,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/shoi-ji-shimoban-no-782-1600-foundation/",
+    } as const;
+    const shoiJiHeritagePublication = {
+      title: "正医寺の薬師如来・萬能観音と複数霊場",
+      characterCount: 6071,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/shoi-ji-shimoban-no-yakushi-kannon-pilgrimage/",
+    } as const;
+    const shoiJiCommunityPublication = {
+      title: "東光山正医寺と末寺9寺の地域ネットワーク",
+      characterCount: 6097,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/shoi-ji-shimoban-no-nine-branch-temples/",
+    } as const;
+    const toyodainHistoryPublication = {
+      title: "豊田院1596年開創と正医寺法系の年代矛盾",
+      characterCount: 6300,
+      illustrationCount: 5,
+      sourceCount: 14,
+      href: "/research/toyodain-1596-seiji-lineage/",
+    } as const;
+    const toyodainHeritagePublication = {
+      title: "豊田院・蔵六庵・境内小祠の物質資料",
+      characterCount: 6361,
+      illustrationCount: 5,
+      sourceCount: 14,
+      href: "/research/toyodain-zorokuan-shrine-jizo/",
+    } as const;
+    const toyodainCommunityPublication = {
+      title: "1493年写経・1589年定書・1596年豊田院",
+      characterCount: 6304,
+      illustrationCount: 5,
+      sourceCount: 14,
+      href: "/research/toyodain-kegojima-1493-1589-1596/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -2156,6 +2261,36 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? shuzojiHeritagePublication
           : temple.slug === "shuzoji-toyooka" && angle.key === "community"
             ? shuzojiCommunityPublication
+          : temple.slug === "shokoji-miyanoshiki" && angle.key === "history"
+            ? shokojiMiyanoshikiHistoryPublication
+          : temple.slug === "shokoji-miyanoshiki" && angle.key === "heritage"
+            ? shokojiMiyanoshikiHeritagePublication
+          : temple.slug === "shokoji-miyanoshiki" && angle.key === "community"
+            ? shokojiMiyanoshikiCommunityPublication
+          : temple.slug === "chionsai-hitokoto" && angle.key === "history"
+            ? chionsaiHistoryPublication
+          : temple.slug === "chionsai-hitokoto" && angle.key === "heritage"
+            ? chionsaiHeritagePublication
+          : temple.slug === "chionsai-hitokoto" && angle.key === "community"
+            ? chionsaiCommunityPublication
+          : temple.slug === "anrakuji-tateno" && angle.key === "history"
+            ? anrakujiHistoryPublication
+          : temple.slug === "anrakuji-tateno" && angle.key === "heritage"
+            ? anrakujiHeritagePublication
+          : temple.slug === "anrakuji-tateno" && angle.key === "community"
+            ? anrakujiCommunityPublication
+          : temple.slug === "shoi-ji-shimoban-no" && angle.key === "history"
+            ? shoiJiHistoryPublication
+          : temple.slug === "shoi-ji-shimoban-no" && angle.key === "heritage"
+            ? shoiJiHeritagePublication
+          : temple.slug === "shoi-ji-shimoban-no" && angle.key === "community"
+            ? shoiJiCommunityPublication
+          : temple.slug === "toyodain-kegojima" && angle.key === "history"
+            ? toyodainHistoryPublication
+          : temple.slug === "toyodain-kegojima" && angle.key === "heritage"
+            ? toyodainHeritagePublication
+          : temple.slug === "toyodain-kegojima" && angle.key === "community"
+            ? toyodainCommunityPublication
           : undefined;
 
     return {
