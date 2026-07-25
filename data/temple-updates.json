@@ -1,5 +1,59 @@
 [
   {
+    "update_id": "2026-07-25-pillar-30-bonsho",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の梵鐘と鐘楼」を公開しました",
+    "summary": "音・銘文・建築から宗教音響景観を検証した6007字の総合研究です。",
+    "href": "/research/iwata-pillar-30-bonsho-bell-towers-soundscape/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-29-trees",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の寺院樹木」を公開しました",
+    "summary": "イチョウ・ソテツ・巨木信仰を検証した6017字の総合研究です。",
+    "href": "/research/iwata-pillar-29-temple-trees-botanical-history/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-28-gardens",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の寺院庭園」を公開しました",
+    "summary": "景観・植栽・水系の文化史を検証した6021字の総合研究です。",
+    "href": "/research/iwata-pillar-28-temple-gardens-cultural-landscape/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-27-architecture-comparison",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の寺院建築」を公開しました",
+    "summary": "本堂・山門・楼閣を比較した6011字の総合研究です。",
+    "href": "/research/iwata-temple-architecture-halls-gates-tower-comparison/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-26-sculpture",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の仏像」を公開しました",
+    "summary": "年代・様式・伝来の識別方法を検証した6043字の総合研究です。",
+    "href": "/research/iwata-buddhist-sculpture-dating-style-provenance-method/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-25-cultural-properties",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の寺院文化財」を公開しました",
+    "summary": "指定制度と地域資料の保存を検証した6165字の総合研究です。",
+    "href": "/research/iwata-temple-cultural-properties-system-regional-materials/"
+  },
+  {
     "update_id": "2026-07-25-pillar-24-disaster",
     "kind": "research",
     "date": "2026-07-25",
