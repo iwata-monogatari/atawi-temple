@@ -86,8 +86,8 @@ const templeAngles = [
 
 export const activeResearchTemples = [
   { slug: "toyodain-kegojima", name: "豊田院", stage: "調査・執筆" },
-  { slug: "shoi-ji-shimoban-no", name: "正医寺", stage: "調査・執筆" },
-  { slug: "anrakuji-tateno", name: "安楽寺", stage: "調査・執筆" },
+  { slug: "fukuoji-morimoto", name: "福王寺", stage: "調査・執筆" },
+  { slug: "rinshoji-kodateno", name: "林昌寺", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
