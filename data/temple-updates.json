@@ -1,5 +1,32 @@
 [
   {
+    "update_id": "2026-07-25-pillar-24-disaster",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の寺院と災害・再建」を公開しました",
+    "summary": "地震・火災・暴風の継承史を検証した6100字の総合研究です。",
+    "href": "/research/iwata-temples-disasters-reconstruction-resilience/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-23-material",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市寺院の梵鐘・石造物」を公開しました",
+    "summary": "銘文と移動の物質史を検証した6124字の総合研究です。",
+    "href": "/research/iwata-bells-stone-monuments-material-history/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-22-architecture",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の寺院建築」を公開しました",
+    "summary": "建立・移築・改修から宗教空間を検証した6126字の総合研究です。",
+    "href": "/research/iwata-temple-architecture-rebuilding-translocation/"
+  },
+  {
     "update_id": "2026-07-25-pillar-21-jizo",
     "kind": "research",
     "date": "2026-07-25",
