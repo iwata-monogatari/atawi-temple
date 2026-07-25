@@ -1,5 +1,77 @@
 [
   {
+    "update_id": "2026-07-25-gyokoji-documents-research",
+    "date": "2026-07-25",
+    "temple_slug": "gyokoji-ikeda",
+    "title": "行興寺研究論文「池田道場・行興寺文書と天竜川渡船社会」を公開しました",
+    "summary": "池田道場、渡船、寺院文書を地域交通史として検証した6063字の研究論文です。",
+    "href": "/research/gyokoji-ikeda-dojo-ferry-documents/"
+  },
+  {
+    "update_id": "2026-07-25-gyokoji-wisteria-research",
+    "date": "2026-07-25",
+    "temple_slug": "gyokoji-ikeda",
+    "title": "行興寺研究論文「熊野の長フジを生きた文化財として管理する」を公開しました",
+    "summary": "天然記念物の保存科学と行興寺境内の管理を検証した6095字の研究論文です。",
+    "href": "/research/gyokoji-yuyano-wisteria-living-heritage/"
+  },
+  {
+    "update_id": "2026-07-25-gyokoji-yuyano-research",
+    "date": "2026-07-25",
+    "temple_slug": "gyokoji-ikeda",
+    "title": "行興寺研究論文「行興寺の熊野御前伝承と能・絵巻・墓塔」を公開しました",
+    "summary": "熊野御前伝承を能、絵巻、墓塔の異なる媒体から検証した6277字の研究論文です。",
+    "href": "/research/gyokoji-yuyano-noh-emaki-memory/"
+  },
+  {
+    "update_id": "2026-07-25-manpukuji819-namesake-research",
+    "date": "2026-07-25",
+    "temple_slug": "manpukuji-kaketsuka-819",
+    "title": "満福寺研究論文「掛塚の満福寺・萬福寺と『万福寺領3石』」を公開しました",
+    "summary": "同名2寺を識別し、寺領3石の帰属を史料批判した6055字の研究論文です。",
+    "href": "/research/manpukuji-kaketsuka-819-namesake-temples-three-koku/"
+  },
+  {
+    "update_id": "2026-07-25-manpukuji819-community-research",
+    "date": "2026-07-25",
+    "temple_slug": "manpukuji-kaketsuka-819",
+    "title": "満福寺研究論文「掛塚新町と亀甲山満福寺の社会空間」を公開しました",
+    "summary": "掛塚湊、新町、寺院境内を地域社会の空間史として検証した6112字の研究論文です。",
+    "href": "/research/manpukuji-kaketsuka-819-shinmachi-port-community/"
+  },
+  {
+    "update_id": "2026-07-25-manpukuji819-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "manpukuji-kaketsuka-819",
+    "title": "満福寺研究論文「1576年開基伝承と亀甲山満福寺の成立」を公開しました",
+    "summary": "開基伝承、山号、同名寺院を分けて検証した6061字の研究論文です。",
+    "href": "/research/manpukuji-kaketsuka-819-1576-kikkozan-foundation/"
+  },
+  {
+    "update_id": "2026-07-25-kokuseiji-faith-research",
+    "date": "2026-07-25",
+    "temple_slug": "kokuseiji-kaketsuka",
+    "title": "國清寺研究論文「國清寺の阿弥陀信仰・年中行事・鎮守空間」を公開しました",
+    "summary": "本尊、年中行事、鎮守を複合的な寺院空間として検証した6020字の研究論文です。",
+    "href": "/research/kokuseiji-amida-rites-chinju-material-culture/"
+  },
+  {
+    "update_id": "2026-07-25-kokuseiji-port-research",
+    "date": "2026-07-25",
+    "temple_slug": "kokuseiji-kaketsuka",
+    "title": "國清寺研究論文「掛塚湊の材木・廻船社会と國清寺」を公開しました",
+    "summary": "港町史と寺院固有史を分け、材木・廻船との関係を検証した6095字の研究論文です。",
+    "href": "/research/kokuseiji-kaketsuka-port-timber-shipping/"
+  },
+  {
+    "update_id": "2026-07-25-kokuseiji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "kokuseiji-kaketsuka",
+    "title": "國清寺研究論文「國清寺の1615年頃創建伝承と観智国師」を公開しました",
+    "summary": "創建伝承、観智国師、増上寺との関係を史料批判した6190字の研究論文です。",
+    "href": "/research/kokuseiji-1615-kanchi-kokushi-founder/"
+  },
+  {
     "update_id": "2026-07-25-saikoji-kaketsuka-port-research",
     "date": "2026-07-25",
     "temple_slug": "saikoji-kaketsuka",

@@ -85,9 +85,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "shorinji-kawabukuro", name: "松林寺", stage: "調査・執筆" },
-  { slug: "manpukuji-kaketsuka-799", name: "萬福寺", stage: "調査・執筆" },
-  { slug: "gyokoji-ikeda", name: "行興寺", stage: "調査・執筆" },
+  { slug: "ryusenji-shiraha", name: "竜泉寺", stage: "調査・執筆" },
+  { slug: "senryuji-kawabukuro", name: "潜龍寺", stage: "調査・執筆" },
+  { slug: "hojuin-jurojima", name: "寶珠院", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -1161,6 +1161,69 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 12,
       href: "/research/saikoji-kaketsuka-annual-ritual-household-nenbutsu/",
     } as const;
+    const kokuseijiHistoryPublication = {
+      title: "國清寺の1615年頃創建伝承と観智国師",
+      characterCount: 6190,
+      illustrationCount: 6,
+      sourceCount: 16,
+      href: "/research/kokuseiji-1615-kanchi-kokushi-founder/",
+    } as const;
+    const kokuseijiHeritagePublication = {
+      title: "掛塚湊の材木・廻船社会と國清寺",
+      characterCount: 6095,
+      illustrationCount: 6,
+      sourceCount: 16,
+      href: "/research/kokuseiji-kaketsuka-port-timber-shipping/",
+    } as const;
+    const kokuseijiCommunityPublication = {
+      title: "國清寺の阿弥陀信仰・年中行事・鎮守空間",
+      characterCount: 6020,
+      illustrationCount: 6,
+      sourceCount: 16,
+      href: "/research/kokuseiji-amida-rites-chinju-material-culture/",
+    } as const;
+    const manpukuji819HistoryPublication = {
+      title: "1576年開基伝承と亀甲山満福寺の成立",
+      characterCount: 6061,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/manpukuji-kaketsuka-819-1576-kikkozan-foundation/",
+    } as const;
+    const manpukuji819HeritagePublication = {
+      title: "掛塚の満福寺・萬福寺と「万福寺領3石」",
+      characterCount: 6055,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/manpukuji-kaketsuka-819-namesake-temples-three-koku/",
+    } as const;
+    const manpukuji819CommunityPublication = {
+      title: "掛塚新町と亀甲山満福寺の社会空間",
+      characterCount: 6112,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/manpukuji-kaketsuka-819-shinmachi-port-community/",
+    } as const;
+    const gyokojiHistoryPublication = {
+      title: "行興寺の熊野御前伝承と能・絵巻・墓塔",
+      characterCount: 6277,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/gyokoji-yuyano-noh-emaki-memory/",
+    } as const;
+    const gyokojiHeritagePublication = {
+      title: "熊野の長フジを生きた文化財として管理する",
+      characterCount: 6095,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/gyokoji-yuyano-wisteria-living-heritage/",
+    } as const;
+    const gyokojiCommunityPublication = {
+      title: "池田道場・行興寺文書と天竜川渡船社会",
+      characterCount: 6063,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/gyokoji-ikeda-dojo-ferry-documents/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -1454,6 +1517,24 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? saikojiKaketsukaHeritagePublication
           : temple.slug === "saikoji-kaketsuka" && angle.key === "community"
             ? saikojiKaketsukaCommunityPublication
+          : temple.slug === "kokuseiji-kaketsuka" && angle.key === "history"
+            ? kokuseijiHistoryPublication
+          : temple.slug === "kokuseiji-kaketsuka" && angle.key === "heritage"
+            ? kokuseijiHeritagePublication
+          : temple.slug === "kokuseiji-kaketsuka" && angle.key === "community"
+            ? kokuseijiCommunityPublication
+          : temple.slug === "manpukuji-kaketsuka-819" && angle.key === "history"
+            ? manpukuji819HistoryPublication
+          : temple.slug === "manpukuji-kaketsuka-819" && angle.key === "heritage"
+            ? manpukuji819HeritagePublication
+          : temple.slug === "manpukuji-kaketsuka-819" && angle.key === "community"
+            ? manpukuji819CommunityPublication
+          : temple.slug === "gyokoji-ikeda" && angle.key === "history"
+            ? gyokojiHistoryPublication
+          : temple.slug === "gyokoji-ikeda" && angle.key === "heritage"
+            ? gyokojiHeritagePublication
+          : temple.slug === "gyokoji-ikeda" && angle.key === "community"
+            ? gyokojiCommunityPublication
           : undefined;
 
     return {
