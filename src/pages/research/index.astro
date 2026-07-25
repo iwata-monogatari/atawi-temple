@@ -36,7 +36,11 @@ const templeGroups = Array.from(
     articles: typeof normalizedArticles;
   }>())
   .values(),
-).sort((a, b) => a.label.localeCompare(b.label, "ja"));
+).sort((a, b) => {
+  if (a.key === "general") return -1;
+  if (b.key === "general") return 1;
+  return a.label.localeCompare(b.label, "ja");
+});
 
 const seriesOptions = Array.from(new Set(normalizedArticles.map((article) => article.series)));
 const districtOptions = Array.from(
@@ -59,7 +63,11 @@ const districtOptions = Array.from(
       <p class="eyebrow">ATAWI TEMPLE RESEARCH</p>
       <h1>研究論文一覧</h1>
       <p>寺院ごとに論文を整理し、題名・寺院名・キーワードから検索できます。伝承、確認事実、研究上の推定を区別して公開しています。</p>
-      <p><a href="/editorial-progress/">論文制作の進捗ダッシュボードを見る</a></p>
+      <p>
+        <a href="#general">総合論文だけを読む</a>
+        <span aria-hidden="true"> ／ </span>
+        <a href="/editorial-progress/">論文制作の進捗ダッシュボードを見る</a>
+      </p>
     </div>
     <dl class="research-index-stats" aria-label="研究論文の公開状況">
       <div><dt>公開論文</dt><dd>{normalizedArticles.length}<span>本</span></dd></div>
@@ -104,7 +112,11 @@ const districtOptions = Array.from(
 
   <section class="research-index-results" data-research-results>
     {templeGroups.map((group) => (
-      <section class="research-temple-group" data-research-group={group.key}>
+      <section
+        class="research-temple-group"
+        id={group.key === "general" ? "general" : undefined}
+        data-research-group={group.key}
+      >
         <header>
           <div>
             <p class="eyebrow">TEMPLE RESEARCH</p>

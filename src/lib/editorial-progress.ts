@@ -6,6 +6,9 @@ import { pillarResearchArticles19To21 } from "./research-articles-pillars-19-21"
 import { pillarResearchArticles22To24 } from "./research-articles-pillars-22-24";
 import { pillarResearchArticles25To27 } from "./research-articles-pillars-25-27";
 import { pillarResearchArticles28To30 } from "./research-articles-pillars-28-30";
+import { pillarResearchArticles31To33 } from "./research-articles-pillars-31-33";
+import { pillarResearchArticles34To36 } from "./research-articles-pillars-34-36";
+import { pillarResearchArticles37To39 } from "./research-articles-pillars-37-39";
 
 export type EditorialStatus = "planned" | "researching" | "drafting" | "reviewing" | "published";
 
@@ -93,9 +96,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "pillar-31-33", name: "総合研究31〜33", stage: "調査・執筆" },
-  { slug: "pillar-34-36", name: "総合研究34〜36", stage: "調査・執筆" },
-  { slug: "pillar-37-39", name: "総合研究37〜39", stage: "調査・執筆" },
+  { slug: "pillar-40-42", name: "総合研究40〜42", stage: "調査・執筆" },
+  { slug: "pillar-43-45", name: "総合研究43〜45", stage: "調査・執筆" },
+  { slug: "pillar-46-48", name: "総合研究46〜48", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -175,6 +178,9 @@ const pillarPublications = [
     ...pillarResearchArticles22To24,
     ...pillarResearchArticles25To27,
     ...pillarResearchArticles28To30,
+    ...pillarResearchArticles31To33,
+    ...pillarResearchArticles34To36,
+    ...pillarResearchArticles37To39,
   ].map((article) => ({
     title: article.title,
     characterCount: article.sections

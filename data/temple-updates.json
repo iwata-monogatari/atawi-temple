@@ -1,5 +1,86 @@
 [
   {
+    "update_id": "2026-07-25-pillar-39-women",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の寺院と女性」を公開しました",
+    "summary": "信仰・講・家族継承をジェンダー史から検証した6369字の総合研究です。",
+    "href": "/research/iwata-pillar-39-temples-women-gender-history/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-38-associations",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の寺院と自治会」を公開しました",
+    "summary": "共同体運営の歴史的基盤を検証した6422字の総合研究です。",
+    "href": "/research/iwata-pillar-38-temples-neighborhood-associations/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-37-festivals",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の寺院と祭礼」を公開しました",
+    "summary": "神仏習合と地域祭礼の構造を検証した6279字の総合研究です。",
+    "href": "/research/iwata-pillar-37-temples-festivals-shinbutsu/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-36-war",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田の寺院と戦争」を公開しました",
+    "summary": "金属供出・慰霊施設・空襲記憶・戦後供養を検証した6047字の総合研究です。",
+    "href": "/research/iwata-temples-modern-war-memory-memorial-practice/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-35-ansei-earthquake",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田の寺院と安政東海地震」を公開しました",
+    "summary": "1854年の倒壊記録・救済・再建を寺院別に比較した6004字の総合研究です。",
+    "href": "/research/iwata-temples-1854-ansei-tokai-earthquake-case-comparison/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-34-takeda-tokugawa",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田の寺院と武田・徳川攻防」を公開しました",
+    "summary": "禁制・兵粮・祈願・兵火から政治秩序の転換を検証した6074字の総合研究です。",
+    "href": "/research/iwata-temples-takeda-tokugawa-conflict-political-order/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-33-ieyasu",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田の寺院と徳川家康」を公開しました",
+    "summary": "寺領・御殿・寺宝の政治史を検証した6413字の総合研究です。",
+    "href": "/research/iwata-temples-tokugawa-ieyasu-political-history/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-32-education",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田の寺子屋と近代教育」を公開しました",
+    "summary": "寺院から学校への移行を検証した6274字の総合研究です。",
+    "href": "/research/iwata-temple-terakoya-modern-education/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-31-precinct",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「寺院境内から読む磐田」を公開しました",
+    "summary": "家・村・移動の歴史を境内資料から検証した6163字の総合研究です。",
+    "href": "/research/iwata-temple-precinct-household-village-mobility/"
+  },
+  {
     "update_id": "2026-07-25-pillar-30-bonsho",
     "kind": "research",
     "date": "2026-07-25",
