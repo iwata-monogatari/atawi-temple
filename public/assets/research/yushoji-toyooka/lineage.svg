@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#fbfaf7"/>
+  <text x="70" y="75" font-family="'Noto Serif JP','Yu Mincho',serif" font-size="32" font-weight="700" fill="#263238">豊岡における曹洞宗本末関係の読解</text>
+  <text x="70" y="112" font-family="'Noto Sans JP','Yu Gothic',sans-serif" font-size="18" fill="#667078">寺院間の制度的関係と僧侶間の法系を分けて表す</text>
+  <g font-family="'Noto Sans JP','Yu Gothic',sans-serif" text-anchor="middle">
+    <rect x="420" y="155" width="360" height="95" rx="8" fill="#dce8ee" stroke="#395f78" stroke-width="2"/>
+    <text x="600" y="195" font-size="25" font-weight="700" fill="#263238">聖寿寺</text><text x="600" y="226" font-size="17" fill="#667078">守増寺の本寺として記録</text>
+    <path d="M600 250V315" stroke="#395f78" stroke-width="4"/><path d="M590 300L600 315L610 300" fill="none" stroke="#395f78" stroke-width="4"/>
+    <rect x="420" y="315" width="360" height="110" rx="8" fill="#e7efe0" stroke="#54744b" stroke-width="3"/>
+    <text x="600" y="360" font-size="27" font-weight="700" fill="#263238">守増寺</text><text x="600" y="395" font-size="18" fill="#667078">開祖 全雄／地域本寺</text>
+    <path d="M600 425V490" stroke="#d06b42" stroke-width="4"/><path d="M590 475L600 490L610 475" fill="none" stroke="#d06b42" stroke-width="4"/>
+    <rect x="420" y="490" width="360" height="110" rx="8" fill="#f4e1d8" stroke="#d06b42" stroke-width="3"/>
+    <text x="600" y="535" font-size="27" font-weight="700" fill="#263238">雄照寺</text><text x="600" y="570" font-size="18" fill="#667078">全雄の嗣・全唐が創立と伝承</text>
+  </g>
+  <g font-family="'Noto Sans JP','Yu Gothic',sans-serif" fill="#667078">
+    <text x="810" y="352" font-size="17">本末：寺院組織の関係</text><text x="810" y="386" font-size="17">法系：師僧と嗣法者の関係</text>
+    <text x="70" y="640" font-size="16">資料：『遠江国風土記伝』『静岡県磐田郡誌』。現行の制度関係を示す図ではない。</text>
+  </g>
+</svg>

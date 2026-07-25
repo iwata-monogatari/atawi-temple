@@ -85,9 +85,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "kinzoji-toyooka", name: "金蔵寺", stage: "調査・執筆" },
-  { slug: "shojuji-oka", name: "聖寿寺", stage: "調査・執筆" },
-  { slug: "yushoji-toyooka", name: "雄照寺", stage: "調査・執筆" },
+  { slug: "toyodain-kegojima", name: "豊田院", stage: "調査・執筆" },
+  { slug: "shoi-ji-shimoban-no", name: "正医寺", stage: "調査・執筆" },
+  { slug: "anrakuji-tateno", name: "安楽寺", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -1623,6 +1623,90 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 18,
       href: "/research/shingetsuji-1873-ebijima-school-temple/",
     } as const;
+    const kinzojiHistoryPublication = {
+      title: "金藏寺の1587年草創と嶺岳",
+      characterCount: 6270,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/kinzoji-1587-reigaku-shuzoji-lineage/",
+    } as const;
+    const kinzojiHeritagePublication = {
+      title: "金藏寺の山号「玉瀧山」と歴史資料の「玉運山」",
+      characterCount: 6291,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/kinzoji-gyokuryuzan-name-identity/",
+    } as const;
+    const kinzojiCommunityPublication = {
+      title: "金藏寺の1649年朱印3石8斗",
+      characterCount: 6163,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/kinzoji-1649-shuin-3koku8to/",
+    } as const;
+    const shojujiHistoryPublication = {
+      title: "1478年崗本山聖寿軒開創伝承の再検証",
+      characterCount: 6001,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/shojuji-oka-1478-ikkan-monna/",
+    } as const;
+    const shojujiHeritagePublication = {
+      title: "聖寿寺の阿弥陀三尊・地域霊場・移座仏",
+      characterCount: 6028,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/shojuji-oka-amida-pilgrimage-relocation/",
+    } as const;
+    const shojujiCommunityPublication = {
+      title: "朱印高12石9斗余と聖寿寺24寺門末",
+      characterCount: 6018,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/shojuji-oka-12koku-24-temples-network/",
+    } as const;
+    const yushojiHistoryPublication = {
+      title: "雄照寺の1645年創立伝承と全唐・守増寺法系",
+      characterCount: 6549,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/yushoji-1645-zento-shuzoji-lineage/",
+    } as const;
+    const yushojiHeritagePublication = {
+      title: "雄照寺の地蔵菩薩と神宮山",
+      characterCount: 6431,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/yushoji-jizo-jinguzan-evidence-layers/",
+    } as const;
+    const yushojiCommunityPublication = {
+      title: "雄照寺と旧西堀村の共同形成",
+      characterCount: 6490,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/yushoji-nishibori-villagers-temple-formation/",
+    } as const;
+    const shuzojiHistoryPublication = {
+      title: "1587年三浦甚三郎重員開基・全雄開山の守増寺",
+      characterCount: 6240,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/shuzoji-toyooka-1587-miura-zenyu/",
+    } as const;
+    const shuzojiHeritagePublication = {
+      title: "守増寺の地蔵菩薩記録と磐田郡観音霊場",
+      characterCount: 6217,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/shuzoji-toyooka-jizo-pilgrimage/",
+    } as const;
+    const shuzojiCommunityPublication = {
+      title: "朱印高13石6斗と守増寺7寺門末",
+      characterCount: 6213,
+      illustrationCount: 6,
+      sourceCount: 12,
+      href: "/research/shuzoji-toyooka-13koku-7-temples/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -2048,6 +2132,30 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? shingetsujiHeritagePublication
           : temple.slug === "shingetsuji-ebijima" && angle.key === "community"
             ? shingetsujiCommunityPublication
+          : temple.slug === "kinzoji-toyooka" && angle.key === "history"
+            ? kinzojiHistoryPublication
+          : temple.slug === "kinzoji-toyooka" && angle.key === "heritage"
+            ? kinzojiHeritagePublication
+          : temple.slug === "kinzoji-toyooka" && angle.key === "community"
+            ? kinzojiCommunityPublication
+          : temple.slug === "shojuji-oka" && angle.key === "history"
+            ? shojujiHistoryPublication
+          : temple.slug === "shojuji-oka" && angle.key === "heritage"
+            ? shojujiHeritagePublication
+          : temple.slug === "shojuji-oka" && angle.key === "community"
+            ? shojujiCommunityPublication
+          : temple.slug === "yushoji-toyooka" && angle.key === "history"
+            ? yushojiHistoryPublication
+          : temple.slug === "yushoji-toyooka" && angle.key === "heritage"
+            ? yushojiHeritagePublication
+          : temple.slug === "yushoji-toyooka" && angle.key === "community"
+            ? yushojiCommunityPublication
+          : temple.slug === "shuzoji-toyooka" && angle.key === "history"
+            ? shuzojiHistoryPublication
+          : temple.slug === "shuzoji-toyooka" && angle.key === "heritage"
+            ? shuzojiHeritagePublication
+          : temple.slug === "shuzoji-toyooka" && angle.key === "community"
+            ? shuzojiCommunityPublication
           : undefined;
 
     return {
