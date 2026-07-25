@@ -118,6 +118,9 @@ import { fukuojiMorimotoResearchArticles } from "./research-articles-fukuoji-mor
 import { rinshojiKodatenoResearchArticles } from "./research-articles-rinshoji-kodateno";
 import { yofukujiShimohongoResearchArticles } from "./research-articles-yofukuji-shimohongo";
 import { myohojiIkedaResearchArticles } from "./research-articles-myohoji-ikeda";
+import { kotokujiResearchArticles } from "./research-articles-kotokuji-morishita";
+import { seidoinIkedaResearchArticles } from "./research-articles-seidoin-ikeda";
+import { daienjiKamoResearchArticles } from "./research-articles-daienji-kamo";
 
 const kokubunjiFigures = {
   hall: {
@@ -548,6 +551,9 @@ export const researchArticles: ResearchArticle[] = [
   ...rinshojiKodatenoResearchArticles,
   ...yofukujiShimohongoResearchArticles,
   ...myohojiIkedaResearchArticles,
+  ...kotokujiResearchArticles,
+  ...seidoinIkedaResearchArticles,
+  ...daienjiKamoResearchArticles,
 ];
 
 export function getResearchArticle(slug: string) {

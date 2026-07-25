@@ -86,8 +86,8 @@ const templeAngles = [
 
 export const activeResearchTemples = [
   { slug: "shokyuin-mitsue", name: "松久院", stage: "調査・執筆" },
-  { slug: "hoonan-kaminobe", name: "法音庵", stage: "調査・執筆" },
-  { slug: "tenryuin-kaminobe", name: "天龍院", stage: "調査・執筆" },
+  { slug: "ichiunsai-shimonobe", name: "一雲斉", stage: "調査・執筆" },
+  { slug: "saikoji-matsunokijima", name: "最廣寺", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -1896,6 +1896,69 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 18,
       href: "/research/myohoji-ikeda-ferry-village-land/",
     } as const;
+    const kotokujiHistoryPublication = {
+      title: "興徳寺の建久年間草創と1599年改称を再検討する",
+      characterCount: 6052,
+      illustrationCount: 6,
+      sourceCount: 16,
+      href: "/research/kotokuji-1190s-1599-foundation-reform/",
+    } as const;
+    const kotokujiHeritagePublication = {
+      title: "興徳寺の六地蔵・子安地蔵・本堂を読む",
+      characterCount: 6014,
+      illustrationCount: 6,
+      sourceCount: 16,
+      href: "/research/kotokuji-six-jizo-hondo-material-culture/",
+    } as const;
+    const kotokujiCommunityPublication = {
+      title: "森下村の寺領1石と興徳寺の水辺景観",
+      characterCount: 6025,
+      illustrationCount: 6,
+      sourceCount: 16,
+      href: "/research/kotokuji-morishita-temple-land-floodplain/",
+    } as const;
+    const seidoinHistoryPublication = {
+      title: "誓渡院の1504年開創と1712年中興",
+      characterCount: 6346,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/seidoin-ikeda-1504-1712-institution/",
+    } as const;
+    const seidoinHeritagePublication = {
+      title: "誓渡院の地蔵・帝釈天・新四国第5番",
+      characterCount: 6194,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/seidoin-ikeda-jizo-shikoku-landscape/",
+    } as const;
+    const seidoinCommunityPublication = {
+      title: "誓渡院の船玉大明神と池田渡船",
+      characterCount: 6160,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/seidoin-ikeda-funadama-ferry-memory/",
+    } as const;
+    const daienjiHistoryPublication = {
+      title: "加茂大圓寺の726年起源・942年再建・1638年改称",
+      characterCount: 6219,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/daienji-kamo-726-942-1638-history/",
+    } as const;
+    const daienjiHeritagePublication = {
+      title: "大圓寺所蔵1589年豊臣秀吉朱印状の史料的位置",
+      characterCount: 6172,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/daienji-kamo-hideyoshi-1589-prohibition/",
+    } as const;
+    const daienjiCommunityPublication = {
+      title: "大圓寺・寺谷用水・加茂大念仏の記憶構造",
+      characterCount: 6169,
+      illustrationCount: 6,
+      sourceCount: 18,
+      href: "/research/daienji-kamo-teradani-water-memorial/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -2399,6 +2462,24 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? myohojiHeritagePublication
           : temple.slug === "myohoji-ikeda" && angle.key === "community"
             ? myohojiCommunityPublication
+          : temple.slug === "kotokuji-morishita" && angle.key === "history"
+            ? kotokujiHistoryPublication
+          : temple.slug === "kotokuji-morishita" && angle.key === "heritage"
+            ? kotokujiHeritagePublication
+          : temple.slug === "kotokuji-morishita" && angle.key === "community"
+            ? kotokujiCommunityPublication
+          : temple.slug === "seidoin-ikeda" && angle.key === "history"
+            ? seidoinHistoryPublication
+          : temple.slug === "seidoin-ikeda" && angle.key === "heritage"
+            ? seidoinHeritagePublication
+          : temple.slug === "seidoin-ikeda" && angle.key === "community"
+            ? seidoinCommunityPublication
+          : temple.slug === "daienji-kamo" && angle.key === "history"
+            ? daienjiHistoryPublication
+          : temple.slug === "daienji-kamo" && angle.key === "heritage"
+            ? daienjiHeritagePublication
+          : temple.slug === "daienji-kamo" && angle.key === "community"
+            ? daienjiCommunityPublication
           : undefined;
 
     return {

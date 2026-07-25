@@ -1,5 +1,77 @@
 [
   {
+    "update_id": "2026-07-25-daienji-community-research",
+    "date": "2026-07-25",
+    "temple_slug": "daienji-kamo",
+    "title": "大圓寺研究論文「大圓寺・寺谷用水・加茂大念仏の記憶構造」を公開しました",
+    "summary": "水利・顕彰・民俗供養の重層を検証した6169字の研究論文です。",
+    "href": "/research/daienji-kamo-teradani-water-memorial/"
+  },
+  {
+    "update_id": "2026-07-25-daienji-document-research",
+    "date": "2026-07-25",
+    "temple_slug": "daienji-kamo",
+    "title": "大圓寺研究論文「大圓寺所蔵1589年豊臣秀吉朱印状の史料的位置」を公開しました",
+    "summary": "禁制文書・軍事通行・伝来史を検証した6172字の研究論文です。",
+    "href": "/research/daienji-kamo-hideyoshi-1589-prohibition/"
+  },
+  {
+    "update_id": "2026-07-25-daienji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "daienji-kamo",
+    "title": "大圓寺研究論文「加茂大圓寺の726年起源・942年再建・1638年改称」を公開しました",
+    "summary": "起源・再建・改称伝承を証拠層別に検証した6219字の研究論文です。",
+    "href": "/research/daienji-kamo-726-942-1638-history/"
+  },
+  {
+    "update_id": "2026-07-25-seidoin-worship-research",
+    "date": "2026-07-25",
+    "temple_slug": "seidoin-ikeda",
+    "title": "誓渡院研究論文「誓渡院の地蔵・帝釈天・新四国第5番」を公開しました",
+    "summary": "境内諸尊・写し霊場・景観を検証した6194字の研究論文です。",
+    "href": "/research/seidoin-ikeda-jizo-shikoku-landscape/"
+  },
+  {
+    "update_id": "2026-07-25-seidoin-ferry-research",
+    "date": "2026-07-25",
+    "temple_slug": "seidoin-ikeda",
+    "title": "誓渡院研究論文「誓渡院の船玉大明神と池田渡船」を公開しました",
+    "summary": "水上安全信仰・渡船・地域記憶を検証した6160字の研究論文です。",
+    "href": "/research/seidoin-ikeda-funadama-ferry-memory/"
+  },
+  {
+    "update_id": "2026-07-25-seidoin-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "seidoin-ikeda",
+    "title": "誓渡院研究論文「誓渡院の1504年開創と1712年中興」を公開しました",
+    "summary": "開創・中興・寺院制度化を検証した6346字の研究論文です。",
+    "href": "/research/seidoin-ikeda-1504-1712-institution/"
+  },
+  {
+    "update_id": "2026-07-25-kotokuji-material-research",
+    "date": "2026-07-25",
+    "temple_slug": "kotokuji-morishita",
+    "title": "興徳寺研究論文「興徳寺の六地蔵・子安地蔵・本堂を読む」を公開しました",
+    "summary": "境内諸尊と堂宇更新の物質文化史を検証した6014字の研究論文です。",
+    "href": "/research/kotokuji-six-jizo-hondo-material-culture/"
+  },
+  {
+    "update_id": "2026-07-25-kotokuji-land-research",
+    "date": "2026-07-25",
+    "temple_slug": "kotokuji-morishita",
+    "title": "興徳寺研究論文「森下村の寺領1石と興徳寺の水辺景観」を公開しました",
+    "summary": "寺領・洪水・用水・村落景観を検証した6025字の研究論文です。",
+    "href": "/research/kotokuji-morishita-temple-land-floodplain/"
+  },
+  {
+    "update_id": "2026-07-25-kotokuji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "kotokuji-morishita",
+    "title": "興徳寺研究論文「興徳寺の建久年間草創と1599年改称を再検討する」を公開しました",
+    "summary": "草創・寺号表記・曹洞宗化を検証した6052字の研究論文です。",
+    "href": "/research/kotokuji-1190s-1599-foundation-reform/"
+  },
+  {
     "update_id": "2026-07-25-myohoji-pilgrimage-research",
     "date": "2026-07-25",
     "temple_slug": "myohoji-ikeda",
