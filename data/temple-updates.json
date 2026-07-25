@@ -1,5 +1,77 @@
 [
   {
+    "update_id": "2026-07-25-kannonji-sea-research",
+    "date": "2026-07-25",
+    "temple_slug": "kannonji-fukude",
+    "title": "観音寺研究論文「福田観音寺の御詠歌・魚籃観音・海域文化」を公開しました",
+    "summary": "御詠歌から漁業・供養・防災を再構成した6009字の研究論文です。",
+    "href": "/research/kannonji-fukude-sea-gyorin-goeika/"
+  },
+  {
+    "update_id": "2026-07-25-kannonji-secret-research",
+    "date": "2026-07-25",
+    "temple_slug": "kannonji-fukude",
+    "title": "観音寺研究論文「観音寺秘仏聖観音の午年開帳と2つの33観音霊場」を公開しました",
+    "summary": "秘仏開帳・作者伝承・2つの霊場体系を検証した6060字の研究論文です。",
+    "href": "/research/kannonji-secret-kannon-uma-year-dual-pilgrimage/"
+  },
+  {
+    "update_id": "2026-07-25-kannonji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "kannonji-fukude",
+    "title": "観音寺研究論文「観音寺の1494年円通院開創と1559年再編」を公開しました",
+    "summary": "大洞院法系・遷座伝承・福田の舟運を検証した6090字の研究論文です。",
+    "href": "/research/kannonji-1494-1559-entsuin-migration/"
+  },
+  {
+    "update_id": "2026-07-25-chosenji-landscape-research",
+    "date": "2026-07-25",
+    "temple_slug": "chosenji-fukudenakajima",
+    "title": "長泉寺研究論文「中島村字北浦と長泉寺の寺地形成」を公開しました",
+    "summary": "中嶋新開田と福田中島445の空間的連続を検証した6025字の研究論文です。",
+    "href": "/research/chosenji-fukudenakajima-nakajima-kitaura-landscape/"
+  },
+  {
+    "update_id": "2026-07-25-chosenji-yakushi-research",
+    "date": "2026-07-25",
+    "temple_slug": "chosenji-fukudenakajima",
+    "title": "長泉寺研究論文「長泉寺の薬師如来記録と遠江四十九薬師番外札所」を公開しました",
+    "summary": "本尊・秘仏・開帳・御詠歌を証拠種別ごとに検証した6015字の研究論文です。",
+    "href": "/research/chosenji-fukudenakajima-yakushi-pilgrimage/"
+  },
+  {
+    "update_id": "2026-07-25-chosenji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "chosenji-fukudenakajima",
+    "title": "長泉寺研究論文「海雲建立・盛舜開祖伝承と瑞光山長泉寺」を公開しました",
+    "summary": "福田中島における寿正寺門流の成立過程を検証した6023字の研究論文です。",
+    "href": "/research/chosenji-fukudenakajima-kaiun-seishun-lineage/"
+  },
+  {
+    "update_id": "2026-07-25-keishoji-pilgrimage-research",
+    "date": "2026-07-25",
+    "temple_slug": "keishoji-fukude",
+    "title": "慶昌寺研究論文「円福山慶昌寺の馬頭観音と磐田郡三十三観音」を公開しました",
+    "summary": "第32番札所と福田に重なる霊場体系を識別した6271字の研究論文です。",
+    "href": "/research/keishoji-bato-kannon-iwata-33-pilgrimage/"
+  },
+  {
+    "update_id": "2026-07-25-keishoji-hochi-research",
+    "date": "2026-07-25",
+    "temple_slug": "keishoji-fukude",
+    "title": "慶昌寺研究論文「慶昌寺の1881年『法地』と明治期寺院制度」を公開しました",
+    "summary": "住職継承・本末関係・現代法人を分離して検証した6302字の研究論文です。",
+    "href": "/research/keishoji-1881-hochi-institutional-transition/"
+  },
+  {
+    "update_id": "2026-07-25-keishoji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "keishoji-fukude",
+    "title": "慶昌寺研究論文「福田慶昌寺の1723年開山と慈眼詳雲」を公開しました",
+    "summary": "松秀寺第10世を媒介とする曹洞宗寺院ネットワークを検証した6481字の研究論文です。",
+    "href": "/research/keishoji-1723-jigen-shoun-shoshuji-lineage/"
+  },
+  {
     "update_id": "2026-07-25-sojiji-reconstruction-research",
     "date": "2026-07-25",
     "temple_slug": "sojiji-minamijima",

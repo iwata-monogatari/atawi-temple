@@ -85,9 +85,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "keishoji-fukude", name: "慶昌寺", stage: "調査・執筆" },
-  { slug: "chosenji-fukudenakajima", name: "長泉寺", stage: "調査・執筆" },
-  { slug: "kannonji-fukude", name: "観音寺", stage: "調査・執筆" },
+  { slug: "ryuhoin-ohara", name: "龍法院", stage: "調査・執筆" },
+  { slug: "zohonji-ikago", name: "蔵本寺", stage: "調査・執筆" },
+  { slug: "rengakuji-ryuyonakajima", name: "蓮覚寺", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -673,7 +673,7 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
     } as const;
     const jissaijiCommunityPublication = {
       title: "実際寺と鮫島村の水・新田・海岸景観",
-      characterCount: 6091,
+      characterCount: 6090,
       illustrationCount: 6,
       sourceCount: 13,
       href: "/research/jissaiji-samejima-village-water-newfield-coastal-landscape/",
@@ -1184,7 +1184,7 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
     } as const;
     const manpukuji819HistoryPublication = {
       title: "1576年開基伝承と亀甲山満福寺の成立",
-      characterCount: 6061,
+      characterCount: 6060,
       illustrationCount: 6,
       sourceCount: 14,
       href: "/research/manpukuji-kaketsuka-819-1576-kikkozan-foundation/",
@@ -1433,6 +1433,69 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       illustrationCount: 6,
       sourceCount: 21,
       href: "/research/sojiji-1854-1866-earthquake-reconstruction/",
+    } as const;
+    const keishojiHistoryPublication = {
+      title: "福田慶昌寺の1723年開山と慈眼詳雲",
+      characterCount: 6481,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/keishoji-1723-jigen-shoun-shoshuji-lineage/",
+    } as const;
+    const keishojiHeritagePublication = {
+      title: "慶昌寺の1881年「法地」と明治期寺院制度",
+      characterCount: 6302,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/keishoji-1881-hochi-institutional-transition/",
+    } as const;
+    const keishojiCommunityPublication = {
+      title: "円福山慶昌寺の馬頭観音と磐田郡三十三観音",
+      characterCount: 6271,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/keishoji-bato-kannon-iwata-33-pilgrimage/",
+    } as const;
+    const chosenjiHistoryPublication = {
+      title: "海雲建立・盛舜開祖伝承と瑞光山長泉寺",
+      characterCount: 6023,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/chosenji-fukudenakajima-kaiun-seishun-lineage/",
+    } as const;
+    const chosenjiHeritagePublication = {
+      title: "長泉寺の薬師如来記録と遠江四十九薬師番外札所",
+      characterCount: 6015,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/chosenji-fukudenakajima-yakushi-pilgrimage/",
+    } as const;
+    const chosenjiCommunityPublication = {
+      title: "中島村字北浦と長泉寺の寺地形成",
+      characterCount: 6025,
+      illustrationCount: 6,
+      sourceCount: 14,
+      href: "/research/chosenji-fukudenakajima-nakajima-kitaura-landscape/",
+    } as const;
+    const kannonjiHistoryPublication = {
+      title: "観音寺の1494年円通院開創と1559年再編",
+      characterCount: 6091,
+      illustrationCount: 6,
+      sourceCount: 20,
+      href: "/research/kannonji-1494-1559-entsuin-migration/",
+    } as const;
+    const kannonjiHeritagePublication = {
+      title: "観音寺秘仏聖観音の午年開帳と2つの33観音霊場",
+      characterCount: 6061,
+      illustrationCount: 6,
+      sourceCount: 20,
+      href: "/research/kannonji-secret-kannon-uma-year-dual-pilgrimage/",
+    } as const;
+    const kannonjiCommunityPublication = {
+      title: "福田観音寺の御詠歌・魚籃観音・海域文化",
+      characterCount: 6009,
+      illustrationCount: 6,
+      sourceCount: 20,
+      href: "/research/kannonji-fukude-sea-gyorin-goeika/",
     } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
@@ -1805,6 +1868,24 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? sojijiHeritagePublication
           : temple.slug === "sojiji-minamijima" && angle.key === "community"
             ? sojijiCommunityPublication
+          : temple.slug === "keishoji-fukude" && angle.key === "history"
+            ? keishojiHistoryPublication
+          : temple.slug === "keishoji-fukude" && angle.key === "heritage"
+            ? keishojiHeritagePublication
+          : temple.slug === "keishoji-fukude" && angle.key === "community"
+            ? keishojiCommunityPublication
+          : temple.slug === "chosenji-fukudenakajima" && angle.key === "history"
+            ? chosenjiHistoryPublication
+          : temple.slug === "chosenji-fukudenakajima" && angle.key === "heritage"
+            ? chosenjiHeritagePublication
+          : temple.slug === "chosenji-fukudenakajima" && angle.key === "community"
+            ? chosenjiCommunityPublication
+          : temple.slug === "kannonji-fukude" && angle.key === "history"
+            ? kannonjiHistoryPublication
+          : temple.slug === "kannonji-fukude" && angle.key === "heritage"
+            ? kannonjiHeritagePublication
+          : temple.slug === "kannonji-fukude" && angle.key === "community"
+            ? kannonjiCommunityPublication
           : undefined;
 
     return {
