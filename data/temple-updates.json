@@ -1,5 +1,104 @@
 [
   {
+    "update_id": "2026-07-25-pillar-50-synthesis",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田寺院研究の到達点と今後の課題」を公開しました",
+    "summary": "史料批判、歴史地理、文化財、災害、教育、祭祀、葬送継承、デジタル公開を総括する6028字の第50稿です。",
+    "href": "/research/iwata-temple-research-synthesis-future-agenda/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-49-digital-archive",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「寺院データベースとデジタル郷土資料の方法論」を公開しました",
+    "summary": "典拠、版管理、画像権利、訂正履歴を結び、更新可能な地域資料を設計する6163字の総合研究です。",
+    "href": "/research/iwata-temple-database-digital-local-archive-methodology/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-48-photo-archive",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「寺院写真を地域資料にする」を公開しました",
+    "summary": "撮影単位、メタデータ、保存形式、許諾、公開、継承を検証した6111字の総合研究です。",
+    "href": "/research/iwata-pillar-48-temple-photographs-regional-archive/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-47-temple-traditions",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「寺伝を検証する」を公開しました",
+    "summary": "創建者、年代、霊験、寄進、移築、旧地を複数の証拠層から検証した6033字の総合研究です。",
+    "href": "/research/iwata-pillar-47-verifying-temple-traditions/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-46-source-reading",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「寺院史料の読み方」を公開しました",
+    "summary": "原本、写本、翻刻、デジタル画像、郡誌、案内板を区別して読む方法を示した6168字の総合研究です。",
+    "href": "/research/iwata-pillar-46-how-to-read-temple-sources/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-45-names-places",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田の寺院名と地名」を公開しました",
+    "summary": "異表記、同名寺院、旧村・大字・小字、移転・廃寺を接続した6021字の総合研究です。",
+    "href": "/research/iwata-temple-names-and-historical-place-names/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-44-family-temple",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「菩提寺が分からないときの磐田寺院調査」を公開しました",
+    "summary": "家族資料、墓碑、戸籍・除籍、改葬記録、過去帳、旧地名を段階的に照合する6032字の総合研究です。",
+    "href": "/research/iwata-temples-how-to-identify-family-temple/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-43-perpetual-memorial",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田の寺院と永代供養」を公開しました",
+    "summary": "永代供養を法的類型、納骨、管理、供養、承継、記録保存から検討した6197字の総合研究です。",
+    "href": "/research/iwata-temples-perpetual-memorial-care-institution/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-42-grave-closure",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田の寺院と墓じまい」を公開しました",
+    "summary": "改葬許可、墓所使用、宗教儀礼、親族合意、記録保存を検証した6059字の総合研究です。",
+    "href": "/research/iwata-temples-grave-closure-reinterment-system/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-41-vacant-houses",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田の寺院と空き家問題」を公開しました",
+    "summary": "相続、高齢者住宅、管理不全、流通、生活圏と役割境界を検証した6075字の総合研究です。",
+    "href": "/research/iwata-temples-vacant-houses-housing-policy/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-40-aged-society",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田の寺院と高齢社会」を公開しました",
+    "summary": "寺院を地域包括ケアの代替ではなく補完的地域資源として検証した6109字の総合研究です。",
+    "href": "/research/iwata-temples-super-aged-society-community-care/"
+  },
+  {
     "update_id": "2026-07-25-pillar-39-women",
     "kind": "research",
     "date": "2026-07-25",

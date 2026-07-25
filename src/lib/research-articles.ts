@@ -143,6 +143,11 @@ import { pillarResearchArticles28To30 } from "./research-articles-pillars-28-30"
 import { pillarResearchArticles31To33 } from "./research-articles-pillars-31-33";
 import { pillarResearchArticles34To36 } from "./research-articles-pillars-34-36";
 import { pillarResearchArticles37To39 } from "./research-articles-pillars-37-39";
+import { pillarResearchArticles40To42 } from "./research-articles-pillars-40-42";
+import { pillarResearchArticles43To45 } from "./research-articles-pillars-43-45";
+import { pillarResearchArticles46To48 } from "./research-articles-pillars-46-48";
+import { pillarResearchArticles49 } from "./research-articles-pillars-49";
+import { pillarResearchArticles50 } from "./research-articles-pillars-50";
 
 const kokubunjiFigures = {
   hall: {
@@ -598,6 +603,11 @@ export const researchArticles: ResearchArticle[] = [
   ...pillarResearchArticles31To33,
   ...pillarResearchArticles34To36,
   ...pillarResearchArticles37To39,
+  ...pillarResearchArticles40To42,
+  ...pillarResearchArticles43To45,
+  ...pillarResearchArticles46To48,
+  ...pillarResearchArticles49,
+  ...pillarResearchArticles50,
 ];
 
 export function getResearchArticle(slug: string) {

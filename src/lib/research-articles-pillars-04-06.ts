@@ -178,7 +178,6 @@ function evidenceAudit(sources: ResearchSource[], figures: ResearchFigure[]) {
 const kokubunjiRegionalArticle: ResearchArticle = {
   slug: "iwata-pillar-04-totomi-kokubunji-regional-development",
   series: "磐田寺院総合研究",
-  templeSlug: "kokubunji-mitsuke",
   title: "遠江国分寺の成立と変容",
   subtitle: "古代国家仏教の地域的展開",
   description: "遠江国分寺を中央政策の地方移植ではなく、国府圏、先行寺院、資材生産、災害、廃絶後の信仰が織り成す地域的制度として再検討する。",

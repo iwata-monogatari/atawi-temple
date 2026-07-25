@@ -9,6 +9,11 @@ import { pillarResearchArticles28To30 } from "./research-articles-pillars-28-30"
 import { pillarResearchArticles31To33 } from "./research-articles-pillars-31-33";
 import { pillarResearchArticles34To36 } from "./research-articles-pillars-34-36";
 import { pillarResearchArticles37To39 } from "./research-articles-pillars-37-39";
+import { pillarResearchArticles40To42 } from "./research-articles-pillars-40-42";
+import { pillarResearchArticles43To45 } from "./research-articles-pillars-43-45";
+import { pillarResearchArticles46To48 } from "./research-articles-pillars-46-48";
+import { pillarResearchArticles49 } from "./research-articles-pillars-49";
+import { pillarResearchArticles50 } from "./research-articles-pillars-50";
 
 export type EditorialStatus = "planned" | "researching" | "drafting" | "reviewing" | "published";
 
@@ -95,11 +100,11 @@ const templeAngles = [
   { key: "community", label: "地域社会・信仰・現代的役割" },
 ] as const;
 
-export const activeResearchTemples = [
-  { slug: "pillar-40-42", name: "総合研究40〜42", stage: "調査・執筆" },
-  { slug: "pillar-43-45", name: "総合研究43〜45", stage: "調査・執筆" },
-  { slug: "pillar-46-48", name: "総合研究46〜48", stage: "調査・執筆" },
-] as const;
+export const activeResearchTemples: readonly {
+  slug: string;
+  name: string;
+  stage: string;
+}[] = [];
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
 const existingTemples = allTemples.filter(
@@ -181,6 +186,11 @@ const pillarPublications = [
     ...pillarResearchArticles31To33,
     ...pillarResearchArticles34To36,
     ...pillarResearchArticles37To39,
+    ...pillarResearchArticles40To42,
+    ...pillarResearchArticles43To45,
+    ...pillarResearchArticles46To48,
+    ...pillarResearchArticles49,
+    ...pillarResearchArticles50,
   ].map((article) => ({
     title: article.title,
     characterCount: article.sections
