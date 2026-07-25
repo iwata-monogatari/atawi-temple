@@ -1,5 +1,59 @@
 [
   {
+    "update_id": "2026-07-25-pillar-21-jizo",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「地蔵信仰と磐田」を公開しました",
+    "summary": "道・境界・子どもを守る仏を検証した6013字の総合研究です。",
+    "href": "/research/jizo-faith-iwata-roads-boundaries-children-protection/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-20-kannon",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「観音信仰と磐田」を公開しました",
+    "summary": "札所・女性・村落の祈りを検証した6047字の総合研究です。",
+    "href": "/research/kannon-faith-iwata-pilgrimage-women-village-prayer/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-19-yakushi",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「薬師如来信仰と磐田」を公開しました",
+    "summary": "病気平癒と地域医療の前史を検証した6177字の総合研究です。",
+    "href": "/research/yakushi-faith-iwata-healing-regional-medicine-prehistory/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-18-honzon",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の寺院本尊」を公開しました",
+    "summary": "尊像から読む地域信仰を検証した6086字の総合研究です。",
+    "href": "/research/iwata-pillar-18-temple-honzon-regional-faith/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-17-shingon",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の真言宗寺院」を公開しました",
+    "summary": "密教・修験・霊場の重層性を検証した6788字の総合研究です。",
+    "href": "/research/iwata-pillar-17-shingon-esoteric-shugen-pilgrimage/"
+  },
+  {
+    "update_id": "2026-07-25-pillar-16-jishu",
+    "kind": "research",
+    "date": "2026-07-25",
+    "temple_slug": "",
+    "title": "総合研究「磐田市の時宗寺院」を公開しました",
+    "summary": "中世交通路と遊行の記憶を検証した6046字の総合研究です。",
+    "href": "/research/iwata-pillar-16-jishu-temples-travel/"
+  },
+  {
     "update_id": "2026-07-25-pillar-15-nichiren",
     "kind": "research",
     "date": "2026-07-25",

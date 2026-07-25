@@ -1,6 +1,8 @@
 import { allTemples, getDistrictName, hasDetailPage } from "./temples";
 import { pillarResearchArticles10To12 } from "./research-articles-pillars-10-12";
 import { pillarResearchArticles13To15 } from "./research-articles-pillars-13-15";
+import { pillarResearchArticles16to18 } from "./research-articles-pillars-16-18";
+import { pillarResearchArticles19To21 } from "./research-articles-pillars-19-21";
 
 export type EditorialStatus = "planned" | "researching" | "drafting" | "reviewing" | "published";
 
@@ -88,9 +90,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "pillar-16-18", name: "総合研究16〜18", stage: "調査・執筆" },
-  { slug: "pillar-19-21", name: "総合研究19〜21", stage: "調査・執筆" },
   { slug: "pillar-22-24", name: "総合研究22〜24", stage: "調査・執筆" },
+  { slug: "pillar-25-27", name: "総合研究25〜27", stage: "調査・執筆" },
+  { slug: "pillar-28-30", name: "総合研究28〜30", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -162,7 +164,12 @@ const pillarPublications = [
     sourceCount: 12,
     href: "/research/iwata-pillar-09-iwatahara-plateau-temples/",
   },
-  ...[...pillarResearchArticles10To12, ...pillarResearchArticles13To15].map((article) => ({
+  ...[
+    ...pillarResearchArticles10To12,
+    ...pillarResearchArticles13To15,
+    ...pillarResearchArticles16to18,
+    ...pillarResearchArticles19To21,
+  ].map((article) => ({
     title: article.title,
     characterCount: article.sections
       .flatMap((section) => section.paragraphs)
