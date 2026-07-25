@@ -1,5 +1,53 @@
 [
   {
+    "update_id": "2026-07-25-koshuji-earthquake-research",
+    "date": "2026-07-25",
+    "temple_slug": "koshuji-kaketsuka",
+    "title": "香集寺研究論文「1854年安政東海地震と香集寺の倒壊・再建記憶」を公開しました",
+    "summary": "天竜川河口の微地形・掛塚湊の復興・寺院防災を結ぶ6022字の研究論文です。",
+    "href": "/research/koshuji-1854-ansei-earthquake-reconstruction/"
+  },
+  {
+    "update_id": "2026-07-25-koshuji-kokuzo-research",
+    "date": "2026-07-25",
+    "temple_slug": "koshuji-kaketsuka",
+    "title": "香集寺研究論文「香集寺本尊『満願虚空蔵菩薩』の経典・図像・地域受容」を公開しました",
+    "summary": "尊名・図像・地域信仰と同名寺院を分離して検証した6020字の研究論文です。",
+    "href": "/research/koshuji-mangan-kokuzo-kaketsuka-faith/"
+  },
+  {
+    "update_id": "2026-07-25-koshuji-history-research",
+    "date": "2026-07-25",
+    "temple_slug": "koshuji-kaketsuka",
+    "title": "香集寺研究論文「香集寺の永禄期開創伝承と『香乗寺』寺領記録」を公開しました",
+    "summary": "法園智溢・方広寺派ネットワーク・掛塚湊の土地基盤を検証した6372字の研究論文です。",
+    "href": "/research/koshuji-1568-hoen-chie-koshoji-estate/"
+  },
+  {
+    "update_id": "2026-07-25-jorakuji-landscape-research",
+    "date": "2026-07-25",
+    "temple_slug": "jorakuji-horinochi",
+    "title": "常楽寺研究論文「堀之内常楽寺の寺領2石と1854年震災復興」を公開しました",
+    "summary": "村高・掛塚湊後背地・白峯山の現況を結ぶ6085字の研究論文です。",
+    "href": "/research/jorakuji-two-koku-earthquake-horinochi-landscape/"
+  },
+  {
+    "update_id": "2026-07-25-jorakuji-network-research",
+    "date": "2026-07-25",
+    "temple_slug": "jorakuji-horinochi",
+    "title": "常楽寺研究論文「堀之内常楽寺の汝舟・天眼と東福寺創立」を公開しました",
+    "summary": "1585年から1590年に形成された方広寺派寺院ネットワークを検証した6012字の研究論文です。",
+    "href": "/research/jorakuji-nyoshu-tengan-tofukuji-network/"
+  },
+  {
+    "update_id": "2026-07-25-jorakuji-chronology-research",
+    "date": "2026-07-25",
+    "temple_slug": "jorakuji-horinochi",
+    "title": "常楽寺研究論文「堀之内常楽寺の1585年草創と中泉御殿伝承」を公開しました",
+    "summary": "御殿築造1587年頃との年代逆転を3仮説で検証した6178字の研究論文です。",
+    "href": "/research/jorakuji-1585-nakaizumi-goten-chronology/"
+  },
+  {
     "update_id": "2026-07-25-senryuji-place-research",
     "date": "2026-07-25",
     "temple_slug": "senryuji-kawabukuro",

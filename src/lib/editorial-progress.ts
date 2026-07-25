@@ -85,9 +85,9 @@ const templeAngles = [
 ] as const;
 
 export const activeResearchTemples = [
-  { slug: "koshuji-kaketsuka", name: "香集寺", stage: "調査・執筆" },
-  { slug: "jorakuji-horinochi", name: "常楽寺", stage: "調査・執筆" },
   { slug: "fukushoji-nishihiramatsu", name: "福生寺", stage: "調査・執筆" },
+  { slug: "ryuunji-toyohama", name: "竜雲寺", stage: "調査・執筆" },
+  { slug: "sojiji-minamijima", name: "宗次寺", stage: "調査・執筆" },
 ] as const;
 const activeResearchTempleSlugs = new Set<string>(activeResearchTemples.map((temple) => temple.slug));
 
@@ -1329,6 +1329,48 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
       sourceCount: 14,
       href: "/research/senryuji-kawabukuro-place-kokuzo-record/",
     } as const;
+    const jorakujiHistoryPublication = {
+      title: "堀之内常楽寺の1585年草創と中泉御殿伝承",
+      characterCount: 6178,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/jorakuji-1585-nakaizumi-goten-chronology/",
+    } as const;
+    const jorakujiHeritagePublication = {
+      title: "堀之内常楽寺の寺領2石と1854年震災復興",
+      characterCount: 6085,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/jorakuji-two-koku-earthquake-horinochi-landscape/",
+    } as const;
+    const jorakujiCommunityPublication = {
+      title: "堀之内常楽寺の汝舟・天眼と東福寺創立",
+      characterCount: 6012,
+      illustrationCount: 6,
+      sourceCount: 15,
+      href: "/research/jorakuji-nyoshu-tengan-tofukuji-network/",
+    } as const;
+    const koshujiHistoryPublication = {
+      title: "香集寺の永禄期開創伝承と「香乗寺」寺領記録",
+      characterCount: 6372,
+      illustrationCount: 6,
+      sourceCount: 23,
+      href: "/research/koshuji-1568-hoen-chie-koshoji-estate/",
+    } as const;
+    const koshujiHeritagePublication = {
+      title: "香集寺本尊「満願虚空蔵菩薩」の経典・図像・地域受容",
+      characterCount: 6020,
+      illustrationCount: 6,
+      sourceCount: 23,
+      href: "/research/koshuji-mangan-kokuzo-kaketsuka-faith/",
+    } as const;
+    const koshujiCommunityPublication = {
+      title: "1854年安政東海地震と香集寺の倒壊・再建記憶",
+      characterCount: 6022,
+      illustrationCount: 6,
+      sourceCount: 23,
+      href: "/research/koshuji-1854-ansei-earthquake-reconstruction/",
+    } as const;
     const publication =
       temple.slug === "kokubunji-mitsuke"
         ? kokubunjiPublications[angle.key]
@@ -1670,6 +1712,18 @@ export const templeProgressItems: EditorialProgressItem[] = existingTemples.flat
             ? senryujiHeritagePublication
           : temple.slug === "senryuji-kawabukuro" && angle.key === "community"
             ? senryujiCommunityPublication
+          : temple.slug === "jorakuji-horinochi" && angle.key === "history"
+            ? jorakujiHistoryPublication
+          : temple.slug === "jorakuji-horinochi" && angle.key === "heritage"
+            ? jorakujiHeritagePublication
+          : temple.slug === "jorakuji-horinochi" && angle.key === "community"
+            ? jorakujiCommunityPublication
+          : temple.slug === "koshuji-kaketsuka" && angle.key === "history"
+            ? koshujiHistoryPublication
+          : temple.slug === "koshuji-kaketsuka" && angle.key === "heritage"
+            ? koshujiHeritagePublication
+          : temple.slug === "koshuji-kaketsuka" && angle.key === "community"
+            ? koshujiCommunityPublication
           : undefined;
 
     return {
