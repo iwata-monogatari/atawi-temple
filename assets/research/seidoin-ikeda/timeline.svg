@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">誓渡院と池田渡船の史料年代図</title>
+  <desc id="desc">1504年の誓渡庵創立、1573年の渡船権伝承、1712年の中興、1874年以降の架橋、1900年と1921年の編纂史料を、出来事と記録時点に分けた図。</desc>
+  <rect width="1200" height="720" fill="#f7f7f5"/>
+  <text x="70" y="65" font-family="'Noto Serif JP',serif" font-size="30" font-weight="700" fill="#262626">誓渡院・池田渡船史料の時間配置</text>
+  <text x="70" y="100" font-family="'Noto Sans JP',sans-serif" font-size="17" fill="#666">出来事の年と、それを確認できる編纂資料の成立年を分離して表示</text>
+  <line x1="110" y1="270" x2="1090" y2="270" stroke="#333" stroke-width="3"/>
+  <line x1="110" y1="510" x2="1090" y2="510" stroke="#777" stroke-width="2" stroke-dasharray="10 8"/>
+  <text x="70" y="225" font-family="'Noto Sans JP',sans-serif" font-size="19" fill="#333">記事内容年</text>
+  <text x="70" y="475" font-family="'Noto Sans JP',sans-serif" font-size="19" fill="#666">確認媒体年</text>
+  <g font-family="'Noto Sans JP',sans-serif">
+    <g transform="translate(185 270)">
+      <circle r="12" fill="#2f6f5e"/>
+      <line y1="-12" y2="-78" stroke="#2f6f5e" stroke-width="2"/>
+      <text x="-52" y="-102" font-size="22" font-weight="700" fill="#2f6f5e">1504</text>
+      <text x="-65" y="-72" font-size="17" fill="#222">誓渡庵創立</text>
+    </g>
+    <g transform="translate(335 270)">
+      <circle r="12" fill="#4477aa"/>
+      <line y1="12" y2="78" stroke="#4477aa" stroke-width="2"/>
+      <text x="-38" y="112" font-size="22" font-weight="700" fill="#4477aa">1573</text>
+      <text x="-84" y="140" font-size="17" fill="#222">渡船権朱印状伝承</text>
+    </g>
+    <g transform="translate(585 270)">
+      <circle r="12" fill="#8c5a9e"/>
+      <line y1="-12" y2="-78" stroke="#8c5a9e" stroke-width="2"/>
+      <text x="-38" y="-102" font-size="22" font-weight="700" fill="#8c5a9e">1712</text>
+      <text x="-118" y="-72" font-size="17" fill="#222">東州真海中興・院号化</text>
+    </g>
+    <g transform="translate(820 270)">
+      <circle r="12" fill="#c17d24"/>
+      <line y1="12" y2="78" stroke="#c17d24" stroke-width="2"/>
+      <text x="-38" y="112" font-size="22" font-weight="700" fill="#c17d24">1874</text>
+      <text x="-80" y="140" font-size="17" fill="#222">天竜川架橋開始</text>
+    </g>
+    <g transform="translate(910 510)">
+      <circle r="11" fill="#666"/>
+      <line y1="-11" y2="-65" stroke="#666" stroke-width="2"/>
+      <text x="-38" y="-92" font-size="22" font-weight="700" fill="#555">1900</text>
+      <text x="-100" y="-64" font-size="17" fill="#222">『遠江国風土記伝』刊行</text>
+    </g>
+    <g transform="translate(1030 510)">
+      <circle r="11" fill="#333"/>
+      <line y1="11" y2="58" stroke="#333" stroke-width="2"/>
+      <text x="-38" y="92" font-size="22" font-weight="700" fill="#333">1921</text>
+      <text x="-95" y="120" font-size="17" fill="#222">『静岡県磐田郡誌』刊行</text>
+    </g>
+  </g>
+  <g transform="translate(70 625)" font-family="'Noto Sans JP',sans-serif">
+    <rect width="1060" height="58" rx="6" fill="#e9ece9"/>
+    <text x="22" y="25" font-size="16" fill="#333">注：1504年・1712年は1921年刊郡誌等が伝える記事内容年であり、同時代原本の確認を意味しない。</text>
+    <text x="22" y="47" font-size="16" fill="#333">出典：『静岡県磐田郡誌』、磐田市公開資料、『遠江国風土記伝』を基にATAWI TEMPLE作成。</text>
+  </g>
+</svg>
