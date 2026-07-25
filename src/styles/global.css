@@ -4631,6 +4631,9 @@ th {
 .research-group-district { margin: 5px 0 0; color: #687066; font-size: .78rem; }
 .research-temple-group > header > a { font-size: .85rem; }
 .research-article-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.research-general-toggle { display: block; width: min(100%, 520px); margin: 24px auto 0; padding: 13px 22px; border: 1px solid #71816d; border-radius: 3px; background: #f7f9f5; color: #334b31; font: inherit; font-size: .9rem; font-weight: 600; cursor: pointer; }
+.research-general-toggle:hover { background: #edf1e9; }
+.research-general-toggle:focus-visible { outline: 3px solid rgba(63, 91, 59, .28); outline-offset: 3px; }
 .research-index-card { display: flex; flex-direction: column; min-height: 330px; padding: 26px; border: 1px solid #d8ddd5; background: #fff; box-shadow: 0 8px 24px rgba(32, 48, 30, .05); }
 .research-card-meta, .research-card-footer { display: flex; justify-content: space-between; gap: 16px; color: #6a7368; font-size: .75rem; }
 .research-index-card h3 { margin: 16px 0 8px; font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: 1.35rem; line-height: 1.55; }

@@ -126,14 +126,16 @@ const districtOptions = Array.from(
           {group.key !== "general" && <a href={`/temples/${group.key}/`}>寺院詳細を見る</a>}
         </header>
         <div class="research-article-list">
-          {group.articles.map((article) => (
+          {group.articles.map((article, articleIndex) => (
             <article
               class="research-index-card"
               data-research-card
+              data-general-overflow={group.key === "general" && articleIndex >= 4 ? "true" : undefined}
               data-temple={group.key}
               data-district={article.districtId}
               data-series={article.series}
               data-search={`${group.label} ${article.title} ${article.subtitle} ${article.description} ${article.keywords.join(" ")}`.toLowerCase()}
+              hidden={group.key === "general" && articleIndex >= 4}
             >
               <div class="research-card-meta">
                 <span>{article.series}</span>
@@ -152,6 +154,17 @@ const districtOptions = Array.from(
             </article>
           ))}
         </div>
+        {group.key === "general" && group.articles.length > 4 && (
+          <button
+            type="button"
+            class="research-general-toggle"
+            aria-expanded="false"
+            data-general-toggle
+            data-collapsed-label={`残り${group.articles.length - 4}本の総合論文を表示`}
+          >
+            残り{group.articles.length - 4}本の総合論文を表示
+          </button>
+        )}
       </section>
     ))}
     <div class="research-empty" data-research-empty hidden>
@@ -170,6 +183,9 @@ const districtOptions = Array.from(
     const empty = document.querySelector<HTMLElement>("[data-research-empty]");
     const cards = Array.from(document.querySelectorAll<HTMLElement>("[data-research-card]"));
     const groups = Array.from(document.querySelectorAll<HTMLElement>("[data-research-group]"));
+    const generalOverflow = Array.from(document.querySelectorAll<HTMLElement>("[data-general-overflow]"));
+    const generalToggle = document.querySelector<HTMLButtonElement>("[data-general-toggle]");
+    let generalExpanded = generalToggle?.getAttribute("aria-expanded") === "true";
 
     function normalize(value: string) {
       return value.toLowerCase().normalize("NFKC").replace(/\s+/g, " ").trim();
@@ -180,6 +196,7 @@ const districtOptions = Array.from(
       const temple = templeSelect?.value || "";
       const district = districtSelect?.value || "";
       const series = seriesSelect?.value || "";
+      const filtersActive = Boolean(query || temple || district || series);
       let visibleCount = 0;
 
       cards.forEach((card) => {
@@ -187,14 +204,20 @@ const districtOptions = Array.from(
         const matchesTemple = !temple || card.dataset.temple === temple;
         const matchesDistrict = !district || card.dataset.district === district;
         const matchesSeries = !series || card.dataset.series === series;
-        const visible = matchesQuery && matchesTemple && matchesDistrict && matchesSeries;
-        card.hidden = !visible;
-        if (visible) visibleCount += 1;
+        const matches = matchesQuery && matchesTemple && matchesDistrict && matchesSeries;
+        const collapsed = card.dataset.generalOverflow === "true" && !filtersActive && !generalExpanded;
+        card.hidden = !matches || collapsed;
+        if (matches) visibleCount += 1;
       });
 
       groups.forEach((group) => {
-        group.hidden = !Array.from(group.querySelectorAll<HTMLElement>("[data-research-card]")).some((card) => !card.hidden);
+        group.hidden = !Array.from(group.querySelectorAll<HTMLElement>("[data-research-card]")).some((card) => {
+          const matches = !card.hidden;
+          const collapsedGeneral = card.dataset.generalOverflow === "true" && !filtersActive && !generalExpanded;
+          return matches || collapsedGeneral;
+        });
       });
+      if (generalToggle) generalToggle.hidden = filtersActive || generalOverflow.length === 0;
       if (count) count.textContent = String(visibleCount);
       if (empty) empty.hidden = visibleCount !== 0;
     }
@@ -203,6 +226,14 @@ const districtOptions = Array.from(
     templeSelect?.addEventListener("change", applyFilters);
     districtSelect?.addEventListener("change", applyFilters);
     seriesSelect?.addEventListener("change", applyFilters);
+    generalToggle?.addEventListener("click", () => {
+      generalExpanded = !generalExpanded;
+      generalToggle.setAttribute("aria-expanded", String(generalExpanded));
+      generalToggle.textContent = generalExpanded
+        ? "総合論文を4本だけ表示"
+        : generalToggle.dataset.collapsedLabel || "残りの総合論文を表示";
+      applyFilters();
+    });
     resetButton?.addEventListener("click", () => {
       if (queryInput) queryInput.value = "";
       if (templeSelect) templeSelect.value = "";
