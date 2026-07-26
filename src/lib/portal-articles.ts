@@ -1,4 +1,8 @@
-import { priorityPortalOverrides } from "./portal-priority-articles";
+import {
+  buildPriorityLongform,
+  priorityPortalOverrides,
+  type PriorityLongform,
+} from "./portal-priority-articles";
 
 export type PortalCategoryKey =
   | "houyou"
@@ -30,6 +34,7 @@ export type PortalArticle = {
   next?: { href: string; label: string };
   cta: "weak" | "medium" | "strong";
   updated: string;
+  longform?: PriorityLongform;
 };
 
 const sourceSets: Record<PortalCategoryKey, PortalArticle["sources"]> = {
@@ -331,9 +336,13 @@ const draftArticles = categoryOrder.flatMap((category) => {
 export const portalArticles: PortalArticle[] = draftArticles.map((article, globalIndex, all) => {
   const previous = all[globalIndex - 1];
   const next = all[globalIndex + 1];
+  const priorityOverride = priorityPortalOverrides[article.slug];
   return {
     ...article,
-    ...(priorityPortalOverrides[article.slug] || {}),
+    ...(priorityOverride || {}),
+    longform: priorityOverride
+      ? buildPriorityLongform(article.slug, article.title, article.category, priorityOverride)
+      : undefined,
     previous: previous ? { href: articlePath(previous.category, Number(previous.slug.slice(-2)) - 1), label: previous.title } : undefined,
     next: next ? { href: articlePath(next.category, Number(next.slug.slice(-2)) - 1), label: next.title } : undefined,
   };

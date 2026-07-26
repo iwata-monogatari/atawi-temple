@@ -98,6 +98,36 @@ const structuredData = [
           <p>{article.conclusion}</p>
         </section>
 
+        {article.longform ? article.longform.sections.map((section, index) => (
+          <>
+            <section class="article-section longform-section" data-longform-section={index + 1}>
+              <p class="section-number">{String(index + 1).padStart(2, "0")}</p>
+              <h2>{section.heading}</h2>
+              {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+            </section>
+            {index % 2 === 1 && (() => {
+              const illustration = article.longform!.illustrations[Math.floor(index / 2)];
+              return (
+                <figure class="longform-illustration">
+                  <svg viewBox="0 0 960 420" role="img" aria-labelledby={`illustration-title-${index}`}>
+                    <title id={`illustration-title-${index}`}>{illustration.label}</title>
+                    <rect width="960" height="420" rx="28" class="illustration-bg" />
+                    <path d="M292 210H376M584 210H668" class="illustration-arrow" />
+                    <circle cx="202" cy="210" r="112" class="illustration-node illustration-node--one" />
+                    <circle cx="480" cy="210" r="112" class="illustration-node illustration-node--two" />
+                    <circle cx="758" cy="210" r="112" class="illustration-node illustration-node--three" />
+                    <text x="202" y="204" text-anchor="middle">{illustration.left}</text>
+                    <text x="480" y="204" text-anchor="middle">{illustration.center}</text>
+                    <text x="758" y="204" text-anchor="middle">{illustration.right}</text>
+                    <text x="480" y="372" text-anchor="middle" class="illustration-label">{illustration.label}</text>
+                  </svg>
+                  <figcaption>{illustration.caption}</figcaption>
+                </figure>
+              );
+            })()}
+          </>
+        )) : (
+        <>
         <section class="article-section">
           <p class="section-number">01</p>
           <h2>{article.title}で最初にすること</h2>
@@ -119,6 +149,8 @@ const structuredData = [
           <blockquote class="conversation-example">{article.conversationExample}</blockquote>
           <p>相手が話したくないときは、その日は確認を進めません。本人の希望とペースを優先します。</p>
         </section>
+        </>
+        )}
 
         <aside class="article-caution" aria-label="このテーマの注意点">
           <strong>このテーマの注意点</strong>

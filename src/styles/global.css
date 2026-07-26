@@ -4887,6 +4887,71 @@ th {
   letter-spacing: .04em;
 }
 
+.longform-section > p {
+  line-height: 2.05;
+  margin-block: 1.15rem;
+}
+
+.longform-illustration {
+  margin: 2.75rem 0 3.5rem;
+}
+
+.longform-illustration svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #d8d1c2;
+  border-radius: 1.25rem;
+  background: #f5f1e7;
+}
+
+.illustration-bg {
+  fill: #f5f1e7;
+}
+
+.illustration-node {
+  stroke: #fff;
+  stroke-width: 8;
+}
+
+.illustration-node--one {
+  fill: #dbe7d3;
+}
+
+.illustration-node--two {
+  fill: #eadfc7;
+}
+
+.illustration-node--three {
+  fill: #d7e1e5;
+}
+
+.illustration-arrow {
+  fill: none;
+  stroke: #6a745f;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.longform-illustration text {
+  fill: #263326;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.longform-illustration .illustration-label {
+  fill: #687063;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.longform-illustration figcaption {
+  color: #5b6157;
+  font-size: 0.92rem;
+  line-height: 1.8;
+  margin-top: 0.75rem;
+}
+
 /* ---- 実家カルテ ---- */
 .karte-page {
   width: min(960px, calc(100% - 32px));

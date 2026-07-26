@@ -97,8 +97,30 @@ for (const slug of priorityPortalSlugs) {
   if (!html.includes("主題に直接対応する一次情報")) {
     errors.push(`priority portal: ${slug} is missing the primary-source disclosure`);
   }
-  if (!html.includes("確認を進める3つの手順") || !html.includes("確認先・参考情報")) {
+  if (!html.includes("確認先・参考情報")) {
     errors.push(`priority portal: ${slug} is missing individual guidance or sources`);
+  }
+  const longformSections = [...html.matchAll(/<section class="article-section longform-section"[^>]*>([\s\S]*?)<\/section>/g)];
+  const sectionLengths = longformSections.map((match) => match[1]
+    .replace(/<[^>]+>/g, "")
+    .replace(/&[^;]+;/g, "")
+    .replace(/\s+/g, "")
+    .length);
+  const bodyLength = sectionLengths.reduce((total, length) => total + length, 0);
+  const illustrationCount = (html.match(/<figure class="longform-illustration">/g) || []).length;
+  if (longformSections.length !== 6) {
+    errors.push(`priority portal: ${slug} must have 6 longform sections, found ${longformSections.length}`);
+  }
+  if (bodyLength < 6000) {
+    errors.push(`priority portal: ${slug} longform body must be at least 6000 characters, found ${bodyLength}`);
+  }
+  sectionLengths.forEach((length, index) => {
+    if (length < 1000) {
+      errors.push(`priority portal: ${slug} section ${index + 1} must be at least 1000 characters, found ${length}`);
+    }
+  });
+  if (illustrationCount < 3) {
+    errors.push(`priority portal: ${slug} must have at least 3 illustrations, found ${illustrationCount}`);
   }
 }
 
