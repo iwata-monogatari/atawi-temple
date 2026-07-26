@@ -63,6 +63,8 @@ const indexHtml = await readBuiltFile("dist/index.html");
 const searchHtml = await readBuiltFile("dist/search/index.html");
 const sitemapXml = await readBuiltFile("dist/sitemap.xml");
 const templesJson = JSON.parse(await readFile("data/temples.json", "utf8"));
+const priorityPortalSource = await readFile("src/lib/portal-priority-articles.ts", "utf8");
+const priorityPortalSlugs = [...priorityPortalSource.matchAll(/^\s{2}"([a-z-]+-\d{2})": o\(/gm)].map((match) => match[1]);
 const expectedToyodaHeroImage = "/images/temples/gyokoji-ikeda/gyokoji-ikeda-03-main-hall.webp";
 const expectedChionsaiHeroImage = "/assets/temples/chionsai-hitokoto/748700946_37058201220492041_8019282847618984703_n.jpg";
 const requiredToyodaTempleNames = [
@@ -81,6 +83,24 @@ const requiredToyodaTempleNames = [
   "大圓寺",
   "大蔵寺",
 ];
+
+if (priorityPortalSlugs.length < 30 || priorityPortalSlugs.length > 50) {
+  errors.push(`priority portal: expected 30–50 individually edited articles, found ${priorityPortalSlugs.length}`);
+}
+
+for (const slug of priorityPortalSlugs) {
+  const category = slug.replace(/-\d{2}$/, "");
+  const html = await readBuiltFile(`dist/topics/${category}/${slug}/index.html`);
+  if (!html.includes("重点個別編集記事")) {
+    errors.push(`priority portal: ${slug} is missing the editorial badge`);
+  }
+  if (!html.includes("主題に直接対応する一次情報")) {
+    errors.push(`priority portal: ${slug} is missing the primary-source disclosure`);
+  }
+  if (!html.includes("確認を進める3つの手順") || !html.includes("確認先・参考情報")) {
+    errors.push(`priority portal: ${slug} is missing individual guidance or sources`);
+  }
+}
 
 if (toyodaHtml) {
   if (!toyodaHtml.includes(expectedToyodaHeroImage)) {

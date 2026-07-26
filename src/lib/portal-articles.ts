@@ -1,3 +1,5 @@
+import { priorityPortalOverrides } from "./portal-priority-articles";
+
 export type PortalCategoryKey =
   | "houyou"
   | "bodaiji"
@@ -331,6 +333,7 @@ export const portalArticles: PortalArticle[] = draftArticles.map((article, globa
   const next = all[globalIndex + 1];
   return {
     ...article,
+    ...(priorityPortalOverrides[article.slug] || {}),
     previous: previous ? { href: articlePath(previous.category, Number(previous.slug.slice(-2)) - 1), label: previous.title } : undefined,
     next: next ? { href: articlePath(next.category, Number(next.slug.slice(-2)) - 1), label: next.title } : undefined,
   };

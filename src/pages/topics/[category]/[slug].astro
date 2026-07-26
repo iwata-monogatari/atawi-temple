@@ -6,6 +6,7 @@ import {
   portalArticles,
   portalCategories,
 } from "../../../lib/portal-articles";
+import { priorityPortalSlugs } from "../../../lib/portal-priority-articles";
 
 export function getStaticPaths() {
   return portalArticles.map((article) => ({
@@ -15,6 +16,7 @@ export function getStaticPaths() {
 
 const article = getPortalArticle(Astro.params.category || "", Astro.params.slug || "");
 if (!article) return Astro.redirect("/topics/");
+const isPriorityArticle = priorityPortalSlugs.includes(article.slug);
 const category = portalCategories.find((item) => item.key === article.category)!;
 const categoryArticles = getPortalArticlesByCategory(article.category);
 const related = categoryArticles.filter((item) => item.slug !== article.slug).slice(0, 3);
@@ -82,6 +84,7 @@ const structuredData = [
     </nav>
     <header class="article-hero">
       <p class="eyebrow">{article.categoryLabel}</p>
+      {isPriorityArticle && <p class="priority-editorial-badge">重点個別編集記事</p>}
       <h1>{article.title}</h1>
       <p class="article-subtitle">{article.lead}</p>
       <p class="small">更新日 {article.updated.replaceAll("-", ".")}</p>
@@ -161,6 +164,7 @@ const structuredData = [
             ))}
           </ul>
           <p class="small">執筆・確認：ATAWI TEMPLE編集部　最終確認日：{article.updated.replaceAll("-", ".")}</p>
+          {isPriorityArticle && <p class="small">この記事は、主題に直接対応する一次情報を確認し、手順・会話例・注意点を個別に編集しています。</p>}
           <p class="small"><a href="/editorial-policy/">編集方針</a>に基づき、宗派・法務・税務を一律に断定せず、確認先を示しています。</p>
         </section>
 

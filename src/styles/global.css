@@ -4874,6 +4874,19 @@ th {
 
 .source-list span { color: var(--muted); font-size: .88rem; }
 
+.priority-editorial-badge {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 5px 11px;
+  border: 1px solid #b4a06b;
+  border-radius: 999px;
+  background: #fffaf0;
+  color: #675523;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
 /* ---- 実家カルテ ---- */
 .karte-page {
   width: min(960px, calc(100% - 32px));
