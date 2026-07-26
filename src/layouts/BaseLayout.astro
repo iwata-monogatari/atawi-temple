@@ -6,6 +6,9 @@ interface Props {
   title?: string;
   description?: string;
   ogImage?: string;
+  ogType?: "website" | "article";
+  publishedTime?: string;
+  modifiedTime?: string;
   noindex?: boolean;
   hideSeasonalBanner?: boolean;
   structuredData?: Record<string, unknown> | Record<string, unknown>[];
@@ -15,6 +18,9 @@ const {
   title = "磐田市のお寺・寺院データベース｜ATAWI TEMPLE",
   description = "磐田市内の寺院、廃寺、寺院跡、霊場・札所情報を整理する地域寺院データベースです。",
   ogImage = "/assets/temples/kokubunji-mitsuke/hondo.webp",
+  ogType = "website",
+  publishedTime,
+  modifiedTime,
   noindex = false,
   hideSeasonalBanner = false,
   structuredData = [],
@@ -58,11 +64,14 @@ const structuredDataItems = [...sharedStructuredData, ...pageStructuredData].fil
     <meta name="theme-color" content="#2f4b2b" />
     <link rel="canonical" href={canonicalUrl} />
     <meta property="og:site_name" content="ATAWI TEMPLE" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={ogImageUrl} />
+    {ogType === "article" && publishedTime && <meta property="article:published_time" content={publishedTime} />}
+    {ogType === "article" && modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+    {ogType === "article" && <meta property="article:author" content={`${siteUrl}/about/`} />}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
@@ -105,7 +114,7 @@ const structuredDataItems = [...sharedStructuredData, ...pageStructuredData].fil
         <a href="/guide/houyou-kisei/">法要・帰省の確認</a>
         <a href="/guide/">基礎ガイド</a>
         <a href="/tokushu/">特集・読みもの</a>
-        <a href="/topics/jikka-karute/">実家カルテ</a>
+        <a href="/jikka-karute/">実家カルテ</a>
         <a href="/editorial-policy/">編集方針</a>
         <a href="/correction/">情報提供掲示板</a>
         <a href="/privacy/">プライバシーポリシー</a>

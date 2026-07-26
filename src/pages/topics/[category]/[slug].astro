@@ -47,7 +47,12 @@ const structuredData = [
     dateModified: article.updated,
     mainEntityOfPage: pageUrl,
     author: { "@type": "Organization", name: "ATAWI TEMPLE編集部" },
-    publisher: { "@type": "Organization", name: "ATAWI TEMPLE" },
+    publisher: {
+      "@type": "Organization",
+      name: "ATAWI TEMPLE",
+      logo: { "@type": "ImageObject", url: `${siteUrl}/assets/brand/atawi-temple-mark.svg` },
+    },
+    citation: article.sources.map((source) => source.href.startsWith("/") ? `${siteUrl}${source.href}` : source.href),
   },
   {
     "@context": "https://schema.org",
@@ -61,7 +66,14 @@ const structuredData = [
 ];
 ---
 
-<BaseLayout title={`${article.title}｜ATAWI TEMPLE`} description={article.description} structuredData={structuredData}>
+<BaseLayout
+  title={`${article.title}｜ATAWI TEMPLE`}
+  description={article.description}
+  structuredData={structuredData}
+  ogType="article"
+  publishedTime={`${article.updated}T00:00:00+09:00`}
+  modifiedTime={`${article.updated}T00:00:00+09:00`}
+>
   <article class="portal-article">
     <nav class="breadcrumbs" aria-label="パンくず">
       {breadcrumbItems.map((item, index) => (
@@ -86,26 +98,29 @@ const structuredData = [
         <section class="article-section">
           <p class="section-number">01</p>
           <h2>{article.title}で最初にすること</h2>
-          <p>
-            最初に、いま分かっていることと、まだ分からないことを分けます。家族の記憶だけで決めず、
-            手元の書類、写真、寺院や管理者からの案内を照らし合わせてください。
-          </p>
-          <p>
-            この段階では結論を出さなくても構いません。「誰に何を確認するか」が分かれば、次の話し合いがしやすくなります。
-          </p>
+          <p>{article.firstAction}</p>
+          <p>確認した日、確認した人、情報の出どころを一緒に残してください。分からない項目は空欄のままで構いません。</p>
         </section>
 
         <section class="article-section">
           <p class="section-number">02</p>
-          <h2>家族で共有するときの進め方</h2>
-          <p>
-            本人の希望を聞き、事実と意見を分けてメモします。離れて暮らす家族にも同じ写真とメモを送り、
-            一人だけが情報を抱えないようにします。
-          </p>
-          <p>
-            宗派、供養、法律、税金など判断に専門的な確認が必要なことは、その場で断定せず、確認先を決めて保留にします。
-          </p>
+          <h2>確認を進める3つの手順</h2>
+          <ol class="article-steps">
+            {article.steps.map((step) => <li><h3>{step.title}</h3><p>{step.body}</p></li>)}
+          </ol>
         </section>
+
+        <section class="article-section">
+          <p class="section-number">03</p>
+          <h2>家族へ切り出す言葉</h2>
+          <blockquote class="conversation-example">{article.conversationExample}</blockquote>
+          <p>相手が話したくないときは、その日は確認を進めません。本人の希望とペースを優先します。</p>
+        </section>
+
+        <aside class="article-caution" aria-label="このテーマの注意点">
+          <strong>このテーマの注意点</strong>
+          <p>{article.caution}</p>
+        </aside>
 
         <section class="article-section">
           <p class="section-number">Check</p>
@@ -133,6 +148,22 @@ const structuredData = [
           </div>
         </section>
 
+        <section class="article-section source-section">
+          <p class="section-number">Sources</p>
+          <h2>確認先・参考情報</h2>
+          <p>制度や手続きは変更されることがあります。実際の判断は、次の公的・公式情報と個別の確認先を優先してください。</p>
+          <ul class="source-list">
+            {article.sources.map((source) => (
+              <li>
+                <a href={source.href} target={source.href.startsWith("http") ? "_blank" : undefined} rel={source.href.startsWith("http") ? "noopener noreferrer" : undefined}>{source.label}</a>
+                <span>{source.note}</span>
+              </li>
+            ))}
+          </ul>
+          <p class="small">執筆・確認：ATAWI TEMPLE編集部　最終確認日：{article.updated.replaceAll("-", ".")}</p>
+          <p class="small"><a href="/editorial-policy/">編集方針</a>に基づき、宗派・法務・税務を一律に断定せず、確認先を示しています。</p>
+        </section>
+
         <section class:list={["article-section", "portal-cta", `portal-cta--${article.cta}`]}>
           <p class="section-number">Next</p>
           <h2>{article.cta === "strong" ? "実家の情報を整理する" : article.cta === "medium" ? "帰省時の確認を記録する" : "次の記事へ進む"}</h2>
@@ -140,8 +171,8 @@ const structuredData = [
             <>
               <p>実家カルテで現状を整理し、家族だけで確認しにくい項目が残った場合は、必要な方だけ富士ヶ丘サービスへ相談できます。</p>
               <div class="houyou-bridge-actions">
-                <a class="button-link" href="/topics/jikka-karute/">実家カルテを見る</a>
-                <a class="button-link secondary-button" href="https://fudosan.atawi.link/from-temple/?utm_source=temple&utm_medium=referral&utm_campaign=jikka_karute" target="_blank" rel="noopener noreferrer">相談方法を確認する<span class="external-mark">外部</span></a>
+                <a class="button-link" href="/jikka-karute/" data-cv-event="karte-start">実家カルテを作る</a>
+                <a class="button-link secondary-button" href="https://fudosan.atawi.link/from-temple/?utm_source=temple&utm_medium=referral&utm_campaign=jikka_karute&utm_content=article_cta" target="_blank" rel="noopener noreferrer" data-cv-event="consultation">相談方法を確認する<span class="external-mark">外部</span></a>
               </div>
             </>
           ) : article.cta === "medium" ? (

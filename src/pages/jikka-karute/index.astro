@@ -1,0 +1,254 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const siteUrl = "https://temple.atawi.link";
+const pageUrl = `${siteUrl}/jikka-karute/`;
+const sections = [
+  {
+    title: "基本情報",
+    description: "住所や所有者名そのものではなく、家族が確認できている範囲を記録します。",
+    items: [
+      ["address_status", "実家の所在地を家族が把握している"],
+      ["owner_status", "土地・建物の名義を確認する資料がある"],
+      ["contact_status", "緊急時に連絡する家族を決めている"],
+    ],
+  },
+  {
+    title: "建物・暮らし",
+    description: "危険な場所へ入らず、目視できる範囲だけを確認します。",
+    items: [
+      ["exterior", "外壁・屋根・雨どいを地上から確認した"],
+      ["garden", "庭木・雑草・道路へのはみ出しを確認した"],
+      ["mail", "郵便受け・不在票・連絡物を確認した"],
+      ["utilities", "電気・水道・ガスの利用状況を確認した"],
+      ["leak", "水漏れ・異臭・湿気の有無を確認した"],
+      ["keys", "鍵と合鍵の所在を本人と確認した"],
+    ],
+  },
+  {
+    title: "仏壇・お墓・寺院",
+    description: "宗派や供養の形を推測せず、分かる事実を残します。",
+    items: [
+      ["butsudan", "仏壇・位牌・過去帳の状態を記録した"],
+      ["temple", "菩提寺または相談先の寺院を確認した"],
+      ["grave", "墓地名・場所・管理者を確認した"],
+      ["memorial", "次の法要や墓参りの予定を家族で共有した"],
+    ],
+  },
+  {
+    title: "書類・管理",
+    description: "原本を動かさず、書類の種類と保管場所だけを記録します。",
+    items: [
+      ["tax", "固定資産税の通知書の所在を確認した"],
+      ["insurance", "火災保険など住まいの書類を確認した"],
+      ["registry", "土地・建物の登記関係書類の所在を確認した"],
+      ["management", "留守時の郵便・庭木・通水の担当を決めた"],
+    ],
+  },
+  {
+    title: "家族の希望",
+    description: "売る・残すの結論ではなく、本人と家族の希望を分けて残します。",
+    items: [
+      ["owner_wish", "本人が実家をどうしたいか聞いた"],
+      ["family_share", "確認した内容を家族へ共有した"],
+      ["next_date", "次に確認する人と時期を決めた"],
+    ],
+  },
+];
+
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "実家カルテ",
+    description: "実家の現状と家族の確認事項を、端末内で整理・保存・印刷できる無料ツールです。",
+    url: pageUrl,
+    applicationCategory: "LifestyleApplication",
+    operatingSystem: "Web",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "JPY" },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "寺院", item: `${siteUrl}/temples/` },
+      { "@type": "ListItem", position: 2, name: "法要", item: `${siteUrl}/topics/houyou/` },
+      { "@type": "ListItem", position: 3, name: "帰省", item: `${siteUrl}/topics/kisei/` },
+      { "@type": "ListItem", position: 4, name: "実家カルテ", item: pageUrl },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="無料の実家カルテ｜家族で確認・保存・印刷｜ATAWI TEMPLE"
+  description="売却を前提にせず、実家の建物、仏壇、お墓、書類、家族の希望を整理する無料の実家カルテ。入力内容は端末内だけに保存できます。"
+  structuredData={structuredData}
+>
+  <article class="karte-page">
+    <nav class="breadcrumbs" aria-label="パンくず">
+      <a href="/temples/">寺院</a><span>›</span><a href="/topics/houyou/">法要</a><span>›</span><a href="/topics/kisei/">帰省</a><span>›</span><span>実家カルテ</span>
+    </nav>
+
+    <header class="karte-hero">
+      <p class="eyebrow">Jikka Karte</p>
+      <h1>実家の今を、家族で共有する。</h1>
+      <p>売る・残すを決めるためではなく、分かっていることと、これから確認することを整理するカルテです。</p>
+      <div class="privacy-note">
+        <strong>入力内容は外部へ送信されません</strong>
+        <span>この端末のブラウザ内にだけ保存されます。氏名、住所、口座番号などの詳細な個人情報は入力しないでください。</span>
+      </div>
+    </header>
+
+    <div class="karte-progress" aria-live="polite">
+      <div>
+        <span>確認の進み具合</span>
+        <strong data-progress-text>0 / 20</strong>
+      </div>
+      <progress data-progress value="0" max="20">0%</progress>
+      <p data-progress-message>まず一つ、分かる項目から始めてください。</p>
+    </div>
+
+    <form class="karte-form" data-karte-form>
+      <section class="karte-notes">
+        <h2>このカルテについて</h2>
+        <div class="karte-field-grid">
+          <label>確認した日<input type="date" name="checked_date" /></label>
+          <label>確認した人（続柄など）<input type="text" name="checked_by" maxlength="40" placeholder="例：長女、家族3人" /></label>
+        </div>
+        <label>本人が大切にしたいこと<textarea name="owner_priority" rows="3" maxlength="400" placeholder="例：仏壇はできるだけ今の場所で守りたい"></textarea></label>
+      </section>
+
+      {sections.map((section, sectionIndex) => (
+        <fieldset class="karte-section">
+          <legend><span>{String(sectionIndex + 1).padStart(2, "0")}</span>{section.title}</legend>
+          <p>{section.description}</p>
+          <div class="karte-checks">
+            {section.items.map(([name, label]) => (
+              <label><input type="checkbox" name={name} /><span>{label}</span></label>
+            ))}
+          </div>
+          <label class="karte-memo">この項目のメモ<textarea name={`memo_${sectionIndex + 1}`} rows="2" maxlength="300" placeholder="確認できたこと、次に聞くこと"></textarea></label>
+        </fieldset>
+      ))}
+
+      <section class="karte-notes">
+        <h2>次にすること</h2>
+        <div class="karte-field-grid">
+          <label>次に確認すること<input type="text" name="next_action" maxlength="120" placeholder="一つだけ決めます" /></label>
+          <label>次の確認時期<input type="text" name="next_timing" maxlength="60" placeholder="例：次のお彼岸、8月の帰省時" /></label>
+        </div>
+      </section>
+
+      <div class="karte-actions">
+        <button type="button" class="button-link" data-save>この端末に保存</button>
+        <button type="button" class="button-link secondary-button" data-print>印刷・PDF保存</button>
+        <button type="button" class="button-link secondary-button" data-copy>家族共有用にコピー</button>
+        <button type="button" class="text-button" data-clear>入力を消去</button>
+        <p class="small" data-save-status aria-live="polite"></p>
+      </div>
+    </form>
+
+    <section class="karte-consultation">
+      <p class="eyebrow">必要な方だけ</p>
+      <h2>確認できない項目が残ったとき</h2>
+      <p>家族だけで整理しにくい項目が残った場合は、実家カルテを手元に置いて相談できます。売却や査定を前提とした相談ではありません。</p>
+      <ul>
+        <li>相談前に、対応内容・費用・個人情報の扱いを確認できます</li>
+        <li>相談しないまま、カルテだけをご家族で使っても構いません</li>
+        <li>法務・税務・宗教上の判断は、それぞれの専門家や菩提寺へ確認します</li>
+      </ul>
+      <a class="button-link" href="https://fudosan.atawi.link/from-temple/?utm_source=temple&utm_medium=referral&utm_campaign=jikka_karute&utm_content=karte_complete" target="_blank" rel="noopener noreferrer" data-cv-event="consultation">相談方法を確認する<span class="external-mark">外部</span></a>
+    </section>
+  </article>
+
+  <script is:inline>
+    // @ts-nocheck
+    (function () {
+      var form = document.querySelector("[data-karte-form]");
+      if (!form) return;
+      var storageKey = "atawi-jikka-karte-v1";
+      var checks = Array.from(form.querySelectorAll('input[type="checkbox"]'));
+      var progress = document.querySelector("[data-progress]");
+      var progressText = document.querySelector("[data-progress-text]");
+      var progressMessage = document.querySelector("[data-progress-message]");
+      var status = document.querySelector("[data-save-status]");
+
+      function values() {
+        return Array.from(new FormData(form).entries()).reduce(function (result, entry) {
+          result[entry[0]] = entry[1];
+          return result;
+        }, {});
+      }
+      function updateProgress() {
+        var count = checks.filter(function (input) { return input.checked; }).length;
+        progress.value = count;
+        progressText.textContent = count + " / " + checks.length;
+        progressMessage.textContent = count === checks.length
+          ? "確認項目がそろいました。家族で内容を共有し、必要な項目だけ更新してください。"
+          : count >= 10 ? "半分以上確認できました。未確認の項目は空欄でも構いません。"
+          : "まず一つ、分かる項目から始めてください。";
+      }
+      function restore() {
+        try {
+          var saved = JSON.parse(localStorage.getItem(storageKey) || "{}");
+          Object.keys(saved).forEach(function (name) {
+            var field = form.elements.namedItem(name);
+            if (!field) return;
+            if (field.type === "checkbox") field.checked = saved[name] === "on";
+            else field.value = saved[name];
+          });
+        } catch (_) {}
+        updateProgress();
+      }
+      function summary() {
+        var data = values();
+        var confirmed = checks.filter(function (input) { return input.checked; }).map(function (input) {
+          return "・" + input.parentElement.textContent.trim();
+        });
+        return [
+          "実家カルテ（" + (data.checked_date || "日付未記入") + "）",
+          "確認した人：" + (data.checked_by || "未記入"),
+          "",
+          "【確認済み】",
+          confirmed.length ? confirmed.join("\n") : "・まだありません",
+          "",
+          "【本人が大切にしたいこと】",
+          data.owner_priority || "未記入",
+          "",
+          "【次にすること】",
+          data.next_action || "未記入",
+          "時期：" + (data.next_timing || "未記入"),
+          "",
+          "※氏名・住所・口座番号などの個人情報は共有文に含めないでください。",
+        ].join("\n");
+      }
+      checks.forEach(function (input) { input.addEventListener("change", updateProgress); });
+      form.querySelector("[data-save]").addEventListener("click", function () {
+        try {
+          localStorage.setItem(storageKey, JSON.stringify(values()));
+          status.textContent = "この端末に保存しました。";
+        } catch (_) {
+          status.textContent = "保存できませんでした。印刷・PDF保存をご利用ください。";
+        }
+      });
+      form.querySelector("[data-print]").addEventListener("click", function () { window.print(); });
+      form.querySelector("[data-copy]").addEventListener("click", async function () {
+        try {
+          await navigator.clipboard.writeText(summary());
+          status.textContent = "家族共有用の文章をコピーしました。";
+        } catch (_) {
+          status.textContent = "コピーできませんでした。印刷・PDF保存をご利用ください。";
+        }
+      });
+      form.querySelector("[data-clear]").addEventListener("click", function () {
+        if (!window.confirm("この端末に保存した内容を含め、入力をすべて消去しますか？")) return;
+        form.reset();
+        localStorage.removeItem(storageKey);
+        status.textContent = "入力内容を消去しました。";
+        updateProgress();
+      });
+      restore();
+    })();
+  </script>
+</BaseLayout>

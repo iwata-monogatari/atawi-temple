@@ -17,13 +17,89 @@ export type PortalArticle = {
   description: string;
   lead: string;
   conclusion: string;
+  firstAction: string;
+  steps: { title: string; body: string }[];
+  conversationExample: string;
+  caution: string;
   points: string[];
   faq: { question: string; answer: string }[];
+  sources: { label: string; href: string; note: string }[];
   previous?: { href: string; label: string };
   next?: { href: string; label: string };
   cta: "weak" | "medium" | "strong";
   updated: string;
 };
+
+const sourceSets: Record<PortalCategoryKey, PortalArticle["sources"]> = {
+  houyou: [
+    { label: "全日本仏教会「仏教について」", href: "https://www.jbf.ne.jp/interest/", note: "仏教行事を考える際の基礎情報" },
+    { label: "ATAWI TEMPLE 編集方針", href: "/editorial-policy/", note: "宗派・地域差を断定しないための掲載基準" },
+  ],
+  bodaiji: [
+    { label: "文化庁「宗教法人と宗務行政」", href: "https://www.bunka.go.jp/seisaku/shukyohojin/", note: "宗教法人制度の公的な基礎情報" },
+    { label: "全日本仏教会「加盟団体」", href: "https://www.jbf.ne.jp/about/organization/", note: "宗派・仏教団体の公式情報を探す手がかり" },
+  ],
+  ohaka: [
+    { label: "厚生労働省「墓地、埋葬等に関する法律」", href: "https://www.mhlw.go.jp/web/t_doc?dataId=80156000", note: "埋葬・改葬制度の一次情報" },
+    { label: "磐田市公式サイト", href: "https://www.city.iwata.shizuoka.jp/", note: "市営墓地や改葬など地域の手続きは市へ確認" },
+  ],
+  butsudan: [
+    { label: "全日本仏教会「仏教について」", href: "https://www.jbf.ne.jp/interest/", note: "仏教文化についての基礎情報" },
+    { label: "ATAWI TEMPLE 寺院検索", href: "/search/", note: "菩提寺・相談先を確認するための寺院データベース" },
+  ],
+  kisei: [
+    { label: "気象庁「防災情報」", href: "https://www.jma.go.jp/bosai/", note: "帰省前の気象・防災確認" },
+    { label: "国土交通省「道路情報」", href: "https://www.mlit.go.jp/road/traffic/", note: "自動車移動前の公的な道路情報" },
+  ],
+  jikka: [
+    { label: "国土交通省「住まいの維持管理」", href: "https://www.mlit.go.jp/jutakukentiku/house/", note: "住宅を安全に維持するための公的情報" },
+    { label: "磐田市公式サイト", href: "https://www.city.iwata.shizuoka.jp/", note: "防災・ごみ・住まいに関する地域情報" },
+  ],
+  "kazoku-kaigi": [
+    { label: "法務省「相続登記の申請義務化」", href: "https://www.moj.go.jp/MINJI/minji05_00435.html", note: "権利関係を話す際に確認したい公的情報" },
+    { label: "政府広報オンライン「相続登記」", href: "https://www.gov-online.go.jp/useful/article/202203/2.html", note: "家族で制度の概要を共有するための資料" },
+  ],
+  akiya: [
+    { label: "国土交通省「空き家対策」", href: "https://www.mlit.go.jp/jutakukentiku/house/jutakukentiku_house_tk3_000035.html", note: "空き家対策の制度・資料" },
+    { label: "磐田市公式サイト", href: "https://www.city.iwata.shizuoka.jp/", note: "磐田市の空き家相談・地域制度の確認先" },
+  ],
+  "jikka-karute": [
+    { label: "法務局「登記手続案内」", href: "https://houmukyoku.moj.go.jp/homu/static/goannai_index_fudousan.html", note: "土地・建物の登記情報に関する公的案内" },
+    { label: "国税庁「相続税」", href: "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/souzo.htm", note: "税に関する判断をせず、公式情報へ確認するための入口" },
+    { label: "ATAWI TEMPLE 編集方針", href: "/editorial-policy/", note: "実家情報を扱う際の編集・表現方針" },
+  ],
+};
+
+function makeSpecificGuidance(title: string, category: PortalCategoryKey, index: number) {
+  const subject = title.replace(/[？?].*$/, "").replace(/するとき.*$/, "").replace(/について.*$/, "");
+  const keywordGuides: { test: RegExp; action: string; caution: string }[] = [
+    { test: /日程|予定|時期|日/, action: "候補日を二つ以上書き出し、菩提寺・会場・参加する家族の順で都合を確認します。", caution: "年忌の営み方や時期には地域・寺院ごとの考え方があります。暦だけで決めず、菩提寺へ確認してください。" },
+    { test: /菩提寺|寺院|宗派|檀家/, action: "寺院名、所在地、墓地や位牌に残る表記を別々にメモし、推測と確認済みの情報を分けます。", caution: "建物や仏具の見た目だけで宗派を断定しないでください。寺院の公式案内または寺院への問い合わせを優先します。" },
+    { test: /墓|納骨|改葬|永代供養|合祀|樹木葬/, action: "墓地名、区画、使用者、管理者、納骨されている方を一枚のメモに整理します。", caution: "改葬や納骨には管理者・自治体への確認が必要になる場合があります。契約や手続きを自己判断で進めないでください。" },
+    { test: /仏壇|位牌|過去帳|遺影|仏具/, action: "動かす前に全体写真と文字が読める写真を撮り、誰に関するものか家族へ確認します。", caution: "位牌や過去帳は家族の大切な記録です。本人や家族の同意なく処分・移動・公開をしないでください。" },
+    { test: /車|新幹線|移動|帰省|宿泊/, action: "法要の開始時刻から逆算し、移動、休憩、実家へ立ち寄る時間を分けて予定表にします。", caution: "天候や交通事情により予定は変わります。高齢者や子どもが同行する場合は余白を多めに取ってください。" },
+    { test: /屋根|雨どい|外壁|庭木|雑草|塀|門扉|窓/, action: "危険な場所へ上がらず、道路や敷地内の安全な位置から日付入りの写真を残します。", caution: "屋根、脚立、高所、傷んだ塀には近づかず、異常がある場合は専門業者へ確認してください。" },
+    { test: /水|ガス|電気|ブレーカー|火|冷蔵庫|浴室|トイレ/, action: "におい、音、濡れ、メーターの変化を目視できる範囲で確認し、異常の場所と時刻を記録します。", caution: "漏電、ガス臭、水漏れなど危険を感じたら操作を続けず、契約先や緊急窓口へ連絡してください。" },
+    { test: /書類|通知書|権利|保険|通帳|印鑑|税/, action: "書類名、発行元、記載年、保管場所だけを記録し、原本は本人の許可なく移動しません。", caution: "個人情報や財産情報を撮影・共有するときは本人の同意を得て、送信先と保管方法を限定してください。" },
+    { test: /家族会議|話|相談|希望|意見/, action: "最初に本人の希望を聞き、確認済みの事実、家族の意見、未確認事項の三列に分けてメモします。", caution: "その場で売る・残すを決める必要はありません。感情的になった場合は結論を出さず、次回の日だけ決めます。" },
+    { test: /空き家|留守|管理|見守/, action: "鍵、郵便、庭木、通水、緊急連絡先について、担当者と次の確認日を一つずつ決めます。", caution: "管理頻度や必要な対応は建物の状態で異なります。危険や近隣への影響がある場合は自治体・専門家へ相談してください。" },
+    { test: /写真|記録|カルテ|一覧|共有/, action: "確認日、確認した人、場所、分かったこと、未確認事項を同じ形式で記録します。", caution: "記録には個人情報が含まれます。家族内でも共有範囲を決め、公開リンクやSNSには載せないでください。" },
+  ];
+  const matched = keywordGuides.find((guide) => guide.test.test(title)) || {
+    action: `「${subject}」について、分かっていることと確認が必要なことを二列に分けて書き出します。`,
+    caution: "地域、寺院、契約、家族の事情によって答えは変わります。分からないことを推測で埋めず、確認先を記録してください。",
+  };
+  return {
+    firstAction: matched.action,
+    steps: [
+      { title: "いま分かる事実を集める", body: `${subject}に関係する写真、書類、家族の記憶を集めます。確認できた日と情報の出どころも一緒に残します。` },
+      { title: "未確認の項目を一つ選ぶ", body: `全部を一度に終わらせず、「${subject}」について次に確かめる項目を一つだけ選び、確認する相手を決めます。` },
+      { title: "家族へ同じ形で共有する", body: `確認結果を「確認済み・未確認・次にすること」に分けます。記事番号${index + 1}の記録として日付を添えると、次回の帰省でも続けられます。` },
+    ],
+    conversationExample: `「${subject}について、今日は結論を決めたいのではなく、今分かっていることだけ一緒に確認してもいい？」`,
+    caution: matched.caution,
+  };
+}
 
 type CategoryDefinition = {
   label: string;
@@ -227,6 +303,7 @@ const draftArticles = categoryOrder.flatMap((category) => {
     description: `${title}について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。`,
     lead: definition.intro,
     conclusion: definition.conclusion,
+    ...makeSpecificGuidance(title, category, index),
     points: [
       definition.points[index % definition.points.length],
       definition.points[(index + 1) % definition.points.length],
@@ -235,14 +312,15 @@ const draftArticles = categoryOrder.flatMap((category) => {
     ],
     faq: [
       {
-        question: "一度の帰省や話し合いで決める必要がありますか？",
-        answer: "いいえ。まず現状を共有し、分からない点を残すだけでも十分です。次に確認する人と時期を決めておくと続けやすくなります。",
+        question: `「${title.replace(/[？?].*$/, "")}」は一度で決める必要がありますか？`,
+        answer: "いいえ。まず確認できた事実を共有し、分からない点を残すだけでも十分です。次に確認する人と時期を決めておくと続けやすくなります。",
       },
       {
         question: "寺院や地域によって違いはありますか？",
         answer: "あります。宗派や地域の習慣を一律に断定せず、菩提寺、墓地管理者、自治体など、その事項を確認できる相手へ個別にお尋ねください。",
       },
     ],
+    sources: sourceSets[category],
     cta: category === "jikka-karute" ? "strong" : definition.position >= 6 ? "medium" : "weak",
     updated: "2026-07-27",
   }));
