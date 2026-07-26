@@ -30,11 +30,11 @@ import {
 import { researchArticles } from "../../lib/research-articles";
 
 export function getStaticPaths() {
-  return allTemples.filter(hasDetailPage).map((temple) => ({ params: { slug: temple.slug } }));
+  return allTemples.map((temple) => ({ params: { slug: temple.slug } }));
 }
 
 const temple = getTempleBySlug(Astro.params.slug || "");
-if (!temple || !hasDetailPage(temple)) return Astro.redirect("/temples/");
+if (!temple) return Astro.redirect("/temples/");
 const templeResearchArticles = researchArticles.filter((article) => article.templeSlug === temple.slug);
 
 const refurb = getRefurbFacts(temple.slug);
@@ -245,7 +245,7 @@ const uploadedPhotoTempleDataJson = JSON.stringify({
   slug: temple.slug,
   name: temple.name,
 }).replace(/</g, "\\u003c");
-const showHouyouBridge = temple.status === "existing";
+const showHouyouBridge = true;
 ---
 
 <BaseLayout
@@ -845,3 +845,4 @@ const showHouyouBridge = temple.status === "existing";
     )}
   </article>
 </BaseLayout>
+

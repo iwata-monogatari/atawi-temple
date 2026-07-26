@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import TempleCard from "../../components/TempleCard.astro";
-import { fromTempleUrl } from "../../lib/editorial";
 import type { Temple } from "../../lib/temples";
 import {
   allDistricts,
@@ -61,7 +60,6 @@ const areaHeroImage = district.hero_image || fallbackAreaHeroImage;
 const sectCount = new Set(detailedTemples.map((temple) => temple.sect)).size;
 const searchUrl = `/search/?district=${district.district_id}`;
 const mapUrl = `/map/?district=${district.district_id}`;
-const areaConsultUrl = fromTempleUrl(`area_${district.slug}_check`);
 const areaSectSummary = Array.from(
   temples.reduce((map, temple) => {
     const name = getSectGroupName(temple.sect);
@@ -196,11 +194,9 @@ const templeGroups = [
         <strong>墓・仏壇・書類を分けて確認</strong>
         <p>法要や墓参りでこの地区へ戻る時期は、実家の名義や空き家管理も確認しやすいタイミングです。</p>
         <a
-          href={areaConsultUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-track-click="to_fudosan_click"
-        >実家・お墓まわりの確認だけ相談する</a>
+          href="/topics/jikka/"
+          data-track-click="jikka_check_click"
+        >帰省時の実家確認を見る</a>
       </article>
     </div>
   </section>
@@ -397,3 +393,4 @@ const templeGroups = [
     <a class="button-link" href="/areas/">9地区一覧へ戻る</a>
   </section>
 </BaseLayout>
+

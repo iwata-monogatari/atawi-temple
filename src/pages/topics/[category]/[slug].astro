@@ -1,0 +1,173 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import {
+  getPortalArticle,
+  getPortalArticlesByCategory,
+  portalArticles,
+  portalCategories,
+} from "../../../lib/portal-articles";
+
+export function getStaticPaths() {
+  return portalArticles.map((article) => ({
+    params: { category: article.category, slug: article.slug },
+  }));
+}
+
+const article = getPortalArticle(Astro.params.category || "", Astro.params.slug || "");
+if (!article) return Astro.redirect("/topics/");
+const category = portalCategories.find((item) => item.key === article.category)!;
+const categoryArticles = getPortalArticlesByCategory(article.category);
+const related = categoryArticles.filter((item) => item.slug !== article.slug).slice(0, 3);
+const siteUrl = "https://temple.atawi.link";
+const pageUrl = `${siteUrl}/topics/${article.category}/${article.slug}/`;
+const breadcrumbItems = [
+  { name: "寺院", url: `${siteUrl}/temples/` },
+  { name: "法要", url: `${siteUrl}/topics/houyou/` },
+  ...(category.position > 5 ? [{ name: "法要帰省", url: `${siteUrl}/topics/kisei/` }] : []),
+  ...(category.position > 5 ? [{ name: category.label, url: `${siteUrl}/topics/${category.key}/` }] : category.key !== "houyou" ? [{ name: category.label, url: `${siteUrl}/topics/${category.key}/` }] : []),
+  { name: article.title, url: pageUrl },
+];
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: breadcrumbItems.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.description,
+    datePublished: article.updated,
+    dateModified: article.updated,
+    mainEntityOfPage: pageUrl,
+    author: { "@type": "Organization", name: "ATAWI TEMPLE編集部" },
+    publisher: { "@type": "Organization", name: "ATAWI TEMPLE" },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: article.faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  },
+];
+---
+
+<BaseLayout title={`${article.title}｜ATAWI TEMPLE`} description={article.description} structuredData={structuredData}>
+  <article class="portal-article">
+    <nav class="breadcrumbs" aria-label="パンくず">
+      {breadcrumbItems.map((item, index) => (
+        <><a href={item.url.replace(siteUrl, "")}>{item.name}</a>{index < breadcrumbItems.length - 1 && <span>›</span>}</>
+      ))}
+    </nav>
+    <header class="article-hero">
+      <p class="eyebrow">{article.categoryLabel}</p>
+      <h1>{article.title}</h1>
+      <p class="article-subtitle">{article.lead}</p>
+      <p class="small">更新日 {article.updated.replaceAll("-", ".")}</p>
+    </header>
+
+    <div class="article-layout">
+      <main class="article-body">
+        <section class="article-section">
+          <p class="section-number">Conclusion</p>
+          <h2>結論</h2>
+          <p>{article.conclusion}</p>
+        </section>
+
+        <section class="article-section">
+          <p class="section-number">01</p>
+          <h2>{article.title}で最初にすること</h2>
+          <p>
+            最初に、いま分かっていることと、まだ分からないことを分けます。家族の記憶だけで決めず、
+            手元の書類、写真、寺院や管理者からの案内を照らし合わせてください。
+          </p>
+          <p>
+            この段階では結論を出さなくても構いません。「誰に何を確認するか」が分かれば、次の話し合いがしやすくなります。
+          </p>
+        </section>
+
+        <section class="article-section">
+          <p class="section-number">02</p>
+          <h2>家族で共有するときの進め方</h2>
+          <p>
+            本人の希望を聞き、事実と意見を分けてメモします。離れて暮らす家族にも同じ写真とメモを送り、
+            一人だけが情報を抱えないようにします。
+          </p>
+          <p>
+            宗派、供養、法律、税金など判断に専門的な確認が必要なことは、その場で断定せず、確認先を決めて保留にします。
+          </p>
+        </section>
+
+        <section class="article-section">
+          <p class="section-number">Check</p>
+          <h2>確認ポイント</h2>
+          <ul class="check-list">
+            {article.points.map((point) => <li>{point}</li>)}
+          </ul>
+        </section>
+
+        <section class="article-section">
+          <p class="section-number">FAQ</p>
+          <h2>よくある確認</h2>
+          <div class="faq-list">
+            {article.faq.map((item) => (
+              <article><h3>{item.question}</h3><p>{item.answer}</p></article>
+            ))}
+          </div>
+        </section>
+
+        <section class="article-section">
+          <p class="section-number">Related</p>
+          <h2>関連記事</h2>
+          <div class="side-link-list">
+            {related.map((item) => <a href={`/topics/${item.category}/${item.slug}/`}>{item.title}</a>)}
+          </div>
+        </section>
+
+        <section class:list={["article-section", "portal-cta", `portal-cta--${article.cta}`]}>
+          <p class="section-number">Next</p>
+          <h2>{article.cta === "strong" ? "実家の情報を整理する" : article.cta === "medium" ? "帰省時の確認を記録する" : "次の記事へ進む"}</h2>
+          {article.cta === "strong" ? (
+            <>
+              <p>実家カルテで現状を整理し、家族だけで確認しにくい項目が残った場合は、必要な方だけ富士ヶ丘サービスへ相談できます。</p>
+              <div class="houyou-bridge-actions">
+                <a class="button-link" href="/topics/jikka-karute/">実家カルテを見る</a>
+                <a class="button-link secondary-button" href="https://fudosan.atawi.link/from-temple/?utm_source=temple&utm_medium=referral&utm_campaign=jikka_karute" target="_blank" rel="noopener noreferrer">相談方法を確認する<span class="external-mark">外部</span></a>
+              </div>
+            </>
+          ) : article.cta === "medium" ? (
+            <>
+              <p>結論を出す前に、見たこと、聞いたこと、次に確認することを残しておきましょう。</p>
+              <a class="button-link" href="/topics/jikka/jikka-30/">実家確認チェックリストを見る</a>
+            </>
+          ) : (
+            <>
+              <p>関連する記事を読み、次に確認することを一つ選んでください。</p>
+              {article.next && <a class="button-link" href={article.next.href}>{article.next.label}</a>}
+            </>
+          )}
+        </section>
+      </main>
+
+      <aside class="article-aside">
+        <section class="side-panel">
+          <h2>次に読む記事</h2>
+          <div class="side-link-list">
+            {article.previous && <a href={article.previous.href}>← {article.previous.label}</a>}
+            {article.next && <a href={article.next.href}>{article.next.label} →</a>}
+          </div>
+        </section>
+      </aside>
+    </div>
+  </article>
+</BaseLayout>
+

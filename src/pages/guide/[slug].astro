@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { fromTempleUrl, getGuideArticle, publicGuideArticles } from "../../lib/editorial";
+import { getGuideArticle, publicGuideArticles } from "../../lib/editorial";
 
 export function getStaticPaths() {
   return publicGuideArticles.map((article) => ({ params: { slug: article.slug } }));
@@ -9,7 +9,6 @@ export function getStaticPaths() {
 const article = getGuideArticle(Astro.params.slug || "");
 if (!article) return Astro.redirect("/guide/");
 const guideViewEvent = article.slug === "houyou-kisei" ? "kisei_guide_view" : "";
-const guideConsultUrl = fromTempleUrl(`guide_${article.slug}_bottom`);
 
 const faqJson = article.faq ? JSON.stringify({
   "@context": "https://schema.org",
@@ -62,17 +61,15 @@ const faqJson = article.faq ? JSON.stringify({
               {section.cta && (
                 <div
                   class="article-section-cta"
-                  data-fujigaoka-intro={section.cta.event === "to_fudosan_click" ? "true" : undefined}
+                  data-fujigaoka-intro={undefined}
                 >
                   <a
                     class="button-link"
-                    href={section.cta.href}
-                    data-track-click={section.cta.event}
-                    target={section.cta.external ? "_blank" : undefined}
-                    rel={section.cta.external ? "noopener noreferrer" : undefined}
+                    href={section.cta.external ? "/topics/jikka-karute/" : section.cta.href}
+                    data-track-click={section.cta.external ? "jikka_karute_click" : section.cta.event}
                   >
                     {section.cta.label}
-                    {section.cta.external && <span class="external-mark">外部</span>}
+                    {section.cta.external && <span class="external-mark">実家カルテへ</span>}
                   </a>
                   {section.cta.note && <p>{section.cta.note}</p>}
                 </div>
@@ -113,22 +110,20 @@ const faqJson = article.faq ? JSON.stringify({
 
         <section class="article-section article-consult-panel">
           <p class="section-number">Check</p>
-          <h2>実家・お墓まわりを確認だけ相談する</h2>
+          <h2>実家・お墓まわりの情報を整理する</h2>
           <p>
             寺院、墓、仏壇、位牌の確認と、実家の名義・道路・空き家管理の確認は別の作業です。
-            必要な方だけ、運営元の関連サービスで住所から分かる範囲を整理できます。
+            まず実家カルテで、家族が把握していることと確認が必要なことを分けてみてください。
           </p>
           <div class="article-section-cta">
             <a
               class="button-link secondary-button"
-              href={guideConsultUrl}
-              data-track-click="to_fudosan_click"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/topics/jikka-karute/"
+              data-track-click="jikka_karute_click"
             >
-              実家・お墓まわりの確認だけ相談する<span class="external-mark">外部</span>
+              実家カルテを見る
             </a>
-            <p>査定ではありません。掲載寺院との提携・紹介関係もありません。寺院への法要・供養相談は寺院へ直接確認してください。</p>
+            <p>寺院への法要・供養相談は寺院へ直接確認してください。</p>
           </div>
         </section>
       </main>
@@ -211,3 +206,4 @@ const faqJson = article.faq ? JSON.stringify({
     })();
   </script>
 </BaseLayout>
+

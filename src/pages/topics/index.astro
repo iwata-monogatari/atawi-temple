@@ -1,0 +1,62 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { portalCategories, portalArticles } from "../../lib/portal-articles";
+
+const siteUrl = "https://temple.atawi.link";
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "法要・帰省・実家を考えるガイド",
+  description: "寺院、法要、帰省、実家、家族会議、空き家予防、実家カルテを順にたどる地域生活ガイドです。",
+  url: `${siteUrl}/topics/`,
+};
+---
+
+<BaseLayout
+  title="法要・帰省・実家を考えるガイド｜ATAWI TEMPLE"
+  description="寺院を入口に、法要、帰省、実家、家族会議、空き家予防、実家カルテを順に考える200本の地域生活ガイドです。"
+  structuredData={structuredData}
+>
+  <article class="portal-index">
+    <header class="portal-hero">
+      <p class="eyebrow">Family & Hometown Guide</p>
+      <h1>法要は、家族が故郷へ帰る日。</h1>
+      <p>実家の未来を、家族で話し始める日でもあります。</p>
+      <p class="portal-hero-note">
+        売却を前提にせず、守る選択も含めて、現状を知るところから始めるための200本です。
+      </p>
+    </header>
+
+    <nav class="portal-cluster-flow" aria-label="ガイドの読み進め方">
+      {portalCategories.map((category) => (
+        <a href={`/topics/${category.key}/`}>
+          <span>{String(category.position).padStart(2, "0")}</span>
+          <strong>{category.label}</strong>
+          <small>{category.count}記事</small>
+        </a>
+      ))}
+    </nav>
+
+    <section class="section portal-category-list">
+      {portalCategories.map((category) => {
+        const firstArticles = portalArticles.filter((article) => article.category === category.key).slice(0, 3);
+        return (
+          <article class="portal-category-card">
+            <header>
+              <p class="section-number">{String(category.position).padStart(2, "0")}</p>
+              <h2>{category.label}</h2>
+              <p>{category.description}</p>
+            </header>
+            <ul>
+              {firstArticles.map((article) => (
+                <li><a href={`/topics/${article.category}/${article.slug}/`}>{article.title}</a></li>
+              ))}
+            </ul>
+            <a class="text-link" href={`/topics/${category.key}/`}>{category.label}の{category.count}記事を見る</a>
+          </article>
+        );
+      })}
+    </section>
+  </article>
+</BaseLayout>
+

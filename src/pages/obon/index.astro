@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { fromTempleUrl, obonChecklist, houyouRows } from "../../lib/editorial";
+import { obonChecklist, houyouRows } from "../../lib/editorial";
 ---
 
 <BaseLayout
@@ -93,18 +93,18 @@ import { fromTempleUrl, obonChecklist, houyouRows } from "../../lib/editorial";
   </article>
 
   <section class="section obon-footer-cta">
-    <p class="eyebrow">運営元による確認</p>
-    <h2>写真だけでは分からないことを調べる</h2>
+    <p class="eyebrow">帰省時の記録</p>
+    <h2>写真だけでは分からないことを家族で確認する</h2>
     <p>
-      名義、道路、土地の範囲、法令上の制限、災害リスクなどは、住所から確認できる場合があります。
+      名義、道路、土地の範囲、災害リスクなど、分からないことは確認事項として記録します。
     </p>
     <p>
-      ATAWI TEMPLEの運営元である富士ヶ丘サービス株式会社が、査定の前に確認事項を整理します。
+      すぐに結論を出さず、まず家族が把握していることを同じメモにまとめてください。
     </p>
-    <a class="button-link cta-hot" href={fromTempleUrl("obon_footer")} target="_blank" rel="noopener noreferrer" data-track-click="to_fudosan_click">
-      実家・お墓まわりの確認だけ相談する<span class="external-mark">外部</span>
+    <a class="button-link" href="/topics/jikka/" data-track-click="jikka_check_click">
+      帰省時の実家確認を見る
     </a>
-    <p class="external-service-note">運営元の不動産サイトへ移動します。掲載寺院との提携・紹介関係はありません。</p>
+    <p class="external-service-note">売却や処分を前提にしない確認ガイドです。</p>
   </section>
 
   <script is:inline>
@@ -130,3 +130,4 @@ import { fromTempleUrl, obonChecklist, houyouRows } from "../../lib/editorial";
     });
   </script>
 </BaseLayout>
+

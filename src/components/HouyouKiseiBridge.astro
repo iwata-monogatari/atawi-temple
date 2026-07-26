@@ -1,6 +1,4 @@
 ---
-import { fromTempleUrl } from "../lib/editorial";
-
 interface Props {
   variant?: "temple-top" | "temple-mid" | "temple-bottom" | "home" | "index-card" | "guide-bottom";
   compact?: boolean;
@@ -13,11 +11,7 @@ const isBottomBridge = variant === "temple-bottom" || variant === "guide-bottom"
 const isHomeBridge = variant === "home";
 const isIndexCard = variant === "index-card";
 const guideUrl = "/guide/houyou-kisei/";
-const templeDetailGuideUrl = "/guide/houyou-kisei/?from=temple-detail";
 const searchUrl = "/search/";
-const templeDetailFudosanUrl = fromTempleUrl("temple_detail_top");
-const homeFudosanUrl = fromTempleUrl("home_bridge");
-const indexCardFudosanUrl = fromTempleUrl("index_card");
 ---
 
 <section
@@ -30,27 +24,20 @@ const indexCardFudosanUrl = fromTempleUrl("index_card");
 >
   {isTopBridge && (
     <>
-      <p class="eyebrow">法要・お墓参り</p>
-      <h2>この寺院へ帰る予定の方へ</h2>
+      <p class="eyebrow">法要・お墓参りで故郷へ帰る方へ</p>
+      <h2>法要や墓参りで帰省される方へ</h2>
       <p>
-        菩提寺の名前、住所、宗派を確認できたら、同じ帰省で墓、仏壇、実家も一度だけ見ておくと、
-        次回以降の家族の負担を減らせます。
+        法要や墓参りは、離れて暮らすご家族が故郷へ帰る大切な機会です。
+        もし時間があれば、実家の外観、庭木、郵便受け、仏壇、重要書類なども確認してみてください。
       </p>
-      <p>必要な方は、運営元の関連サービスで実家の名義や空き家リスクを確認だけ相談できます。売る、残すを今すぐ決める必要はありません。</p>
+      <p>結論を出す必要はありません。家族で現状を共有することが大切です。</p>
       <div class="houyou-bridge-actions">
-        <a class="button-link" href={templeDetailGuideUrl} data-track-click="houyou_bridge_click">法要・帰省の確認メモを見る</a>
-        <a
-          class="button-link cta-hot"
-          href={templeDetailFudosanUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-track-click="to_fudosan_click"
-        >
-          実家・お墓まわりの確認だけ相談する<span class="external-mark">外部</span>
-        </a>
+        <a class="button-link" href="/topics/kisei/" data-track-click="houyou_bridge_click">法要帰省ガイド</a>
+        <a class="button-link secondary-button" href="/topics/jikka/jikka-30/">実家確認チェックリスト</a>
+        <a class="button-link secondary-button" href="/topics/jikka-karute/">実家カルテ</a>
       </div>
       <p class="houyou-bridge-note">
-        運営元の不動産サービスへ移動します。掲載寺院との提携・紹介関係はありません。寺院への法要・供養相談は寺院へ直接確認してください。
+        法要・供養、寺院ごとの作法や予定については、寺院の公式情報または寺院へ直接ご確認ください。
       </p>
     </>
   )}
@@ -104,15 +91,7 @@ const indexCardFudosanUrl = fromTempleUrl("index_card");
       </ul>
       <div class="houyou-bridge-actions">
         <a class="button-link" href={guideUrl} data-track-click="houyou_bridge_click">法要と実家の確認メモを見る</a>
-        <a
-          class="button-link cta-hot"
-          href={homeFudosanUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-track-click="to_fudosan_click"
-        >
-          実家・お墓まわりの確認だけ相談する<span class="external-mark">外部</span>
-        </a>
+        <a class="button-link secondary-button" href="/topics/jikka/">帰省時の実家確認を見る</a>
         <a class="button-link secondary-button" href={searchUrl} data-track-click="temple_search_refine">寺院名・宗派から探す</a>
       </div>
       <p class="houyou-bridge-note">運営元の不動産サービスへ移動します。掲載寺院との提携・紹介関係はありません。</p>
@@ -126,16 +105,9 @@ const indexCardFudosanUrl = fromTempleUrl("index_card");
       <p>寺院名、住所、宗派を確認したあと、同じ帰省で家族が見ておく項目を整理します。</p>
       <div class="houyou-bridge-actions">
         <a class="button-link" href={guideUrl} data-track-click="houyou_bridge_click">法要・帰省の確認メモ</a>
-        <a
-          class="button-link cta-hot"
-          href={indexCardFudosanUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-track-click="to_fudosan_click"
-        >
-          確認だけ相談する<span class="external-mark">外部</span>
-        </a>
+        <a class="button-link secondary-button" href="/topics/jikka-karute/">実家カルテを見る</a>
       </div>
     </>
   )}
 </section>
+
