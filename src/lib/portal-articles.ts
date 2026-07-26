@@ -277,4 +277,3 @@ export function getPortalCategory(category: string) {
 export function getPortalArticlesByCategory(category: string) {
   return portalArticles.filter((article) => article.category === category);
 }
-

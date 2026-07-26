@@ -311,538 +311,49 @@ const showHouyouBridge = true;
           <a href="/research/">ç ”ç©¶è«–æ–‡ä¸€è¦§</a>
         </div>
         <div class="card-grid">
-          {templeResearchArticles.map((article) => (
-            <article class="content-card">
-              <p class="eyebrow">{article.series}</p>
-              <h3><a href={`/research/${article.slug}/`}>{article.title}</a></h3>
-              <p>{article.description}</p>
-              <p class="small">{article.verificationStatus}ãƒ»æ›´æ–° {article.updated.replaceAll("-", ".")}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-    )}
-
-    <section class="temple-basic-panel" aria-label="å¯ºé™¢ã®åŸºæœ¬æƒ…å ±ã¨ç¢ºèªçŠ¶æ³">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Basic Information</p>
-          <h2>åŸºæœ¬æƒ…å ±</h2>
-        </div>
-        <span class="small">ATAWI TEMPLEã¯å„å¯ºé™¢ã®å…¬å¼ã‚µã‚¤ãƒˆã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚</span>
-      </div>
-      <dl class="temple-basic-grid">
-        <div><dt>å¯ºé™¢å</dt><dd>{temple.name}</dd></div>
-        <div><dt>èª­ã¿æ–¹</dt><dd class={!showKana ? "pending-text" : ""}>{showKana ? temple.name_kana : "æœªç¢ºèª"}</dd></div>
-        <div><dt>åœ°åŒº</dt><dd>{districtName}</dd></div>
-        <div><dt>å®—æ´¾</dt><dd>{temple.sect}</dd></div>
-        <div><dt>ã”æœ¬å°Šï¼ˆè³‡æ–™ä¸Šï¼‰</dt><dd class={deity.pending ? "pending-text" : ""}>{deity.text}</dd></div>
-        <div>
-          <dt>ã”æœ¬å°Šã®ç¾åœ¨ã®ç¢ºèªçŠ¶æ³</dt>
-          <dd class={currentDeityStatus || deity.pending ? "pending-text" : ""}>
-            {currentDeityStatus || (deity.pending ? "æœªç¢ºèª" : "å…¬é–‹è³‡æ–™ã§ç¢ºèªæ¸ˆã¿")}
-          </dd>
-        </div>
-        <div><dt>ä½æ‰€</dt><dd>{temple.address}</dd></div>
-        <div><dt>Googleãƒžãƒƒãƒ—</dt><dd><a href={mapUrl} target="_blank" rel="noreferrer" data-track-click="temple_map_click">Googleãƒžãƒƒãƒ—ã§é–‹ã</a></dd></div>
-        <div>
-          <dt>å¯ºé™¢å…¬å¼ã‚µã‚¤ãƒˆ</dt>
-          <dd class={officialSite?.status === "ã‚ã‚Š" ? "" : "pending-text"}>
-            {officialSite?.status === "ã‚ã‚Š" && officialSite.url ? (
-              <a href={officialSite.url} target="_blank" rel="noreferrer">{officialSiteLabel}</a>
-            ) : (
-              officialSiteLabel
-            )}
-          </dd>
-        </div>
-        <div><dt>é›»è©±ç•ªå·</dt><dd class="pending-text">{phoneStatus}</dd></div>
-        <div><dt>æ³•è¦ãƒ»å‚æ‹æƒ…å ±</dt><dd class={annualEvents.length > 0 ? "" : "pending-text"}>{houyouStatus}</dd></div>
-        <div><dt>é§è»Šå ´æƒ…å ±</dt><dd class={parkingInfo.startsWith("ç¢ºèªä¸­") ? "pending-text" : ""}>{parkingInfo}</dd></div>
-        <div><dt>ã‚¢ã‚¯ã‚»ã‚¹ãƒ»äº¤é€šæ‰‹æ®µ</dt><dd class={accessInfo.startsWith("ç¢ºèªä¸­") ? "pending-text" : ""}>{accessInfo}</dd></div>
-        <div><dt>å‘¨è¾ºã®ç›®å°</dt><dd class={landmarkInfo.startsWith("ç¢ºèªä¸­") ? "pending-text" : ""}>{landmarkInfo}</dd></div>
-        <div><dt>æ–‡åŒ–è²¡ãƒ»ç‰¹è¨˜äº‹é …</dt><dd class={culturalFeatureInfo.startsWith("ç¢ºèªä¸­") ? "pending-text" : ""}>{culturalFeatureInfo}</dd></div>
-        <div><dt>æœ€çµ‚ç¢ºèªæ—¥</dt><dd>{temple.last_verified_at.replaceAll("-", ".")}</dd></div>
-      </dl>
-      <p class="temple-official-disclaimer">
-        ä¸æ˜Žãªé …ç›®ã¯æŽ¨æ¸¬ã›ãšã€ç¢ºèªä¸­ã¨ã—ã¦è¡¨ç¤ºã—ã¦ã„ã¾ã™ã€‚æ³•è¦ã€å‚æ‹ã€é§è»Šå ´ã€é›»è©±ã§ã®é€£çµ¡ã¯ã€å¯ºé™¢ã®å…¬å¼æƒ…å ±ã¾ãŸã¯å¯ºé™¢ã¸ç›´æŽ¥ã”ç¢ºèªãã ã•ã„ã€‚
-      </p>
-    </section>
-
-    {showHouyouBridge && <HouyouKiseiBridge variant="temple-top" />}
-
-    <section class="temple-visual" aria-label={`${temple.name}ã®å†™çœŸ`}>
-      {coverPhoto ? (
-        <>
-          <figure class="temple-cover">
-            <img src={coverPhoto.src} alt={coverPhoto.alt || `${temple.name}ã®ä¸»å†™çœŸ`} loading="eager" />
-            <figcaption>ç¾åœ°å†™çœŸãƒ»{getPhotoCategory(coverPhoto.category_id)?.label || "å¯ºé™¢å¤–è¦³"}</figcaption>
-          </figure>
-          <div class="temple-photo-strip">
-            {galleryPhotos.slice(0, 5).map((photo) => (
-              <figure>
-                <img src={photo.src} alt={photo.alt} loading="lazy" />
-                <figcaption>{getPhotoCategory(photo.category_id)?.label || "ç¾åœ°å†™çœŸ"}</figcaption>
-              </figure>
-            ))}
-          </div>
-        </>
-      ) : (
-        <div class="pending-photo">
-          {publicationNotice ? (
-            <>
-              <strong>å†™çœŸæŽ²è¼‰ã‚’è¦‹åˆã‚ã›ã¦ã„ã¾ã™</strong>
-              <span>é–¢ä¿‚è€…ã‹ã‚‰ã®æ˜Žç¢ºãªæ„æ€è¡¨ç¤ºã‚’å—ã‘ã€å½“ã‚µã‚¤ãƒˆã§ã®å†™çœŸæŽ²è¼‰ã‚’è¡Œã£ã¦ã„ã¾ã›ã‚“ã€‚</span>
-            </>
-          ) : (
-            <>
-              <strong>å†™çœŸã‚’æº–å‚™ã—ã¦ã„ã¾ã™</strong>
-              <span>ç¾åœ°è¨ªå•å¾Œã«ã€æœ¬å ‚ãƒ»å¢ƒå†…ãƒ»å…¥å£ãƒ»èª¬æ˜Žæ¿ã®å†™çœŸã‚’æŽ²è¼‰ã—ã¾ã™ã€‚</span>
-            </>
-          )}
-        </div>
-      )}
-    </section>
-
-    <section class="temple-fact-band" aria-label="å¯ºé™¢ã®è¦ç‚¹">
-      <div><span>å®—æ´¾</span><strong>{temple.sect}</strong></div>
-      <div><span>å‰µå»ºãƒ»å¹´ä»£</span><strong class={visibleFoundedPeriod === "èª¿æŸ»ä¸­" ? "pending-text" : ""}>{visibleFoundedPeriod}</strong></div>
-      <div><span>æ–‡åŒ–è²¡ãƒ»å²è·¡</span><strong class={visibleHeritageStatus === "èª¿æŸ»ä¸­" ? "pending-text" : ""}>{visibleHeritageStatus}</strong></div>
-      <div><span>æ‰€åœ¨åœ°</span><strong>{temple.area}ãƒ»ç£ç”°å¸‚</strong></div>
-    </section>
-
-    <section class="section uploaded-photo-section" data-uploaded-temple-photos hidden>
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Uploaded Photos</p>
-          <h2>ä¿å­˜æ¸ˆã¿å†™çœŸ</h2>
-        </div>
-        <span class="small" data-uploaded-temple-count></span>
-      </div>
-      <div class="photo-grid" data-uploaded-temple-grid></div>
-    </section>
-    <script is:inline type="application/json" id="temple-uploaded-photo-data" set:html={uploadedPhotoTempleDataJson} />
-    <script is:inline>
-      // @ts-nocheck
-      (() => {
-        const dataEl = document.getElementById("temple-uploaded-photo-data");
-        const section = document.querySelector("[data-uploaded-temple-photos]");
-        const grid = document.querySelector("[data-uploaded-temple-grid]");
-        const count = document.querySelector("[data-uploaded-temple-count]");
-        if (!dataEl || !section || !grid) return;
-
-        let temple = null;
-        try {
-          temple = JSON.parse(dataEl.textContent || "null");
-        } catch {
-          temple = null;
-        }
-        if (!temple?.slug) return;
-
-        fetch(`/api/photo-submissions?temple_slug=${encodeURIComponent(temple.slug)}`)
-          .then((response) => response.ok ? response.json() : { photos: [] })
-          .then((result) => {
-            const photos = Array.isArray(result.photos) ? result.photos : [];
-            if (photos.length === 0) return;
-            section.hidden = false;
-            if (count) count.textContent = `${photos.length}æžš`;
-            grid.innerHTML = photos.map((photo) => `
-              <figure class="photo-card">
-                <img src="${escapeHtml(photo.url)}" alt="${escapeHtml(temple.name)}ã®ä¿å­˜æ¸ˆã¿å†™çœŸ" loading="lazy">
-                <figcaption>
-                  <strong>${escapeHtml(temple.name)}</strong>
-                  <span>${escapeHtml(photo.note || photo.file_name || "ä¿å­˜æ¸ˆã¿å†™çœŸ")}</span>
-                </figcaption>
-              </figure>
-            `).join("");
-          })
-          .catch(() => {});
-
-        function escapeHtml(value) {
-          return String(value ?? "")
-            .replaceAll("&", "&amp;")
-            .replaceAll("<", "&lt;")
-            .replaceAll(">", "&gt;")
-            .replaceAll('"', "&quot;");
-        }
-      })();
-    </script>
-
-    <div class="temple-content-grid">
-      <main class="temple-main-content">
-        {refurb ? (
-          <RefurbMain
-            temple={temple}
-            refurb={refurb}
-            monogatariLinks={monogatariLinks}
-            visibleMediaPhotos={visibleMediaPhotos}
-            publicationNotice={publicationNotice}
-          />
-        ) : (
-        <>
-        <section class="detail-panel">
-          <p class="section-number">01</p>
-          <h2>ã“ã®å¯ºé™¢ã«ã¤ã„ã¦</h2>
-          <p class="summary-copy">{visibleHistorySummary}</p>
-          {deity.pending && (
-            <div class="pending-inline">
-              <span>ã”æœ¬å°Š</span><strong>{deity.text}</strong><small>å¯ºé™¢è³‡æ–™ãƒ»ç¾åœ°èžãå–ã‚Šã§ç¢ºèªäºˆå®š</small>
-            </div>
-          )}
-        </section>
-
-        <section class="detail-panel">
-          <p class="section-number">02</p>
-          <h2>æ­´å²ã¨èƒŒæ™¯</h2>
-          {visibleHistoricalSections.length > 0 ? (
-            <div class="history-timeline">
-              {visibleHistoricalSections.map((item) => (
-                <article>
-                  <h3>{item.heading}</h3>
-                  <p>{item.body}</p>
-                </article>
-              ))}
-            </div>
-          ) : (
-            <div class="pending-block">
-              <strong>æ²¿é©ã¯èª¿æŸ»ä¸­ã§ã™</strong>
-              <p>å‰µå»ºå¹´ä»£ã€é–‹å±±ãƒ»é–‹åŸºã€ç§»è»¢ãƒ»å†å»ºã®å±¥æ­´ã‚’ã€å¯ºé™¢è³‡æ–™ã¨åœ°åŸŸè³‡æ–™ã‹ã‚‰ç¢ºèªã—ã¦åŠ ç­†ã—ã¾ã™ã€‚</p>
-            </div>
-          )}
-        </section>
-
-        <section class="detail-panel">
-          <p class="section-number">03</p>
-          <h2>æ–‡åŒ–è²¡ãƒ»è¦‹ã©ã“ã‚</h2>
-          {visibleCulturalAssets.length > 0 ? (
-            <div class="heritage-list">
-              {visibleCulturalAssets.map((asset) => (
-                <article>
-                  <div><span>{asset.designation}</span><h3>{asset.name}</h3></div>
-                  <p>{asset.summary}</p>
-                </article>
-              ))}
-            </div>
-          ) : (
-            <div class="pending-block">
-              <strong>æ–‡åŒ–è²¡ãƒ»å¯ºå®ã¯åŠ ç­†å¾…ã¡ã§ã™</strong>
-              <p>æŒ‡å®šæ–‡åŒ–è²¡ã€å»ºç¯‰ã€ä»åƒã€çŸ³é€ ç‰©ã€å¤æ–‡æ›¸ã€å¢ƒå†…ã®è¦‹ã©ã“ã‚ã‚’èª¿æŸ»ã—ã¾ã™ã€‚</p>
-            </div>
-          )}
-        </section>
-
-        {monogatariLinks.length > 0 && (
-          <section class="detail-panel monogatari-panel">
-            <p class="section-number">04</p>
-            <h2>ç£ç”°ç‰©èªžã§èª­ã‚€</h2>
-            <p class="monogatari-lead">
-              ã“ã®å¯ºé™¢ã‚„ã‚†ã‹ã‚Šã®åœŸåœ°ã®æ­´å²ã‚’ã€å§‰å¦¹ã‚µã‚¤ãƒˆã€Œç£ç”°ç‰©èªžã€ã®èª­ã¿ç‰©ã§ã”è¦§ã„ãŸã ã‘ã¾ã™ã€‚
-            </p>
-            <ul class="monogatari-link-list">
-              {monogatariLinks.map((link) => (
-                <li>
-                  <a href={link.url}>
-                    {link.relation === "direct" && (
-                      <span class="monogatari-relation-label">{getMonogatariRelationLabel(link.relation)}</span>
-                    )}
-                    <span class="monogatari-link-title">{link.title}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-        <section class="detail-panel">
-          <p class="section-number">05</p>
-          <h2>æª€å®¶ã®å–¶ã¿ãƒ»è¡Œäº‹</h2>
-          {dankaInfo && (annualEvents.length > 0 || dankaOrganization || dankaCommunityRole) ? (
-            <div class="danka-info-list">
-              {annualEvents.length > 0 && (
-                <article>
-                  <h3>å¹´ä¸­è¡Œäº‹ãƒ»æ³•è¦</h3>
-                  <ul>
-                    {annualEvents.map((event: any) => (
-                      <li><strong>{event.name}</strong>{event.timing && <span>ï¼ˆ{event.timing}ï¼‰</span>}{event.note && <p>{event.note}</p>}</li>
-                    ))}
-                  </ul>
-                </article>
-              )}
-              {dankaOrganization && (
-                <article>
-                  <h3>æª€å®¶çµ„ç¹”</h3>
-                  <p>{dankaOrganization}</p>
-                </article>
-              )}
-              {dankaCommunityRole && (
-                <article>
-                  <h3>åœ°åŸŸã¨ã®é–¢ã‚ã‚Š</h3>
-                  <p>{dankaCommunityRole}</p>
-                </article>
-              )}
-            </div>
-          ) : (
-            <div class="pending-block">
-              <strong>æª€å®¶å‘ã‘æƒ…å ±ã¯èª¿æŸ»ä¸­ã§ã™</strong>
-              <p>å¹´ä¸­è¡Œäº‹ãƒ»æ³•è¦ã€æª€å®¶çµ„ç¹”ã€åœ°åŸŸã¨ã®é–¢ã‚ã‚Šã‚’ã€å¯ºé™¢å…¬å¼æƒ…å ±ãƒ»å…¬çš„è³‡æ–™ã‹ã‚‰ç¢ºèªã—ã¦åŠ ç­†ã—ã¾ã™ã€‚</p>
-            </div>
-          )}
-        </section>
-
-        <section class="detail-panel">
-          <p class="section-number">06</p>
-          <h2>å†™çœŸã§è¦‹ã‚‹å¢ƒå†…</h2>
-          {visibleMediaPhotos.length > 0 ? (
-            <div class="photo-record-list">
-              {visibleMediaPhotos.map((photo) => (
-                <figure>
-                  <img src={photo.src} alt={photo.alt} loading="lazy" />
-                  <figcaption>
-                    <strong>{getPhotoCategory(photo.category_id)?.label || "ç¾åœ°å†™çœŸ"}</strong>
-                    <span>{photo.caption}</span>
-                  </figcaption>
-                </figure>
-              ))}
-            </div>
-          ) : (
-            <div class="pending-block">
-              {publicationNotice ? (
-                <>
-                  <strong>å†™çœŸæŽ²è¼‰ã‚’è¦‹åˆã‚ã›ã¦ã„ã¾ã™</strong>
-                  <p>é–¢ä¿‚è€…ã‹ã‚‰ã®æ˜Žç¢ºãªæ„æ€è¡¨ç¤ºã‚’å—ã‘ã€å½“ã‚µã‚¤ãƒˆã§ã®å†™çœŸæŽ²è¼‰ã‚’è¡Œã£ã¦ã„ã¾ã›ã‚“ã€‚</p>
-                </>
-              ) : (
-                <>
-                  <strong>ç¾åœ°å†™çœŸã‚’æº–å‚™ã—ã¦ã„ã¾ã™</strong>
-                  <p>åˆå›žè¨ªå•å¾Œã«æŽ²è¼‰ã—ã¾ã™ã€‚</p>
-                </>
-              )}
-            </div>
-          )}
-        </section>
-
-        <section class="detail-panel sources-panel">
-          <p class="section-number">07</p>
-          <h2>å‡ºå…¸ãƒ»å‚è€ƒè³‡æ–™</h2>
-          <ol class="source-records">
-            {visibleSources.map((source) => (
-              <li>
-                <span>{source.type}</span>
-                {"url" in source && source.url ? (
-                  <a href={source.url} target="_blank" rel="noreferrer">{source.title}</a>
-                ) : <strong>{source.title}</strong>}
-                <p>{source.note}</p>
-              </li>
-            ))}
-          </ol>
-        </section>
-        </>
-        )}
-
-      </main>
-
-      <aside class="temple-sidebar">
-        <section class="side-panel">
-          <h2>åŸºæœ¬æƒ…å ±</h2>
-          <dl class="side-info-list">
-            <div><dt>æ­£å¼åç§°</dt><dd>{temple.name}</dd></div>
-            <div><dt>èª­ã¿æ–¹</dt><dd>{showKana ? temple.name_kana : "èª¿æŸ»ä¸­"}</dd></div>
-            <div><dt>å®—æ´¾</dt><dd>{temple.sect}</dd></div>
-            <div><dt>ã”æœ¬å°Š</dt><dd class={deity.pending ? "pending-text" : ""}>{deity.text}</dd></div>
-            <div><dt>ä½æ‰€</dt><dd>{temple.address}</dd></div>
-            <div><dt>åœ°åŒº</dt><dd>{districtName}</dd></div>
-            {visiblePilgrimageNote && <div><dt>éœŠå ´ãƒ»æœ­æ‰€</dt><dd>{visiblePilgrimageNote}</dd></div>}
-            <div>
-              <dt>å¯ºé™¢å…¬å¼ã‚µã‚¤ãƒˆ</dt>
-              <dd class={officialSite?.status === "ã‚ã‚Š" ? "confirmed-pill" : "pending-pill"}>
-                {officialSite?.status === "ã‚ã‚Š" && officialSite.url ? (
-                  <a href={officialSite.url} target="_blank" rel="noreferrer">ã‚ã‚Š</a>
-                ) : (
-                  officialSite?.status || "æœªç¢ºèª"
-                )}
-              </dd>
-            </div>
-          </dl>
-        </section>
-
-        <section class="side-panel temple-map-panel">
-          <h2>åœ°å›³ãƒ»çµŒè·¯</h2>
-          <iframe
-            title={`${temple.name}ã®Googleãƒžãƒƒãƒ—`}
-            src={visibleMapEmbedUrl}
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen
-          ></iframe>
-          <a class="button-link" href={mapUrl} target="_blank" rel="noreferrer">Googleãƒžãƒƒãƒ—ã§é–‹ã</a>
-        </section>
-
-        <section class="side-panel research-panel">
-          <h2>ã“ã‚Œã‹ã‚‰èª¿ã¹ã‚‹ã“ã¨</h2>
-          <ul>
-            {researchTodos.map((todo) => <li>{todo}</li>)}
-          </ul>
-        </section>
-
-        <section class="side-panel editorial-note">
-          <span>ATAWI TEMPLEç·¨é›†éƒ¨</span>
-          <h2>æƒ…å ±ã‚’æ›´æ–°ã—ã¦ã„ã¾ã™</h2>
-          <p>å…¬é–‹è³‡æ–™ã¨ç¾åœ°ç¢ºèªã‚’ç…§åˆã—ã€ç¢ºèªã§ããŸæƒ…å ±ã‹ã‚‰æ®µéšŽçš„ã«åŠ ç­†ã—ã¾ã™ã€‚</p>
-          <a class="button-link" href="/correction/">æƒ…å ±æä¾›æŽ²ç¤ºæ¿</a>
-        </section>
-      </aside>
-    </div>
-    <script is:inline>
-      // @ts-nocheck
-      (function () {
-        function trackerEndpoint() {
-          var tracker = document.querySelector("script[data-fujigaoka-analytics]");
-          if (!tracker || !tracker.src || location.hostname !== "temple.atawi.link") return null;
-          return {
-            url: new URL("/api/click", tracker.src).href,
-            siteId: tracker.getAttribute("data-site") || "atawi-temple",
-          };
-        }
-
-        function sendEvent(eventName) {
-          var endpoint = trackerEndpoint();
-          if (!endpoint) return;
-          var payload = JSON.stringify({
-            site_id: endpoint.siteId,
-            path: location.pathname + location.search,
-            url: location.href,
-            referrer: document.referrer || "",
-            event_name: eventName,
-          });
-          if (navigator.sendBeacon) {
-            navigator.sendBeacon(endpoint.url, new Blob([payload], { type: "application/json" }));
-            return;
-          }
-          if (window.fetch) {
-            fetch(endpoint.url, {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: payload,
-              mode: "cors",
-              credentials: "omit",
-              keepalive: true,
-            }).catch(function () {});
-          }
-        }
-
-        window.addEventListener("load", function () {
-          sendEvent("temple_landing");
-          var bridge = document.querySelector("[data-houyou-bridge]");
-          if (!bridge) return;
-          if (!("IntersectionObserver" in window)) {
-            sendEvent("houyou_bridge_view");
-            return;
-          }
-          var seen = false;
-          var observer = new IntersectionObserver(function (entries) {
-            if (seen) return;
-            entries.forEach(function (entry) {
-              if (!entry.isIntersecting) return;
-              seen = true;
-              sendEvent("houyou_bridge_view");
-              observer.disconnect();
-            });
-          }, { threshold: 0.4 });
-          observer.observe(bridge);
-        });
-      })();
-    </script>
-    {sameDistrictTemples.length > 0 && (
-      <section class="same-district-temples">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Same Area</p>
-            <h2>åŒã˜åœ°åŒºã®å¯ºé™¢</h2>
-          </div>
-          <a href={districtUrl}>{districtName}åœ°åŒºã®å¯ºé™¢ã‚’ã‚‚ã£ã¨è¦‹ã‚‹</a>
-        </div>
-        <div class="same-district-grid">
-          {sameDistrictTempleCards.map(({ temple: item, photo }) => (
-            <a
-              class:list={["related-temple-card", { "related-temple-card--with-photo": photo }]}
-              href={`/temples/${item.slug}/`}
-              data-track-click="temple_related_temple_click"
-            >
-              {photo && (
-                <div class="related-temple-photo">
-                  <img src={photo.src} alt={photo.alt || `${item.name}ã®ä»£è¡¨å†™çœŸ`} loading="lazy" />
-                </div>
-              )}
-              <div class="related-temple-card-body">
-                <span>{getTempleStatusLabel(item)}</span>
-                <strong>{item.name}</strong>
-                <em>{item.area} / {item.sect}</em>
-              </div>
-            </a>
-          ))}
-        </div>
-      </section>
-    )}
-    {sameSectTemples.length > 0 && (
-      <section class="same-district-temples">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Same Sect</p>
-            <h2>åŒã˜å®—æ´¾ãƒ»é–¢é€£æ³•äººã®å¯ºé™¢</h2>
-          </div>
-          {currentSectSlug && <a href={`/sects/${currentSectSlug}/`}>ç£ç”°å¸‚ã®{currentSectName}ã®å¯ºé™¢ä¸€è¦§</a>}
-        </div>
-        <div class="same-district-grid">
-          {sameSectTempleCards.map(({ temple: item, photo }) => (
-            <a
-              class:list={["related-temple-card", { "related-temple-card--with-photo": photo }]}
-              href={`/temples/${item.slug}/`}
-              data-track-click="temple_related_temple_click"
-            >
-              {photo && (
-                <div class="related-temple-photo">
-                  <img src={photo.src} alt={photo.alt || `${item.name}ã®ä»£è¡¨å†™çœŸ`} loading="lazy" />
-                </div>
-              )}
-              <div class="related-temple-card-body">
-                <span>{getTempleStatusLabel(item)}</span>
-                <strong>{item.name}</strong>
-                <em>{getDistrictName(item.district_id)} / {item.sect}</em>
-              </div>
-            </a>
-          ))}
-        </div>
-      </section>
-    )}
-    {nearbyTemples.length > 0 && (
-      <section class="same-district-temples">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Nearby</p>
-            <h2>è¿‘ãã®ãŠå¯º</h2>
-          </div>
-          <a href={mapPageUrl} data-track-click="temple_map_click">ä½æ‰€ä¸€è¦§ã§è¦‹ã‚‹</a>
-        </div>
-        <div class="same-district-grid">
-          {nearbyTempleCards.map(({ temple: item, photo }) => (
-            <a
-              class:list={["related-temple-card", { "related-temple-card--with-photo": photo }]}
-              href={`/temples/${item.slug}/`}
-              data-track-click="temple_related_temple_click"
-            >
-              {photo && (
-                <div class="related-temple-photo">
-                  <img src={photo.src} alt={photo.alt || `${item.name}ã®ä»£è¡¨å†™çœŸ`} loading="lazy" />
-                </div>
-              )}
-              <div class="related-temple-card-body">
-                <span>{getTempleStatusLabel(item)}</span>
-                <strong>{item.name}</strong>
-                <em>{getDistrictName(item.district_id)} / {item.sect}</em>
-              </div>
-            </a>
-          ))}
-        </div>
-      </section>
-    )}
-  </article>
-</BaseLayout>
-
+       Û­º¶‰žËkºwµçxµ½¹Ñ•¹Ðˆø4(€€€€€€€íÉ•™ÕÉˆ€ü€ 4(€€€€€€€€€€ñI•™ÕÉ‰5…¥¸4(€€€€€€€€€€€Ñ•µÁ±”õíÑ•µÁ±•ô4(€€€€€€€€€€€É•™ÕÉˆõíÉ•™ÕÉ‰ô4(€€€€€€€€€€€µ½¹½…Ñ…É¥1¥¹­Ìõíµ½¹½…Ñ…É¥1¥¹­Íô4(€€€€€€€€€€€Ù¥Í¥‰±•5•‘¥…A¡½Ñ½ÌõíÙ¥Í¥‰±•5•‘¥…A¡½Ñ½Íô4(€€€€€€€€€€€ÁÕ‰±¥…Ñ¥½¹9½Ñ¥”õíÁÕ‰±¥…Ñ¥½¹9½Ñ¥•ô4(€€€€€€€€€€¼ø4(€€€€€€€€¤€è€ 4(€€€€€€€€ðø4(€€€€€€€€ñÍ•Ñ¥½¸±…ÍÌô‰‘•Ñ…¥°µÁ…¹•°ˆø4(€€€€€€€€€€ñÀ±…ÍÌô‰Í•Ñ¥½¸µ¹Õµ‰•ÈˆøÀÄð½Àø4(€€€€€€€€€€ñ ÈûŽOŽ»–¾ë¦f‹Ž¯Ž“ŽŽ˜ð½ Èø4(€€€€€€€€€€ñÀ±…ÍÌô‰ÍÕµµ…Éäµ½ÁäˆùíÙ¥Í¥‰±•!¥ÍÑ½ÉåMÕµµ…Éåôð½Àø4(€€€€€€€€€í‘•¥Ñä¹Á•¹‘¥¹œ€˜˜€ 4(€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰Á•¹‘¥¹œµ¥¹±¥¹”ˆø4(€€€€€€€€€€€€€€ñÍÁ…¸ûŽSšr³–Â(ð½ÍÁ…¸øñÍÑÉ½¹œùí‘•¥Ñä¹Ñ•áÑôð½ÍÑÉ½¹œøñÍµ…±°û–¾ë¦f‹¢ÎšZgŽïž>û–rÃ¢{Ž7–>[Ž
++ŽŸžŠë¢ª7’ê#–ºhð½Íµ…±°ø4(€€€€€€€€€€€€ð½‘¥Øø4(€€€€€€€€€€¥ô4(€€€€€€€€ð½Í•Ñ¥½¸ø4(4(€€€€€€€€ñÍ•Ñ¥½¸±…ÍÌô‰‘•Ñ…¥°µÁ…¹•°ˆø4(€€€€€€€€€€ñÀ±…ÍÌô‰Í•Ñ¥½¸µ¹Õµ‰•ÈˆøÀÈð½Àø4(€€€€€€€€€€ñ Èûš¶Ó–>ËŽ£¢3šf¼ð½ Èø4(€€€€€€€€€íÙ¥Í¥‰±•!¥ÍÑ½É¥…±M•Ñ¥½¹Ì¹±•¹Ñ €ø€À€ü€ 4(€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰¡¥ÍÑ½ÉäµÑ¥µ•±¥¹”ˆø4(€€€€€€€€€€€€€íÙ¥Í¥‰±•!¥ÍÑ½É¥…±M•Ñ¥½¹Ì¹µ…À ¡¥Ñ•´¤€ôø€ 4(€€€€€€€€€€€€€€€€ñ…ÉÑ¥±”ø4(€€€€€€€€€€€€€€€€€€ñ Ìùí¥Ñ•´¹¡•…‘¥¹ôð½ Ìø4(€€€€€€€€€€€€€€€€€€ñÀùí¥Ñ•´¹‰½‘åôð½Àø4(€€€€€€€€€€€€€€€€ð½…ÉÑ¥±”ø4(€€€€€€€€€€€€€€¤¥ô4(€€€€€€€€€€€€ð½‘¥Øø4(€€€€€€€€€€¤€è€ 4(€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰Á•¹‘¥¹œµ‰±½¬ˆø4(€€€€€€€€€€€€€€ñÍÑÉ½¹œûšÊÿ¦v§Ž¿¢ªÿš~ï’â·ŽŸŽdð½ÍÑÉ½¹œø4(€€€€€€€€€€€€€€ñÀû–&×–îë–æÓ’îŽ¦Z/–ÆÇŽï¦Z/–~ëŽžžï¢î‹Žï–7–îëŽ»–Æ—š¶ÓŽ
+KŽ–¾ë¦f‹¢ÎšZgŽ£–rÃ–~¢ÎšZgŽ/Ž
+'žŠë¢ª7Ž_Ž›–*ƒž¶Ž_ŽûŽgŽð½Àø4(€€€€€€€€€€€€ð½‘¥Øø4(€€€€€€€€€€¥ô4(€€€€€€€€ð½Í•Ñ¥½¸ø4(4(€€€€€€€€ñÍ•Ñ¥½¸±…ÍÌô‰‘•Ñ…¥°µÁ…¹•°ˆø4(€€€€€€€€€€ñÀ±…ÍÌô‰Í•Ñ¥½¸µ¹Õµ‰•ÈˆøÀÌð½Àø4(€€€€€€€€€€ñ ÈûšZ–2[¢Ê‡Žï¢š/Ž§ŽOŽ
+4ð½ Èø4(€€€€€€€€€íÙ¥Í¥‰±•Õ±ÑÕÉ…±ÍÍ•ÑÌ¹±•¹Ñ €ø€À€ü€ 4(€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰¡•É¥Ñ…”µ±¥ÍÐˆø4(€€€€€€€€€€€€€íÙ¥Í¥‰±•Õ±ÑÕÉ…±ÍÍ•ÑÌ¹µ…À ¡…ÍÍ•Ð¤€ôø€ 4(€€€€€€€€€€€€€€€€ñ…ÉÑ¥±”ø4(€€€€€€€€€€€€€€€€€€ñ‘¥ØøñÍÁ…¸ùí…ÍÍ•Ð¹‘•Í¥¹…Ñ¥½¹ôð½ÍÁ…¸øñ Ìùí…ÍÍ•Ð¹¹…µ•ôð½ Ìøð½‘¥Øø4(€€€€€€€€€€€€€€€€€€ñÀùí…ÍÍ•Ð¹ÍÕµµ…Éåôð½Àø4(€€€€€€€€€€€€€€€€ð½…ÉÑ¥±”ø4(€€€€€€€€€€€€€€¤¥ô4(€€€€€€€€€€€€ð½‘¥Øø4(€€€€€€€€€€¤€è€ 4(€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰Á•¹‘¥¹œµ‰±½¬ˆø4(€€€€€€€€€€€€€€ñÍÑÉ½¹œûšZ–2[¢Ê‡Žï–¾ë–ºwŽ¿–*ƒž¶–úŽ‡ŽŸŽdð½ÍÑÉ½¹œø4(€€€€€€€€€€€€€€ñÀûš2–ºkšZ–2[¢Ê‡Ž–îëž¾'Ž’î?–?Žž~Ï¦ƒž&§Ž–>“šZšnãŽ–Š–Ž»¢š/Ž§ŽOŽ
+7Ž
+K¢ªÿš~ïŽ_ŽûŽgŽð½Àø4(€€€€€€€€€€€€ð½‘¥Øø4(€€€€€€€€€€¥ô4(€€€€€€€€ð½Í•Ñ¥½¸ø4(4(€€€€€€€íµ½¹½…Ñ…É¥1¥¹­Ì¹±•¹Ñ €ø€À€˜˜€ 4(€€€€€€€€€€ñÍ•Ñ¥½¸±…ÍÌô‰‘•Ñ…¥°µÁ…¹•°µ½¹½…Ñ…É¤µÁ…¹•°ˆø4(€€€€€€€€€€€€ñÀ±…ÍÌô‰Í•Ñ¥½¸µ¹Õµ‰•ÈˆøÀÐð½Àø4(€€€€€€€€€€€€ñ ÈûžŽCžRÃž&§¢ª{ŽŸ¢ª·Ž
+ ð½ Èø4(€€€€€€€€€€€€ñÀ±…ÍÌô‰µ½¹½…Ñ…É¤µ±•…ˆø4(€€€€€€€€€€€€€ƒŽOŽ»–¾ë¦f‹Ž
+Ž
+Ž/Ž
++Ž»–r–rÃŽ»š¶Ó–>ËŽ
+KŽ–ž'–šçŽ
+×Ž
+“Ž#Ž3žŽCžRÃž&§¢ª{Ž7Ž»¢ª·Žÿž&§ŽŸŽS¢šŸŽŽŽƒŽGŽûŽgŽ4(€€€€€€€€€€€€ð½Àø4(€€€€€€€€€€€€ñÕ°±…ÍÌô‰µ½¹½…Ñ…É¤µ±¥¹¬µ±¥ÍÐˆø4(€€€€€€€€€€€€€íµ½¹½…Ñ…É¥1¥¹­Ì¹µ…À ¡±¥¹¬¤€ôø€ 4(€€€€€€€€€€€€€€€€ñ±¤ø4(€€€€€€€€€€€€€€€€€€ñ„¡É•˜õí±¥¹¬¹ÕÉ±ôø4(€€€€€€€€€€€€€€€€€€€í±¥¹¬¹É•±…Ñ¥½¸€ôôô€‰‘¥É•Ðˆ€˜˜€ 4(€€€€€€€€€€€€€€€€€€€€€€ñÍÁ…¸±…ÍÌô‰µ½¹½…Ñ…É¤µÉ•±…Ñ¥½¸µ±…‰•°ˆùí•Ñ5½¹½…Ñ…É¥I•±…Ñ¥½¹1…‰•°¡±¥¹¬¹É•±…Ñ¥½¸¥ôð½ÍÁ…¸ø4(€€€€€€€€€€€€€€€€€€€€¥ô4(€€€€€€€€€€€€€€€€€€€€ñÍÁ…¸±…ÍÌô‰µ½¹½…Ñ…É¤µ±¥¹¬µÑ¥Ñ±”ˆùí±¥¹¬¹Ñ¥Ñ±•ôð½ÍÁ…¸ø4(€€€€€€€€€€€€€€€€€€ð½„ø4(€€€€€€€€€€€€€€€€ð½±¤ø4(€€€€€€€€€€€€€€¤¥ô4(€€€€€€€€€€€€ð½Õ°ø4(€€€€€€€€€€ð½Í•Ñ¥½¸ø4(€€€€€€€€¥ô4(€€€€€€€€ñÍ•Ñ¥½¸±…ÍÌô‰‘•Ñ…¥°µÁ…¹•°ˆø4(€€€€€€€€€€ñÀ±…ÍÌô‰Í•Ñ¥½¸µ¹Õµ‰•ÈˆøÀÔð½Àø4(€€€€€€€€€€ñ Èûšª–ºÛŽ»–ZÛŽÿŽï¢†3’ê,ð½ Èø4(€€€€€€€€€í‘…¹­…%¹™¼€˜˜€¡…¹¹Õ…±Ù•¹ÑÌ¹±•¹Ñ €ø€Àñð‘…¹­…=É…¹¥é…Ñ¥½¸ñð‘…¹­…½µµÕ¹¥ÑåI½±”¤€ü€ 4(€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰‘…¹­„µ¥¹™¼µ±¥ÍÐˆø4(€€€€€€€€€€€€€í…¹¹Õ…±Ù•¹ÑÌ¹±•¹Ñ €ø€À€˜˜€ 4(€€€€€€€€€€€€€€€€ñ…ÉÑ¥±”ø4(€€€€€€€€€€€€€€€€€€ñ Ìû–æÓ’â·¢†3’ê/ŽïšÎW¢šð½ Ìø4(€€€€€€€€€€€€€€€€€€ñÕ°ø4(€€€€€€€€€€€€€€€€€€€í…¹¹Õ…±Ù•¹ÑÌ¹µ…À ¡•Ù•¹Ðè…¹ä¤€ôø€ 4(€€€€€€€€€€€€€€€€€€€€€€ñ±¤øñÍÑÉ½¹œùí•Ù•¹Ð¹¹…µ•ôð½ÍÑÉ½¹œùí•Ù•¹Ð¹Ñ¥µ¥¹œ€˜˜€ñÍÁ…¸û¾ò!í•Ù•¹Ð¹Ñ¥µ¥¹÷¾ò$ð½ÍÁ…¸ùõí•Ù•¹Ð¹¹½Ñ”€˜˜€ñÀùí•Ù•¹Ð¹¹½Ñ•ôð½Àùôð½±¤ø4(€€€€€€€€€€€€€€€€€€€€¤¥ô4(€€€€€€€€€€€€€€€€€€ð½Õ°ø4(€€€€€€€€€€€€€€€€ð½…ÉÑ¥±”ø4(€€€€€€€€€€€€€€¥ô4(€€€€€€€€€€€€€í‘…¹­…=É…¹¥é…Ñ¥½¸€˜˜€ 4(€€€€€€€€€€€€€€€€ñ…ÉÑ¥±”ø4(€€€€€€€€€€€€€€€€€€ñ Ìûšª–ºÛžÖžæPð½ Ìø4(€€€€€€€€€€€€€€€€€€ñÀùí‘…¹­…=É…¹¥é…Ñ¥½¹ôð½Àø4(€€€€€€€€€€€€€€€€ð½…ÉÑ¥±”ø4(€€€€€€€€€€€€€€¥ô4(€€€€€€€€€€€€€í‘…¹­…½µµÕ¹¥ÑåI½±”€˜˜€ 4(€€€€€€€€€€€€€€€€ñ…ÉÑ¥±”ø4(€€€€€€€€€€€€€€€€€€ñ Ìû–rÃ–~Ž£Ž»¦Z‹Ž
+?Ž
+(ð½ Ìø4(€€€€€€€€€€€€€€€€€€ñÀùí‘…¹­…½µµÕ¹¥ÑåI½±•ôð½Àø4(€€€€€€€€€€€€€€€€ð½…ÉÑ¥±”ø4(€€€€€€€€€€€€€€¥ô4(€€€€€€€€€€€€ð½‘¥Øø4(€€€€€€€€€€¤€è€ 4(€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰Á•¹‘¥¹œµ‰±½¬ˆø4(€€€€€€€€€€€€€€ñÍÑÉ½¹œûšª–ºÛ–BGŽGš–‚ÇŽ¿¢ªÿš~ï’â·ŽŸŽdð½ÍÑÉ½¹œø4(€€€€€€€€€€€€€€ñÀû–æÓ’â·¢†3’ê/ŽïšÎW¢šŽšª–ºÛžÖžæSŽ–rÃ–~Ž£Ž»¦Z‹Ž
+?Ž
++Ž
+KŽ–¾ë¦f‹–³–ò?š–‚ÇŽï–³žj¢ÎšZgŽ/Ž
+'žŠë¢ª7Ž_Ž›–*ƒž¶Ž_ŽûŽgŽð½Àø4(€€€€€€€€€€€€ð½‘¥Øø4(€€€€€€€€€€¥ô4(€€€€€€€€ð½Í•Ñ¥½¸ø4(4(€€€€€€€€ñÍ•Ñ¥½¸±…ÍÌô‰‘•Ñ…¥°µÁ…¹•°ˆø4(€€€€€€€€€€ñÀ±…ÍÌô‰Í•Ñ¥½¸µ¹Õµ‰•ÈˆøÀØð½Àø4(€€€€€€€€€€ñ Èû–gžrŽŸ¢š/Ž
+/–Š–ð½ Èø4(€€€€€€€€€íÙ¥Í¥‰±•5•‘¥…A¡½Ñ½Ì¹±•¹Ñ €ø€À€ü€ 4(€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰Á¡½Ñ¼µÉ•½Éµ±¥ÍÐˆø4(€€€€€€€€€€€€€íÙ¥Í¥‰±•5•‘¥…A¡½Ñ½Ì¹µ…À ¡Á¡½Ñ¼¤€ôø€ 4(€€€€€€€€€€€€€€€€ñ™¥ÕÉ”ø4(€€€€€€€€€€€€€€€€€€ñ¥µœÍÉŒõíÁ¡½Ñ¼¹ÍÉô…±ÐõíÁ¡½Ñ¼¹…±Ñô±½…‘¥¹œô‰±…éäˆ€¼ø4(€€€€€€€€€€€€€€€€€€ñ™¥…ÁÑ¥½¸ø4(€€€€€€€€€€€€€€€€€€€€ñÍÑÉ½¹œùí•ÑA¡½Ñ½…Ñ•½Éä¡Á¡½Ñ¼¹…Ñ•½Éå}¥¤ü¹±…‰•°ñð€‹ž>û–rÃ–gžr|‰ôð½ÍÑÉ½¹œø4(€€€€€€€€€€€€€€€€€€€€ñÍÁ…¸ùíÁ¡½Ñ¼¹…ÁÑ¥½¹ôð½ÍÁ…¸ø4(€€€€€€€€€€€€€€€€€€ð½™¥…ÁÑ¥½¸ø4(€€€€€€€€€€€€€€€€ð½™¥ÕÉ”ø4(€€€€€€€€€€€€€€¤¥ô4(€€€€€€€€€€€€ð½‘¥Øø4(€€€€€€€€€€¤€è€ 4(€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰Á•¹‘¥¹œµ‰±½¬ˆø4(€€€€€€€€€€€€€íÁÕ‰±¥…Ñ¥½¹9½Ñ¥”€ü€ 4(€€€€€€€€€€€€€€€€ðø4(€€€€€€€€€€€€€€€€€€ñÍÑÉ½¹œû–gžrš:Ë¢ò'Ž
+K¢š/–B#Ž
+?ŽoŽ›ŽŽûŽdð½ÍÑÉ½¹œø4(€€€€€€€€€€€€€€€€€€ñÀû¦Z‹’þ¢Ž/Ž
+'Ž»šb;žŠëŽ«š?šw¢†£ž’ëŽ
+K–>_ŽGŽ–öOŽ
+×Ž
+“Ž#ŽŸŽ»–gžrš:Ë¢ò'Ž
+K¢†3ŽŽ›ŽŽûŽoŽ
+OŽð½Àø4(€€€€€€€€€€€€€€€€ð¼ø4(€€€€€€€€€€€€€€¤€è€ 4(€€€€€€€€€€€€€€€€ðø4(€€€€€€€€€€€€€€€€€€ñÍÑÉ½¹œûž>û–rÃ–gžrŽ
+Kšê[–
+gŽ_Ž›ŽŽûŽdð½ÍÑÉ½¹œø4(€€€€€€€€€€€€€€€€€€ñÀû–"w–n{¢¢«–V?–ú3Ž¯š:Ë¢ò'Ž_ŽûŽgŽð½Àø4(€€€€€€€€€€€€€€€€ð¼ø4(€€€€€€€€€€€€€€¥ô4(€€€€€€€€€€€€ð½‘¥Øø4(€€€€€€€€€€¥ô4(€€€€€€€€ð½Í•Ñ¥½¸ø4(4(€€€€€€€€ñÍ•Ñ¥½¸±…ÍÌô‰‘•Ñ…¥°µÁ…¹•°Í½ÕÉ•ÌµÁ…¹•°ˆø4(€€€€€€€€€€ñÀ±…ÍÌô‰Í•Ñ¥½¸µ¹Õµ‰•ÈˆøÀÜð½Àø4(€€€€€€€€€€ñ Èû–ë–ãŽï–>¢¢ÎšZdð½ Èø4(€€€€€€€€€€ñ½°±…ÍÌô‰Í½ÕÉ”µÉ•½É‘Ìˆø4(€€€€€€€€€€€íÙ¥Í¥‰±•M½ÕÉ•Ì¹µ…À ¡Í½ÕÉ”¤€ôø€ 4(€€€€€€€€€€€€€€ñ±¤ø4(€€€€€€€€€€€€€€€€ñÍÁ…¸ùíÍ½ÕÉ”¹ÑåÁ•ôð½ÍÁ…¸ø4(€€€€€€€€€€€€€€€ì‰ÕÉ°ˆ¥¸Í½ÕÉ”€˜˜Í½ÕÉ”¹ÕÉ°€ü€ 4(€€€€€€€€€€€€€€€€€€ñ„¡É•˜õíÍ½ÕÉ”¹ÕÉ±ôÑ…É•Ðô‰}‰±…¹¬ˆÉ•°ô‰¹½É•™•ÉÉ•ÈˆùíÍ½ÕÉ”¹Ñ¥Ñ±•ôð½„ø4(€€€€€€€€€€€€€€€€¤€è€ñÍÑÉ½¹œùíÍ½ÕÉ”¹Ñ¥Ñ±•ôð½ÍÑÉ½¹œùô4(€€€€€€€€€€€€€€€€ñÀùíÍ½ÕÉ”¹¹½Ñ•ôð½Àø4(€€€€€€€€€€€€€€ð½±¤ø4(€€€€€€€€€€€€¤¥ô4(€€€€€€€€€€ð½½°ø4(€€€€€€€€ð½Í•Ñ¥½¸ø4(€€€€€€€€ð¼ø4(€€€€€€€€¥ô4(4(€€€€€€ð½µ…¥¸ø4(4(€€€€€€ñ…Í¥‘”±…ÍÌô‰Ñ•µÁ±”µÍ¥‘•‰…Èˆø4(€€€€€€€€ñÍ•Ñ¥½¸±…ÍÌô‰Í¥‘”µÁ…¹•°ˆø4(€€€€€€€€€€ñ Èû–~ëšr³š–‚Äð½ Èø4(€€€€€€€€€€ñ‘°±…ÍÌô‰Í¥‘”µ¥¹™¼µ±¥ÍÐˆø4(€€€€€€€€€€€€ñ‘¥Øøñ‘Ðûš¶–ò?–B7žžÀð½‘Ðøñ‘ùíÑ•µÁ±”¹¹…µ•ôð½‘øð½‘¥Øø4(€€€€€€€€€€€€ñ‘¥Øøñ‘Ðû¢ª·ŽÿšZäð½‘Ðøñ‘ùíÍ¡½Ý-…¹„€üÑ•µÁ±”¹¹…µ•}­…¹„€è€‹¢ªÿš~ï’â´‰ôð½‘øð½‘¥Øø4(€€€€€€€€€€€€ñ‘¥Øøñ‘Ðû–º_šÒøð½‘Ðøñ‘ùíÑ•µÁ±”¹Í•Ñôð½‘øð½‘¥Øø4(€€€€€€€€€€€€ñ‘¥Øøñ‘ÐûŽSšr³–Â(ð½‘Ðøñ‘±…ÍÌõí‘•¥Ñä¹Á•¹‘¥¹œ€ü€‰Á•¹‘¥¹œµÑ•áÐˆ€è€ˆ‰ôùí‘•¥Ñä¹Ñ•áÑôð½‘øð½‘¥Øø4(€€€€€€€€€€€€ñ‘¥Øøñ‘Ðû’ö?š& ð½‘Ðøñ‘ùíÑ•µÁ±”¹…‘‘É•ÍÍôð½‘øð½‘¥Øø4(€€€€€€€€€€€€ñ‘¥Øøñ‘Ðû–rÃ–2èð½‘Ðøñ‘ùí‘¥ÍÑÉ¥Ñ9…µ•ôð½‘øð½‘¥Øø4(€€€€€€€€€€€íÙ¥Í¥‰±•A¥±É¥µ…•9½Ñ”€˜˜€ñ‘¥Øøñ‘Ðû¦r+–‚ÓŽïšr·š& ð½‘Ðøñ‘ùíÙ¥Í¥‰±•A¥±É¥µ…•9½Ñ•ôð½‘øð½‘¥Øùô4(€€€€€€€€€€€€ñ‘¥Øø4(€€€€€€€€€€€€€€ñ‘Ðû–¾ë¦f‹–³–ò?Ž
+×Ž
+“Ž ð½‘Ðø4(€€€€€€€€€€€€€€ñ‘±…ÍÌõí½™™¥¥…±M¥Ñ”ü¹ÍÑ…ÑÕÌ€ôôô€‹ŽŽ
+(ˆ€ü€‰½¹™¥Éµ•µÁ¥±°ˆ€è€‰Á•¹‘¥¹œµÁ¥±°‰ôø4(€€€€€€€€€€€€€€€í½™™¥¥…±M¥Ñ”ü¹ÍÑ…ÑÕÌ€ôôô€‹ŽŽ
+(ˆ€˜˜½™™¥¥…±M¥Ñ”¹ÕÉ°€ü€ 4(€€€€€€€€€€€€€€€€€€ñ„¡É•˜õí½™™¥¥…±M¥Ñ”¹ÕÉ±ôÑ…É•Ðô‰}‰±…¹¬ˆÉ•°ô‰¹½É•™•ÉÉ•ÈˆûŽŽ
+(ð½„ø4(€€€€€€€€€€€€€€€€¤€è€ 4(€€€€€€€€€€€€€€€€€½™™¥¥…±M¥Ñ”ü¹ÍÑ…ÑÕÌñð€‹šr«žŠë¢ª4ˆ4(€€€€€€€€€€€€€€€€¥ô4(€€€€€€€€€€€€€€ð½‘ø4(€€€€€€€€€€€€ð½‘¥Øø4(€€€€€€€€€€ð½‘°ø4(€€€€€€€€ð½Í•Ñ¥½¸ø4(4(€€€€€€€€ñÍ•Ñ¥½¸±…ÍÌô‰Í¥‘”µÁ…¹•°Ñ•µÁ±”µµ…ÀµÁ…¹•°ˆø4(€€€€€€€€€€ñ Èû–rÃ–nÏŽïžÖ3¢Þ¼ð½ Èø4(€€€€€€€€€€ñ¥™É…µ”4(€€€€€€€€€€€Ñ¥Ñ±”õí€‘íÑ•µÁ±”¹¹…µ•÷Ž¹½½±—Ž{ŽŽ]ô4(€€€€€€€€€€€ÍÉŒõíÙ¥Í¥‰±•5…Áµ‰•‘UÉ±ô4(€€€€€€€€€€€±½…‘¥¹œô‰±…éäˆ4(€€€€€€€€€€€É•™•ÉÉ•ÉÁ½±¥äô‰¹¼µÉ•™•ÉÉ•ÈµÝ¡•¸µ‘½Ý¹É…‘”ˆ4(€€€€€€€€€€€…±±½Ý™Õ±±ÍÉ••¸4(€€€€€€€€€€øð½¥™É…µ”ø4(€€€€€€€€€€ñ„±…ÍÌô‰‰ÕÑÑ½¸µ±¥¹¬ˆ¡É•˜õíµ…ÁUÉ±ôÑ…É•Ðô‰}‰±…¹¬ˆÉ•°ô‰¹½É•™•ÉÉ•Èˆù½½±—Ž{ŽŽ_ŽŸ¦Z/Ž<ð½„ø4(€€€€€€€€ð½Í•Ñ¥½¸ø4(4(€€€€€€€€ñÍ•Ñ¥½¸±…ÍÌô‰Í¥‘”µÁ…¹•°É•Í•…É µÁ…¹•°ˆø4(€€€€€€€€€€ñ ÈûŽOŽ
+3Ž/Ž
+'¢ªÿŽçŽ
+/ŽOŽ ð½ Èø4(€€€€€€€€€€ñÕ°ø4(€€€€€€€€€€€íÉ•Í•…É¡Q½‘½Ì¹µ…À ¡Ñ½‘¼¤€ôø€ñ±¤ùíÑ½‘½ôð½±¤ø¥ô4(€€€€€€€€€€ð½Õ°ø4(€€€€€€€€ð½Í•Ñ¥½¸ø4(4(€€€€€€€€ñÍ•Ñ¥½¸±…ÍÌô‰Í¥‘”µÁ…¹•°•‘¥Ñ½É¥…°µ¹½Ñ”ˆø4(€€€€€€€€€€ñÍÁ…¸ùQ]$Q5A1žÞ£¦n¦ ð½ÍÁ…¸ø4(€€€€€€€€€€ñ Èûš–‚ÇŽ
+KšnÓšZÃŽ_Ž›ŽŽûŽdð½ Èø4(€€€€€€€€€€ñÀû–³¦Z/¢ÎšZgŽ£ž>û–rÃžŠë¢ª7Ž
+KžŸ–B#Ž_ŽžŠë¢ª7ŽŸŽ7Žš–‚ÇŽ/Ž
+'šº×¦j;žjŽ¯–*ƒž¶Ž_ŽûŽgŽð½Àø4(€€€€€€€€€€ñ„±…ÍÌô‰‰ÕÑÑ½¸µ±¥¹¬ˆ¡É•˜ôˆ½½ÉÉ•Ñ¥½¸¼ˆûš–‚Çš>C’úoš:Ëž’ëšvüð½„ø4(€€€€€€€€ð½Í•Ñ¥½¸ø4(€€€€€€ð½…Í¥‘”ø4(€€€€ð½‘¥Øø4(€€€€ñÍÉ¥ÁÐ¥Ìé¥¹±¥¹”ø4(€€€€€€¼¼ÑÌµ¹½¡•¬4(€€€€€€¡™Õ¹Ñ¥½¸€ ¤ì4(€€€€€€€™Õ¹Ñ¥½¸ÑÉ…­•É¹‘Á½¥¹Ð ¤ì4(€€€€€€€€€Ù…ÈÑÉ…­•È€ô‘½Õµ•¹Ð¹ÅÕ•ÉåM•±•Ñ½È ‰ÍÉ¥ÁÑm‘…Ñ„µ™Õ©¥…½­„µ…¹…±åÑ¥Ítˆ¤ì4(€€€€€€€€€¥˜€ …ÑÉ…­•Èñð€…ÑÉ…­•È¹ÍÉŒñð±½…Ñ¥½¸¹¡½ÍÑ¹…µ”€„ôô€‰Ñ•µÁ±”¹…Ñ…Ý¤¹±¥¹¬ˆ¤É•ÑÕÉ¸¹Õ±°ì4(€€€€€€€€€É•ÑÕÉ¸ì4(€€€€€€€€€€€ÕÉ°è¹•ÜUI0 ˆ½…Á¤½±¥¬ˆ°ÑÉ…­•È¹ÍÉŒ¤¹¡É•˜°4(€€€€€€€€€€€Í¥Ñ•%èÑÉ…­•È¹•ÑÑÑÉ¥‰ÕÑ” ‰‘…Ñ„µÍ¥Ñ”ˆ¤ñð€‰…Ñ…Ý¤µÑ•µÁ±”ˆ°4(€€€€€€€€€ôì4(€€€€€€€ô4(4(€€€€€€€™Õ¹Ñ¥½¸Í•¹‘Ù•¹Ð¡•Ù•¹Ñ9…µ”¤ì4(€€€€€€€€€Ù…È•¹‘Á½¥¹Ð€ôÑÉ…­•É¹‘Á½¥¹Ð ¤ì4(€€€€€€€€€¥˜€ …•¹‘Á½¥¹Ð¤É•ÑÕÉ¸ì4(€€€€€€€€€Ù…ÈÁ…å±½…€ô)M=8¹ÍÑÉ¥¹¥™ä¡ì4(€€€€€€€€€€€Í¥Ñ•}¥è•¹‘Á½¥¹Ð¹Í¥Ñ•%°4(€€€€€€€€€€€Á…Ñ è±½…Ñ¥½¸¹Á…Ñ¡¹…µ”€¬±½…Ñ¥½¸¹Í•…É °4(€€€€€€€€€€€ÕÉ°è±½…Ñ¥½¸¹¡É•˜°4(€€€€€€€€€€€É•™•ÉÉ•Èè‘½Õµ•¹Ð¹É•™•ÉÉ•Èñð€ˆˆ°4(€€€€€€€€€€€•Ù•¹Ñ}¹…µ”è•Ù•¹Ñ9…µ”°4(€€€€€€€€€ô¤ì4(€€€€€€€€€¥˜€¡¹…Ù¥…Ñ½È¹Í•¹‘	•…½¸¤ì4(€€€€€€€€€€€¹…Ù¥…Ñ½È¹Í•¹‘	•…½¸¡•¹‘Á½¥¹Ð¹ÕÉ°°¹•Ü	±½ˆ¡mÁ…å±½…‘t°ìÑåÁ”è€‰…ÁÁ±¥…Ñ¥½¸½©Í½¸ˆô¤¤ì4(€€€€€€€€€€€É•ÑÕÉ¸ì4(€€€€€€€€€ô4(€€€€€€€€€¥˜€¡Ý¥¹‘½Ü¹™•Ñ ¤ì4(€€€€€€€€€€€™•Ñ ¡•¹‘Á½¥¹Ð¹ÕÉ°°ì4(€€€€€€€€€€€€€µ•Ñ¡½è€‰A=MPˆ°4(€€€€€€€€€€€€€¡•…‘•ÉÌèì€‰½¹Ñ•¹ÐµQåÁ”ˆè€‰…ÁÁ±¥…Ñ¥½¸½©Í½¸ˆô°4(€€€€€€€€€€€€€‰½‘äèÁ…å±½…°4(€€€€€€€€€€€€€µ½‘”è€‰½ÉÌˆ°4(€€€€€€€€€€€€€É•‘•¹Ñ¥…±Ìè€‰½µ¥Ðˆ°4(€€€€€€€€€€€€€­••Á…±¥Ù”èÑÉÕ”°4(€€€€€€€€€€€ô¤¹…Ñ ¡™Õ¹Ñ¥½¸€ ¤íô¤ì4(€€€€€€€€€ô4(€€€€€€€ô4(4(€€€€€€€Ý¥¹‘½Ü¹…‘‘Ù•¹Ñ1¥ÍÑ•¹•È ‰±½…ˆ°™Õ¹Ñ¥½¸€ ¤ì4(€€€€€€€€€Í•¹‘Ù•¹Ð ‰Ñ•µÁ±•}±…¹‘¥¹œˆ¤ì4(€€€€€€€€€Ù…È‰É¥‘”€ô‘½Õµ•¹Ð¹ÅÕ•ÉåM•±•Ñ½È ‰m‘…Ñ„µ¡½Õå½Ôµ‰É¥‘•tˆ¤ì4(€€€€€€€€€¥˜€ …‰É¥‘”¤É•ÑÕÉ¸ì4(€€€€€€€€€¥˜€ „ ‰%¹Ñ•ÉÍ•Ñ¥½¹=‰Í•ÉÙ•Èˆ¥¸Ý¥¹‘½Ü¤¤ì4(€€€€€€€€€€€Í•¹‘Ù•¹Ð ‰¡½Õå½Õ}‰É¥‘•}Ù¥•Üˆ¤ì4(€€€€€€€€€€€É•ÑÕÉ¸ì4(€€€€€€€€€ô4(€€€€€€€€€Ù…ÈÍ••¸€ô™…±Í”ì4(€€€€€€€€€Ù…È½‰Í•ÉÙ•È€ô¹•Ü%¹Ñ•ÉÍ•Ñ¥½¹=‰Í•ÉÙ•È¡™Õ¹Ñ¥½¸€¡•¹ÑÉ¥•Ì¤ì4(€€€€€€€€€€€¥˜€¡Í••¸¤É•ÑÕÉ¸ì4(€€€€€€€€€€€•¹ÑÉ¥•Ì¹™½É… ¡™Õ¹Ñ¥½¸€¡•¹ÑÉä¤ì4(€€€€€€€€€€€€€¥˜€ …•¹ÑÉä¹¥Í%¹Ñ•ÉÍ•Ñ¥¹œ¤É•ÑÕÉ¸ì4(€€€€€€€€€€€€€Í••¸€ôÑÉÕ”ì4(€€€€€€€€€€€€€Í•¹‘Ù•¹Ð ‰¡½Õå½Õ}‰É¥‘•}Ù¥•Üˆ¤ì4(€€€€€€€€€€€€€½‰Í•ÉÙ•È¹‘¥Í½¹¹•Ð ¤ì4(€€€€€€€€€€€ô¤ì4(€€€€€€€€€ô°ìÑ¡É•Í¡½±è€À¸Ðô¤ì4(€€€€€€€€€½‰Í•ÉÙ•È¹½‰Í•ÉÙ”¡‰É¥‘”¤ì4(€€€€€€€ô¤ì4(€€€€€ô¤ ¤ì4(€€€€ð½ÍÉ¥ÁÐø4(€€€íÍ…µ•¥ÍÑÉ¥ÑQ•µÁ±•Ì¹±•¹Ñ €ø€À€˜˜€ 4(€€€€€€ñÍ•Ñ¥½¸±…ÍÌô‰Í…µ”µ‘¥ÍÑÉ¥ÐµÑ•µÁ±•Ìˆø4(€€€€€€€€ñ‘¥Ø±…ÍÌô‰Í•Ñ¥½¸µ¡•…‘¥¹œˆø4(€€€€€€€€€€ñ‘¥Øø4(€€€€€€€€€€€€ñÀ±…ÍÌô‰•å•‰É½ÜˆùM…µ”É•„ð½Àø4(€€€€€€€€€€€€ñ Èû–B3Žc–rÃ–2ëŽ»–¾ë¦fˆð½ Èø4(€€€€€€€€€€ð½‘¥Øø4(€€€€€€€€€€ñ„¡É•˜õí‘¥ÍÑÉ¥ÑUÉ±ôùí‘¥ÍÑÉ¥Ñ9…µ•÷–rÃ–2ëŽ»–¾ë¦f‹Ž
+KŽ
+ŽŽ£¢š/Ž
+,ð½„ø4(€€€€€€€€ð½‘¥Øø4(€€€€€€€€ñ‘¥Ø±…ÍÌô‰Í…µ”µ‘¥ÍÑÉ¥ÐµÉ¥ˆø4(€€€€€€€€€íÍ…µ•¥ÍÑÉ¥ÑQ•µÁ±•…É‘Ì¹µ…À ¡ìÑ•µÁ±”è¥Ñ•´°Á¡½Ñ¼ô¤€ôø€ 4(€€€€€€€€€€€€ñ„4(€€€€€€€€€€€€€±…ÍÌé±¥ÍÐõíl‰É•±…Ñ•µÑ•µÁ±”µ…Éˆ°ì€‰É•±…Ñ•µÑ•µÁ±”µ…É´µÝ¥Ñ µÁ¡½Ñ¼ˆèÁ¡½Ñ¼õuô4(€€€€€€€€€€€€€¡É•˜õí€½Ñ•µÁ±•Ì¼‘í¥Ñ•´¹Í±Õô½ô4(€€€€€€€€€€€€€‘…Ñ„µÑÉ…¬µ±¥¬ô‰Ñ•µÁ±•}É•±…Ñ•‘}Ñ•µÁ±•}±¥¬ˆ4(€€€€€€€€€€€€ø4(€€€€€€€€€€€€€íÁ¡½Ñ¼€˜˜€ 4(€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰É•±…Ñ•µÑ•µÁ±”µÁ¡½Ñ¼ˆø4(€€€€€€€€€€€€€€€€€€ñ¥µœÍÉŒõíÁ¡½Ñ¼¹ÍÉô…±ÐõíÁ¡½Ñ¼¹…±Ðñð€‘í¥Ñ•´¹¹…µ•÷Ž»’î¢†£–gžr}ô±½…‘¥¹œô‰±…éäˆ€¼ø4(€€€€€€€€€€€€€€€€ð½‘¥Øø4(€€€€€€€€€€€€€€¥ô4(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰É•±…Ñ•µÑ•µÁ±”µ…Éµ‰½‘äˆø4(€€€€€€€€€€€€€€€€ñÍÁ…¸ùí•ÑQ•µÁ±•MÑ…ÑÕÍ1…‰•°¡¥Ñ•´¥ôð½ÍÁ…¸ø4(€€€€€€€€€€€€€€€€ñÍÑÉ½¹œùí¥Ñ•´¹¹…µ•ôð½ÍÑÉ½¹œø4(€€€€€€€€€€€€€€€€ñ•´ùí¥Ñ•´¹…É•…ô€¼í¥Ñ•´¹Í•Ñôð½•´ø4(€€€€€€€€€€€€€€ð½‘¥Øø4(€€€€€€€€€€€€ð½„ø4(€€€€€€€€€€¤¥ô4(€€€€€€€€ð½‘¥Øø4(€€€€€€ð½Í•Ñ¥½¸ø4(€€€€¥ô4(€€€íÍ…µ•M•ÑQ•µÁ±•Ì¹±•¹Ñ €ø€À€˜˜€ 4(€€€€€€ñÍ•Ñ¥½¸±…ÍÌô‰Í…µ”µ‘¥ÍÑÉ¥ÐµÑ•µÁ±•Ìˆø4(€€€€€€€€ñ‘¥Ø±…ÍÌô‰Í•Ñ¥½¸µ¡•…‘¥¹œˆø4(€€€€€€€€€€ñ‘¥Øø4(€€€€€€€€€€€€ñÀ±…ÍÌô‰•å•‰É½ÜˆùM…µ”M•Ðð½Àø4(€€€€€€€€€€€€ñ Èû–B3Žc–º_šÒûŽï¦Z‹¦šÎW’êëŽ»–¾ë¦fˆð½ Èø4(€€€€€€€€€€ð½‘¥Øø4(€€€€€€€€€íÕÉÉ•¹ÑM•ÑM±Õœ€˜˜€ñ„¡É•˜õí€½Í•ÑÌ¼‘íÕÉÉ•¹ÑM•ÑM±Õô½ôûžŽCžRÃ–âŽ¹íÕÉÉ•¹ÑM•Ñ9…µ•÷Ž»–¾ë¦f‹’â¢šœð½„ùô4(€€€€€€€€ð½‘¥Øø4(€€€€€€€€ñ‘¥Ø±…ÍÌô‰Í…µ”µ‘¥ÍÑÉ¥ÐµÉ¥ˆø4(€€€€€€€€€íÍ…µ•M•ÑQ•µÁ±•…É‘Ì¹µ…À ¡ìÑ•µÁ±”è¥Ñ•´°Á¡½Ñ¼ô¤€ôø€ 4(€€€€€€€€€€€€ñ„4(€€€€€€€€€€€€€±…ÍÌé±¥ÍÐõíl‰É•±…Ñ•µÑ•µÁ±”µ…Éˆ°ì€‰É•±…Ñ•µÑ•µÁ±”µ…É´µÝ¥Ñ µÁ¡½Ñ¼ˆèÁ¡½Ñ¼õuô4(€€€€€€€€€€€€€¡É•˜õí€½Ñ•µÁ±•Ì¼‘í¥Ñ•´¹Í±Õô½ô4(€€€€€€€€€€€€€‘…Ñ„µÑÉ…¬µ±¥¬ô‰Ñ•µÁ±•}É•±…Ñ•‘}Ñ•µÁ±•}±¥¬ˆ4(€€€€€€€€€€€€ø4(€€€€€€€€€€€€€íÁ¡½Ñ¼€˜˜€ 4(€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰É•±…Ñ•µÑ•µÁ±”µÁ¡½Ñ¼ˆø4(€€€€€€€€€€€€€€€€€€ñ¥µœÍÉŒõíÁ¡½Ñ¼¹ÍÉô…±ÐõíÁ¡½Ñ¼¹…±Ðñð€‘í¥Ñ•´¹¹…µ•÷Ž»’î¢†£–gžr}ô±½…‘¥¹œô‰±…éäˆ€¼ø4(€€€€€€€€€€€€€€€€ð½‘¥Øø4(€€€€€€€€€€€€€€¥ô4(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰É•±…Ñ•µÑ•µÁ±”µ…Éµ‰½‘äˆø4(€€€€€€€€€€€€€€€€ñÍÁ…¸ùí•ÑQ•µÁ±•MÑ…ÑÕÍ1…‰•°¡¥Ñ•´¥ôð½ÍÁ…¸ø4(€€€€€€€€€€€€€€€€ñÍÑÉ½¹œùí¥Ñ•´¹¹…µ•ôð½ÍÑÉ½¹œø4(€€€€€€€€€€€€€€€€ñ•´ùí•Ñ¥ÍÑÉ¥Ñ9…µ”¡¥Ñ•´¹‘¥ÍÑÉ¥Ñ}¥¥ô€¼í¥Ñ•´¹Í•Ñôð½•´ø4(€€€€€€€€€€€€€€ð½‘¥Øø4(€€€€€€€€€€€€ð½„ø4(€€€€€€€€€€¤¥ô4(€€€€€€€€ð½‘¥Øø4(€€€€€€ð½Í•Ñ¥½¸ø4(€€€€¥ô4(€€€í¹•…É‰åQ•µÁ±•Ì¹±•¹Ñ €ø€À€˜˜€ 4(€€€€€€ñÍ•Ñ¥½¸±…ÍÌô‰Í…µ”µ‘¥ÍÑÉ¥ÐµÑ•µÁ±•Ìˆø4(€€€€€€€€ñ‘¥Ø±…ÍÌô‰Í•Ñ¥½¸µ¡•…‘¥¹œˆø4(€€€€€€€€€€ñ‘¥Øø4(€€€€€€€€€€€€ñÀ±…ÍÌô‰•å•‰É½Üˆù9•…É‰äð½Àø4(€€€€€€€€€€€€ñ Èû¢þGŽ?Ž»Ž+–¾èð½ Èø4(€€€€€€€€€€ð½‘¥Øø4(€€€€€€€€€€ñ„¡É•˜õíµ…ÁA…•UÉ±ô‘…Ñ„µÑÉ…¬µ±¥¬ô‰Ñ•µÁ±•}µ…Á}±¥¬ˆû’ö?š&’â¢šŸŽŸ¢š/Ž
+,ð½„ø4(€€€€€€€€ð½‘¥Øø4(€€€€€€€€ñ‘¥Ø±…ÍÌô‰Í…µ”µ‘¥ÍÑÉ¥ÐµÉ¥ˆø4(€€€€€€€€€í¹•…É‰åQ•µÁ±•…É‘Ì¹µ…À ¡ìÑ•µÁ±”è¥Ñ•´°Á¡½Ñ¼ô¤€ôø€ 4(€€€€€€€€€€€€ñ„4(€€€€€€€€€€€€€±…ÍÌé±¥ÍÐõíl‰É•±…Ñ•µÑ•µÁ±”µ…Éˆ°ì€‰É•±…Ñ•µÑ•µÁ±”µ…É´µÝ¥Ñ µÁ¡½Ñ¼ˆèÁ¡½Ñ¼õuô4(€€€€€€€€€€€€€¡É•˜õí€½Ñ•µÁ±•Ì¼‘í¥Ñ•´¹Í±Õô½ô4(€€€€€€€€€€€€€‘…Ñ„µÑÉ…¬µ±¥¬ô‰Ñ•µÁ±•}É•±…Ñ•‘}Ñ•µÁ±•}±¥¬ˆ4(€€€€€€€€€€€€ø4(€€€€€€€€€€€€€íÁ¡½Ñ¼€˜˜€ 4(€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰É•±…Ñ•µÑ•µÁ±”µÁ¡½Ñ¼ˆø4(€€€€€€€€€€€€€€€€€€ñ¥µœÍÉŒõíÁ¡½Ñ¼¹ÍÉô…±ÐõíÁ¡½Ñ¼¹…±Ðñð€‘í¥Ñ•´¹¹…µ•÷Ž»’î¢†£–gžr}ô±½…‘¥¹œô‰±…éäˆ€¼ø4(€€€€€€€€€€€€€€€€ð½‘¥Øø4(€€€€€€€€€€€€€€¥ô4(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÌô‰É•±…Ñ•µÑ•µÁ±”µ…Éµ‰½‘äˆø4(€€€€€€€€€€€€€€€€ñÍÁ…¸ùí•ÑQ•µÁ±•MÑ…ÑÕÍ1…‰•°¡¥Ñ•´¥ôð½ÍÁ…¸ø4(€€€€€€€€€€€€€€€€ñÍÑÉ½¹œùí¥Ñ•´¹¹…µ•ôð½ÍÑÉ½¹œø4(€€€€€€€€€€€€€€€€ñ•´ùí•Ñ¥ÍÑÉ¥Ñ9…µ”¡¥Ñ•´¹‘¥ÍÑÉ¥Ñ}¥¥ô€¼í¥Ñ•´¹Í•Ñôð½•´ø4(€€€€€€€€€€€€€€ð½‘¥Øø4(€€€€€€€€€€€€ð½„ø4(€€€€€€€€€€¤¥ô4(€€€€€€€€ð½‘¥Øø4(€€€€€€ð½Í•Ñ¥½¸ø4(€€€€¥ô4(€€ð½…ÉÑ¥±”ø4(ð½	…Í•1…å½ÕÐø4
