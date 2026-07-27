@@ -164,6 +164,14 @@ if (indexHtml) {
   if (indexHtml.includes("菩提寺を確認したら、実家も一度だけ見ておく")) {
     errors.push("index: related service promotion must not interrupt the primary discovery flow");
   }
+  const priorityIndexLink = indexHtml.indexOf("/topics/#priority-guides");
+  const discoveryIndex = indexHtml.indexOf("discovery-actions");
+  if (!(priorityIndexLink >= 0 && discoveryIndex > priorityIndexLink)) {
+    errors.push("index: priority 50-guide entry must appear prominently before discovery actions");
+  }
+  if (!indexHtml.includes("法要・帰省・実家を考える50の重点ガイド")) {
+    errors.push("index: missing priority 50-guide heading");
+  }
 }
 
 if (searchHtml) {

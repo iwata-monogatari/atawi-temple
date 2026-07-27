@@ -1,5 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { portalArticles, portalCategories } from "../lib/portal-articles";
+import { priorityPortalSlugs } from "../lib/portal-priority-articles";
 import {
   allTemples,
   allTempleUpdates,
@@ -124,6 +126,25 @@ const heroSlides = heroSlideSeeds
 const firstHeroSlide = heroSlides[0];
 const heroSlidesJson = JSON.stringify(heroSlides).replace(/</g, "\\u003c");
 const iwataMonogatariBannerImage = "/assets/temples/kokubunji-mitsuke/hondo.webp";
+const prioritySlugSet = new Set(priorityPortalSlugs);
+const priorityArticles = portalArticles.filter((article) => prioritySlugSet.has(article.slug));
+const priorityCategoryLinks = portalCategories
+  .map((category) => ({
+    ...category,
+    priorityCount: priorityArticles.filter((article) => article.category === category.key).length,
+  }))
+  .filter((category) => category.priorityCount > 0);
+const featuredPrioritySlugs = [
+  "houyou-01",
+  "bodaiji-04",
+  "ohaka-16",
+  "kisei-01",
+  "jikka-23",
+  "akiya-01",
+];
+const featuredPriorityArticles = featuredPrioritySlugs
+  .map((slug) => priorityArticles.find((article) => article.slug === slug))
+  .filter((article): article is (typeof priorityArticles)[number] => Boolean(article));
 
 ---
 
@@ -273,6 +294,35 @@ const iwataMonogatariBannerImage = "/assets/temples/kokubunji-mitsuke/hondo.webp
       <strong>{allSectCounts.length}</strong>
       <span>宗派分類</span>
     </article>
+  </section>
+
+  <section class="priority-home" aria-labelledby="priority-home-title">
+    <div class="priority-home-heading">
+      <div>
+        <p class="eyebrow">重点個別編集記事</p>
+        <h2 id="priority-home-title">法要・帰省・実家を考える50の重点ガイド</h2>
+        <p>各記事7,000文字以上。主要6見出し、図解3点、主題に対応する一次情報を備えた実用ガイドです。</p>
+      </div>
+      <a class="button-link" href="/topics/#priority-guides">重点ガイド50本をすべて見る</a>
+    </div>
+    <nav class="priority-category-links" aria-label="重点ガイドをカテゴリから探す">
+      {priorityCategoryLinks.map((category) => (
+        <a href={`/topics/#priority-${category.key}`}>
+          <span>{category.label}</span>
+          <strong>{category.priorityCount}本</strong>
+        </a>
+      ))}
+    </nav>
+    <div class="priority-featured-grid">
+      {featuredPriorityArticles.map((article, index) => (
+        <article class="priority-featured-card">
+          <p><span>{String(index + 1).padStart(2, "0")}</span>{article.categoryLabel}</p>
+          <h3><a href={`/topics/${article.category}/${article.slug}/`}>{article.title}</a></h3>
+          <p>{article.lead}</p>
+          <a class="text-link" href={`/topics/${article.category}/${article.slug}/`}>7,000文字のガイドを読む</a>
+        </article>
+      ))}
+    </div>
   </section>
 
   <section class="discovery-actions" aria-label="基本の探し方">

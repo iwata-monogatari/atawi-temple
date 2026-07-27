@@ -1,8 +1,11 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { portalCategories, portalArticles } from "../../lib/portal-articles";
+import { priorityPortalSlugs } from "../../lib/portal-priority-articles";
 
 const siteUrl = "https://temple.atawi.link";
+const prioritySlugSet = new Set(priorityPortalSlugs);
+const priorityArticles = portalArticles.filter((article) => prioritySlugSet.has(article.slug));
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -37,6 +40,39 @@ const structuredData = {
         </a>
       ))}
     </nav>
+
+    <section class="section priority-guide-index" id="priority-guides" aria-labelledby="priority-guide-title">
+      <header class="priority-guide-index-heading">
+        <p class="eyebrow">50 Selected Guides</p>
+        <h2 id="priority-guide-title">まず読みたい、50の重点ガイド</h2>
+        <p>7,000文字以上の本文、主要6見出し、図解3点、主題に直接対応する一次情報を備えた記事です。</p>
+      </header>
+      <div class="priority-guide-groups">
+        {portalCategories.map((category) => {
+          const articles = priorityArticles.filter((article) => article.category === category.key);
+          if (articles.length === 0) return null;
+          return (
+            <section class="priority-guide-group" id={`priority-${category.key}`}>
+              <header>
+                <p class="section-number">{String(category.position).padStart(2, "0")}</p>
+                <h3>{category.label}</h3>
+                <span>{articles.length}本</span>
+              </header>
+              <ol>
+                {articles.map((article) => (
+                  <li>
+                    <a href={`/topics/${article.category}/${article.slug}/`}>
+                      <strong>{article.title}</strong>
+                      <span>7,000文字以上・図解3点</span>
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </section>
+          );
+        })}
+      </div>
+    </section>
 
     <section class="section portal-category-list">
       {portalCategories.map((category) => {
