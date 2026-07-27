@@ -4938,6 +4938,58 @@ th {
   padding-top: 24px;
 }
 
+.portal-article .article-hero {
+  width: min(1000px, calc(100% - 32px));
+  padding: 38px 0 28px;
+}
+
+.portal-article .article-hero h1 {
+  max-width: 840px;
+  margin-bottom: 14px;
+  font-size: clamp(1.75rem, 3.2vw, 2.8rem);
+  line-height: 1.28;
+  letter-spacing: .01em;
+}
+
+.portal-article .article-subtitle {
+  max-width: 760px;
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.portal-article .article-layout {
+  width: min(1000px, calc(100% - 32px));
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 36px;
+  padding-top: 36px;
+}
+
+.portal-article .article-body {
+  gap: 36px;
+  min-width: 0;
+}
+
+.portal-article .article-section {
+  padding-top: 15px;
+}
+
+.portal-article .article-section h2 {
+  max-width: 720px;
+  margin-bottom: 18px;
+  font-size: clamp(1.3rem, 2.2vw, 1.75rem);
+  line-height: 1.45;
+}
+
+.portal-article .article-section p,
+.portal-article .article-section li {
+  max-width: 720px;
+  font-size: .98rem;
+}
+
+.portal-article .article-aside {
+  font-size: .9rem;
+}
+
 .portal-cta {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -5039,8 +5091,8 @@ th {
 }
 
 .longform-section > p {
-  line-height: 2.05;
-  margin-block: 1.15rem;
+  line-height: 1.95;
+  margin-block: 1rem;
 }
 
 .longform-illustration {
@@ -5234,6 +5286,37 @@ th {
   .priority-guide-index { padding: 26px 16px; }
   .priority-guide-group { grid-template-columns: 1fr; gap: 12px; padding: 20px 17px; }
   .priority-guide-group ol { grid-template-columns: 1fr; }
+
+  .portal-article .article-hero {
+    padding: 28px 0 22px;
+  }
+
+  .portal-article .article-hero h1 {
+    font-size: clamp(1.55rem, 7vw, 2.15rem);
+    line-height: 1.35;
+  }
+
+  .portal-article .article-subtitle {
+    font-size: .95rem;
+  }
+
+  .portal-article .article-layout {
+    gap: 30px;
+    padding-top: 28px;
+  }
+
+  .portal-article .article-body {
+    gap: 30px;
+  }
+
+  .portal-article .article-section h2 {
+    font-size: clamp(1.25rem, 5.6vw, 1.55rem);
+  }
+
+  .portal-article .article-section p,
+  .portal-article .article-section li {
+    font-size: .96rem;
+  }
 
   .portal-category-list,
   .portal-article-grid {
