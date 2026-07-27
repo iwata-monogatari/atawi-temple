@@ -88,6 +88,8 @@ if (priorityPortalSlugs.length < 30 || priorityPortalSlugs.length > 50) {
   errors.push(`priority portal: expected 30–50 individually edited articles, found ${priorityPortalSlugs.length}`);
 }
 
+const priorityCompositionIds = new Set();
+
 for (const slug of priorityPortalSlugs) {
   const category = slug.replace(/-\d{2}$/, "");
   const html = await readBuiltFile(`dist/topics/${category}/${slug}/index.html`);
@@ -107,12 +109,13 @@ for (const slug of priorityPortalSlugs) {
     .replace(/\s+/g, "")
     .length);
   const bodyLength = sectionLengths.reduce((total, length) => total + length, 0);
-  const illustrationCount = (html.match(/<figure class="longform-illustration">/g) || []).length;
-  if (longformSections.length !== 6) {
-    errors.push(`priority portal: ${slug} must have 6 longform sections, found ${longformSections.length}`);
+  const compositionIds = [...html.matchAll(/data-composition-id="([^"]+)"/g)].map((match) => match[1]);
+  const illustrationCount = compositionIds.length;
+  if (longformSections.length !== 4) {
+    errors.push(`priority portal: ${slug} must have 4 longform sections, found ${longformSections.length}`);
   }
-  if (bodyLength < 6000) {
-    errors.push(`priority portal: ${slug} longform body must be at least 6000 characters, found ${bodyLength}`);
+  if (bodyLength < 4000) {
+    errors.push(`priority portal: ${slug} longform body must be at least 4000 characters, found ${bodyLength}`);
   }
   sectionLengths.forEach((length, index) => {
     if (length < 1000) {
@@ -122,6 +125,16 @@ for (const slug of priorityPortalSlugs) {
   if (illustrationCount < 3) {
     errors.push(`priority portal: ${slug} must have at least 3 illustrations, found ${illustrationCount}`);
   }
+  for (const compositionId of compositionIds) {
+    if (priorityCompositionIds.has(compositionId)) {
+      errors.push(`priority portal: duplicated illustration composition ${compositionId}`);
+    }
+    priorityCompositionIds.add(compositionId);
+  }
+}
+
+if (priorityCompositionIds.size !== priorityPortalSlugs.length * 3) {
+  errors.push(`priority portal: expected ${priorityPortalSlugs.length * 3} unique illustration compositions, found ${priorityCompositionIds.size}`);
 }
 
 if (toyodaHtml) {

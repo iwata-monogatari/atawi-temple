@@ -105,22 +105,27 @@ const structuredData = [
               <h2>{section.heading}</h2>
               {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
             </section>
-            {index % 2 === 1 && (() => {
-              const illustration = article.longform!.illustrations[Math.floor(index / 2)];
+            {index < 3 && (() => {
+              const illustration = article.longform!.illustrations[index];
               return (
-                <figure class="longform-illustration">
+                <figure class="longform-illustration" data-composition-id={illustration.compositionId}>
                   <svg viewBox="0 0 960 420" role="img" aria-labelledby={`illustration-title-${index}`}>
                     <title id={`illustration-title-${index}`}>{illustration.label}</title>
                     <rect width="960" height="420" rx="28" class="illustration-bg" />
-                    <path d="M292 210H376M584 210H668" class="illustration-arrow" />
-                    <circle cx="202" cy="210" r="112" class="illustration-node illustration-node--one" />
-                    <circle cx="480" cy="210" r="112" class="illustration-node illustration-node--two" />
-                    <circle cx="758" cy="210" r="112" class="illustration-node illustration-node--three" />
-                    <text x="202" y="204" text-anchor="middle">{illustration.left}</text>
-                    <text x="480" y="204" text-anchor="middle">{illustration.center}</text>
-                    <text x="758" y="204" text-anchor="middle">{illustration.right}</text>
+                    <path d={illustration.pathD || "M292 210H376M584 210H668"} class="illustration-arrow" />
+                    <circle cx={illustration.leftX || 202} cy={illustration.leftY || 210} r="82" class="illustration-node illustration-node--one" />
+                    <circle cx={illustration.centerX || 480} cy={illustration.centerY || 210} r="82" class="illustration-node illustration-node--two" />
+                    <circle cx={illustration.rightX || 758} cy={illustration.rightY || 210} r="82" class="illustration-node illustration-node--three" />
+                    <text x={illustration.leftX || 202} y={(illustration.leftY || 210) + 8} text-anchor="middle">1</text>
+                    <text x={illustration.centerX || 480} y={(illustration.centerY || 210) + 8} text-anchor="middle">2</text>
+                    <text x={illustration.rightX || 758} y={(illustration.rightY || 210) + 8} text-anchor="middle">3</text>
                     <text x="480" y="372" text-anchor="middle" class="illustration-label">{illustration.label}</text>
                   </svg>
+                  <ol class="illustration-legend">
+                    <li>{illustration.left}</li>
+                    <li>{illustration.center}</li>
+                    <li>{illustration.right}</li>
+                  </ol>
                   <figcaption>{illustration.caption}</figcaption>
                 </figure>
               );
