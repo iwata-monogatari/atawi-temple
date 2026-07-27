@@ -5172,6 +5172,196 @@ th {
   }
 }
 
+.rich-illustration {
+  overflow: hidden;
+  border: 1px solid #d8d1c2;
+  border-radius: 1.4rem;
+  background: #fffdf8;
+  box-shadow: 0 18px 50px rgba(52, 58, 45, 0.09);
+}
+
+.rich-illustration svg {
+  border: 0;
+  border-radius: 0;
+  background: #f3f0e7;
+}
+
+.rich-illustration .scene {
+  transform: translate(var(--scene-shift), var(--scene-rise)) rotate(var(--scene-tilt));
+  transform-origin: 480px 260px;
+}
+
+.scene-bg { fill: #f3f0e7; }
+.scene-glow { opacity: .34; }
+.scene-glow--one { fill: #d9e7d2; }
+.scene-glow--two { fill: #e6d9c5; }
+.scene-route, .scene-branch, .scene-bridge {
+  fill: none;
+  stroke: #526952;
+  stroke-width: 13;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.scene-route-mark, .scene-pin, .scene-number-disc { fill: #bd704d; }
+.scene-building, .scene-house, .scene-land {
+  fill: #d8e4d0;
+  stroke: #435b47;
+  stroke-width: 7;
+  stroke-linejoin: round;
+}
+.scene-building-line, .scene-house-line, .scene-calendar-line, .scene-bridge-line, .scene-layer-line {
+  fill: none;
+  stroke: #60725f;
+  stroke-width: 6;
+}
+.scene-paper, .scene-panel, .scene-cell, .scene-drawer {
+  fill: #fffdf8;
+  stroke: #d3cbbb;
+  stroke-width: 5;
+}
+.scene-shadow { fill: #766f62; opacity: .17; }
+.scene-rule {
+  fill: none;
+  stroke: #9e9a8f;
+  stroke-width: 9;
+  stroke-linecap: round;
+}
+.scene-paper-line {
+  fill: none;
+  stroke: #fffdf8;
+  stroke-width: 9;
+  stroke-linecap: round;
+}
+.scene-card {
+  fill: #e9d6af;
+  stroke: #fffdf8;
+  stroke-width: 7;
+}
+.scene-ink, .scene-check {
+  fill: none;
+  stroke: #324939;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.scene-glass {
+  fill: #c8dbe0;
+  fill-opacity: .62;
+  stroke: #425d62;
+  stroke-width: 12;
+}
+.scene-glass-handle {
+  fill: none;
+  stroke: #425d62;
+  stroke-width: 24;
+  stroke-linecap: round;
+}
+.scene-stamp { fill: #a65543; }
+.scene-table { fill: #c89f71; stroke: #805f40; stroke-width: 7; }
+.scene-face { fill: #e7cdb3; stroke: #fffdf8; stroke-width: 7; }
+.scene-person { fill: #6d846e; stroke: #fffdf8; stroke-width: 7; }
+.scene-door { fill: #916b4f; }
+.scene-window { fill: #c8dfe4; stroke: #fffdf8; stroke-width: 7; }
+.scene-panel--alt { fill: #dce7e8; stroke: #9cb3b6; stroke-width: 5; }
+.scene-divider {
+  fill: none;
+  stroke: #9b9487;
+  stroke-width: 6;
+  stroke-dasharray: 12 14;
+}
+.scene-cabinet { fill: #778b70; stroke: #40533f; stroke-width: 8; }
+.scene-handle { fill: #bc9a66; }
+.scene-folder { fill: #ddbb70; stroke: #9d7b3f; stroke-width: 5; }
+.scene-folder-tab { fill: #edce8c; }
+.scene-phone { fill: #40534c; }
+.scene-bubble { fill: #6f8771; stroke: #fffdf8; stroke-width: 7; }
+.scene-bubble--alt { fill: #b56f53; }
+.scene-ring { fill: #b16d4e; }
+.scene-calendar-line { stroke-width: 8; }
+.scene-bridge { stroke: #805f40; stroke-width: 17; }
+.scene-tree { fill: #78966f; }
+.scene-trunk { stroke: #75553c; stroke-width: 15; }
+.scene-sign { fill: #ead7ad; stroke: #705943; stroke-width: 6; }
+.scene-box { fill: #b88558; stroke: #755238; stroke-width: 7; }
+.scene-box-lid { fill: #d3a36e; stroke: #755238; stroke-width: 7; }
+.scene-photo { fill: #d6e3df; stroke: #fffdf8; stroke-width: 7; }
+.scene-layer { stroke: #fffdf8; stroke-width: 8; }
+.scene-layer--1 { fill: #769076; }
+.scene-layer--2 { fill: #d0a96f; }
+.scene-layer--3 { fill: #af7159; }
+.scene-number {
+  fill: #2f4435;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.rich-illustration--indigo .scene-card,
+.rich-illustration--indigo .scene-pin { fill: #718398; }
+.rich-illustration--clay .scene-card,
+.rich-illustration--clay .scene-pin { fill: #bd7258; }
+.rich-illustration--gold .scene-card,
+.rich-illustration--gold .scene-pin { fill: #c7a15f; }
+.rich-illustration--sky .scene-card,
+.rich-illustration--sky .scene-pin { fill: #7ba4aa; }
+
+.illustration-copy {
+  padding: 1.25rem 1.4rem 0;
+}
+
+.illustration-kicker {
+  margin: 0;
+  color: #334b38;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+
+.rich-illustration .illustration-legend {
+  margin-top: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.rich-illustration .illustration-legend li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: .55rem;
+  align-items: start;
+  padding: .8rem;
+  border-radius: .8rem;
+  background: #f6f3eb;
+}
+
+.rich-illustration .illustration-legend span {
+  color: #9a5c43;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+.rich-illustration figcaption {
+  margin: .4rem 1.4rem 1.35rem;
+}
+
+@media (max-width: 640px) {
+  .rich-illustration {
+    border-radius: 1rem;
+  }
+
+  .rich-illustration svg {
+    min-height: 260px;
+    object-fit: cover;
+  }
+
+  .illustration-copy {
+    padding-inline: 1rem;
+  }
+
+  .rich-illustration figcaption {
+    margin-inline: 1rem;
+  }
+}
+
 /* ---- 実家カルテ ---- */
 .karte-page {
   width: min(960px, calc(100% - 32px));
@@ -5318,6 +5508,7 @@ th {
   }
 
   .portal-article .article-layout {
+    grid-template-columns: minmax(0, 1fr);
     gap: 30px;
     padding-top: 28px;
   }

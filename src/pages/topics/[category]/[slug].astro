@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+import RichGuideIllustration from "../../../components/RichGuideIllustration.astro";
 import {
   getPortalArticle,
   getPortalArticlesByCategory,
@@ -107,28 +108,7 @@ const structuredData = [
             </section>
             {index < 3 && (() => {
               const illustration = article.longform!.illustrations[index];
-              return (
-                <figure class="longform-illustration" data-composition-id={illustration.compositionId}>
-                  <svg viewBox="0 0 960 420" role="img" aria-labelledby={`illustration-title-${index}`}>
-                    <title id={`illustration-title-${index}`}>{illustration.label}</title>
-                    <rect width="960" height="420" rx="28" class="illustration-bg" />
-                    <path d={illustration.pathD || "M292 210H376M584 210H668"} class="illustration-arrow" />
-                    <circle cx={illustration.leftX || 202} cy={illustration.leftY || 210} r="82" class="illustration-node illustration-node--one" />
-                    <circle cx={illustration.centerX || 480} cy={illustration.centerY || 210} r="82" class="illustration-node illustration-node--two" />
-                    <circle cx={illustration.rightX || 758} cy={illustration.rightY || 210} r="82" class="illustration-node illustration-node--three" />
-                    <text x={illustration.leftX || 202} y={(illustration.leftY || 210) + 8} text-anchor="middle">1</text>
-                    <text x={illustration.centerX || 480} y={(illustration.centerY || 210) + 8} text-anchor="middle">2</text>
-                    <text x={illustration.rightX || 758} y={(illustration.rightY || 210) + 8} text-anchor="middle">3</text>
-                    <text x="480" y="372" text-anchor="middle" class="illustration-label">{illustration.label}</text>
-                  </svg>
-                  <ol class="illustration-legend">
-                    <li>{illustration.left}</li>
-                    <li>{illustration.center}</li>
-                    <li>{illustration.right}</li>
-                  </ol>
-                  <figcaption>{illustration.caption}</figcaption>
-                </figure>
-              );
+              return <RichGuideIllustration illustration={illustration} titleId={`illustration-title-${article.slug}-${index}`} />;
             })()}
           </>
         )) : (

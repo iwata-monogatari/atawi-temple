@@ -1,0 +1,188 @@
+---
+type Illustration = {
+  label: string;
+  caption: string;
+  left: string;
+  center: string;
+  right: string;
+  compositionId?: string;
+  layout?: string;
+  sceneSeed?: number;
+  accent?: string;
+};
+
+const { illustration, titleId } = Astro.props as {
+  illustration: Illustration;
+  titleId: string;
+};
+
+const layout = illustration.layout || "route-map";
+const seed = illustration.sceneSeed || 0;
+const shift = (seed % 31) - 15;
+const rise = ((seed >> 3) % 25) - 12;
+const tilt = ((seed >> 5) % 7) - 3;
+---
+
+<figure
+  class={`longform-illustration rich-illustration rich-illustration--${illustration.accent || "sage"}`}
+  data-composition-id={illustration.compositionId}
+  data-illustration-layout={layout}
+  data-scene-seed={seed}
+>
+  <svg viewBox="0 0 960 520" role="img" aria-labelledby={titleId} style={`--scene-shift:${shift}px;--scene-rise:${rise}px;--scene-tilt:${tilt}deg`}>
+    <title id={titleId}>{illustration.label}</title>
+    <rect width="960" height="520" rx="32" class="scene-bg" />
+    <circle cx="90" cy="78" r="150" class="scene-glow scene-glow--one" />
+    <circle cx="875" cy="458" r="190" class="scene-glow scene-glow--two" />
+
+    {layout === "route-map" && (
+      <g class="scene route-map">
+        <path d={`M70 ${390 + rise} C210 250 250 450 405 285 S680 100 892 190`} class="scene-route" />
+        <path d="M67 390l34-8-10 33zM395 287l32-8-10 32zM860 193l31-12-8 34z" class="scene-route-mark" />
+        <g transform={`translate(${118 + shift} 270)`}><path d="M0 0c-34 0-58 25-58 57 0 44 58 105 58 105s58-61 58-105C58 25 34 0 0 0z" class="scene-pin"/><circle r="18" cy="55" class="scene-paper"/></g>
+        <g transform={`translate(${700 - shift} 105)`}><path d="M-90 70h180v92H-90zM-112 70L0 0l112 70zM-55 83v79M0 83v79M55 83v79" class="scene-building"/></g>
+        <circle cx="405" cy="285" r="48" class="scene-card"/><path d="M382 285h46M405 262v46" class="scene-ink"/>
+      </g>
+    )}
+
+    {layout === "document-desk" && (
+      <g class="scene document-desk" transform={`rotate(${tilt} 480 260)`}>
+        <rect x={150 + shift} y="100" width="410" height="315" rx="18" class="scene-shadow"/>
+        <rect x={175 + shift} y="76" width="410" height="315" rx="18" class="scene-paper"/>
+        <path d={`M225 ${150 + rise}h250M225 ${202 + rise}h300M225 ${254 + rise}h235M225 ${306 + rise}h275`} class="scene-rule"/>
+        <circle cx={665 - shift} cy={240 + rise} r="100" class="scene-glass"/><circle cx={665 - shift} cy={240 + rise} r="66" class="scene-bg"/><path d={`M738 ${313 + rise}l92 92`} class="scene-glass-handle"/>
+        <rect x="660" y="380" width="175" height="56" rx="12" class="scene-stamp"/><path d="M692 408h110" class="scene-paper-line"/>
+      </g>
+    )}
+
+    {layout === "timeline" && (
+      <g class="scene timeline">
+        <path d={`M90 ${285 + rise} C260 ${150 + rise} 350 ${420 + rise} 520 ${270 + rise} S760 ${120 + rise} 885 ${245 + rise}`} class="scene-route"/>
+        {[145, 365, 585, 805].map((x, i) => <g transform={`translate(${x + (i % 2 ? shift : -shift)} ${i % 2 ? 330 + rise : 220 + rise})`}><circle r={i === 3 ? 52 : 38} class={i === 3 ? "scene-pin" : "scene-card"}/><text y="8" text-anchor="middle" class="scene-number">{i + 1}</text></g>)}
+        <path d="M110 90h165v72H110zM397 365h170v72H397zM676 73h170v72H676z" class="scene-paper"/>
+        <path d="M140 120h105M427 395h110M706 103h110" class="scene-rule"/>
+      </g>
+    )}
+
+    {layout === "family-table" && (
+      <g class="scene family-table">
+        <ellipse cx="480" cy={312 + rise} rx="245" ry="100" class="scene-table"/>
+        {[250, 405, 555, 710].map((x, i) => <g transform={`translate(${x + (i < 2 ? shift : -shift)} ${i % 2 ? 122 : 148})`}><circle r="42" class="scene-face"/><path d="M-68 128c8-64 128-64 136 0z" class="scene-person"/><path d="M-18 3h7M11 3h7" class="scene-ink"/></g>)}
+        <rect x="365" y={278 + rise} width="230" height="108" rx="12" class="scene-paper"/><path d={`M395 ${312 + rise}h170M395 ${345 + rise}h120`} class="scene-rule"/>
+      </g>
+    )}
+
+    {layout === "house-check" && (
+      <g class="scene house-check" transform={`translate(${shift} ${rise})`}>
+        <path d="M150 235L480 65l330 170v230H150z" class="scene-house"/>
+        <path d="M480 65v400M150 235h660M315 235v230M645 235v230" class="scene-house-line"/>
+        <rect x="365" y="285" width="115" height="180" class="scene-door"/><rect x="548" y="285" width="70" height="70" class="scene-window"/>
+        <g transform="translate(225 325)"><circle r="45" class="scene-card"/><path d="M-20 0h40M0-20v40" class="scene-ink"/></g>
+        <g transform="translate(725 338)"><circle r="50" class="scene-card"/><path d="M-25-3l16 17 34-38" class="scene-check"/></g>
+      </g>
+    )}
+
+    {layout === "comparison" && (
+      <g class="scene comparison">
+        <rect x={75 + shift} y="75" width="350" height="365" rx="26" class="scene-panel"/>
+        <rect x={535 - shift} y="75" width="350" height="365" rx="26" class="scene-panel scene-panel--alt"/>
+        <path d="M480 110v300" class="scene-divider"/>
+        <circle cx={250 + shift} cy={178 + rise} r="70" class="scene-card"/><path d={`M210 ${180 + rise}h80`} class="scene-ink"/>
+        <circle cx={710 - shift} cy={178 - rise} r="70" class="scene-card"/><path d={`M675 ${178 - rise}l25 25 48-55`} class="scene-check"/>
+        <path d="M135 300h230M135 345h190M595 300h230M595 345h190" class="scene-rule"/>
+      </g>
+    )}
+
+    {layout === "archive" && (
+      <g class="scene archive" transform={`translate(${shift} ${rise})`}>
+        <rect x="150" y="75" width="660" height="370" rx="24" class="scene-cabinet"/>
+        {[115, 225, 335].map((y, i) => <g><rect x={185 + i * 12} y={y} width={590 - i * 24} height="82" rx="12" class="scene-drawer"/><rect x="410" y={y + 23} width="140" height="34" rx="8" class="scene-handle"/></g>)}
+        <path d="M710 102v78M680 141h60" class="scene-ink"/>
+        <rect x="615" y="302" width="155" height="112" rx="8" class="scene-folder"/><path d="M615 302h65l18 25h72" class="scene-folder-tab"/>
+      </g>
+    )}
+
+    {layout === "phone-note" && (
+      <g class="scene phone-note">
+        <rect x={120 + shift} y="70" width="260" height="385" rx="38" class="scene-phone"/><rect x={143 + shift} y="110" width="214" height="285" rx="12" class="scene-paper"/>
+        <circle cx={250 + shift} cy="425" r="14" class="scene-paper"/>
+        <path d={`M180 ${170 + rise}h142M180 ${220 + rise}h112M180 ${270 + rise}h150`} class="scene-rule"/>
+        <path d="M500 105h310a32 32 0 0132 32v105a32 32 0 01-32 32H665l-72 58 16-58H500a32 32 0 01-32-32V137a32 32 0 0132-32z" class="scene-bubble"/>
+        <path d="M540 160h230M540 207h165" class="scene-paper-line"/>
+        <rect x="540" y="360" width="260" height="70" rx="16" class="scene-card"/><path d="M580 395h180" class="scene-ink"/>
+      </g>
+    )}
+
+    {layout === "calendar" && (
+      <g class="scene calendar" transform={`translate(${shift} ${rise})`}>
+        <rect x="145" y="86" width="670" height="365" rx="28" class="scene-paper"/>
+        <path d="M145 175h670M285 86v89M675 86v89" class="scene-calendar-line"/>
+        <circle cx="285" cy="90" r="22" class="scene-ring"/><circle cx="675" cy="90" r="22" class="scene-ring"/>
+        {[0,1,2].map(i => <g><rect x={205 + i * 205} y="225" width="145" height="145" rx="18" class={i === seed % 3 ? "scene-card" : "scene-cell"}/><path d={`M${240 + i * 205} 297l22 22 48-58`} class="scene-check"/></g>)}
+      </g>
+    )}
+
+    {layout === "decision-tree" && (
+      <g class="scene decision-tree">
+        <rect x="365" y={58 + rise} width="230" height="82" rx="20" class="scene-card"/>
+        <path d={`M480 ${140 + rise}v78M480 ${218 + rise}H205M480 ${218 + rise}h275M205 ${218 + rise}v72M480 ${218 + rise}v72M755 ${218 + rise}v72`} class="scene-branch"/>
+        {[90,365,640].map((x,i)=><g><rect x={x + (i-1)*shift} y={290 - (i%2)*rise} width="230" height="135" rx="22" class={i===1?"scene-panel--alt":"scene-panel"}/><circle cx={x+55+(i-1)*shift} cy={340-(i%2)*rise} r="20" class="scene-number-disc"/><text x={x+55+(i-1)*shift} y={348-(i%2)*rise} text-anchor="middle" class="scene-number">{i+1}</text><path d={`M${x+92+(i-1)*shift} ${338-(i%2)*rise}h90M${x+38+(i-1)*shift} ${382-(i%2)*rise}h145`} class="scene-rule"/></g>)}
+      </g>
+    )}
+
+    {layout === "layers" && (
+      <g class="scene layers" transform={`translate(${shift} ${rise})`}>
+        {[0,1,2].map(i => <g transform={`translate(${i*55} ${-i*62})`}><path d="M145 350l280-130 280 130-280 130z" class={`scene-layer scene-layer--${i+1}`}/><path d="M425 220v260" class="scene-layer-line"/></g>)}
+        <path d="M755 122v255" class="scene-divider"/><circle cx="755" cy="105" r="32" class="scene-pin"/><circle cx="755" cy="394" r="32" class="scene-card"/>
+      </g>
+    )}
+
+    {layout === "bridge" && (
+      <g class="scene bridge">
+        <path d="M0 390c140-80 240-55 330 0v130H0zM630 390c100-62 210-75 330 0v130H630z" class="scene-land"/>
+        <path d={`M250 ${383 + rise} Q480 ${105 + rise} 710 ${383 + rise}M315 ${383 + rise}Q480 ${190 + rise}645 ${383 + rise}`} class="scene-bridge"/>
+        <path d="M315 383h330M365 320v63M480 270v113M595 320v63" class="scene-bridge-line"/>
+        <circle cx="160" cy="328" r="55" class="scene-card"/><circle cx="800" cy="328" r="55" class="scene-card"/>
+      </g>
+    )}
+
+    {layout === "temple-yard" && (
+      <g class="scene temple-yard" transform={`translate(${shift} ${rise})`}>
+        <path d="M190 260h580v205H190zM145 260L480 70l335 190z" class="scene-building"/>
+        <path d="M250 260v205M360 260v205M480 260v205M600 260v205M710 260v205" class="scene-building-line"/>
+        <circle cx="120" cy="365" r="55" class="scene-tree"/><path d="M120 365v100" class="scene-trunk"/>
+        <path d="M360 465v-92c0-75 120-75 120 0v92" class="scene-door"/>
+        <path d="M805 330h85v135h-85zM785 330h125l-62-68z" class="scene-sign"/>
+      </g>
+    )}
+
+    {layout === "memory-box" && (
+      <g class="scene memory-box" transform={`translate(${shift} ${rise})`}>
+        <path d="M165 210l315-115 315 115-315 118z" class="scene-box-lid"/>
+        <path d="M165 210v205l315 82 315-82V210L480 328z" class="scene-box"/>
+        <rect x="268" y="70" width="145" height="105" rx="8" transform={`rotate(${-8 + tilt} 340 120)`} class="scene-photo"/><circle cx="340" cy="112" r="22" class="scene-glow--one"/>
+        <rect x="535" y="58" width="155" height="115" rx="8" transform={`rotate(${7 + tilt} 612 115)`} class="scene-paper"/><path d="M565 98h95M565 128h70" class="scene-rule"/>
+      </g>
+    )}
+
+    {layout === "consultation" && (
+      <g class="scene consultation">
+        <rect x="70" y="88" width="290" height="145" rx="28" class="scene-bubble"/><path d="M295 228l45 70-92-65" class="scene-bubble"/>
+        <rect x="600" y="88" width="290" height="145" rx="28" class="scene-bubble scene-bubble--alt"/><path d="M665 228l-45 70 92-65" class="scene-bubble scene-bubble--alt"/>
+        <path d="M120 145h190M120 185h135M650 145h190M705 185h135" class="scene-paper-line"/>
+        <circle cx={365 + shift} cy={350 + rise} r="50" class="scene-face"/><path d={`M285 ${480 + rise}c15-105 145-105 160 0`} class="scene-person"/>
+        <circle cx={595 - shift} cy={350 - rise} r="50" class="scene-face"/><path d={`M515 ${480 - rise}c15-105 145-105 160 0`} class="scene-person"/>
+      </g>
+    )}
+  </svg>
+
+  <div class="illustration-copy">
+    <p class="illustration-kicker">{illustration.label}</p>
+    <ol class="illustration-legend">
+      <li><span>01</span>{illustration.left}</li>
+      <li><span>02</span>{illustration.center}</li>
+      <li><span>03</span>{illustration.right}</li>
+    </ol>
+  </div>
+  <figcaption>{illustration.caption}</figcaption>
+</figure>

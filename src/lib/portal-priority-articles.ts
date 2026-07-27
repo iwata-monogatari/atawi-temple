@@ -27,6 +27,9 @@ export type PriorityLongform = {
     rightX?: number;
     rightY?: number;
     pathD?: string;
+    layout?: string;
+    sceneSeed?: number;
+    accent?: string;
   }[];
 };
 
@@ -842,6 +845,12 @@ function stableNumber(value: string) {
 
 function makeUniqueIllustration(slug: string, index: number, label: string, caption: string, nodes: string[]) {
   const seed = stableNumber(`${slug}-${index}`);
+  const layouts = [
+    "route-map", "document-desk", "timeline", "family-table", "house-check",
+    "comparison", "archive", "phone-note", "calendar", "decision-tree",
+    "layers", "bridge", "temple-yard", "memory-box", "consultation",
+  ];
+  const accents = ["sage", "indigo", "clay", "gold", "sky"];
   const leftX = 145 + (seed % 90);
   const leftY = 145 + ((seed >>> 3) % 120);
   const centerX = 420 + ((seed >>> 7) % 120);
@@ -856,6 +865,9 @@ function makeUniqueIllustration(slug: string, index: number, label: string, capt
     center: nodes[1],
     right: nodes[2],
     compositionId: `${slug}-composition-${index + 1}-${seed.toString(36)}`,
+    layout: layouts[(stableNumber(slug) + (index * 7)) % layouts.length],
+    sceneSeed: seed % 997,
+    accent: accents[(stableNumber(`${index}-${slug}`) >>> 4) % accents.length],
     leftX,
     leftY,
     centerX,

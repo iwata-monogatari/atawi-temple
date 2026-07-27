@@ -89,6 +89,8 @@ if (priorityPortalSlugs.length < 30 || priorityPortalSlugs.length > 50) {
 }
 
 const priorityCompositionIds = new Set();
+const priorityIllustrationLayouts = new Set();
+const prioritySceneSignatures = new Set();
 
 for (const slug of priorityPortalSlugs) {
   const category = slug.replace(/-\d{2}$/, "");
@@ -110,6 +112,7 @@ for (const slug of priorityPortalSlugs) {
     .length);
   const bodyLength = sectionLengths.reduce((total, length) => total + length, 0);
   const compositionIds = [...html.matchAll(/data-composition-id="([^"]+)"/g)].map((match) => match[1]);
+  const illustrationScenes = [...html.matchAll(/data-illustration-layout="([^"]+)"[^>]*data-scene-seed="([^"]+)"/g)];
   const illustrationCount = compositionIds.length;
   if (longformSections.length !== 4) {
     errors.push(`priority portal: ${slug} must have 4 longform sections, found ${longformSections.length}`);
@@ -131,10 +134,24 @@ for (const slug of priorityPortalSlugs) {
     }
     priorityCompositionIds.add(compositionId);
   }
+  for (const scene of illustrationScenes) {
+    priorityIllustrationLayouts.add(scene[1]);
+    const signature = `${scene[1]}:${scene[2]}:${slug}`;
+    if (prioritySceneSignatures.has(signature)) {
+      errors.push(`priority portal: duplicated rich illustration scene ${signature}`);
+    }
+    prioritySceneSignatures.add(signature);
+  }
 }
 
 if (priorityCompositionIds.size !== priorityPortalSlugs.length * 3) {
   errors.push(`priority portal: expected ${priorityPortalSlugs.length * 3} unique illustration compositions, found ${priorityCompositionIds.size}`);
+}
+if (priorityIllustrationLayouts.size < 15) {
+  errors.push(`priority portal: expected 15 rich illustration layouts, found ${priorityIllustrationLayouts.size}`);
+}
+if (prioritySceneSignatures.size !== priorityPortalSlugs.length * 3) {
+  errors.push(`priority portal: expected ${priorityPortalSlugs.length * 3} rich illustration scenes, found ${prioritySceneSignatures.size}`);
 }
 
 if (toyodaHtml) {
