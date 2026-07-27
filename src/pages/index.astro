@@ -329,7 +329,6 @@ const priorityLinkLabels: Record<string, string> = {
         <article class="priority-featured-card">
           <p><span>{String(index + 1).padStart(2, "0")}</span>{article.categoryLabel}</p>
           <h3><a href={`/topics/${article.category}/${article.slug}/`}>{article.title}</a></h3>
-          <p>{article.lead}</p>
           <a class="text-link" href={`/topics/${article.category}/${article.slug}/`}>
             {priorityLinkLabels[article.category] || "確認手順を見る"}
           </a>

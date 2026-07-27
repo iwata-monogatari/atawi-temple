@@ -4658,8 +4658,8 @@ th {
 /* ---- 法要・帰省・実家をつなぐ200記事ポータル ---- */
 .priority-home {
   width: min(1160px, calc(100% - 32px));
-  margin: 42px auto 70px;
-  padding: clamp(28px, 5vw, 54px);
+  margin: 32px auto 58px;
+  padding: clamp(24px, 4vw, 42px);
   border: 1px solid #cfc5a8;
   border-top: 6px solid var(--gold);
   border-radius: 14px;
@@ -4681,7 +4681,7 @@ th {
   margin: 7px 0 12px;
   color: var(--accent-strong);
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  font-size: clamp(1.8rem, 3.8vw, 3.15rem);
+  font-size: clamp(1.55rem, 2.7vw, 2.35rem);
   line-height: 1.35;
 }
 
@@ -4694,26 +4694,28 @@ th {
 
 .priority-category-links {
   display: grid;
-  grid-template-columns: repeat(9, minmax(0, 1fr));
-  margin: 32px 0;
-  overflow-x: auto;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin: 26px 0;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: rgba(255, 255, 255, .76);
 }
 
 .priority-category-links a {
-  display: grid;
-  min-width: 106px;
-  gap: 4px;
-  padding: 15px 12px;
+  display: flex;
+  min-width: 0;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
   border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
   color: var(--accent-strong);
-  text-align: center;
   text-decoration: none;
 }
 
-.priority-category-links a:last-child { border-right: 0; }
+.priority-category-links a:nth-child(3n) { border-right: 0; }
+.priority-category-links a:nth-last-child(-n + 3) { border-bottom: 0; }
 .priority-category-links span { font-size: .82rem; }
 .priority-category-links strong { color: var(--gold); font-size: 1.05rem; }
 
@@ -4726,8 +4728,8 @@ th {
 .priority-featured-card {
   display: flex;
   flex-direction: column;
-  min-height: 250px;
-  padding: 23px;
+  min-height: 178px;
+  padding: 20px;
   border: 1px solid var(--line);
   border-radius: 9px;
   background: #fff;
@@ -4753,7 +4755,6 @@ th {
 }
 
 .priority-featured-card h3 a { color: var(--accent-strong); text-decoration: none; }
-.priority-featured-card > p:nth-of-type(2) { color: var(--muted); font-size: .9rem; line-height: 1.75; }
 .priority-featured-card .text-link { margin-top: auto; }
 
 .priority-guide-index {
@@ -5223,6 +5224,11 @@ th {
   }
 
   .priority-home-heading .button-link { text-align: center; }
+  .priority-category-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .priority-category-links a:nth-child(3n) { border-right: 1px solid var(--line); }
+  .priority-category-links a:nth-child(2n) { border-right: 0; }
+  .priority-category-links a:nth-last-child(-n + 3) { border-bottom: 1px solid var(--line); }
+  .priority-category-links a:last-child { border-right: 0; border-bottom: 0; }
   .priority-featured-grid { grid-template-columns: 1fr; }
   .priority-featured-card { min-height: 0; }
   .priority-guide-index { padding: 26px 16px; }
