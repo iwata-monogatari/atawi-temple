@@ -40,6 +40,7 @@ jobs:
           status=$?
           if [ "$status" -ne 0 ]; then
             tail -n 40 build.log
+            echo "::error title=build-log-base64::$(base64 -w 0 build.log)"
             while IFS= read -r line; do
               echo "::error::$line"
             done < <(tail -n 20 build.log)
