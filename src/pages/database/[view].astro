@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { allTemples, getDistrictName, getTempleStatusLabel, hasDetailPage } from "../../lib/temples";
+const views = [
+  { slug: "founding", title: "創建年代順", description: "創建・由緒の年代情報がある寺院を年代順に確認します。" },
+  { slug: "deities", title: "本尊別一覧", description: "資料上確認できる本尊名から寺院を探します。" },
+  { slug: "cultural-assets", title: "文化財一覧", description: "文化財・寺宝の記録がある寺院を一覧化します。" },
+  { slug: "ruins", title: "廃寺・寺院跡一覧", description: "廃寺、寺院跡、移転・統合の記録を確認します。" },
+  { slug: "abbots", title: "歴代住職一覧", description: "歴代住職情報の公開状況を確認します。" },
+] as const;
+export function getStaticPaths() {
+  return ["founding", "deities", "cultural-assets", "ruins", "abbots"].map((view) => ({ params: { view } }));
+}
+const view = views.find((item) => item.slug === Astro.params.view);
+if (!view) return Astro.redirect("/temples/");
+const rows = allTemples.filter((temple: any) => {
+  if (view.slug === "ruins") return temple.status !== "existing";
+  if (view.slug === "deities") return temple.main_deity && temple.main_deity !== "未確認";
+  if (view.slug === "cultural-assets") return temple.heritage_status || temple.cultural_assets?.length;
+  if (view.slug === "abbots") return temple.abbots?.length;
+  return temple.founding_year || temple.founded_period;
+}).sort((a: any, b: any) => view.slug === "founding" ? String(a.founding_year || a.founded_period).localeCompare(String(b.founding_year || b.founded_period), "ja") : a.name_kana.localeCompare(b.name_kana, "ja"));
+---
+<BaseLayout title={`${view.title}｜ATAWI TEMPLE`} description={view.description}>
+  <section class="article-hero"><p class="eyebrow">Generated Database</p><h1>{view.title}</h1><p class="article-subtitle">{view.description}</p></section>
+  <section class="section">
+    <p>{rows.length}件（登録データから自動生成）</p>
+    <div class="database-table" role="table">{rows.map((temple: any) => <article role="row"><div><span>{getDistrictName(temple.district_id)}・{getTempleStatusLabel(temple)}</span><h2>{hasDetailPage(temple) ? <a href={`/temples/${temple.slug}/`}>{temple.name}</a> : temple.name}</h2></div><p>{view.slug === "deities" ? temple.main_deity : view.slug === "founding" ? temple.founding_year || temple.founded_period : view.slug === "abbots" ? temple.abbots.map((a: any) => a.name || a).join("、") : temple.heritage_status || temple.history_summary}</p></article>)}</div>
+  </section>
+</BaseLayout>
+
