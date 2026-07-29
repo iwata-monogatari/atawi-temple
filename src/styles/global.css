@@ -1713,6 +1713,89 @@ button,
   gap: 16px;
 }
 
+/* 一覧への入口カード。1件ずつ枠でくくり、カード全体を押せるようにする。 */
+.content-card {
+  position: relative;
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  min-height: 132px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  background: var(--paper);
+  padding: 18px 20px;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.content-card h2,
+.content-card h3 {
+  margin: 0;
+  font-size: 1.14rem;
+  line-height: 1.5;
+}
+
+.content-card h2 a,
+.content-card h3 a {
+  color: var(--accent-strong);
+  text-decoration: none;
+}
+
+/* 見出しリンクをカード全面に広げ、枠のどこを押しても遷移できるようにする。 */
+.content-card h2 a::after,
+.content-card h3 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.content-card > p:not(.eyebrow):not(.small) {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.content-card > p.eyebrow,
+.content-card > p.small {
+  margin: 0;
+}
+
+.content-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 6px 16px rgba(32, 32, 29, 0.09);
+  transform: translateY(-2px);
+}
+
+.content-card:hover h2 a,
+.content-card:hover h3 a {
+  text-decoration: underline;
+}
+
+.content-card:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(71, 102, 66, 0.28);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .content-card {
+    transition: none;
+  }
+
+  .content-card:hover {
+    transform: none;
+  }
+}
+
+/* 6件ちょうどなので3列2行で揃える。 */
+.generated-database .card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 .temple-index-section {
   padding-top: 24px;
 }
