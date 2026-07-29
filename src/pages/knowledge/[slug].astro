@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getTempleKnowledge, templeKnowledge } from "../../lib/temple-knowledge";
+export function getStaticPaths() { return templeKnowledge.map((item) => ({ params: { slug: item.slug } })); }
+const article = getTempleKnowledge(Astro.params.slug || "");
+if (!article) return Astro.redirect("/knowledge/");
+---
+<BaseLayout title={`${article.title}｜ATAWI TEMPLE`} description={article.description}>
+  <article class="article-page">
+    <header class="article-hero"><p class="eyebrow">Temple Knowledge</p><h1>{article.title}</h1><p class="article-subtitle">{article.description}</p></header>
+    <div class="article-layout"><main class="article-body">
+      {article.sections.map((section, index) => <section class="article-section"><p class="section-number">{String(index + 1).padStart(2, "0")}</p><h2>{section[0]}</h2><ul class="check-list">{section[1].map((item) => <li>{item}</li>)}</ul></section>)}
+      <section class="article-section sources-panel"><h2>利用上の注意</h2><p>このページは一般的な理解のための資料です。寺院ごとの慣習、墓地規則、費用、手続は異なるため、最終的には菩提寺・墓地管理者・自治体へご確認ください。</p></section>
+    </main></div>
+  </article>
+</BaseLayout>
+
