@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HouyouKiseiBridge from "../../components/HouyouKiseiBridge.astro";
 import RefurbMain from "../../components/RefurbMain.astro";
+import TempleDatabaseSections from "../../components/TempleDatabaseSections.astro";
 import { getRefurbFacts, getGradeLabel } from "../../lib/refurb";
 import {
   allSects,
@@ -406,9 +407,18 @@ const showHouyouBridge = true;
     <section class="temple-fact-band" aria-label="寺院の要点">
       <div><span>宗派</span><strong>{temple.sect}</strong></div>
       <div><span>創建・年代</span><strong class={visibleFoundedPeriod === "調査中" ? "pending-text" : ""}>{visibleFoundedPeriod}</strong></div>
+      <div><span>本尊</span><strong class={deity.pending ? "pending-text" : ""}>{deity.text}</strong></div>
+      <div><span>墓地</span><strong>{"cemetery" in temple ? "情報あり" : "調査中"}</strong></div>
       <div><span>文化財・史跡</span><strong class={visibleHeritageStatus === "調査中" ? "pending-text" : ""}>{visibleHeritageStatus}</strong></div>
       <div><span>所在地</span><strong>{temple.area}・磐田市</strong></div>
     </section>
+
+    <TempleDatabaseSections
+      temple={temple}
+      refurb={refurb}
+      districtName={districtName}
+      hasCulturalAssets={(refurb?.cultural_assets || visibleCulturalAssets).length > 0}
+    />
 
     <section class="section uploaded-photo-section" data-uploaded-temple-photos hidden>
       <div class="section-heading">
@@ -845,3 +855,4 @@ const showHouyouBridge = true;
     )}
   </article>
 </BaseLayout>
+
