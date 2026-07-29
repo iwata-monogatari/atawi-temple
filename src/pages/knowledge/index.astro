@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { templeKnowledge } from "../../lib/temple-knowledge";
+---
+<BaseLayout title="菩提寺・法要・墓の基礎資料｜ATAWI TEMPLE" description="寺院用語、宗派、檀家制度、法要、墓じまい、永代供養を家族で確認するための基礎資料です。">
+  <section class="article-hero">
+    <p class="eyebrow">Temple Knowledge</p>
+    <h1>菩提寺を知るための基礎資料</h1>
+    <p class="article-subtitle">家・先祖・墓・法要について、家族で同じ言葉を使って確認するための入口です。</p>
+  </section>
+  <section class="section">
+    <div class="card-grid">{templeKnowledge.map((item) => <article class="content-card"><h2><a href={`/knowledge/${item.slug}/`}>{item.title}</a></h2><p>{item.description}</p></article>)}</div>
+  </section>
+</BaseLayout>
+
