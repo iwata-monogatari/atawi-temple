@@ -1,0 +1,131 @@
+---
+interface Props {
+  temple: any;
+  refurb?: any;
+  districtName: string;
+  hasCulturalAssets: boolean;
+}
+
+const { temple, refurb, districtName, hasCulturalAssets } = Astro.props;
+const record = { ...temple, ...(refurb || {}) };
+const pending = "調査中（確認できた情報から順次更新します）";
+const text = (...keys: string[]) => {
+  for (const key of keys) {
+    const value = record[key];
+    if (typeof value === "string" && value.trim()) return value;
+  }
+  return pending;
+};
+const list = (...keys: string[]) => {
+  for (const key of keys) {
+    const value = record[key];
+    if (Array.isArray(value) && value.length) return value;
+  }
+  return [];
+};
+const annualServices = list("annual_services") || [];
+const worshipEvents = refurb?.worship_guide?.annual_events || [];
+const services = annualServices.length ? annualServices : worshipEvents;
+const abbots = list("abbots");
+const treasures = list("temple_treasures", "cultural_assets");
+const related = list("related_temples");
+const references = list("references").length ? list("references") : temple.sources || [];
+const cemetery = record.cemetery;
+const cemeteryKnown = cemetery && (typeof cemetery === "string" || Object.keys(cemetery).length);
+const dankaArea = text("danka_area");
+const community = record.community?.body || (record.danka_info?.community_role ? [record.danka_info.community_role] : []);
+const principalMeaning = record.principal_image?.meaning || record.sect_deity?.intro;
+const principalOrigin = record.principal_image?.origin;
+const principalLocation = record.principal_image?.location;
+---
+
+<nav class="temple-page-toc" aria-label="ページ内目次">
+  <strong>この寺院の記録</strong>
+  <a href="#overview">寺院概要</a>
+  <a href="#history">沿革</a>
+  <a href="#abbots">歴代住職</a>
+  <a href="#principal-image">本尊</a>
+  <a href="#treasures">寺宝・文化財</a>
+  <a href="#annual-services">年中法要</a>
+  <a href="#cemetery">墓地情報</a>
+  <a href="#danka-area">檀家地域</a>
+  <a href="#community">地域との関係</a>
+  <a href="#related-temples">周辺寺院との関係</a>
+  <a href="#references">出典</a>
+</nav>
+
+<section id="overview" class="temple-db-section">
+  <p class="section-number">Database 01</p>
+  <h2>寺院概要</h2>
+  <dl class="temple-db-grid">
+    <div><dt>山号</dt><dd>{text("mountain_name", "sango")}</dd></div>
+    <div><dt>院号</dt><dd>{text("in_name", "ingo")}</dd></div>
+    <div><dt>寺号</dt><dd>{temple.name}</dd></div>
+    <div><dt>宗派</dt><dd>{temple.sect}</dd></div>
+    <div><dt>本尊</dt><dd>{text("main_deity")}</dd></div>
+    <div><dt>創建</dt><dd>{text("founding_year", "founded_period")}</dd></div>
+    <div><dt>開山</dt><dd>{text("founder", "kaizan")}</dd></div>
+    <div><dt>開基</dt><dd>{text("patron", "kaiki")}</dd></div>
+    <div><dt>所在地</dt><dd>{temple.address}</dd></div>
+    <div><dt>地区</dt><dd>{districtName}</dd></div>
+  </dl>
+</section>
+
+<section id="history" class="temple-db-section">
+  <p class="section-number">Database 02</p><h2>沿革</h2>
+  {(record.history_sections || record.historical_sections || []).length ? (
+    <div class="history-timeline">{(record.history_sections || record.historical_sections).map((item: any) => <article><h3>{item.heading || item.year || "記録"}</h3><p>{item.body || item.summary}</p></article>)}</div>
+  ) : <p class="pending-text">{text("history", "history_summary")}</p>}
+</section>
+
+<section id="abbots" class="temple-db-section">
+  <p class="section-number">Database 03</p><h2>歴代住職</h2>
+  {abbots.length ? <ul class="record-list">{abbots.map((item: any) => <li><strong>{item.name || item}</strong>{item.role && <span>{item.role}</span>}{item.note && <p>{item.note}</p>}</li>)}</ul> : <p class="pending-text">{pending}</p>}
+</section>
+
+<section id="principal-image" class="temple-db-section">
+  <p class="section-number">Database 04</p><h2>本尊</h2>
+  <dl class="temple-db-grid">
+    <div><dt>本尊名</dt><dd>{text("main_deity")}</dd></div>
+    <div><dt>宗教的意味</dt><dd>{principalMeaning || pending}</dd></div>
+    <div><dt>由来</dt><dd>{principalOrigin || pending}</dd></div>
+    <div><dt>安置場所</dt><dd>{principalLocation || pending}</dd></div>
+  </dl>
+</section>
+
+<section id="treasures" class="temple-db-section">
+  <p class="section-number">Database 05</p><h2>寺宝・文化財</h2>
+  {treasures.length ? <div class="heritage-list">{treasures.map((item: any) => <article><div><span>{item.designation || "指定状況調査中"}</span><h3>{item.name || item}</h3></div>{item.summary && <p>{item.summary}</p>}</article>)}</div> : <p class="pending-text">{hasCulturalAssets ? "既存の文化財欄をご覧ください。" : pending}</p>}
+</section>
+
+<section id="annual-services" class="temple-db-section">
+  <p class="section-number">Database 06</p><h2>年中法要</h2>
+  {services.length ? <ul class="record-list">{services.map((item: any) => <li><strong>{item.name || item}</strong>{item.timing && <span>{item.timing}</span>}<p>{item.participation || item.note || "一般参加可否は寺院へご確認ください。"}</p></li>)}</ul> : <p class="pending-text">{pending}</p>}
+</section>
+
+<section id="cemetery" class="temple-db-section">
+  <p class="section-number">Database 07</p><h2>墓地情報</h2>
+  {cemeteryKnown ? <p>{typeof cemetery === "string" ? cemetery : cemetery.summary || pending}</p> : <p class="pending-text">{pending}</p>}
+  <p class="small">一般墓・永代供養墓・納骨堂・樹木葬・合祀墓の有無、檀家条件・宗派条件は、寺院の公式情報または寺院へ直接ご確認ください。</p>
+</section>
+
+<section id="danka-area" class="temple-db-section">
+  <p class="section-number">Database 08</p><h2>檀家地域</h2><p class={dankaArea === pending ? "pending-text" : ""}>{dankaArea}</p>
+</section>
+
+<section id="community" class="temple-db-section">
+  <p class="section-number">Database 09</p><h2>地域との関係</h2>
+  {community.length ? community.map((paragraph: string) => <p>{paragraph}</p>) : <p class="pending-text">{pending}</p>}
+</section>
+
+<section id="related-temples" class="temple-db-section">
+  <p class="section-number">Database 10</p><h2>周辺寺院との関係</h2>
+  {related.length ? <ul class="record-list">{related.map((item: any) => <li><strong>{item.name || item}</strong>{item.relation && <span>{item.relation}</span>}</li>)}</ul> : <p class="pending-text">{pending}</p>}
+</section>
+
+<section id="references" class="temple-db-section">
+  <p class="section-number">Database 11</p><h2>出典・更新記録</h2>
+  <ol class="source-records">{references.map((source: any) => <li><span>{source.type || "資料"}</span>{source.url ? <a href={source.url}>{source.title}</a> : <strong>{source.title || source}</strong>}{source.note && <p>{source.note}</p>}</li>)}</ol>
+  <p class="small">最終更新日 {(record.last_updated || record.last_verified_at || temple.last_verified_at).replaceAll("-", ".")}</p>
+</section>
+
