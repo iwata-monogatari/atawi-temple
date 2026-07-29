@@ -8,6 +8,7 @@ import {
   getDistrictBySlug,
   getSectGroupName,
   getTempleMediaBySlug,
+  getTempleStatusLabel,
   getTemplesByDistrictId,
   hasDetailPage,
 } from "../../lib/temples";
@@ -106,6 +107,18 @@ const templeGroups = [
   { kind: "pending", heading: "現地確認待ち", note: "現地での痕跡確認ができておらず、検索記録として掲載しています。", temples: unresearchedTemples },
   { kind: "withheld", heading: "掲載見合わせ", note: "関係者からの意思表示を受け、写真掲載を見合わせている寺院です。", temples: bottomListedTemples },
 ].filter((group) => group.temples.length > 0);
+const alphabeticalTemples = [...detailedTemples].sort((a, b) => a.name_kana.localeCompare(b.name_kana, "ja"));
+const foundedTemples = [...detailedTemples]
+  .filter((temple: any) => temple.founding_year || temple.founded_period)
+  .sort((a: any, b: any) => String(a.founding_year || a.founded_period).localeCompare(String(b.founding_year || b.founded_period), "ja"));
+const sectGroups = Array.from(detailedTemples.reduce((map, temple) => {
+  const sect = getSectGroupName(temple.sect);
+  map.set(sect, [...(map.get(sect) || []), temple]);
+  return map;
+}, new Map<string, Temple[]>())).sort((a, b) => b[1].length - a[1].length);
+const ruins = temples.filter((temple) => temple.status !== "existing");
+const areaCulturalAssets = detailedTemples.filter((temple: any) => temple.heritage_status || temple.cultural_assets?.length);
+const historicalPeriods = ["奈良", "平安", "鎌倉", "室町", "江戸", "明治", "昭和", "令和"];
 ---
 
 <BaseLayout
@@ -333,6 +346,29 @@ const templeGroups = [
     </div>
   </section>
 
+  <section class="section district-database" aria-labelledby="district-database-title">
+    <div class="section-heading"><div><p class="eyebrow">District Database</p><h2 id="district-database-title">{district.name}地区の寺院資料</h2></div></div>
+    <div class="district-db-block">
+      <h3>地区寺院一覧</h3>
+      <details open><summary>宗派別</summary>{sectGroups.map(([sect, items]) => <p><strong>{sect}</strong>　{items.map((item) => item.name).join("、")}</p>)}</details>
+      <details><summary>創建年代順</summary>{foundedTemples.length ? <ol>{foundedTemples.map((item: any) => <li><a href={`/temples/${item.slug}/`}>{item.name}</a> — {item.founding_year || item.founded_period}</li>)}</ol> : <p class="pending-text">創建年代を調査中です。</p>}</details>
+      <details><summary>五十音順</summary><p>{alphabeticalTemples.map((item) => item.name).join("、")}</p></details>
+    </div>
+    <div class="district-db-block">
+      <h3>地区の寺院史</h3>
+      <div class="period-grid">{historicalPeriods.map((period) => <article><strong>{period}</strong><p class="pending-text">資料確認中</p></article>)}</div>
+      <p>{district.description}</p>
+    </div>
+    <div class="district-db-block">
+      <h3>廃寺・寺院跡・移転寺院</h3>
+      {ruins.length ? <ul>{ruins.map((item) => <li><strong>{item.name}</strong>　{getTempleStatusLabel(item)}・{item.address}</li>)}</ul> : <p class="pending-text">現在の登録データでは該当記録がありません。旧村資料を継続調査します。</p>}
+    </div>
+    <div class="district-db-block">
+      <h3>寺院関連文化財</h3>
+      {areaCulturalAssets.length ? <ul>{areaCulturalAssets.map((item: any) => <li><a href={`/temples/${item.slug}/#treasures`}>{item.name}</a>　{item.heritage_status || `${item.cultural_assets.length}件の記録`}</li>)}</ul> : <p class="pending-text">文化財記録を調査中です。</p>}
+    </div>
+  </section>
+
   <section id="area-temple-list" class="section area-results-section">
     <div class="area-results-heading">
       <div>
@@ -393,3 +429,4 @@ const templeGroups = [
     <a class="button-link" href="/areas/">9地区一覧へ戻る</a>
   </section>
 </BaseLayout>
+
