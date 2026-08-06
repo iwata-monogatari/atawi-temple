@@ -35,6 +35,21 @@ export type PortalArticle = {
   cta: "weak" | "medium" | "strong";
   updated: string;
   longform?: PriorityLongform;
+  contentType: "guide";
+  journeyStage: 1 | 2 | 3 | 4 | 5 | 6;
+  journeyType: "bodaiji" | "houyou" | "haka" | "butsudan" | "family" | "jikka";
+};
+
+const journeyByCategory: Record<PortalCategoryKey, Pick<PortalArticle, "journeyStage" | "journeyType">> = {
+  bodaiji: { journeyStage: 1, journeyType: "bodaiji" },
+  houyou: { journeyStage: 2, journeyType: "houyou" },
+  kisei: { journeyStage: 2, journeyType: "houyou" },
+  ohaka: { journeyStage: 3, journeyType: "haka" },
+  butsudan: { journeyStage: 4, journeyType: "butsudan" },
+  "kazoku-kaigi": { journeyStage: 5, journeyType: "family" },
+  jikka: { journeyStage: 6, journeyType: "jikka" },
+  akiya: { journeyStage: 6, journeyType: "jikka" },
+  "jikka-karute": { journeyStage: 6, journeyType: "jikka" },
 };
 
 const sourceSets: Record<PortalCategoryKey, PortalArticle["sources"]> = {
@@ -330,6 +345,8 @@ const draftArticles = categoryOrder.flatMap((category) => {
     sources: sourceSets[category],
     cta: category === "jikka-karute" ? "strong" : definition.position >= 6 ? "medium" : "weak",
     updated: "2026-07-27",
+    contentType: "guide",
+    ...journeyByCategory[category],
   }));
 });
 
@@ -339,6 +356,8 @@ export const portalArticles: PortalArticle[] = draftArticles.map((article, globa
   const priorityOverride = priorityPortalOverrides[article.slug];
   return {
     ...article,
+    contentType: "guide",
+    ...journeyByCategory[article.category],
     ...(priorityOverride || {}),
     longform: priorityOverride
       ? buildPriorityLongformV2(article.slug, article.title, article.category, priorityOverride)
@@ -366,4 +385,20 @@ export function getPortalCategory(category: string) {
 
 export function getPortalArticlesByCategory(category: string) {
   return portalArticles.filter((article) => article.category === category);
+}
+
+export function getNextJourneyArticles(article: PortalArticle, limit = 3) {
+  const explicitNext = article.next
+    ? portalArticles.find((candidate) => `/topics/${candidate.category}/${candidate.slug}/` === article.next?.href)
+    : undefined;
+  const nextStage = Math.min(article.journeyStage + 1, 6);
+  const candidates = [
+    explicitNext,
+    ...portalArticles.filter((candidate) => candidate.journeyStage === nextStage),
+    ...portalArticles.filter((candidate) => candidate.journeyType === article.journeyType),
+  ]
+    .filter((candidate): candidate is PortalArticle => candidate !== undefined)
+    .filter((candidate) => candidate.slug !== article.slug);
+
+  return candidates.filter((candidate, index) => candidates.findIndex((item) => item.slug === candidate.slug) === index).slice(0, limit);
 }

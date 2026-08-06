@@ -167,8 +167,8 @@ const structuredData = [
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "ホーム", item: `${siteUrl}/` },
-      { "@type": "ListItem", position: 2, name: "地区から探す", item: `${siteUrl}/areas/` },
+      { "@type": "ListItem", position: 1, name: "HOME", item: `${siteUrl}/` },
+      { "@type": "ListItem", position: 2, name: "寺院を探す", item: `${siteUrl}/search/` },
       { "@type": "ListItem", position: 3, name: `${districtName}地区の寺院`, item: `${siteUrl}${districtUrl}` },
       { "@type": "ListItem", position: 4, name: temple.name, item: `${siteUrl}/temples/${temple.slug}/` },
     ],
@@ -268,8 +268,8 @@ const showHouyouBridge = true;
     )}
     <header class="temple-masthead">
       <nav class="breadcrumbs" aria-label="パンくず">
-        <a href="/">ホーム</a>
-        <a href="/areas/">地区から探す</a>
+        <a href="/">HOME</a>
+        <a href="/search/">寺院を探す</a>
         <a href={districtUrl}>{districtName}地区の寺院</a>
         <span aria-current="page">{temple.name}</span>
       </nav>
@@ -301,28 +301,6 @@ const showHouyouBridge = true;
         <a class="button-link secondary-button" href="/temples/">寺院一覧へ戻る</a>
       </div>
     </header>
-
-    {templeResearchArticles.length > 0 && (
-      <section class="temple-basic-panel" aria-label={`${temple.name}の研究論文`}>
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">ATAWI TEMPLE RESEARCH</p>
-            <h2>{temple.name}の研究論文</h2>
-          </div>
-          <a href="/research/">研究論文一覧</a>
-        </div>
-        <div class="card-grid">
-          {templeResearchArticles.map((article) => (
-            <article class="content-card">
-              <p class="eyebrow">{article.series}</p>
-              <h3><a href={`/research/${article.slug}/`}>{article.title}</a></h3>
-              <p>{article.description}</p>
-              <p class="small">{article.verificationStatus}・更新 {article.updated.replaceAll("-", ".")}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-    )}
 
     <section class="temple-basic-panel" aria-label="寺院の基本情報と確認状況">
       <div class="section-heading">
@@ -645,6 +623,39 @@ const showHouyouBridge = true;
           </ol>
         </section>
         </>
+        )}
+
+        <section class="temple-family-panel" aria-labelledby="temple-family-title">
+          <p class="eyebrow">For Families</p>
+          <h2 id="temple-family-title">このお寺が菩提寺のご家族へ</h2>
+          <p>菩提寺の名前や場所が確認できたら、それだけで終わりではありません。</p>
+          <p>法要やお墓について、家族の中で誰が情報を持っているのかも確認しておくと、将来困ることが少なくなります。親が元気なうちに、次のことを家族で確認しておくことをおすすめします。</p>
+          <ul class="temple-family-checks">
+            <li>お墓の場所</li><li>墓地の区画</li><li>次回の法要</li><li>仏壇の場所</li><li>位牌の有無</li>
+            <li>お寺からの連絡を受ける人</li><li>お寺の連絡先</li><li>墓や仏壇を将来誰が引き継ぐか</li><li>実家の名義</li><li>実家を今後誰が管理するか</li>
+          </ul>
+          <a class="button-link" href="/guide/family-checklist/" data-track-click="family_check_click">家族で確認しておきたいことを見る →</a>
+        </section>
+
+        <section class="temple-next-panel" aria-labelledby="temple-next-title">
+          <p class="eyebrow">Next Step</p>
+          <h2 id="temple-next-title">次に確認しておきたいこと</h2>
+          <div class="family-guide-actions">
+            <a href="/topics/bodaiji/bodaiji-02/" data-track-click="next_guide_click">菩提寺が分からないときの調べ方</a>
+            <a href="/topics/houyou/houyou-01/" data-track-click="next_guide_click">法要準備の最初の確認順序</a>
+            <a href="/topics/ohaka/ohaka-01/" data-track-click="next_guide_click">お墓の場所を家族で共有する</a>
+          </div>
+        </section>
+
+        {templeResearchArticles.length > 0 && (
+          <section class="temple-related-research" aria-labelledby="temple-research-title">
+            <div class="section-heading"><div><p class="eyebrow">Research</p><h2 id="temple-research-title">この寺院に関する調査・研究</h2></div><a href="/research/">研究・地域史を見る</a></div>
+            <div class="card-grid">
+              {templeResearchArticles.slice(0, 3).map((article) => (
+                <article class="content-card"><p class="eyebrow">{article.series}</p><h3><a href={`/research/${article.slug}/`}>{article.title}</a></h3><p>{article.description}</p></article>
+              ))}
+            </div>
+          </section>
         )}
 
       </main>

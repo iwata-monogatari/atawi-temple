@@ -23,6 +23,8 @@ const staticPaths = [
   "/privacy/",
   "/topics/",
   "/jikka-karute/",
+  "/guide/family-checklist/",
+  "/guide/jikka-information/",
 ];
 
 export const GET: APIRoute = ({ site }) => {
