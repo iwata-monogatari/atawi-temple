@@ -151,7 +151,7 @@ const iwataMonogatariBannerImage = "/assets/temples/kokubunji-mitsuke/hondo.webp
       <span class="hero-rule" aria-hidden="true"></span>
       <h1>磐田市の菩提寺・お寺を調べる</h1>
       <p class="brand-name">ATAWI TEMPLE</p>
-      <p class="hero-support-copy">寺院名、読み方、住所、地区、宗派から検索できます。運営：磐田市の富士ヶ丘サービス株式会社</p>
+      <p class="hero-support-copy">寺院名、読み方、住所、地区、宗派から検索できます。家族へ引き継ぐための寺院・法要・墓・仏壇の情報を整理しています。</p>
       {firstHeroSlide && (
         <div class="hero-photo-meta" aria-live="polite">
           <a id="hero-slide-link" href={firstHeroSlide.href} data-track-click="temple_detail_click">
@@ -260,6 +260,33 @@ const iwataMonogatariBannerImage = "/assets/temples/kokubunji-mitsuke/hondo.webp
     </script>
   </section>
 
+  <section class="section home-purpose-entries" aria-labelledby="home-purpose-title">
+    <p class="eyebrow">What do you need?</p>
+    <h2 id="home-purpose-title">知りたいことから選ぶ</h2>
+    <div class="home-purpose-grid">
+      <article><span>01</span><h3>菩提寺・お寺を探したい</h3><p>寺院名、地区、宗派、住所、本尊などから磐田市のお寺を探せます。</p><a class="button-link" href="/search/" data-track-click="temple_search">菩提寺・お寺を探す</a></article>
+      <article><span>02</span><h3>法要・墓・仏壇について調べたい</h3><p>法要の準備、お墓、仏壇、お寺との付き合いなど、家族が確認しておきたいことをまとめています。</p><a class="button-link" href="/topics/#priority-guides">家族のためのガイドを見る</a></article>
+      <article><span>03</span><h3>実家の菩提寺がわからない</h3><p>親から詳しく聞いていない、寺の名前を忘れた、墓は分かるがお寺が分からない場合の確認方法を案内します。</p><a class="button-link" href="/topics/bodaiji/bodaiji-02/">菩提寺の調べ方を見る</a></article>
+    </div>
+  </section>
+
+  <section class="section home-search-panel" aria-labelledby="home-search-title">
+    <div><p class="eyebrow">Temple Search</p><h2 id="home-search-title">寺院を検索する</h2><p>寺院名・地区・宗派・住所・本尊から検索できます。</p></div>
+    <form action="/search/" method="get"><label for="journey-q">寺院名・読み方・住所・宗派・本尊</label><div><input id="journey-q" name="q" type="search" placeholder="例：見付、曹洞宗、観音菩薩" /><button type="submit" data-track-click="temple_search">検索する</button></div></form>
+  </section>
+
+  <section class="section home-concerns" aria-labelledby="home-concerns-title">
+    <p class="eyebrow">Family Questions</p><h2 id="home-concerns-title">こんなことで困っていませんか？</h2>
+    <div class="home-concern-grid">
+      <a href="/topics/bodaiji/bodaiji-02/">実家の菩提寺がわからない</a>
+      <a href="/topics/houyou/houyou-01/">法要で何を準備すればいいかわからない</a>
+      <a href="/topics/ohaka/ohaka-01/">お墓のことを親から聞いていない</a>
+      <a href="/topics/butsudan/butsudan-15/">仏壇を将来どうするか決まっていない</a>
+      <a href="/guide/family-checklist/">お寺からの連絡を誰が受けているかわからない</a>
+      <a href="/guide/jikka-information/">実家を今後誰が管理するのかわからない</a>
+    </div>
+  </section>
+
   <section class="proof-band" aria-label="登録状況">
     <article>
       <strong>{allTemples.length}</strong>
@@ -282,26 +309,7 @@ const iwataMonogatariBannerImage = "/assets/temples/kokubunji-mitsuke/hondo.webp
     <a class="button-link" href="/topics/#priority-guides">50の重点ガイドを見る</a>
   </section>
 
-  <section class="section atawi-purpose" aria-labelledby="atawi-purpose-title">
-    <p class="eyebrow">About ATAWI TEMPLE</p>
-    <h2 id="atawi-purpose-title">菩提寺を知ることは、家の歴史を知ることである。</h2>
-    <p>
-      ATAWI TEMPLEは観光案内ではありません。磐田市の檀家・門徒とその家族が、
-      菩提寺、先祖、墓、法要、地域史を調べ、次の世代へ伝えるための寺院データベースです。
-    </p>
-    <div class="area-capability-grid">
-      <a href="/temples/"><span>磐田市全寺院の記録</span><strong>現存寺院・廃寺・寺院跡を確認</strong></a>
-      <a href="/areas/"><span>地域文化の保存</span><strong>9地区の寺院史から調べる</strong></a>
-      <a href="/knowledge/"><span>菩提寺と家族への継承</span><strong>用語・法要・墓の基礎資料</strong></a>
-    </div>
-  </section>
-
   <section class="discovery-actions" aria-label="基本の探し方">
-    <a class="discovery-card" href="/research/" data-track-click="research_index_click">
-      <span>研究論文を読む</span>
-      <strong>ATAWI TEMPLE 研究論文一覧</strong>
-      <em>磐田の寺院史・文化財・地域社会を、出典に基づく論文で読む</em>
-    </a>
     <a class="discovery-card publication-card" href="/book/otera-owakon/" data-track-click="book_preview_click">
       <img
         src="/assets/books/otera-owakon/pages/page-01.webp"
@@ -611,6 +619,15 @@ const iwataMonogatariBannerImage = "/assets/temples/kokubunji-mitsuke/hondo.webp
   </script>
 
   <section class="section">
+    <section class="atawi-purpose" aria-labelledby="atawi-purpose-title">
+      <p class="eyebrow">About ATAWI TEMPLE</p>
+      <h2 id="atawi-purpose-title">菩提寺を知ることは、家の歴史を知ることである。</h2>
+      <p>ATAWI TEMPLEは観光案内ではありません。磐田市の檀家・門徒とその家族が、菩提寺、先祖、墓、法要、地域史を調べ、次の世代へ伝えるための地域データベースです。</p>
+      <div class="area-capability-grid"><a href="/temples/"><span>磐田市全寺院の記録</span><strong>現存寺院・廃寺・寺院跡を確認</strong></a><a href="/areas/"><span>地域文化の保存</span><strong>9地区の寺院史から調べる</strong></a><a href="/knowledge/"><span>家族への継承</span><strong>用語・法要・墓の基礎資料</strong></a></div>
+    </section>
+    <section class="home-research-entry">
+      <p class="eyebrow">Research & Local History</p><h2>磐田の寺院をもっと深く知る</h2><p>地域史・寺院史・史料調査など、ATAWI TEMPLEの調査成果を公開しています。</p><a href="/research/" data-track-click="research_index_click">研究・地域史を見る →</a>
+    </section>
     <div class="info-grid">
       <div class="info-box">
         <h2>現在の掲載範囲</h2>

@@ -5673,3 +5673,130 @@ th {
 .period-grid article { padding: .75rem; background: #f6f3eb; }
 @media (max-width: 720px) { .period-grid { grid-template-columns: repeat(2, 1fr); } }
 
+/* ---- 家族情報ジャーニー ---- */
+.home-purpose-entries,
+.home-search-panel,
+.home-concerns,
+.family-guide-page {
+  max-width: 1180px;
+  margin-inline: auto;
+}
+
+.home-purpose-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.home-purpose-grid article,
+.family-check-grid article {
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.home-purpose-grid article > span,
+.family-check-grid article > span {
+  color: var(--gold);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.home-purpose-grid h3 { margin: 10px 0; font-size: 1.22rem; }
+.home-purpose-grid p { margin: 0 0 22px; color: var(--muted); line-height: 1.8; }
+.home-purpose-grid .button-link { margin-top: auto; min-height: 48px; }
+
+.home-search-panel {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  gap: 36px;
+  align-items: end;
+  border-block: 1px solid var(--line);
+}
+.home-search-panel form, .home-search-panel form > div { display: grid; gap: 8px; }
+.home-search-panel form > div { grid-template-columns: 1fr auto; }
+.home-search-panel input { min-height: 50px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 4px; font: inherit; }
+.home-search-panel button { min-height: 50px; padding: 10px 26px; border: 0; border-radius: 4px; background: var(--accent); color: #fff; font: inherit; font-weight: 700; }
+
+.home-concern-grid,
+.family-guide-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.home-concern-grid a,
+.family-guide-actions a {
+  min-height: 48px;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: #fff;
+  color: var(--accent-strong);
+  font-weight: 650;
+  text-decoration: none;
+}
+.home-concern-grid a::before { content: "□"; margin-right: 9px; color: var(--gold); }
+.home-research-entry { margin: 0 0 34px; padding: 26px; border: 1px solid var(--line); background: var(--surface); }
+
+.temple-family-panel,
+.temple-next-panel,
+.temple-related-research,
+.family-guide-note,
+.family-guide-cta,
+.journey-next,
+.research-related-temple {
+  margin-top: 28px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+.temple-family-panel { border-left: 5px solid var(--accent); background: #f7f8f2; }
+.temple-family-checks,
+.family-check-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 20px;
+  margin: 22px 0;
+  padding: 0;
+  list-style: none;
+}
+.temple-family-checks li::before,
+.family-check-list li::before { content: "□"; margin-right: 8px; color: var(--gold); }
+.journey-next ol { display: grid; gap: 10px; padding-left: 1.5rem; }
+.journey-next a { font-weight: 700; }
+
+.family-guide-page { padding: 34px 24px 90px; }
+.family-guide-hero { max-width: 840px; padding: 48px 0 30px; }
+.family-guide-hero h1 { font-size: clamp(2rem, 5vw, 3.3rem); line-height: 1.35; }
+.family-guide-hero p { color: var(--muted); font-size: 1.05rem; line-height: 2; }
+.family-check-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.family-check-grid h2 { margin: 8px 0; font-size: 1.15rem; }
+.family-check-grid p { margin: 0; color: var(--muted); }
+.family-guide-cta { border-color: var(--accent); background: #f7f8f2; }
+
+@media (max-width: 720px) {
+  .home-purpose-grid,
+  .home-search-panel,
+  .home-search-panel form > div,
+  .home-concern-grid,
+  .family-check-grid,
+  .temple-family-checks,
+  .family-check-list,
+  .family-guide-actions { grid-template-columns: 1fr; }
+  .home-purpose-grid article { padding: 22px 18px; }
+  .home-purpose-grid .button-link,
+  .home-search-panel button,
+  .family-guide-cta .button-link,
+  .temple-family-panel .button-link { width: 100%; min-height: 52px; }
+  .temple-family-panel,
+  .temple-next-panel,
+  .temple-related-research,
+  .family-guide-note,
+  .family-guide-cta,
+  .journey-next { padding: 22px 17px; }
+}

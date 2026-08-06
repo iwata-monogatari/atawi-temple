@@ -21,8 +21,8 @@ const structuredData = [
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "寺院", item: `${siteUrl}/temples/` },
-      { "@type": "ListItem", position: 2, name: "法要・帰省・実家ガイド", item: `${siteUrl}/topics/` },
+      { "@type": "ListItem", position: 1, name: "HOME", item: `${siteUrl}/` },
+      { "@type": "ListItem", position: 2, name: "家族のためのガイド", item: `${siteUrl}/topics/` },
       { "@type": "ListItem", position: 3, name: category.label, item: `${siteUrl}/topics/${category.key}/` },
     ],
   },
@@ -43,8 +43,8 @@ const structuredData = [
 >
   <article class="portal-index">
     <nav class="breadcrumbs" aria-label="パンくず">
-      <a href="/temples/">寺院</a><span>›</span>
-      <a href="/topics/">法要・帰省・実家ガイド</a><span>›</span>
+      <a href="/">HOME</a><span>›</span>
+      <a href="/topics/">家族のためのガイド</a><span>›</span>
       <span>{category.label}</span>
     </nav>
     <header class="portal-hero portal-hero--compact">

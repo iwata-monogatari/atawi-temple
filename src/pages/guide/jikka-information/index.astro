@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+const siteUrl = "https://temple.atawi.link";
+const checks = ["所有者", "名義", "土地・建物", "固定資産税", "火災保険", "鍵", "電気", "水道", "家財", "仏壇", "墓", "境界", "管理する人"];
+const breadcrumbItems = [
+  { name: "HOME", item: `${siteUrl}/` },
+  { name: "家族のためのガイド", item: `${siteUrl}/topics/` },
+  { name: "家族で確認しておきたいこと", item: `${siteUrl}/guide/family-checklist/` },
+  { name: "実家について確認すること", item: `${siteUrl}/guide/jikka-information/` },
+];
+const structuredData = [
+  { "@context": "https://schema.org", "@type": "Article", headline: "実家について家族で確認しておきたいこと", description: "売却や処分を決める前に、実家について家族が確認しておきたい情報を整理するガイドです。", author: { "@type": "Organization", name: "ATAWI TEMPLE編集部" } },
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: breadcrumbItems.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.name, item: item.item })) },
+];
+---
+
+<BaseLayout title="実家について家族で確認しておきたいこと｜ATAWI TEMPLE" description="今すぐ売却や処分を決めず、実家の名義、土地・建物、税、保険、鍵、仏壇、墓、管理する人を家族で整理するためのガイドです。" structuredData={structuredData} ogType="article">
+  <article class="family-guide-page">
+    <nav class="breadcrumbs" aria-label="パンくず"><a href="/">HOME</a><span>›</span><a href="/topics/">家族のためのガイド</a><span>›</span><a href="/guide/family-checklist/">家族で確認すること</a><span>›</span><span>実家について確認すること</span></nav>
+    <header class="family-guide-hero">
+      <p class="eyebrow">Home Information</p>
+      <h1>実家について家族で確認しておきたいこと</h1>
+      <p>お寺やお墓について確認していくと、最後に残るのが「実家をこれから誰が管理するのか」という問題です。</p>
+      <p>今すぐ売却や処分を決める必要はありません。まずは家について分かっている情報を整理しておくことが大切です。</p>
+    </header>
+    <section class="family-guide-note">
+      <h2>まず確認する13項目</h2>
+      <ul class="family-check-list">{checks.map((item) => <li>{item}</li>)}</ul>
+      <p>氏名、住所、口座番号などの詳しい個人情報は公開せず、書類の種類と保管場所だけを家族内で共有します。</p>
+    </section>
+    <section class="family-guide-cta">
+      <p class="eyebrow">Jikka Karte</p>
+      <h2>実家の情報を整理する</h2>
+      <p>売却を決めていなくても利用できます。まずは実家について分かっている情報を整理するためのサービスです。入力内容は端末のブラウザ内だけに保存されます。</p>
+      <a class="button-link" href="/jikka-karute/" data-track-click="jikka_karte_click">実家について分かっていることを確認する</a>
+    </section>
+  </article>
+</BaseLayout>

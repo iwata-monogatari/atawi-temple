@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+const siteUrl = "https://temple.atawi.link";
+const checks = [
+  ["菩提寺", "寺院名、所在地、宗派、連絡先と、連絡を受ける家族"],
+  ["お墓", "墓地名、区画、管理者、使用者、納骨されている方"],
+  ["法要", "次回の年忌、菩提寺への連絡時期、家族の担当"],
+  ["仏壇", "置かれている場所、引き継ぐ人、移動前の相談先"],
+  ["位牌", "誰の位牌か、文字の記録、過去帳との照合"],
+  ["親族の連絡先", "法要や緊急時に連絡する人と連絡順"],
+  ["実家", "鍵、電気、水道、保険、日常の管理をする人"],
+  ["土地", "所在地、境界について分かる資料、管理状況"],
+  ["名義", "土地・建物・墓地について確認できる書類の所在"],
+  ["大切な書類", "固定資産税、保険、登記関係書類の保管場所"],
+];
+const breadcrumbItems = [
+  { name: "HOME", item: `${siteUrl}/` },
+  { name: "家族のためのガイド", item: `${siteUrl}/topics/` },
+  { name: "家族で確認しておきたいこと", item: `${siteUrl}/guide/family-checklist/` },
+];
+const structuredData = [
+  { "@context": "https://schema.org", "@type": "Article", headline: "親が元気なうちに家族で確認しておきたいこと", description: "菩提寺、お墓、法要、仏壇、位牌、実家について、親が元気なうちに家族で確認する項目を整理したガイドです。", author: { "@type": "Organization", name: "ATAWI TEMPLE編集部" } },
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: breadcrumbItems.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.name, item: item.item })) },
+];
+---
+
+<BaseLayout title="親が元気なうちに家族で確認しておきたいこと｜ATAWI TEMPLE" description="菩提寺、お墓、法要、仏壇、位牌、実家について、親が元気なうちに家族で確認する項目を順番に整理します。" structuredData={structuredData} ogType="article">
+  <article class="family-guide-page">
+    <nav class="breadcrumbs" aria-label="パンくず"><a href="/">HOME</a><span>›</span><a href="/topics/">家族のためのガイド</a><span>›</span><span>家族で確認しておきたいこと</span></nav>
+    <header class="family-guide-hero">
+      <p class="eyebrow">Family Checklist</p>
+      <h1>親が元気なうちに家族で確認しておきたいこと</h1>
+      <p>すべてを一度に決める必要はありません。まず「分かっていること」「分からないこと」「誰に確認するか」を家族で共有します。</p>
+    </header>
+    <section class="family-check-grid" aria-label="家族で確認する10項目">
+      {checks.map(([title, body], index) => <article><span>{String(index + 1).padStart(2, "0")}</span><h2>{title}</h2><p>{body}</p></article>)}
+    </section>
+    <section class="family-guide-note">
+      <h2>確認するときの進め方</h2>
+      <ol><li>本人が大切にしたいことを先に聞く</li><li>書類や写真で確認できた事実だけを記録する</li><li>未確認の項目は推測せず、次に確認する人を決める</li></ol>
+    </section>
+    <section class="journey-next">
+      <h2>次に確認しておきたいこと</h2>
+      <div class="family-guide-actions">
+        <a href="/topics/bodaiji/bodaiji-02/" data-track-click="next_guide_click">菩提寺が分からないときの調べ方</a>
+        <a href="/topics/ohaka/ohaka-01/" data-track-click="next_guide_click">実家のお墓の場所を家族で共有する</a>
+        <a href="/guide/jikka-information/" data-track-click="jikka_guide_click">実家について家族で確認しておきたいこと</a>
+      </div>
+    </section>
+  </article>
+</BaseLayout>

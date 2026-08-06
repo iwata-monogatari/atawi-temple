@@ -28,6 +28,7 @@ const faqJson = article.faq ? JSON.stringify({
   {faqJson && <script type="application/ld+json" is:inline set:html={faqJson} />}
 
   <article class="article-page">
+    <nav class="breadcrumbs" aria-label="パンくず"><a href="/">HOME</a><span>›</span><a href="/guide/">家族のためのガイド</a><span>›</span><span>{article.category}</span><span>›</span><span>{article.title}</span></nav>
     <header class="article-hero">
       <p class="eyebrow">{article.category}</p>
       <h1>{article.title}</h1>
@@ -110,18 +111,18 @@ const faqJson = article.faq ? JSON.stringify({
 
         <section class="article-section article-consult-panel">
           <p class="section-number">Check</p>
-          <h2>実家・お墓まわりの情報を整理する</h2>
+          <h2>家族で確認しておきたいこと</h2>
           <p>
-            寺院、墓、仏壇、位牌の確認と、実家の名義・道路・空き家管理の確認は別の作業です。
-            まず実家カルテで、家族が把握していることと確認が必要なことを分けてみてください。
+            寺院、墓、仏壇、位牌について、家族が把握していることと確認が必要なことを先に整理します。
+            実家の情報整理へは、家族の確認事項を共有してから進めます。
           </p>
           <div class="article-section-cta">
             <a
               class="button-link secondary-button"
-              href="/topics/jikka-karute/"
-              data-track-click="jikka_karute_click"
+              href="/guide/family-checklist/"
+              data-track-click="family_check_click"
             >
-              実家カルテを見る
+              家族で確認しておきたいことを見る
             </a>
             <p>寺院への法要・供養相談は寺院へ直接確認してください。</p>
           </div>
