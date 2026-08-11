@@ -1,0 +1,100 @@
+{
+  "_note": "地区別の人口・高齢化率・空き家率。確認できた数値のみを入れ、未確認はnullのままにする（nullは画面上「調査中」と表示される）。寺院数はdata/temples.jsonから自動集計するためここには持たない。",
+  "_sources": [
+    "磐田市統計書（人口・世帯）",
+    "国勢調査（年齢別人口・高齢化率）",
+    "住宅・土地統計調査（空き家率）"
+  ],
+  "_fields": {
+    "population": "人口（人）",
+    "households": "世帯数（世帯）",
+    "aging_rate": "高齢化率（65歳以上人口の割合・%）",
+    "vacant_house_rate": "空き家率（%）",
+    "as_of": "数値の基準時点（YYYY-MM または YYYY）",
+    "source": "出典名",
+    "jikka_note": "この地区の実家事情として掲載する補足（数値以外）"
+  },
+  "districts": {
+    "mitsuke": {
+      "population": null,
+      "households": null,
+      "aging_rate": null,
+      "vacant_house_rate": null,
+      "as_of": null,
+      "source": null,
+      "jikka_note": "旧見付宿の街道沿いに古い家並みが残り、間口が狭く奥行きのある敷地が多い地区です。相続時に接道や隣地との境界が問題になりやすい形状が見られます。"
+    },
+    "nakaizumi": {
+      "population": null,
+      "households": null,
+      "aging_rate": null,
+      "vacant_house_rate": null,
+      "as_of": null,
+      "source": null,
+      "jikka_note": "磐田駅周辺の市街地を含み、戸建てと共同住宅が混在します。実家が空き家になった場合も、比較的早く周囲から状態が分かる地区です。"
+    },
+    "toyoda": {
+      "population": null,
+      "households": null,
+      "aging_rate": null,
+      "vacant_house_rate": null,
+      "as_of": null,
+      "source": null,
+      "jikka_note": "旧豊田町域を含み、宅地化が進んだ区域と農地が残る区域が隣り合います。農地が含まれる相続では手続きが分かれる点に注意が必要です。"
+    },
+    "mikuriya": {
+      "population": null,
+      "households": null,
+      "aging_rate": null,
+      "vacant_house_rate": null,
+      "as_of": null,
+      "source": null,
+      "jikka_note": "集落ごとのまとまりが残る地区です。菩提寺と自治会の結びつきが強く、法要の際に地域の慣習を確認しやすい環境があります。"
+    },
+    "nanbu": {
+      "population": null,
+      "households": null,
+      "aging_rate": null,
+      "vacant_house_rate": null,
+      "as_of": null,
+      "source": null,
+      "jikka_note": "農地と住宅が混在する区域が広く、敷地が広い分、庭木や外構の手入れが空き家管理の負担になりやすい地区です。"
+    },
+    "koyo": {
+      "population": null,
+      "households": null,
+      "aging_rate": null,
+      "vacant_house_rate": null,
+      "as_of": null,
+      "source": null,
+      "jikka_note": "丘陵地を含み、傾斜地や擁壁を伴う敷地が見られます。空き家の管理では、擁壁や排水の状態も確認項目になります。"
+    },
+    "ryuyo": {
+      "population": null,
+      "households": null,
+      "aging_rate": null,
+      "vacant_house_rate": null,
+      "as_of": null,
+      "source": null,
+      "jikka_note": "旧竜洋町域。天竜川沿いの低地を含むため、実家の扱いを考える際は水害リスクの情報もあわせて確認しておくと判断しやすくなります。"
+    },
+    "fukude": {
+      "population": null,
+      "households": null,
+      "aging_rate": null,
+      "vacant_house_rate": null,
+      "as_of": null,
+      "source": null,
+      "jikka_note": "旧福田町域。海に近い区域を含み、塩害による外壁・金物の傷みが進みやすいため、空き家期間が長いほど修繕の判断が重くなります。"
+    },
+    "toyooka": {
+      "population": null,
+      "households": null,
+      "aging_rate": null,
+      "vacant_house_rate": null,
+      "as_of": null,
+      "source": null,
+      "jikka_note": "旧豊岡村域。山際の集落を含み、農地・山林が実家とセットで残っているケースがあります。相続では地目ごとの扱いを分けて確認します。"
+    }
+  }
+}

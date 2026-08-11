@@ -17,6 +17,9 @@ import {
   isCemeteryServiceInfo,
   isUnknownValue,
 } from "../lib/temples";
+import { countTemplesByPurpose, purposeSearchUrl } from "../lib/purposes";
+
+const availablePurposes = countTemplesByPurpose().filter((purpose) => purpose.count > 0);
 
 const districtDisplayOrder = [
   "mitsuke",
@@ -353,6 +356,14 @@ const iwataMonogatariBannerImage = "/assets/temples/kokubunji-mitsuke/hondo.webp
     <a href="/map/" data-track-click="temple_map_click">住所一覧を見る</a>
     <a href="/sects/">宗派から探す</a>
   </section>
+
+  {availablePurposes.length > 0 && (
+    <section class="filter-band" aria-label="目的から探す">
+      {availablePurposes.map((purpose) => (
+        <a href={purposeSearchUrl(purpose.id)} data-track-click="temple_search_refine">{purpose.label}（{purpose.count}）</a>
+      ))}
+    </section>
+  )}
 
   <section class="section">
     <div class="section-heading">

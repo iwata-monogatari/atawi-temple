@@ -13,6 +13,7 @@ import {
   hasDetailPage,
 } from "../../lib/temples";
 import { getMonogatariDistrictUrl } from "../../lib/related-monogatari";
+import { getDistrictStats } from "../../lib/district-stats";
 
 export function getStaticPaths() {
   return allDistricts.map((district) => ({
@@ -55,6 +56,7 @@ const templesWithPhoto = standardDetailedTemples.filter((temple) => templeHasPho
 const templesWithoutPhoto = standardDetailedTemples.filter((temple) => !templeHasPhoto(temple));
 const unresearchedTemples = temples.filter(isPendingLocalConfirmation);
 const monogatariDistrictUrl = getMonogatariDistrictUrl(district.district_id);
+const districtJikkaNote = getDistrictStats(district.district_id)?.jikka_note || null;
 const districtColor = districtColors[district.district_id] || districtColors.unassigned;
 const fallbackAreaHeroImage = templesWithPhoto.map((temple) => getTempleCardImage(temple)).find(Boolean);
 const areaHeroImage = district.hero_image || fallbackAreaHeroImage;
@@ -205,7 +207,9 @@ const historicalPeriods = ["奈良", "平安", "鎌倉", "室町", "江戸", "�
       <article>
         <span>実家整理との接点</span>
         <strong>墓・仏壇・書類を分けて確認</strong>
-        <p>法要や墓参りでこの地区へ戻る時期は、実家の名義や空き家管理も確認しやすいタイミングです。</p>
+        {districtJikkaNote
+          ? <p>{districtJikkaNote}</p>
+          : <p>法要や墓参りでこの地区へ戻る時期は、実家の名義や空き家管理も確認しやすいタイミングです。</p>}
         <a
           href="/topics/jikka/"
           data-track-click="jikka_check_click"
