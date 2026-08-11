@@ -17,11 +17,13 @@ export interface TemplePurpose {
   pattern: RegExp | null;
   /** 構造化データから確実に判定できる場合の条件 */
   structural?: (temple: Temple) => boolean;
+  /** 現在利用できるかを問う目的は、現存寺院に限る（廃寺の記述で拾わない） */
+  existingOnly?: boolean;
 }
 
 /** 留保・未確認を示す文は目的判定から除外する */
 const NEGATION_PATTERN =
-  /未確認|未掲載|未定|確認でき(?:な|ず|ませ|て)|確認されて|確認中|調査中|ありません|存在しない|不明|見合わせ|対象外|要確認|ご確認ください|お問い合わせください|参考情報|推測/;
+  /未確認|未掲載|未定|確認でき(?:な|ず|ませ|て)|確認されて|確認中|調査中|ありません|存在しない|不明|見合わせ|対象外|要確認|ご確認ください|お問い合わせください|参考情報|推測|今後確認|必要があります|課題として|検証が必要|かどうかは別/;
 
 function sentences(value: unknown): string[] {
   if (value === undefined || value === null) return [];
@@ -97,31 +99,34 @@ export const templePurposes: TemplePurpose[] = [
     // 一般名詞の「法要」は留保付きの文にも頻出するため、行事名か構造化データで判定する
     pattern: /施餓鬼|彼岸会|盂蘭盆|盆会|棚経|報恩講|涅槃会|花まつり|灌仏会|開山忌|年忌法要|回忌法要/,
     structural: (temple) => annualEvents(temple).length > 0,
+    existingOnly: true,
   },
   {
     id: "nokotsu",
     label: "納骨したい",
     description: "納骨に関する記載が確認できた寺院です。受入条件は寺院へご確認ください。",
     pattern: /納骨/,
+    existingOnly: true,
   },
   {
     id: "eitaikuyo",
     label: "永代供養",
     description: "永代供養・永代経などの記載が確認できた寺院です。",
-    pattern: /永代供養|永代納骨|永代経|樹木葬|合祀|合葬/,
+    // 「合祀・合葬」は神社合祀（明治期の神社整理）の歴史記述に多く、寺院の供養形態と紛れるため使わない
+    pattern: /永代供養|永代納骨|永代経|樹木葬/,
+    existingOnly: true,
   },
   {
     id: "bochi",
     label: "墓地がある寺院",
     description: "境内墓地・寺院墓地の記載が確認できた寺院です。",
-    pattern: /墓地|墓苑|霊園|墓所|墓域/,
+    // 「墓所・墓域」は「◯◯（人物）の墓所」という history 記述に多く、参拝者が使える墓地の有無とは別物
+    pattern: /墓地|墓苑|霊園/,
+    existingOnly: true,
   },
-  {
-    id: "goshuin",
-    label: "御朱印",
-    description: "御朱印・納経に関する記載が確認できた寺院です。授与の可否は寺院へご確認ください。",
-    pattern: /御朱印|朱印|納経/,
-  },
+  // 「御朱印」は現行データでは江戸期の朱印地（「御朱印弐石」など寺領の石高）を指す用例しかなく、
+  // 参拝者が受ける御朱印の掲載が確認できないため目的から外している。授与情報が揃ったら
+  // pattern: /御朱印(?!\s*[〇一二三四五六七八九十百千弐参壱]+\s*石)|朱印帳|納経帳/ のような形で復活させる。
   {
     id: "bunkazai",
     label: "文化財",
@@ -141,8 +146,10 @@ export function getPurposeById(id: string | null | undefined) {
 
 export function getTemplePurposeIds(temple: Temple): string[] {
   const corpus = affirmativeSentences(temple);
+  const isExisting = (temple as Record<string, unknown>).status === "existing";
   return templePurposes
     .filter((purpose) => {
+      if (purpose.existingOnly && !isExisting) return false;
       if (purpose.structural?.(temple)) return true;
       if (!purpose.pattern) return false;
       return corpus.some((sentence) => purpose.pattern!.test(sentence));
