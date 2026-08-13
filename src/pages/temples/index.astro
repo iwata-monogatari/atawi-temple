@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import TempleCard from "../../components/TempleCard.astro";
+import HouyouKiseiBridge from "../../components/HouyouKiseiBridge.astro";
 import {
   allDistricts,
   allTemples,
@@ -107,6 +108,8 @@ const structuredData = {
     </div>
     <script is:inline type="application/json" id="temple-index-data" set:html={templeIndexDataJson} />
   </section>
+
+  <HouyouKiseiBridge variant="index-card" />
 
   <script is:inline>
     // @ts-nocheck

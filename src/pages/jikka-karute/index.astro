@@ -1,57 +1,62 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { jikkaKarteUrl } from "../../lib/editorial";
 
 const siteUrl = "https://temple.atawi.link";
 const pageUrl = `${siteUrl}/jikka-karute/`;
-const sections = [
+type KarteItem = { name: string; label: string; koubo?: true };
+type KarteSection = { title: string; description: string; items: KarteItem[] };
+
+// koubo: 家族が見ても分からず、登記簿・公図など公簿を調べれば確認できる項目
+const sections: KarteSection[] = [
   {
     title: "基本情報",
     description: "住所や所有者名そのものではなく、家族が確認できている範囲を記録します。",
     items: [
-      ["address_status", "実家の所在地を家族が把握している"],
-      ["owner_status", "土地・建物の名義を確認する資料がある"],
-      ["contact_status", "緊急時に連絡する家族を決めている"],
+      { name: "address_status", label: "実家の所在地を家族が把握している" },
+      { name: "owner_status", label: "土地・建物の名義を確認する資料がある", koubo: true },
+      { name: "contact_status", label: "緊急時に連絡する家族を決めている" },
     ],
   },
   {
     title: "建物・暮らし",
     description: "危険な場所へ入らず、目視できる範囲だけを確認します。",
     items: [
-      ["exterior", "外壁・屋根・雨どいを地上から確認した"],
-      ["garden", "庭木・雑草・道路へのはみ出しを確認した"],
-      ["mail", "郵便受け・不在票・連絡物を確認した"],
-      ["utilities", "電気・水道・ガスの利用状況を確認した"],
-      ["leak", "水漏れ・異臭・湿気の有無を確認した"],
-      ["keys", "鍵と合鍵の所在を本人と確認した"],
+      { name: "exterior", label: "外壁・屋根・雨どいを地上から確認した" },
+      { name: "garden", label: "庭木・雑草・道路へのはみ出しを確認した" },
+      { name: "mail", label: "郵便受け・不在票・連絡物を確認した" },
+      { name: "utilities", label: "電気・水道・ガスの利用状況を確認した" },
+      { name: "leak", label: "水漏れ・異臭・湿気の有無を確認した" },
+      { name: "keys", label: "鍵と合鍵の所在を本人と確認した" },
     ],
   },
   {
     title: "仏壇・お墓・寺院",
     description: "宗派や供養の形を推測せず、分かる事実を残します。",
     items: [
-      ["butsudan", "仏壇・位牌・過去帳の状態を記録した"],
-      ["temple", "菩提寺または相談先の寺院を確認した"],
-      ["grave", "墓地名・場所・管理者を確認した"],
-      ["memorial", "次の法要や墓参りの予定を家族で共有した"],
+      { name: "butsudan", label: "仏壇・位牌・過去帳の状態を記録した" },
+      { name: "temple", label: "菩提寺または相談先の寺院を確認した" },
+      { name: "grave", label: "墓地名・場所・管理者を確認した" },
+      { name: "memorial", label: "次の法要や墓参りの予定を家族で共有した" },
     ],
   },
   {
     title: "書類・管理",
     description: "原本を動かさず、書類の種類と保管場所だけを記録します。",
     items: [
-      ["tax", "固定資産税の通知書の所在を確認した"],
-      ["insurance", "火災保険など住まいの書類を確認した"],
-      ["registry", "土地・建物の登記関係書類の所在を確認した"],
-      ["management", "留守時の郵便・庭木・通水の担当を決めた"],
+      { name: "tax", label: "固定資産税の通知書の所在を確認した", koubo: true },
+      { name: "insurance", label: "火災保険など住まいの書類を確認した" },
+      { name: "registry", label: "土地・建物の登記関係書類の所在を確認した", koubo: true },
+      { name: "management", label: "留守時の郵便・庭木・通水の担当を決めた" },
     ],
   },
   {
     title: "家族の希望",
     description: "売る・残すの結論ではなく、本人と家族の希望を分けて残します。",
     items: [
-      ["owner_wish", "本人が実家をどうしたいか聞いた"],
-      ["family_share", "確認した内容を家族へ共有した"],
-      ["next_date", "次に確認する人と時期を決めた"],
+      { name: "owner_wish", label: "本人が実家をどうしたいか聞いた" },
+      { name: "family_share", label: "確認した内容を家族へ共有した" },
+      { name: "next_date", label: "次に確認する人と時期を決めた" },
     ],
   },
 ];
@@ -124,8 +129,14 @@ const structuredData = [
           <legend><span>{String(sectionIndex + 1).padStart(2, "0")}</span>{section.title}</legend>
           <p>{section.description}</p>
           <div class="karte-checks">
-            {section.items.map(([name, label]) => (
-              <label><input type="checkbox" name={name} /><span>{label}</span></label>
+            {section.items.map((item) => (
+              <label>
+                <input type="checkbox" name={item.name} data-label={item.label} data-koubo={item.koubo ? "true" : undefined} />
+                <span>
+                  {item.label}
+                  {item.koubo && <em class="koubo-badge" title="登記簿・公図など公簿を調べれば確認できる項目です">公簿で確認できる項目</em>}
+                </span>
+              </label>
             ))}
           </div>
           <label class="karte-memo">この項目のメモ<textarea name={`memo_${sectionIndex + 1}`} rows="2" maxlength="300" placeholder="確認できたこと、次に聞くこと"></textarea></label>
@@ -147,18 +158,52 @@ const structuredData = [
         <button type="button" class="text-button" data-clear>入力を消去</button>
         <p class="small" data-save-status aria-live="polite"></p>
       </div>
+
+      <aside class="karte-koubo-hint" data-koubo-hint hidden aria-live="polite">
+        <p class="eyebrow">未確認の項目について</p>
+        <p>
+          未チェックのうち<strong data-koubo-count>0</strong>件は、家族が見ても分からず、
+          <strong>公簿（登記簿・公図など）を調べれば確認できる</strong>項目です。
+        </p>
+        <ul data-koubo-hint-list></ul>
+        <p class="small">ご自身で法務局・市役所へ請求して確認できます。まとめて机上調査を依頼する方法もあります（下の案内を参照）。</p>
+      </aside>
     </form>
 
     <section class="karte-consultation">
       <p class="eyebrow">必要な方だけ</p>
-      <h2>確認できない項目が残ったとき</h2>
-      <p>家族だけで整理しにくい項目が残った場合は、実家カルテを手元に置いて相談できます。売却や査定を前提とした相談ではありません。</p>
+      <h2>家族では確認できない項目が残ったとき</h2>
+      <p>
+        このページのカルテは、家族が見て分かることを記録するためのものです。
+        次の項目は、家族で見ても分からず、公簿（登記簿・公図・都市計画資料など）を調べないと確認できません。
+      </p>
+      <ul class="karte-koubo-list">
+        <li><strong>名義</strong>土地・建物が誰の名義で登記されているか</li>
+        <li><strong>権利</strong>抵当権など、登記に残る権利があるか</li>
+        <li><strong>道路</strong>接している道路の種類と、建て替えができる土地か</li>
+        <li><strong>地目</strong>農地など、地目による扱いの違いがあるか</li>
+        <li><strong>法規制</strong>用途地域など、建築に関わる制限があるか</li>
+        <li><strong>災害</strong>ハザードマップ上の想定区域に入っているか</li>
+      </ul>
+      <p>
+        これらを住所から机上で調べて書面にまとめるのが、運営元（富士ヶ丘サービス）の
+        <strong>「ふじがおか実家カルテ」</strong>です。査定額を出すものではなく、
+        このページのカルテで空欄のまま残った項目を埋めるための調査版にあたります。
+      </p>
       <ul>
-        <li>相談前に、対応内容・費用・個人情報の扱いを確認できます</li>
-        <li>相談しないまま、カルテだけをご家族で使っても構いません</li>
+        <li>申し込み前に、調べる範囲・費用・個人情報の扱いを確認できます</li>
+        <li>申し込まないまま、このページのカルテだけをご家族で使っても構いません</li>
         <li>法務・税務・宗教上の判断は、それぞれの専門家や菩提寺へ確認します</li>
       </ul>
-      <a class="button-link" href="https://fudosan.atawi.link/from-temple/?utm_source=temple&utm_medium=referral&utm_campaign=jikka_karute&utm_content=karte_complete" target="_blank" rel="noopener noreferrer" data-cv-event="consultation">相談方法を確認する<span class="external-mark">外部</span></a>
+      <a
+        class="button-link"
+        href={jikkaKarteUrl("karte_bottom")}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-cv-event="consultation"
+        data-track-click="fudosan_karute_click"
+      >調査版「ふじがおか実家カルテ」を確認する<span class="external-mark">外部</span></a>
+      <p class="small">運営元の不動産サービスのページへ移動します。掲載寺院との提携・紹介関係を示すものではありません。</p>
     </section>
   </article>
 
@@ -173,6 +218,31 @@ const structuredData = [
       var progressText = document.querySelector("[data-progress-text]");
       var progressMessage = document.querySelector("[data-progress-message]");
       var status = document.querySelector("[data-save-status]");
+      var kouboHint = document.querySelector("[data-koubo-hint]");
+      var kouboHintList = document.querySelector("[data-koubo-hint-list]");
+      var kouboCount = document.querySelector("[data-koubo-count]");
+
+      function checkLabel(input) {
+        return input.getAttribute("data-label") || input.name;
+      }
+      function updateKouboHint() {
+        if (!kouboHint || !kouboHintList || !kouboCount) return;
+        var pending = checks.filter(function (input) {
+          return input.getAttribute("data-koubo") === "true" && !input.checked;
+        });
+        if (pending.length === 0) {
+          kouboHint.hidden = true;
+          return;
+        }
+        kouboCount.textContent = String(pending.length);
+        kouboHintList.replaceChildren();
+        pending.forEach(function (input) {
+          var li = document.createElement("li");
+          li.textContent = checkLabel(input);
+          kouboHintList.appendChild(li);
+        });
+        kouboHint.hidden = false;
+      }
 
       function values() {
         return Array.from(new FormData(form).entries()).reduce(function (result, entry) {
@@ -190,8 +260,10 @@ const structuredData = [
           : "まず一つ、分かる項目から始めてください。";
       }
       function restore() {
+        var restored = false;
         try {
           var saved = JSON.parse(localStorage.getItem(storageKey) || "{}");
+          restored = Object.keys(saved).length > 0;
           Object.keys(saved).forEach(function (name) {
             var field = form.elements.namedItem(name);
             if (!field) return;
@@ -200,11 +272,13 @@ const structuredData = [
           });
         } catch (_) {}
         updateProgress();
+        // 一度でも保存した人にだけ、公簿で確認できる未チェック項目を示す。
+        if (restored) updateKouboHint();
       }
       function summary() {
         var data = values();
         var confirmed = checks.filter(function (input) { return input.checked; }).map(function (input) {
-          return "・" + input.parentElement.textContent.trim();
+          return "・" + checkLabel(input);
         });
         return [
           "実家カルテ（" + (data.checked_date || "日付未記入") + "）",
@@ -223,7 +297,12 @@ const structuredData = [
           "※氏名・住所・口座番号などの個人情報は共有文に含めないでください。",
         ].join("\n");
       }
-      checks.forEach(function (input) { input.addEventListener("change", updateProgress); });
+      checks.forEach(function (input) {
+        input.addEventListener("change", function () {
+          updateProgress();
+          if (kouboHint && !kouboHint.hidden) updateKouboHint();
+        });
+      });
       form.querySelector("[data-save]").addEventListener("click", function () {
         try {
           localStorage.setItem(storageKey, JSON.stringify(values()));
@@ -231,6 +310,7 @@ const structuredData = [
         } catch (_) {
           status.textContent = "保存できませんでした。印刷・PDF保存をご利用ください。";
         }
+        updateKouboHint();
       });
       form.querySelector("[data-print]").addEventListener("click", function () { window.print(); });
       form.querySelector("[data-copy]").addEventListener("click", async function () {
@@ -247,6 +327,7 @@ const structuredData = [
         localStorage.removeItem(storageKey);
         status.textContent = "入力内容を消去しました。";
         updateProgress();
+        if (kouboHint) kouboHint.hidden = true;
       });
       restore();
     })();

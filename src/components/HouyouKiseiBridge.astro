@@ -34,7 +34,7 @@ const searchUrl = "/search/";
       <div class="houyou-bridge-actions">
         <a class="button-link" href="/topics/kisei/" data-track-click="houyou_bridge_click">法要帰省ガイド</a>
         <a class="button-link secondary-button" href="/topics/jikka/jikka-30/">実家確認チェックリスト</a>
-        <a class="button-link secondary-button" href="/topics/jikka-karute/">実家カルテ</a>
+        <a class="button-link secondary-button" href="/jikka-karute/" data-track-click="jikka_karute_click">実家カルテ（無料ツール）</a>
       </div>
       <p class="houyou-bridge-note">
         法要・供養、寺院ごとの作法や予定については、寺院の公式情報または寺院へ直接ご確認ください。
@@ -83,18 +83,18 @@ const searchUrl = "/search/";
         今すぐ家を売る、残すと決める必要はありません。写真を残し、親の考えを一言だけ聞いておくことで、
         次に家族で話すべきことが分かります。
       </p>
-      <p>必要な場合は、住所から分かる名義・道路・農地・空き家リスクを、運営元の関連サービスで確認だけ相談できます。</p>
+      <p>確認した内容は、当サイトの無料ツール「実家カルテ」に記録できます。入力内容は端末内だけに保存され、外部へ送信されません。</p>
       <ul class="houyou-bridge-icons" aria-label="確認するもの">
         <li><span aria-hidden="true">寺</span><strong>菩提寺</strong></li>
         <li><span aria-hidden="true">家</span><strong>実家</strong></li>
         <li><span aria-hidden="true">記</span><strong>家族メモ</strong></li>
       </ul>
       <div class="houyou-bridge-actions">
-        <a class="button-link" href={guideUrl} data-track-click="houyou_bridge_click">法要と実家の確認メモを見る</a>
-        <a class="button-link secondary-button" href="/topics/jikka/">帰省時の実家確認を見る</a>
+        <a class="button-link" href="/jikka-karute/" data-track-click="jikka_karute_click">実家カルテを開く（無料・端末内保存）</a>
+        <a class="button-link secondary-button" href={guideUrl} data-track-click="houyou_bridge_click">法要と実家の確認メモを見る</a>
         <a class="button-link secondary-button" href={searchUrl} data-track-click="temple_search_refine">寺院名・宗派から探す</a>
       </div>
-      <p class="houyou-bridge-note">運営元の不動産サービスへ移動します。掲載寺院との提携・紹介関係はありません。</p>
+      <p class="houyou-bridge-note">掲載寺院との提携・紹介関係を示すものではありません。</p>
     </>
   )}
 
@@ -105,7 +105,7 @@ const searchUrl = "/search/";
       <p>寺院名、住所、宗派を確認したあと、同じ帰省で家族が見ておく項目を整理します。</p>
       <div class="houyou-bridge-actions">
         <a class="button-link" href={guideUrl} data-track-click="houyou_bridge_click">法要・帰省の確認メモ</a>
-        <a class="button-link secondary-button" href="/topics/jikka-karute/">実家カルテを見る</a>
+        <a class="button-link secondary-button" href="/jikka-karute/" data-track-click="jikka_karute_click">実家カルテ（無料ツール）を開く</a>
       </div>
     </>
   )}

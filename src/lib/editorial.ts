@@ -47,6 +47,10 @@ export function fromTempleUrl(content?: string) {
   return campaignUrl(FUDOSAN_FROM_TEMPLE_URL, "houyou_jikka", content);
 }
 
+export function jikkaKarteUrl(content?: string) {
+  return campaignUrl(FUDOSAN_FROM_TEMPLE_URL, "jikka_karute", content);
+}
+
 function campaignUrl(baseUrl: string, campaign: string, content?: string) {
   const params = new URLSearchParams({
     utm_source: "temple",
