@@ -1,28 +1,77 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { obonChecklist, houyouRows } from "../../lib/editorial";
+
+const title = "お盆の帰省チェックリスト10項目｜菩提寺・墓・仏壇の確認｜ATAWI TEMPLE";
+const description = "2026年のお盆に実家へ帰省したら確認したい10項目。菩提寺、墓、仏壇、法要、親の希望を、スマホで見ながら3分で確認・印刷・家族共有できます。";
+const faqItems = [
+  {
+    question: "お盆の帰省で最低限、何を確認すればよいですか？",
+    answer: "菩提寺の寺院名と連絡先、墓地の場所と管理状況、仏壇・位牌・過去帳、寺院から届いた書類、親が希望していることを確認します。全部を決めず、写真とメモを残すだけでも十分です。",
+  },
+  {
+    question: "菩提寺がわからないときは、どこから調べますか？",
+    answer: "仏壇の引き出し、過去帳、寺院からの封筒、法要案内、墓地管理の書類、親族の記憶を順に確認します。寺院名が不確かな場合は、住所・地区・宗派から候補を絞ります。",
+  },
+  {
+    question: "家族へ共有するときに注意することはありますか？",
+    answer: "位牌、過去帳、書類には戒名、住所、連絡先などが含まれます。公開SNSには載せず、家族だけのグループや端末内のメモで共有してください。",
+  },
+];
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    datePublished: "2026-07-20",
+    dateModified: "2026-08-14",
+    author: { "@type": "Organization", name: "ATAWI TEMPLE", url: "https://temple.atawi.link/about/" },
+    mainEntityOfPage: "https://temple.atawi.link/obon/",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  },
+];
 ---
 
 <BaseLayout
-  title="お盆に帰省したら、実家を一度だけ、見ておいてください。｜ATAWI TEMPLE"
-  description="お盆の帰省中に、菩提寺、墓、仏壇、実家を一度だけ確認するための10項目チェックリスト。法要の作法早見表と家族共有用メモをまとめます。"
+  title={title}
+  description={description}
+  ogType="article"
+  publishedTime="2026-07-20"
+  modifiedTime="2026-08-14"
+  hideSeasonalBanner={true}
+  structuredData={structuredData}
 >
   <article class="article-page seasonal-page">
     <header class="article-hero">
       <p class="eyebrow">Obon Check</p>
       <h1>お盆に帰省したら、実家を一度だけ、見ておいてください。</h1>
       <p class="article-subtitle">家族全員が実家に揃う、年に一度の機会に。全部できなくて構いません。写真だけでも、後で必ず役に立ちます。</p>
+      <p class="campaign-proof">2026年版・所要3分・登録不要</p>
       <div class="hero-actions plain-actions">
-        <a class="button-link" href="/guide/kisei-check/" data-track-click="kisei_check_click">帰省チェック10項目を見る</a>
+        <a class="button-link" href="#checklist">10項目を今すぐ確認</a>
         <a class="button-link secondary-button" href="#family-memo">家族共有用メモを見る</a>
+      </div>
+      <div class="campaign-share" aria-label="チェックリストを保存・共有">
+        <button type="button" class="button-link secondary-button" data-obon-share>家族に共有</button>
+        <a class="button-link line-share" data-obon-line href="#">LINEで送る</a>
+        <button type="button" class="text-button" data-obon-print>印刷・PDF保存</button>
       </div>
     </header>
 
     <div class="article-layout">
       <main class="article-body">
-        <section class="article-section">
+        <section class="article-section" id="checklist">
           <p class="section-number">01</p>
-          <h2>帰省チェックリスト10項目</h2>
+          <h2>お盆の帰省チェックリスト10項目</h2>
           <p>実家、家族の話を、いきなり全部決める必要はありません。見たことを写真とメモで残すだけで、帰省後の話し合いが進めやすくなります。</p>
           <ol class="checkbox-list">
             {obonChecklist.map((item) => (
@@ -70,6 +119,24 @@ import { obonChecklist, houyouRows } from "../../lib/editorial";
           <h2>帰省後に、写真と親の言葉を一枚にまとめる</h2>
           <p>帰省中に確認した家、庭、仏壇、書類、親の言葉を、家族が同じ順番で見られるようにまとめます。</p>
           <p>売る、残す、管理するという結論は、その後で構いません。まず「現在の状態」と「親がどう考えているか」を分けて残します。</p>
+          <div class="article-section-cta">
+            <strong>寺院名が分からなくても、住所・地区・宗派から探せます</strong>
+            <p>磐田市内118件の寺院記録から、手元の断片的な情報を使って候補を確認してください。</p>
+            <a class="button-link" href="/search/?utm_source=obon&utm_medium=internal&utm_campaign=obon_2026&utm_content=bodaiji_search" data-track-click="obon_temple_search_click">菩提寺・お寺を探す</a>
+          </div>
+        </section>
+
+        <section class="article-section" aria-labelledby="obon-faq-heading">
+          <p class="section-number">05</p>
+          <h2 id="obon-faq-heading">お盆の帰省でよくある質問</h2>
+          <div class="campaign-faq">
+            {faqItems.map((item) => (
+              <details>
+                <summary>{item.question}</summary>
+                <p>{item.answer}</p>
+              </details>
+            ))}
+          </div>
         </section>
       </main>
 
@@ -111,22 +178,38 @@ import { obonChecklist, houyouRows } from "../../lib/editorial";
     // @ts-nocheck
     window.addEventListener("load", function () {
       var tracker = document.querySelector("script[data-fujigaoka-analytics]");
-      if (!tracker || !tracker.src || location.hostname !== "temple.atawi.link") return;
-      var url = new URL("/api/click", tracker.src).href;
-      var payload = JSON.stringify({
-        site_id: tracker.getAttribute("data-site") || "atawi-temple",
-        path: location.pathname + location.search,
-        url: location.href,
-        referrer: document.referrer || "",
-        event_name: "obon_checklist_view"
+      function track(eventName) {
+        if (!tracker || !tracker.src || location.hostname !== "temple.atawi.link") return;
+        var url = new URL("/api/click", tracker.src).href;
+        var payload = JSON.stringify({
+          site_id: tracker.getAttribute("data-site") || "atawi-temple",
+          path: location.pathname + location.search,
+          url: location.href,
+          referrer: document.referrer || "",
+          event_name: eventName
+        });
+        if (navigator.sendBeacon) navigator.sendBeacon(url, new Blob([payload], { type: "application/json" }));
+        else if (window.fetch) fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: payload, mode: "cors", credentials: "omit", keepalive: true }).catch(function () {});
+      }
+      track("obon_checklist_view");
+
+      var shareUrl = new URL(location.pathname, location.origin);
+      shareUrl.searchParams.set("utm_source", "family_share");
+      shareUrl.searchParams.set("utm_medium", "referral");
+      shareUrl.searchParams.set("utm_campaign", "obon_2026");
+      var shareText = "お盆の帰省チェックリスト10項目｜菩提寺・墓・仏壇の確認";
+      var line = document.querySelector("[data-obon-line]");
+      if (line) line.href = "https://social-plugins.line.me/lineit/share?url=" + encodeURIComponent(shareUrl.toString());
+
+      var share = document.querySelector("[data-obon-share]");
+      if (share) share.addEventListener("click", function () {
+        track("obon_share_click");
+        if (navigator.share) navigator.share({ title: shareText, text: "家族で確認するときに使ってください。", url: shareUrl.toString() }).catch(function () {});
+        else if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(shareUrl.toString()).then(function () { share.textContent = "リンクをコピーしました"; }).catch(function () {});
       });
-      if (navigator.sendBeacon) {
-        navigator.sendBeacon(url, new Blob([payload], { type: "application/json" }));
-        return;
-      }
-      if (window.fetch) {
-        fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: payload, mode: "cors", credentials: "omit", keepalive: true }).catch(function () {});
-      }
+      if (line) line.addEventListener("click", function () { track("obon_line_share_click"); });
+      var printButton = document.querySelector("[data-obon-print]");
+      if (printButton) printButton.addEventListener("click", function () { track("obon_print_click"); window.print(); });
     });
   </script>
 </BaseLayout>
