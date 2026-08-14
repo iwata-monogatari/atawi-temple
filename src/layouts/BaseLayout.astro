@@ -102,6 +102,16 @@ const structuredDataItems = [...sharedStructuredData, ...pageStructuredData].fil
         <a href="/about/">このサイトについて</a>
       </nav>
     </header>
+    {!hideSeasonalBanner && (
+      <aside class="seasonal-traffic-banner" data-obon-banner hidden aria-label="お盆・帰省の確認案内">
+        <div>
+          <span>8月31日まで</span>
+          <p><strong>お盆の帰省で、菩提寺・墓・仏壇を確認</strong> 10項目を3分で見られます。</p>
+          <a href="/obon/?utm_source=temple&utm_medium=internal&utm_campaign=obon_2026&utm_content=sitewide_banner" data-track-click="obon_banner_click">帰省チェックを見る</a>
+          <button type="button" data-obon-banner-close aria-label="この案内を閉じる">×</button>
+        </div>
+      </aside>
+    )}
     <main>
       <slot />
     </main>
