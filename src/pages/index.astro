@@ -278,6 +278,43 @@ const iwataMonogatariBannerImage = "/assets/temples/kokubunji-mitsuke/hondo.webp
     <form action="/search/" method="get"><label for="journey-q">寺院名・読み方・住所・宗派・本尊</label><div><input id="journey-q" name="q" type="search" placeholder="例：見付、曹洞宗、観音菩薩" /><button type="submit" data-track-click="temple_search">検索する</button></div></form>
   </section>
 
+  <section class="section">
+    <div class="section-heading">
+      <h2>9地区から探す</h2>
+      <a href="/search/">検索へ</a>
+    </div>
+    <div class="district-grid">
+      {
+        districtCards.map((district) => {
+          const photo = district.hero_image
+            ? { src: district.hero_image, alt: district.hero_image_alt || `${district.name}地区の代表写真` }
+            : null;
+          return (
+            <a
+              class={photo ? "district-card district-card--photo" : "district-card"}
+              href={`/areas/${district.slug}/`}
+              style={photo ? `background-image: linear-gradient(180deg, rgba(20,26,18,.15) 0%, rgba(20,26,18,.78) 100%), url(${photo.src})` : undefined}
+              data-track-click="temple_area_click"
+            >
+              <strong>{district.name}</strong>
+              <span>{district.summary}</span>
+              <em>{district.count}件登録</em>
+              {district.representatives.length > 0 && (
+                <small>寺院例：{district.representatives.join("・")}</small>
+              )}
+            </a>
+          );
+        })
+      }
+    </div>
+    {unknownDistrictCount > 0 && (
+      <p class="count-note">
+        地区未確定の登録が{unknownDistrictCount}件あります。9地区分類の合計にこの未確定分を加えたものが全登録件数です。
+        <a href="/search/?district=__unassigned">地区未確定の寺院を見る</a>
+      </p>
+    )}
+  </section>
+
   <section class="section home-concerns" aria-labelledby="home-concerns-title">
     <p class="eyebrow">Family Questions</p><h2 id="home-concerns-title">こんなことで困っていませんか？</h2>
     <div class="home-concern-grid">
@@ -471,43 +508,6 @@ const iwataMonogatariBannerImage = "/assets/temples/kokubunji-mitsuke/hondo.webp
 
       renderPickupTemples();
     </script>
-  </section>
-
-  <section class="section">
-    <div class="section-heading">
-      <h2>9地区から探す</h2>
-      <a href="/search/">検索へ</a>
-    </div>
-    <div class="district-grid">
-      {
-        districtCards.map((district) => {
-          const photo = district.hero_image
-            ? { src: district.hero_image, alt: district.hero_image_alt || `${district.name}地区の代表写真` }
-            : null;
-          return (
-            <a
-              class={photo ? "district-card district-card--photo" : "district-card"}
-              href={`/areas/${district.slug}/`}
-              style={photo ? `background-image: linear-gradient(180deg, rgba(20,26,18,.15) 0%, rgba(20,26,18,.78) 100%), url(${photo.src})` : undefined}
-              data-track-click="temple_area_click"
-            >
-              <strong>{district.name}</strong>
-              <span>{district.summary}</span>
-              <em>{district.count}件登録</em>
-              {district.representatives.length > 0 && (
-                <small>寺院例：{district.representatives.join("・")}</small>
-              )}
-            </a>
-          );
-        })
-      }
-    </div>
-    {unknownDistrictCount > 0 && (
-      <p class="count-note">
-        地区未確定の登録が{unknownDistrictCount}件あります。9地区分類の合計にこの未確定分を加えたものが全登録件数です。
-        <a href="/search/?district=__unassigned">地区未確定の寺院を見る</a>
-      </p>
-    )}
   </section>
 
   <section class="section generated-database" aria-labelledby="generated-database-title">
