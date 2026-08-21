@@ -86,6 +86,11 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://temple.atawi.link/knowledge/</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://temple.atawi.link/jikka-karute/</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -277,6 +282,36 @@
   </url>
   <url>
     <loc>https://temple.atawi.link/guide/kisei-check/</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/knowledge/terms/</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/knowledge/sects/</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/knowledge/danka-system/</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/knowledge/houyou/</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/knowledge/haka-jimai/</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/knowledge/eitai-kuyo/</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>weekly</changefreq>
   </url>

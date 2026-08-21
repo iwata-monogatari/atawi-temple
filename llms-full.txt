@@ -1,0 +1,816 @@
+# ATAWI TEMPLE 全ページ索引
+
+> 磐田市の寺院を1か寺ずつ調べて整理している地域データベースです。現存寺院・廃寺・寺院跡・霊場を含む118件を、9地区と宗派で分類し、所在地、宗派、本尊、沿革、現地確認の状況、写真を出典とともに掲載します。あわせて、法要・帰省・実家じまいを家族で確認するためのガイドを載せています。
+
+2026-08-21 時点・全737ページ。概要は https://temple.atawi.link/llms.txt を参照してください。
+
+## 引用時の注意
+
+本サイトは各寺院の公式サイトではありません。掲載内容は公開資料と現地確認にもとづく整理であり、沿革や創建年代には諸説あるものがあります。未確認の項目は「未確認」「調査中」と明示しています。引用の際は各ページの出典と確認日をあわせてご確認ください。法要の作法や費用は宗派・寺院・地域で異なります。個別の判断は必ず菩提寺に、相続・税・登記の判断は専門家にご確認ください。
+
+## ブログ｜大石浩之のお寺ノート（3本）
+
+一覧: https://temple.atawi.link/blog/　RSS: https://temple.atawi.link/feed.xml
+
+大石浩之個人の署名記事。各記事の「結論」は、その記事だけを切り出して読んでも意味が通るように書いています。
+
+### 磐田市の市営霊園、2026年度は先着順｜空き区画の探し方
+
+- URL: https://temple.atawi.link/blog/20260821-iwata-shiei-reien-senchakujun/
+- 公開: 2026-08-21
+- 概要: 磐田市は市営霊園の使用者決定を年1回の抽選から随時募集・先着順に変えました。2026年8月1日時点の募集は44区画。使用料と管理料を1年あたりに割り戻し、合葬墓との差と申請の実際までまとめます。
+- 結論（遠方の実家の墓を磐田市内に移したいのですが、市営霊園に空きはありますか）: 磐田市は市営霊園の使用者決定を、年1回の抽選から随時募集・先着順に変えました。2026年8月1日時点の募集は44区画で、駒場霊園を除く7霊園3,181区画の約1.4%です。使用料は170,000円から300,000円、管理料は年2,090円。改葬許可は移し先が決まってからなので、区画を見るのが先になります。
+
+- 見出し: 令和8年度から抽選をやめ、返還があり次第の先着順になった / 2026年8月1日時点で募集中は44区画。7霊園3,181区画の約1.4% / 使用料170,000円から300,000円を、1年あたりに割り戻す / 良い点は3つ。注文したい点は2つ / 遠方の墓を移すなら、区画を見るのが先である
+- Q. 市営霊園の空き区画は、どこで確認できますか。 / A. 磐田市公式ウェブサイトの「市営墓地」ページに、霊園ごとの空き状況と募集区画数が載っています。毎月上旬に更新され、掲載時点の数字である旨も明記されています。区画番号と使用料は「別表（募集区画一覧表）」というPDFで確認できます。実際の空きは随時変わるため、申請前に環境課生活環境グループへ電話で確かめてください。
+- Q. 磐田市外に住んでいても申請できますか。 / A. 募集要項によると、1年以上にわたり磐田市に住民登録をしていてお骨をお持ちの方か、亡くなった時点で1年以上磐田市に住民登録をしていた方のお骨をお持ちの方が対象です。市外在住の申請者は、本籍地入りの住民票と戸籍謄本が別に要ります。申請は市役所西庁舎1階の環境課のみで、支所と郵送は受け付けていません。
+- Q. やっぱり返したくなったら、使用料は戻りますか。 / A. 磐田市は平成28年4月1日から、改葬や使用見込みが無いなどの理由で市営霊園の墓地を返還した場合、使用期間に関係なく使用料の50%を還付しています。八王子霊園なら190,000円の半分にあたる95,000円が戻る計算です。手続きは共葬墓地返還届兼使用料還付請求書で行います。条件の詳細は環境課にご確認ください。
+- 出典: 磐田市公式ウェブサイト「市営墓地」（2026年8月4日更新。空き状況は2026年8月1日時点。2026年8月確認）／磐田市「令和8年度 市営霊園使用者募集要項」（PDF）（先着順への変更、申請資格、受付方法、注意事項。2026年8月確認）／磐田市「別表（募集区画一覧表）」（PDF）（令和8年8月1日現在の募集区画44区画と使用料。2026年8月確認）／磐田市公式ウェブサイト「磐田市合葬墓」（使用料は遺骨1体150,000円、管理料なし、収蔵数3,000体。2026年8月確認）
+
+### 墓じまいの相談、秋彼岸まで1か月で菩提寺に聞く3つ
+
+- URL: https://temple.atawi.link/blog/20260821-hakajimai-bodaiji-soudan/
+- 公開: 2026-08-21
+- 概要: 2026年の秋彼岸は9月20日から26日。残り30日でやるのは決断ではなく確認です。菩提寺に聞く3つ（遺骨の数・使用者の名義・寺の段取り）と磐田市の改葬許可の実際を、実家じまいの段取りとつなげて説明します。
+- 結論（お盆に墓じまいの話が出たけれど、お寺にどう切り出せばいいのか分かりません）: 秋彼岸までに決める必要はありません。2026年の秋彼岸は9月20日から26日で、残りは30日。この間にやるのは菩提寺へ3つ聞くことだけです。誰の遺骨が何体入っているか、墓地の使用者は誰の名義か、この寺ではどの順序で進めるか。相場から聞かないほうがうまくいきます。
+
+- 見出し: 2026年の秋彼岸は9月20日から26日。1か月で決める必要はない / 聞くことの1つめ「誰の遺骨が、何体入っているか」 / 2つめ「墓地の使用者は、いま誰の名前になっているか」 / 3つめ「この寺では、どの順序で進めるのか」 / 切り出し方に正解はない。私が案内している順序
+- Q. 墓じまいの話を菩提寺に切り出すと、機嫌を損ねませんか。 / A. 寺ごとに受け止め方は違うため、断定はできません。私が案内しているのは、金額の話から入らず事実の確認から入る順序です。遺骨の数、使用者の名義、進め方の順序の3点は、寺の側にとっても答えやすい質問です。決めたことを通告するのではなく、確かめたいことを尋ねる形にすると話が進みやすくなります。
+- Q. 秋彼岸の期間中に相談してもいいですか。 / A. 2026年の秋彼岸は9月20日から26日で、多くの寺で法要が立て込みます。落ち着いて話を聞いてもらいたいなら、彼岸に入る前の9月上旬までに一度電話を入れておくほうが確実です。彼岸の場は、聞き取った内容を親族に共有する場として使うと無駄がありません。日程は菩提寺の都合を優先してください。
+- Q. 離檀料はいくら用意すればいいですか。 / A. 金額の相場を私は持っていませんし、断定もしません。宗派・寺院・地域で考え方が大きく違い、そもそも離檀料という名目を用いない寺もあります。最初の電話で相場を聞き出そうとすると、寺と檀家の双方が身構えます。段取りと順序を先に確認し、費用は最後に菩提寺へ直接ご確認ください。
+- 出典: 国立天文台暦計算室「令和8年（2026）暦要項」（2026年の秋分は9月23日9時05分。2026年8月確認）／国立天文台暦計算室「暦要項」（国民の祝日について）（春分の日・秋分の日は前年2月の官報に暦要項を掲載して発表。2026年8月確認）／磐田市公式ウェブサイト「市営墓地」（改葬許可の手数料1件300円、根拠法令、各種届出様式。2026年8月確認）
+
+### 墓の名義変更をしないとどうなる｜2026年の登記義務化と同じ壁
+
+- URL: https://temple.atawi.link/blog/20260821-haka-meigi-henko-shinai/
+- 公開: 2026-08-21
+- 概要: 墓地の使用者名義を故人のままにしても過料は来ません。登記簿に載らないからです。2026年4月1日施行の住所等変更登記の義務化と比べながら、民法第897条の祭祀承継と、実家を売った後に詰まる場所を整理します。
+- 結論（実家を売ったのに、お墓の名義が亡くなった父のままです。放っておくとまずいですか）: 罰は来ません。墓地の使用権は登記簿に載らないので、2026年4月1日に施行された住所等変更登記の義務化の対象外です。過料も催告もない代わりに、改葬許可で墓地管理者の証明をもらう段階で止まります。管理料の請求も旧住所へ届き続けます。来ないから詰む、という壁です。
+
+- 見出し: 墓の名義を放置しても、過料は来ない / 不動産のほうは、2026年4月1日から住所の変更登記も義務になった / 墓地の名義は民法第897条で動く。相続とは別の線である / 法務局の仕組みは良くできている。墓地には同じ受け皿がない / 名義が古いまま実家を売ると、どこで詰まるか
+- Q. 墓の名義変更をしないと、罰則はありますか。 / A. 墓地の使用権は不動産の所有権ではなく、法務局の登記簿に載りません。2026年4月1日施行の住所等変更登記の義務化にも、2024年4月1日施行の相続登記の義務化にも該当しないため、過料はありません。ただし改葬や墓じまいの際に墓地管理者の証明が必要になり、名義が古いとそこで手続きが止まります。
+- Q. お墓は兄弟で分けられますか。 / A. 民法第897条は、系譜・祭具・墳墓の所有権を、慣習に従って祖先の祭祀を主宰すべき者が承継すると定めています。被相続人の指定があればその人が承継し、慣習が明らかでないときは家庭裁判所が定めます。遺産分割のように法定相続分で分ける財産とは扱いが別で、承継するのは1人です。
+- Q. 名義変更は、どこへ届け出ればいいですか。 / A. 墓地の種類で届け先が変わります。磐田市の市営墓地なら「共葬墓地使用権承継届」と「共葬墓地使用者住所等変更届」が公開されていて、環境課生活環境グループが窓口です。寺院墓地は決まった様式が無いことも多く、まず住職に確認する形になります。必要書類も寺ごとに違うため、菩提寺にご確認ください。
+- 出典: 法務省「住所等変更登記の義務化について」（令和8年4月1日施行、変更から2年以内、5万円以下の過料、令和10年3月31日までの経過措置。2026年8月確認）／法務省「相続登記の申請義務化について」（令和6年4月1日施行、知った日から3年以内、10万円以下の過料、令和9年3月31日までの経過措置。2026年8月確認）／e-Gov法令検索「民法」第897条（祭祀に関する権利の承継）（条文本文を確認。2026年8月確認）／磐田市公式ウェブサイト「市営墓地」（共葬墓地使用権承継届・使用者住所等変更届の様式、改葬時の墓地管理者の証明。2026年8月確認）
+
+
+## 主要ページ
+
+- トップ: https://temple.atawi.link/ — 磐田市のお寺・寺院データベース
+- 寺院一覧: https://temple.atawi.link/temples/
+- 9地区から探す: https://temple.atawi.link/areas/
+- 宗派・関連法人から探す: https://temple.atawi.link/sects/
+- 寺院名・宗派で検索: https://temple.atawi.link/search/
+- 住所一覧・地図: https://temple.atawi.link/map/
+- 調査状況: https://temple.atawi.link/status/
+- 更新情報: https://temple.atawi.link/updates/
+- 寺院の基礎資料（一覧）: https://temple.atawi.link/knowledge/
+- 基礎ガイド（一覧）: https://temple.atawi.link/guide/
+- 家族のためのガイド（一覧）: https://temple.atawi.link/topics/
+- 特集・読みもの（一覧）: https://temple.atawi.link/tokushu/
+- 研究論文（一覧）: https://temple.atawi.link/research/
+- 大石浩之のお寺ノート（一覧）: https://temple.atawi.link/blog/
+- お盆・帰省の確認: https://temple.atawi.link/obon/
+- 実家カルテ（無料ツール）: https://temple.atawi.link/jikka-karute/
+- 家族で確認するチェックリスト: https://temple.atawi.link/guide/family-checklist/
+- 実家の情報整理: https://temple.atawi.link/guide/jikka-information/
+- 運営者情報: https://temple.atawi.link/about/
+- 編集方針: https://temple.atawi.link/editorial-policy/
+- 情報提供・訂正: https://temple.atawi.link/correction/
+- プライバシーポリシー: https://temple.atawi.link/privacy/
+
+## 寺院（118か寺）
+
+- 大乗院（中泉地区・真言宗醍醐派・現存）: https://temple.atawi.link/temples/daijoin-nakaizumi/
+- 醫王寺（御厨地区・真言宗智山派・現存）: https://temple.atawi.link/temples/ioji-kamada/
+- 国分寺（見付地区・新義真言宗・現存）: https://temple.atawi.link/temples/kokubunji-mitsuke/
+- 徳翁院（見付地区・浄土宗・現存）: https://temple.atawi.link/temples/tokuoin-mitsuke/
+- 慶岩寺（見付地区・浄土宗・現存）: https://temple.atawi.link/temples/keiganji-mitsuke/
+- 大見寺（見付地区・浄土宗・現存）: https://temple.atawi.link/temples/daikenji-mitsuke/
+- 善導寺（見付地区・浄土宗・現存）: https://temple.atawi.link/temples/zendoji-mitsuke/
+- 満徳寺（中泉地区・真宗大谷派・現存）: https://temple.atawi.link/temples/mantokuji-nakaizumi/
+- 西願寺（中泉地区・真宗大谷派・現存）: https://temple.atawi.link/temples/saiganji-nakaizumi/
+- 行泉寺（見付地区・真宗高田派・現存）: https://temple.atawi.link/temples/gyosenji-mitsuke/
+- 金台寺（南部地区・時宗・現存）: https://temple.atawi.link/temples/kindaiji-tenryu/
+- 省光寺（見付地区・時宗・現存）: https://temple.atawi.link/temples/shokoji-mitsuke/
+- 西光寺（見付地区・時宗・現存）: https://temple.atawi.link/temples/saikoji-mitsuke/
+- 明王寺（見付地区・臨済宗妙心寺派・現地痕跡未確認）: https://temple.atawi.link/temples/myooji-mitsuke/
+- 寳珠寺（南部地区・臨済宗妙心寺派・現地痕跡未確認）: https://temple.atawi.link/temples/hojuji-toyoshima/
+- 多聞寺（福田地区・臨済宗妙心寺派・現存）: https://temple.atawi.link/temples/tamonji-nakano/
+- 大蔵寺（南部地区・臨済宗妙心寺派・現地痕跡未確認）: https://temple.atawi.link/temples/daizoji-kamiokata/
+- 天正寺（南部地区・臨済宗妙心寺派・現地痕跡未確認）: https://temple.atawi.link/temples/tenshoji-toyoshima/
+- 千手寺（南部地区・臨済宗妙心寺派・現地痕跡未確認）: https://temple.atawi.link/temples/senjuji-senjudou/
+- 萬勝寺（南部地区・臨済宗妙心寺派・現地痕跡未確認）: https://temple.atawi.link/temples/manshoji-manshoji/
+- 中泉寺（中泉地区・臨済宗妙心寺派・現存）: https://temple.atawi.link/temples/chusenji-nakaizumi/
+- 泉蔵寺（中泉地区・臨済宗妙心寺派・現存）: https://temple.atawi.link/temples/senzoji-nakaizumi/
+- 連福寺（中泉地区・臨済宗妙心寺派・現存）: https://temple.atawi.link/temples/renpukuji-ninomiya/
+- 慈恩寺（見付地区・臨済宗妙心寺派・現存）: https://temple.atawi.link/temples/jionji-mitsuke/
+- 見性寺（見付地区・臨済宗妙心寺派・現存）: https://temple.atawi.link/temples/kenshoji-mitsuke/
+- 眞如寺（向陽地区・臨済宗妙心寺派・現地痕跡未確認）: https://temple.atawi.link/temples/shinnyoji-sagisaka/
+- 明泉寺（御厨地区・曹洞宗・地域管理の旧寺院）: https://temple.atawi.link/temples/myosenji-araide/
+- 定光寺（南部地区・曹洞宗・現存）: https://temple.atawi.link/temples/jokoji-maeno/
+- 実際寺（南部地区・曹洞宗・現存）: https://temple.atawi.link/temples/jissaiji-samejima/
+- 光嚴寺（南部地区・曹洞宗・現存）: https://temple.atawi.link/temples/koganji-kusasaki/
+- 正光寺（南部地区・曹洞宗・現存）: https://temple.atawi.link/temples/shokoji-shirabyoshi/
+- 太月庵（向陽地区・曹洞宗・寺院跡・廃寺）: https://temple.atawi.link/temples/taigetsuan-sagisaka/
+- 増参寺（向陽地区・曹洞宗・現存）: https://temple.atawi.link/temples/zosanji-sagisaka/
+- 新豊院（向陽地区・曹洞宗・現存）: https://temple.atawi.link/temples/shinpoin-mukasa/
+- 法雲寺（向陽地区・曹洞宗・現存）: https://temple.atawi.link/temples/hounji-mukasa/
+- 安全寺（向陽地区・曹洞宗・現存）: https://temple.atawi.link/temples/anzenji-iwai/
+- 保福寺（向陽地区・曹洞宗・現存）: https://temple.atawi.link/temples/hofukuji-okubo/
+- 正眼院（福田地区・曹洞宗・現存）: https://temple.atawi.link/temples/shogenin-kojima/
+- 萬然寺（南部地区・曹洞宗・現存）: https://temple.atawi.link/temples/mannenji-kusasaki/
+- 壽正寺（南部地区・曹洞宗・現存）: https://temple.atawi.link/temples/jushouji-kusasaki/
+- 全海寺（御厨地区・曹洞宗・現存）: https://temple.atawi.link/temples/zenkaiji-nishijima/
+- 東昌寺（御厨地区・曹洞宗・現存）: https://temple.atawi.link/temples/toshoji-higashikaizuka/
+- 連城寺（御厨地区・曹洞宗・現存）: https://temple.atawi.link/temples/renjoji-shingai/
+- 全久院（御厨地区・曹洞宗・現存）: https://temple.atawi.link/temples/zenkyuin-kamada/
+- 福王寺（見付地区・曹洞宗・現存）: https://temple.atawi.link/temples/fukuoji-jonosaki/
+- 合掌寺（中泉地区・曹洞宗・現存）: https://temple.atawi.link/temples/gasshoji-nakaizumi/
+- 十輪寺（南部地区・曹洞宗・現存）: https://temple.atawi.link/temples/jurinji-kamiohnogo/
+- 宣光寺（見付地区・曹洞宗・現存）: https://temple.atawi.link/temples/senkoji-mitsuke/
+- 永福寺（御厨地区・曹洞宗・現存）: https://temple.atawi.link/temples/eifukuji-nishikaizuka/
+- 金剛寺（見付地区・曹洞宗・現存）: https://temple.atawi.link/temples/kongoji-mitsuke/
+- 林宝院（御厨地区・曹洞宗・現存）: https://temple.atawi.link/temples/rinpoin-nishikaizuka/
+- 本性寺（中泉地区・日蓮宗・現存）: https://temple.atawi.link/temples/honshoji-kounodai/
+- 玄妙寺（見付地区・日蓮宗・現存）: https://temple.atawi.link/temples/genmyoji-mitsuke/
+- 宣正寺（向陽地区・日蓮正宗・現存）: https://temple.atawi.link/temples/senshoji-iwai/
+- 日本山妙法寺磐田小僧伽（地区未確定地区・日本山妙法寺大僧伽・所在地・現況不明）: https://temple.atawi.link/temples/nipponzan-myohoji-iwata/
+- 神心教（見付地区・包括宗教法人「神心教」・現存）: https://temple.atawi.link/temples/shinshinkyo-mitsuke/
+- 神心教本部（見付地区・神心教・現存）: https://temple.atawi.link/temples/shinshinkyo-honbu-mitsuke/
+- 蓮台寺（豊岡地区・真言宗智山派・現地痕跡未確認）: https://temple.atawi.link/temples/rendaiji-yashiroyama/
+- 西光寺（竜洋地区・浄土宗・現存）: https://temple.atawi.link/temples/saikoji-kaketsuka/
+- 國清寺（竜洋地区・浄土宗・現存）: https://temple.atawi.link/temples/kokuseiji-kaketsuka/
+- 満福寺（竜洋地区・浄土真宗本願寺派・現存）: https://temple.atawi.link/temples/manpukuji-kaketsuka-819/
+- 萬福寺（竜洋地区・真宗大谷派・現存）: https://temple.atawi.link/temples/manpukuji-kaketsuka-799/
+- 行興寺（豊田地区・時宗・現存）: https://temple.atawi.link/temples/gyokoji-ikeda/
+- 慈眼寺（豊岡地区・臨済宗妙心寺派・現地痕跡未確認）: https://temple.atawi.link/temples/jigenji-kamikandamasu/
+- 圓通寺（豊岡地区・臨済宗妙心寺派・現地痕跡未確認）: https://temple.atawi.link/temples/entsuji-ohira/
+- 虫生寺（豊岡地区・臨済宗妙心寺派・現地痕跡未確認）: https://temple.atawi.link/temples/mushuoji-mushuo/
+- 浄光寺（豊岡地区・臨済宗妙心寺派・現地痕跡未確認）: https://temple.atawi.link/temples/jokoji-shikiji/
+- 龍雲庵（豊岡地区・臨済宗妙心寺派・現地痕跡未確認）: https://temple.atawi.link/temples/ryounan-shikiji/
+- 永明寺（豊岡地区・臨済宗妙心寺派・現地痕跡未確認）: https://temple.atawi.link/temples/eimeiji-shikiji/
+- 永安寺（豊岡地区・臨済宗妙心寺派・現地痕跡未確認）: https://temple.atawi.link/temples/eianji-shikiji/
+- 清凉院（豊岡地区・臨済宗妙心寺派・現地痕跡未確認）: https://temple.atawi.link/temples/seiryo-in-iwamuro/
+- 松林寺（竜洋地区・臨済宗方広寺派・現存）: https://temple.atawi.link/temples/shorinji-kawabukuro/
+- 寶珠院（竜洋地区・臨済宗方広寺派・現存）: https://temple.atawi.link/temples/hojuin-jurojima/
+- 潜龍寺（竜洋地区・臨済宗方広寺派・現存）: https://temple.atawi.link/temples/senryuji-kawabukuro/
+- 竜泉寺（竜洋地区・臨済宗方広寺派・現存）: https://temple.atawi.link/temples/ryusenji-shiraha/
+- 香集寺（竜洋地区・臨済宗方広寺派・現存）: https://temple.atawi.link/temples/koshuji-kaketsuka/
+- 常楽寺（竜洋地区・臨済宗方広寺派・現存）: https://temple.atawi.link/temples/jorakuji-horinochi/
+- 大泉寺（福田地区・曹洞宗・寺院跡・廃寺）: https://temple.atawi.link/temples/daisenji-toyohamanakano/
+- 西福寺（福田地区・曹洞宗・寺院跡・廃寺）: https://temple.atawi.link/temples/saifukuji-toyohamanakano/
+- 竜雲寺（福田地区・曹洞宗・現存）: https://temple.atawi.link/temples/ryuunji-toyohama/
+- 宗次寺（福田地区・曹洞宗・現存）: https://temple.atawi.link/temples/sojiji-minamijima/
+- 慶昌寺（福田地区・曹洞宗・現存）: https://temple.atawi.link/temples/keishoji-fukude/
+- 長泉寺（福田地区・曹洞宗・現存）: https://temple.atawi.link/temples/chosenji-fukudenakajima/
+- 観音寺（福田地区・曹洞宗・現存）: https://temple.atawi.link/temples/kannonji-fukude/
+- 龍法院（福田地区・曹洞宗・現存）: https://temple.atawi.link/temples/ryuhoin-ohara/
+- 蔵本寺（福田地区・曹洞宗・現存）: https://temple.atawi.link/temples/zohonji-ikago/
+- 寿正寺（福田地区・曹洞宗・現存）: https://temple.atawi.link/temples/jushouji-hiruike/
+- 蓮覚寺（竜洋地区・曹洞宗・現存）: https://temple.atawi.link/temples/rengakuji-ryuyonakajima/
+- 願成寺（竜洋地区・曹洞宗・現存）: https://temple.atawi.link/temples/ganjoji-hirama/
+- 慈慶庵（竜洋地区・曹洞宗・現存）: https://temple.atawi.link/temples/jikeian-komaba/
+- 心月寺（竜洋地区・曹洞宗・現存）: https://temple.atawi.link/temples/shingetsuji-ebijima/
+- 福生寺（竜洋地区・曹洞宗・現存）: https://temple.atawi.link/temples/fukushoji-nishihiramatsu/
+- 聖寿寺（竜洋地区・曹洞宗・現存）: https://temple.atawi.link/temples/shojuji-oka/
+- 金藏寺（竜洋地区・曹洞宗・現存）: https://temple.atawi.link/temples/kinzoji-toyooka/
+- 雄照寺（竜洋地区・曹洞宗・現存）: https://temple.atawi.link/temples/yushoji-toyooka/
+- 守増寺（竜洋地区・曹洞宗・現存）: https://temple.atawi.link/temples/shuzoji-toyooka/
+- 松向寺（豊田地区・曹洞宗・現存）: https://temple.atawi.link/temples/shokoji-miyanoshiki/
+- 智恩齋（豊田地区・曹洞宗・現存）: https://temple.atawi.link/temples/chionsai-hitokoto/
+- 安楽寺（豊田地区・曹洞宗・現存）: https://temple.atawi.link/temples/anrakuji-tateno/
+- 豊田院（豊田地区・曹洞宗・現存）: https://temple.atawi.link/temples/toyodain-kegojima/
+- 正医寺（豊田地区・曹洞宗・現存）: https://temple.atawi.link/temples/shoi-ji-shimoban-no/
+- 福王寺（豊田地区・曹洞宗・現存）: https://temple.atawi.link/temples/fukuoji-morimoto/
+- 林昌寺（豊田地区・曹洞宗・現存）: https://temple.atawi.link/temples/rinshoji-kodateno/
+- 興徳寺（豊田地区・曹洞宗・現存）: https://temple.atawi.link/temples/kotokuji-morishita/
+- 養福寺（豊田地区・曹洞宗・現存）: https://temple.atawi.link/temples/yofukuji-shimohongo/
+- 妙法寺（豊田地区・曹洞宗・現存）: https://temple.atawi.link/temples/myohoji-ikeda/
+- 誓渡院（豊田地区・曹洞宗・現存）: https://temple.atawi.link/temples/seidoin-ikeda/
+- 大圓寺（豊田地区・曹洞宗・現存）: https://temple.atawi.link/temples/daienji-kamo/
+- 大蔵寺（豊田地区・曹洞宗・寺院跡・廃寺）: https://temple.atawi.link/temples/daizoji-tomei/
+- 松久院（豊岡地区・曹洞宗・現存）: https://temple.atawi.link/temples/shokyuin-mitsue/
+- 法音庵（豊岡地区・曹洞宗・現存）: https://temple.atawi.link/temples/hoonan-kaminobe/
+- 天龍院（豊岡地区・曹洞宗・現存）: https://temple.atawi.link/temples/tenryuin-kaminobe/
+- 一雲斉（豊岡地区・曹洞宗・現存）: https://temple.atawi.link/temples/ichiunsai-shimonobe/
+- 最廣寺（豊岡地区・曹洞宗・現存）: https://temple.atawi.link/temples/saikoji-matsunokijima/
+- 妙福寺（福田地区・日蓮宗・現存）: https://temple.atawi.link/temples/myofukuji-fukude/
+- 智教院（竜洋地区・日蓮宗・現存）: https://temple.atawi.link/temples/chikyoin-shiraha/
+- 妙満寺（豊岡地区・日蓮宗・現存）: https://temple.atawi.link/temples/myomanji-kaminobe/
+- 本妙院（向陽地区・単立・現存）: https://temple.atawi.link/temples/honmyoin-iwai/
+
+## 地区（9地区）
+
+- 見付地区の寺院: https://temple.atawi.link/areas/mitsuke/ — 遠江国府や東海道見付宿の記憶を受け継ぐ、磐田の政治・文化の中心地。
+- 中泉地区の寺院: https://temple.atawi.link/areas/nakaizumi/ — 国分寺・国分尼寺、中泉御殿、鉄道開通後の玄関口としての歴史を持つ地区。
+- 御厨地区の寺院: https://temple.atawi.link/areas/mikuriya/ — 鎌田御厨や御厨古墳群など、磐田原台地東縁の古代史を伝える地区。
+- 豊田地区の寺院: https://temple.atawi.link/areas/toyoda/ — 天竜川左岸と池田の渡し、熊野御前ゆかりの行興寺などの記憶が残る地区。
+- 南部地区の寺院: https://temple.atawi.link/areas/nanbu/ — 天竜川と原野谷川に挟まれ、旧村ごとの歴史と治水の記憶を持つ地区。
+- 向陽地区の寺院: https://temple.atawi.link/areas/koyo/ — 岩田・大藤・向笠など、磐田原台地の丘陵地に古代からの遺跡が残る地区。
+- 竜洋地区の寺院: https://temple.atawi.link/areas/ryuyo/ — 天竜川と遠州灘に抱かれ、掛塚湊や掛塚まつりの記憶を伝える地区。
+- 福田地区の寺院: https://temple.atawi.link/areas/fukude/ — 太田川河口の港町として開け、海辺の暮らしと織物産業の記憶を持つ地区。
+- 豊岡地区の寺院: https://temple.atawi.link/areas/toyooka/ — 磐田市北部の山間・丘陵に、古代から中世の記憶が残る地区。
+
+## 宗派（16件）
+
+- 真言宗醍醐派の寺院: https://temple.atawi.link/sects/shingon-daigo/
+- 真言宗智山派の寺院: https://temple.atawi.link/sects/shingon-chisan/
+- 新義真言宗の寺院: https://temple.atawi.link/sects/shingi-shingon/
+- 浄土宗の寺院: https://temple.atawi.link/sects/jodo/
+- 真宗大谷派の寺院: https://temple.atawi.link/sects/shinshu-otani/
+- 真宗高田派の寺院: https://temple.atawi.link/sects/shinshu-takada/
+- 時宗の寺院: https://temple.atawi.link/sects/ji/
+- 臨済宗妙心寺派の寺院: https://temple.atawi.link/sects/rinzai-myoshinji/
+- 曹洞宗の寺院: https://temple.atawi.link/sects/soto/
+- 日蓮宗の寺院: https://temple.atawi.link/sects/nichiren/
+- 日蓮正宗の寺院: https://temple.atawi.link/sects/nichiren-shoshu/
+- 日本山妙法寺大僧伽の寺院: https://temple.atawi.link/sects/nipponzan-myohoji/
+- その他・関連宗教法人の寺院: https://temple.atawi.link/sects/related-religious-corporations/
+- 浄土真宗本願寺派の寺院: https://temple.atawi.link/sects/shinshu-honganji/
+- 臨済宗方広寺派の寺院: https://temple.atawi.link/sects/rinzai-hokoji/
+- 単立の寺院: https://temple.atawi.link/sects/independent/
+
+## 寺院の基礎資料（6本）
+
+- 寺院用語集: https://temple.atawi.link/knowledge/terms/ — 菩提寺の由緒や墓・法要を調べるときに使う言葉を、家族で共有できる形に整理します。
+- 宗派解説: https://temple.atawi.link/knowledge/sects/ — 本山、本尊、歴史、磐田市内の寺院を宗派ごとに確認するための入口です。
+- 檀家制度とは: https://temple.atawi.link/knowledge/danka-system/ — 檀家制度の歴史、寺院と家の役割、現在の変化を一般論として整理します。
+- 法要ガイド: https://temple.atawi.link/knowledge/houyou/ — 法事、年忌法要、お盆、彼岸、施餓鬼、報恩講の意味と確認事項を整理します。
+- 墓じまいガイド: https://temple.atawi.link/knowledge/haka-jimai/ — 墓じまいを検討するときの順序と注意点を、営業目的ではなく一般論としてまとめます。
+- 永代供養とは: https://temple.atawi.link/knowledge/eitai-kuyo/ — 永代供養の制度、種類、確認すべき条件を一般論として整理します。
+
+## 基礎ガイド（7本）
+
+- 法要で磐田へ帰る前に確認すること: https://temple.atawi.link/guide/houyou-kisei/ — 法要やお墓参りで磐田へ帰る前に、菩提寺、墓、仏壇、実家の状態を家族で確認するためのメモです。
+- 磐田市で菩提寺がわからないときの確認方法: https://temple.atawi.link/guide/bodaiji-kakunin/ — 磐田市で菩提寺がわからないときに、寺院名、墓地、仏壇、過去帳、親族の記録、住所から確認する順番を整理します。
+- 墓じまい前に確認すること｜寺・実家・不動産: https://temple.atawi.link/guide/haka-enpo/ — 磐田市で墓じまいを考える前に、菩提寺、墓地管理者、親族の合意、仏壇・位牌、実家の名義や空き家状態を確認する順番を整理します。
+- 仏壇じまいと墓じまいの手順｜菩提寺への相談の仕方: https://temple.atawi.link/guide/butsudan-haka-jimai/ — 実家をたたむときの寺側の作法を整理します。仏壇じまいと墓じまいは別の手続きで、呼び名も宗派によって異なります。菩提寺への切り出し方、閉眼供養、改葬許可の順番を、結論を急がずに確認します。
+- 檀家とお布施の基礎知識: https://temple.atawi.link/guide/danka/ — 檀家制度、護持会費、お布施、離檀という言葉を煽らずに整理し、菩提寺と話す前の準備をまとめます。
+- 永代供養を考える前に確認したい親族・菩提寺・実家のこと: https://temple.atawi.link/guide/eitaikuyo/ — 磐田市で永代供養を考える前に、親族の合意、菩提寺との関係、墓地・仏壇・位牌、実家の管理や不動産確認を整理します。
+- 法要・お墓参りで帰省したとき、実家で見る10項目: https://temple.atawi.link/guide/kisei-check/ — 法要やお墓参りで帰省したときに、菩提寺、墓、仏壇、実家、親の意向を順番に確認する10項目チェックリストです。
+
+## 家族のためのガイド（9分類・200本）
+
+- 法要準備（30本）: https://temple.atawi.link/topics/houyou/
+- 菩提寺・宗派（20本）: https://temple.atawi.link/topics/bodaiji/
+- 墓・納骨・永代供養（25本）: https://temple.atawi.link/topics/ohaka/
+- 仏壇・位牌・過去帳（20本）: https://temple.atawi.link/topics/butsudan/
+- 法要帰省（25本）: https://temple.atawi.link/topics/kisei/
+- 帰省時の実家確認（30本）: https://temple.atawi.link/topics/jikka/
+- 家族会議（20本）: https://temple.atawi.link/topics/kazoku-kaigi/
+- 空き家予防（20本）: https://temple.atawi.link/topics/akiya/
+- 実家カルテ・相談（10本）: https://temple.atawi.link/topics/jikka-karute/
+- 法要準備は何から始める？最初の確認順序: https://temple.atawi.link/topics/houyou/houyou-01/ — 法要準備は何から始める？最初の確認順序について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要の日程を決めるときの家族との相談: https://temple.atawi.link/topics/houyou/houyou-02/ — 法要の日程を決めるときの家族との相談について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 年忌法要の数え方を確認する方法: https://temple.atawi.link/topics/houyou/houyou-03/ — 年忌法要の数え方を確認する方法について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 四十九日法要の準備で確認したいこと: https://temple.atawi.link/topics/houyou/houyou-04/ — 四十九日法要の準備で確認したいことについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 一周忌法要までに家族で決めること: https://temple.atawi.link/topics/houyou/houyou-05/ — 一周忌法要までに家族で決めることについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 三回忌法要を小さく営むときの考え方: https://temple.atawi.link/topics/houyou/houyou-06/ — 三回忌法要を小さく営むときの考え方について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要会場を自宅・寺院・会館から選ぶ: https://temple.atawi.link/topics/houyou/houyou-07/ — 法要会場を自宅・寺院・会館から選ぶについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要に招く範囲を家族で相談する: https://temple.atawi.link/topics/houyou/houyou-08/ — 法要に招く範囲を家族で相談するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要案内状に書く内容と送り方: https://temple.atawi.link/topics/houyou/houyou-09/ — 法要案内状に書く内容と送り方について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要を家族だけで行う場合の伝え方: https://temple.atawi.link/topics/houyou/houyou-10/ — 法要を家族だけで行う場合の伝え方について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 遠方の親族へ法要予定を知らせる時期: https://temple.atawi.link/topics/houyou/houyou-11/ — 遠方の親族へ法要予定を知らせる時期について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要当日の持ち物を前日までにそろえる: https://temple.atawi.link/topics/houyou/houyou-12/ — 法要当日の持ち物を前日までにそろえるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要当日の流れを家族で共有する: https://temple.atawi.link/topics/houyou/houyou-13/ — 法要当日の流れを家族で共有するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 施主・喪主の役割を確認する: https://temple.atawi.link/topics/houyou/houyou-14/ — 施主・喪主の役割を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要の受付をお願いするときの準備: https://temple.atawi.link/topics/houyou/houyou-15/ — 法要の受付をお願いするときの準備について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要後の会食を行うか迷ったとき: https://temple.atawi.link/topics/houyou/houyou-16/ — 法要後の会食を行うか迷ったときについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- お斎の会場と人数を決める手順: https://temple.atawi.link/topics/houyou/houyou-17/ — お斎の会場と人数を決める手順について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要の返礼品を準備するときの考え方: https://temple.atawi.link/topics/houyou/houyou-18/ — 法要の返礼品を準備するときの考え方について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- お布施について寺院へ確認するときの聞き方: https://temple.atawi.link/topics/houyou/houyou-19/ — お布施について寺院へ確認するときの聞き方について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 御車料・御膳料を確認するときの注意: https://temple.atawi.link/topics/houyou/houyou-20/ — 御車料・御膳料を確認するときの注意について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要の服装を親族間でそろえる方法: https://temple.atawi.link/topics/houyou/houyou-21/ — 法要の服装を親族間でそろえる方法について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 子どもと一緒に法要へ参列するとき: https://temple.atawi.link/topics/houyou/houyou-22/ — 子どもと一緒に法要へ参列するときについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 高齢の家族が参列する法要の準備: https://temple.atawi.link/topics/houyou/houyou-23/ — 高齢の家族が参列する法要の準備について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 車いす利用者がいる法要での会場確認: https://temple.atawi.link/topics/houyou/houyou-24/ — 車いす利用者がいる法要での会場確認について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 雨の日の法要と墓参りに備える: https://temple.atawi.link/topics/houyou/houyou-25/ — 雨の日の法要と墓参りに備えるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 夏の法要で暑さに備える: https://temple.atawi.link/topics/houyou/houyou-26/ — 夏の法要で暑さに備えるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 冬の法要で移動と寒さに備える: https://temple.atawi.link/topics/houyou/houyou-27/ — 冬の法要で移動と寒さに備えるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- オンライン参加を取り入れるときの準備: https://temple.atawi.link/topics/houyou/houyou-28/ — オンライン参加を取り入れるときの準備について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要を延期・変更するときの連絡順序: https://temple.atawi.link/topics/houyou/houyou-29/ — 法要を延期・変更するときの連絡順序について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要後に記録しておきたいこと: https://temple.atawi.link/topics/houyou/houyou-30/ — 法要後に記録しておきたいことについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 菩提寺とは何かを家族で確認する: https://temple.atawi.link/topics/bodaiji/bodaiji-01/ — 菩提寺とは何かを家族で確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 菩提寺が分からないときの調べ方: https://temple.atawi.link/topics/bodaiji/bodaiji-02/ — 菩提寺が分からないときの調べ方について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 実家の菩提寺を親に聞くときの質問: https://temple.atawi.link/topics/bodaiji/bodaiji-03/ — 実家の菩提寺を親に聞くときの質問について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 寺院名は分かるが所在地が不明なとき: https://temple.atawi.link/topics/bodaiji/bodaiji-04/ — 寺院名は分かるが所在地が不明なときについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 墓地から菩提寺を確認する手がかり: https://temple.atawi.link/topics/bodaiji/bodaiji-05/ — 墓地から菩提寺を確認する手がかりについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 過去帳から寺院との関係をたどる: https://temple.atawi.link/topics/bodaiji/bodaiji-06/ — 過去帳から寺院との関係をたどるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 位牌の記録から確認できること: https://temple.atawi.link/topics/bodaiji/bodaiji-07/ — 位牌の記録から確認できることについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 親族が別々の菩提寺を持つ場合の整理: https://temple.atawi.link/topics/bodaiji/bodaiji-08/ — 親族が別々の菩提寺を持つ場合の整理について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 菩提寺が遠方にあるときの法要相談: https://temple.atawi.link/topics/bodaiji/bodaiji-09/ — 菩提寺が遠方にあるときの法要相談について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 引っ越し後も菩提寺との関係を続けるには: https://temple.atawi.link/topics/bodaiji/bodaiji-10/ — 引っ越し後も菩提寺との関係を続けるにはについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 菩提寺へ初めて連絡するときの伝え方: https://temple.atawi.link/topics/bodaiji/bodaiji-11/ — 菩提寺へ初めて連絡するときの伝え方について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 長く連絡していない菩提寺へ相談する: https://temple.atawi.link/topics/bodaiji/bodaiji-12/ — 長く連絡していない菩提寺へ相談するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 宗派が分からないときに見直す資料: https://temple.atawi.link/topics/bodaiji/bodaiji-13/ — 宗派が分からないときに見直す資料について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 同じ宗派でも作法が異なる理由: https://temple.atawi.link/topics/bodaiji/bodaiji-14/ — 同じ宗派でも作法が異なる理由について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 焼香の回数を断定せず確認する方法: https://temple.atawi.link/topics/bodaiji/bodaiji-15/ — 焼香の回数を断定せず確認する方法について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 読経や法要の流れを寺院へ尋ねる: https://temple.atawi.link/topics/bodaiji/bodaiji-16/ — 読経や法要の流れを寺院へ尋ねるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 宗派名の表記が資料ごとに違うとき: https://temple.atawi.link/topics/bodaiji/bodaiji-17/ — 宗派名の表記が資料ごとに違うときについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 寺院の公式情報と家族の記憶が違うとき: https://temple.atawi.link/topics/bodaiji/bodaiji-18/ — 寺院の公式情報と家族の記憶が違うときについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 檀家かどうか分からない場合の確認: https://temple.atawi.link/topics/bodaiji/bodaiji-19/ — 檀家かどうか分からない場合の確認について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 菩提寺について家族の記録を残す: https://temple.atawi.link/topics/bodaiji/bodaiji-20/ — 菩提寺について家族の記録を残すについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 実家のお墓の場所を家族で共有する: https://temple.atawi.link/topics/ohaka/ohaka-01/ — 実家のお墓の場所を家族で共有するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 墓地の管理者が分からないとき: https://temple.atawi.link/topics/ohaka/ohaka-02/ — 墓地の管理者が分からないときについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 墓地使用者の名義を確認する方法: https://temple.atawi.link/topics/ohaka/ohaka-03/ — 墓地使用者の名義を確認する方法について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 墓参りで墓石の状態を確認する: https://temple.atawi.link/topics/ohaka/ohaka-04/ — 墓参りで墓石の状態を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 墓石の文字を記録するときの注意: https://temple.atawi.link/topics/ohaka/ohaka-05/ — 墓石の文字を記録するときの注意について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 墓地の年間管理について確認する: https://temple.atawi.link/topics/ohaka/ohaka-06/ — 墓地の年間管理について確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 遠方のお墓を家族で見守る方法: https://temple.atawi.link/topics/ohaka/ohaka-07/ — 遠方のお墓を家族で見守る方法について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- お墓の掃除を無理なく続けるには: https://temple.atawi.link/topics/ohaka/ohaka-08/ — お墓の掃除を無理なく続けるにはについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 墓参りの持ち物を準備する: https://temple.atawi.link/topics/ohaka/ohaka-09/ — 墓参りの持ち物を準備するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 納骨の日程を寺院と相談する: https://temple.atawi.link/topics/ohaka/ohaka-10/ — 納骨の日程を寺院と相談するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 納骨前に家族で確認すること: https://temple.atawi.link/topics/ohaka/ohaka-11/ — 納骨前に家族で確認することについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 納骨済みの記録を整理する: https://temple.atawi.link/topics/ohaka/ohaka-12/ — 納骨済みの記録を整理するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 納骨先が複数ある家族の情報整理: https://temple.atawi.link/topics/ohaka/ohaka-13/ — 納骨先が複数ある家族の情報整理について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 墓じまいを決める前に確認すること: https://temple.atawi.link/topics/ohaka/ohaka-14/ — 墓じまいを決める前に確認することについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 改葬について家族で話し始める: https://temple.atawi.link/topics/ohaka/ohaka-15/ — 改葬について家族で話し始めるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 改葬手続きの相談先を整理する: https://temple.atawi.link/topics/ohaka/ohaka-16/ — 改葬手続きの相談先を整理するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 永代供養とは何かを確認する: https://temple.atawi.link/topics/ohaka/ohaka-17/ — 永代供養とは何かを確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 永代供養を検討するときの質問: https://temple.atawi.link/topics/ohaka/ohaka-18/ — 永代供養を検討するときの質問について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 合祀について事前に確認したいこと: https://temple.atawi.link/topics/ohaka/ohaka-19/ — 合祀について事前に確認したいことについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 納骨堂を検討するときの確認項目: https://temple.atawi.link/topics/ohaka/ohaka-20/ — 納骨堂を検討するときの確認項目について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 樹木葬を検討するときの確認項目: https://temple.atawi.link/topics/ohaka/ohaka-21/ — 樹木葬を検討するときの確認項目について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 寺院墓地と公営・民営墓地の確認: https://temple.atawi.link/topics/ohaka/ohaka-22/ — 寺院墓地と公営・民営墓地の確認について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 承継する人が未定のお墓について話す: https://temple.atawi.link/topics/ohaka/ohaka-23/ — 承継する人が未定のお墓について話すについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- お墓の写真と書類を一緒に保管する: https://temple.atawi.link/topics/ohaka/ohaka-24/ — お墓の写真と書類を一緒に保管するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- お墓の今後を家族会議の議題にする: https://temple.atawi.link/topics/ohaka/ohaka-25/ — お墓の今後を家族会議の議題にするについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 実家の仏壇を帰省時に確認する: https://temple.atawi.link/topics/butsudan/butsudan-01/ — 実家の仏壇を帰省時に確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 仏壇の写真を記録として残す方法: https://temple.atawi.link/topics/butsudan/butsudan-02/ — 仏壇の写真を記録として残す方法について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 仏壇の引き出しで確認するもの: https://temple.atawi.link/topics/butsudan/butsudan-03/ — 仏壇の引き出しで確認するものについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 位牌が何柱あるかを家族で確認する: https://temple.atawi.link/topics/butsudan/butsudan-04/ — 位牌が何柱あるかを家族で確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 位牌の文字を安全に記録する: https://temple.atawi.link/topics/butsudan/butsudan-05/ — 位牌の文字を安全に記録するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 位牌と過去帳の記載を照合する: https://temple.atawi.link/topics/butsudan/butsudan-06/ — 位牌と過去帳の記載を照合するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 過去帳とは何かを家族で共有する: https://temple.atawi.link/topics/butsudan/butsudan-07/ — 過去帳とは何かを家族で共有するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 過去帳の保管場所を決める: https://temple.atawi.link/topics/butsudan/butsudan-08/ — 過去帳の保管場所を決めるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 過去帳を撮影するときに配慮すること: https://temple.atawi.link/topics/butsudan/butsudan-09/ — 過去帳を撮影するときに配慮することについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 遺影と位牌の人物を照合する: https://temple.atawi.link/topics/butsudan/butsudan-10/ — 遺影と位牌の人物を照合するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 仏壇を移動する前に相談すること: https://temple.atawi.link/topics/butsudan/butsudan-11/ — 仏壇を移動する前に相談することについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 実家の建て替えと仏壇の移動: https://temple.atawi.link/topics/butsudan/butsudan-12/ — 実家の建て替えと仏壇の移動について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 親が施設へ移るときの仏壇について: https://temple.atawi.link/topics/butsudan/butsudan-13/ — 親が施設へ移るときの仏壇についてについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 空き家になる実家の仏壇を考える: https://temple.atawi.link/topics/butsudan/butsudan-14/ — 空き家になる実家の仏壇を考えるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 仏壇を守る人が決まっていないとき: https://temple.atawi.link/topics/butsudan/butsudan-15/ — 仏壇を守る人が決まっていないときについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 小さな仏壇へ移すことを相談する: https://temple.atawi.link/topics/butsudan/butsudan-16/ — 小さな仏壇へ移すことを相談するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 位牌をまとめる前に確認すること: https://temple.atawi.link/topics/butsudan/butsudan-17/ — 位牌をまとめる前に確認することについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 仏壇の手入れを家族で分担する: https://temple.atawi.link/topics/butsudan/butsudan-18/ — 仏壇の手入れを家族で分担するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 仏具の名前が分からないときの記録: https://temple.atawi.link/topics/butsudan/butsudan-19/ — 仏具の名前が分からないときの記録について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 仏壇・位牌・過去帳の一覧を作る: https://temple.atawi.link/topics/butsudan/butsudan-20/ — 仏壇・位牌・過去帳の一覧を作るについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要帰省の予定を立てる順序: https://temple.atawi.link/topics/kisei/kisei-01/ — 法要帰省の予定を立てる順序について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 日帰りの法要帰省で優先すること: https://temple.atawi.link/topics/kisei/kisei-02/ — 日帰りの法要帰省で優先することについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 一泊の法要帰省でできる実家確認: https://temple.atawi.link/topics/kisei/kisei-03/ — 一泊の法要帰省でできる実家確認について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 遠方から法要へ帰省するときの準備: https://temple.atawi.link/topics/kisei/kisei-04/ — 遠方から法要へ帰省するときの準備について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 新幹線で法要帰省するときの持ち物: https://temple.atawi.link/topics/kisei/kisei-05/ — 新幹線で法要帰省するときの持ち物について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 車で法要帰省するときの安全確認: https://temple.atawi.link/topics/kisei/kisei-06/ — 車で法要帰省するときの安全確認について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 子どもを連れて法要帰省するとき: https://temple.atawi.link/topics/kisei/kisei-07/ — 子どもを連れて法要帰省するときについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 高齢の親と法要へ向かうとき: https://temple.atawi.link/topics/kisei/kisei-08/ — 高齢の親と法要へ向かうときについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- きょうだいで帰省日が違う場合の共有: https://temple.atawi.link/topics/kisei/kisei-09/ — きょうだいで帰省日が違う場合の共有について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要前日に確認しておく連絡先: https://temple.atawi.link/topics/kisei/kisei-10/ — 法要前日に確認しておく連絡先について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要当日の朝に慌てないための準備: https://temple.atawi.link/topics/kisei/kisei-11/ — 法要当日の朝に慌てないための準備について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要後に実家へ立ち寄る時間を作る: https://temple.atawi.link/topics/kisei/kisei-12/ — 法要後に実家へ立ち寄る時間を作るについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 墓参りと実家確認を同日に行う: https://temple.atawi.link/topics/kisei/kisei-13/ — 墓参りと実家確認を同日に行うについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- お盆の帰省で法要準備を確認する: https://temple.atawi.link/topics/kisei/kisei-14/ — お盆の帰省で法要準備を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- お彼岸の帰省で家族と話すこと: https://temple.atawi.link/topics/kisei/kisei-15/ — お彼岸の帰省で家族と話すことについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 年末年始の帰省で仏壇を確認する: https://temple.atawi.link/topics/kisei/kisei-16/ — 年末年始の帰省で仏壇を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 台風時期の法要帰省に備える: https://temple.atawi.link/topics/kisei/kisei-17/ — 台風時期の法要帰省に備えるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 猛暑日の墓参りと実家確認: https://temple.atawi.link/topics/kisei/kisei-18/ — 猛暑日の墓参りと実家確認について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 帰省できない家族へ写真で共有する: https://temple.atawi.link/topics/kisei/kisei-19/ — 帰省できない家族へ写真で共有するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要帰省の交通費を家族で相談する: https://temple.atawi.link/topics/kisei/kisei-20/ — 法要帰省の交通費を家族で相談するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 宿泊先を実家以外にする選択: https://temple.atawi.link/topics/kisei/kisei-21/ — 宿泊先を実家以外にする選択について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 親族宅へ立ち寄るときの連絡: https://temple.atawi.link/topics/kisei/kisei-22/ — 親族宅へ立ち寄るときの連絡について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要帰省で持ち帰る書類を決める: https://temple.atawi.link/topics/kisei/kisei-23/ — 法要帰省で持ち帰る書類を決めるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 帰省後に家族へ報告する内容: https://temple.atawi.link/topics/kisei/kisei-24/ — 帰省後に家族へ報告する内容について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 次の帰省までにすることを一つ決める: https://temple.atawi.link/topics/kisei/kisei-25/ — 次の帰省までにすることを一つ決めるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 帰省時の実家確認は外観から始める: https://temple.atawi.link/topics/jikka/jikka-01/ — 帰省時の実家確認は外観から始めるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 屋根や雨どいを地上から確認する: https://temple.atawi.link/topics/jikka/jikka-02/ — 屋根や雨どいを地上から確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 外壁のひびや傷みを記録する: https://temple.atawi.link/topics/jikka/jikka-03/ — 外壁のひびや傷みを記録するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 庭木が道路へ出ていないか確認する: https://temple.atawi.link/topics/jikka/jikka-04/ — 庭木が道路へ出ていないか確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 雑草と落ち葉の状態を確認する: https://temple.atawi.link/topics/jikka/jikka-05/ — 雑草と落ち葉の状態を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 門扉・塀・フェンスを確認する: https://temple.atawi.link/topics/jikka/jikka-06/ — 門扉・塀・フェンスを確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 玄関の鍵と合鍵の所在を確認する: https://temple.atawi.link/topics/jikka/jikka-07/ — 玄関の鍵と合鍵の所在を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 郵便受けに郵便物がたまっていないか: https://temple.atawi.link/topics/jikka/jikka-08/ — 郵便受けに郵便物がたまっていないかについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 宅配物や不在票を確認する: https://temple.atawi.link/topics/jikka/jikka-09/ — 宅配物や不在票を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 電気・水道・ガスの使用状況を確認する: https://temple.atawi.link/topics/jikka/jikka-10/ — 電気・水道・ガスの使用状況を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 水漏れや異臭に気づいたとき: https://temple.atawi.link/topics/jikka/jikka-11/ — 水漏れや異臭に気づいたときについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- ブレーカーと分電盤の場所を確認する: https://temple.atawi.link/topics/jikka/jikka-12/ — ブレーカーと分電盤の場所を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 台所の食品と火の元を確認する: https://temple.atawi.link/topics/jikka/jikka-13/ — 台所の食品と火の元を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 冷蔵庫を無理なく確認する: https://temple.atawi.link/topics/jikka/jikka-14/ — 冷蔵庫を無理なく確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 浴室・洗面所の湿気を確認する: https://temple.atawi.link/topics/jikka/jikka-15/ — 浴室・洗面所の湿気を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- トイレの水と換気を確認する: https://temple.atawi.link/topics/jikka/jikka-16/ — トイレの水と換気を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 窓・雨戸・網戸の状態を確認する: https://temple.atawi.link/topics/jikka/jikka-17/ — 窓・雨戸・網戸の状態を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 室内の換気を安全に行う: https://temple.atawi.link/topics/jikka/jikka-18/ — 室内の換気を安全に行うについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 仏壇と位牌の状態を確認する: https://temple.atawi.link/topics/jikka/jikka-19/ — 仏壇と位牌の状態を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 重要書類の保管場所を本人に聞く: https://temple.atawi.link/topics/jikka/jikka-20/ — 重要書類の保管場所を本人に聞くについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 固定資産税の通知書を確認する: https://temple.atawi.link/topics/jikka/jikka-21/ — 固定資産税の通知書を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 火災保険の書類を確認する: https://temple.atawi.link/topics/jikka/jikka-22/ — 火災保険の書類を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 土地・建物の権利証類を確認する: https://temple.atawi.link/topics/jikka/jikka-23/ — 土地・建物の権利証類を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 通帳や印鑑を勝手に動かさないために: https://temple.atawi.link/topics/jikka/jikka-24/ — 通帳や印鑑を勝手に動かさないためにについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 近所との連絡状況を親に聞く: https://temple.atawi.link/topics/jikka/jikka-25/ — 近所との連絡状況を親に聞くについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 自治会や地域の役割を確認する: https://temple.atawi.link/topics/jikka/jikka-26/ — 自治会や地域の役割を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 防災用品と避難経路を確認する: https://temple.atawi.link/topics/jikka/jikka-27/ — 防災用品と避難経路を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 親の暮らしに不便がないか聞く: https://temple.atawi.link/topics/jikka/jikka-28/ — 親の暮らしに不便がないか聞くについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 実家確認の写真を家族で共有する: https://temple.atawi.link/topics/jikka/jikka-29/ — 実家確認の写真を家族で共有するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 帰省時チェックリストを次回へ引き継ぐ: https://temple.atawi.link/topics/jikka/jikka-30/ — 帰省時チェックリストを次回へ引き継ぐについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 実家の家族会議を始めるきっかけ: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-01/ — 実家の家族会議を始めるきっかけについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 親へ実家の話を切り出す言葉: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-02/ — 親へ実家の話を切り出す言葉について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 法要後に家族会議を開くときの配慮: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-03/ — 法要後に家族会議を開くときの配慮について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- きょうだいで実家の現状を共有する: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-04/ — きょうだいで実家の現状を共有するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 家族会議の議題を三つに絞る: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-05/ — 家族会議の議題を三つに絞るについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 本人の希望を最初に確認する: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-06/ — 本人の希望を最初に確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 実家を守りたい気持ちを尊重する: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-07/ — 実家を守りたい気持ちを尊重するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 売る・残すの二択にしない話し方: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-08/ — 売る・残すの二択にしない話し方について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 家族の意見が分かれたときの整理: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-09/ — 家族の意見が分かれたときの整理について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 遠方の家族がオンラインで参加する: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-10/ — 遠方の家族がオンラインで参加するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 家族会議に親族を呼ぶ範囲: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-11/ — 家族会議に親族を呼ぶ範囲について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 家族会議の司会役を決める: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-12/ — 家族会議の司会役を決めるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 感情的になったときに会議を止める: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-13/ — 感情的になったときに会議を止めるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 分からないことを宿題として残す: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-14/ — 分からないことを宿題として残すについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 家族会議のメモを全員へ送る: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-15/ — 家族会議のメモを全員へ送るについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 実家の維持費を事実として共有する: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-16/ — 実家の維持費を事実として共有するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 家の中の思い出の品について話す: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-17/ — 家の中の思い出の品について話すについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 仏壇とお墓を別々の議題にする: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-18/ — 仏壇とお墓を別々の議題にするについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 次の家族会議の日を決める: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-19/ — 次の家族会議の日を決めるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 家族だけで決めにくいときの相談先: https://temple.atawi.link/topics/kazoku-kaigi/kazoku-kaigi-20/ — 家族だけで決めにくいときの相談先について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 実家が空き家になる前に話すこと: https://temple.atawi.link/topics/akiya/akiya-01/ — 実家が空き家になる前に話すことについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 親の入院をきっかけに家の管理を確認する: https://temple.atawi.link/topics/akiya/akiya-02/ — 親の入院をきっかけに家の管理を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 親が施設へ移る前の実家確認: https://temple.atawi.link/topics/akiya/akiya-03/ — 親が施設へ移る前の実家確認について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 留守が長くなる実家の連絡体制: https://temple.atawi.link/topics/akiya/akiya-04/ — 留守が長くなる実家の連絡体制について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 空き家予防のための家族連絡網: https://temple.atawi.link/topics/akiya/akiya-05/ — 空き家予防のための家族連絡網について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 近所へ伝える内容を本人と相談する: https://temple.atawi.link/topics/akiya/akiya-06/ — 近所へ伝える内容を本人と相談するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 郵便物をためないための方法: https://temple.atawi.link/topics/akiya/akiya-07/ — 郵便物をためないための方法について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 庭木と草刈りの管理を決める: https://temple.atawi.link/topics/akiya/akiya-08/ — 庭木と草刈りの管理を決めるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 台風後に実家を確認する体制: https://temple.atawi.link/topics/akiya/akiya-09/ — 台風後に実家を確認する体制について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 水道管の凍結や漏水に備える: https://temple.atawi.link/topics/akiya/akiya-10/ — 水道管の凍結や漏水に備えるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 換気と通水の頻度を決める: https://temple.atawi.link/topics/akiya/akiya-11/ — 換気と通水の頻度を決めるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 防犯のために外から確認すること: https://temple.atawi.link/topics/akiya/akiya-12/ — 防犯のために外から確認することについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 火災保険の契約内容を確認する: https://temple.atawi.link/topics/akiya/akiya-13/ — 火災保険の契約内容を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 固定資産税の通知先を確認する: https://temple.atawi.link/topics/akiya/akiya-14/ — 固定資産税の通知先を確認するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 実家の鍵を家族で管理する: https://temple.atawi.link/topics/akiya/akiya-15/ — 実家の鍵を家族で管理するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 家財を急いで片づけないための記録: https://temple.atawi.link/topics/akiya/akiya-16/ — 家財を急いで片づけないための記録について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 空き家管理を家族で分担する: https://temple.atawi.link/topics/akiya/akiya-17/ — 空き家管理を家族で分担するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 遠方から実家を見守る方法: https://temple.atawi.link/topics/akiya/akiya-18/ — 遠方から実家を見守る方法について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 管理が難しくなったときの相談準備: https://temple.atawi.link/topics/akiya/akiya-19/ — 管理が難しくなったときの相談準備について、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 空き家予防の確認表を更新する: https://temple.atawi.link/topics/akiya/akiya-20/ — 空き家予防の確認表を更新するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 実家カルテとは何を記録するものか: https://temple.atawi.link/topics/jikka-karute/jikka-karute-01/ — 実家カルテとは何を記録するものかについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 実家カルテを家族で作り始める: https://temple.atawi.link/topics/jikka-karute/jikka-karute-02/ — 実家カルテを家族で作り始めるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 実家の基本情報を一枚にまとめる: https://temple.atawi.link/topics/jikka-karute/jikka-karute-03/ — 実家の基本情報を一枚にまとめるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 土地と建物の書類を実家カルテに記録する: https://temple.atawi.link/topics/jikka-karute/jikka-karute-04/ — 土地と建物の書類を実家カルテに記録するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 仏壇・お墓の情報を実家カルテに残す: https://temple.atawi.link/topics/jikka-karute/jikka-karute-05/ — 仏壇・お墓の情報を実家カルテに残すについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 実家の写真をカルテとして整理する: https://temple.atawi.link/topics/jikka-karute/jikka-karute-06/ — 実家の写真をカルテとして整理するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 家族の希望を実家カルテに書き留める: https://temple.atawi.link/topics/jikka-karute/jikka-karute-07/ — 家族の希望を実家カルテに書き留めるについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 確認できていない項目を見える化する: https://temple.atawi.link/topics/jikka-karute/jikka-karute-08/ — 確認できていない項目を見える化するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 実家カルテを家族会議で更新する: https://temple.atawi.link/topics/jikka-karute/jikka-karute-09/ — 実家カルテを家族会議で更新するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+- 実家カルテをもとに相談を準備する: https://temple.atawi.link/topics/jikka-karute/jikka-karute-10/ — 実家カルテをもとに相談を準備するについて、家族で確認する順序と記録しておきたいポイントを整理します。結論を急がず、地域や寺院、本人の希望を大切にするためのガイドです。
+
+## 特集・読みもの（4本）
+
+- 帰省と法要の作法: https://temple.atawi.link/tokushu/houyou-sahou/ — 久しぶりに法要へ出る方へ、菩提寺と宗派の調べ方、当日の流れ、焼香、お布施、法要後の記録までを整理します。
+- お寺は今、どうなっているのか: https://temple.atawi.link/tokushu/jiin-no-korekara/ — 檀家制度、家族構成、葬送の変化を整理し、遠方に住む家族が菩提寺と実家のこれからを考える入口にします。
+- お寺のソテツは、なぜあるのか: https://temple.atawi.link/tokushu/sotetsu/ — 寺院境内のソテツを、庭園意匠、長寿、武家伝承、城跡の記憶、魔除け、現地観察の観点から読み解きます。
+- お寺の見方: https://temple.atawi.link/tokushu/kenchiku/ — 寺院建築の基本用語、山門、本堂、軒下、伽藍配置、写真の撮り方を、磐田・遠州の事例とともに整理します。
+
+## 研究論文（343本）
+
+- 遠江国分寺の成立と空間構成: https://temple.atawi.link/research/totomi-kokubunji-state-buddhism/ — 磐田市の特別史跡・遠江国分寺跡について、建立政策、伽藍配置、木装基壇、瓦生産、交通環境を公的資料に基づいて分析します。
+- 遠江国分寺における継承と断絶: https://temple.atawi.link/research/kokubunji-continuity-and-discontinuity/ — 遠江国分寺跡と現在の国分寺の関係を、考古資料、指定記録、現地資料、宗教法人情報から検討し、歴史的連続性をどこまで論証できるかを考察します。
+- 遠江国分寺跡の発掘・保存・公共史: https://temple.atawi.link/research/kokubunji-archaeology-conservation-public-history/ — 遠江国分寺跡の1951年発掘、特別史跡指定、史跡公園化、2006年度以降の再調査と現在の再整備を、保存と公開の両立という観点から分析します。
+- 鎌田山医王寺の歴史叙述と史料層位: https://temple.atawi.link/research/ioji-kamada-history-documentary-layers/ — 磐田市鎌田の医王寺について、開創伝承、医王寺文書、徳川家との関係、明治期の寺院再編を史料の性格ごとに検討する。
+- 医王寺庭園及び参道の文化的景観: https://temple.atawi.link/research/ioji-kamada-garden-approach-cultural-landscape/ — 磐田市指定記念物である医王寺庭園及び参道を、客殿、石組、植栽、山門、災害復旧、日常管理の関係から分析する。
+- 医王寺と御厨地域の公共圏: https://temple.atawi.link/research/ioji-kamada-community-faith-public-memory/ — 医王寺の札所信仰、年中行事、坊中学校、学童疎開、戦没者慰霊を通じ、寺院が御厨地域で担ってきた公共的機能を検討する。
+- 大乗院三仭坊の形成と制度的重層: https://temple.atawi.link/research/daijoin-mihirobo-history-institutional-layers/ — 大乗院と小笠寺が1境内へ統合された過程を、寺伝、修験道制度、中泉御殿、近代宗教政策、現行法人情報から再構成する。
+- 庚申塚古墳上に形成された大乗院三仭坊の境内景観: https://temple.atawi.link/research/daijoin-koshinzuka-kofun-layered-cultural-landscape/ — 磐田市中泉の大乗院三仭坊について、庚申塚古墳とされる地形、2本堂、石段・石垣、2005年度以降の境内整備を検証し、異なる年代が重なる文化的景観として考察する。
+- 大乗院三仭坊における祈願・供養・地域公共圏: https://temple.atawi.link/research/daijoin-mihirobo-community-ritual-public-space/ — 磐田市中泉の大乗院三仭坊について、年中行事、護摩、火渡り、供養会、読経会、おてら市を検証し、現代寺院が形成する地域公共圏を考察する。
+- 岩田山増参寺の成立と匂坂氏: https://temple.atawi.link/research/zosanji-sagisaka-history-source-criticism/ — 磐田市匂坂中の曹洞宗増参寺について、磐田寺、増参庵・蔵参庵、匂坂氏、1564年の移建・改称を複数史料の差異から検証する。
+- 増参寺のソテツ・力石・六地蔵と境内景観: https://temple.atawi.link/research/zosanji-sotetsu-chikaraishi-cultural-landscape/ — 磐田市匂坂中の増参寺について、社山城・匂坂城から移されたと伝わるソテツ、力石、六地蔵覆堂、本堂、参道を文化的景観として検証する。
+- 増参寺・旧東光寺と大めし祭り: https://temple.atawi.link/research/zosanji-daimeshi-tokoji-community-ritual/ — 磐田市指定無形民俗文化財「大めし祭り」を、旧東光寺の本寺である増参寺の読経、神仏習合、直会、初嫁の名披露、映像記録から検証する。
+- 宣光寺の延命地蔵と毘沙門天: https://temple.atawi.link/research/senkoji-jizo-bishamonten-object-biography/ — 磐田市見付の宣光寺に伝わる県指定文化財の木造地蔵菩薩坐像と木造毘沙門天立像を、構造、像容、修理銘、寺伝との差から検証する。
+- 宣光寺梵鐘と徳川家康の遠江支配: https://temple.atawi.link/research/senkoji-ieyasu-bell-inscription-territorial-rule/ — 徳川家康が1587年に宣光寺地蔵菩薩へ寄進した市指定文化財の梵鐘を、鐘銘、郡名、地域鋳造、供養伝承、中泉御殿との関係から検証する。
+- 地蔵小路・和算額・見付学校と宣光寺: https://temple.atawi.link/research/senkoji-jizo-lane-wasan-mitsuke-school-public-sphere/ — 宣光寺を地蔵小路、1776年奉納の和算額、1873年に開校した見付学校の仮校舎という3側面から、見付宿の知識・教育・信仰の公共空間として検証する。
+- 宣光寺延命地蔵堂領16石と見付宿: https://temple.atawi.link/research/senkoji-enmei-jizo-estate-mitsuke-urban-faith/ — 宣光寺に延命地蔵堂領として与えられた朱印高16石を、見付宿の町人・農民信仰、地蔵小路、地脇町、本尊11面観音との関係から史料批判的に検討する。
+- 宣光寺の子育如来像・子育地蔵菩薩像: https://temple.atawi.link/research/senkoji-kosodate-statues-mokujiki-attribution/ — 磐田市指定文化財の子育如来像・子育地蔵菩薩像について、木喰上人作とする伝承を、行政記録、像高、一木造、銘記、比較作例、巡錫史の観点から検証する。
+- 新豊院の開創伝承と向笠氏・可睡斎: https://temple.atawi.link/research/shinpoin-mukasa-foundation-kasuisai-temple-network/ — 磐田市向笠竹之内の新豊院について、開創年代の異説、向笠伯耆守、可睡斎仙麟等膳、寺領寄進・朱印、末寺網を史料批判的に検討する。
+- 新豊院山古墳群と三角縁神獣鏡: https://temple.atawi.link/research/shinpoinyama-kofun-mirror-transition-landscape/ — 国指定史跡・新豊院山古墳群を、弥生時代の土器棺墓・土坑墓、台状墓、2号墳、三角縁神獣鏡、武器類、眺望と保存活用から検証する。
+- 新豊院の虚空蔵・八幡・観音札所: https://temple.atawi.link/research/shinpoin-kokuzo-hachiman-pilgrimage-mukasa-landscape/ — 新豊院の虚空蔵菩薩、八幡大菩薩、観音札所、木版札の伝承を、向笠の里・原の地形、城跡、古墳群、文化財公開と結び付けて検討する。
+- 見性寺遺跡と見付の水陸交通史: https://temple.atawi.link/research/kenshoji-site-lagoon-water-land-transport/ — 見性寺境内周辺の発掘成果を、潟湖環境、縄文貝塚、古代建物群、国分寺式瓦、丸木舟材、中世井戸、寺院造営による再堆積から検討する。
+- 見性寺の移動文化財と3件の寺宝: https://temple.atawi.link/research/kenshoji-mobile-heritage-fudo-arhats-gokorei/ — 見性寺所蔵の市指定文化財3件を、制作年代、宗派的機能、旧蔵寺院、伝承、移座、保存履歴を分離し、寺院が文化財を受け継ぐ仕組みから検討する。
+- 見性寺に集積する処刑・俳諧・観音巡礼の記憶: https://temple.atawi.link/research/kenshoji-nihonzaemon-haiku-kannon-memory/ — 見性寺の日本左衛門供養塔、芭蕉句碑とされる句碑群、豊田郡33観音霊場第1番という3つの地域記憶を、史実・伝承・顕彰行為に分けて検討する。
+- 蛭池寿正寺の成立年代と松秀寺門流: https://temple.atawi.link/research/jushouji-hiruike-foundation-matsuhideji-lineage/ — 磐田市蛭池の寿正寺について、平重盛伝承、前身地蔵堂、1575年と1604年の異なる成立年代、耕翁盛舜、松秀寺門流を検証する。
+- 寿正寺の薬師堂移転と震災再建: https://temple.atawi.link/research/jushouji-yakushido-earthquake-reconstruction-landscape/ — 蛭池寿正寺の薬師堂移転伝承、境内小堂、宝永・安政地震の被害と再建を、建築史・災害史・文化的景観の視点から検証する。
+- 蛭池寿正寺の寺領4石・末寺網・薬師巡礼: https://temple.atawi.link/research/jushouji-four-koku-branch-temples-yakushi-pilgrimage/ — 寿正寺領2石・薬師領2石、松秀寺との本末関係、長泉寺・常楽寺への法系展開、遠江四十九薬師霊場第44番を統合的に検討する。
+- 善導寺の応安開創伝承と念仏法脈: https://temple.atawi.link/research/zendoji-oan-foundation-zendo-honen-lineage/ — 磐田市見付の善導寺について、応安年間の開創年と開山名の異説、寺号・院号、善導大師・法然上人・弥陀3尊像を史料批判的に検討する。
+- 善導寺の大樟と1967年移転: https://temple.atawi.link/research/zendoji-camphor-tree-relocation-station-urban-heritage/ — 旧境内に残る県指定天然記念物「善導寺の大樟」と見付へ移転した現寺院を、計測差、所有、都市形成、記憶継承の観点から分析する。
+- 善導寺の大涅槃絵軸と念仏儀礼: https://temple.atawi.link/research/zendoji-nehan-scroll-annual-rites-chant-community/ — 善導寺の1689年大涅槃絵軸、弥陀3尊・祖師像、修正会・御忌会・施餓鬼会・十夜法要、吉水流詠唱を物質文化と共同体継承から検討する。
+- 徳翁院の創建と良純法親王・呑誉禿翁: https://temple.atawi.link/research/tokuoin-foundation-ryojun-donyo-source-criticism/ — 磐田市見付の徳翁院について、1921年刊『静岡県磐田郡誌』、浄土宗公式資料、良純法親王関係資料を照合し、創建年、本末関係、供養塔移転の証拠水準を検討する。
+- 徳翁院の十一面観音と念持仏伝承: https://temple.atawi.link/research/tokuoin-eleven-faced-kannon-nenjibutsu-biography/ — 徳翁院本尊の十一面観音菩薩立像について、宗派資料と『静岡県磐田郡誌』の名称差、慈覚大師作・宮御方念持仏という伝承、観音まつりを検証する。
+- 徳翁院の観音堂・稲荷社と見付の祭礼景観: https://temple.atawi.link/research/tokuoin-kannon-inari-mitsuke-ritual-landscape/ — 徳翁院の観音堂、稲荷社、手水鉢、石仏群、周辺の元門車保存会倉庫を、宗派資料と磐田市文化財資料から読み、見付の生活圏における複合境内の意味を検討する。
+- 慶岩寺の1562年開創伝承と知恩院末寺制: https://temple.atawi.link/research/keiganji-noko-1562-chionin-lineage/ — 磐田市見付の慶岩寺について、1562年の開創、能公和尚、知恩院末寺・鎮西白旗派という記録を、郡誌、宗派資料、現地景観から検証する。
+- 慶岩寺北向地蔵の移動・倒壊・再建: https://temple.atawi.link/research/keiganji-kitamuki-jizo-movement-reconstruction/ — 慶岩寺の延命地蔵について、路傍から境内への移動、1900年の堂宇倒壊、1901年の再建、8月23日の大祭を史料批判的に検討する。
+- 慶岩寺から読む見付宿の都市宗教空間: https://temple.atawi.link/research/keiganji-mitsuke-shukuba-urban-religious-space/ — 見付町字倉小路に所在した慶岩寺を起点に、宿場の小路、寺院群、書院と境内、年中行事、近代教育・景観政策を都市宗教史として分析する。
+- 大見寺と見付端城の重層景観: https://temple.atawi.link/research/daikenji-mitsuke-hajijo-map-temple-landscape/ — 磐田市見付の大見寺境内に重なる見付端城を、同時代文書、1698年絵図、発掘調査、現存土塁から再検討し、城跡の寺院化を論じる。
+- 大見寺の良純法親王供養塔と徳翁院: https://temple.atawi.link/research/daikenji-ryojun-prince-tokuoin-memorial-network/ — 大見寺の良純法親王供養塔を、浄土宗史、甲斐配流資料、1921年郡誌、徳翁院との本末関係から検証し、石塔移転の意味を考察する。
+- 大見寺と鳥人・浮田幸吉の記憶: https://temple.atawi.link/research/daikenji-ukita-kokichi-flight-memory-evidence/ — 大見寺に残る浮田幸吉の墓と過去帳伝承を、岡山側の飛行史料、見付の住居跡、境内模型と照合し、技術史と地域記憶の関係を考察する。
+- 満徳寺「中泉富士」の建築史: https://temple.atawi.link/research/mantokuji-nakaizumi-fuji-architecture-carving/ — 磐田市中泉の満徳寺について、「中泉富士」と呼ばれた本堂、1803年の経蔵、1826年の水屋、早瀬利三郎の彫刻を、建物年代と後世の装飾を分けて検証する。
+- 満徳寺経蔵の黄檗版一切経と81面天井画: https://temple.atawi.link/research/mantokuji-obaku-canon-ceiling-paintings/ — 満徳寺の1803年経蔵に収められたと伝わる黄檗版一切経と、百合・水仙などを描く81面の天井画を、典籍史、流通史、建築装飾史から検証する。
+- 満徳寺と中泉代官林鶴梁の家族墓: https://temple.atawi.link/research/mantokuji-hayashi-kakuryo-grave-disaster-relief/ — 満徳寺にあると伝わる中泉代官林鶴梁の義母墓を起点に、1854年地震後の救済、恵済倉、代官所と寺院の関係を史料批判的に考察する。
+- 西願寺山門と旧中泉御殿裏門の建築史: https://temple.atawi.link/research/saiganji-nakaizumi-goten-back-gate-architecture/ — 西願寺山門として現存する旧中泉御殿裏門について、薬医門の形式、御殿からの移築、年代評価、市指定文化財としての保存を行政資料と現況写真から検討します。
+- 西願寺と中泉御殿の分散する記憶景観: https://temple.atawi.link/research/saiganji-nakaizumi-goten-relocation-memory-landscape/ — 中泉御殿跡、西願寺の裏門と旧主殿伝承、西光寺表門、現在の駅前市街地を結び、失われた御殿が分散文化財として記憶される過程を検討します。
+- 弘誓山西願寺と陣屋町中泉の真宗史: https://temple.atawi.link/research/saiganji-shinshu-nakaizumi-urban-temple-history/ — 創建年代が公開資料で確定していない西願寺を、真宗大谷派の宗旨、阿弥陀如来信仰、中泉の御殿・陣屋町・駅前市街地、寺院資料の保存から検討します。
+- 行泉寺の1573年開創伝承と高田派教線: https://temple.atawi.link/research/gyosenji-1573-ryuzan-takada-network/ — 磐田市見付の行泉寺について、1573年に僧龍山が一宇を造立したという郡誌記録と、真宗高田派・専修寺末寺という所属を史料層ごとに検証する。
+- 行泉寺の「中泉字南裏」と見付3080番地: https://temple.atawi.link/research/gyosenji-nakaizumi-mitsuke-historical-geography/ — 1921年の郡誌が行泉寺を中泉町中泉字南裏とし、現代の宗教法人名簿が磐田市見付3080番地の2とする不一致を、歴史地理学的に検討する。
+- 行泉寺の境内513坪・檀徒30戸を読む: https://temple.atawi.link/research/gyosenji-1921-precinct-danto-continuity/ — 『静岡県磐田郡誌』が記録した行泉寺の境内513坪・檀徒30戸を、観測時点と統計単位に注意しながら小規模寺院の社会史として分析する。
+- 金台寺の成立記録と時宗寺院網: https://temple.atawi.link/research/kindaiji-1472-jishu-shokoji-institutional-history/ — 磐田市天竜の金台寺について、1921年『静岡県磐田郡誌』、宗教法人名簿、時宗公式寺院一覧を照合し、成立記録と省光寺による管理を検証する。
+- 金台寺の阿弥陀本尊と薬師霊場: https://temple.atawi.link/research/kindaiji-amida-yakushi-pilgrimage-dual-devotion/ — 本尊阿弥陀如来と記録される時宗金台寺が、なぜ遠江49薬師霊場第3番札所なのかを、郡誌、札所一覧、現地表示、地域霊場史から検証する。
+- 蛭子森の金台寺と渡河・冥界の宗教景観: https://temple.atawi.link/research/kindaiji-ebisumori-ferry-enma-religious-landscape/ — 旧天龍村字蛭子森にある金台寺を、天竜川渡船に関わる諏訪神社、境内の閻魔・奪衣婆石像、札所参詣の動線から検討する。
+- 省光寺の時宗改宗と足利氏外護伝承: https://temple.atawi.link/research/shokoji-mitsuke-jishu-conversion-ashikaga-gosho-dojo/ — 磐田市見付の省光寺について、真言宗から時宗への改宗、一遍遊行、第6代慈海、足利義詮の外護、「御所道場」の称号を史料批判的に検討する。
+- 省光寺出身・第51代遊行上人賦存の廻国: https://temple.atawi.link/research/shokoji-mitsuke-yugyo-shonin-fuzon-jishu-network/ — 第51代遊行上人賦存を省光寺出身とする学術資料を起点に、18世紀時宗の廻国・賦算・寺院史料網と見付省光寺の位置を検討する。
+- 省光寺の阿弥陀三尊・イチョウ・近代公共圏: https://temple.atawi.link/research/shokoji-mitsuke-amida-ginkgo-earthquake-school-landscape/ — 省光寺の阿弥陀三尊、天満地蔵尊伝承、市指定イチョウ、安政東海地震被害、鐘楼門、見付学校仮校舎を物質文化と公共空間の観点から検討する。
+- 西光寺の一遍来訪伝承と中世時宗文化: https://temple.atawi.link/research/saikoji-mitsuke-ippen-jishu-medieval-heritage/ — 磐田市見付の西光寺について、1265年開創と一遍来訪・時宗改宗の寺伝、伝一遍上人六字名号、持蓮華、新勅撰和歌集を史料批判的に検討する。
+- 西光寺に集積した徳川権威の記憶: https://temple.atawi.link/research/saikoji-mitsuke-tokugawa-memory-gate-higiri-jizo/ — 見付西光寺の東福門院寄進伝承、1621年火災、日限地蔵信仰、中泉御殿表門を、王権・将軍権・移築建築・地域信仰の交差として検討する。
+- 西光寺と見付宿の文化的景観: https://temple.atawi.link/research/saikoji-mitsuke-shukuba-heritage-cultural-landscape/ — 西光寺の見付宿本陣神谷家・鈴木家墓所、蓮光寺旧薬師如来、大クス・ナギ・イヌマキ、遠江四十九薬師霊場を文化的景観として検討する。
+- 多聞寺の1553年開山記録と見性寺末寺網: https://temple.atawi.link/research/tamonji-1553-mokuso-kenshoji-temple-network/ — 磐田市中野の多聞寺について、1553年の黙宗による分派開山、覚仙住職、見付見性寺末という郡誌記録を、妙心寺派の寺院制度と照合する。
+- 多聞寺の毘沙門天と作者伝承: https://temple.atawi.link/research/tamonji-bishamonten-tamonten-taishi-attribution/ — 多聞寺の本尊毘沙門天と寺号の関係、聖徳太子作という伝承、境内地蔵尊の弘法大師作伝承を、図像・物質・記録の証拠段階から検討する。
+- 多聞寺の寺領1石余と中野村: https://temple.atawi.link/research/tamonji-ina-tadatsugu-temple-land-nakano-village/ — 1601年に伊奈忠次が多聞寺へ寄進した寺領1石余を、中野村の村高・八幡社領・徳川支配・1833年再建・1854年震災から検証する。
+- 中泉寺創建伝承と徳川家康・中泉御殿: https://temple.atawi.link/research/chusenji-foundation-ieyasu-nakaizumi-goten-chronology/ — 中泉寺の1562年創建説と、徳川家康による堂宇寄進・葵紋・寺号下賜、中泉御殿築造を年代別の事件へ分解して検討する。
+- 中泉寺の中泉代官墓と幕府行政の記憶: https://temple.atawi.link/research/chusenji-nakaizumi-magistrates-hiraoka-okazaki-memorial/ — 中泉寺に伝わる平岡彦兵衛良政・岡崎兼三郎春秋の墓を、中泉代官所の制度、在任年代、墓碑史料、地域文化財計画から検討する。
+- 中泉寺の虚空蔵・子安地蔵・観音・坐禅: https://temple.atawi.link/research/chusenji-kokuzo-koyasu-jizo-kannon-zazen-practice/ — 中泉寺の本尊虚空蔵菩薩、中野七蔵と子安地蔵の伝承、境内観音像、坐禅会情報を、信仰対象・檀越・現代実践の観点から検討する。
+- 泉蔵寺の1504年開創伝承と黙宗: https://temple.atawi.link/research/senzoji-nakaizumi-1504-mokuso-myoshinji-lineage/ — 磐田市中泉の泉蔵寺について、1504年黙宗開創とする後代記録、無量山、本尊阿弥陀如来、妙心寺派への帰属を史料層ごとに検討する。
+- 泉蔵寺の寅薬師と複合信仰: https://temple.atawi.link/research/senzoji-tora-yakushi-reijo-multi-deity-worship/ — 泉蔵寺の寅薬師について、源頼光念持仏伝承、眼病平癒、薬師三尊と十二神将、遠江四十九薬師第2番、西国三十三新霊場を検討する。
+- 泉蔵寺の秋鹿氏五輪塔群と中泉代官支配: https://temple.atawi.link/research/senzoji-aika-daikan-gorinto-nakaizumi-governance/ — 泉蔵寺に残る秋鹿氏歴代の大型五輪塔群を、中泉代官、秋鹿氏邸跡、中泉御殿・陣屋、菩提寺、石造物保存の観点から検討する。
+- 連福寺の開創伝承と平重盛の3連寺: https://temple.atawi.link/research/renpukuji-kobo-shigemori-sanrenji-origin-traditions/ — 磐田市二之宮の連福寺について、弘法大師開創と平重盛建立の伝承、3連寺の地域的構成、現在の臨済宗妙心寺派への帰属を、確認済み事実と未確認事項に分けて検討する。
+- 連福寺の木造閻魔大王坐像と移動の履歴: https://temple.atawi.link/research/renpukuji-enma-statue-object-biography/ — 連福寺所蔵の市指定木造閻魔大王坐像について、制作年代、像高、10王信仰、国分寺・十輪寺・連福寺間の移動伝承、保存と公開の課題を検討する。
+- 連福寺古墳と三角縁神獣鏡: https://temple.atawi.link/research/renpukuji-kofun-triangular-rim-mirror-ninomiya/ — 連福寺古墳出土三角縁神獣鏡について、墳丘の消滅、1965年の発見、鏡径22.5センチメートル、3神5獣の文様、同笵鏡、二之宮周辺の古代景観を検討する。
+- 慈恩寺所蔵1419年銘雲板の物質史: https://temple.atawi.link/research/jionji-unpan-1419-takisenji-kamisaigo-object-biography/ — 慈恩寺所蔵の市指定文化財・雲板について、銘文、機能、上西郷庄、滝泉禅寺比定、伝来空白、保存公開を検証し、寺院間を移動した物の履歴として再構成する。
+- 慈恩寺の中興史と見付の寺子屋教育: https://temple.atawi.link/research/jionji-revival-terakoya-mitsuke-education-history/ — 慈恩寺の応永年間開創、天文年間中興、1634年再興という現地由緒と、幕末から明治初期の寺子屋教育を検証し、寺院組織が断絶を越えて知識基盤へ転換した過程を考察する。
+- 慈恩寺の観音・薬師信仰と重層する巡礼網: https://temple.atawi.link/research/jionji-kannon-yakushi-rurikoji-pilgrimage-networks/ — 本尊聖観世音菩薩を祀る慈恩寺が遠江四十九薬師霊場第49番となる構造を、旧瑠璃光寺の御詠歌、豊田郡三十三観音、誤った遠州三十三観音第19番説との照合から検証する。
+- 眞如寺の道休庵から妙心寺直末への制度化: https://temple.atawi.link/research/shinnyoji-dokyuan-shinnyoan-myoshinji-jikimatsu/ — 匂坂上の眞如寺について、1472年道休庵、1667年盤珪国師請来、真如庵、1704年大雄山眞如寺・妙心寺直末への変化を検討する。
+- 眞如寺と匂坂氏の内寺: https://temple.atawi.link/research/shinnyoji-sagisaka-clan-naiji-takagi-domain/ — 『遠淡海地誌』の「匂坂家ノ内寺」と郡誌の開基匂坂善兵衛重武を軸に、眞如寺と匂坂氏・高木氏支配の関係を検討する。
+- 眞如寺の盤珪国師開山伝承: https://temple.atawi.link/research/shinnyoji-bankei-kokushi-fusho-zen-kaizan-memory/ — 眞如寺が1667年に盤珪国師を請じて開山とした郡誌記載を、盤珪永琢の生涯、不生禅、勧請開山、妙心寺直末化から検討する。
+- 定光寺の曹洞宗中興と朱印寺院化: https://temple.atawi.link/research/jokoji-kasuisai-conversion-shuin-relocation/ — 磐田市前野の八王山定光寺について、真言宗寺院という前史、可睡斎18世による1598年中興、徳川家光の1648年朱印、1697年移転を史料階層に沿って検討する。
+- 定光寺木造千手観音菩薩立像の物質的伝記: https://temple.atawi.link/research/jokoji-senju-kannon-rengeji-restoration/ — 定光寺所蔵の木造千手観音菩薩立像について、平安末から鎌倉初期という年代評価、旧蓮華寺からの伝来、損傷、クラウドファンディング、2026年修復完了を検討する。
+- 前野村の定光寺と末寺・観音信仰ネットワーク: https://temple.atawi.link/research/jokoji-maeno-village-subtemples-kannon-network/ — 前野村の定光寺を中心に、仿僧川右岸の村落環境、寺社領、旧末寺の蓮華寺と松長院、旧尊像の継承、磐田郡33観音霊場第7番という地域宗教ネットワークを検討する。
+- 光嚴寺の1605年開創伝承と聖寿寺法系: https://temple.atawi.link/research/koganji-giden-1605-seijuji-lineage/ — 磐田市草崎の光嚴寺について、1605年12月の儀伝開創、聖寿寺末、曹洞宗法系という記録を史料層ごとに検証する。
+- 光嚴寺の医王薬師如来と草崎の現世救済: https://temple.atawi.link/research/koganji-io-yakushi-local-healing-faith/ — 郡誌が光嚴寺本尊を医王薬師如来と記す意味を、薬師経典、像容、地域の薬師信仰、萬然寺との比較から検討する。
+- 光嚴寺と草崎の寺院集積・水辺景観: https://temple.atawi.link/research/koganji-kusasaki-temple-cluster-water-landscape/ — 草崎字中村の光嚴寺を、天竜川下流低地、旧村の字、聖寿寺末寺院群、地域文化財の保存という空間史から検討する。
+- 実際寺の天正創建伝承と曹洞宗本末制: https://temple.atawi.link/research/jissaiji-tensho-sonshuku-jurinji-kasuisai-genealogy/ — 磐田市鮫島の実際寺について、天正初年の存祝創建伝承、十輪寺末・可睡斎孫末という寺院系譜、本尊阿弥陀如来の記録を、成立時期の異なる史料へ分解して検証する。
+- 実際寺朱印寺領と鮫島の神明社・天神社: https://temple.atawi.link/research/jissaiji-red-seal-estate-shinmei-tenjin-shinbutsu/ — 実際寺の朱印寺領2石、神明社・天神社各1石、1649年家光朱印状と朱印状6通の記録を検討し、鮫島村の寺社関係と明治期の制度分離を再構成する。
+- 実際寺と鮫島村の水・新田・海岸景観: https://temple.atawi.link/research/jissaiji-samejima-village-water-newfield-coastal-landscape/ — 遠州灘に面した鮫島村の村高増加、1723年浜新田争論、仿僧川の舟運、寺谷用水の広域水利を検討し、実際寺を海辺低地の村落景観に位置付ける。
+- 白拍子正光寺の1602年創建伝承と曹洞宗法系: https://temple.atawi.link/research/shokoji-shirabyoshi-1602-koshu-shojuji-lineage/ — 磐田市白拍子の正光寺について、1602年鈴木藤右衛門開基、甲州八代郡正光寺との縁、1644年昌堂入寺、聖寿寺末寺関係を検討する。
+- 正光寺本尊・虚空蔵菩薩の信仰史: https://temple.atawi.link/research/shokoji-shirabyoshi-kokuzo-honzon-faith/ — 磐田市白拍子の正光寺について、郡誌が本尊とする虚空蔵菩薩を、図像、求聞持法、13参りの比較資料から検討し、現地調査の課題を示す。
+- 白拍子村の正光寺と千手前伝説: https://temple.atawi.link/research/shokoji-shirabyoshi-senju-legend-lowland-landscape/ — 磐田市白拍子の正光寺を、旧白拍子村、千手前伝説、仿僧川低地、寺谷用水、現代の自治・防災空間から検討する。
+- 法雲庵から法雲寺へ: https://temple.atawi.link/research/hounji-hounan-1634-shinpoin-lineage-hochi/ — 法雲寺の1634年開創、観天是音、新豊院末、法雲庵から法雲寺への改称と法地昇格を、郡誌・霊場縁起・現地資料から検証する。
+- 法雲寺の阿弥陀如来記録と聖観世音菩薩: https://temple.atawi.link/research/hounji-amida-shokannon-enshu-pilgrimage/ — 郡誌の本尊阿弥陀如来と現在資料の聖観世音菩薩という不一致を起点に、遠州三十三観音第29番札所の信仰構造を検証する。
+- 法雲寺の養心閣・子供会・あじさい景観: https://temple.atawi.link/research/hounji-yoshinkaku-children-hydrangea-public-temple/ — 法雲寺の日曜学校・子供会、正力松太郎賞、坐禅堂養心閣、約400株のあじさいを、戦後の公共的寺院活動と文化景観から考察する。
+- 安全寺1513年開創伝承と雲山宗越: https://temple.atawi.link/research/anzenji-1513-unzan-sotsu-kaizoji-lineage-critique/ — 岩井山安全寺の1513年8月開創、海蔵寺2世雲山宗越開山、本尊薬師如来という1921年資料の記述を、現況・本末制度・人物同定・寺域景観に分けて検証する。
+- 『安全寺記録』と鶴ヶ池の源頼朝伝承: https://temple.atawi.link/research/anzenji-record-tsurugaike-yoritomo-legend-textual-history/ — 『安全寺記録』を典拠とする1183年の頼朝足痛・天神祈願・放鶴説と、『遠江国風土記伝』系の1190年上洛・朝長供養・放生会説を比較し、地域伝承の形成と継承を検討する。
+- 安全寺と岩井の湿地文化景観: https://temple.atawi.link/research/anzenji-iwai-tsurugaike-okegaya-wetland-cultural-landscape/ — 安全寺の台地縁辺立地、1720年岩井村明細帳が示す鶴ヶ池用水160石余、桶ケ谷沼・鶴ヶ池の重要湿地選定を統合し、岩井の水・農業・信仰・保全を文化景観として検討する。
+- 保福院から大久山保福寺へ: https://temple.atawi.link/research/hofukuji-hofukuin-1642-1752-reconstruction/ — 磐田市大久保の保福寺について、新豊院5世音察による1642年開創、栗野林太夫と大藤村開拓、1752年焼失後の再建・改称を、異なる史料層として検討する。
+- 保福寺の釈迦如来と境内記憶: https://temple.atawi.link/research/hofukuji-shaka-stone-monuments-memory/ — 保福寺の本尊釈迦如来、六地蔵、地蔵堂、英霊之碑等を、宗派教義、造像史、葬送、近代戦没者慰霊の異なる層として検討する。
+- 保福寺の椿寒桜と季節文化景観: https://temple.atawi.link/research/hofukuji-tsubakikanzakura-seasonal-landscape/ — 保福寺の椿寒桜、河津桜、修善寺寒桜、おかめ桜、梅・つつじ・あじさい・モミジ等を、植物台帳、開花観測、寺院景観、参拝受入れから検討する。
+- 正眼院の平景清開基伝承をどう読むか: https://temple.atawi.link/research/shogenin-kagekiyo-foundation-tradition-source-criticism/ — 磐田市小島の正眼院に伝わる平景清開基説を、人物伝承、後世の文芸、宗派公式記録、近世村落史に分けて検討し、確認済み事実と寺伝の射程を明示する。
+- 1515年の正眼院再興と雲林寺門流: https://temple.atawi.link/research/shogenin-1515-unrinji-lineage-and-subtemple-network/ — 正眼院が1515年に雲林寺8世孤山堯隣を迎えて曹洞宗寺院として再興されたとの寺伝を、法系・末寺網・地域再編の観点から検証する。
+- 正眼院領20石と2つの三十三観音霊場: https://temple.atawi.link/research/shogenin-twenty-koku-estate-and-kannon-pilgrimage/ — 近世小島村の正眼院領20石と、正眼院が参加した磐田郡・豊田郡の2つの三十三観音霊場を、寺院経済と地域ネットワークの両面から分析する。
+- 萬然寺の元亀期薬師堂伝承と1613年の寺院化: https://temple.atawi.link/research/mannenji-yakushido-1613-chiden-seijuji/ — 磐田市草崎の萬然寺について、元亀年間の薬師堂、1613年の知伝と村民による1寺化、聖寿寺末という由緒を史料批判する。
+- 萬然寺の薬師如来本尊と地蔵・石仏群: https://temple.atawi.link/research/mannenji-yakushi-jizo-stone-devotion/ — 郡誌が本尊とする薬師如来、元亀期薬師堂伝承、現存する地蔵群・石造像を分け、萬然寺の礼拝空間を検討する。
+- 草崎字中雨垂の萬然寺と低地寺院景観: https://temple.atawi.link/research/mannenji-nakaamadare-kusasaki-temple-lowland/ — 萬然寺の旧地字中雨垂、草崎の5寺院、天竜川低地と排水史、現存境内を結び、文化的景観として検討する。
+- 草崎壽正寺の平重盛伝承と1482年再興: https://temple.atawi.link/research/jushouji-kusasaki-shigemori-1482-nyokai/ — 草崎の瑞応山壽正寺について、平重盛建立と七堂伽藍の寺伝、六所神社の寺領300石伝承、1482年の如海再興を史料批判により検討する。
+- 壽正寺観音堂領8石2斗余の実像: https://temple.atawi.link/research/jushouji-kusasaki-kannon-1649-shuin-land/ — 草崎壽正寺の1649年朱印状と観音堂領8石2斗余を、土地・年貢・本末制度・村高・宗教実践の複合資料として検討する。
+- 壽正寺と草崎5寺の曹洞宗ネットワーク: https://temple.atawi.link/research/jushouji-kusasaki-shojuji-five-temple-network/ — 草崎の壽正寺、光嚴寺、萬然寺、徳源庵、良照庵を、聖寿寺末寺網、成立年代、旧字、村落機能、現在景観から比較研究する。
+- 全海寺1542年草創説と「金海寺」表記の史料批判: https://temple.atawi.link/research/zenkaiji-1542-foundation-name-variant-and-tenryuin-lineage/ — 磐田市西島の広福山全海寺について、1542年草創、天龍院2世真超開山、1656年連鯨による法地化を検討し、磐田郡誌の「金海寺」表記と現行名の関係を分析する。
+- 全海寺朱印寺領3石余と東海道西島村: https://temple.atawi.link/research/zenkaiji-shuin-estate-tokaido-and-nishijima-village/ — 全海寺の朱印寺領3石2斗・3石5斗という記録差を検討し、正保郷帳の西島村、旧東海道、須賀神社、旗本菅谷氏陣屋との空間関係を分析する。
+- 宗門改帳・寺院争論・下馬地蔵からみる全海寺: https://temple.atawi.link/research/zenkaiji-shumon-register-dispute-geba-jizo-and-school/ — 西島村宗門改帳の全海寺檀那記載、全久寺との廃寺争論、下馬地蔵の徳川家光伝承、1879年の小学校出張所を通じて全海寺の社会機能を分析する。
+- 東昌寺領2石と福王寺末・法地格: https://temple.atawi.link/research/toshoji-two-koku-fukuoji-hochi/ — 東貝塚の東昌寺について、寺領2石、福王寺末、法地格という記録を分け、創建年不詳の寺院史を検証する。
+- 東昌寺の薬師如来と遠江49薬師第47番: https://temple.atawi.link/research/toshoji-yakushi-enshu-49-reijo/ — 東昌寺本尊薬師如来という郡誌記載と、遠江49薬師第47番という霊場情報を分け、現地石碑と巡礼史を検討する。
+- 東貝塚字中原の東昌寺と御厨文化景観: https://temple.atawi.link/research/toshoji-higashikaizuka-mikuriya-cultural-landscape/ — 東昌寺の旧地字中原、東貝塚村、寺領2石、御厨古墳群、現在境内を区別し、御厨地区の文化的景観として検討する。
+- 連城寺の1179年創建伝承と1644年曹洞宗再興: https://temple.atawi.link/research/renjoji-shigemori-1179-okusa-1644/ — 連城寺の平重盛創建、天台宗前身、遠州三連寺、大草政信による1644年曹洞宗再興を、伝承・確認事実・仮説に分けて検討する。
+- 連城寺と御厨古墳群・経塚古墳出土鏡: https://temple.atawi.link/research/renjoji-mikuriya-kofun-bronze-mirror/ — 連城寺裏山の稲荷山・秋葉山古墳、1886年に失われた経塚古墳、県指定三角縁四神四獣鏡の保存・研究・公開を検討する。
+- 連城寺の涅槃会・大草家供養・永代供養: https://temple.atawi.link/research/renjoji-nehan-eitakuyo-okusa-memorial-practice/ — 連城寺の涅槃会、彼岸会、大施食会、大草家供養、永代供養塔を、年中行事・地域記憶・墓地管理の接点として検討する。
+- 全久院の白鳳期伝承と1558年曹洞宗改宗: https://temple.atawi.link/research/zenkyuin-672-1558-shingon-soto-conversion/ — 磐田市鎌田の全久院について、672年頃とする草創伝承、延長年間の真言宗期、1558年の曹洞宗改宗、寺領2石を分けて検証する。
+- 全久院寺子屋の長期継続と災害復興: https://temple.atawi.link/research/zenkyuin-terakoya-earthquake-fire-reconstruction/ — 鎌田の全久院で続いた寺子屋教育を、開創年代、僧侶による継承、安政東海地震、火災、明治初年の制度転換から検討する。
+- 全久院の虚空蔵・薬師・観音・役行者信仰: https://temple.atawi.link/research/zenkyuin-kokuzo-yakushi-kannon-ennogyosha/ — 虚空蔵菩薩を本尊とする全久院が、遠江49薬師第45番、磐田郡33観音第25番、役行者堂を併せ持つ意味を検証する。
+- 福王寺の安倍晴明伝承と1444年曹洞宗再興: https://temple.atawi.link/research/fukuoji-seimei-1444-soto-restoration/ — 城之崎福王寺の真言宗前身、984年晴明祈祷伝承、1444年曹洞宗再興、今川範国墓所、1603年寺領寄進を史料批判により検討する。
+- 福王寺の聖観音像・ケヤキ・アキザキヤツシロラン: https://temple.atawi.link/research/fukuoji-seikannon-keyaki-yatsushiroran/ — 城之崎福王寺の平安時代聖観音菩薩立像、市指定ケヤキ、アキザキヤツシロラン群生地を、宗教実践・彫刻保存・生態系管理の接点から検討する。
+- 福王寺の観音霊場・坐禅・風祭り: https://temple.atawi.link/research/fukuoji-kannon-pilgrimage-zazen-kazamatsuri/ — 遠州三十三観音第18番、複数霊場、認可参禅道場、風祭りを対象に、福王寺の巡礼・坐禅・災害記憶と地域公共性を検討する。
+- 合掌寺の史料上の初見と「記録の空白」: https://temple.atawi.link/research/gasshoji-archival-silence-first-attestation-and-chronology/ — 磐田市中泉の合掌寺について、1921年資料で未確認、1982年寺院大鑑で確認、現代の行政・宗派名簿で確認という証拠列を分析し、創建時期を断定せず調査可能な年代幅を構築する。
+- 小祠・石碑・石仏・手水鉢が構成する合掌寺: https://temple.atawi.link/research/gasshoji-minimal-religious-landscape-material-culture/ — 2026年に確認された合掌寺の小祠、石碑、石仏、手水鉢、敷地景観を物質文化資料として分析し、堂宇が見えない現況を廃寺と誤認しない記録方法を提示する。
+- 中泉市街地の合掌寺をどう位置付けるか: https://temple.atawi.link/research/gasshoji-nakaizumi-urbanization-corporation-place-memory/ — 磐田駅周辺へ発展した中泉の都市史を背景に、合掌寺の法人所在地、小規模な現況、史料上の空白を分析し、都市化の中で宗教的場所が存続・変容する仕組みを検討する。
+- 十輪寺と長応寺薬師如来立像の移動史: https://temple.atawi.link/research/jurinji-chooji-yakushi-statue-object-biography/ — 上大之郷の十輪寺に伝わる鎌倉時代薬師如来立像を、長応寺併合、薬師堂、開帳、文化財指定の履歴から検証する。
+- 十輪寺末寺実際寺と移動文化財の寺院間ネットワーク: https://temple.atawi.link/research/jurinji-jissaiji-enma-mobile-heritage-network/ — 十輪寺を、実際寺の本寺、長応寺の統合先、閻魔像の一時安置先として捉え、寺院間で制度・文化財が移動する構造を検証する。
+- 1919年磐田郡33観音第2番十輪寺の巡礼景観: https://temple.atawi.link/research/jurinji-1919-kannon-romon-nio-landscape/ — 宝蔵山十輪寺を1919年開創とされる磐田郡33観音第2番として検証し、観音像・楼門・仁王像・本堂の境内構成を記録する。
+- 永福寺の1504年開創と福王寺末寺関係: https://temple.atawi.link/research/eifukuji-1504-fukuoji-temple-network-reconstruction/ — 西貝塚永福寺の1504年開創、福王寺との本末関係、1649年文書、除地1石5斗、1859年風災と本堂再建を史料層に分けて検討する。
+- 永福寺の阿弥陀三尊・十一面観音・十王像: https://temple.atawi.link/research/eifukuji-amida-kannon-juo-material-culture/ — 永福寺の阿弥陀三尊、十一面観世音菩薩、三十三観音、鎌倉時代後期作と伝わる十王像を、伝来・礼拝・保存の観点から検討する。
+- 永福寺の観音巡礼と西貝塚地域社会: https://temple.atawi.link/research/eifukuji-kannon-pilgrimage-nishikaizuka-community/ — 永福寺の複数観音霊場、御詠歌、今浦山、西貝塚の本末寺院網、災害再建を、巡礼受入れと地域公共性の観点から検討する。
+- 金剛寺の1424年・1593年・1610年代をどう読むか: https://temple.atawi.link/research/kongoji-1424-1593-1610s-foundation-chronology/ — 磐田市見付の今浦山金剛寺について、1424年開創説、1593年曹洞宗改宗伝承、1610～1619年の中泉代官大石十右衛門康正開基説を史料系統ごとに分析する。
+- 海蔵寺―金剛寺―興徳寺の曹洞宗門流: https://temple.atawi.link/research/kongoji-kaizoji-kotokuji-soto-lineage-network/ — 金剛寺が海蔵寺10世を開山に請じ、その第2世が1599年に興徳寺を改称・法地化したとの郡誌記録を分析し、曹洞宗門流形成を検討する。
+- 寺子屋・報徳・大峰講・坐禅会の金剛寺: https://temple.atawi.link/research/kongoji-terakoya-hotoku-omine-zazen-public-history/ — 金剛寺の寺子屋約50人、1894年寿碑、学校・幼稚園仮施設、1882年報徳研究会、役行者像・大峰講、現代坐禅会とグリーフケアを分析する。
+- 1519年開創の林宝院と「隣浦庵」の寺院形成: https://temple.atawi.link/research/rinpoin-1519-rinpoan-fukuoji-network/ — 西貝塚の林宝院について、1519年嶺宗開創、隣浦庵から院号への展開、福王寺末寺網、本尊地蔵菩薩を検証する。
+- 1604年伊奈忠次手形と林宝院領3石: https://temple.atawi.link/research/rinpoin-1604-ina-tadatsugu-document-jochi/ — 林宝院文書の1604年伊奈忠次手形、松平親茂添状、除地3石を史料批判し、近世西貝塚村の寺院経済を検討する。
+- 1889年西貝尋常小学校と林宝院の公共空間史: https://temple.atawi.link/research/rinpoin-1889-school-jomon-site-public-space/ — 林宝院を教室として1889年に始まった西貝尋常小学校と、境内に重なる西貝塚遺跡を地域公共空間の変遷から検討する。
+- 本性寺の1626年日遷開創と住所変遷: https://temple.atawi.link/research/honshoji-1626-nissen-hontokuji-address-history/ — 国府台本性寺の1626年日遷開創、本徳寺末、十界諸尊、梅原村から高町・国府台への所在地表記変化、一言の別寺院跡を検討する。
+- 本性寺の十界諸尊・七面堂・境内慰霊空間: https://temple.atawi.link/research/honshoji-jikkai-shoson-shichimen-memorial-landscape/ — 本性寺の十界諸尊、七面堂、僧形像、鎮守社、忠霊殿、題目石柱、ソテツを、信仰・慰霊・景観・保存の接点から検討する。
+- 本性寺の寺子屋活動と国府台地域社会: https://temple.atawi.link/research/honshoji-terakoya-kounodai-community-publicness/ — 本性寺の寺子屋掲示、法要・墓参、慰霊、国府台・中泉の地域史を、現況確認・安全・個人情報・商業誘導抑制の観点から検討する。
+- 1385年玄妙寺開創と日什置文の本寺構想: https://temple.atawi.link/research/genmyoji-1385-nichiju-okibumi-three-head-temples/ — 見付の本立山玄妙寺について、1385年開創、日什の生涯、日妙、置文、本寺指定、什門3本山、近現代の本山制度を検討する。
+- 玄妙寺経蔵と三和土ブロック塀の近代建築史: https://temple.atawi.link/research/genmyoji-1934-concrete-kyozo-tataki-wall/ — 玄妙寺の鉄筋コンクリート造経蔵と門柱及び塀を、耐火、保存科学、左官技術、登録文化財制度、見付の近代化から分析する。
+- 玄妙寺御命講と子育て草履の民俗史: https://temple.atawi.link/research/genmyoji-omeiko-child-sandals-imaura-folklore/ — 11月12日の御命講、子育て草履、母形鬼子母神、今井浦3霊宝、鰐口、子育て地蔵を史料・物質・地形から分析する。
+- 宣正寺の「史料空白」を研究する: https://temple.atawi.link/research/senshoji-source-criticism-sparse-archive/ — 磐田市岩井の宣正寺を対象に、現在情報は確定できる一方で沿革が確認できない資料構造を史料批判する。
+- 宣正寺の宗教法人・布教区・地域分類: https://temple.atawi.link/research/senshoji-religious-corporation-denominational-geography/ — 宣正寺を宗教法人、日蓮正宗静岡西布教区、磐田市岩井、向陽地区という異なる分類制度から分析する。
+- 岩井の地域景観と宣正寺の位置: https://temple.atawi.link/research/senshoji-iwai-landscape-context/ — 宣正寺の所在地である岩井を、磐田原台地、桶ケ谷沼、旧岩井村、現代向陽地区の資料から分析し、周辺史と寺院史を区別する。
+- 神心教本部と包括宗教法人神心教の法人構造: https://temple.atawi.link/research/shinshinkyo-honbu-corporate-structure-206-243/ — 神心教本部と包括宗教法人神心教を、県名簿、文化庁宗教年鑑、宗教法人法、法人番号、所在地から厳密に区別する。
+- 神心教本部の「お題目」「立正安国」表象: https://temple.atawi.link/research/shinshinkyo-honbu-signs-odaimoku-rissho-ankoku/ — 神心教本部の門柱、法人看板、題目掲示、立正安国銘の像、建物と庭を現物資料として分析する。
+- 公開情報の少ない神心教本部をどう記録するか: https://temple.atawi.link/research/shinshinkyo-honbu-mitsuke-religious-archive-method/ — 神心教本部を対象に、公的名簿、宗教年鑑、写真、地図、行事記事、聞き取りを倫理的に統合する研究設計を示す。
+- 1521年創建伝承と掛塚西光寺の寺号形成: https://temple.atawi.link/research/saikoji-kaketsuka-1521-founder-name/ — 掛塚西光寺の1521年創建、開山名、寺号・山号を宗派資料と現地資料から検証する。
+- 掛塚西光寺の年中法要と戸別念仏: https://temple.atawi.link/research/saikoji-kaketsuka-annual-ritual-household-nenbutsu/ — 掛塚西光寺の月別法要と、彼岸・施餓鬼期の戸別訪問・先祖供養・念仏会を検証する。
+- 掛塚湊の地域景観と西光寺の「稱名山」額: https://temple.atawi.link/research/saikoji-kaketsuka-port-calligraphy-landscape/ — 掛塚湊の港町史と西光寺の山号額、境内景観を、直接関係と地域背景を分けて検討する。
+- 見付の神心教における包括法人・本部法人・所在地の制度史: https://temple.atawi.link/research/shinshinkyo-mitsuke-corporate-structure-record-history/ — 磐田市見付の神心教を、包括宗教法人神心教と神心教本部の2法人、見付243番地と206番地、代表役員記録の変化から検証する。
+- 「神心教」はなぜ仏教系に分類されるのか: https://temple.atawi.link/research/shinshinkyo-mitsuke-buddhist-classification-name-comparison/ — 見付の神心教について、文化庁と静岡県が仏教系に分類する事実を確認し、兵庫・新潟の神道神心教との混同を防ぐ。
+- 見付の地域宗教史に神心教をどう保存するか: https://temple.atawi.link/research/shinshinkyo-mitsuke-local-religion-digital-archive/ — 見付243番地の神心教を、旧宿場・近代教育・都市形成の地域史と接続し、記憶・資料・現地情報を倫理的に保存する方法を示す。
+- 國清寺の1615年頃創建伝承と観智国師: https://temple.atawi.link/research/kokuseiji-1615-kanchi-kokushi-founder/ — 磐田市掛塚の國清寺について、1615年頃の創建、普光観智国師、増上寺12世源誉存応との関係、寺名表記、掛塚の西光寺との区別を検証する。
+- 掛塚湊の材木・廻船社会と國清寺: https://temple.atawi.link/research/kokuseiji-kaketsuka-port-timber-shipping/ — 掛塚湊の材木流通、廻船、商家、貴船神社祭礼の史料を整理し、國清寺を港町の宗教アーカイブとして検証する。
+- 國清寺の阿弥陀信仰・年中行事・鎮守空間: https://temple.atawi.link/research/kokuseiji-amida-rites-chinju-material-culture/ — 國清寺の阿弥陀如来坐像、御忌会・十夜会等の年中行事、墓地、地蔵、鎮守稲荷、現代葬送を物質文化研究として整理する。
+- 1576年開基伝承と亀甲山満福寺の成立: https://temple.atawi.link/research/manpukuji-kaketsuka-819-1576-kikkozan-foundation/ — 掛塚819番地の浄土真宗本願寺派亀甲山満福寺について、1576年開基伝承と寺号・山号・寺地の成立を史料批判する。
+- 掛塚新町と亀甲山満福寺の社会空間: https://temple.atawi.link/research/manpukuji-kaketsuka-819-shinmachi-port-community/ — 掛塚湊の旧字新町に所在した満福寺について、港湾史、町組、門徒圏、境内空間の関係を史料の確度に即して考察する。
+- 掛塚の満福寺・萬福寺と「万福寺領3石」: https://temple.atawi.link/research/manpukuji-kaketsuka-819-namesake-temples-three-koku/ — 掛塚819の満福寺と799番地の1の萬福寺を厳密に区別し、江戸期の「万福寺領3石」の帰属を未確定とする根拠を示す。
+- 行興寺の熊野御前伝承と能・絵巻・墓塔: https://temple.atawi.link/research/gyokoji-yuyano-noh-emaki-memory/ — 行興寺の熊野御前伝承を、能『熊野』、室町後期の熊野絵巻、14世紀末頃の宝篋印塔、十一面観音、供養祭から史料批判する。
+- 熊野の長フジを生きた文化財として管理する: https://temple.atawi.link/research/gyokoji-yuyano-wisteria-living-heritage/ — 行興寺の国・県指定熊野の長フジを、樹齢伝承、個体識別、樹勢、藤棚、混雑、気候変動、供養祭から保存科学的に検討する。
+- 池田道場・行興寺文書と天竜川渡船社会: https://temple.atawi.link/research/gyokoji-ikeda-dojo-ferry-documents/ — 行興寺に伝わる池田道場の記録と1569年前後の行興寺文書を中心に、他阿真教、池田の渡し、寺領16石、川供養を検証する。
+- 1527年融円開創伝承と掛塚横町の萬福寺: https://temple.atawi.link/research/manpukuji-kaketsuka-799-1527-yuen-higashi-honganji/ — 掛塚799番地の1の真宗大谷派萬福寺について、1527年融円開創伝承と1921年の東本願寺末記載を分離して検証する。
+- 掛塚の萬福寺と満福寺をどう識別するか: https://temple.atawi.link/research/manpukuji-kaketsuka-799-819-disambiguation-territory/ — 掛塚の同音2寺院を5軸で識別し、江戸期資料の万福寺領3石をどちらかへ安易に帰属させない方法を示す。
+- 掛塚湊・横町と真宗大谷派萬福寺: https://temple.atawi.link/research/manpukuji-kaketsuka-799-port-yokomachi-shinshu-community/ — 掛塚横町の萬福寺を湊町の地域史に位置付け、廻船・材木・町組との関係を証拠なしに断定しない調査設計を示す。
+- 松隣庵・正林庵から富景山松林寺へ: https://temple.atawi.link/research/shorinji-kawabukuro-shorinan-shorinji-name-history/ — 川袋松林寺の前身とされる松隣庵・正林庵、寺領2石、富景山という名称の時間的関係を史料批判する。
+- 長谷川輝貞・青岩と川袋松林寺の祈願所伝承: https://temple.atawi.link/research/shorinji-kawabukuro-hasegawa-imagawa-kannon-jizo/ — 川袋松林寺の建立者・開山・今川氏祈願所・十一面観音・延命地蔵に関する伝承を、史料命題ごとに検証する。
+- 河勾庄・川袋村と松林寺領の歴史地理: https://temple.atawi.link/research/shorinji-kawabukuro-kawawa-sho-landholding-landscape/ — 松林寺文書にみえる河勾庄3地域と、掛塚輪中川袋村の正林庵領2石を、河川・村境・所領制度から分析する。
+- 寶珠院の1596年開山・1600年分派伝承: https://temple.atawi.link/research/hojuin-1596-1600-hokoji-lineage/ — 磐田市十郎島の寶珠院について、1596年心叟開山、1600年分派、方広寺派所属、同名寺院を史料批判する。
+- 寶珠院本尊「高王観世音菩薩」の経典・像・信仰: https://temple.atawi.link/research/hojuin-gaowang-kannon-text-image-faith/ — 郡誌が寶珠院本尊と記す高王観世音菩薩を、高王観世音経のテキスト史、像調査、山号・寺号、地域願意から検討する。
+- 十郎島輪中の歴史地理と寶珠院: https://temple.atawi.link/research/hojuin-jurojima-wajyu-flood-community/ — 十郎島の1591年村高、輪中・旧河道、掛塚湊、現在人口、防災を整理し、寶珠院を人・土地・水・記憶の継承システムとして分析する。
+- 白羽龍泉寺の1624年草創と心叟禅師: https://temple.atawi.link/research/ryusenji-shiraha-founder-shinso-1624/ — 磐田市白羽の祥雲山龍泉寺について、1624年草創と心叟禅師の記録を資料批判し、十郎島宝珠院との関係を仮説として検討する。
+- 白羽龍泉寺の芋瀬移転説と天竜川: https://temple.atawi.link/research/ryusenji-shiraha-imose-tenryu-river/ — 磐田市白羽の龍泉寺について、芋瀬からの移転説、除地高、天竜川の河道変化、対岸檀家の記録を比較し、複数仮説として再構成する。
+- 白羽龍泉寺と1854年安政東海地震: https://temple.atawi.link/research/ryusenji-shiraha-1854-earthquake-reconstruction/ — 磐田市白羽の龍泉寺について、1854年地震による本堂倒壊と再建の記録を検証し、現存建築・本尊・地域防災へつなぐ調査方法を示す。
+- 1377年在徳和尚開創伝承と潜龍寺の年代論: https://temple.atawi.link/research/senryuji-kawabukuro-1377-zaitoku-chronology/ — 磐田市川袋の潜龍寺について、1377年在徳和尚開創伝承と、同じ郡誌が在徳を1479年の開創者とする年代矛盾を史料批判する。
+- 潜龍寺の廃絶伝承と1596年金叔和尚中興: https://temple.atawi.link/research/senryuji-kawabukuro-1596-kinshuku-revival/ — 潜龍寺が廃絶後、1596年に金叔和尚によって中興されたとする郡誌記載を、寺地・法系・本尊・地域社会の継承という観点から検証する。
+- 川袋463の潜龍寺と満願虚空蔵菩薩記録: https://temple.atawi.link/research/senryuji-kawabukuro-place-kokuzo-record/ — 現住所川袋463と郡誌の掛塚表記の不一致、本尊満願虚空蔵菩薩の1921年記録を、地籍・版面・現地資料から再検証する。
+- 堀之内常楽寺の1585年草創と中泉御殿伝承: https://temple.atawi.link/research/jorakuji-1585-nakaizumi-goten-chronology/ — 磐田市堀之内の常楽寺について、1585年草創と中泉御殿建物転用伝承を、市の1587年頃築造説と比較し、3つの検証仮説を提示する。
+- 堀之内常楽寺の汝舟・天眼と東福寺創立: https://temple.atawi.link/research/jorakuji-nyoshu-tengan-tofukuji-network/ — 常楽寺開山汝舟、2世天眼、東福寺開祖角山の記録を資料批判し、堀之内における方広寺派寺院網の成立を3仮説で検討する。
+- 堀之内常楽寺の寺領2石と1854年震災復興: https://temple.atawi.link/research/jorakuji-two-koku-earthquake-horinochi-landscape/ — 常楽寺領2石、堀之内村の村高・人口、1854年地震の堂宇倒壊、白峯山と読める現況表示を比較し、村落寺院の維持と復興を考察する。
+- 香集寺の永禄期開創伝承と「香乗寺」寺領記録: https://temple.atawi.link/research/koshuji-1568-hoen-chie-koshoji-estate/ — 磐田市掛塚の望海山香集寺について、1568年法園智溢開創伝承、近世の香乗寺領2石余、方広寺派末寺関係、同名寺院を史料批判する。
+- 香集寺本尊「満願虚空蔵菩薩」の経典・図像・地域受容: https://temple.atawi.link/research/koshuji-mangan-kokuzo-kaketsuka-faith/ — 香集寺の満願虚空蔵菩薩について、求聞持法、虚空蔵図像、掛塚地域の信仰、潜龍寺・焼津香集寺との識別を学術的に検討する。
+- 1854年安政東海地震と香集寺の倒壊・再建記憶: https://temple.atawi.link/research/koshuji-1854-ansei-earthquake-reconstruction/ — 1854年安政東海地震で堂宇が倒壊した香集寺について、震度6〜7評価、後背湿地、瑞翁和尚の復旧伝承、現在の資料防災を検討する。
+- 1582年宣存開山伝承と西平松福生寺: https://temple.atawi.link/research/fukushoji-nishihiramatsu-1582-senzon-keisai/ — 西平松福生寺の1582年一宇新築・宣存開山伝承を、聖寿寺5世恵才の法系と史料生成過程から検討する。
+- 福生寺と『遠淡海地志』の福正寺をどう識別するか: https://temple.atawi.link/research/fukushoji-nishihiramatsu-fukushoji-fukushoji-identification/ — 西平松の福生寺と、平松周辺史料にみえる福正寺の同一性を未確定のまま検証する。
+- 西平松村の福生寺と虚空蔵菩薩記録: https://temple.atawi.link/research/fukushoji-nishihiramatsu-village-kokuzo/ — 福生寺を西平松村の形成史と現在の農村景観に位置付け、1921年の虚空蔵菩薩記録を現況から分離して検証する。
+- 豊浜竜雲寺の1578年7月6日開創伝承: https://temple.atawi.link/research/ryuunji-1578-monju-shoshuji-lineage/ — 磐田市豊浜の福寿山竜雲寺について、1578年7月6日、松秀寺3世閏室文歳開創の郡誌記録を検証し、本末・法系調査の手順を示す。
+- 豊浜竜雲寺の観音・秋葉山・石造物: https://temple.atawi.link/research/ryuunji-kannon-akiba-stone-faith/ — 竜雲寺の本尊観世音菩薩伝承、火防の神秋葉山小祠、石仏群、大木根元の石碑を証拠層ごとに分析し、非破壊調査方法を提示する。
+- 雁代竜雲寺と豊浜沿岸地域の歴史: https://temple.atawi.link/research/ryuunji-ganjiro-coastal-community-disaster/ — 竜雲寺額の雁代という地域名、豊浜沿岸の水運史、境内の大木と雁代防災会備蓄倉庫を分析し、寺院と自治組織の関係を検討する。
+- 宗寿寺から宗次寺へ―1588年火災と曹洞宗再興: https://temple.atawi.link/research/sojiji-sojuji-1588-soto-reconstitution/ — 磐田市南島の宗次寺について、天文年間の宗寿寺開創、1588年火災、天初玄祐による曹洞宗再興、宗寿寺領2石の継承を史料批判する。
+- 磐田郡三十三観音第33番・宗次寺の結願構造: https://temple.atawi.link/research/sojiji-33rd-kannon-pilgrimage-batokannon/ — 磐田郡三十三観音霊場の結願所宗次寺について、本尊聖観音、馬頭観音堂、御詠歌、巡礼路、老松山・及光山の表記差を検討する。
+- 1854年安政東海地震と宗次寺の1866年再建: https://temple.atawi.link/research/sojiji-1854-1866-earthquake-reconstruction/ — 宗次寺の1854年震災と1866年再建について、太田川下流低地、再建資源、福王寺ネットワーク、住所・山号差、現在の文化資料防災を検討する。
+- 福田慶昌寺の1723年開山と慈眼詳雲: https://temple.atawi.link/research/keishoji-1723-jigen-shoun-shoshuji-lineage/ — 磐田市福田の円福山慶昌寺について、1723年2月に松秀寺第10世慈眼詳雲を請じたという郡誌記録を史料批判し、開山・開基・本末関係を分けて検証する。
+- 慶昌寺の1881年「法地」と明治期寺院制度: https://temple.atawi.link/research/keishoji-1881-hochi-institutional-transition/ — 磐田市福田の慶昌寺が1881年9月に法地となったという郡誌記事を、住職継承、本末関係、明治宗教行政、現在の宗教法人と区別して検証する。
+- 円福山慶昌寺の馬頭観音と磐田郡三十三観音: https://temple.atawi.link/research/keishoji-bato-kannon-iwata-33-pilgrimage/ — 福田慶昌寺の馬頭観世音菩薩伝承と磐田郡三十三観音第32番札所を検証し、松秀寺・宗次寺との配列、観音寺が属する別霊場との混同を整理する。
+- 海雲建立・盛舜開祖伝承と瑞光山長泉寺: https://temple.atawi.link/research/chosenji-fukudenakajima-kaiun-seishun-lineage/ — 磐田市福田中島の長泉寺について、海雲建立、盛舜開祖、寿正寺末という1921年郡誌記載を人物・建築・本末関係に分けて検証する。
+- 中島村字北浦と長泉寺の寺地形成: https://temple.atawi.link/research/chosenji-fukudenakajima-nakajima-kitaura-landscape/ — 長泉寺の旧所在地「福島村中島字北浦」と現在の福田中島445を、地籍・村落史・現況景観から検証し、中世の中嶋新開田記録との距離を測る。
+- 長泉寺の薬師如来記録と遠江四十九薬師番外札所: https://temple.atawi.link/research/chosenji-fukudenakajima-yakushi-pilgrimage/ — 1921年郡誌が記す長泉寺本尊薬師如来と、遠江四十九薬師番外札所という現行二次情報を分離し、像・儀礼・巡礼の確認手順を示す。
+- 観音寺の1494年円通院開創と1559年再編: https://temple.atawi.link/research/kannonji-1494-1559-entsuin-migration/ — 磐田市福田の円通山観音寺について、1494年の円通院開創、原野谷川を下る遷座、1559年の改称・開山を検討する。
+- 観音寺秘仏聖観音の午年開帳と2つの33観音霊場: https://temple.atawi.link/research/kannonji-secret-kannon-uma-year-dual-pilgrimage/ — 観音寺の秘仏聖観音、恵心僧都作伝承、午年の1週間開帳、遠州33観音第21番・磐田郡33観音第1番を検討する。
+- 福田観音寺の御詠歌・魚籃観音・海域文化: https://temple.atawi.link/research/kannonji-fukude-sea-gyorin-goeika/ — 観音寺の御詠歌「磯打つ波」、魚籃観音の現地掲示、大漁祈願、福田漁港のシラス漁、織物、防災を史料別に検討する。
+- 大原龍法院の1593年草創と「文甫作公」: https://temple.atawi.link/research/ryuhoin-1593-villagers-bunposakuko-foundation/ — 磐田市大原の潮音山龍法院について、1593年に村人が相はかって建立したという郡誌記事と、未解読語「文甫作公」を史料批判する。
+- 龍法院1706年中興と昌室文久の年代矛盾: https://temple.atawi.link/research/ryuhoin-1706-shoshitsu-bunkyu-chronology/ — 龍法院の1706年中興と全久院第4世昌室文久を、同僧に関する1628年金泉寺開山記事との78年差から再検証する。
+- 龍法院の延命地蔵・1856年再建・1873年大原分校: https://temple.atawi.link/research/ryuhoin-jizo-reconstruction-ohara-school/ — 龍法院の延命地蔵伝承、1856年地蔵堂再建入用払物帳、1873年大原分校開設を比較し、寺院境内の重層的利用を検証する。
+- 1597年潤室文歳開創と1708年林教中興の蔵本寺: https://temple.atawi.link/research/zohonji-ikago-1597-1708-foundation/ — 五十子の蔵本寺について、1597年潤室文歳開創、1708年第3世林教の堂宇建替・中興、全久院末という郡誌記載を再検証する。
+- 五十子村字東本田と蔵本寺領: https://temple.atawi.link/research/zohonji-ikago-temple-land-1722/ — 蔵本寺の旧所在地字東本田と1722年の寺領高反別記録を、五十子村・伊加子荒野の地域史、地籍、村落経済から検討する。
+- 蔵本寺の地蔵菩薩記録と境内石造物: https://temple.atawi.link/research/zohonji-ikago-jizo-material-culture/ — 1921年郡誌が記す蔵本寺本尊地蔵菩薩と、現地で確認した地蔵堂・石灯籠・石碑を分離し、像・堂・銘文・儀礼の検証方法を示す。
+- 蓮覚寺1175年平重盛創建伝承と遠州三連寺: https://temple.atawi.link/research/rengakuji-1175-shigemori-three-renji/ — 竜洋中島の蓮覚寺について、1175年平重盛創建、遠州三連寺、宮本旧地、蓮・連の表記、宗派転換を史料批判する。
+- 蓮覚寺1842年山門の地震・修復・移設史: https://temple.atawi.link/research/rengakuji-1842-gate-earthquakes-relocation/ — 市指定文化財の蓮覚寺山門を、1842年建造、掛塚大工、1854年地震、1877年移設、1944年地震、文化財指定から分析する。
+- 1873年中島分校と蓮覚寺本堂: https://temple.atawi.link/research/rengakuji-1873-nakajima-branch-school/ — 蓮覚寺本堂で1873年に開かれたと伝わる西之島学校中島分校を、学制、建築利用、就学、地域公共性、現在の学校から検討する。
+- 1633年頃の末寺帳にみえる慈慶庵: https://temple.atawi.link/research/jikeian-komaba-1633-terminal-register/ — 慈慶庵の1633年頃末寺帳記載を、聖寿寺末・駒場村・3石の各命題に分けて検証する。
+- 寿慶庵から慈慶庵へ―名称と3石寺領: https://temple.atawi.link/research/jikeian-komaba-jukeian-name-three-koku/ — 寿慶庵と慈慶庵の表記関係、駒場村の3石寺領、福聚山・聖寿寺末を年代別に検証する。
+- 福聚山慈慶庵の阿弥陀仏記録と庵寺景観: https://temple.atawi.link/research/jikeian-komaba-amida-hermitage/ — 慈慶庵の阿弥陀仏記録、庵という寺号、字屋敷廻の寺地、現況建物を異なる証拠層で検討する。
+- 平間願成寺の1533年開基と明堂: https://temple.atawi.link/research/ganjoji-1533-meido-shojuji-lineage/ — 磐田市平間の福聚山願成寺について、1533年に聖寿寺第5世恵才の徒弟明堂が開基したという郡誌記事を、人物・土地・本末関係から検証する。
+- 地蔵本尊の願成寺が観音霊場第6番となる構造: https://temple.atawi.link/research/ganjoji-jizo-iwata-33-kannon-no6/ — 地蔵菩薩を本尊と伝える平間願成寺が磐田郡三十三観音第6番に位置付けられる構造を、寺院本尊・札所本尊・1919年再選定説に分けて検証する。
+- 平間願成寺の寺子屋と「高山師」: https://temple.atawi.link/research/ganjoji-takayama-terakoya-hirama-education/ — 磐田郡誌に記された平間願成寺の高山師と若干名の寺子屋について、人物同定、教材、門人、教室位置、近代学校への移行を検証する。
+- 海老島心月寺の1575年宗哲再興と正眼院末寺制: https://temple.atawi.link/research/shingetsuji-1575-soganin-sotetsu-two-koku/ — 海老島心月寺の平氏頃開創、1575年宗哲再興、正眼院末寺、寺領2石、聖観音、豊田郡33観音第13番を検討する。
+- 心月寺1854年倒潰記録と1838年本堂再建の年代矛盾: https://temple.atawi.link/research/shingetsuji-1854-collapse-1838-chronology/ — 海老島心月寺の1854年倒潰と1838年本堂再建という矛盾を、原史料、部材、地形、周辺寺院、防災から検討する。
+- 心月寺仮校舎と海老島小学校の1872年・1873年問題: https://temple.atawi.link/research/shingetsuji-1873-ebijima-school-temple/ — 心月寺を仮校舎とした海老島小学校について、1872年・1873年の2説、本堂利用、就学、学校跡標柱、現在制度を検討する。
+- 金藏寺の1587年草創と嶺岳: https://temple.atawi.link/research/kinzoji-1587-reigaku-shuzoji-lineage/ — 磐田市豊岡の金藏寺について、1587年に守増寺全雄の法嗣・嶺岳が草創したという郡誌記事を、法系・旧村・本末制度から検証する。
+- 金藏寺の1649年朱印3石8斗: https://temple.atawi.link/research/kinzoji-1649-shuin-3koku8to/ — 金藏寺に1649年8月17日付で認められたとされる朱印3石8斗を、近世地誌、土地制度、本寺守増寺との比較から検証する。
+- 金藏寺の山号「玉瀧山」と歴史資料の「玉運山」: https://temple.atawi.link/research/kinzoji-gyokuryuzan-name-identity/ — 現地石標の玉瀧山と1921年資料の玉運山という差異を起点に、金藏寺の読み、旧字体、普照殿、旧金洗村を史料批判する。
+- 1478年崗本山聖寿軒開創伝承の再検証: https://temple.atawi.link/research/shojuji-oka-1478-ikkan-monna/ — 聖寿寺の1478年開創、旧称崗本山聖寿軒、教之一訓、門奈美作守正重54石寄進、長松院との関係を史料批判する。
+- 朱印高12石9斗余と聖寿寺24寺門末: https://temple.atawi.link/research/shojuji-oka-12koku-24-temples-network/ — 聖寿寺の1648年朱印高12石9斗余と24寺の門末を、寺領・末寺帳・弟子の開創・地域寺院群から検証する。
+- 聖寿寺の阿弥陀三尊・地域霊場・移座仏: https://temple.atawi.link/research/shojuji-oka-amida-pilgrimage-relocation/ — 聖寿寺の阿弥陀三尊、観音・阿弥陀霊場、2022年一照殿、良照庵本尊と草崎御堂阿弥陀像の移座を検討する。
+- 雄照寺の1645年創立伝承と全唐・守増寺法系: https://temple.atawi.link/research/yushoji-1645-zento-shuzoji-lineage/ — 磐田市豊岡の雄照寺について、1645年の全唐・村民による創立伝承、守増寺末という本末関係、20世紀以後の寺名継続を史料批判する。
+- 雄照寺と旧西堀村の共同形成: https://temple.atawi.link/research/yushoji-nishibori-villagers-temple-formation/ — 雄照寺を旧西堀村の寺院として位置づけ、「村民と謀りて」という創立記録、豊岡の曹洞宗寺院群、掛塚湊後背地との関係を検討する。
+- 雄照寺の地蔵菩薩と神宮山: https://temple.atawi.link/research/yushoji-jizo-jinguzan-evidence-layers/ — 雄照寺の本尊地蔵菩薩と山号神宮山について、1921年郡誌の記録、一般的な地蔵信仰、現在未確認の事項を分離して検討する。
+- 1587年三浦甚三郎重員開基・全雄開山の守増寺: https://temple.atawi.link/research/shuzoji-toyooka-1587-miura-zenyu/ — 守増寺の1587年開創、三浦甚三郎重員、大宝院殿安心居士、聖寿寺7世全雄、大宝山の関係を検証する。
+- 朱印高13石6斗と守増寺7寺門末: https://temple.atawi.link/research/shuzoji-toyooka-13koku-7-temples/ — 守増寺の朱印高13石6斗、7寺の末寺、1784年役僧出府、嘉永期寺院懸案を制度・人的ネットワークから検討する。
+- 守増寺の地蔵菩薩記録と磐田郡観音霊場: https://temple.atawi.link/research/shuzoji-toyooka-jizo-pilgrimage/ — 郡誌が記す守増寺本尊地蔵菩薩と、磐田郡三十三観音霊場第5番、現況石造物・境内景観を分離して検証する。
+- 松向寺の1601年黒印と1619年草創: https://temple.atawi.link/research/shokoji-miyanoshiki-1601-1619-chronology/ — 宮之一色の松向寺について、草創より18年早い黒印1石の記事と、正光庵・松向庵・松向寺の名称変遷を史料批判する。
+- 1874年の地蔵寺合併と松向寺: https://temple.atawi.link/research/shokoji-miyanoshiki-1874-jizoji-merger/ — 松向庵が1874年9月に真言宗地蔵寺を合併したという郡誌記事を、宗派、什物、旧寺地、現地小堂の証拠範囲から検証する。
+- 松向寺の11面観音と豊田郡33観音第21番: https://temple.atawi.link/research/shokoji-miyanoshiki-kannon-route/ — 松向寺の11面観音本尊、第21番札所、宮之一色一里塚を別々の史料系統から検証し、地域巡礼と交通の接点を考察する。
+- 智恩齋の1641年伝法開祖と1642年法地格: https://temple.atawi.link/research/chionsai-hitokoto-1641-sozawa-hochi/ — 磐田市一言の智恩齋について、宗澤、栄泉寺末、法地格、1760年山号変更を史料批判により検討する。
+- 一言観音と1572年一言坂合戦の記憶: https://temple.atawi.link/research/chionsai-hitokoto-kannon-1572-memory/ — 智恩齋の一言観音をめぐる1572年合戦、家康祈願、本多忠勝、地名由来の伝承形成を検討する。
+- 智恩齋の虚空蔵菩薩と一言山: https://temple.atawi.link/research/chionsai-hitokoto-kokuzo-hitokotozan/ — 智恩齋の本尊虚空蔵菩薩、一言観音、一言山への改称を区別し、複合的な地域信仰を検討する。
+- 安楽寺の元久年間草創伝承と1595年曹洞宗再編: https://temple.atawi.link/research/anrakuji-1204-1595-sectarian-reorganization/ — 磐田市立野の医王山安楽寺について、1204〜1206年草創伝承、天台・真言・曹洞の宗派変化、1595年の道屋乾達による分派開山を検討する。
+- 安楽寺所蔵1601年伊奈忠次判物と寺領3石: https://temple.atawi.link/research/anrakuji-1601-ina-tadatsugu-temple-land/ — 安楽寺所蔵の1601年2月11日付伊奈忠次判物を、同月の周辺判物、正保郷帳の安楽寺領3石、立野村の地域経済から検討する。
+- 安楽寺所蔵・大須賀陶山筆十六羅漢画像の研究設計: https://temple.atawi.link/research/anrakuji-osuga-tozan-sixteen-arhats/ — 安楽寺所蔵の市指定文化財「紙本著色十六羅漢画像」を、大須賀陶山の作者問題、連作構造、禅宗儀礼、保存・公開の観点から検討する。
+- 正医寺の782年草創伝承と1600年曹洞宗開山: https://temple.atawi.link/research/shoi-ji-shimoban-no-782-1600-foundation/ — 磐田市下万能の正医寺について、782年草創伝承、1600年巨山宗鯨開山、曹洞宗改宗、1868年本堂を史料批判する。
+- 東光山正医寺と末寺9寺の地域ネットワーク: https://temple.atawi.link/research/shoi-ji-shimoban-no-nine-branch-temples/ — 正医寺を本寺とする末寺群を、僧侶移動、村落地理、廃寺・合併、年次矛盾から検討する。
+- 正医寺の薬師如来・萬能観音と複数霊場: https://temple.atawi.link/research/shoi-ji-shimoban-no-yakushi-kannon-pilgrimage/ — 正医寺の薬師如来、如意輪観音、萬能観音、遠州観音・遠江薬師・磐田郡観音の重層を検討する。
+- 豊田院1596年開創と正医寺法系の年代矛盾: https://temple.atawi.link/research/toyodain-1596-seiji-lineage/ — 気子島豊田院の1596年開創が、本寺正医寺の1600年曹洞宗開山寺伝より早い問題を、齢嫩・法系・周辺末寺から検証する。
+- 1493年写経・1589年定書・1596年豊田院: https://temple.atawi.link/research/toyodain-kegojima-1493-1589-1596/ — 気子島住僧周勢の1493年写経、徳川家7カ条定書、豊田院1596年開創記事を、独立する3史料系列として検証する。
+- 豊田院・蔵六庵・境内小祠の物質資料: https://temple.atawi.link/research/toyodain-zorokuan-shrine-jizo/ — 豊田院境内の「蔵六庵」扁額、堂宇、鳥居、小祠を再判読し、郡誌の万年山・地蔵本尊と現況を分離する。
+- 森本福王寺の弘治年間開創と1593年曹洞宗化: https://temple.atawi.link/research/fukuoji-morimoto-1555-1593-conversion/ — 磐田市森本の慈現山福王寺について、1555〜1558年の臨済宗開創、1593年の大鯨による曹洞宗化、井川龍泉院末・法地格を検討する。
+- 森本福王寺の黒印3石・朱印27石2斗再検討: https://temple.atawi.link/research/fukuoji-morimoto-black-red-seal-land/ — 森本福王寺について、1601年黒印高3石、正保郷帳の3石、1648年朱印高27石2斗と諸役免除の関係を史料批判する。
+- 森本福王寺を結節点とする龍泉院法系と末寺群: https://temple.atawi.link/research/fukuoji-morimoto-ryusenin-subtemple-network/ — 井川龍泉院から森本福王寺、下本郷養福寺・上本郷自清庵・赤池幸勝院へ伸びる歴史的本末網を、村落空間と観音信仰から検討する。
+- 林昌寺の天正年間改宗と1650年法地格: https://temple.atawi.link/research/rinshoji-kodateno-tensho-conversion-hochi/ — 磐田市小立野の林昌寺について、真言宗から曹洞宗への改宗、窓泉寺末、1650年法地格を史料批判する。
+- 林昌寺木造薬師三尊仏の物質文化史: https://temple.atawi.link/research/rinshoji-kodateno-yakushi-triad-heritage/ — 林昌寺の木造薬師三尊仏を、制作年代、保存状態、元真言宗史、本尊釈迦牟尼仏、薬師霊場から検討する。
+- 小立野村の開墾・東海道・池田の渡しと林昌寺: https://temple.atawi.link/research/rinshoji-kodateno-village-tokaido-ikeda/ — 林昌寺を小立野村の開墾伝承、天竜川、東海道、池田の渡し、窓泉寺法系、薬師巡礼から検討する。
+- 養福寺の1599年阿弥陀庵と1724年開山: https://temple.atawi.link/research/yofukuji-shimohongo-1599-1724-hermitage/ — 磐田市下本郷の龍祥山養福寺について、1599年の庵室、正保年間の寺領1石、1724年の正式開山を資料種別ごとに検証する。
+- 養福寺の火災・安政東海地震と1000日勧化: https://temple.atawi.link/research/yofukuji-shimohongo-fires-1854-reconstruction/ — 養福寺が経験した2度の火災と安政東海地震、東海道での1000日募財、稲荷勧請を地域防災史として検証する。
+- 養福寺の稲荷勧請・祭礼と地域的公共性: https://temple.atawi.link/research/yofukuji-shimohongo-inari-community/ — 磐田市下本郷の養福寺について、1854年の伏見稲荷勧請、3月祭礼、戦没者供養、坐禅会等の重層的な地域実践を分析する。
+- 池田妙法寺の1412年草創と1602年曹洞宗化: https://temple.atawi.link/research/myohoji-ikeda-1412-1602-conversion/ — 磐田市池田の瑞雲山妙法寺について、1412年草創、日蓮宗草創伝承、5世後の中絶、1602年の惠策中興と曹洞宗化を検討する。
+- 池田宿・天竜川渡船と妙法寺領3石: https://temple.atawi.link/research/myohoji-ikeda-ferry-village-land/ — 池田妙法寺を池田宿・天竜川渡船・正保郷帳の寺領3石から検討し、渡船方と地方を横断する村落寺院という仮説を提示する。
+- 池田妙法寺の薬師・観音・新四国札所の重層: https://temple.atawi.link/research/myohoji-ikeda-yakushi-kannon-pilgrimage/ — 池田妙法寺の本尊薬師如来、遠江四十九薬師第7番、磐田郡三十三観音第10番、新四国第14番を異なる巡礼体系として検討する。
+- 興徳寺の建久年間草創と1599年改称を再検討する: https://temple.atawi.link/research/kotokuji-1190s-1599-foundation-reform/ — 磐田市森下の興徳寺について、建久年間の草創、旧真言宗岡本山弘徳寺、1599年3月9日の改称・曹洞宗法地化という寺伝を、資料の成立時点と用語を分けて検討する。
+- 森下村の寺領1石と興徳寺の水辺景観: https://temple.atawi.link/research/kotokuji-morishita-temple-land-floodplain/ — 正保郷帳に見える光得寺領1石を興徳寺の寺領伝承と照合し、森下村の東海道、用水、河川、天竜川洪水と寺院空間の関係を歴史地理学的に検討する。
+- 興徳寺の六地蔵・子安地蔵・本堂を読む: https://temple.atawi.link/research/kotokuji-six-jizo-hondo-material-culture/ — 興徳寺境内の六地蔵、子ども像を伴う地蔵、いぼとり地蔵伝承、長松山額、本堂・堂宇を、像容・銘文・配置・再建履歴に分けて検討する。
+- 誓渡院の1504年開創と1712年中興: https://temple.atawi.link/research/seidoin-ikeda-1504-1712-institution/ — 磐田市池田の誓渡院について、1504年の誓渡庵創立、1712年の東州真海による中興、綸旨・色衣、可睡斎末の制度を検証する。
+- 誓渡院の船玉大明神と池田渡船: https://temple.atawi.link/research/seidoin-ikeda-funadama-ferry-memory/ — 誓渡院本堂に祀られると伝わる船玉大明神を、池田渡船の生業、安全祈願、水難供養、架橋後の記憶から検証する。
+- 誓渡院の地蔵・帝釈天・新四国第5番: https://temple.atawi.link/research/seidoin-ikeda-jizo-shikoku-landscape/ — 誓渡院の本尊地蔵菩薩、帝釈天、船玉大明神、新四国八十八ヶ所第5番を、池田の寺院群と巡礼路から分析する。
+- 加茂大圓寺の726年起源・942年再建・1638年改称: https://temple.atawi.link/research/daienji-kamo-726-942-1638-history/ — 加茂大圓寺の726年起源、942年再建と臥竜山大淵寺、賀茂神社近接の旧跡、1638年の久松山大円寺改称を史料批判する。
+- 大圓寺所蔵1589年豊臣秀吉朱印状の史料的位置: https://temple.atawi.link/research/daienji-kamo-hideyoshi-1589-prohibition/ — 磐田市指定文化財の大圓寺所蔵豊臣秀吉朱印状を、小田原攻め前の禁制、軍勢規制、伝来、寺谷用水工事との年代関係から検討する。
+- 大圓寺・寺谷用水・加茂大念仏の記憶構造: https://temple.atawi.link/research/daienji-kamo-teradani-water-memorial/ — 大圓寺を平野重定の菩提寺、寺谷用水祭の場、加茂大念仏奉納地、十王像群所有者として分析し、水利と死者供養の構造を検討する。
+- 1624年開創伝承と松久院・永江院の寺院ネットワーク: https://temple.atawi.link/research/shokyuin-mitsue-1624-yokoin-network/ — 磐田市三家の松久院について、1624年開創、豊田山、釈迦牟尼如来、永江院末という郡誌記載を史料批判し、遠江北部の寺院ネットワークを検討する。
+- 1875年松久院内三家学校と寺院教育空間: https://temple.atawi.link/research/shokyuin-mitsue-mitsue-school-1875/ — 1875年に松久院内へ置かれた小学野部学校分校三家学校を、学区、校地、寺院空間、統合過程、地番差から検討する。
+- 松久院境内の永照塔・袖ケ浦33観音・遠州大念仏: https://temple.atawi.link/research/shokyuin-mitsue-eisho-pilgrimage-dainenbutsu/ — 松久院境内の永照塔、袖ケ浦三十三観音9番・10番札所、三家の遠州大念仏を、物質・移設・儀礼・記録の異なる層として検討する。
+- 上野部法音庵の1472年開創と川僧慧済: https://temple.atawi.link/research/hoonan-kaminobe-1472-sosen-keisai/ — 法音庵の文明4年開創を、川僧慧済の法系、總持寺経験、一雲斎帰還、1475年示寂から検討する。
+- 一雲斎から法音庵・東林庵へ広がる15世紀末庵網: https://temple.atawi.link/research/hoonan-kaminobe-ichigunsai-branch-network/ — 一雲斎末の法音庵と東林庵、1480年授戒会を比較し、旧野部村域の曹洞宗教線を村落ネットワークとして再構成する。
+- 法音庵の十一面観音・六地蔵・2002年伽藍更新: https://temple.atawi.link/research/hoonan-kaminobe-kannon-six-jizo-rebuilding/ — 法音庵の本尊十一面観音、六地蔵尊祈願祭、位牌堂、ご詠歌、写経・写仏、2002年伽藍更新を信仰実践の層として検討する。
+- 天龍院の1528年創立と松井氏菩提寺形成: https://temple.atawi.link/research/tenryuin-kaminobe-1528-matsui-eigenji/ — 磐田市上野部の天龍院について、1528年創立、松井信薫・宗信、一貞和尚、永源寺法系、2世貞超の門流展開を検証する。
+- 天龍院の松井氏首塚と供養塔: https://temple.atawi.link/research/tenryuin-kaminobe-matsui-head-mound/ — 天龍院境内の松井氏首塚と供養塔について、松井宗信の桶狭間戦死、首級埋葬伝承、近世地誌、石造物、市指定史跡を検証する。
+- 天龍院の朱印高9石・末寺4宇と観音札所: https://temple.atawi.link/research/tenryuin-kaminobe-nine-koku-temple-network/ — 天龍院の1603年朱印高9石、末寺4宇、磐田郡三十三観音第15番、梅花講を異なる寺院ネットワークとして分析する。
+- 最廣寺の1592年開創と高薗・学園寺法系: https://temple.atawi.link/research/saikoji-matsunokijima-1592-kozo-lineage/ — 磐田市松之木島の最廣寺について、1592年満室銀重開創、高薗からの草分け伝承、学園寺末、本尊地蔵菩薩を検証する。
+- 輪中集落・松之木島と最廣寺: https://temple.atawi.link/research/saikoji-matsunokijima-waju-flood-village/ — 天竜川下流の輪中集落・松之木島について、最廣寺の開創、近世検地、耕地開発、洪水、地蔵信仰を環境史として分析する。
+- 最廣寺・最広寺・西広寺の表記史: https://temple.atawi.link/research/saikoji-matsunokijima-school-name-variants/ — 『静岡県磐田郡誌』の最廣寺と、1884年松ノ木島学校所在地「西広寺」の表記差を史料批判し、寺院の教育機能を検証する。
+- 一雲斉の1418年創建伝承と如仲・真巌: https://temple.atawi.link/research/ichiunsai-shimonobe-1418-nyochu-shingan/ — 磐田市下野部の一雲斉について、1418年創建説、如仲天誾、真巌道空、大洞院6派、可睡斎末という異なる歴史層を史料批判によって再構成する。
+- 一雲斉第3世川僧慧済と末庵ネットワーク: https://temple.atawi.link/research/ichiunsai-shimonobe-sosen-keisai-network/ — 川僧慧済の總持寺経験、語録3巻、法音庵・薬王寺・東林庵の開創年を照合し、一雲斉を15世紀後半の寺院網の結節点として検討する。
+- 一雲斉の朱印高15石・1579年禁伐文書・本尊記録: https://temple.atawi.link/research/ichiunsai-shimonobe-15-koku-1579-deities/ — 一雲斉の朱印高15石、1579年の竹木禁伐文書、地蔵菩薩・釈迦牟尼仏・薬師信仰の異なる記録を、寺院経営と礼拝史の両面から検証する。
+- 1888年説教庵から2014年善徳山妙福寺再建まで: https://temple.atawi.link/research/myofukuji-fukude-1888-2014-institutional-history/ — 妙福寺の1888年説教庵、永運結社、福田教会、1936年眞要坊移転、2014年再建・善徳山改称を制度史として検討する。
+- 妙福寺の清正公・鬼子母尊神信仰と祈祷道場: https://temple.atawi.link/research/myofukuji-fukude-seishoko-kishimojin-prayer/ — 妙福寺における清正公大神、七面大明神、鬼子母尊神、三面大黒天と御命講・御会式を、福田の生業との関係から検討する。
+- 1894年妙福寺旧蔵鰹釣船絵馬と福田の海上信仰: https://temple.atawi.link/research/myofukuji-fukude-1894-bonito-votive-painting/ — 妙福寺現地説明板が記す1894年鰹釣船絵馬と、六社神社の1909年市指定鰹釣船絵馬を区別し、福田の漁業・海上信仰・資料移管を検討する。
+- 1921年郡誌に見えない智教院: https://temple.atawi.link/research/chikyoin-shiraha-1921-absence/ — 磐田市白羽の智教院について、1921年『静岡県磐田郡誌』に現行寺号が見えない事実を、異名・結社・移転・法人化の可能性から検証する。
+- 白羽・掛塚湊の地域空間と智教院: https://temple.atawi.link/research/chikyoin-shiraha-kakezuka-coastal-history/ — 智教院の所在地を白羽・掛塚湊・天竜川河口の歴史空間へ位置づけ、港湾・生業・洪水・伝承との関係を証拠別に検討する。
+- 磐田市の日蓮宗5寺と智教院: https://temple.atawi.link/research/chikyoin-shiraha-nichiren-network/ — 磐田市内の日蓮宗5寺を共通項目で比較し、智教院の現行所属と未確認の法系・本尊・創建史を区別する。
+- 妙満寺「宝永17年」草創記録の史料批判: https://temple.atawi.link/research/myomanji-kaminobe-hoei-17-nikkan/ — 磐田市上野部の妙満寺について、『静岡県磐田郡誌』の「宝永17年」と日閑草創説を分離し、元号校訂と寺院成立過程を検討する。
+- 妙恩寺末・妙満寺の天竜川横断ネットワーク: https://temple.atawi.link/research/myomanji-kaminobe-myo-onji-tenryu-network/ — 浜松の妙恩寺と磐田市上野部の妙満寺を結ぶ歴史的本末関係を、天竜川の河道、渡河、村落寺院分布、市内日蓮宗5寺から再検討する。
+- 妙満寺の七面堂・祈祷案内・慰霊空間: https://temple.atawi.link/research/myomanji-kaminobe-shichimendo-prayer-memory/ — 妙満寺の七面堂、祈祷・水子供養案内、堂宇、石碑を現地写真から記録し、歴史由緒と現在の宗教実践を混同せず検討する。
+- 単立寺院・本妙院の制度史: https://temple.atawi.link/research/honmyoin-iwai-independent-status/ — 磐田市岩井の本妙院について、県名簿の「単立」を教義名と誤認せず、包括関係・宗旨・法人格・旧所属の確認方法を検討する。
+- 岩井村・磐田原台地と本妙院: https://temple.atawi.link/research/honmyoin-iwai-iwatahara-landscape/ — 本妙院の所在地を岩井村、磐田原台地東縁、太田川中流低地の歴史地理へ位置づけ、寺地・道路・墓地・集落の変化を検証する。
+- 本妙院を取り違えないための寺院同定論: https://temple.atawi.link/research/honmyoin-iwai-identity-disambiguation/ — 磐田市岩井の本妙院について、東京都大田区等の同名寺院を排除し、寺号・住所・法人分類・写真・出典による複合同定法を提示する。
+- 磐田市の寺院史をどう読むか: https://temple.atawi.link/research/iwata-temple-history-reading-ancient-to-modern/ — 遠江国分寺から現代の宗教法人まで、磐田市の寺院史を資料類型と制度変化に即して読む総合研究。
+- 磐田市の寺院分布: https://temple.atawi.link/research/iwata-temple-distribution-nine-districts/ — 現存96寺院を9地区に集計し、磐田原台地、天竜川・太田川低地、街道、港、集落との関係を分析する。
+- 遠江国府と寺院: https://temple.atawi.link/research/totomi-kokufu-temples-mitsuke-political-religious-space/ — 遠江国府・国分寺・国分尼寺・見付宿を時代別に分け、政治・宗教・交通・葬送空間の重層を検証する。
+- 遠江国分寺の成立と変容: https://temple.atawi.link/research/iwata-pillar-04-totomi-kokubunji-regional-development/ — 遠江国分寺を中央政策の地方移植ではなく、国府圏、先行寺院、資材生産、災害、廃絶後の信仰が織り成す地域的制度として再検討する。
+- 磐田市の廃寺と寺院跡: https://temple.atawi.link/research/iwata-pillar-05-abandoned-temples-religious-spaces/ — 大宝院廃寺、鎌田廃寺、寺谷廃寺、岩室廃寺、遠江国分寺・国分尼寺を比較し、建物を失った宗教空間の復元方法を示す。
+- 東海道見付宿と寺院: https://temple.atawi.link/research/iwata-pillar-06-mitsuke-post-town-temples/ — 見付宿の寺院を街道、小路、墓地、祈願、寺領、教育と結び、移動社会を支えた宗教的インフラとして分析する。
+- 天竜川と磐田の寺院: https://temple.atawi.link/research/iwata-pillar-07-tenryu-river-temples/ — 天竜川左岸の寺院を、水害、渡船、堤防、用水、集落移動の長期史から分析する。
+- 遠州灘沿岸の寺院: https://temple.atawi.link/research/iwata-pillar-08-enshu-coast-temples/ — 福田・豊浜・竜洋沿岸の寺院を、漁業、船絵馬、海上安全、海岸変動、津波防災から検証する。
+- 磐田原台地の寺院: https://temple.atawi.link/research/iwata-pillar-09-iwatahara-plateau-temples/ — 磐田原台地の寺院を、古墳群、集落、崖線、水環境、眺望が重なる長期的信仰景観として分析する。
+- 磐田市の山寺と里寺――立地からみる寺院の機能: https://temple.atawi.link/research/iwata-yamadera-satodera-location-functions/ — 磐田市の寺院を山寺・里寺の2分法に固定せず、地形、交通、山林、墓地、災害履歴から地域機能を比較する。
+- 磐田市の曹洞宗寺院――本末関係と地域的展開: https://temple.atawi.link/research/iwata-soto-temples-honmatsu-regional-expansion/ — 磐田市の曹洞宗寺院62寺を、本末関係、開山伝承、僧侶移動、地区分布の時系列ネットワークとして分析する。
+- 磐田市の臨済宗寺院――妙心寺派・方広寺派の系譜: https://temple.atawi.link/research/iwata-rinzai-myoshinji-hokoji-lineages/ — 磐田市の妙心寺派21寺と方広寺派6寺を、宗派史、地域本寺、宗派変更、河川交通から比較する。
+- 磐田市の浄土宗寺院: https://temple.atawi.link/research/iwata-jodo-temples-nenbutsu-early-modern-community/ — 見付4寺・掛塚2寺の浄土宗寺院を、称名念仏、本末・分派、宿場・湊の葬送から検証する。
+- 磐田市の真宗寺院: https://temple.atawi.link/research/iwata-shin-temples-monto-house-succession/ — 大谷派・本願寺派・高田派の5寺を、門徒、家、講、寺院造営、湊町の派別構成から比較する。
+- 磐田市の日蓮宗寺院: https://temple.atawi.link/research/iwata-nichiren-temples-lotus-faith-regional-network/ — 玄妙寺・本性寺・妙福寺・智教院・妙満寺を、日什門流、本末、題目講、沿岸・北部の教線から分析する。
+- 磐田市の時宗寺院: https://temple.atawi.link/research/iwata-pillar-16-jishu-temples-travel/ — 西光寺・省光寺・金台寺等を、遊行、改宗伝承、宿場、小路、寺領から比較する。
+- 磐田市の真言宗寺院: https://temple.atawi.link/research/iwata-pillar-17-shingon-esoteric-shugen-pilgrimage/ — 磐田市域の真言宗寺院を、宗派制度、古代寺院、修験、観音・薬師霊場、沿岸集落の祈願から検証する。
+- 磐田市の寺院本尊: https://temple.atawi.link/research/iwata-pillar-18-temple-honzon-regional-faith/ — 本尊、札所本尊、別堂尊、境内尊を区別し、磐田市の尊像から地域信仰と資料保存の方法を考察する。
+- 薬師如来信仰と磐田: https://temple.atawi.link/research/yakushi-faith-iwata-healing-regional-medicine-prehistory/ — 薬師本尊・薬師堂・遠江四十九薬師霊場を区別し、祈願、僧医、薬、看病の関係を検証する。
+- 観音信仰と磐田: https://temple.atawi.link/research/kannon-faith-iwata-pilgrimage-women-village-prayer/ — 複数の三十三観音霊場、観音の変化身、女性・講・村持堂を時点別ネットワークとして分析する。
+- 地蔵信仰と磐田: https://temple.atawi.link/research/jizo-faith-iwata-roads-boundaries-children-protection/ — 地蔵本尊、境内堂、六地蔵、下馬・身代り・路傍地蔵を位置・管理・願意から比較する。
+- 磐田市の寺院建築――建立・移築・改修から読む宗教空間: https://temple.atawi.link/research/iwata-temple-architecture-rebuilding-translocation/ — 磐田市の寺院建築を、建立年の順位ではなく、移築、災害、修理、用途変更を含む更新履歴として分析する。
+- 磐田市寺院の梵鐘・石造物――銘文と移動の物質史: https://temple.atawi.link/research/iwata-bells-stone-monuments-material-history/ — 梵鐘、五輪塔、供養塔、石仏を、銘文、音、制作、移設、保存の履歴を持つ一次資料として分析する。
+- 磐田市の寺院と災害・再建――地震・火災・暴風の継承史: https://temple.atawi.link/research/iwata-temples-disasters-reconstruction-resilience/ — 複数寺院の倒壊・焼失・移転・再建記録を比較し、寺院継続を建物と共同体の再構成として分析する。
+- 磐田市の寺院文化財: https://temple.atawi.link/research/iwata-temple-cultural-properties-system-regional-materials/ — 国・県・市指定、登録、未指定寺蔵資料を区別し、所有・管理・目録・公開の地域体制を検討する。
+- 磐田市の仏像: https://temple.atawi.link/research/iwata-buddhist-sculpture-dating-style-provenance-method/ — 木彫・塑像・磚仏等を対象に、像名、制作年代、様式、修理、寺への伝来を別命題として検証する。
+- 磐田市の寺院建築: https://temple.atawi.link/research/iwata-temple-architecture-halls-gates-tower-comparison/ — 本堂平面、薬医門・鐘楼門、経蔵等を建物単位で比較し、用途・構造・年代層を分析する。
+- 磐田市の寺院庭園: https://temple.atawi.link/research/iwata-pillar-28-temple-gardens-cultural-landscape/ — 医王寺庭園を基準事例とし、磐田市の寺院庭園を建築、植栽、水系、管理労働、周辺景観から比較する。
+- 磐田市の寺院樹木: https://temple.atawi.link/research/iwata-pillar-29-temple-trees-botanical-history/ — 省光寺、西光寺、善導寺旧地等の樹木を、個体計測、植物史、信仰、都市環境、管理から分析する。
+- 磐田市の梵鐘と鐘楼: https://temple.atawi.link/research/iwata-pillar-30-bonsho-bell-towers-soundscape/ — 宣光寺梵鐘を基準に、磐田市の鐘と鐘楼を銘文、鋳造、音響、建築、時報、戦時供出から比較する。
+- 寺院境内から読む磐田――家・村・移動の歴史: https://temple.atawi.link/research/iwata-temple-precinct-household-village-mobility/ — 磐田市の寺院境内を多時期の史料群として捉え、家墓、村境、旧道、石造物移設、人口移動を非破壊調査で検証する。
+- 磐田の寺子屋と近代教育――寺院から学校への移行: https://temple.atawi.link/research/iwata-temple-terakoya-modern-education/ — 磐田市の寺子屋、仮教場、分校、専用校舎を比較し、寺院の教師・空間・信頼・資金が近代学校へ移転した過程を検証する。
+- 磐田の寺院と徳川家康――寄進・御殿・寺領の政治史: https://temple.atawi.link/research/iwata-temples-tokugawa-ieyasu-political-history/ — 家康ゆかりの寺院資料を、同時代銘文、建築移築、寄進伝承、家臣行政、後代朱印に分け、遠江支配の構造として検証する。
+- 磐田の寺院と武田・徳川攻防: https://temple.atawi.link/research/iwata-temples-takeda-tokugawa-conflict-political-order/ — 医王寺禁制、行興寺文書、一言坂伝承、大見寺・寿正寺・天龍院を通じ、武田・徳川攻防と寺院の交渉・再編を史料批判する。
+- 磐田の寺院と安政東海地震: https://temple.atawi.link/research/iwata-temples-1854-ansei-tokai-earthquake-case-comparison/ — 1854年安政東海地震の寺院被害記事を、史料系列、建物別被害、地盤、復旧期間、募財・救済の観点から比較する。
+- 磐田の寺院と戦争: https://temple.atawi.link/research/iwata-temples-modern-war-memory-memorial-practice/ — 宣光寺梵鐘、忠霊塔・英霊之碑・忠霊殿、空襲記憶、戦没者供養を通じ、磐田の寺院が近代戦争をどう記録したかを検討する。
+- 磐田市の寺院と祭礼: https://temple.atawi.link/research/iwata-pillar-37-temples-festivals-shinbutsu/ — 磐田市の寺院法会、神社祭礼、民俗芸能を区別し、祭具、空間、行為、組織から神仏習合と地域継承の構造を検証する。
+- 磐田市の寺院と自治会: https://temple.atawi.link/research/iwata-pillar-38-temples-neighborhood-associations/ — 寺院法人、檀家、総代、自治会、地域づくり協議会を区別し、境内管理、防災、福祉、祭礼を通じた共同運営の履歴を検証する。
+- 磐田市の寺院と女性: https://temple.atawi.link/research/iwata-pillar-39-temples-women-gender-history/ — 熊野御前、観音・地蔵・鬼子母神信仰、講、奉納、法要、墓碑をジェンダー史から読み直し、女性の行為と不可視化された労働を検証する。
+- 磐田の寺院と高齢社会――地域包括ケアを補完する条件: https://temple.atawi.link/research/iwata-temples-super-aged-society-community-care/ — 寺院を介護制度の代替ではなく、任意参加の交流、傾聴、専門機関への接続を担う補完的地域資源として検証する。
+- 磐田の寺院と空き家問題――相続・管理・地域住宅政策: https://temple.atawi.link/research/iwata-temples-vacant-houses-housing-policy/ — 寺院周辺の空き家を、相続、高齢者住宅、管理不全、流通、生活圏の観点から分析し、寺院と不動産事業者の役割境界を示す。
+- 磐田の寺院と墓じまい――改葬制度・承継・記憶保存: https://temple.atawi.link/research/iwata-temples-grave-closure-reinterment-system/ — 墓じまいを墓石撤去ではなく、改葬許可、墓所使用、宗教儀礼、親族合意、記録保存が交差する制度過程として分析する。
+- 磐田の寺院と永代供養: https://temple.atawi.link/research/iwata-temples-perpetual-memorial-care-institution/ — 永代供養を商品名ではなく、法的類型、納骨、管理、供養、承継、記録保存から検討する非営業的な地域墓制研究。
+- 菩提寺が分からないときの磐田寺院調査: https://temple.atawi.link/research/iwata-temples-how-to-identify-family-temple/ — 菩提寺不明時に、家族資料、墓碑、戸籍・除籍、改葬記録、過去帳、宗門人別帳、旧地名を段階的に照合する研究方法。
+- 磐田の寺院名と地名: https://temple.atawi.link/research/iwata-temple-names-and-historical-place-names/ — 寺院名の異表記、同名寺院、旧村・大字・小字、合併・区画整理、移転・廃寺を時点別に接続する歴史地名研究。
+- 寺院史料の読み方: https://temple.atawi.link/research/iwata-pillar-46-how-to-read-temple-sources/ — 寺院の原本、写本、翻刻、デジタル画像、郡誌、案内板を区別し、作成・伝来・編集・公開の各段階から読む方法を示す。
+- 寺伝を検証する: https://temple.atawi.link/research/iwata-pillar-47-verifying-temple-traditions/ — 磐田市寺院の創建者、年代、霊験、寄進、移築、旧地を、異本、物証、地理、類型、形成目的から検証する。
+- 寺院写真を地域資料にする: https://temple.atawi.link/research/iwata-pillar-48-temple-photographs-regional-archive/ — 磐田市の寺院写真を再調査可能な地域資料へ変えるため、撮影単位、メタデータ、保存形式、許諾、公開、継承を設計する。
+- 寺院データベースとデジタル郷土資料の方法論――典拠・版管理・更新可能性: https://temple.atawi.link/research/iwata-temple-database-digital-local-archive-methodology/ — 寺院情報を典拠、確度、版、画像権利、訂正履歴と結び、更新可能で再検証できるデジタル郷土資料として設計する。
+- 磐田寺院研究の到達点と今後の課題: https://temple.atawi.link/research/iwata-temple-research-synthesis-future-agenda/ — 磐田寺院研究を史料批判、歴史地理、寺院ネットワーク、文化財、災害、教育、祭祀、葬送継承、デジタル公開の観点から総括する。

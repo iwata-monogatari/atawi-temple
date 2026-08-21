@@ -1,0 +1,59 @@
+# ATAWI TEMPLE（磐田市のお寺・寺院データベース）
+
+> 磐田市の寺院を1か寺ずつ調べて整理している地域データベースです。現存寺院・廃寺・寺院跡・霊場を含む118件を、9地区と宗派で分類し、所在地、宗派、本尊、沿革、現地確認の状況、写真を出典とともに掲載します。あわせて、法要・帰省・実家じまいを家族で確認するためのガイドを載せています。
+
+## 主要な入口
+
+- 寺院一覧（118件）: https://temple.atawi.link/temples/
+- 9地区から探す: https://temple.atawi.link/areas/
+- 宗派・関連法人から探す（16件）: https://temple.atawi.link/sects/
+- 寺院名・宗派で検索: https://temple.atawi.link/search/
+- 住所一覧・地図: https://temple.atawi.link/map/
+- 調査状況: https://temple.atawi.link/status/
+- 更新情報: https://temple.atawi.link/updates/
+
+## 読みもの
+
+- 寺院の基礎資料（6本）: https://temple.atawi.link/knowledge/
+- 家族のためのガイド（200本）: https://temple.atawi.link/topics/
+- 基礎ガイド（7本）: https://temple.atawi.link/guide/
+- 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
+- 研究論文（343本）: https://temple.atawi.link/research/
+
+## ブログ｜大石浩之のお寺ノート（3本）
+
+- 一覧: https://temple.atawi.link/blog/
+- RSS: https://temple.atawi.link/feed.xml
+
+菩提寺・法要・墓じまい・実家じまいの相談を磐田市で受けている大石浩之（不動産業・宅地建物取引士）が、現場で見たことを書いているブログです。
+
+データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
+
+- 磐田市の市営霊園、2026年度は先着順｜空き区画の探し方（2026-08-21）: https://temple.atawi.link/blog/20260821-iwata-shiei-reien-senchakujun/
+- 墓じまいの相談、秋彼岸まで1か月で菩提寺に聞く3つ（2026-08-21）: https://temple.atawi.link/blog/20260821-hakajimai-bodaiji-soudan/
+- 墓の名義変更をしないとどうなる｜2026年の登記義務化と同じ壁（2026-08-21）: https://temple.atawi.link/blog/20260821-haka-meigi-henko-shinai/
+
+## 家族向けの無料ツール
+
+- 実家カルテ: https://temple.atawi.link/jikka-karute/
+- 家族で確認するチェックリスト: https://temple.atawi.link/guide/family-checklist/
+- お盆・帰省の確認: https://temple.atawi.link/obon/
+
+## 運営者
+
+- 運営会社: 富士ヶ丘サービス株式会社（静岡県磐田市）
+- サイト名: ATAWI TEMPLE
+- 編集: 大石浩之（宅地建物取引士）
+- 運営者情報: https://temple.atawi.link/about/
+- 編集方針: https://temple.atawi.link/editorial-policy/
+- 情報提供・訂正: https://temple.atawi.link/correction/
+
+## 引用時の注意
+
+本サイトは各寺院の公式サイトではありません。掲載内容は公開資料と現地確認にもとづく整理であり、沿革や創建年代には諸説あるものがあります。未確認の項目は「未確認」「調査中」と明示しています。引用の際は各ページの出典と確認日をあわせてご確認ください。法要の作法や費用は宗派・寺院・地域で異なります。個別の判断は必ず菩提寺に、相続・税・登記の判断は専門家にご確認ください。
+
+## 全ページの索引
+
+- https://temple.atawi.link/llms-full.txt
+
+（2026-08-21 時点・全737ページ）
