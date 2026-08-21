@@ -3,6 +3,7 @@ import { blogLastUpdated, blogPosts } from "../lib/blog";
 import { publicGuideArticles, tokushuArticles } from "../lib/editorial";
 import { researchArticles } from "../lib/research-articles";
 import { portalArticles, portalCategories } from "../lib/portal-articles";
+import { templeKnowledge } from "../lib/temple-knowledge";
 import { allDistricts, allSects, allTempleUpdates, allTemples } from "../lib/temples";
 
 const staticPaths = [
@@ -23,6 +24,7 @@ const staticPaths = [
   "/correction/",
   "/privacy/",
   "/topics/",
+  "/knowledge/",
   "/jikka-karute/",
   "/guide/family-checklist/",
   "/guide/jikka-information/",
@@ -44,6 +46,7 @@ export const GET: APIRoute = ({ site }) => {
     ...allDistricts.map((district) => ({ path: `/areas/${district.slug}/`, lastmod: latestSiteDate })),
     ...allSects.map((sect) => ({ path: `/sects/${sect.slug}/`, lastmod: latestSiteDate })),
     ...publicGuideArticles.map((article) => ({ path: `/guide/${article.slug}/`, lastmod: latestSiteDate })),
+    ...templeKnowledge.map((item) => ({ path: `/knowledge/${item.slug}/`, lastmod: latestSiteDate })),
     ...portalCategories.map((category) => ({ path: `/topics/${category.key}/`, lastmod: "2026-07-27" })),
     ...portalArticles.map((article) => ({
       path: `/topics/${article.category}/${article.slug}/`,

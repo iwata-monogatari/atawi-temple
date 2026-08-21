@@ -20,6 +20,7 @@
 - ブログ（`/blog/`・大石浩之の署名記事）と `feed.xml`
 - `sitemap.xml`
 - `robots.txt`
+- `llms.txt` / `llms-full.txt`（生成AI向けの索引）
 
 ## ブログ（/blog/）
 
@@ -40,6 +41,21 @@ scripts/validate-blog.mjs 検査（npm run validate:blog / npm run check に同�
 - `slug` の日付と `published` は必ず一致させます（サイトマップ・RSSの日付がずれるため）。
 - 構造化データは BlogPosting / Person / BreadcrumbList / FAQPage の4種をテンプレートが自動で出します。
 - 記事の追加・修正後は `npm run check` を通してから push します。
+
+## 生成AI向けの索引（llms.txt / llms-full.txt）
+
+編集憲章§6.4 にもとづき、2ファイルをビルド時に生成します。どちらもデータから毎回組み立てるので、
+記事を足せば索引も自動で増えます。
+
+```
+src/lib/site-index.ts       全ページ索引の定義（グループと件数）
+src/pages/llms.txt.ts       サイトの定義・主要な入口・ブログ直近20本・運営者・引用時の注意
+src/pages/llms-full.txt.ts  全ページの索引。ブログ記事は結論ブロック・見出し・FAQ3問・出典まで載せる
+```
+
+- `robots.txt` は `GPTBot` `ClaudeBot` `PerplexityBot` `Google-Extended` を明示 Allow しています。
+- **新しい種類のページを足したときは `src/lib/site-index.ts` と `src/pages/sitemap.xml.ts` の両方に追記します。**
+  記事を1本足すだけなら、どちらも自動で増えるので作業は不要です。
 
 ## アクセス解析
 
