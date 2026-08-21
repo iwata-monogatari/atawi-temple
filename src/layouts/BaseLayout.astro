@@ -78,6 +78,7 @@ const structuredDataItems = [...sharedStructuredData, ...pageStructuredData].fil
     <meta name="twitter:image" content={ogImageUrl} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="大石浩之のお寺ノート｜ATAWI TEMPLE" href="/feed.xml" />
     {structuredDataItems.map((item) => (
       <script is:inline type="application/ld+json" set:html={JSON.stringify(item).replace(/</g, "\\u003c")} />
     ))}
@@ -99,6 +100,7 @@ const structuredDataItems = [...sharedStructuredData, ...pageStructuredData].fil
         <a href="/topics/jikka/">実家</a>
         <a href="/topics/">家族のためのガイド</a>
         <a href="/knowledge/">寺院の基礎資料</a>
+        <a href="/blog/">ブログ</a>
         <a href="/about/">このサイトについて</a>
       </nav>
     </header>
@@ -126,6 +128,7 @@ const structuredDataItems = [...sharedStructuredData, ...pageStructuredData].fil
         <a href="/guide/">基礎ガイド</a>
         <a href="/knowledge/">寺院用語・制度</a>
         <a href="/tokushu/">特集・読みもの</a>
+        <a href="/blog/">大石浩之のお寺ノート</a>
         <a href="/jikka-karute/">実家カルテ（無料ツール）</a>
         <a href="/editorial-policy/">編集方針</a>
         <a href="/correction/">情報提供掲示板</a>
@@ -196,6 +199,7 @@ const structuredDataItems = [...sharedStructuredData, ...pageStructuredData].fil
           if (/^\/temples\/[^/]+\/$/.test(path)) sendJourneyEvent("temple_view");
           else if (/^\/topics\/[^/]+\/[^/]+\/$/.test(path) || /^\/guide\/[^/]+\/$/.test(path)) sendJourneyEvent("guide_view");
           else if (/^\/research\/[^/]+\/$/.test(path)) sendJourneyEvent("research_view");
+          else if (/^\/blog\/[^/]+\/$/.test(path)) sendJourneyEvent("blog_view");
         });
       })();
     </script>

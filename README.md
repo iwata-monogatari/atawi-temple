@@ -17,8 +17,29 @@
 - 情報提供・訂正ページ
 - プライバシーポリシー
 - 富士ヶ丘アクセス解析Worker連携
+- ブログ（`/blog/`・大石浩之の署名記事）と `feed.xml`
 - `sitemap.xml`
 - `robots.txt`
+
+## ブログ（/blog/）
+
+寺院データベース本体とは別に、大石浩之名義の署名ブログを `/blog/` で公開します。
+毎日の運用は「ブログ司令塔」（`work_claude\blog-autopilot`）から半自動で行い、
+書きぶりは `blog-autopilot\rules\EDITORIAL-CHARTER.md`（編集憲章）が最上位規約です。
+
+```
+data/blog-posts.json      台帳（メタ情報のみ。本文は入れない）
+data/blog/<slug>.html     本文のHTML断片（h2から始める。h1・FAQ・出典・著者欄はテンプレート側）
+src/lib/blog.ts           台帳と本文の読み込み
+src/pages/blog/           一覧・個別ページ
+src/pages/feed.xml.ts     RSS（直近50本）
+scripts/validate-blog.mjs 検査（npm run validate:blog / npm run check に同梱）
+```
+
+- URLは `/blog/YYYYMMDD-kebab-slug/` で固定し、公開後は変更しません。
+- `slug` の日付と `published` は必ず一致させます（サイトマップ・RSSの日付がずれるため）。
+- 構造化データは BlogPosting / Person / BreadcrumbList / FAQPage の4種をテンプレートが自動で出します。
+- 記事の追加・修正後は `npm run check` を通してから push します。
 
 ## アクセス解析
 

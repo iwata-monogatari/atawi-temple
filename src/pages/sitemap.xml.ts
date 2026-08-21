@@ -1,4 +1,5 @@
 import type { APIRoute } from "astro";
+import { blogLastUpdated, blogPosts } from "../lib/blog";
 import { publicGuideArticles, tokushuArticles } from "../lib/editorial";
 import { researchArticles } from "../lib/research-articles";
 import { portalArticles, portalCategories } from "../lib/portal-articles";
@@ -27,6 +28,9 @@ const staticPaths = [
   "/guide/jikka-information/",
 ];
 
+// ブログ一覧は記事の更新日で動く。他の静的ページと lastmod を共有させない。
+const blogIndexPath = "/blog/";
+
 export const GET: APIRoute = ({ site }) => {
   const baseUrl = site?.toString().replace(/\/+$/, "") || "https://temple.atawi.link";
   const latestSiteDate = [
@@ -35,6 +39,8 @@ export const GET: APIRoute = ({ site }) => {
   ].sort().at(-1) || "2026-07-17";
   const urls = [
     ...staticPaths.map((path) => ({ path, lastmod: latestSiteDate })),
+    { path: blogIndexPath, lastmod: blogLastUpdated },
+    ...blogPosts.map((post) => ({ path: `/blog/${post.slug}/`, lastmod: post.updated })),
     ...allDistricts.map((district) => ({ path: `/areas/${district.slug}/`, lastmod: latestSiteDate })),
     ...allSects.map((sect) => ({ path: `/sects/${sect.slug}/`, lastmod: latestSiteDate })),
     ...publicGuideArticles.map((article) => ({ path: `/guide/${article.slug}/`, lastmod: latestSiteDate })),
