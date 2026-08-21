@@ -1,4 +1,18 @@
 User-agent: *
 Allow: /
 
+# 生成AIのクローラーを明示的に許可する（編集憲章§6.4）。
+# User-agent: * でも許可されるが、明示しておけば拒否設定と誤読されない。
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://temple.atawi.link/sitemap.xml
