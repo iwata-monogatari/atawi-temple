@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（4本）
+## ブログ｜大石浩之のお寺ノート（5本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- 仏壇の処分は売却日から逆算｜磐田市は2週間前までに予約（2026-08-23）: https://temple.atawi.link/blog/20260823-butsudan-shobun-jikka-gyakusan/
 - 墓じまいが増えている｜改葬17万件を磐田の実感で読む（2026-08-22）: https://temple.atawi.link/blog/20260822-hakajimai-fueteiru-kaiso-176105/
 - 磐田市の市営霊園、2026年度は先着順｜空き区画の探し方（2026-08-21）: https://temple.atawi.link/blog/20260821-iwata-shiei-reien-senchakujun/
 - 墓じまいの相談、秋彼岸まで1か月で菩提寺に聞く3つ（2026-08-21）: https://temple.atawi.link/blog/20260821-hakajimai-bodaiji-soudan/
@@ -57,4 +58,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-08-22 時点・全738ページ）
+（2026-08-23 時点・全739ページ）
