@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（8本）
+## ブログ｜大石浩之のお寺ノート（9本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- 離檀料に決まりはあるのか｜磐田の相談で必ず出る2つの確認（2026-08-25）: https://temple.atawi.link/blog/20260825-ridanryo-kimari-2tsu-kakunin/
 - 寺の墓地と市営霊園の違い｜静岡は墓地の62%が個人経営（2026-08-24）: https://temple.atawi.link/blog/20260824-tera-bochi-shiei-reien-chigai/
 - 改葬許可申請の出し方｜磐田市は1件300円・環境課の窓口（2026-08-24）: https://temple.atawi.link/blog/20260824-kaiso-kyoka-shinsei-300en/
 - 無縁墓になるとどうなる｜撤去に着手した自治体は6.1%（2026-08-23）: https://temple.atawi.link/blog/20260823-muenbo-dounaru-tekkyo-6-1/
@@ -61,4 +62,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-08-24 時点・全742ページ）
+（2026-08-25 時点・全743ページ）
