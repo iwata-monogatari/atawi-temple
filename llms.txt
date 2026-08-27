@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（13本）
+## ブログ｜大石浩之のお寺ノート（14本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -30,6 +30,7 @@
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
 - 静岡県の寺院2,602か寺｜宗派の割合は公表されていない（2026-08-27）: https://temple.atawi.link/blog/20260827-shizuoka-jiin-shuha-uchiwake/
+- 一般墓と樹木葬の違いは承継｜子どもなしは樹木葬49.1%（2026-08-27）: https://temple.atawi.link/blog/20260827-ippanbo-jumokuso-shokeisha/
 - お彼岸の帰省は9月20日から4連休｜寺と実家を1日で（2026-08-26）: https://temple.atawi.link/blog/20260826-ohigan-kisei-4renkyu-9-20/
 - 墓じまいをやめた理由は費用｜解体費が高い22.2%（2026-08-26）: https://temple.atawi.link/blog/20260826-hakajimai-yameta-riyu-kaitaihi-22-2/
 - 離檀料に決まりはあるのか｜磐田の相談で必ず出る2つの確認（2026-08-25）: https://temple.atawi.link/blog/20260825-ridanryo-kimari-2tsu-kakunin/
@@ -66,4 +67,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-08-27 時点・全747ページ）
+（2026-08-27 時点・全748ページ）
