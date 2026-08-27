@@ -1,5 +1,6 @@
 ---
 import FujigaokaAnalytics from "../components/FujigaokaAnalytics.astro";
+import SearchTrafficTempleLinks from "../components/SearchTrafficTempleLinks.astro";
 import "../styles/global.css";
 
 interface Props {
@@ -116,6 +117,7 @@ const structuredDataItems = [...sharedStructuredData, ...pageStructuredData].fil
     )}
     <main>
       <slot />
+      <SearchTrafficTempleLinks path={Astro.url.pathname} />
     </main>
     <footer class="site-footer">
       <p>運営：富士ヶ丘サービス</p>

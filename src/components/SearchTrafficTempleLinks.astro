@@ -1,0 +1,64 @@
+---
+import { getDistrictName, getTempleBySlug } from "../lib/temples";
+
+interface Props {
+  path: string;
+}
+
+const { path } = Astro.props;
+
+// 2026-08-27時点で、直近30日に検索エンジン経由の人間閲覧があった11ページ。
+// 寺院ページでは既存の「同じ地区・同じ宗派・近くのお寺」と重複しない2件を選ぶ。
+const targetSlugsByPath: Record<string, readonly [string, string]> = {
+  "/research/zosanji-sagisaka-history-source-criticism/": [
+    "kokubunji-mitsuke",
+    "manpukuji-kaketsuka-819",
+  ],
+  "/temples/renpukuji-ninomiya/": ["kannonji-fukude", "chikyoin-shiraha"],
+  "/guide/bodaiji-kakunin/": ["anrakuji-tateno", "kokubunji-mitsuke"],
+  "/temples/anrakuji-tateno/": ["renpukuji-ninomiya", "manpukuji-kaketsuka-819"],
+  "/temples/kannonji-fukude/": ["mantokuji-nakaizumi", "chikyoin-shiraha"],
+  "/temples/mantokuji-nakaizumi/": ["anrakuji-tateno", "chikyoin-shiraha"],
+  "/research/ryuunji-ganjiro-coastal-community-disaster/": [
+    "renpukuji-ninomiya",
+    "manpukuji-kaketsuka-819",
+  ],
+  "/search/": ["kokubunji-mitsuke", "kannonji-fukude"],
+  "/temples/chikyoin-shiraha/": ["anrakuji-tateno", "mantokuji-nakaizumi"],
+  "/temples/manpukuji-kaketsuka-819/": ["zosanji-sagisaka", "kannonji-fukude"],
+  "/temples/ryuunji-toyohama/": ["kokubunji-mitsuke", "chikyoin-shiraha"],
+};
+
+const normalizedPath = path.endsWith("/") ? path : `${path}/`;
+const targetSlugs = targetSlugsByPath[normalizedPath] || [];
+const linkedTemples = targetSlugs
+  .map((slug) => getTempleBySlug(slug))
+  .filter((temple): temple is NonNullable<typeof temple> => Boolean(temple));
+---
+
+{linkedTemples.length === 2 && (
+  <section class="same-district-temples search-traffic-temple-links" aria-labelledby="search-traffic-temple-links-title">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Iwata Temples</p>
+        <h2 id="search-traffic-temple-links-title">磐田市の寺院を続けて見る</h2>
+      </div>
+      <a href="/temples/">磐田市の寺院一覧</a>
+    </div>
+    <div class="same-district-grid">
+      {linkedTemples.map((temple) => (
+        <a
+          class="related-temple-card"
+          href={`/temples/${temple.slug}/`}
+          data-track-click="search_traffic_temple_link_click"
+        >
+          <div class="related-temple-card-body">
+            <span>静岡県磐田市</span>
+            <strong>{temple.name}</strong>
+            <em>{getDistrictName(temple.district_id)}地区 / {temple.sect}</em>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+)}
