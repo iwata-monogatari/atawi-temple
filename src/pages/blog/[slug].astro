@@ -35,7 +35,7 @@ const structuredData = [
     description: post.description,
     url,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
-    ...(post.cover ? { image: new URL(post.cover.src, siteUrl).toString() } : {}),
+    ...(post.cover ? { image: new URL(post.cover.src.replace(/-cover\.png$/, "-cover.webp"), siteUrl).toString() } : {}),
     datePublished: `${post.published}T09:00:00+09:00`,
     dateModified: `${post.updated}T09:00:00+09:00`,
     inLanguage: "ja",
@@ -95,7 +95,7 @@ const structuredData = [
   title={`${post.title}｜${BLOG_TITLE}｜ATAWI TEMPLE`}
   description={post.description}
   ogType="article"
-  ogImage={post.cover?.src}
+  ogImage={post.cover?.src.replace(/-cover\.png$/, "-cover.webp")}
   publishedTime={`${post.published}T09:00:00+09:00`}
   modifiedTime={`${post.updated}T09:00:00+09:00`}
   structuredData={structuredData}
@@ -117,7 +117,8 @@ const structuredData = [
         {
           post.cover && (
             <figure class="article-figure">
-              <img src={post.cover.src} alt={post.cover.alt} width="1200" height="630" decoding="async" />
+              <img src={post.cover.src.replace(/-cover\.png$/, "-cover.webp")} alt={`記事内容をもとに生成したイメージ：${post.title}`} width="1200" height="675" decoding="async" />
+              <figcaption>記事内容をもとに生成したイメージです。実在の場所・人物を撮影したものではありません。</figcaption>
             </figure>
           )
         }
