@@ -16,7 +16,7 @@
 
 - 寺院の基礎資料（6本）: https://temple.atawi.link/knowledge/
 - 家族のためのガイド（200本）: https://temple.atawi.link/topics/
-- 基礎ガイド（7本）: https://temple.atawi.link/guide/
+- 基礎ガイド（6本）: https://temple.atawi.link/guide/
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
@@ -70,4 +70,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-08-28 時点・全751ページ）
+（2026-08-28 時点・全750ページ）
