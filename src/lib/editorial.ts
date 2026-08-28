@@ -472,7 +472,7 @@ export const guideArticles: EditorialArticle[] = [
       },
     ],
     bridgeLinks: [
-      { label: "菩提寺がわからないときの確認方法", href: "/guide/bodaiji-kakunin/" },
+      { label: "菩提寺がわからないときの確認方法", href: "/topics/bodaiji/bodaiji-02/" },
       { label: "永代供養を考える前に確認すること", href: "/guide/eitaikuyo/" },
       { label: "寺院名・地区で検索する", href: "/search/", event: "temple_search_refine" },
     ],
@@ -613,7 +613,7 @@ export const guideArticles: EditorialArticle[] = [
     ],
     bridgeLinks: [
       { label: "墓じまい前に確認すること", href: "/guide/haka-enpo/" },
-      { label: "菩提寺がわからないときの確認方法", href: "/guide/bodaiji-kakunin/" },
+      { label: "菩提寺がわからないときの確認方法", href: "/topics/bodaiji/bodaiji-02/" },
       { label: "永代供養を考える前に確認すること", href: "/guide/eitaikuyo/" },
       { label: "檀家とお布施の基礎知識", href: "/guide/danka/" },
     ],
@@ -708,7 +708,7 @@ export const guideArticles: EditorialArticle[] = [
         ],
         cta: {
           label: "菩提寺がわからないときの確認方法を見る",
-          href: "/guide/bodaiji-kakunin/",
+          href: "/topics/bodaiji/bodaiji-02/",
           event: "bodaiji_check_click",
         },
       },
@@ -758,7 +758,7 @@ export const guideArticles: EditorialArticle[] = [
     ],
     bridgeLinks: [
       { label: "墓じまい前に確認すること", href: "/guide/haka-enpo/" },
-      { label: "菩提寺がわからないときの確認方法", href: "/guide/bodaiji-kakunin/" },
+      { label: "菩提寺がわからないときの確認方法", href: "/topics/bodaiji/bodaiji-02/" },
       { label: "法要で磐田へ帰る前に確認すること", href: "/guide/houyou-kisei/" },
     ],
   },
@@ -823,7 +823,11 @@ export const guideArticles: EditorialArticle[] = [
   },
 ];
 
-export const publicGuideArticles = guideArticles.map((article) => ({
+// The older bodaiji-kakunin guide overlaps the more complete portal article.
+// Keep one indexable destination and redirect the legacy URL at the edge.
+export const publicGuideArticles = guideArticles
+  .filter((article) => article.slug !== "bodaiji-kakunin")
+  .map((article) => ({
   ...article,
   sections: article.sections.map((section) => ({
     ...section,
