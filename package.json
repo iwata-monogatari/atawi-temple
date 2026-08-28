@@ -14,7 +14,8 @@
     "validate:build": "node scripts/validate-build-output.mjs",
     "verify:temple-data": "python scripts/verify_temple_data.py",
     "geocode:temples": "node scripts/geocode-temples.mjs",
-    "check:analytics": "node scripts/check-analytics.mjs"
+    "check:analytics": "node scripts/check-analytics.mjs",
+    "submit:indexnow": "node scripts/submit-indexnow.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
