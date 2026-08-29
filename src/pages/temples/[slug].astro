@@ -34,6 +34,65 @@ export function getStaticPaths() {
   return allTemples.map((temple) => ({ params: { slug: temple.slug } }));
 }
 
+// SEO用ヘルパ。検索で実際に打たれるのは地区名（御厨など10通り）ではなく
+// 住所の町名（72通り）と、寺院名を含まない通称（鎌田薬師・御殿のお寺など）なので、
+// title / meta description / 構造化データにその2つを載せる。
+const TOWN_PATTERN = /^静岡県磐田市([^0-9０-９]+?)(?:[0-9０-９]|$)/;
+const KANA_ONLY_PATTERN = /^[ぁ-んァ-ヶーｦ-ﾟ・\s]+$/;
+// 「（旧称）」「（読み。…）」のような注記付きの別称は現在の通称ではないので落とす。
+const OUTDATED_NOTE_PATTERN = /旧|前身|読み/;
+
+const getTownName = (address: string | null | undefined) =>
+  (address || "").match(TOWN_PATTERN)?.[1] || "";
+
+// 同じ長さで1字違い（醫王寺／医王寺）、末尾が同じで2字違い（興徳寺／光得寺）は
+// 表記ゆれとみなし、通称としては扱わない。
+const isNameVariant = (alias: string, name: string) => {
+  if (alias.length !== name.length) return false;
+  let diff = 0;
+  for (let i = 0; i < alias.length; i += 1) {
+    if (alias[i] !== name[i]) diff += 1;
+  }
+  return diff <= 1 || (alias.at(-1) === name.at(-1) && diff <= 2);
+};
+
+const charDiff = (a: string, b: string) => {
+  let diff = 0;
+  for (let i = 0; i < a.length; i += 1) {
+    if (a[i] !== b[i]) diff += 1;
+  }
+  return diff;
+};
+
+// 注記を外した別称の一覧（読み仮名だけのものは除く）。description と構造化データ用。
+const getAliasList = (item: any) => {
+  const name = item.name as string;
+  const list: string[] = [];
+  for (const raw of (item.aliases || []) as string[]) {
+    const note = raw.match(/（([^）]*)）/)?.[1] || "";
+    if (OUTDATED_NOTE_PATTERN.test(note)) continue;
+    const alias = raw.replace(/（[^）]*）/g, "").trim();
+    if (!alias || alias === name) continue;
+    if (KANA_ONLY_PATTERN.test(alias)) continue;
+    if (!list.includes(alias)) list.push(alias);
+  }
+  return list;
+};
+
+// 代表通称＝寺院名の表記ゆれでも山号でもない別称のうち最短のもの。無ければ空文字。
+const getCommonName = (item: any) => {
+  const name = item.name as string;
+  const candidates = getAliasList(item).filter((alias) => {
+    if (alias.endsWith("山")) return false; // 山号のみ
+    if (isNameVariant(alias, name)) return false;
+    if (alias.length > name.length && charDiff(alias.slice(-name.length), name) <= 1) return false; // 山号＋寺号
+    if (alias.includes(name) || name.includes(alias)) return false;
+    return true;
+  });
+  candidates.sort((a, b) => a.length - b.length || a.localeCompare(b, "ja"));
+  return candidates[0] || "";
+};
+
 const temple = getTempleBySlug(Astro.params.slug || "");
 if (!temple) return Astro.redirect("/temples/");
 const templeResearchArticles = researchArticles.filter((article) => article.templeSlug === temple.slug);
@@ -158,10 +217,30 @@ const nearbyTempleCards = nearbyTemples.map((item) => ({
 }));
 const templeImage = coverPhoto?.src || "/assets/temples/kokubunji-mitsuke/hondo.webp";
 const siteUrl = "https://temple.atawi.link";
-const seoLocation = district ? `磐田市${districtName}` : "磐田市内";
+const townName = getTownName(temple.address);
+const seoLocation = townName ? `磐田市${townName}` : district ? `磐田市${districtName}` : "磐田市内";
 const templeNameWithKana = showKana ? `${temple.name}（${temple.name_kana}）` : temple.name;
-const templeDetailTitle = `${temple.name}（${seoLocation}）- ${temple.sect}の基本情報・確認状況｜ATAWI TEMPLE`;
-const templeDetailDescription = `静岡県${seoLocation}にある${temple.sect}の寺院「${templeNameWithKana}」の住所、宗派、文化財、公開資料に基づく情報と現在の確認状況を掲載しています。`;
+const templeCommonName = getCommonName(temple);
+const templeAliasList = getAliasList(temple);
+// description の冒頭に出す別称は、代表通称を先頭にして最大2件。
+const descriptionAliases = [
+  ...(templeCommonName ? [templeCommonName] : []),
+  ...templeAliasList.filter((alias) => alias !== templeCommonName),
+].slice(0, 2);
+const templeDetailTitleBase = `${temple.name}（${seoLocation}）`;
+const templeDetailTitleTail = `- ${temple.sect}の寺院情報｜ATAWI TEMPLE`;
+const templeDetailTitleFull = `${templeDetailTitleBase}${templeCommonName ? `${templeCommonName} ` : ""}${templeDetailTitleTail}`;
+// 全角60字を超えるときは通称を落とす。
+const templeDetailTitle = [...templeDetailTitleFull].length <= 60
+  ? templeDetailTitleFull
+  : `${templeDetailTitleBase}${templeDetailTitleTail}`;
+const templeDetailDescription = `静岡県${seoLocation}にある${temple.sect}の寺院「${templeNameWithKana}」。${
+  descriptionAliases.length > 0 ? `別称・通称は${descriptionAliases.join("・")}。` : ""
+}住所、宗派、文化財、公開資料に基づく情報と現在の確認状況を掲載しています。`;
+const templeAlternateNames = [
+  ...(showKana ? [temple.name_kana] : []),
+  ...templeAliasList,
+].filter((value, index, list) => value && list.indexOf(value) === index);
 const structuredData = [
   {
     "@context": "https://schema.org",
@@ -177,7 +256,7 @@ const structuredData = [
     "@context": "https://schema.org",
     "@type": "BuddhistTemple",
     name: temple.name,
-    ...(showKana ? { alternateName: temple.name_kana } : {}),
+    ...(templeAlternateNames.length > 0 ? { alternateName: templeAlternateNames } : {}),
     description: templeDetailDescription,
     url: `${siteUrl}/temples/${temple.slug}/`,
     image: new URL(templeImage, siteUrl).toString(),
