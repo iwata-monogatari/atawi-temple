@@ -1,6 +1,4 @@
 ---
-import { fromTempleUrl } from "../lib/editorial";
-
 interface Props {
   variant?: "temple-top" | "temple-mid" | "temple-bottom" | "home" | "index-card" | "guide-bottom";
   compact?: boolean;
@@ -13,7 +11,7 @@ const isBottomBridge = variant === "temple-bottom" || variant === "guide-bottom"
 const isHomeBridge = variant === "home";
 const isIndexCard = variant === "index-card";
 const guideUrl = "/guide/houyou-kisei/";
-const fudosanUrl = fromTempleUrl("home_bridge");
+const searchUrl = "/search/";
 ---
 
 <section
@@ -85,30 +83,18 @@ const fudosanUrl = fromTempleUrl("home_bridge");
         今すぐ家を売る、残すと決める必要はありません。写真を残し、親の考えを一言だけ聞いておくことで、
         次に家族で話すべきことが分かります。
       </p>
-      <p>
-        確認した内容は、当サイトの無料ツール「実家カルテ」に記録できます。
-        名義・道路・農地など、家族だけでは分からない項目は、運営元の調査版で確認できます。
-      </p>
+      <p>確認した内容は、当サイトの無料ツール「実家カルテ」に記録できます。入力内容は端末内だけに保存され、外部へ送信されません。</p>
       <ul class="houyou-bridge-icons" aria-label="確認するもの">
         <li><span aria-hidden="true">寺</span><strong>菩提寺</strong></li>
         <li><span aria-hidden="true">家</span><strong>実家</strong></li>
         <li><span aria-hidden="true">記</span><strong>家族メモ</strong></li>
       </ul>
       <div class="houyou-bridge-actions">
-        <a
-          class="button-link"
-          href={fudosanUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-cv-event="consultation"
-          data-track-click="fudosan_karute_click"
-        >実家の名義・道路などを調べる<span class="external-mark">外部</span></a>
-        <a class="button-link secondary-button" href="/jikka-karute/" data-track-click="jikka_karute_click">まず家族で実家カルテをつける（無料）</a>
+        <a class="button-link" href="/jikka-karute/" data-track-click="jikka_karute_click">実家カルテを開く（無料・端末内保存）</a>
         <a class="button-link secondary-button" href={guideUrl} data-track-click="houyou_bridge_click">法要と実家の確認メモを見る</a>
+        <a class="button-link secondary-button" href={searchUrl} data-track-click="temple_search_refine">寺院名・宗派から探す</a>
       </div>
-      <p class="houyou-bridge-note">
-        外部リンクは運営元・富士ヶ丘サービスの不動産サービスです。掲載寺院との提携・紹介関係を示すものではありません。
-      </p>
+      <p class="houyou-bridge-note">掲載寺院との提携・紹介関係を示すものではありません。</p>
     </>
   )}
 

@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HouyouKiseiBridge from "../components/HouyouKiseiBridge.astro";
+import { fromTempleUrl } from "../lib/editorial";
 import {
   allTemples,
   allTempleUpdates,
@@ -128,6 +128,7 @@ const heroSlides = heroSlideSeeds
 const firstHeroSlide = heroSlides[0];
 const heroSlidesJson = JSON.stringify(heroSlides).replace(/</g, "\\u003c");
 const iwataMonogatariBannerImage = "/assets/temples/kokubunji-mitsuke/hondo.webp";
+const homeFudosanUrl = fromTempleUrl("home_concern");
 
 ---
 
@@ -326,10 +327,15 @@ const iwataMonogatariBannerImage = "/assets/temples/kokubunji-mitsuke/hondo.webp
       <a href="/guide/family-checklist/">お寺からの連絡を誰が受けているかわからない</a>
       <a href="/guide/jikka-information/">実家を今後誰が管理するのかわからない</a>
       <a href="/jikka-karute/" data-track-click="jikka_karute_click">帰省中に確認したことを記録しておきたい</a>
+      <a
+        href={homeFudosanUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-cv-event="consultation"
+        data-track-click="fudosan_karute_click"
+      >実家の名義・道路など、家族では分からないことを確認したい<span class="external-mark">外部</span></a>
     </div>
   </section>
-
-  <HouyouKiseiBridge variant="home" />
 
   <section class="proof-band" aria-label="登録状況">
     <article>
