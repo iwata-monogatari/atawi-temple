@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import HouyouKiseiBridge from "../components/HouyouKiseiBridge.astro";
 import {
   allTemples,
   allTempleUpdates,
@@ -327,6 +328,8 @@ const iwataMonogatariBannerImage = "/assets/temples/kokubunji-mitsuke/hondo.webp
       <a href="/jikka-karute/" data-track-click="jikka_karute_click">帰省中に確認したことを記録しておきたい</a>
     </div>
   </section>
+
+  <HouyouKiseiBridge variant="home" />
 
   <section class="proof-band" aria-label="登録状況">
     <article>

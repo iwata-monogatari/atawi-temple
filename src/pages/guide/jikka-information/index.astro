@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { jikkaKarteUrl } from "../../../lib/editorial";
 
 const siteUrl = "https://temple.atawi.link";
 const checks = ["所有者", "名義", "土地・建物", "固定資産税", "火災保険", "鍵", "電気", "水道", "家財", "仏壇", "墓", "境界", "管理する人"];
@@ -44,8 +45,19 @@ const structuredData = [
       <p>
         まず上の実家カルテ（無料ツール）で分かる範囲を記録し、空欄が残ったものだけを、
         法務局・市役所へご自身で請求するか、まとめて机上調査を依頼するかを選べます。
-        依頼先の案内は実家カルテのページ下部にあります。
       </p>
+      <div class="family-guide-actions">
+        <a
+          class="button-link"
+          href={jikkaKarteUrl("jikka_information_bottom")}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-cv-event="consultation"
+          data-track-click="fudosan_karute_click"
+        >調査版「ふじがおか実家カルテ」を確認する<span class="external-mark">外部</span></a>
+        <a class="button-link secondary-button" href="/jikka-karute/" data-track-click="jikka_karute_click">無料ツールで家族の確認状況を整理する</a>
+      </div>
+      <p class="small">外部リンクは運営元・富士ヶ丘サービスの不動産サービスです。売却を決めていなくても利用できます。</p>
     </section>
   </article>
 </BaseLayout>
