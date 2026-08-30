@@ -2,7 +2,7 @@ import type { APIRoute } from "astro";
 import { blogLastUpdated, blogPosts } from "../lib/blog";
 import { publicGuideArticles, tokushuArticles } from "../lib/editorial";
 import { researchArticles } from "../lib/research-articles";
-import { portalArticles, portalCategories } from "../lib/portal-articles";
+import { portalCategories } from "../lib/portal-articles";
 import { templeKnowledge } from "../lib/temple-knowledge";
 import { allDistricts, allSects, allTempleUpdates, allTemples } from "../lib/temples";
 
@@ -48,10 +48,6 @@ export const GET: APIRoute = ({ site }) => {
     ...publicGuideArticles.map((article) => ({ path: `/guide/${article.slug}/`, lastmod: latestSiteDate })),
     ...templeKnowledge.map((item) => ({ path: `/knowledge/${item.slug}/`, lastmod: latestSiteDate })),
     ...portalCategories.map((category) => ({ path: `/topics/${category.key}/`, lastmod: "2026-07-27" })),
-    ...portalArticles.map((article) => ({
-      path: `/topics/${article.category}/${article.slug}/`,
-      lastmod: article.updated,
-    })),
     ...tokushuArticles.map((article) => ({ path: `/tokushu/${article.slug}/`, lastmod: latestSiteDate })),
     ...researchArticles.map((article) => ({ path: `/research/${article.slug}/`, lastmod: article.updated })),
     ...allTemples.map((temple) => ({

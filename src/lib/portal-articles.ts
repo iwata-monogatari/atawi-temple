@@ -367,6 +367,14 @@ export const portalArticles: PortalArticle[] = draftArticles.map((article, globa
   };
 });
 
+// 量産テンプレ由来の /topics/<category>/<slug>/ 記事は noindex,follow にして検索対象から外す。
+// 除外したいslugがあればこの配列から引く（2026-08-30 時点で検索流入のある記事はなく、全件対象）。
+const noindexPortalExcludedSlugs: string[] = [];
+
+export const noindexPortalSlugs: string[] = portalArticles
+  .map((article) => article.slug)
+  .filter((slug) => !noindexPortalExcludedSlugs.includes(slug));
+
 export const portalCategories = categoryOrder.map((key) => ({
   key,
   label: definitions[key].label,

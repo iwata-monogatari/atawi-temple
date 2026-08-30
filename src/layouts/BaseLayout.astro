@@ -11,6 +11,7 @@ interface Props {
   publishedTime?: string;
   modifiedTime?: string;
   noindex?: boolean;
+  robots?: string;
   hideSeasonalBanner?: boolean;
   structuredData?: Record<string, unknown> | Record<string, unknown>[];
 }
@@ -23,6 +24,7 @@ const {
   publishedTime,
   modifiedTime,
   noindex = false,
+  robots,
   hideSeasonalBanner = false,
   structuredData = [],
 } = Astro.props;
@@ -61,7 +63,7 @@ const structuredDataItems = [...sharedStructuredData, ...pageStructuredData].fil
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    {noindex && <meta name="robots" content="noindex,nofollow" />}
+    {robots ? <meta name="robots" content={robots} /> : noindex && <meta name="robots" content="noindex,nofollow" />}
     <meta name="theme-color" content="#2f4b2b" />
     <link rel="canonical" href={canonicalUrl} />
     <meta property="og:site_name" content="ATAWI TEMPLE" />
