@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（21本）
+## ブログ｜大石浩之のお寺ノート（22本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- 磐田の寺、後継者は｜全国宗教法人17.8万で減少中（2026-08-31）: https://temple.atawi.link/blog/20260831-iwata-tera-koukeisha-178537/
 - 位牌の処分と魂抜きの頼み方｜磐田は曹洞宗が52.5%（2026-08-31）: https://temple.atawi.link/blog/20260831-ihai-shobun-tamashinuki-tanomikata/
 - 相続放棄しても墓は継げる｜相続税法12条で非課税（2026-08-30）: https://temple.atawi.link/blog/20260830-souzoku-hoki-haka-butsudan/
 - 遠方の菩提寺との付き合い方｜磐田は年120人の転出超過（2026-08-30）: https://temple.atawi.link/blog/20260830-enpo-bodaiji-tsukiaikata/
@@ -48,7 +49,6 @@
 - 仏壇の処分は売却日から逆算｜磐田市は2週間前までに予約（2026-08-23）: https://temple.atawi.link/blog/20260823-butsudan-shobun-jikka-gyakusan/
 - 墓じまいが増えている｜改葬17万件を磐田の実感で読む（2026-08-22）: https://temple.atawi.link/blog/20260822-hakajimai-fueteiru-kaiso-176105/
 - 磐田市の市営霊園、2026年度は先着順｜空き区画の探し方（2026-08-21）: https://temple.atawi.link/blog/20260821-iwata-shiei-reien-senchakujun/
-- 墓じまいの相談、秋彼岸まで1か月で菩提寺に聞く3つ（2026-08-21）: https://temple.atawi.link/blog/20260821-hakajimai-bodaiji-soudan/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-08-31 時点・全754ページ）
+（2026-08-31 時点・全755ページ）
