@@ -117,7 +117,7 @@ const structuredData = [
         {
           post.cover && (
             <figure class="article-figure">
-              <img src={post.cover.src.replace(/-cover\.png$/, "-cover.webp")} alt={`記事内容をもとに生成したイメージ：${post.title}`} width="1200" height="675" decoding="async" />
+              <img src={post.cover.src.replace(/-cover\.png$/, "-cover.webp")} alt={post.cover.alt} width="1200" height="675" decoding="async" />
               <figcaption>記事内容をもとに生成したイメージです。実在の場所・人物を撮影したものではありません。</figcaption>
             </figure>
           )
