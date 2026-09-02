@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（24本）
+## ブログ｜大石浩之のお寺ノート（25本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -30,6 +30,7 @@
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
 - 死亡届と菩提寺はどちらが先？2026年の確認順（2026-09-02）: https://temple.atawi.link/blog/20260902-shiboutodoke-bodaiji-junjo/
+- お彼岸の墓参りと実家片付け｜2026年半日手順（2026-09-02）: https://temple.atawi.link/blog/20260902-ohigan-hakamairi-jikka-katazuke/
 - 2026年の年回忌早見表｜実家売却前に没年確認（2026-09-01）: https://temple.atawi.link/blog/20260901-nenkaiki-hayamihyo-jikka-baikyaku/
 - 磐田の寺、後継者は｜全国宗教法人17.8万で減少中（2026-08-31）: https://temple.atawi.link/blog/20260831-iwata-tera-koukeisha-178537/
 - 位牌の処分と魂抜きの頼み方｜磐田は曹洞宗が52.5%（2026-08-31）: https://temple.atawi.link/blog/20260831-ihai-shobun-tamashinuki-tanomikata/
@@ -48,7 +49,6 @@
 - 寺の墓地と市営霊園の違い｜静岡は墓地の62%が個人経営（2026-08-24）: https://temple.atawi.link/blog/20260824-tera-bochi-shiei-reien-chigai/
 - 改葬許可申請の出し方｜磐田市は1件300円・環境課の窓口（2026-08-24）: https://temple.atawi.link/blog/20260824-kaiso-kyoka-shinsei-300en/
 - 無縁墓になるとどうなる｜撤去に着手した自治体は6.1%（2026-08-23）: https://temple.atawi.link/blog/20260823-muenbo-dounaru-tekkyo-6-1/
-- 仏壇の処分は売却日から逆算｜磐田市は2週間前までに予約（2026-08-23）: https://temple.atawi.link/blog/20260823-butsudan-shobun-jikka-gyakusan/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-09-02 時点・全757ページ）
+（2026-09-02 時点・全758ページ）
