@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（27本）
+## ブログ｜大石浩之のお寺ノート（28本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -30,6 +30,7 @@
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
 - 相続登記に墓は含む？2026年は別手続（2026-09-03）: https://temple.atawi.link/blog/20260903-souzoku-touki-haka-betsu-tetsuzuki/
+- 火葬許可証の2026年変更｜実家に残す3書類（2026-09-03）: https://temple.atawi.link/blog/20260903-kasou-kyokasho-3shorui/
 - 磐田市で菩提寺が分からない｜世帯増の今残す1枚（2026-09-03）: https://temple.atawi.link/blog/20260903-iwata-bodaiji-wakaranai-ichimai/
 - 死亡届と菩提寺はどちらが先？2026年の確認順（2026-09-02）: https://temple.atawi.link/blog/20260902-shiboutodoke-bodaiji-junjo/
 - お彼岸の墓参りと実家片付け｜2026年半日手順（2026-09-02）: https://temple.atawi.link/blog/20260902-ohigan-hakamairi-jikka-katazuke/
@@ -48,7 +49,6 @@
 - 墓じまいをやめた理由は費用｜解体費が高い22.2%（2026-08-26）: https://temple.atawi.link/blog/20260826-hakajimai-yameta-riyu-kaitaihi-22-2/
 - 離檀料に決まりはあるのか｜磐田の相談で必ず出る2つの確認（2026-08-25）: https://temple.atawi.link/blog/20260825-ridanryo-kimari-2tsu-kakunin/
 - 納骨堂と樹木葬の違い｜静岡は171か所の145が寺の経営（2026-08-25）: https://temple.atawi.link/blog/20260825-nokotsudo-jumokuso-chigai/
-- 寺の墓地と市営霊園の違い｜静岡は墓地の62%が個人経営（2026-08-24）: https://temple.atawi.link/blog/20260824-tera-bochi-shiei-reien-chigai/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-09-03 時点・全760ページ）
+（2026-09-03 時点・全761ページ）
