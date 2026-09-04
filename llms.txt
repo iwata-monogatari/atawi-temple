@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（29本）
+## ブログ｜大石浩之のお寺ノート（30本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- 墓地返還と改葬の違い｜磐田市の4確認（2026-09-05）: https://temple.atawi.link/blog/20260905-bochi-henkan-kaiso-iwata-4kakunin/
 - 相続土地国庫帰属 墓地｜2つの壁（2026-09-04）: https://temple.atawi.link/blog/20260904-souzoku-tochi-kokko-kizoku-bochi-2kabe/
 - 相続登記に墓は含む？2026年は別手続（2026-09-03）: https://temple.atawi.link/blog/20260903-souzoku-touki-haka-betsu-tetsuzuki/
 - 火葬許可証の2026年変更｜実家に残す3書類（2026-09-03）: https://temple.atawi.link/blog/20260903-kasou-kyokasho-3shorui/
@@ -48,7 +49,6 @@
 - 永代供養の契約前に確認する3点｜場所・方法・期間（2026-08-27）: https://temple.atawi.link/blog/20260827-eitai-kuyo-keiyaku-3ten/
 - お彼岸の帰省は9月20日から4連休｜寺と実家を1日で（2026-08-26）: https://temple.atawi.link/blog/20260826-ohigan-kisei-4renkyu-9-20/
 - 墓じまいをやめた理由は費用｜解体費が高い22.2%（2026-08-26）: https://temple.atawi.link/blog/20260826-hakajimai-yameta-riyu-kaitaihi-22-2/
-- 離檀料に決まりはあるのか｜磐田の相談で必ず出る2つの確認（2026-08-25）: https://temple.atawi.link/blog/20260825-ridanryo-kimari-2tsu-kakunin/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-09-04 時点・全762ページ）
+（2026-09-05 時点・全763ページ）
