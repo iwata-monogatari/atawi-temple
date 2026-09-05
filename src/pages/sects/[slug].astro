@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import TempleCard from "../../components/TempleCard.astro";
-import { allSects, getSectBySlug, getTemplesBySect } from "../../lib/temples";
+import { allDistricts, allSects, getSectBySlug, getTemplesBySect } from "../../lib/temples";
 
 export function getStaticPaths() {
   return allSects.map((sect) => ({
@@ -16,17 +16,63 @@ if (!sect) {
 }
 
 const temples = getTemplesBySect(sect.name);
+const isSoto = sect.slug === "soto";
+const sotoDistrictOrder = ["toyoda", "fukude", "ryuyo", "nanbu", "mikuriya", "koyo", "toyooka", "mitsuke", "nakaizumi"];
+const templeCountByDistrictId = temples.reduce<Record<string, number>>((counts, temple) => {
+  if (temple.district_id) {
+    counts[temple.district_id] = (counts[temple.district_id] || 0) + 1;
+  }
+  return counts;
+}, {});
+const districtBreakdown = isSoto
+  ? allDistricts
+      .map((district) => ({ ...district, count: templeCountByDistrictId[district.district_id] || 0 }))
+      .filter((district) => district.count > 0)
+      .sort((a, b) => sotoDistrictOrder.indexOf(a.district_id) - sotoDistrictOrder.indexOf(b.district_id))
+  : [];
+const sotoTitle = `磐田市の曹洞宗寺院・寺院跡${temples.length}件｜${districtBreakdown.length}地区別一覧`;
+const pageTitle = isSoto ? sotoTitle : `${sect.name}の登録一覧｜ATAWI TEMPLE`;
+const pageDescription = isSoto
+  ? `磐田市の曹洞宗寺院・寺院跡${temples.length}件を、${districtBreakdown.slice(0, 3).map((district) => `${district.name}${district.count}件`).join("、")}など${districtBreakdown.length}地区別に整理した一覧です。現存寺院と寺院跡を含みます。`
+  : `${sect.name}として整理している磐田市内の寺院・関連宗教法人一覧です。`;
 ---
 
 <BaseLayout
-  title={`${sect.name}の登録一覧｜ATAWI TEMPLE`}
-  description={`${sect.name}として整理している磐田市内の寺院・関連宗教法人一覧です。`}
+  title={pageTitle}
+  description={pageDescription}
 >
   <section class="page-title">
     <p class="eyebrow">Sect / {sect.slug}</p>
-    <h1>{sect.name}の登録一覧</h1>
-    <p>{sect.name}として整理している登録を、地区・住所とあわせて確認できます。</p>
+    <h1>{isSoto ? sotoTitle : `${sect.name}の登録一覧`}</h1>
+    <p>
+      {isSoto
+        ? `磐田市内で曹洞宗として整理している登録を、${districtBreakdown.length}地区の内訳と地区・住所から確認できます。`
+        : `${sect.name}として整理している登録を、地区・住所とあわせて確認できます。`}
+    </p>
   </section>
+
+  {isSoto && (
+    <section class="section" aria-labelledby="soto-area-heading">
+      <div class="section-heading">
+        <h2 id="soto-area-heading">磐田市の曹洞宗寺院を9地区から探す</h2>
+        <a href="/areas/">磐田市の9地区一覧を見る</a>
+      </div>
+      <p>
+        ATAWI TEMPLEでは、磐田市内で曹洞宗として整理している登録を{temples.length}件掲載しています。
+        現存する寺院だけでなく、寺院跡・廃寺、移転・統合などの記録も含みます。
+        地区名から、各地区の全宗派を含む寺院一覧へ進めます。
+      </p>
+      <div class="district-grid">
+        {districtBreakdown.map((district) => (
+          <a class="district-card" href={`/areas/${district.slug}/`}>
+            <strong>{district.name}地区</strong>
+            <span>曹洞宗として整理している寺院・寺院跡</span>
+            <em>{district.count}件</em>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
 
   <section class="section">
     <div class="section-heading">
