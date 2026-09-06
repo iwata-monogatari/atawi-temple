@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（33本）
+## ブログ｜大石浩之のお寺ノート（34本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- 法要の案内状はいつ出す？2026年秋彼岸の逆算（2026-09-06）: https://temple.atawi.link/blog/20260906-houyou-annai-itsu-akihigan/
 - 初彼岸と一周忌の違い｜2026年の実家売却順（2026-09-06）: https://temple.atawi.link/blog/20260906-hatsuhigan-isshuuki-chigai/
 - 台風後の墓石確認｜2026年夏は17個発生（2026-09-05）: https://temple.atawi.link/blog/20260905-taifu-hakaishi-kakunin-17/
 - 仏壇の地震対策｜防災週間最終日の5点（2026-09-05）: https://temple.atawi.link/blog/20260905-butsudan-jishin-taisaku-5ten/
@@ -48,7 +49,6 @@
 - 白木の位牌と本位牌の違い｜49日までに作り替え（2026-08-28）: https://temple.atawi.link/blog/20260828-shiraki-ihai-honihai-chigai/
 - 墓石の地震対策｜転倒率52%と磐田の想定震度7（2026-08-28）: https://temple.atawi.link/blog/20260828-hakaishi-jishin-tento-52/
 - 静岡県の寺院2,602か寺｜宗派の割合は公表されていない（2026-08-27）: https://temple.atawi.link/blog/20260827-shizuoka-jiin-shuha-uchiwake/
-- 一般墓と樹木葬の違いは承継｜子どもなしは樹木葬49.1%（2026-08-27）: https://temple.atawi.link/blog/20260827-ippanbo-jumokuso-shokeisha/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-09-06 時点・全766ページ）
+（2026-09-06 時点・全767ページ）
