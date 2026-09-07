@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（35本）
+## ブログ｜大石浩之のお寺ノート（36本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- 喪中はがきと年賀状じまいの違い｜2027年版（2026-09-07）: https://temple.atawi.link/blog/20260907-mochu-hagaki-nengajo-jimai-chigai/
 - 遺言に墓と仏壇を書く？2026年の分け方（2026-09-06）: https://temple.atawi.link/blog/20260906-yuigon-haka-butsudan-wakekata/
 - 法要の案内状はいつ出す？2026年秋彼岸の逆算（2026-09-06）: https://temple.atawi.link/blog/20260906-houyou-annai-itsu-akihigan/
 - 初彼岸と一周忌の違い｜2026年の実家売却順（2026-09-06）: https://temple.atawi.link/blog/20260906-hatsuhigan-isshuuki-chigai/
@@ -48,7 +49,6 @@
 - 遠方の菩提寺との付き合い方｜磐田は年120人の転出超過（2026-08-30）: https://temple.atawi.link/blog/20260830-enpo-bodaiji-tsukiaikata/
 - 檀家いらない永代供養墓と檀家墓の違い｜継承者不要38.8%（2026-08-29）: https://temple.atawi.link/blog/20260829-dankairanai-eitaikuyobo-chigai/
 - 白木の位牌と本位牌の違い｜49日までに作り替え（2026-08-28）: https://temple.atawi.link/blog/20260828-shiraki-ihai-honihai-chigai/
-- 墓石の地震対策｜転倒率52%と磐田の想定震度7（2026-08-28）: https://temple.atawi.link/blog/20260828-hakaishi-jishin-tento-52/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-09-06 時点・全768ページ）
+（2026-09-07 時点・全769ページ）
