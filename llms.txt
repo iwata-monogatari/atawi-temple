@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（40本）
+## ブログ｜大石浩之のお寺ノート（41本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- お布施は相続税の葬式費用？2026年の記録3点（2026-09-08）: https://temple.atawi.link/blog/20260908-ofuse-souzokuzei-soushikihiyou-3kiroku/
 - 改葬と分骨の違い｜2026年の3確認（2026-09-08）: https://temple.atawi.link/blog/20260908-kaiso-bunkotsu-chigai-3kakunin/
 - 遺骨の自宅保管はいつまで？2026年秋彼岸の整理順（2026-09-08）: https://temple.atawi.link/blog/20260908-ikotsu-jitaku-hokan-itsumade/
 - 仏壇の引っ越し手順｜2026年秋彼岸の3確認（2026-09-08）: https://temple.atawi.link/blog/20260908-butsudan-hikkoshi-tejun-akihigan-3kakunin/
@@ -48,7 +49,6 @@
 - お彼岸の墓参りと実家片付け｜2026年半日手順（2026-09-02）: https://temple.atawi.link/blog/20260902-ohigan-hakamairi-jikka-katazuke/
 - 2026年の年回忌早見表｜実家売却前に没年確認（2026-09-01）: https://temple.atawi.link/blog/20260901-nenkaiki-hayamihyo-jikka-baikyaku/
 - 磐田の寺、後継者は｜全国宗教法人17.8万で減少中（2026-08-31）: https://temple.atawi.link/blog/20260831-iwata-tera-koukeisha-178537/
-- 位牌の処分と魂抜きの頼み方｜磐田は曹洞宗が52.5%（2026-08-31）: https://temple.atawi.link/blog/20260831-ihai-shobun-tamashinuki-tanomikata/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-09-08 時点・全773ページ）
+（2026-09-08 時点・全774ページ）
