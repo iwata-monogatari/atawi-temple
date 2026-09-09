@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（42本）
+## ブログ｜大石浩之のお寺ノート（43本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- 親に墓と菩提寺を聞く｜認知症月間の5項目（2026-09-09）: https://temple.atawi.link/blog/20260909-oya-haka-bodaiji-kiku-5koumoku/
 - 墓じまいと実家売却、どちらが先？相続取得57.9%（2026-09-09）: https://temple.atawi.link/blog/20260909-hakajimai-jikka-baikyaku-dochira-saki/
 - お布施は相続税の葬式費用？2026年の記録3点（2026-09-08）: https://temple.atawi.link/blog/20260908-ofuse-souzokuzei-soushikihiyou-3kiroku/
 - 改葬と分骨の違い｜2026年の3確認（2026-09-08）: https://temple.atawi.link/blog/20260908-kaiso-bunkotsu-chigai-3kakunin/
@@ -48,7 +49,6 @@
 - 磐田市で菩提寺が分からない｜世帯増の今残す1枚（2026-09-03）: https://temple.atawi.link/blog/20260903-iwata-bodaiji-wakaranai-ichimai/
 - 死亡届と菩提寺はどちらが先？2026年の確認順（2026-09-02）: https://temple.atawi.link/blog/20260902-shiboutodoke-bodaiji-junjo/
 - お彼岸の墓参りと実家片付け｜2026年半日手順（2026-09-02）: https://temple.atawi.link/blog/20260902-ohigan-hakamairi-jikka-katazuke/
-- 2026年の年回忌早見表｜実家売却前に没年確認（2026-09-01）: https://temple.atawi.link/blog/20260901-nenkaiki-hayamihyo-jikka-baikyaku/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-09-09 時点・全775ページ）
+（2026-09-09 時点・全776ページ）
