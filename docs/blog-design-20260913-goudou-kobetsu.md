@@ -1,0 +1,24 @@
+# 合同法要と個別法要の違い：設計書
+
+- 投稿日：2026-09-13（Get-Dateで当日確認）
+- slug：20260913-goudou-kobetsu-houyou-iwata
+- 狙いクエリ：合同法要 個別法要 違い／意図：compare
+- 読者：磐田の実家整理と秋彼岸が重なる遠方の相続人
+- 持論：一言メモ空欄につき原則5「読者にまだ決めない自由を残す」
+- 主張を立てる段落：第4節。形式を決めるために売却の結論まで急がない。人数・帰省可能日・家を使える期限を確認する。
+- 体験ストック：なし。私の意見と明示し、見付の実家は仮定例とする。
+- ブログ判定：家の引渡し前後に家族が集まれる条件を優先する大石の判断が中心。
+- 結論ブロック：合同法要と個別法要の人数・日程・受付方法は、宗派・寺院・地域で異なります。合同は複数の家が同じ機会に参列し、個別は各家で営む形式ですが、個別なら希望日が自由に取れるとは限りません。磐田の実家整理と重なるなら、私は参列人数、帰省できる日、引渡し前後に家を使えるかを先に揃えて選びます。2026年秋彼岸の受付状況や費用は、最後は菩提寺に確認を。
+- h2：①要傳寺の秋彼岸案内の比較 ②人数から代表参列か家族参列か考える ③日程の融通と引渡しを照合 ④私の判断と迷い ⑤9月13日に確認する内容
+- FAQ：合同と個別は何が違うか／個別なら希望日が取れるか／家の引渡しと同日にまとめてよいか
+- 内部リンク5本：/knowledge/houyou/、/topics/houyou/、/topics/jikka/、/blog/20260910-houji-jitaku-otera-iwata/、/blog/20260906-houyou-annai-itsu-akihigan/（distで実在確認済み）
+- 逆リンク：20260910-houji-jitaku-otera-iwata の会場比較節に1文追記。
+- 一次情報：https://temple.nichiren.or.jp/0041039-yodenji/event/p4057/ （2026-08-28公開、2026-09-13原文照合）
+- 事実：東京都台東区の要傳寺。合同9月23日13時、各家2〜3名程度。個別9月20〜26日中の秋分の日以外、電話先着順、各家20名程度。同寺限定。合同参列は返信葉書。塔婆申込9月10日期限は既に経過。残枠・期限後対応は未確認。
+- 写真：専用生成、16:9、無地のノート・鍵・数珠・梱包箱のある架空の和室。実在の寺院や行事の記録写真にしない。WebP化してテンプレートでタイトル後、結論前に掲載。
+- 公開前自己査読：本文3,636字、h2は5本、結論170字、FAQ3問。意外な事実は合同の各家人数が個別より少ない案内、言い切りは売却結論を急がない、迷いは帰省をまとめる効率と家族の時間。いずれも本文で確認。
+- 機械検査：台帳追加時のシェル文字コード不具合をUTF-8指定で修正。validate-blogはNG0件（既存の20260912-akihigan-touba-kuyou-sagyou、20260912-akihigan-kaiki-houyou-jikkaに短文WARNが各1件、新記事WARNなし）。npm.cmd run checkは0 errors、0 warnings、11 hints、build output validated。PowerShellのnpm.ps1制限はnpm.cmdで回避。
+- 追加ゲート：構造化データ4種JSON妥当、記事・台帳・sitemap・feedの公開日一致、llms索引登録、内部リンク5本・逆リンク実在、禁止フレーズ0件。ブログHTML・台帳JSON・公開SVG/JSON・sitemap/feedの禁止語0件。サイト全体を探索すると別管理の既存研究系HTML57ファイルに該当語があるが、今回の記事・ブログ公開物とは分離した。
+- 画像：built-in imagegenで生成。public/assets/blog/20260913-goudou-kobetsu-houyou-iwata-cover.webp、1200×675、74,292 bytes。ローカルブラウザーでタイトル後・結論前の表示と画像の読み込みを確認。著者写真600×600の読み込みも確認。
+- 一次情報HTTP 200確認済み。メモとの矛盾なし。現在の残枠・期限後の受付は未確認として明記。体験台帳は未使用のため変更なし。一時資料ファイルは作成していない。
+- 画像生成プロンプト：Create one photorealistic editorial blog cover, landscape 16:9. Topic: a family planning attendance numbers and dates for a Buddhist memorial service while clearing an inherited Japanese home. Quiet generic Japanese living room, low wooden table with a closed blank notebook, plain pen, house keys, two cups of tea and a simple Buddhist prayer bead bracelet; a few unmarked moving boxes softly out of focus near the doorway. Natural early autumn daylight, realistic restrained photography, calm thoughtful mood, no people. Conceptual staged image, not any identifiable real temple or actual event. No text, numerals, logos, watermark, labels, personal data, inscriptions or readable calendar. Wide composition 16:9.
