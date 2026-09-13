@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（49本）
+## ブログ｜大石浩之のお寺ノート（50本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- 過去帳の引き継ぎ｜磐田の実家を空ける前の3手順（2026-09-13）: https://temple.atawi.link/blog/20260913-kakocho-hikitsugi-jikka-3tejun/
 - 墓の管理料が値上げ？実家売却前の3確認（2026-09-12）: https://temple.atawi.link/blog/20260912-haka-kanriryo-neage-3kakunin/
 - 秋彼岸の塔婆供養と実家整理｜申込み手順と3項目（2026-09-12）: https://temple.atawi.link/blog/20260912-akihigan-touba-kuyou-sagyou/
 - 秋彼岸の年回忌法要と実家準備｜3項目（2026-09-12）: https://temple.atawi.link/blog/20260912-akihigan-kaiki-houyou-jikka/
@@ -48,7 +49,6 @@
 - 初彼岸と一周忌の違い｜2026年の実家売却順（2026-09-06）: https://temple.atawi.link/blog/20260906-hatsuhigan-isshuuki-chigai/
 - 台風後の墓石確認｜2026年夏は17個発生（2026-09-05）: https://temple.atawi.link/blog/20260905-taifu-hakaishi-kakunin-17/
 - 仏壇の地震対策｜防災週間最終日の5点（2026-09-05）: https://temple.atawi.link/blog/20260905-butsudan-jishin-taisaku-5ten/
-- 墓地返還と改葬の違い｜磐田市の4確認（2026-09-05）: https://temple.atawi.link/blog/20260905-bochi-henkan-kaiso-iwata-4kakunin/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-09-12 時点・全782ページ）
+（2026-09-13 時点・全783ページ）
