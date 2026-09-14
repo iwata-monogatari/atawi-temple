@@ -2,13 +2,13 @@
 
 > 磐田市の寺院を1か寺ずつ調べて整理している地域データベースです。現存寺院・廃寺・寺院跡・霊場を含む118件を、9地区と宗派で分類し、所在地、宗派、本尊、沿革、現地確認の状況、写真を出典とともに掲載します。あわせて、法要・帰省・実家じまいを家族で確認するためのガイドを載せています。
 
-2026-09-14 時点・全785ページ。概要は https://temple.atawi.link/llms.txt を参照してください。
+2026-09-14 時点・全786ページ。概要は https://temple.atawi.link/llms.txt を参照してください。
 
 ## 引用時の注意
 
 本サイトは各寺院の公式サイトではありません。掲載内容は公開資料と現地確認にもとづく整理であり、沿革や創建年代には諸説あるものがあります。未確認の項目は「未確認」「調査中」と明示しています。引用の際は各ページの出典と確認日をあわせてご確認ください。法要の作法や費用は宗派・寺院・地域で異なります。個別の判断は必ず菩提寺に、相続・税・登記の判断は専門家にご確認ください。
 
-## ブログ｜大石浩之のお寺ノート（52本）
+## ブログ｜大石浩之のお寺ノート（53本）
 
 一覧: https://temple.atawi.link/blog/　RSS: https://temple.atawi.link/feed.xml
 
@@ -26,6 +26,19 @@
 - Q. 2026年秋彼岸は、どの日に行っても同じ法要ですか？ / A. 同じとは限りません。あきる野本願寺の公式案内では、9月20～26日の期間中も、23日の開始時刻は他の日と異なります。これは同寺の日程で、磐田の寺院に共通する予定ではありません。菩提寺へ希望日の法要名、開始時刻、申込みの要否を確認してください。参拝だけを希望する場合も、その目的を伝えておきます。
 - Q. お寺へ参る日に、実家の仏壇も処分してよいですか？ / A. 参拝できることと、仏壇を処分してよいことは別の判断です。家族で移す先や残す希望を話し、菩提寺へ動かす前の相談が必要かを尋ねてください。売却を検討中でも、帰省日に処分まで決める必要はありません。保留する場合は、次に連絡する担当者を決めます。作法や費用は一律ではないため、最後は菩提寺に確認を。
 - 出典: あきる野本願寺「秋季彼岸会」2026年度（2026年9月確認（9月14日原文照合）。2026年8月22日掲載。9月20～26日の開催期間と日別時刻を確認。同寺の案内であり、磐田の菩提寺の予定ではない。）／浄土宗善立寺「よくあるご質問」その他（2026年9月確認（9月14日原文照合）。公表日記載なし。喪中の参拝を認める回答を同寺の案内として参照。）
+
+### 法事の欠席連絡｜磐田の実家整理と分ける3項目
+
+- URL: https://temple.atawi.link/blog/20260914-houji-kesseki-renraku-iwata/
+- 公開: 2026-09-14
+- 概要: 法事の欠席連絡は、出欠・当日の手配・実家整理の別日相談を分けて施主へ伝えるのが私の提案です。2026年秋季彼岸会の公式案内を機に、遠方の相続人向けの連絡文例と確認順を整理。欠席の返事で家の売却や仏壇の処分まで了承せず、判断する時間を残します。
+- 結論（磐田の実家整理を兼ねた法事に行けません。施主へどう連絡すればいいですか？）: 宗派・寺院・地域で作法は異なります。法事を欠席するときは、案内にある連絡先へ、欠席する人と法要・会食それぞれの出欠、準備済みの手配の確認、実家整理を話す別日の候補を分けて伝えるのが私の提案です。欠席理由は伝えられる範囲で構いません。家の売却や仏壇の処分は、その返事で決めずに残せます。費用や寺への連絡方法は、最後は菩提寺に確認を。
+
+- 見出し: 寺の人数連絡と、施主への欠席連絡は締切が別 / 欠席連絡は、出欠・手配・実家相談の3項目に分ける / 電話でもメッセージでも、人数を直せる文を残す / 磐田の実家整理は、欠席の謝罪と交換しない / 9月14日にできるのは、欠席の確定と次の連絡予約
+- Q. 法事の欠席連絡はLINEだけでもよいですか？ / A. 案内に指定された返信方法を優先するのが私の提案です。施主が普段LINEを使い、返事を確認できるなら選択肢になります。欠席する人の名前と法要・会食の出欠を書き、送信だけで完了とせず届いたか確かめてください。当日の変更や返信期限が迫る場合は電話も使い、つながらなければ要点と折り返し先を残します。
+- Q. 法事を欠席するとき、お金や供物はどうすればよいですか？ / A. 欠席者が一律に同じ金額を包むとは、この記事では決めません。宗派・寺院・地域と家族の慣習で扱いが異なります。施主へ案内の指定や供物の予定を尋ね、会食や送迎が手配済みなら変更条件を手配した人に確認してください。自分だけで取り消しや支払いを確約せず、寺に関わる作法や費用は、最後は菩提寺に確認を。
+- Q. 欠席するので、法事当日の実家整理は親族に任せてよいですか？ / A. 私なら、任せる作業と保留する判断を分けます。了承を得た範囲の写真撮影などは依頼し、家財や仏壇の処分、家の売却まで一括して任せる返事は避けます。残したい物を具体的に伝え、写真を見て話す別日の候補を出してください。現地へ行く親族の負担にも配慮し、最初の依頼を絞れば、欠席しても相談へ加われます。
+- 出典: 真宗大谷派（東本願寺）「秋季彼岸会の法要並びに法話のご案内」（2026年9月確認（9月14日原文照合）。2026年9月9日公表。9月20〜26日の法要を確認。東本願寺固有の日程であり、各家庭の出欠期限を示すものではない。）／浄土真宗本願寺派・浄見寺「よくある質問」（2026年9月確認（9月14日原文照合）。公表日記載なし。希望日時の事前連絡と法要当日までの参拝人数連絡を、同寺固有の案内として参照。）
 
 ### 過去帳の引き継ぎ｜磐田の実家を空ける前の3手順
 
@@ -251,7 +264,7 @@
 ### 法要の案内状はいつ出す？2026年秋彼岸の逆算
 
 - URL: https://temple.atawi.link/blog/20260906-houyou-annai-itsu-akihigan/
-- 公開: 2026-09-06／更新: 2026-09-10
+- 公開: 2026-09-06／更新: 2026-09-14
 - 概要: 法要の案内状は、菩提寺と候補日を確かめた後、法要4週間前を自家の発送目安に置きます。2026年9月21〜23日の祝日・休日から、発送日、出欠締切、実家整理の順番を遠方の相続人向けに逆算します。
 - 結論（秋彼岸に法要をするなら、案内状はいつ出せばよいですか。）: 宗派・寺院・地域で案内の方法は違います。菩提寺と候補日を確かめた後、私は法要4週間前を自家の発送目安に置きます。2026年9月21〜23日に営むなら8月24〜26日です。9月6日時点では紙だけに頼らず、まず電話などで予定を伝え、出欠締切と実家整理の日を分けてください。最後は菩提寺に確認してください。
 
@@ -1107,13 +1120,13 @@
 
 ## 研究論文（343本）
 
-- 遠江国分寺の成立と空間構成: https://temple.atawi.link/research/totomi-kokubunji-state-buddhism/ — 磐田市の特別史跡・遠江国分寺跡について、建立政策、伽藍配置、木装基壇、瓦生産、交通環境を公的資料に基づいて分析します。
+- 遠江国分寺の成立と空間構成: https://temple.atawi.link/research/totomi-kokubunji-state-buddhism/ — 磐田市の特別史跡・遠江国分寺跡について、建立方針、伽藍配置、木装基壇、瓦生産、交通環境を公的資料に基づいて分析します。
 - 遠江国分寺における継承と断絶: https://temple.atawi.link/research/kokubunji-continuity-and-discontinuity/ — 遠江国分寺跡と現在の国分寺の関係を、考古資料、指定記録、現地資料、宗教法人情報から検討し、歴史的連続性をどこまで論証できるかを考察します。
 - 遠江国分寺跡の発掘・保存・公共史: https://temple.atawi.link/research/kokubunji-archaeology-conservation-public-history/ — 遠江国分寺跡の1951年発掘、特別史跡指定、史跡公園化、2006年度以降の再調査と現在の再整備を、保存と公開の両立という観点から分析します。
 - 鎌田山医王寺の歴史叙述と史料層位: https://temple.atawi.link/research/ioji-kamada-history-documentary-layers/ — 磐田市鎌田の医王寺について、開創伝承、医王寺文書、徳川家との関係、明治期の寺院再編を史料の性格ごとに検討する。
 - 医王寺庭園及び参道の文化的景観: https://temple.atawi.link/research/ioji-kamada-garden-approach-cultural-landscape/ — 磐田市指定記念物である医王寺庭園及び参道を、客殿、石組、植栽、山門、災害復旧、日常管理の関係から分析する。
 - 医王寺と御厨地域の公共圏: https://temple.atawi.link/research/ioji-kamada-community-faith-public-memory/ — 医王寺の札所信仰、年中行事、坊中学校、学童疎開、戦没者慰霊を通じ、寺院が御厨地域で担ってきた公共的機能を検討する。
-- 大乗院三仭坊の形成と制度的重層: https://temple.atawi.link/research/daijoin-mihirobo-history-institutional-layers/ — 大乗院と小笠寺が1境内へ統合された過程を、寺伝、修験道制度、中泉御殿、近代宗教政策、現行法人情報から再構成する。
+- 大乗院三仭坊の形成と制度的重層: https://temple.atawi.link/research/daijoin-mihirobo-history-institutional-layers/ — 大乗院と小笠寺が1境内へ統合された過程を、寺伝、修験道制度、中泉御殿、近代宗教方針、現行法人情報から再構成する。
 - 庚申塚古墳上に形成された大乗院三仭坊の境内景観: https://temple.atawi.link/research/daijoin-koshinzuka-kofun-layered-cultural-landscape/ — 磐田市中泉の大乗院三仭坊について、庚申塚古墳とされる地形、2本堂、石段・石垣、2005年度以降の境内整備を検証し、異なる年代が重なる文化的景観として考察する。
 - 大乗院三仭坊における祈願・供養・地域公共圏: https://temple.atawi.link/research/daijoin-mihirobo-community-ritual-public-space/ — 磐田市中泉の大乗院三仭坊について、年中行事、護摩、火渡り、供養会、読経会、おてら市を検証し、現代寺院が形成する地域公共圏を考察する。
 - 岩田山増参寺の成立と匂坂氏: https://temple.atawi.link/research/zosanji-sagisaka-history-source-criticism/ — 磐田市匂坂中の曹洞宗増参寺について、磐田寺、増参庵・蔵参庵、匂坂氏、1564年の移建・改称を複数史料の差異から検証する。
@@ -1141,7 +1154,7 @@
 - 徳翁院の観音堂・稲荷社と見付の祭礼景観: https://temple.atawi.link/research/tokuoin-kannon-inari-mitsuke-ritual-landscape/ — 徳翁院の観音堂、稲荷社、手水鉢、石仏群、周辺の元門車保存会倉庫を、宗派資料と磐田市文化財資料から読み、見付の生活圏における複合境内の意味を検討する。
 - 慶岩寺の1562年開創伝承と知恩院末寺制: https://temple.atawi.link/research/keiganji-noko-1562-chionin-lineage/ — 磐田市見付の慶岩寺について、1562年の開創、能公和尚、知恩院末寺・鎮西白旗派という記録を、郡誌、宗派資料、現地景観から検証する。
 - 慶岩寺北向地蔵の移動・倒壊・再建: https://temple.atawi.link/research/keiganji-kitamuki-jizo-movement-reconstruction/ — 慶岩寺の延命地蔵について、路傍から境内への移動、1900年の堂宇倒壊、1901年の再建、8月23日の大祭を史料批判的に検討する。
-- 慶岩寺から読む見付宿の都市宗教空間: https://temple.atawi.link/research/keiganji-mitsuke-shukuba-urban-religious-space/ — 見付町字倉小路に所在した慶岩寺を起点に、宿場の小路、寺院群、書院と境内、年中行事、近代教育・景観政策を都市宗教史として分析する。
+- 慶岩寺から読む見付宿の都市宗教空間: https://temple.atawi.link/research/keiganji-mitsuke-shukuba-urban-religious-space/ — 見付町字倉小路に所在した慶岩寺を起点に、宿場の小路、寺院群、書院と境内、年中行事、近代教育・景観方針を都市宗教史として分析する。
 - 大見寺と見付端城の重層景観: https://temple.atawi.link/research/daikenji-mitsuke-hajijo-map-temple-landscape/ — 磐田市見付の大見寺境内に重なる見付端城を、同時代文書、1698年絵図、発掘調査、現存土塁から再検討し、城跡の寺院化を論じる。
 - 大見寺の良純法親王供養塔と徳翁院: https://temple.atawi.link/research/daikenji-ryojun-prince-tokuoin-memorial-network/ — 大見寺の良純法親王供養塔を、浄土宗史、甲斐配流資料、1921年郡誌、徳翁院との本末関係から検証し、石塔移転の意味を考察する。
 - 大見寺と鳥人・浮田幸吉の記憶: https://temple.atawi.link/research/daikenji-ukita-kokichi-flight-memory-evidence/ — 大見寺に残る浮田幸吉の墓と過去帳伝承を、岡山側の飛行史料、見付の住居跡、境内模型と照合し、技術史と地域記憶の関係を考察する。
@@ -1403,7 +1416,7 @@
 - 磐田市の寺院史をどう読むか: https://temple.atawi.link/research/iwata-temple-history-reading-ancient-to-modern/ — 遠江国分寺から現代の宗教法人まで、磐田市の寺院史を資料類型と制度変化に即して読む総合研究。
 - 磐田市の寺院分布: https://temple.atawi.link/research/iwata-temple-distribution-nine-districts/ — 現存96寺院を9地区に集計し、磐田原台地、天竜川・太田川低地、街道、港、集落との関係を分析する。
 - 遠江国府と寺院: https://temple.atawi.link/research/totomi-kokufu-temples-mitsuke-political-religious-space/ — 遠江国府・国分寺・国分尼寺・見付宿を時代別に分け、政治・宗教・交通・葬送空間の重層を検証する。
-- 遠江国分寺の成立と変容: https://temple.atawi.link/research/iwata-pillar-04-totomi-kokubunji-regional-development/ — 遠江国分寺を中央政策の地方移植ではなく、国府圏、先行寺院、資材生産、災害、廃絶後の信仰が織り成す地域的制度として再検討する。
+- 遠江国分寺の成立と変容: https://temple.atawi.link/research/iwata-pillar-04-totomi-kokubunji-regional-development/ — 遠江国分寺を中央方針の地方移植ではなく、国府圏、先行寺院、資材生産、災害、廃絶後の信仰が織り成す地域的制度として再検討する。
 - 磐田市の廃寺と寺院跡: https://temple.atawi.link/research/iwata-pillar-05-abandoned-temples-religious-spaces/ — 大宝院廃寺、鎌田廃寺、寺谷廃寺、岩室廃寺、遠江国分寺・国分尼寺を比較し、建物を失った宗教空間の復元方法を示す。
 - 東海道見付宿と寺院: https://temple.atawi.link/research/iwata-pillar-06-mitsuke-post-town-temples/ — 見付宿の寺院を街道、小路、墓地、祈願、寺領、教育と結び、移動社会を支えた宗教的インフラとして分析する。
 - 天竜川と磐田の寺院: https://temple.atawi.link/research/iwata-pillar-07-tenryu-river-temples/ — 天竜川左岸の寺院を、水害、渡船、堤防、用水、集落移動の長期史から分析する。
@@ -1440,7 +1453,7 @@
 - 磐田市の寺院と自治会: https://temple.atawi.link/research/iwata-pillar-38-temples-neighborhood-associations/ — 寺院法人、檀家、総代、自治会、地域づくり協議会を区別し、境内管理、防災、福祉、祭礼を通じた共同運営の履歴を検証する。
 - 磐田市の寺院と女性: https://temple.atawi.link/research/iwata-pillar-39-temples-women-gender-history/ — 熊野御前、観音・地蔵・鬼子母神信仰、講、奉納、法要、墓碑をジェンダー史から読み直し、女性の行為と不可視化された労働を検証する。
 - 磐田の寺院と高齢社会――地域包括ケアを補完する条件: https://temple.atawi.link/research/iwata-temples-super-aged-society-community-care/ — 寺院を介護制度の代替ではなく、任意参加の交流、傾聴、専門機関への接続を担う補完的地域資源として検証する。
-- 磐田の寺院と空き家問題――相続・管理・地域住宅政策: https://temple.atawi.link/research/iwata-temples-vacant-houses-housing-policy/ — 寺院周辺の空き家を、相続、高齢者住宅、管理不全、流通、生活圏の観点から分析し、寺院と不動産事業者の役割境界を示す。
+- 磐田の寺院と空き家問題――相続・管理・地域住宅方針: https://temple.atawi.link/research/iwata-temples-vacant-houses-housing-policy/ — 寺院周辺の空き家を、相続、高齢者住宅、管理不全、流通、生活圏の観点から分析し、寺院と不動産事業者の役割境界を示す。
 - 磐田の寺院と墓じまい――改葬制度・承継・記憶保存: https://temple.atawi.link/research/iwata-temples-grave-closure-reinterment-system/ — 墓じまいを墓石撤去ではなく、改葬許可、墓所使用、宗教儀礼、親族合意、記録保存が交差する制度過程として分析する。
 - 磐田の寺院と永代供養: https://temple.atawi.link/research/iwata-temples-perpetual-memorial-care-institution/ — 永代供養を商品名ではなく、法的類型、納骨、管理、供養、承継、記録保存から検討する非営業的な地域墓制研究。
 - 菩提寺が分からないときの磐田寺院調査: https://temple.atawi.link/research/iwata-temples-how-to-identify-family-temple/ — 菩提寺不明時に、家族資料、墓碑、戸籍・除籍、改葬記録、過去帳、宗門人別帳、旧地名を段階的に照合する研究方法。

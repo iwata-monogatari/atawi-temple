@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（52本）
+## ブログ｜大石浩之のお寺ノート（53本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -30,6 +30,7 @@
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
 - 喪中のお寺参りはできる？磐田の実家整理と秋彼岸（2026-09-14）: https://temple.atawi.link/blog/20260914-mochu-oteramairi-iwata-akihigan/
+- 法事の欠席連絡｜磐田の実家整理と分ける3項目（2026-09-14）: https://temple.atawi.link/blog/20260914-houji-kesseki-renraku-iwata/
 - 過去帳の引き継ぎ｜磐田の実家を空ける前の3手順（2026-09-13）: https://temple.atawi.link/blog/20260913-kakocho-hikitsugi-jikka-3tejun/
 - 合同法要と個別法要の違い｜磐田の実家整理と選択（2026-09-13）: https://temple.atawi.link/blog/20260913-goudou-kobetsu-houyou-iwata/
 - 墓の管理料が値上げ？実家売却前の3確認（2026-09-12）: https://temple.atawi.link/blog/20260912-haka-kanriryo-neage-3kakunin/
@@ -48,7 +49,6 @@
 - 仏壇のカビ掃除｜磐田の空き家で3確認（2026-09-07）: https://temple.atawi.link/blog/20260907-butsudan-kabi-souji-iwata-3kakunin/
 - 遺言に墓と仏壇を書く？2026年の分け方（2026-09-06）: https://temple.atawi.link/blog/20260906-yuigon-haka-butsudan-wakekata/
 - 法要の案内状はいつ出す？2026年秋彼岸の逆算（2026-09-06）: https://temple.atawi.link/blog/20260906-houyou-annai-itsu-akihigan/
-- 初彼岸と一周忌の違い｜2026年の実家売却順（2026-09-06）: https://temple.atawi.link/blog/20260906-hatsuhigan-isshuuki-chigai/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-09-14 時点・全785ページ）
+（2026-09-14 時点・全786ページ）
