@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（54本）
+## ブログ｜大石浩之のお寺ノート（55本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- お墓のお供えは持ち帰る？磐田の実家を空ける日に（2026-09-15）: https://temple.atawi.link/blog/20260915-ohaka-osonae-mochikaeri-iwata/
 - 永代経と永代供養の違い｜磐田の実家整理で迷う前に（2026-09-15）: https://temple.atawi.link/blog/20260915-eitaikyo-eitaikuyo-iwata/
 - 喪中のお寺参りはできる？磐田の実家整理と秋彼岸（2026-09-14）: https://temple.atawi.link/blog/20260914-mochu-oteramairi-iwata-akihigan/
 - 法事の欠席連絡｜磐田の実家整理と分ける3項目（2026-09-14）: https://temple.atawi.link/blog/20260914-houji-kesseki-renraku-iwata/
@@ -48,7 +49,6 @@
 - 仏壇の引っ越し手順｜2026年秋彼岸の3確認（2026-09-08）: https://temple.atawi.link/blog/20260908-butsudan-hikkoshi-tejun-akihigan-3kakunin/
 - 喪中はがきと年賀状じまいの違い｜2027年版（2026-09-07）: https://temple.atawi.link/blog/20260907-mochu-hagaki-nengajo-jimai-chigai/
 - 仏壇のカビ掃除｜磐田の空き家で3確認（2026-09-07）: https://temple.atawi.link/blog/20260907-butsudan-kabi-souji-iwata-3kakunin/
-- 遺言に墓と仏壇を書く？2026年の分け方（2026-09-06）: https://temple.atawi.link/blog/20260906-yuigon-haka-butsudan-wakekata/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-09-15 時点・全787ページ）
+（2026-09-15 時点・全788ページ）
