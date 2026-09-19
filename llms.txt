@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（59本）
+## ブログ｜大石浩之のお寺ノート（60本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -30,6 +30,7 @@
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
 - 秋彼岸の墓参りで確認したい墓石の傾きと目地補修｜磐田の初期点検（2026-09-19）: https://temple.atawi.link/blog/20260919-akihigan-hakaishi-katamuki-meji-iwata/
+- 磐田での墓じまい離檀料と解体更地費用｜石材店へ見積る前の整理（2026-09-19）: https://temple.atawi.link/blog/20260919-2-haka-shimai-ryoukin-souba-iwata/
 - 仏壇のろうそくは火事になる？磐田の実家整理と秋彼岸（2026-09-18）: https://temple.atawi.link/blog/20260918-butsudan-rousoku-kaji-iwata/
 - 墓参り代行と家族参拝｜磐田の実家売却後で比較（2026-09-17）: https://temple.atawi.link/blog/20260917-hakamairi-daikou-kazoku-iwata/
 - 遺影の処分｜磐田の実家を空ける前の3手順（2026-09-16）: https://temple.atawi.link/blog/20260916-iei-shobun-iwata-3tejun/
@@ -48,7 +49,6 @@
 - 親に墓と菩提寺を聞く｜認知症月間の5項目（2026-09-09）: https://temple.atawi.link/blog/20260909-oya-haka-bodaiji-kiku-5koumoku/
 - 墓じまいと実家売却、どちらが先？相続取得57.9%（2026-09-09）: https://temple.atawi.link/blog/20260909-hakajimai-jikka-baikyaku-dochira-saki/
 - お布施は相続税の葬式費用？2026年の記録3点（2026-09-08）: https://temple.atawi.link/blog/20260908-ofuse-souzokuzei-soushikihiyou-3kiroku/
-- 改葬と分骨の違い｜2026年の3確認（2026-09-08）: https://temple.atawi.link/blog/20260908-kaiso-bunkotsu-chigai-3kakunin/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-09-19 時点・全792ページ）
+（2026-09-19 時点・全793ページ）
