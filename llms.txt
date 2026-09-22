@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（66本）
+## ブログ｜大石浩之のお寺ノート（67本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- 磐田の秋彼岸中日参り｜実家仏壇と菩提寺の確認順（2026-09-23）: https://temple.atawi.link/blog/20260923-akihigan-chunichi-otera-iwata/
 - 磐田で車椅子のお寺参り｜実家整理と分ける外出（2026-09-22）: https://temple.atawi.link/blog/20260922-kurumaisu-oteramairi-iwata/
 - 法事の平服とは？磐田の実家整理で残す一着（2026-09-22）: https://temple.atawi.link/blog/20260922-houji-heifuku-iwata/
 - お布施の封筒の書き方｜磐田の実家整理前に準備（2026-09-21）: https://temple.atawi.link/blog/20260921-ofuse-futou-kakikata-iwata/
@@ -48,7 +49,6 @@
 - 合同法要と個別法要の違い｜磐田の実家整理と選択（2026-09-13）: https://temple.atawi.link/blog/20260913-goudou-kobetsu-houyou-iwata/
 - 墓の管理料が値上げ？実家売却前の3確認（2026-09-12）: https://temple.atawi.link/blog/20260912-haka-kanriryo-neage-3kakunin/
 - 秋彼岸の塔婆供養と実家整理｜申込み手順と3項目（2026-09-12）: https://temple.atawi.link/blog/20260912-akihigan-touba-kuyou-sagyou/
-- 秋彼岸の年回忌法要と実家準備｜3項目（2026-09-12）: https://temple.atawi.link/blog/20260912-akihigan-kaiki-houyou-jikka/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-09-22 時点・全799ページ）
+（2026-09-23 時点・全800ページ）
