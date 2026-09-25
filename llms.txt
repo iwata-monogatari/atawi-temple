@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（73本）
+## ブログ｜大石浩之のお寺ノート（74本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -31,6 +31,7 @@
 
 - 墓の花は生花と造花どちら？磐田の実家売却後（2026-09-25）: https://temple.atawi.link/blog/20260925-ohaka-hana-seika-zouka-iwata/
 - 繰出位牌と板位牌の違い｜磐田の実家整理で比較（2026-09-25）: https://temple.atawi.link/blog/20260925-kuridashi-itaihai-chigai-iwata/
+- 磐田市環境課の受付時間変更｜墓の相談と実家整理（2026-09-25）: https://temple.atawi.link/blog/20260925-iwata-kankyoka-uketsuke-jikka/
 - 両祖忌とは？磐田の実家に届く寺の案内（2026-09-24）: https://temple.atawi.link/blog/20260924-ryosoki-iwata-jikka-annai/
 - 法事の日程変更｜磐田の実家整理と連絡の順番（2026-09-24）: https://temple.atawi.link/blog/20260924-houji-nittei-henkou-iwata/
 - 上置き仏壇と台付き仏壇の違い｜磐田の住み替え（2026-09-23）: https://temple.atawi.link/blog/20260923-uwaoki-tsukidai-butsudan-iwata/
@@ -48,7 +49,6 @@
 - 墓参り代行と家族参拝｜磐田の実家売却後で比較（2026-09-17）: https://temple.atawi.link/blog/20260917-hakamairi-daikou-kazoku-iwata/
 - 遺影の処分｜磐田の実家を空ける前の3手順（2026-09-16）: https://temple.atawi.link/blog/20260916-iei-shobun-iwata-3tejun/
 - お墓のお供えは持ち帰る？磐田の実家を空ける日に（2026-09-15）: https://temple.atawi.link/blog/20260915-ohaka-osonae-mochikaeri-iwata/
-- 永代経と永代供養の違い｜磐田の実家整理で迷う前に（2026-09-15）: https://temple.atawi.link/blog/20260915-eitaikyo-eitaikuyo-iwata/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-09-25 時点・全806ページ）
+（2026-09-25 時点・全807ページ）
