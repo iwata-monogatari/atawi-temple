@@ -107,7 +107,12 @@
   </url>
   <url>
     <loc>https://temple.atawi.link/blog/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/blog/20260926-tsukimeinichi-iwata-jikka/</loc>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -227,7 +232,7 @@
   </url>
   <url>
     <loc>https://temple.atawi.link/blog/20260913-kakocho-hikitsugi-jikka-3tejun/</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
