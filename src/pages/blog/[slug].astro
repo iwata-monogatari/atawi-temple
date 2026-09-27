@@ -40,9 +40,10 @@ const structuredData = [
     dateModified: `${post.updated}T09:00:00+09:00`,
     inLanguage: "ja",
     keywords: [post.query, ...post.tags].join(","),
-    author: { "@id": `${siteUrl}/#oishi` },
+    author: { "@id": "https://oishi-hiroyuki.org/#person" },
     publisher: {
       "@type": "Organization",
+      "@id": "https://www.fujigaoka-service.co.jp/#organization",
       name: "富士ヶ丘サービス株式会社",
       alternateName: "ATAWI TEMPLE",
       url: siteUrl,
@@ -52,10 +53,10 @@ const structuredData = [
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": `${siteUrl}/#oishi`,
+    "@id": "https://oishi-hiroyuki.org/#person",
     name: "大石浩之",
     jobTitle: "代表取締役・宅地建物取引士",
-    worksFor: { "@type": "Organization", name: "富士ヶ丘サービス株式会社" },
+    worksFor: { "@id": "https://www.fujigaoka-service.co.jp/#organization" },
     address: {
       "@type": "PostalAddress",
       addressCountry: "JP",
@@ -63,12 +64,7 @@ const structuredData = [
       addressLocality: "袋井市",
     },
     image: `${siteUrl}/assets/author-oishi.jpg`,
-    url: `${siteUrl}/about/`,
-    sameAs: [
-      "https://oishi-hiroyuki.org/profile",
-      "https://fudosan.atawi.link/",
-      "https://morimachi.enshu-lifehack.com/",
-    ],
+    url: "https://oishi-hiroyuki.org/profile",
   },
   {
     "@context": "https://schema.org",

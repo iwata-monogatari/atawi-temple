@@ -36,9 +36,16 @@ const sharedStructuredData = [
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "ATAWI TEMPLE",
-    url: siteUrl,
-    logo: new URL("/assets/brand/atawi-temple-mark.svg", siteUrl).toString(),
+    "@id": "https://www.fujigaoka-service.co.jp/#organization",
+    name: "富士ヶ丘サービス株式会社",
+    url: "https://www.fujigaoka-service.co.jp/",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://oishi-hiroyuki.org/#person",
+    name: "大石浩之",
+    url: "https://oishi-hiroyuki.org/profile",
   },
   {
     "@context": "https://schema.org",
@@ -46,6 +53,9 @@ const sharedStructuredData = [
     name: "ATAWI TEMPLE",
     url: siteUrl,
     description,
+    inLanguage: "ja",
+    publisher: { "@id": "https://www.fujigaoka-service.co.jp/#organization" },
+    editor: { "@id": "https://oishi-hiroyuki.org/#person" },
     potentialAction: {
       "@type": "SearchAction",
       target: `${siteUrl}/search/?q={search_term_string}`,
@@ -143,6 +153,7 @@ const structuredDataItems = [...sharedStructuredData, ...pageStructuredData].fil
         <a href="https://fudosan.atawi.link/">ATAWI FUDOSAN</a>
       </nav>
       <p class="small">姉妹サイト：磐田物語 ─ 磐田の歴史読み物／ATAWI SHRINE ─ 磐田市の神社データベース／磐田ライフハック ─ 磐田市の暮らしと手続きの道しるべ／ATAWI FUDOSAN ─ 運営元（富士ヶ丘サービス）の不動産サービス</p>
+      <p class="small footer-editor">運営・編集：<a href="https://oishi-hiroyuki.org/profile">大石浩之</a>｜磐田・遠州の寺院に関する公開情報を整理・記録しています。</p>
       <p class="small">ATAWI TEMPLEは各寺院の公式サイトではありません。</p>
       <p class="small"><a href="/research/">研究論文一覧</a></p>
     </footer>
