@@ -1,5 +1,51 @@
 const CATEGORIES = new Set(["reading", "history", "heritage", "location", "publication", "other"]);
 
+const CATEGORY_LABELS = {
+  reading: "読み方",
+  history: "沿革・歴史",
+  heritage: "文化財・見どころ",
+  location: "所在地・アクセス",
+  publication: "文献・出典",
+  other: "その他",
+};
+
+// 新規投稿をメールで知らせる。RESEND_API_KEY 未設定なら何もしない。
+// 送信失敗しても投稿の受付自体は成功のまま (waitUntil で非同期実行)。
+async function notifyNewPost(env, post) {
+  if (!env.RESEND_API_KEY) return;
+  const lines = [
+    "ATAWI TEMPLE の掲示板（情報提供・訂正）に新しい投稿がありました。",
+    "",
+    `対象寺院: ${post.templeSlug}`,
+    `種類: ${CATEGORY_LABELS[post.category] || post.category}`,
+    `お名前: ${post.displayName}`,
+    `件名: ${post.title}`,
+    "",
+    post.body,
+  ];
+  if (post.sourceInfo) lines.push("", `出典・根拠: ${post.sourceInfo}`);
+  if (post.contactEmail) lines.push("", `連絡先: ${post.contactEmail}（このメールへの返信で届きます）`);
+  lines.push("", "承認・返信は管理画面から: https://temple.atawi.link/admin/board/");
+  const payload = {
+    from: env.MAIL_FROM || "ATAWI TEMPLE 掲示板 <temple@atawi.link>",
+    to: [env.MAIL_TO || "fudosan@fujigaoka-service.co.jp"],
+    subject: `【ATAWI TEMPLE】掲示板投稿: ${post.title}`,
+    text: lines.join("\n"),
+  };
+  if (post.contactEmail) payload.reply_to = post.contactEmail;
+  const res = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      authorization: `Bearer ${env.RESEND_API_KEY}`,
+      "content-type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  });
+  if (!res.ok) {
+    console.log("board-posts notify failed", res.status, await res.text().catch(() => ""));
+  }
+}
+
 function json(body, init = {}) {
   return new Response(JSON.stringify(body), {
     ...init,
@@ -43,7 +89,7 @@ export async function onRequestGet({ env }) {
   return json({ ok: true, configured: true, posts: result.results || [] });
 }
 
-export async function onRequestPost({ request, env }) {
+export async function onRequestPost({ request, env, waitUntil }) {
   if (!env.ATAWI_BOARD_DB) {
     return json({ ok: false, message: "掲示板の保存先を準備中です。" }, { status: 503 });
   }
@@ -88,6 +134,11 @@ export async function onRequestPost({ request, env }) {
        contact_email, status, public_reply, rate_key, created_at)
      VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'pending', '', ?, ?)`,
   ).bind(id, templeSlug, category, displayName, title, body, sourceInfo, contactEmail, rateKey, createdAt).run();
+
+  waitUntil(
+    notifyNewPost(env, { templeSlug, category, displayName, title, body, sourceInfo, contactEmail })
+      .catch((error) => console.log("board-posts notify error", error && error.message)),
+  );
 
   return json({ ok: true, accepted: true, id, message: "投稿を受け付けました。確認後に掲示板へ掲載します。" });
 }
