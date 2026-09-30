@@ -37,6 +37,7 @@ export type PortalArticle = {
   updated: string;
   published?: string;
   sourceDisclosure?: string;
+  nextActions?: { label: string[]; href: string; description: string; trackingEvent: string }[];
   longform?: PriorityLongform;
   contentType: "guide";
   journeyStage: 1 | 2 | 3 | 4 | 5 | 6;

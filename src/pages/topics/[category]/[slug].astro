@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import RichGuideIllustration from "../../../components/RichGuideIllustration.astro";
+import ArticleNextActions from "../../../components/ArticleNextActions.astro";
 import {
   getPortalArticle,
   getNextJourneyArticles,
@@ -22,6 +23,7 @@ const isPriorityArticle = priorityPortalSlugs.includes(article.slug);
 const isNoindexArticle = noindexPortalSlugs.includes(article.slug);
 const category = portalCategories.find((item) => item.key === article.category)!;
 const nextJourneyArticles = getNextJourneyArticles(article);
+const hasNextActions = Boolean(article.nextActions?.length);
 const siteUrl = "https://temple.atawi.link";
 const pageUrl = `${siteUrl}/topics/${article.category}/${article.slug}/`;
 const breadcrumbItems = [
@@ -78,7 +80,7 @@ const structuredData = [
   publishedTime={`${article.published ?? article.updated}T00:00:00+09:00`}
   modifiedTime={`${article.updated}T00:00:00+09:00`}
 >
-  <article class="portal-article">
+  <article class:list={["portal-article", { "portal-article--focused": hasNextActions }]}>
     <nav class="breadcrumbs" aria-label="パンくず">
       {breadcrumbItems.map((item, index) => (
         <><a href={item.url.replace(siteUrl, "")}>{item.name}</a>{index < breadcrumbItems.length - 1 && <span>›</span>}</>
@@ -161,6 +163,7 @@ const structuredData = [
           </div>
         </section>
 
+        {hasNextActions ? <ArticleNextActions actions={article.nextActions!} /> : (
         <section class="article-section journey-next" aria-labelledby="journey-next-title">
           <p class="section-number">Next</p>
           <h2 id="journey-next-title">次に確認しておきたいこと</h2>
@@ -170,6 +173,7 @@ const structuredData = [
             ))}
           </ol>
         </section>
+        )}
 
         <section class="article-section source-section">
           <p class="section-number">Sources</p>
@@ -188,7 +192,7 @@ const structuredData = [
           <p class="small"><a href="/editorial-policy/">編集方針</a>に基づき、宗派・法務・税務を一律に断定せず、確認先を示しています。</p>
         </section>
 
-        <section class:list={["article-section", "portal-cta", `portal-cta--${article.cta}`]}>
+        {!hasNextActions && <section class:list={["article-section", "portal-cta", `portal-cta--${article.cta}`]}>
           <p class="section-number">Next</p>
           <h2>{article.cta === "strong" ? "実家の情報を整理する" : article.cta === "medium" ? "帰省時の確認を記録する" : "次の記事へ進む"}</h2>
           {article.cta === "strong" ? (
@@ -208,17 +212,28 @@ const structuredData = [
               {article.next && <a class="button-link" href={article.next.href}>{article.next.label}</a>}
             </>
           )}
-        </section>
+        </section>}
       </main>
 
-      <aside class="article-aside">
+      {!hasNextActions && <aside class="article-aside">
         <section class="side-panel">
           <h2>次に確認しておきたいこと</h2>
           <div class="side-link-list">
             {nextJourneyArticles.map((item) => <a href={`/topics/${item.category}/${item.slug}/`} data-track-click="next_guide_click">{item.title}</a>)}
           </div>
         </section>
-      </aside>
+      </aside>}
     </div>
   </article>
 </BaseLayout>
+
+<style>
+  .portal-article--focused .article-hero,
+  .portal-article--focused .article-layout {
+    width: min(800px, calc(100% - 32px));
+  }
+
+  .portal-article--focused .article-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+</style>

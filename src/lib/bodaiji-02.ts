@@ -8,6 +8,20 @@ export const bodaiji02Revision = {
   conclusion: "家族の話と墓地・葬儀・法要の書類を手がかりに、候補となる寺院を絞ります。寺院名が見つかっても、それだけで菩提寺とは決めず、故人や家族との関わりを寺院へ確認してください。",
   published: "2026-07-27",
   updated: "2026-09-30",
+  nextActions: [
+    {
+      label: ["家族への", "質問例を読む"],
+      href: "/topics/bodaiji/bodaiji-03/",
+      description: "親や親族に何から聞けばよいか、具体的な質問例を確認できます。",
+      trackingEvent: "next_guide_click",
+    },
+    {
+      label: ["実家カルテで", "確認事項を整理する"],
+      href: "/jikka-karute/",
+      description: "菩提寺やお墓について確認した項目を、無料のチェックリストに記録できます。",
+      trackingEvent: "jikka_karute_click",
+    },
+  ],
   caution: "同じ名前の寺院を取り違えないよう、所在地も確認してください。また、菩提寺が分からないことと、菩提寺がないことは別です。記録が見つからない段階では、家族との関係は「未確認」として扱います。",
   points: [
     "故人の氏名・読み方、命日、当時の住所を分かる範囲でまとめた",
