@@ -3,6 +3,7 @@ import {
   priorityPortalOverrides,
   type PriorityLongform,
 } from "./portal-priority-articles";
+import { bodaiji02Revision } from "./bodaiji-02";
 
 export type PortalCategoryKey =
   | "houyou"
@@ -34,6 +35,8 @@ export type PortalArticle = {
   next?: { href: string; label: string };
   cta: "weak" | "medium" | "strong";
   updated: string;
+  published?: string;
+  sourceDisclosure?: string;
   longform?: PriorityLongform;
   contentType: "guide";
   journeyStage: 1 | 2 | 3 | 4 | 5 | 6;
@@ -359,6 +362,7 @@ export const portalArticles: PortalArticle[] = draftArticles.map((article, globa
     contentType: "guide",
     ...journeyByCategory[article.category],
     ...(priorityOverride || {}),
+    ...(article.slug === "bodaiji-02" ? bodaiji02Revision : {}),
     longform: priorityOverride
       ? buildPriorityLongformV2(article.slug, article.title, article.category, priorityOverride)
       : undefined,

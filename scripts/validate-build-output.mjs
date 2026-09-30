@@ -93,12 +93,17 @@ const priorityIllustrationLayouts = new Set();
 const prioritySceneSignatures = new Set();
 
 for (const slug of priorityPortalSlugs) {
+  // 個別に書き直した記事は、ひな形向けの最低文字数に合わせて水増ししない。
+  const isConciseRevision = slug === "bodaiji-02";
   const category = slug.replace(/-\d{2}$/, "");
   const html = await readBuiltFile(`dist/topics/${category}/${slug}/index.html`);
   if (!html.includes("重点個別編集記事")) {
     errors.push(`priority portal: ${slug} is missing the editorial badge`);
   }
-  if (!html.includes("主題に直接対応する一次情報")) {
+  const sourceDisclosure = isConciseRevision
+    ? "調べ方と問い合わせ例は編集部が整理したものです。"
+    : "主題に直接対応する一次情報";
+  if (!html.includes(sourceDisclosure)) {
     errors.push(`priority portal: ${slug} is missing the primary-source disclosure`);
   }
   if (!html.includes("確認先・参考情報")) {
@@ -117,14 +122,17 @@ for (const slug of priorityPortalSlugs) {
   if (longformSections.length !== 4) {
     errors.push(`priority portal: ${slug} must have 4 longform sections, found ${longformSections.length}`);
   }
-  if (bodyLength < 4000) {
+  if (!isConciseRevision && bodyLength < 4000) {
     errors.push(`priority portal: ${slug} longform body must be at least 4000 characters, found ${bodyLength}`);
   }
   sectionLengths.forEach((length, index) => {
-    if (length < 1000) {
+    if (!isConciseRevision && length < 1000) {
       errors.push(`priority portal: ${slug} section ${index + 1} must be at least 1000 characters, found ${length}`);
     }
   });
+  if (sectionLengths.some((length) => length === 0)) {
+    errors.push(`priority portal: ${slug} has an empty section`);
+  }
   if (illustrationCount < 3) {
     errors.push(`priority portal: ${slug} must have at least 3 illustrations, found ${illustrationCount}`);
   }

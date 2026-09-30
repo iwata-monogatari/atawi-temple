@@ -1,3 +1,5 @@
+import { bodaiji02Illustrations, bodaiji02Sections } from "./bodaiji-02";
+
 export type PriorityArticleOverride = {
   firstAction: string;
   steps: { title: string; body: string }[];
@@ -926,6 +928,14 @@ export function buildPriorityLongformV2(
   category: string,
   article: PriorityArticleOverride,
 ): PriorityLongform {
+  if (slug === "bodaiji-02") {
+    return {
+      sections: bodaiji02Sections,
+      illustrations: bodaiji02Illustrations.map((illustration, index) =>
+        makeUniqueIllustration(slug, index, illustration.label, illustration.caption, illustration.nodes)
+      ),
+    };
+  }
   const context = categoryContexts[category] || categoryContexts.jikka;
   const direct = categoryDirectExplanations[category] || categoryDirectExplanations.jikka;
   const subject = title.replace(/[？?]/g, "").replace(/について.*$/, "");

@@ -46,7 +46,7 @@ const structuredData = [
     "@type": "Article",
     headline: article.title,
     description: article.description,
-    datePublished: article.updated,
+    datePublished: article.published ?? article.updated,
     dateModified: article.updated,
     mainEntityOfPage: pageUrl,
     author: { "@type": "Organization", name: "ATAWI TEMPLE編集部" },
@@ -75,7 +75,7 @@ const structuredData = [
   robots={isNoindexArticle ? "noindex,follow" : undefined}
   structuredData={structuredData}
   ogType="article"
-  publishedTime={`${article.updated}T00:00:00+09:00`}
+  publishedTime={`${article.published ?? article.updated}T00:00:00+09:00`}
   modifiedTime={`${article.updated}T00:00:00+09:00`}
 >
   <article class="portal-article">
@@ -184,7 +184,7 @@ const structuredData = [
             ))}
           </ul>
           <p class="small">執筆・確認：ATAWI TEMPLE編集部　最終確認日：{article.updated.replaceAll("-", ".")}</p>
-          {isPriorityArticle && <p class="small">この記事は、主題に直接対応する一次情報を確認し、手順・会話例・注意点を個別に編集しています。</p>}
+          {isPriorityArticle && <p class="small">{article.sourceDisclosure ?? "この記事は、主題に直接対応する一次情報を確認し、手順・会話例・注意点を個別に編集しています。"}</p>}
           <p class="small"><a href="/editorial-policy/">編集方針</a>に基づき、宗派・法務・税務を一律に断定せず、確認先を示しています。</p>
         </section>
 
