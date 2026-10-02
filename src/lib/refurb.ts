@@ -22,6 +22,8 @@ export interface RefurbFacts {
   slug: string;
   grade: "T1" | "T2" | "T3";
   last_verified_at?: string;
+  last_updated?: string;
+  mountain_name?: string;
   lead: string;
   about: string[];
   history_sections: { heading: string; body: string }[];

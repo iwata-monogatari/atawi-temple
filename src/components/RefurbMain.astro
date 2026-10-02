@@ -12,9 +12,10 @@ interface Props {
   monogatariLinks: any[];
   visibleMediaPhotos: any[];
   publicationNotice: any;
+  legacyDatabaseAnchors?: boolean;
 }
 
-const { temple, refurb, monogatariLinks, visibleMediaPhotos, publicationNotice } = Astro.props;
+const { temple, refurb, monogatariLinks, visibleMediaPhotos, publicationNotice, legacyDatabaseAnchors = false } = Astro.props;
 
 const sectModule = getSectModule(refurb.sect_deity?.sect_module_id);
 const deityModule = getDeityModule(refurb.sect_deity?.deity_module_id);
@@ -42,6 +43,7 @@ const anchorLabels: Record<string, string> = {
 ---
 
 <section class="detail-panel" id="about">
+  {legacyDatabaseAnchors && <span id="overview" aria-hidden="true"></span>}
   <p class="section-number">{num()}</p>
   <h2>この寺院について</h2>
   {refurb.about.map((paragraph) => <p class="summary-copy">{paragraph}</p>)}
@@ -62,6 +64,7 @@ const anchorLabels: Record<string, string> = {
 
 {culturalAssets.length > 0 && (
   <section class="detail-panel" id="heritage">
+    {legacyDatabaseAnchors && <span id="treasures" aria-hidden="true"></span>}
     <p class="section-number">{num()}</p>
     <h2>文化財・見どころ</h2>
     <div class="heritage-list">
@@ -77,6 +80,7 @@ const anchorLabels: Record<string, string> = {
 
 {refurb.sect_deity && (
   <section class="detail-panel" id="sect-deity">
+    {legacyDatabaseAnchors && <span id="principal-image" aria-hidden="true"></span>}
     <p class="section-number">{num()}</p>
     <h2>宗派と本尊を知る</h2>
     <p class="sect-deity-intro">{refurb.sect_deity.intro}</p>
@@ -141,6 +145,7 @@ const anchorLabels: Record<string, string> = {
 
 {worship && (
   <section class="detail-panel" id="worship">
+    {legacyDatabaseAnchors && <span id="annual-services" aria-hidden="true"></span>}
     <p class="section-number">{num()}</p>
     <h2>年中行事・参拝の手引き</h2>
     {annualEvents.length > 0 && (
@@ -224,6 +229,7 @@ const anchorLabels: Record<string, string> = {
 </section>
 
 <section class="detail-panel sources-panel" id="sources">
+  {legacyDatabaseAnchors && <span id="references" aria-hidden="true"></span>}
   <p class="section-number">{num()}</p>
   <h2>出典・参考資料</h2>
   <ol class="source-records">

@@ -98,6 +98,8 @@ if (!temple) return Astro.redirect("/temples/");
 const templeResearchArticles = researchArticles.filter((article) => article.templeSlug === temple.slug);
 
 const refurb = getRefurbFacts(temple.slug);
+// 妙法寺は調査済み本文に一本化し、旧データベース本文との二重表示を避ける。
+const useSingleNarrative = temple.slug === "myohoji-ikeda" && !!refurb;
 
 const districtName = getDistrictName(temple.district_id);
 const district = getDistrictById(temple.district_id);
@@ -419,7 +421,9 @@ const showHouyouBridge = true;
         <div><dt>アクセス・交通手段</dt><dd class={accessInfo.startsWith("確認中") ? "pending-text" : ""}>{accessInfo}</dd></div>
         <div><dt>周辺の目印</dt><dd class={landmarkInfo.startsWith("確認中") ? "pending-text" : ""}>{landmarkInfo}</dd></div>
         <div><dt>文化財・特記事項</dt><dd class={culturalFeatureInfo.startsWith("確認中") ? "pending-text" : ""}>{culturalFeatureInfo}</dd></div>
+        {refurb?.mountain_name && <div><dt>山号</dt><dd>{refurb.mountain_name}</dd></div>}
         <div><dt>最終確認日</dt><dd>{temple.last_verified_at.replaceAll("-", ".")}</dd></div>
+        {refurb?.last_updated && <div><dt>ページ更新日</dt><dd>{refurb.last_updated.replaceAll("-", ".")}</dd></div>}
       </dl>
       <p class="temple-official-disclaimer">
         不明な項目は推測せず、確認中として表示しています。法要、参拝、駐車場、電話での連絡は、寺院の公式情報または寺院へ直接ご確認ください。
@@ -470,12 +474,27 @@ const showHouyouBridge = true;
       <div><span>所在地</span><strong>{temple.area}・磐田市</strong></div>
     </section>
 
-    <TempleDatabaseSections
-      temple={temple}
-      refurb={refurb}
-      districtName={districtName}
-      hasCulturalAssets={(refurb?.cultural_assets || visibleCulturalAssets).length > 0}
-    />
+    {useSingleNarrative ? (
+      <nav class="temple-page-toc" aria-label="ページ内目次">
+        <strong>この寺院の記録</strong>
+        <a href="#about">寺院概要</a>
+        <a href="#history">沿革</a>
+        <a href="#heritage">文化財・見どころ</a>
+        <a href="#sect-deity">宗派と本尊</a>
+        <a href="#community">地域とのつながり</a>
+        <a href="#worship">参拝・法要の確認</a>
+        <a href="#faq">よくある質問</a>
+        <a href="#photos">境内写真</a>
+        <a href="#sources">出典</a>
+      </nav>
+    ) : (
+      <TempleDatabaseSections
+        temple={temple}
+        refurb={refurb}
+        districtName={districtName}
+        hasCulturalAssets={(refurb?.cultural_assets || visibleCulturalAssets).length > 0}
+      />
+    )}
 
     <section class="section uploaded-photo-section" data-uploaded-temple-photos hidden>
       <div class="section-heading">
@@ -543,6 +562,7 @@ const showHouyouBridge = true;
             monogatariLinks={monogatariLinks}
             visibleMediaPhotos={visibleMediaPhotos}
             publicationNotice={publicationNotice}
+            legacyDatabaseAnchors={useSingleNarrative}
           />
         ) : (
         <>

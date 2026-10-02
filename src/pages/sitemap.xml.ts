@@ -4,6 +4,7 @@ import { publicGuideArticles, tokushuArticles } from "../lib/editorial";
 import { researchArticles } from "../lib/research-articles";
 import { portalCategories } from "../lib/portal-articles";
 import { templeKnowledge } from "../lib/temple-knowledge";
+import { getRefurbFacts } from "../lib/refurb";
 import { allDistricts, allSects, allTempleUpdates, allTemples } from "../lib/temples";
 
 const staticPaths = [
@@ -52,7 +53,7 @@ export const GET: APIRoute = ({ site }) => {
     ...researchArticles.map((article) => ({ path: `/research/${article.slug}/`, lastmod: article.updated })),
     ...allTemples.map((temple) => ({
       path: `/temples/${temple.slug}/`,
-      lastmod: temple.last_verified_at || latestSiteDate,
+      lastmod: getRefurbFacts(temple.slug)?.last_updated || temple.last_verified_at || latestSiteDate,
     })),
   ];
 
