@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（93本）
+## ブログ｜大石浩之のお寺ノート（94本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- 一日葬と直葬の違い｜磐田の実家整理で比較（2026-10-07）: https://temple.atawi.link/blog/20261007-ichinichisou-chokusou-iwata/
 - 晋山式とは？磐田の実家を離れる前に窓口確認（2026-10-06）: https://temple.atawi.link/blog/20261006-shinzanshiki-iwata-madoguchi/
 - 定光寺の千手観音展示｜磐田の実家を離れる前に（2026-10-05）: https://temple.atawi.link/blog/20261005-jokoji-senjukannon-tenji-iwata/
 - 法事の持ち物｜磐田の実家整理前に別保管（2026-10-05）: https://temple.atawi.link/blog/20261005-houji-mochimono-iwata-betsuhokan/
@@ -48,7 +49,6 @@
 - 磐田の人形供養｜10月17日と実家整理の段取り（2026-09-27）: https://temple.atawi.link/blog/20260927-iwata-ningyo-kuyo-1017/
 - 月命日とは？磐田の実家を空けた後の供養（2026-09-26）: https://temple.atawi.link/blog/20260926-tsukimeinichi-iwata-jikka/
 - 法事の引き出物の手配｜磐田の実家を空ける前に（2026-09-26）: https://temple.atawi.link/blog/20260926-houji-hikidemono-tehai-iwata/
-- 墓の花は生花と造花どちら？磐田の実家売却後（2026-09-25）: https://temple.atawi.link/blog/20260925-ohaka-hana-seika-zouka-iwata/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-10-06 時点・全826ページ）
+（2026-10-07 時点・全827ページ）
