@@ -107,7 +107,12 @@
   </url>
   <url>
     <loc>https://temple.atawi.link/blog/</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/blog/20261011-kyohon-shobun-iwata/</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -152,7 +157,7 @@
   </url>
   <url>
     <loc>https://temple.atawi.link/blog/20261005-houji-mochimono-iwata-betsuhokan/</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
