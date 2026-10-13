@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（103本）
+## ブログ｜大石浩之のお寺ノート（104本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- 線香の微煙と無香性の違い｜磐田の住み替え（2026-10-13）: https://temple.atawi.link/blog/20261013-senkou-bien-mukousei-iwata/
 - 弔い上げとは？磐田の実家売却と法要の区切り（2026-10-12）: https://temple.atawi.link/blog/20261012-tomuraiage-iwata-jikka/
 - 法事の予約方法｜磐田の実家売却前に伝えること（2026-10-12）: https://temple.atawi.link/blog/20261012-houji-yoyaku-houhou-iwata/
 - 経本の処分｜磐田の実家整理で手放す前に（2026-10-11）: https://temple.atawi.link/blog/20261011-kyohon-shobun-iwata/
@@ -48,7 +49,6 @@
 - 家族葬と一般葬の違い｜磐田の実家整理で比較（2026-10-02）: https://temple.atawi.link/blog/20261002-kazokusou-ippansou-iwata/
 - 菩提寺への住所変更連絡｜磐田の実家売却前に（2026-10-02）: https://temple.atawi.link/blog/20261002-bodaiji-juusho-henkou-iwata/
 - 磐田の達磨忌｜養福寺の10月と実家の法要予定（2026-10-01）: https://temple.atawi.link/blog/20261001-darumaki-iwata-yofukuji/
-- 仏事用掛け軸の保管方法｜磐田の実家を空ける前に（2026-09-30）: https://temple.atawi.link/blog/20260930-butsuji-kakejiku-hokan-iwata/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-10-12 時点・全836ページ）
+（2026-10-13 時点・全837ページ）
