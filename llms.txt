@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（106本）
+## ブログ｜大石浩之のお寺ノート（107本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- 祭祀承継者とは？磐田の実家を継ぐ人との関係（2026-10-15）: https://temple.atawi.link/blog/20261015-saishi-shokeisha-iwata-jikka/
 - 納骨の持ち物｜磐田の実家整理前に別保管（2026-10-15）: https://temple.atawi.link/blog/20261015-noukotsu-mochimono-iwata-betsuhokan/
 - 仏飯とは？磐田の実家を空ける前に考えるお供え（2026-10-14）: https://temple.atawi.link/blog/20261014-buppan-iwata-jikka-osonae/
 - 線香の微煙と無香性の違い｜磐田の住み替え（2026-10-13）: https://temple.atawi.link/blog/20261013-senkou-bien-mukousei-iwata/
@@ -48,7 +49,6 @@
 - 手元供養とは？磐田の実家を離れても残すつながり（2026-10-04）: https://temple.atawi.link/blog/20261004-temotokuyo-iwata-tsunagari/
 - 散骨と永代供養墓の違い｜磐田の実家売却前に比較（2026-10-04）: https://temple.atawi.link/blog/20261004-sankotsu-eitaikuyobo-iwata/
 - 仏具の磨き方｜磐田の実家整理で傷めない手順（2026-10-03）: https://temple.atawi.link/blog/20261003-butsugu-migakikata-iwata/
-- 家族葬と一般葬の違い｜磐田の実家整理で比較（2026-10-02）: https://temple.atawi.link/blog/20261002-kazokusou-ippansou-iwata/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-10-15 時点・全839ページ）
+（2026-10-15 時点・全840ページ）
