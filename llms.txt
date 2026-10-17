@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（109本）
+## ブログ｜大石浩之のお寺ノート（110本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- 檀信徒手帳とは？磐田の実家整理で残す寺の記録（2026-10-17）: https://temple.atawi.link/blog/20261017-danshinto-techo-iwata/
 - 香炉の灰の掃除方法｜磐田の実家を空ける前に（2026-10-16）: https://temple.atawi.link/blog/20261016-kouro-hai-souji-iwata/
 - 仏壇のLEDと白熱電球の違い｜磐田の住み替え（2026-10-16）: https://temple.atawi.link/blog/20261016-butsudan-led-hakunetsu-iwata/
 - 祭祀承継者とは？磐田の実家を継ぐ人との関係（2026-10-15）: https://temple.atawi.link/blog/20261015-saishi-shokeisha-iwata-jikka/
@@ -48,7 +49,6 @@
 - 晋山式とは？磐田の実家を離れる前に窓口確認（2026-10-06）: https://temple.atawi.link/blog/20261006-shinzanshiki-iwata-madoguchi/
 - 定光寺の千手観音展示｜磐田の実家を離れる前に（2026-10-05）: https://temple.atawi.link/blog/20261005-jokoji-senjukannon-tenji-iwata/
 - 法事の持ち物｜磐田の実家整理前に別保管（2026-10-05）: https://temple.atawi.link/blog/20261005-houji-mochimono-iwata-betsuhokan/
-- 手元供養とは？磐田の実家を離れても残すつながり（2026-10-04）: https://temple.atawi.link/blog/20261004-temotokuyo-iwata-tsunagari/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-10-16 時点・全842ページ）
+（2026-10-17 時点・全843ページ）
