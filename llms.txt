@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（115本）
+## ブログ｜大石浩之のお寺ノート（116本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- お寺の大掃除の持ち物｜磐田の実家整理と参加準備（2026-10-22）: https://temple.atawi.link/blog/20261022-otera-oosouji-mochimono-iwata/
 - 法名と戒名の違い｜磐田の実家整理で残す名前（2026-10-21）: https://temple.atawi.link/blog/20261021-homyo-kaimyo-chigai-iwata/
 - 磐田・西光寺の庭園｜実家整理の帰省に残すひと休み（2026-10-20）: https://temple.atawi.link/blog/20261020-saikoji-teien-iwata-kisei/
 - 年賀はがきの喪中交換｜磐田の実家整理で確認（2026-10-19）: https://temple.atawi.link/blog/20261019-nenga-hagaki-mochu-koukan-iwata/
@@ -48,7 +49,6 @@
 - 打敷とは？磐田の実家整理で見つかる仏壇の布（2026-10-10）: https://temple.atawi.link/blog/20261010-uchishiki-iwata-jikka/
 - オンライン法要と現地参列｜磐田の実家整理で比較（2026-10-10）: https://temple.atawi.link/blog/20261010-online-houyou-genchi-iwata/
 - お斎とは？磐田の実家整理で引き継ぐ寺の案内（2026-10-09）: https://temple.atawi.link/blog/20261009-otoki-jikka-iwata-annai/
-- 数珠の修理の頼み方｜磐田の実家整理で残す一本（2026-10-09）: https://temple.atawi.link/blog/20261009-juzu-shuuri-iwata/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-10-21 時点・全848ページ）
+（2026-10-22 時点・全849ページ）
