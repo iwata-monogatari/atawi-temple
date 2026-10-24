@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（118本）
+## ブログ｜大石浩之のお寺ノート（119本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- 法事のお車代の渡し方｜磐田の実家売却前に確認（2026-10-25）: https://temple.atawi.link/blog/20261025-houji-okurumadai-watashikata-iwata/
 - 油山寺の紅葉｜磐田への帰省日を考える秋（2026-10-24）: https://temple.atawi.link/blog/20261024-yusanji-kouyou-iwata-kisei/
 - 除夜の鐘とは？磐田の実家を離れて迎える年末（2026-10-23）: https://temple.atawi.link/blog/20261023-joyanokane-iwata-jikka/
 - お寺の大掃除の持ち物｜磐田の実家整理と参加準備（2026-10-22）: https://temple.atawi.link/blog/20261022-otera-oosouji-mochimono-iwata/
@@ -48,7 +49,6 @@
 - 法事の予約方法｜磐田の実家売却前に伝えること（2026-10-12）: https://temple.atawi.link/blog/20261012-houji-yoyaku-houhou-iwata/
 - 経本の処分｜磐田の実家整理で手放す前に（2026-10-11）: https://temple.atawi.link/blog/20261011-kyohon-shobun-iwata/
 - 仏壇の一時預かりと自宅保管｜磐田の実家売却前に比較（2026-10-11）: https://temple.atawi.link/blog/20261011-butsudan-ichijiazukari-jitaku-hokan-iwata/
-- 打敷とは？磐田の実家整理で見つかる仏壇の布（2026-10-10）: https://temple.atawi.link/blog/20261010-uchishiki-iwata-jikka/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-10-24 時点・全851ページ）
+（2026-10-25 時点・全852ページ）
