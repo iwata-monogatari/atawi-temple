@@ -1,3 +1,4 @@
+import { discoveryArticles } from "../lib/discovery-articles";
 import type { APIRoute } from "astro";
 import { blogLastUpdated, blogPosts } from "../lib/blog";
 import { publicGuideArticles, tokushuArticles } from "../lib/editorial";
@@ -10,6 +11,8 @@ import { allDistricts, allSects, allTempleUpdates, allTemples } from "../lib/tem
 const staticPaths = [
   "/",
   "/areas/",
+  "/readings/",
+  "/ranking/",
   "/map/",
   "/sects/",
   "/temples/",
@@ -41,6 +44,7 @@ export const GET: APIRoute = ({ site }) => {
     ...allTempleUpdates.map((update) => update.date),
   ].sort().at(-1) || "2026-07-17";
   const urls = [
+    ...discoveryArticles.map(a => ({path:`/readings/${a.slug}/`,lastmod:"2026-10-26"})),
     ...staticPaths.map((path) => ({ path, lastmod: latestSiteDate })),
     { path: blogIndexPath, lastmod: blogLastUpdated },
     ...blogPosts.map((post) => ({ path: `/blog/${post.slug}/`, lastmod: post.updated })),

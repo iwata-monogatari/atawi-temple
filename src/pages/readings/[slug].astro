@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import {discoveryArticles} from '../../lib/discovery-articles';
+import {getTempleBySlug,getVisibleTempleMediaPhotos} from '../../lib/temples';
+import {photoDescription} from '../../lib/discovery';
+export function getStaticPaths(){return discoveryArticles.map(article => ({params:{slug:article.slug},props:{article}}));}
+const {article} = Astro.props;
+const next = discoveryArticles.find(a => a.slug === article.next)!;
+const temple = getTempleBySlug(article.imageTemple)!;
+const photo = getVisibleTempleMediaPhotos(temple.slug)[0];
+const description = photo ? photoDescription(photo,temple) : null;
+---
+<BaseLayout title={`${article.title}｜ATAWI TEMPLE`} description={article.lead} ogType="article" publishedTime="2026-10-26" modifiedTime="2026-10-26" ogImage={photo?.src}>
+  <article class="discovery-article" data-reading-article>
+    <a href="/readings/">← まちの祈りを読む</a><p class="eyebrow">{article.theme}</p><h1>{article.title}</h1><p>{article.lead}</p><p class="discovery-reading-meta">編集：ATAWI TEMPLE編集部 ／ 2026年10月26日</p>
+    {photo && description && <figure><button class="discovery-photo-button" data-photo-open data-photo-src={photo.src} data-photo-caption={description.caption} aria-label={`${description.alt}を拡大`}><img src={photo.src} alt={description.alt} /><span aria-hidden="true">拡大 ↗</span></button><figcaption>{description.caption} <a href={`/temples/${temple.slug}/`}>寺院の記録を見る</a></figcaption></figure>}
+    <nav aria-label="記事の目次">{article.sections.map((s,i) => <a href={`#part-${i+1}`}>{s.title}</a>)}</nav>
+    {article.sections.map((s,i) => <section id={`part-${i+1}`}><h2>{s.title}</h2>{s.paragraphs.map(p => <p>{p}</p>)}</section>)}
+    <span data-reading-end></span>
+    <aside class="discovery-next"><p class="eyebrow">次の疑問を読んでみる</p><h2><a href={`/readings/${next.slug}/`} data-track-click="temple_reading_next">{next.title}</a></h2><p>{next.lead}</p></aside>
+    <section><h2>出典と、確かめられる範囲</h2><p>具体例は以下の資料を参照しています。写真の見方や調べ方は編集部が整理した提案です。近接する寺社の間に、未確認の歴史的関係を設定していません。</p><ul>{article.sources.map(s => <li><a href={s.url}>{s.title}</a></li>)}</ul></section>
+    <p><a href="https://shrine.atawi.link/" data-track-click="temple_to_shrine_reading">神社を調べたくなったら：ATAWI SHRINE（別サイト）→</a></p>
+    <p><a href="/readings/">読み物一覧へ戻る</a></p>
+  </article>
+</BaseLayout>

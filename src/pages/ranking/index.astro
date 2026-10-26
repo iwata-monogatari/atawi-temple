@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import {analyticsConfig} from '../../config/analytics';
+import {allTemples,hasDetailPage,getDistrictName,getTempleStatusLabel} from '../../lib/temples';
+import {discoverySummary} from '../../lib/discovery';
+const registry=Object.fromEntries(allTemples.filter(hasDetailPage).map(t=>[t.slug,{name:t.name,kana:t.name_kana,district:getDistrictName(t.district_id),status:getTempleStatusLabel(t),summary:discoverySummary(t)}]));
+---
+<BaseLayout title="最近よく読まれているお寺・アクセスランキング｜ATAWI TEMPLE" description="直近7日間の実際の寺院ページ閲覧を集計したアクセスランキングです。地域別紹介とは別の入口から磐田のお寺を知ることができます。">
+  <section class="discovery-ranking">
+    <p class="eyebrow">実際の閲覧から、次のお寺に出会う</p><h1>最近よく読まれているお寺</h1><p>直近7日間の寺院ページへのアクセスを集計。気になる名前から、写真やまちの物語を読み始めてみませんか。</p>
+    <p class="small">寺院の価値や参拝者数を評価する順位ではありません。</p>
+    <p id="ranking-status" class="discovery-ranking-status" role="status">実アクセスの集計結果を読み込んでいます。</p>
+    <p id="ranking-period"></p><p id="ranking-updated" class="small"></p>
+    <ol id="ranking-list" class="discovery-rank-list" aria-label="寺院アクセスランキング"></ol>
+    <button type="button" id="ranking-refresh">最新の集計結果を確認する</button>
+    <noscript><p>ランキングの表示にはJavaScriptが必要です。<a href="/temples/">全寺院一覧を見る</a></p></noscript>
+    <details><summary>集計方法について</summary><p>登録された寺院のうち、公開中の個別ページを対象にしています。同じ寺院への同一集計単位内の再閲覧を1件にまとめた「閲覧セッション数」の多い順です。</p><p>既存のアクセス集計基盤に合わせ、集計単位は日本時間の毎時00分・30分で区切る30分枠です。同じ端末・回線等からでも時間枠をまたぐと別件になる場合があります。人数を表すものではありません。</p><p>内部アクセス、判定できるボット等は除外します。計測できない閲覧や判定の限界があるため、すべてのアクセスを完全に把握した順位ではありません。</p><p>1時間ごとを目安に更新し、データの到着を待って確定した時間までの直近168時間を集計します。同数は同順位（1位・2位・2位・4位）。同数内は寺院ID順とし、上位10件の境界では同数の一部だけが掲載される場合があります。</p><p>矢印は24時間前の集計期間の順位との比較です。履歴がない間は比較を表示しません。データ不足時は集計中、更新に問題がある場合は遅延・停止を表示します。</p></details>
+    <nav class="discovery-link-band"><a href="/areas/">地域からお寺を探す</a><a href="/temples/">すべての寺院を見る</a><a href="/readings/">お寺から神社へ、まちの祈りを読む</a></nav>
+  </section>
+  <script is:inline type="application/json" id="ranking-config" set:html={JSON.stringify({endpoint:`${analyticsConfig.origin}/api/public/temple-ranking`,registry}).replace(/</g,'\\u003c')} />
+  <script>
+    const config=JSON.parse(document.getElementById('ranking-config')!.textContent!);
+    const status=document.getElementById('ranking-status')!;
+    const list=document.getElementById('ranking-list')!;
+    const period=document.getElementById('ranking-period')!;
+    const updated=document.getElementById('ranking-updated')!;
+    const button=document.getElementById('ranking-refresh') as HTMLButtonElement;
+    const date=(value:string)=>new Intl.DateTimeFormat('ja-JP',{timeZone:'Asia/Tokyo',dateStyle:'medium',timeStyle:'short'}).format(new Date(value));
+    function el(tag:string,text:string,className='') {const e=document.createElement(tag);e.textContent=text;e.className=className;return e;}
+    async function load() {
+      button.disabled=true;
+      const controller=new AbortController();const timeout=window.setTimeout(()=>controller.abort(),12000);
+      try {
+        const response=await fetch(config.endpoint,{signal:controller.signal,credentials:'omit'});
+        if (!response.ok) throw new Error('unavailable');
+        const data=await response.json();
+        list.replaceChildren();
+        if(data.start && data.end) period.textContent=`集計期間：${date(data.start)} 〜 ${date(data.end)}（日本時間）`;
+        if(data.generated_at) updated.textContent=`最終更新：${date(data.generated_at)}（日本時間）`;
+        if(data.status!=='ready') {status.textContent=data.status==='paused'?'更新を停止しています。集計状態の確認後に再開します。':data.status==='collecting'?'実アクセスを集計中です。7日分のデータがそろうと順位を表示します。':'現在、集計結果を取得できません。';return;}
+        status.textContent=data.delayed?'更新が遅れています。最後に正常集計した結果を表示しています。':'直近7日間によく読まれたお寺です。';
+        const rows=Array.isArray(data.rows)?data.rows:[];
+        if(!rows.length) status.textContent='この期間の集計対象アクセスはありません。';
+        for(const row of rows.slice(0,10)) {
+          const t=config.registry[row.slug];
+          if(!t || !Number.isInteger(row.rank) || !Number.isInteger(row.count) || row.count<1) continue;
+          const li=el('li','','discovery-rank-row');
+          const rank=el('div',`${row.rank}位`,'discovery-rank-number');
+          if(data.comparison_available) rank.append(el('span',row.entered?'ランクイン':row.change>0?`↑ ${row.change}`:row.change<0?`↓ ${Math.abs(row.change)}`:'変動なし','discovery-rank-change'));
+          const body=el('div','');const h=el('h2','');const a=document.createElement('a');a.href=`/temples/${row.slug}/`;a.textContent=t.name;a.dataset.trackClick='temple_ranking_detail';h.append(a);
+          body.append(h,el('span',`${t.kana} ／ ${t.district} ／ ${t.status}`,'small'),el('p',t.summary));
+          li.append(rank,body,el('span',`${row.count.toLocaleString()} 閲覧セッション`,'discovery-rank-count'));list.append(li);
+        }
+      } catch {list.replaceChildren();status.textContent='集計結果を取得できませんでした。しばらくしてから再度ご確認ください。';}
+      finally {window.clearTimeout(timeout);button.disabled=false;}
+    }
+    button.addEventListener('click',load);load();
+  </script>
+</BaseLayout>

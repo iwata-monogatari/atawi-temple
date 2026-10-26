@@ -1,0 +1,14 @@
+---
+import { orderedPhotos } from '../lib/discovery';
+import type { Temple } from '../lib/temples';
+const {temple} = Astro.props as {temple:Temple};
+const photos = orderedPhotos(temple);
+---
+{photos.length > 0 && <section class="discovery-photos" aria-labelledby="discovery-photo-title">
+  <div class="section-heading"><div><p class="eyebrow">入口から、細部へ</p><h2 id="discovery-photo-title">写真で出会う、{temple.name}</h2></div><span class="small">写真を押すと拡大できます</span></div>
+  <div class="discovery-photo-grid">
+    {photos.slice(0,6).map((photo,i) => <figure><button type="button" class="discovery-photo-button" data-photo-open data-photo-src={photo.src} data-photo-caption={photo.caption} aria-label={`${photo.alt}を拡大`}><img src={photo.src} alt={photo.alt} loading={i === 0 ? 'eager' : 'lazy'} decoding="async" /><span aria-hidden="true">拡大 ↗</span></button><figcaption><strong>{photo.alt}</strong><p>{photo.caption}</p></figcaption></figure>)}
+  </div>
+  <p><a href="#photos">ほかの境内写真と記録も見る →</a></p>
+  <p class="small">掲載時点の現地写真です。現在の公開範囲・参拝条件を示すものではありません。</p>
+</section>}

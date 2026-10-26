@@ -203,7 +203,7 @@ const anchorLabels: Record<string, string> = {
     <div class="photo-record-list">
       {visibleMediaPhotos.map((photo) => (
         <figure>
-          <img src={photo.src} alt={photo.alt} loading="lazy" />
+          <button type="button" class="discovery-photo-button" data-photo-open data-photo-src={photo.src} data-photo-caption={photo.caption} aria-label={`${photo.alt || temple.name + 'の写真'}を拡大`}><img src={photo.src} alt={photo.alt} loading="lazy" /><span aria-hidden="true">拡大 ↗</span></button>
           <figcaption>
             <strong>{getPhotoCategory(photo.category_id)?.label || "現地写真"}</strong>
             <span>{photo.caption}</span>
