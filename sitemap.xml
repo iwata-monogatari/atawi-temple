@@ -1,12 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://temple.atawi.link/readings/temple-and-nearby-shrine/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/readings/gate-and-torii/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/readings/kami-and-buddha-history/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://temple.atawi.link/</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://temple.atawi.link/areas/</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/readings/</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://temple.atawi.link/ranking/</loc>
     <lastmod>2026-07-25</lastmod>
     <changefreq>weekly</changefreq>
   </url>
