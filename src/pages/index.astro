@@ -1,12 +1,12 @@
 ---
 import DiscoveryReading from "../components/DiscoveryReading.astro";
 import ReflectionPassage from "../components/ReflectionPassage.astro";
+import {recentSiteUpdates, siteUpdatesLabel} from "../lib/updates";
 import { discoverySummary } from "../lib/discovery";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { fromTempleUrl } from "../lib/editorial";
 import {
   allTemples,
-  allTempleUpdates,
   countTemplesByStatus,
   countUnassignedDistrictTemples,
   countTemplesByDistrict,
@@ -17,7 +17,6 @@ import {
   getTempleMediaBySlug,
   getVisibleTempleMediaPhotos,
   hasDetailPage,
-  isCemeteryServiceInfo,
   isUnknownValue,
 } from "../lib/temples";
 import { countTemplesByPurpose, purposeSearchUrl } from "../lib/purposes";
@@ -48,11 +47,7 @@ const districtCards = districtCounts.map((district) => ({
 const allSectCounts = countTemplesBySect();
 const statusCounts = countTemplesByStatus();
 const unknownDistrictCount = countUnassignedDistrictTemples();
-const recentUpdates = allTempleUpdates.slice(0, 5).map((update) => ({
-  ...update,
-  summary: isCemeteryServiceInfo(update.summary) ? "現地写真と基礎情報を更新しました。" : update.summary,
-  temple: getTempleBySlug(update.temple_slug),
-}));
+const recentUpdates = recentSiteUpdates;
 
 const pickupExcludedSlugs = new Set(["shinshinkyo-honbu-mitsuke"]);
 const pinnedPickupSlugs = ["myosenji-araide"];
@@ -549,11 +544,11 @@ const homeFudosanUrl = fromTempleUrl("home_concern");
     </div>
   </section>
 
-  <section class="section updates-section">
+  <section class="section updates-section" id="updates">
     <div class="section-heading">
       <div>
         <h2>更新情報</h2>
-        <span class="small" data-latest-updates-status>寺院ページの追加・更新 / 新着5件</span>
+        <span class="small" data-latest-updates-status>{siteUpdatesLabel} / {recentUpdates[0]?.date.replaceAll("-", ".")}時点</span>
       </div>
       <a href="/updates/">6件目以降を見る</a>
     </div>
@@ -564,10 +559,10 @@ const homeFudosanUrl = fromTempleUrl("home_concern");
             <time datetime={update.date}>{update.date.replaceAll("-", ".")}</time>
             <div>
               <h3>
-                <a href={"href" in update && update.href ? update.href : `/temples/${update.temple_slug}/`}>{update.title}</a>
+                <a href={update.href}>{update.title}</a>
               </h3>
               <p>{update.summary}</p>
-              {update.temple && <span class="small">{update.temple.name} / {update.temple.area}</span>}
+              {update.temple_name && <span class="small">{update.temple_name} / {update.temple_area}</span>}
             </div>
           </article>
         ))
@@ -640,8 +635,8 @@ const homeFudosanUrl = fromTempleUrl("home_concern");
         if (status instanceof HTMLElement) {
           const latestDate = text(updates[0]?.date).split("-").join(".");
           status.textContent = latestDate
-            ? `寺院ページの追加・更新 / ${latestDate}時点`
-            : "寺院ページの追加・更新 / 自動取得";
+            ? `寺院・研究・ブログの公開・更新 / ${latestDate}時点`
+            : "寺院・研究・ブログの公開・更新 / 自動取得";
         }
       }
 
