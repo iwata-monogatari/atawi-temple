@@ -1,9 +1,13 @@
 ---
 import {discoveryArticles,relatedDiscovery} from '../lib/discovery-articles';
+import {getVisibleTempleMediaPhotos} from '../lib/temples';
 const {slug} = Astro.props as {slug?:string};
 const articles = slug ? relatedDiscovery(slug) : discoveryArticles;
 ---
 {articles.length > 0 && <section class="discovery-reading" aria-labelledby="discovery-reading-title">
   <div class="section-heading"><div><p class="eyebrow">お寺から、神社へ。関心を広げる</p><h2 id="discovery-reading-title">もう少し、まちの祈りを知る</h2></div><a href="/readings/">読み物一覧</a></div>
-  <div class="discovery-reading-grid">{articles.map(a => <article class="discovery-reading-card"><span class="discovery-reading-meta">{a.theme}</span><h3><a href={`/readings/${a.slug}/`} data-track-click="temple_reading_open">{a.title}</a></h3><p>{a.lead}</p><a href={`/readings/${a.slug}/`} data-track-click="temple_reading_open">読み進める →</a></article>)}</div>
+  <div class="discovery-reading-grid">{articles.map(a => {
+    const photo=getVisibleTempleMediaPhotos(a.imageTemple)[0];
+    return <article class="discovery-reading-card">{photo && <a class="reading-card-image" href={`/readings/${a.slug}/`} aria-label={`${a.title}を読む`} data-track-click="temple_reading_open"><img src={photo.src} alt={photo.alt} loading="lazy" decoding="async" /></a>}<span class="discovery-reading-meta">{a.theme}</span><h3><a href={`/readings/${a.slug}/`} data-track-click="temple_reading_open">{a.title}</a></h3><p>{a.lead}</p><a href={`/readings/${a.slug}/`} data-track-click="temple_reading_open">読み進める →</a></article>;
+  })}</div>
 </section>}
