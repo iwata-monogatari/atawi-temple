@@ -1,11 +1,12 @@
 ---
 import DiscoveryReading from "../components/DiscoveryReading.astro";
+import ReflectionPassage from "../components/ReflectionPassage.astro";
+import {recentSiteUpdates, siteUpdatesLabel} from "../lib/updates";
 import { discoverySummary } from "../lib/discovery";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { fromTempleUrl } from "../lib/editorial";
 import {
   allTemples,
-  allTempleUpdates,
   countTemplesByStatus,
   countUnassignedDistrictTemples,
   countTemplesByDistrict,
@@ -16,7 +17,6 @@ import {
   getTempleMediaBySlug,
   getVisibleTempleMediaPhotos,
   hasDetailPage,
-  isCemeteryServiceInfo,
   isUnknownValue,
 } from "../lib/temples";
 import { countTemplesByPurpose, purposeSearchUrl } from "../lib/purposes";
@@ -47,11 +47,7 @@ const districtCards = districtCounts.map((district) => ({
 const allSectCounts = countTemplesBySect();
 const statusCounts = countTemplesByStatus();
 const unknownDistrictCount = countUnassignedDistrictTemples();
-const recentUpdates = allTempleUpdates.slice(0, 5).map((update) => ({
-  ...update,
-  summary: isCemeteryServiceInfo(update.summary) ? "現地写真と基礎情報を更新しました。" : update.summary,
-  temple: getTempleBySlug(update.temple_slug),
-}));
+const recentUpdates = recentSiteUpdates;
 
 const pickupExcludedSlugs = new Set(["shinshinkyo-honbu-mitsuke"]);
 const pinnedPickupSlugs = ["myosenji-araide"];
@@ -153,11 +149,12 @@ const homeFudosanUrl = fromTempleUrl("home_concern");
       ))}
     </div>
     <div class="hero-content">
-      <p class="eyebrow">公開資料と現地確認をもとに整理しています</p>
+      <p class="eyebrow">磐田・遠州　美と祈りを受け継ぐ</p>
       <span class="hero-rule" aria-hidden="true"></span>
-      <h1>いつものまちに、<br />まだ知らないお寺がある。</h1>
+      <h1>祈りの美しさに、<br />心をひらく。</h1>
       <p class="brand-name">ATAWI TEMPLE</p>
-      <p class="hero-support-copy">磐田のお寺を、写真や地域の物語から知ってみませんか。近くのお寺も、家族の菩提寺も、名前や地区から探せます。</p>
+      <p class="hero-poem">受け継がれた時間に、家族を想う。</p>
+      <p class="hero-support-copy">磐田のお寺に息づく、建築、庭、歴史。<br />写真と言葉をたどりながら、祈りの深さと、<br class="desktop-break" />家族のつながりにふれてみませんか。</p>
       {firstHeroSlide && (
         <div class="hero-photo-meta" aria-live="polite">
           <a id="hero-slide-link" href={firstHeroSlide.href} data-track-click="temple_detail_click">
@@ -270,9 +267,9 @@ const homeFudosanUrl = fromTempleUrl("home_concern");
     </script>
   </section>
 
-  <section class="section">
+  <section class="section splendor-pickup">
     <div class="section-heading">
-      <h2>写真とことばで知る、磐田のお寺</h2>
+      <div><p class="eyebrow">一寺一景、それぞれの物語</p><h2>写真とことばで知る、磐田のお寺</h2></div>
       <a href="/temples/">ATAWI TEMPLEに登録されている寺院をすべて見る</a>
     </div>
     <div id="pickup-temples" class="pickup-grid" data-pickup-count="6">
@@ -380,8 +377,10 @@ const homeFudosanUrl = fromTempleUrl("home_concern");
       renderPickupTemples();
     </script>
   </section>
-  <nav class="discovery-link-band section" aria-label="もうひとつの探し方"><a href="/ranking/" data-track-click="temple_ranking_open">最近よく読まれているお寺・アクセスランキング →</a><a href="/readings/">お寺から神社へ、まちの祈りを読む →</a></nav>
+  <ReflectionPassage kind="wisdom" />
+  <ReflectionPassage kind="family" />
   <DiscoveryReading />
+  <nav class="discovery-link-band section splendor-ranking-entry" aria-label="もうひとつの探し方"><div><p class="eyebrow">いま、関心が寄せられているお寺</p><h2>次に出会う、ひとつのお寺。</h2><p>実際の閲覧から、最近よく読まれているお寺をご紹介します。</p></div><a class="button-link" href="/ranking/" data-track-click="temple_ranking_open">アクセスランキングを見る →</a></nav>
 
 
   <section class="section home-purpose-entries" aria-labelledby="home-purpose-title">
@@ -545,11 +544,11 @@ const homeFudosanUrl = fromTempleUrl("home_concern");
     </div>
   </section>
 
-  <section class="section updates-section">
+  <section class="section updates-section" id="updates">
     <div class="section-heading">
       <div>
         <h2>更新情報</h2>
-        <span class="small" data-latest-updates-status>寺院ページの追加・更新 / 新着5件</span>
+        <span class="small" data-latest-updates-status>{siteUpdatesLabel} / {recentUpdates[0]?.date.replaceAll("-", ".")}時点</span>
       </div>
       <a href="/updates/">6件目以降を見る</a>
     </div>
@@ -560,10 +559,10 @@ const homeFudosanUrl = fromTempleUrl("home_concern");
             <time datetime={update.date}>{update.date.replaceAll("-", ".")}</time>
             <div>
               <h3>
-                <a href={"href" in update && update.href ? update.href : `/temples/${update.temple_slug}/`}>{update.title}</a>
+                <a href={update.href}>{update.title}</a>
               </h3>
               <p>{update.summary}</p>
-              {update.temple && <span class="small">{update.temple.name} / {update.temple.area}</span>}
+              {update.temple_name && <span class="small">{update.temple_name} / {update.temple_area}</span>}
             </div>
           </article>
         ))
@@ -636,8 +635,8 @@ const homeFudosanUrl = fromTempleUrl("home_concern");
         if (status instanceof HTMLElement) {
           const latestDate = text(updates[0]?.date).split("-").join(".");
           status.textContent = latestDate
-            ? `寺院ページの追加・更新 / ${latestDate}時点`
-            : "寺院ページの追加・更新 / 自動取得";
+            ? `寺院・研究・ブログの公開・更新 / ${latestDate}時点`
+            : "寺院・研究・ブログの公開・更新 / 自動取得";
         }
       }
 

@@ -1,22 +1,18 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { allTempleUpdates, getTempleBySlug, isCemeteryServiceInfo } from "../../lib/temples";
+import { allSiteUpdates, HOME_UPDATE_LIMIT } from "../../lib/updates";
 
-const laterUpdates = allTempleUpdates.map((update) => ({
-  ...update,
-  summary: isCemeteryServiceInfo(update.summary) ? "現地写真と基礎情報を更新しました。" : update.summary,
-  temple: getTempleBySlug(update.temple_slug),
-}));
+const laterUpdates = allSiteUpdates.slice(HOME_UPDATE_LIMIT);
 ---
 
 <BaseLayout
   title="更新情報一覧 | ATAWI TEMPLE"
-  description="ATAWI TEMPLEの更新情報を、トップページ掲載分の新着5件以降から新しい順に掲載しています。"
+  description="寺院・研究・ブログの公開と更新を、トップページ掲載分に続く6件目から新しい順に掲載しています。"
 >
   <section class="page-title">
     <p class="eyebrow">Updates</p>
     <h1>更新情報一覧</h1>
-    <p>トップページに掲載している新着5件以降の更新を、新しい順に掲載しています。</p>
+    <p>寺院・研究・ブログの公開と更新をまとめています。トップページの新着5件に続く6件目から、新しい順に掲載しています。ブログは記事ごとの最終公開・更新日で掲載します。</p>
   </section>
 
   <section class="section">
@@ -33,10 +29,10 @@ const laterUpdates = allTempleUpdates.map((update) => ({
                 <time datetime={update.date}>{update.date.replaceAll("-", ".")}</time>
                 <div>
                   <h3>
-                    <a href={"href" in update && update.href ? update.href : `/temples/${update.temple_slug}/`}>{update.title}</a>
+                    <a href={update.href}>{update.title}</a>
                   </h3>
                   <p>{update.summary}</p>
-                  {update.temple && <span class="small">{update.temple.name} / {update.temple.area}</span>}
+                  {update.temple_name && <span class="small">{update.temple_name} / {update.temple_area}</span>}
                 </div>
               </article>
             ))

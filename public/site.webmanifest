@@ -4,8 +4,8 @@
   "description": "磐田市内の寺院情報を整理する地域寺院データベースです。",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f7f4ee",
-  "theme_color": "#2f4b2b",
+  "background_color": "#f7f0e2",
+  "theme_color": "#2d1838",
   "icons": [
     {
       "src": "/favicon.svg",

@@ -1,0 +1,20 @@
+---
+import {getTempleBySlug, getVisibleTempleMediaPhotos, type Temple} from '../lib/temples';
+interface Props { kind:'wisdom'|'family'; temple?:Temple; }
+const {kind,temple}=Astro.props;
+const family=kind==='family';
+const imageTemple=getTempleBySlug(family?'gyokoji-ikeda':'ioji-kamada');
+const photos=imageTemple?getVisibleTempleMediaPhotos(imageTemple.slug):[];
+const photo=photos[family?3:10]||photos[0];
+const titleId=family?'reflection-family-title':'reflection-wisdom-title';
+---
+<section class:list={['reflection-passage',family?'reflection-passage--family':'reflection-passage--wisdom',{'reflection-passage--detail':!!temple}]} aria-labelledby={titleId}>
+  {!temple && photo && imageTemple && <figure class="reflection-image"><button type="button" class="discovery-photo-button" data-photo-open data-photo-src={photo.src} data-photo-caption={photo.caption||photo.alt} aria-label={`${photo.alt}を拡大`}><img src={photo.src} alt={photo.alt} loading="lazy" decoding="async" /><span aria-hidden="true">拡大 ↗</span></button><figcaption>{photo.alt} ／ <a href={`/temples/${imageTemple.slug}/`}>{imageTemple.name}</a></figcaption></figure>}
+  <div class="reflection-copy">
+    <p class="eyebrow">{family?'受け継ぐ、祈りと記憶':'美しさの奥へ、教えの入口へ'}</p>
+    <span class="ornament-rule" aria-hidden="true">◇</span>
+    <h2 id={titleId}>{family?<>あの人と歩いた境内を、<br />覚えていますか。</>:<>美しさに心をひらき、<br />祈りの意味をたどる。</>}</h2>
+    {family?<><p>家族から聞いたお寺の名前。帰省の折に手を合わせた場所。ふと思い出す風景の中に、ご先祖から受け継いだ時間があるかもしれません。</p><p>誰と訪れ、どんな話をしたでしょう。その記憶を家族と話すことから、次の世代へ伝える一歩が始まります。</p><div class="reflection-actions"><a class="button-link" href="/topics/bodaiji/bodaiji-02/">家族のお寺をたどる →</a><a href="/guide/family-checklist/">家族に伝えたいことを確かめる →</a></div></>:<><p>屋根の曲線、木々の光、刻まれた文字。ひとつの細部に目をとめると、「なぜ、この形なのだろう」という問いが生まれます。</p><p>{temple?`${temple.name}の記録から、そのお寺が属する${temple.sect}へ。`:'写真から由緒へ、由緒から宗派ごとの教えへ。'}真理や悟りについて知りたくなったら、それぞれの教えの言葉にふれてみませんか。</p><div class="reflection-actions"><a class="button-link" href="/knowledge/sects/">宗派と教えを知る入口へ →</a><a href="/knowledge/terms/">お寺の言葉をひもとく →</a></div></>}
+    <p class="reflection-note">{family?'家族の記憶をたどる、編集部からの問いかけです。':'教えや儀礼は宗派・寺院によって異なります。宗派解説と各寺院の出典からお確かめください。'}</p>
+  </div>
+</section>
