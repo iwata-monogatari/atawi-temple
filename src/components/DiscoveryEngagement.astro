@@ -1,0 +1,24 @@
+<script>
+  // Count foreground reading, allowing quiet reading but excluding idle tabs.
+  if (/^\/(temples\/[^/]+|readings(?:\/[^/]+)?|ranking)\/?$/.test(location.pathname)) {
+    const track = (name:string) => (window as any).fgaTrack?.(name);
+    let lastInteraction = Date.now(), lastTick = Date.now(), active = 0;
+    const touch = () => {lastInteraction = Date.now();};
+    ['pointerdown','pointermove','scroll','keydown','touchstart'].forEach(name => window.addEventListener(name,touch,{passive:true}));
+    document.addEventListener('visibilitychange', () => {lastTick=Date.now(); if (!document.hidden) touch();});
+    window.setInterval(() => {
+      const now=Date.now(), delta=Math.min(now-lastTick,5000); lastTick=now;
+      if (!document.hidden && now-lastInteraction<60000) active+=delta;
+      if (active>=15000 && typeof (window as any).fgaTrack==='function') {track('temple_active_15s');active-=15000;}
+    },1000);
+    const end=document.querySelector('[data-reading-end]');
+    if (end && 'IntersectionObserver' in window) {
+      let timer:number | undefined;
+      const observer=new IntersectionObserver(entries => {for (const entry of entries) {
+        if (timer) window.clearTimeout(timer);
+        if (entry.isIntersecting) timer=window.setTimeout(() => {if (!document.hidden) {track('temple_reading_end');observer.disconnect();}},2000);
+      }},{threshold:0});
+      observer.observe(end);
+    }
+  }
+</script>

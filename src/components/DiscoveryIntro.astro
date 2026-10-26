@@ -1,0 +1,15 @@
+---
+import DiscoveryGlossary from './DiscoveryGlossary.astro';
+import { discoveryClues } from '../lib/discovery';
+import type { Temple } from '../lib/temples';
+const {temple} = Astro.props as {temple:Temple};
+const clues = discoveryClues(temple);
+---
+<section class="discovery-intro" aria-labelledby="discovery-title">
+  <p class="eyebrow">ひとつのお寺から、まちを知る</p>
+  <h2 id="discovery-title">{temple.name}を知る手がかり</h2>
+  <div class="discovery-clues">
+    {clues.map((clue,i) => <article><span class="discovery-number">0{i+1}</span><h3>{clue.title}</h3><p>{clue.body}</p><a href={clue.href} data-track-click="temple_story_continue">記録を読み進める →</a></article>)}
+  </div>
+  <DiscoveryGlossary />
+</section>

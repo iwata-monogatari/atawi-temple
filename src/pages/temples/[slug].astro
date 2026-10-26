@@ -1,4 +1,8 @@
 ---
+import DiscoveryIntro from "../../components/DiscoveryIntro.astro";
+import DiscoveryPhotos from "../../components/DiscoveryPhotos.astro";
+import DiscoveryReading from "../../components/DiscoveryReading.astro";
+import { relatedReason } from "../../lib/discovery";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HouyouKiseiBridge from "../../components/HouyouKiseiBridge.astro";
 import RefurbMain from "../../components/RefurbMain.astro";
@@ -361,7 +365,7 @@ const showHouyouBridge = true;
           {showKana && <p class="temple-kana">{temple.name_kana}</p>}
         </div>
         <div class="research-badge">
-          <span>ページ充実度</span>
+          <span>掲載資料の確認状況</span>
           <strong>{refurb ? getGradeLabel(refurb.grade) : media ? "現地写真・資料あり" : "基礎情報・調査中"}</strong>
           <small>最終確認 {(refurb?.last_verified_at || temple.last_verified_at).replaceAll("-", ".")}</small>
         </div>
@@ -383,7 +387,11 @@ const showHouyouBridge = true;
       </div>
     </header>
 
-    <section class="temple-basic-panel" aria-label="寺院の基本情報と確認状況">
+    <DiscoveryPhotos temple={temple} />
+    <DiscoveryIntro temple={temple} />
+    <DiscoveryReading slug={temple.slug} />
+    <nav class="discovery-link-band" aria-label="記録の入口"><a href="#temple-basic">基本情報・参拝の確認</a><a href="#history">詳しい歴史</a><a href="#sources">出典</a><a href="/ranking/">アクセスランキングへ</a></nav>
+    <section id="temple-basic" class="temple-basic-panel" aria-label="寺院の基本情報と確認状況">
       <div class="section-heading">
         <div>
           <p class="eyebrow">Basic Information</p>
@@ -432,39 +440,6 @@ const showHouyouBridge = true;
 
     {showHouyouBridge && <HouyouKiseiBridge variant="temple-top" />}
 
-    <section class="temple-visual" aria-label={`${temple.name}の写真`}>
-      {coverPhoto ? (
-        <>
-          <figure class="temple-cover">
-            <img src={coverPhoto.src} alt={coverPhoto.alt || `${temple.name}の主写真`} loading="eager" />
-            <figcaption>現地写真・{getPhotoCategory(coverPhoto.category_id)?.label || "寺院外観"}</figcaption>
-          </figure>
-          <div class="temple-photo-strip">
-            {galleryPhotos.slice(0, 5).map((photo) => (
-              <figure>
-                <img src={photo.src} alt={photo.alt} loading="lazy" />
-                <figcaption>{getPhotoCategory(photo.category_id)?.label || "現地写真"}</figcaption>
-              </figure>
-            ))}
-          </div>
-        </>
-      ) : (
-        <div class="pending-photo">
-          {publicationNotice ? (
-            <>
-              <strong>写真掲載を見合わせています</strong>
-              <span>関係者からの明確な意思表示を受け、当サイトでの写真掲載を行っていません。</span>
-            </>
-          ) : (
-            <>
-              <strong>写真を準備しています</strong>
-              <span>現地訪問後に、本堂・境内・入口・説明板の写真を掲載します。</span>
-            </>
-          )}
-        </div>
-      )}
-    </section>
-
     <section class="temple-fact-band" aria-label="寺院の要点">
       <div><span>宗派</span><strong>{temple.sect}</strong></div>
       <div><span>創建・年代</span><strong class={visibleFoundedPeriod === "調査中" ? "pending-text" : ""}>{visibleFoundedPeriod}</strong></div>
@@ -488,12 +463,15 @@ const showHouyouBridge = true;
         <a href="#sources">出典</a>
       </nav>
     ) : (
+      <details class="discovery-database">
+      <summary>詳しい寺院台帳を開く（由緒・本尊・調査記録）</summary>
       <TempleDatabaseSections
         temple={temple}
         refurb={refurb}
         districtName={districtName}
         hasCulturalAssets={(refurb?.cultural_assets || visibleCulturalAssets).length > 0}
       />
+      </details>
     )}
 
     <section class="section uploaded-photo-section" data-uploaded-temple-photos hidden>
@@ -554,7 +532,7 @@ const showHouyouBridge = true;
     </script>
 
     <div class="temple-content-grid">
-      <main class="temple-main-content">
+      <div class="temple-main-content">
         {refurb ? (
           <RefurbMain
             temple={temple}
@@ -566,7 +544,7 @@ const showHouyouBridge = true;
           />
         ) : (
         <>
-        <section class="detail-panel">
+        <section class="detail-panel" id="about">
           <p class="section-number">01</p>
           <h2>この寺院について</h2>
           <p class="summary-copy">{visibleHistorySummary}</p>
@@ -674,7 +652,7 @@ const showHouyouBridge = true;
           )}
         </section>
 
-        <section class="detail-panel">
+        <section class="detail-panel" id="photos">
           <p class="section-number">06</p>
           <h2>写真で見る境内</h2>
           {visibleMediaPhotos.length > 0 ? (
@@ -706,7 +684,7 @@ const showHouyouBridge = true;
           )}
         </section>
 
-        <section class="detail-panel sources-panel">
+        <section class="detail-panel sources-panel" id="sources">
           <p class="section-number">07</p>
           <h2>出典・参考資料</h2>
           <ol class="source-records">
@@ -757,7 +735,7 @@ const showHouyouBridge = true;
           </section>
         )}
 
-      </main>
+      </div>
 
       <aside class="temple-sidebar">
         <section class="side-panel">
@@ -870,6 +848,7 @@ const showHouyouBridge = true;
         });
       })();
     </script>
+    <span data-reading-end></span>
     {sameDistrictTemples.length > 0 && (
       <section class="same-district-temples">
         <div class="section-heading">
@@ -893,7 +872,7 @@ const showHouyouBridge = true;
               )}
               <div class="related-temple-card-body">
                 <span>{getTempleStatusLabel(item)}</span>
-                <strong>{item.name}</strong>
+                <strong>{item.name}</strong><p class="related-temple-reason">{relatedReason(temple,item,"area")}</p>
                 <em>{item.area} / {item.sect}</em>
               </div>
             </a>
@@ -924,7 +903,7 @@ const showHouyouBridge = true;
               )}
               <div class="related-temple-card-body">
                 <span>{getTempleStatusLabel(item)}</span>
-                <strong>{item.name}</strong>
+                <strong>{item.name}</strong><p class="related-temple-reason">{relatedReason(temple,item,"sect")}</p>
                 <em>{getDistrictName(item.district_id)} / {item.sect}</em>
               </div>
             </a>
@@ -955,7 +934,7 @@ const showHouyouBridge = true;
               )}
               <div class="related-temple-card-body">
                 <span>{getTempleStatusLabel(item)}</span>
-                <strong>{item.name}</strong>
+                <strong>{item.name}</strong><p class="related-temple-reason">{relatedReason(temple,item,"nearby")}</p>
                 <em>{getDistrictName(item.district_id)} / {item.sect}</em>
               </div>
             </a>

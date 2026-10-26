@@ -193,13 +193,12 @@ if (chionsaiHtml) {
 }
 
 if (indexHtml) {
-  const pickupIndex = indexHtml.indexOf("ピックアップ寺院");
+  const pickupIndex = indexHtml.indexOf('id="pickup-temples"');
   const districtIndex = indexHtml.indexOf("9地区から探す");
   const updatesIndex = indexHtml.indexOf("更新情報");
-  // 2026-08-21 に9地区の導線をトップ寄りへ移した（commit bf78ff4f）。
-  // 期待する順序は「9地区 → ピックアップ寺院 → 更新情報」。
-  if (!(districtIndex >= 0 && pickupIndex > districtIndex && updatesIndex > pickupIndex)) {
-    errors.push("index: primary flow must be districts, pickup temples, then recent updates");
+  // 滞在時間向上の改修：既存6件を先に見せ、地区別検索への道筋を残す。
+  if (!(pickupIndex >= 0 && districtIndex > pickupIndex && updatesIndex > districtIndex)) {
+    errors.push("index: primary flow must be pickup temples, districts, then recent updates");
   }
   if (indexHtml.includes("菩提寺を確認したら、実家も一度だけ見ておく")) {
     errors.push("index: related service promotion must not interrupt the primary discovery flow");

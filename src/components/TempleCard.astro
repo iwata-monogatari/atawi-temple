@@ -1,8 +1,8 @@
 ---
+import { discoverySummary } from "../lib/discovery";
 import type { Temple } from "../lib/temples";
 import {
   getDistrictName,
-  getTempleDisplaySummary,
   getTempleMediaBySlug,
   getTempleStatusLabel,
   getVisibleTempleMediaPhotos,
@@ -30,7 +30,7 @@ const hasCardImage = Boolean(cardImage);
 const cardImageAlt = cardPhoto?.alt ?? temple.name + "の代表写真";
 const detailPageAvailable = hasDetailPage(temple);
 const isAreaResult = variant === "area-result";
-const cardSummary = getTempleDisplaySummary(temple, districtName);
+const cardSummary = discoverySummary(temple);
 const mainDeity = isCemeteryServiceInfo(temple.main_deity) ? null : temple.main_deity;
 const foundedPeriod = "founded_period" in temple && !isCemeteryServiceInfo(temple.founded_period)
   ? temple.founded_period
@@ -92,7 +92,7 @@ const factItems = isAreaResult
     </dl>
     <p class="temple-card-summary">{cardSummary}</p>
     {detailPageAvailable && (
-      <a class="temple-card-action" href={`/temples/${temple.slug}/`} data-track-click="temple_detail_click">詳細を見る</a>
+      <a class="temple-card-action" href={`/temples/${temple.slug}/`} data-track-click="temple_detail_click">このお寺を知る</a>
     )}
     {!detailPageAvailable && <p class="pending-text">個別ページは公開していません。検索記録として表示しています。</p>}
   </div>

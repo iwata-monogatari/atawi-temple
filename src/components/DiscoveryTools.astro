@@ -1,0 +1,37 @@
+<dialog id="discovery-photo-dialog" class="discovery-lightbox" aria-labelledby="discovery-photo-caption">
+  <form method="dialog"><button autofocus aria-label="拡大写真を閉じる">閉じる ×</button></form>
+  <img id="discovery-photo-large" alt="" />
+  <p id="discovery-photo-caption"></p>
+</dialog>
+<script>
+  const dialog = document.querySelector<HTMLDialogElement>('#discovery-photo-dialog');
+  const image = document.querySelector<HTMLImageElement>('#discovery-photo-large');
+  const caption = document.querySelector<HTMLElement>('#discovery-photo-caption');
+  let trigger: HTMLElement | null = null;
+  document.addEventListener('click', event => {
+    const button = (event.target as Element)?.closest<HTMLElement>('[data-photo-open]');
+    if (!button || !dialog || !image || !caption) return;
+    const src = button.dataset.photoSrc;
+    if (!src || !src.startsWith('/')) return;
+    trigger = button;
+    image.src = src;
+    image.alt = button.querySelector('img')?.alt || '';
+    caption.textContent = button.dataset.photoCaption || image.alt;
+    dialog.showModal();
+    document.body.classList.add('discovery-modal-open');
+    (window as any).fgaTrack?.('temple_photo_expand');
+  });
+  dialog?.addEventListener('close', () => {document.body.classList.remove('discovery-modal-open'); trigger?.focus({preventScroll:true});});
+  dialog?.addEventListener('click', event => {if (event.target === dialog) dialog.close();});
+  function revealHash() {
+    let id = ''; try {id=decodeURIComponent(location.hash.slice(1));} catch {return;}
+    if (!id) return;
+    const target = document.getElementById(id);
+    if (!target) return;
+    let parent=target.parentElement;
+    let revealed=false;
+    while (parent) {if (parent instanceof HTMLDetailsElement && !parent.open) {parent.open=true;revealed=true;} parent=parent.parentElement;}
+    if (revealed) target.scrollIntoView();
+  }
+  window.addEventListener('hashchange',revealHash);revealHash();
+</script>

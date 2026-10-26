@@ -1,4 +1,6 @@
 ---
+import DiscoveryReading from "../components/DiscoveryReading.astro";
+import { discoverySummary } from "../lib/discovery";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { fromTempleUrl } from "../lib/editorial";
 import {
@@ -9,7 +11,6 @@ import {
   countTemplesByDistrict,
   countTemplesBySect,
   getDistrictName,
-  getTempleDisplaySummary,
   getTempleStatusLabel,
   getTempleBySlug,
   getTempleMediaBySlug,
@@ -65,7 +66,7 @@ const pickupPool = allTemples
       : null;
     const image = photo?.src ?? null;
     const imageAlt = photo?.alt ?? `${temple.name}の代表写真`;
-    const summary = getTempleDisplaySummary(temple, districtName);
+    const summary = discoverySummary(temple);
     return {
       slug: temple.slug,
       name: temple.name,
@@ -154,9 +155,9 @@ const homeFudosanUrl = fromTempleUrl("home_concern");
     <div class="hero-content">
       <p class="eyebrow">公開資料と現地確認をもとに整理しています</p>
       <span class="hero-rule" aria-hidden="true"></span>
-      <h1>磐田市の菩提寺・お寺を調べる</h1>
+      <h1>いつものまちに、<br />まだ知らないお寺がある。</h1>
       <p class="brand-name">ATAWI TEMPLE</p>
-      <p class="hero-support-copy">寺院名、読み方、住所、地区、宗派から検索できます。家族へ引き継ぐための寺院・法要・墓・仏壇の情報を整理しています。</p>
+      <p class="hero-support-copy">磐田のお寺を、写真や地域の物語から知ってみませんか。近くのお寺も、家族の菩提寺も、名前や地区から探せます。</p>
       {firstHeroSlide && (
         <div class="hero-photo-meta" aria-live="polite">
           <a id="hero-slide-link" href={firstHeroSlide.href} data-track-click="temple_detail_click">
@@ -166,6 +167,7 @@ const homeFudosanUrl = fromTempleUrl("home_concern");
         </div>
       )}
       {heroSlides.length > 1 && (
+        <button type="button" class="hero-slide-pause" data-hero-pause aria-pressed="false">写真の自動切替を止める</button>
         <div class="hero-slide-dots" aria-label="ヒーロー写真">
           {heroSlides.map((slide, index) => (
             <button
@@ -211,6 +213,9 @@ const homeFudosanUrl = fromTempleUrl("home_concern");
         const location = document.getElementById("hero-slide-location");
         if (slides.length === 0 || slideData.length === 0) return;
 
+        let paused = false;
+        const pauseButton = root.querySelector<HTMLButtonElement>("[data-hero-pause]");
+        pauseButton?.addEventListener("click", () => {paused = !paused; pauseButton.setAttribute("aria-pressed",String(paused)); pauseButton.textContent = paused ? "写真の自動切替を再開する" : "写真の自動切替を止める"; if (paused) stop(); else start();});
         let activeIndex = 0;
         let timer: number | null = null;
         const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -244,7 +249,7 @@ const homeFudosanUrl = fromTempleUrl("home_concern");
 
         function start() {
           stop();
-          if (slides.length < 2 || motionQuery.matches || document.hidden) return;
+          if (paused || slides.length < 2 || motionQuery.matches || document.hidden) return;
           timer = window.setInterval(() => {
             setActiveSlide(activeIndex + 1);
           }, 5600);
@@ -264,6 +269,120 @@ const homeFudosanUrl = fromTempleUrl("home_concern");
       })();
     </script>
   </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>写真とことばで知る、磐田のお寺</h2>
+      <a href="/temples/">ATAWI TEMPLEに登録されている寺院をすべて見る</a>
+    </div>
+    <div id="pickup-temples" class="pickup-grid" data-pickup-count="6">
+      <p class="small">読み込み中...</p>
+    </div>
+    <script is:inline type="application/json" id="pickup-temple-data" set:html={pickupPoolJson} />
+    <script is:inline type="application/json" id="pinned-pickup-slugs" set:html={pinnedPickupSlugsJson} />
+    <script>
+      function createPickupCard(temple: any) {
+        const article = document.createElement("article");
+        article.className = temple.pinned ? "pickup-card pickup-card--pinned" : "pickup-card";
+
+        const link = document.createElement("a");
+        link.className = "pickup-card-photo";
+        link.href = `/temples/${temple.slug}/`;
+        link.setAttribute("aria-label", `${temple.name}の詳細を見る`);
+        link.setAttribute("data-track-click", "temple_detail_click");
+        const img = document.createElement("img");
+        img.src = temple.image;
+        img.alt = temple.imageAlt;
+        img.loading = "lazy";
+        link.appendChild(img);
+        const badge = document.createElement("span");
+        badge.className = `pickup-card-badge status-${temple.status}`;
+        badge.textContent = temple.statusLabel;
+        link.appendChild(badge);
+        article.appendChild(link);
+
+        const body = document.createElement("div");
+        body.className = "pickup-card-body";
+
+        const areaSpan = document.createElement("span");
+        areaSpan.className = "pickup-card-area";
+        areaSpan.textContent = `${temple.area}地区`;
+        body.appendChild(areaSpan);
+
+        const heading = document.createElement("h3");
+        const nameLink = document.createElement("a");
+        nameLink.href = `/temples/${temple.slug}/`;
+        nameLink.setAttribute("data-track-click", "temple_detail_click");
+        nameLink.textContent = temple.name;
+        heading.appendChild(nameLink);
+        body.appendChild(heading);
+
+        if (temple.nameKana) {
+          const kana = document.createElement("p");
+          kana.className = "kana";
+          kana.textContent = temple.nameKana;
+          body.appendChild(kana);
+        }
+
+        const summary = document.createElement("p");
+        summary.className = "pickup-card-summary";
+        summary.textContent = temple.summary;
+        body.appendChild(summary);
+        article.appendChild(body);
+
+        return article;
+      }
+
+      function renderPickupTemples() {
+        const dataEl = document.getElementById("pickup-temple-data");
+        const pinnedEl = document.getElementById("pinned-pickup-slugs");
+        const container = document.getElementById("pickup-temples");
+        if (!dataEl || !container) return;
+
+        let pool: any[] = [];
+        let pinnedSlugs: string[] = [];
+        try {
+          pool = JSON.parse(dataEl.textContent || "[]");
+          pinnedSlugs = JSON.parse(pinnedEl?.textContent || "[]");
+        } catch {
+          pool = [];
+          pinnedSlugs = [];
+        }
+        if (!Array.isArray(pool) || pool.length === 0) {
+          container.innerHTML = "";
+          return;
+        }
+        if (!Array.isArray(pinnedSlugs)) pinnedSlugs = [];
+
+        const count = Math.min(6, pool.length);
+        const pinned = pinnedSlugs
+          .map((slug) => pool.find((temple) => temple.slug === slug))
+          .filter(Boolean)
+          .map((temple) => ({ ...temple, pinned: true }));
+        const pinnedSlugSet = new Set(pinned.map((temple) => temple.slug));
+        const randomPool = pool.filter((temple) => !pinnedSlugSet.has(temple.slug));
+        const usedIndexes = new Set<number>();
+        const picked: any[] = [];
+        const randomCount = Math.max(0, count - pinned.length);
+        while (picked.length < randomCount && usedIndexes.size < randomPool.length) {
+          const index = Math.floor(Math.random() * randomPool.length);
+          if (usedIndexes.has(index)) continue;
+          usedIndexes.add(index);
+          picked.push(randomPool[index]);
+        }
+
+        container.innerHTML = "";
+        for (const temple of [...pinned, ...picked].slice(0, count)) {
+          container.appendChild(createPickupCard(temple));
+        }
+      }
+
+      renderPickupTemples();
+    </script>
+  </section>
+  <nav class="discovery-link-band section" aria-label="もうひとつの探し方"><a href="/ranking/" data-track-click="temple_ranking_open">最近よく読まれているお寺・アクセスランキング →</a><a href="/readings/">お寺から神社へ、まちの祈りを読む →</a></nav>
+  <DiscoveryReading />
+
 
   <section class="section home-purpose-entries" aria-labelledby="home-purpose-title">
     <p class="eyebrow">What do you need?</p>
@@ -412,112 +531,7 @@ const homeFudosanUrl = fromTempleUrl("home_concern");
     </section>
   )}
 
-  <section class="section">
-    <div class="section-heading">
-      <h2>ピックアップ寺院</h2>
-      <a href="/temples/">ATAWI TEMPLEに登録されている寺院をすべて見る</a>
-    </div>
-    <div id="pickup-temples" class="pickup-grid" data-pickup-count="6">
-      <p class="small">読み込み中...</p>
-    </div>
-    <script is:inline type="application/json" id="pickup-temple-data" set:html={pickupPoolJson} />
-    <script is:inline type="application/json" id="pinned-pickup-slugs" set:html={pinnedPickupSlugsJson} />
-    <script>
-      function createPickupCard(temple: any) {
-        const article = document.createElement("article");
-        article.className = temple.pinned ? "pickup-card pickup-card--pinned" : "pickup-card";
 
-        const link = document.createElement("a");
-        link.className = "pickup-card-photo";
-        link.href = `/temples/${temple.slug}/`;
-        link.setAttribute("aria-label", `${temple.name}の詳細を見る`);
-        link.setAttribute("data-track-click", "temple_detail_click");
-        const img = document.createElement("img");
-        img.src = temple.image;
-        img.alt = temple.imageAlt;
-        img.loading = "lazy";
-        link.appendChild(img);
-        const badge = document.createElement("span");
-        badge.className = `pickup-card-badge status-${temple.status}`;
-        badge.textContent = temple.statusLabel;
-        link.appendChild(badge);
-        article.appendChild(link);
-
-        const body = document.createElement("div");
-        body.className = "pickup-card-body";
-
-        const areaSpan = document.createElement("span");
-        areaSpan.className = "pickup-card-area";
-        areaSpan.textContent = `${temple.area}地区`;
-        body.appendChild(areaSpan);
-
-        const heading = document.createElement("h3");
-        const nameLink = document.createElement("a");
-        nameLink.href = `/temples/${temple.slug}/`;
-        nameLink.setAttribute("data-track-click", "temple_detail_click");
-        nameLink.textContent = temple.name;
-        heading.appendChild(nameLink);
-        body.appendChild(heading);
-
-        if (temple.nameKana) {
-          const kana = document.createElement("p");
-          kana.className = "kana";
-          kana.textContent = temple.nameKana;
-          body.appendChild(kana);
-        }
-
-        article.appendChild(body);
-
-        return article;
-      }
-
-      function renderPickupTemples() {
-        const dataEl = document.getElementById("pickup-temple-data");
-        const pinnedEl = document.getElementById("pinned-pickup-slugs");
-        const container = document.getElementById("pickup-temples");
-        if (!dataEl || !container) return;
-
-        let pool: any[] = [];
-        let pinnedSlugs: string[] = [];
-        try {
-          pool = JSON.parse(dataEl.textContent || "[]");
-          pinnedSlugs = JSON.parse(pinnedEl?.textContent || "[]");
-        } catch {
-          pool = [];
-          pinnedSlugs = [];
-        }
-        if (!Array.isArray(pool) || pool.length === 0) {
-          container.innerHTML = "";
-          return;
-        }
-        if (!Array.isArray(pinnedSlugs)) pinnedSlugs = [];
-
-        const count = Math.min(6, pool.length);
-        const pinned = pinnedSlugs
-          .map((slug) => pool.find((temple) => temple.slug === slug))
-          .filter(Boolean)
-          .map((temple) => ({ ...temple, pinned: true }));
-        const pinnedSlugSet = new Set(pinned.map((temple) => temple.slug));
-        const randomPool = pool.filter((temple) => !pinnedSlugSet.has(temple.slug));
-        const usedIndexes = new Set<number>();
-        const picked: any[] = [];
-        const randomCount = Math.max(0, count - pinned.length);
-        while (picked.length < randomCount && usedIndexes.size < randomPool.length) {
-          const index = Math.floor(Math.random() * randomPool.length);
-          if (usedIndexes.has(index)) continue;
-          usedIndexes.add(index);
-          picked.push(randomPool[index]);
-        }
-
-        container.innerHTML = "";
-        for (const temple of [...pinned, ...picked].slice(0, count)) {
-          container.appendChild(createPickupCard(temple));
-        }
-      }
-
-      renderPickupTemples();
-    </script>
-  </section>
 
   <section class="section generated-database" aria-labelledby="generated-database-title">
     <div class="section-heading"><div><p class="eyebrow">Generated Database</p><h2 id="generated-database-title">寺院記録を横断して調べる</h2></div></div>
