@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（123本）
+## ブログ｜大石浩之のお寺ノート（124本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- お寺は年末年始に休み？磐田の実家整理で確認（2026-10-30）: https://temple.atawi.link/blog/20261030-otera-nenmatsu-nenshi-yasumi-iwata/
 - 法事の香典の郵送方法｜磐田の実家を離れた後に（2026-10-28）: https://temple.atawi.link/blog/20261028-houji-kouden-yusou-iwata/
 - 仏壇に鏡餅は供える？磐田の実家を空ける年末（2026-10-28）: https://temple.atawi.link/blog/20261028-butsudan-kagamimochi-iwata/
 - 磐田市の合葬墓とは？実家を離れる前に考えること（2026-10-27）: https://temple.atawi.link/blog/20261027-iwata-gousoubo-jikka/
@@ -48,7 +49,6 @@
 - 祭祀承継者とは？磐田の実家を継ぐ人との関係（2026-10-15）: https://temple.atawi.link/blog/20261015-saishi-shokeisha-iwata-jikka/
 - 納骨の持ち物｜磐田の実家整理前に別保管（2026-10-15）: https://temple.atawi.link/blog/20261015-noukotsu-mochimono-iwata-betsuhokan/
 - 仏飯とは？磐田の実家を空ける前に考えるお供え（2026-10-14）: https://temple.atawi.link/blog/20261014-buppan-iwata-jikka-osonae/
-- 線香の微煙と無香性の違い｜磐田の住み替え（2026-10-13）: https://temple.atawi.link/blog/20261013-senkou-bien-mukousei-iwata/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-10-28 時点・全856ページ）
+（2026-10-30 時点・全857ページ）
