@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（128本）
+## ブログ｜大石浩之のお寺ノート（129本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- お寺への寄付は控除対象？磐田の実家整理で確認（2026-11-03）: https://temple.atawi.link/blog/20261103-otera-kifu-koujo-iwata/
 - 墓参りは夕方でもよい？磐田の実家整理と日没（2026-11-03）: https://temple.atawi.link/blog/20261103-hakamairi-yugata-iwata/
 - 可睡斎の火まつり｜磐田の実家整理と分ける夜の参拝（2026-11-02）: https://temple.atawi.link/blog/20261102-kasuisai-himatsuri-iwata/
 - 法事の併修｜磐田の実家売却前に相談する3項目（2026-11-01）: https://temple.atawi.link/blog/20261101-houji-heishu-soudan-iwata/
@@ -48,7 +49,6 @@
 - 成道会とは？磐田の実家整理で知る冬の寺行事（2026-10-19）: https://temple.atawi.link/blog/20261019-jodoe-iwata-fuyu/
 - 葬儀の事前相談と生前契約の違い｜磐田の実家整理（2026-10-18）: https://temple.atawi.link/blog/20261018-sougi-jizensoudan-seizenkeiyaku-iwata/
 - 檀信徒手帳とは？磐田の実家整理で残す寺の記録（2026-10-17）: https://temple.atawi.link/blog/20261017-danshinto-techo-iwata/
-- 香炉の灰の掃除方法｜磐田の実家を空ける前に（2026-10-16）: https://temple.atawi.link/blog/20261016-kouro-hai-souji-iwata/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-11-03 時点・全861ページ）
+（2026-11-03 時点・全862ページ）
