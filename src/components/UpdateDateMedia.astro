@@ -1,0 +1,18 @@
+---
+import "../styles/update-media.css";
+interface Props {
+  date: string;
+  href: string;
+  title: string;
+  thumbnail?: { src: string; alt: string } | null;
+}
+const { date, href, title, thumbnail } = Astro.props;
+---
+<div class="update-meta">
+  <time datetime={date}>{date.replaceAll("-", ".")}</time>
+  {thumbnail && (
+    <a class="update-thumbnail" href={href} aria-label={title}>
+      <img src={thumbnail.src} alt={thumbnail.alt} width="120" height="80" loading="lazy" decoding="async" />
+    </a>
+  )}
+</div>

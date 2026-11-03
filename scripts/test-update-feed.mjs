@@ -15,6 +15,10 @@ assert.equal(buildUpdateFeed([], [{...post,updated:post.published}])[0].title,'�
 assert.equal(buildUpdateFeed([], [{...post,updated:undefined}])[0].date,post.published);
 assert.equal(buildUpdateFeed([], [{...post,updated:'2026-07-01'}])[0].date,post.published);
 assert.equal(buildUpdateFeed(original,[]).length,1);
+assert.equal(feed[0].thumbnail, null, 'Posts without a cover keep a text-only notice');
+assert.equal(feed[1].thumbnail, null, 'Temple notices do not acquire unrelated images');
+const cover = {src:'/assets/blog/sample.webp',alt:'記事の表紙'};
+assert.deepEqual(buildUpdateFeed([], [{...post,cover}])[0].thumbnail, cover);
 
 const posts=JSON.parse(await readFile('data/blog-posts.json','utf8')).posts;
 const temples=JSON.parse(await readFile('data/temple-updates.json','utf8'));
@@ -42,5 +46,11 @@ assert.deepEqual(notices(home),latest.map(u=>({date:u.date,href:u.href})));
 assert.deepEqual(notices(archive),actual.slice(5).map(u=>({date:u.date,href:u.href})));
 assert.match(home,/寺院・研究・ブログの公開・更新/);
 for(const update of latest) await readFile(`dist${update.href}index.html`);
+for (const [html, updates] of [[home, actual.slice(0,5)], [archive, actual.slice(5)]]) {
+  const imageSources = [...html.matchAll(/<a[^>]*class="update-thumbnail"[^>]*>[\s\S]*?<img[^>]*src="([^"]+)"/g)].map(m=>m[1]);
+  assert.deepEqual(imageSources, updates.filter(u=>u.thumbnail).map(u=>u.thumbnail.src), 'Static output preserves the feed thumbnails');
+}
+assert.deepEqual(latest.map(u=>u.thumbnail),actual.slice(0,5).map(u=>u.thumbnail), 'JSON refresh preserves thumbnails');
+for(const update of actual.filter(u=>u.thumbnail)) await readFile(`public${update.thumbnail.src}`);
 console.log(`[OK] home and JSON share 5 notices; archive contains the remaining ${actual.length-5} notices; blog destinations exist`);
 

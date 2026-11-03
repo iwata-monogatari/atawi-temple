@@ -1,0 +1,36 @@
+.update-item .update-meta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: start;
+  gap: 8px;
+}
+.update-item .update-thumbnail {
+  display: block;
+  width: 100%;
+  max-width: 120px;
+  min-width: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--soft);
+}
+.update-item .update-thumbnail img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+.update-item .update-thumbnail:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+.update-item .update-body { min-width: 0; }
+@media (max-width: 560px) {
+  /* Text flows around the date and image instead of adding a separate image row. */
+  .update-list .update-item:has(.update-thumbnail) { display: flow-root; }
+  .update-item:has(.update-thumbnail) .update-meta {
+    float: left;
+    width: 96px;
+    margin: 0 14px 8px 0;
+  }
+}

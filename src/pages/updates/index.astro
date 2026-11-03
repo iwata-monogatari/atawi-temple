@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { allSiteUpdates, HOME_UPDATE_LIMIT } from "../../lib/updates";
+import UpdateDateMedia from "../../components/UpdateDateMedia.astro";
 
 const laterUpdates = allSiteUpdates.slice(HOME_UPDATE_LIMIT);
 ---
@@ -26,8 +27,8 @@ const laterUpdates = allSiteUpdates.slice(HOME_UPDATE_LIMIT);
           {
             laterUpdates.map((update) => (
               <article class="update-item">
-                <time datetime={update.date}>{update.date.replaceAll("-", ".")}</time>
-                <div>
+                <UpdateDateMedia date={update.date} href={update.href} title={update.title} thumbnail={update.thumbnail} />
+                <div class="update-body">
                   <h3>
                     <a href={update.href}>{update.title}</a>
                   </h3>

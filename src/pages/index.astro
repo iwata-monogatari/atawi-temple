@@ -4,6 +4,7 @@ import { discoverySummary } from "../lib/discovery";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/home-compact.css";
 import { recentSiteUpdates, siteUpdatesLabel } from "../lib/updates";
+import UpdateDateMedia from "../components/UpdateDateMedia.astro";
 import { fromTempleUrl } from "../lib/editorial";
 import {
   allTemples,
@@ -553,10 +554,10 @@ const homeFudosanUrl = fromTempleUrl("home_concern");
       {
         recentUpdates.map((update) => (
           <article class="update-item">
-            <time datetime={update.date}>{update.date.replaceAll("-", ".")}</time>
-            <div>
+            <UpdateDateMedia date={update.date} href={update.href} title={update.title} thumbnail={update.thumbnail} />
+            <div class="update-body">
               <h3>
-                    <a href={update.href}>{update.title}</a>
+                <a href={update.href}>{update.title}</a>
               </h3>
               <p>{update.summary}</p>
               {update.temple_name && <span class="small">{update.temple_name} / {update.temple_area}</span>}
@@ -576,6 +577,7 @@ const homeFudosanUrl = fromTempleUrl("home_concern");
         temple_slug?: string;
         temple_name?: string;
         temple_area?: string;
+        thumbnail?: { src: string; alt: string } | null;
       };
 
       const list = document.querySelector("[data-latest-updates-list]");
@@ -602,9 +604,28 @@ const homeFudosanUrl = fromTempleUrl("home_concern");
           const time = document.createElement("time");
           time.dateTime = text(update.date);
           time.textContent = text(update.date).split("-").join(".");
-          item.appendChild(time);
+          const meta = document.createElement("div");
+          meta.className = "update-meta";
+          meta.appendChild(time);
+          if (update.thumbnail?.src) {
+            const photoLink = document.createElement("a");
+            photoLink.className = "update-thumbnail";
+            photoLink.href = templeHref(update);
+            photoLink.setAttribute("aria-label", text(update.title));
+            const image = document.createElement("img");
+            image.src = update.thumbnail.src;
+            image.alt = update.thumbnail.alt || text(update.title);
+            image.width = 120;
+            image.height = 80;
+            image.loading = "lazy";
+            image.decoding = "async";
+            photoLink.appendChild(image);
+            meta.appendChild(photoLink);
+          }
+          item.appendChild(meta);
 
           const body = document.createElement("div");
+          body.className = "update-body";
           const heading = document.createElement("h3");
           const link = document.createElement("a");
           link.href = templeHref(update);
