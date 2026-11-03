@@ -1,5 +1,6 @@
 ---
 import DiscoveryIntro from "../../components/DiscoveryIntro.astro";
+import ReflectionPassage from "../../components/ReflectionPassage.astro";
 import DiscoveryPhotos from "../../components/DiscoveryPhotos.astro";
 import DiscoveryReading from "../../components/DiscoveryReading.astro";
 import { relatedReason } from "../../lib/discovery";
@@ -370,6 +371,7 @@ const showHouyouBridge = true;
           <small>最終確認 {(refurb?.last_verified_at || temple.last_verified_at).replaceAll("-", ".")}</small>
         </div>
       </div>
+      {coverPhoto && <figure class="splendor-temple-portrait"><button type="button" class="discovery-photo-button" data-photo-open data-photo-src={coverPhoto.src} data-photo-caption={coverPhoto.caption || coverPhoto.alt} aria-label={`${coverPhoto.alt}を拡大`}><img src={coverPhoto.src} alt={coverPhoto.alt} loading="eager" decoding="async" /><span aria-hidden="true">拡大 ↗</span></button><figcaption>{coverPhoto.caption || coverPhoto.alt}</figcaption></figure>}
       <p class="temple-lead">{refurb ? refurb.lead : visiblePageSummary}</p>
       {temple.aliases.length > 0 && (
         <p class="alias-line"><span>別称・関連名称</span>{temple.aliases.join("／")}</p>
@@ -381,6 +383,8 @@ const showHouyouBridge = true;
         <div><dt>宗派</dt><dd>{temple.sect}</dd></div>
       </dl>
       <div class="temple-primary-actions" aria-label="寺院ページ上部の導線">
+        <a class="button-link" href="#temple-basic">基本情報・参拝の確認</a>
+        <a class="button-link secondary-button" href={visibleMediaPhotos.length ? "#discovery-photo-title" : "#history"}>写真と記録を読む</a>
         <a class="button-link" href={districtUrl}>同じ地区の寺院を見る</a>
         <a class="button-link secondary-button" href={mapPageUrl} data-track-click="temple_map_click">住所一覧で見る</a>
         <a class="button-link secondary-button" href="/temples/">寺院一覧へ戻る</a>
@@ -389,6 +393,8 @@ const showHouyouBridge = true;
 
     <DiscoveryPhotos temple={temple} />
     <DiscoveryIntro temple={temple} />
+    <ReflectionPassage kind="wisdom" temple={temple} />
+    <ReflectionPassage kind="family" temple={temple} />
     <DiscoveryReading slug={temple.slug} />
     <nav class="discovery-link-band" aria-label="記録の入口"><a href="#temple-basic">基本情報・参拝の確認</a><a href="#history">詳しい歴史</a><a href="#sources">出典</a><a href="/ranking/">アクセスランキングへ</a></nav>
     <section id="temple-basic" class="temple-basic-panel" aria-label="寺院の基本情報と確認状況">
@@ -705,6 +711,7 @@ const showHouyouBridge = true;
         <section class="temple-family-panel" aria-labelledby="temple-family-title">
           <p class="eyebrow">For Families</p>
           <h2 id="temple-family-title">このお寺が菩提寺のご家族へ</h2>
+          <p>この境内を、誰と歩いたことがあるでしょう。家族から聞いた話や、ご先祖を想って手を合わせた時間を、次の世代にも伝えてみませんか。</p>
           <p>菩提寺の名前や場所が確認できたら、それだけで終わりではありません。</p>
           <p>法要やお墓について、家族の中で誰が情報を持っているのかも確認しておくと、将来困ることが少なくなります。親が元気なうちに、次のことを家族で確認しておくことをおすすめします。</p>
           <ul class="temple-family-checks">

@@ -3,6 +3,7 @@ import FujigaokaAnalytics from "../components/FujigaokaAnalytics.astro";
 import SearchTrafficTempleLinks from "../components/SearchTrafficTempleLinks.astro";
 import "../styles/global.css";
 import "../styles/discovery.css";
+import "../styles/splendor.css";
 import DiscoveryTools from "../components/DiscoveryTools.astro";
 import DiscoveryEngagement from "../components/DiscoveryEngagement.astro";
 
@@ -78,7 +79,7 @@ const structuredDataItems = [...sharedStructuredData, ...pageStructuredData].fil
     <title>{title}</title>
     <meta name="description" content={description} />
     {robots ? <meta name="robots" content={robots} /> : noindex && <meta name="robots" content="noindex,nofollow" />}
-    <meta name="theme-color" content="#2f4b2b" />
+    <meta name="theme-color" content="#2d1838" />
     <link rel="canonical" href={canonicalUrl} />
     <meta property="og:site_name" content="ATAWI TEMPLE" />
     <meta property="og:type" content={ogType} />
@@ -102,6 +103,7 @@ const structuredDataItems = [...sharedStructuredData, ...pageStructuredData].fil
     <FujigaokaAnalytics />
   </head>
   <body>
+    <a class="skip-to-content" href="#main-content">本文へ進む</a>
     <header class="site-header">
       <a class="brand" href="/">
         <img src="/assets/brand/atawi-temple-mark.svg" alt="" width="48" height="48" />
@@ -133,7 +135,7 @@ const structuredDataItems = [...sharedStructuredData, ...pageStructuredData].fil
         </div>
       </aside>
     )}
-    <main>
+    <main id="main-content">
       <slot />
       <SearchTrafficTempleLinks path={Astro.url.pathname} />
     </main>
