@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（135本）
+## ブログ｜大石浩之のお寺ノート（136本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- 拝観料とお布施の違い｜磐田の実家整理と秋の参拝（2026-11-08）: https://temple.atawi.link/blog/20261108-haikanryo-ofuse-chigai-iwata/
 - 喪中の七五三｜磐田の家族が確認する3項目（2026-11-07）: https://temple.atawi.link/blog/20261107-mochu-shichigosan-iwata/
 - 法事の寒さ対策｜磐田の実家整理前に3確認（2026-11-06）: https://temple.atawi.link/blog/20261106-houji-samusa-taisaku-iwata/
 - 森町・香勝寺の受戒会はいつ？実家整理の帰省前に（2026-11-05）: https://temple.atawi.link/blog/20261105-koshoji-jukaie-morimachi/
@@ -48,7 +49,6 @@
 - 法事のお車代の渡し方｜磐田の実家売却前に確認（2026-10-25）: https://temple.atawi.link/blog/20261025-houji-okurumadai-watashikata-iwata/
 - 油山寺の紅葉｜磐田への帰省日を考える秋（2026-10-24）: https://temple.atawi.link/blog/20261024-yusanji-kouyou-iwata-kisei/
 - 除夜の鐘とは？磐田の実家を離れて迎える年末（2026-10-23）: https://temple.atawi.link/blog/20261023-joyanokane-iwata-jikka/
-- お寺の大掃除の持ち物｜磐田の実家整理と参加準備（2026-10-22）: https://temple.atawi.link/blog/20261022-otera-oosouji-mochimono-iwata/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-11-07 時点・全868ページ）
+（2026-11-08 時点・全869ページ）
