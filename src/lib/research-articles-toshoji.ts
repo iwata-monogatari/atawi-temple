@@ -18,7 +18,7 @@ const coreSources: ResearchSource[] = [
   { title: "概要・歴史", url: "https://www.sotozen-net.or.jp/soto/summary", publisher: "曹洞宗宗務庁", accessed: "2026-07-24", note: "曹洞宗の法系・地方展開・近世寺院組織化の一般的説明を確認した。東昌寺固有史とは区別した。" },
   { title: "東貝塚村", url: "https://kotobank.jp/word/%E6%9D%B1%E8%B2%9D%E5%A1%9A%E6%9D%91-3031200", publisher: "平凡社『日本歴史地名大系』・DIGITALIO", accessed: "2026-07-24", note: "正保郷帳の村高・東昌寺領2石、旧高旧領取調帳に至る近世村落情報を確認した。" },
   { title: "東昌寺 寺院詳細", url: "https://temple.atawi.link/temples/toshoji-higashikaizuka/", publisher: "ATAWI TEMPLE", accessed: "2026-07-24", note: "行政・郡誌・地名資料と現地写真の確認状況、未確認事項を照合した。" },
-  { title: "福王寺 寺院詳細", url: "https://temple.atawi.link/temples/fukuoji-shinmeicho/", publisher: "ATAWI TEMPLE", accessed: "2026-07-24", note: "郡誌が東昌寺の本寺とする福王寺の所在・曹洞宗・由緒の確認状況を比較した。" },
+  { title: "福王寺 寺院詳細", url: "https://temple.atawi.link/temples/fukuoji-jonosaki/", publisher: "ATAWI TEMPLE", accessed: "2026-07-24", note: "郡誌が東昌寺の本寺とする福王寺の所在・曹洞宗・由緒の確認状況を比較した。" },
   { title: "磐田市文化財保存活用地域計画", url: "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/009/747/keikaku202409.pdf", publisher: "磐田市", accessed: "2026-07-24", note: "御厨地区の歴史文化、指定・未指定文化財を地域的まとまりで把握する方針を確認した。" },
 ];
 

@@ -1,9 +1,13 @@
 const FOOTER_PATH = "/partials/footer.html";
-const CONTACT_PATHS = new Set([
-  "/contact",
-  "/company/contact",
-  "/お問い合わせ",
-  "/お問合せ",
+const LEGACY_PATHS = new Map([
+  ["/contact", "/correction/"],
+  ["/company/contact", "/correction/"],
+  ["/お問い合わせ", "/correction/"],
+  ["/お問合せ", "/correction/"],
+  ["/temples/fukuoji-shinmeicho", "/temples/fukuoji-jonosaki/"],
+  ["/topics/haka/hakajimai-cost", "/topics/ohaka/ohaka-14/"],
+  ["/topics/haka/kaisou-kyoka-flow", "/topics/ohaka/ohaka-16/"],
+  ["/topics/dan/ridan-jitsumu", "/guide/danka/"],
 ]);
 
 export async function onRequest(context) {
@@ -14,8 +18,9 @@ export async function onRequest(context) {
   } catch {
     // Malformed URL escapes are left to the existing routing behavior.
   }
-  if (["GET", "HEAD"].includes(context.request.method) && CONTACT_PATHS.has(pathname.replace(/\/$/, ""))) {
-    url.pathname = "/correction/";
+  const destination = LEGACY_PATHS.get(pathname.replace(/\/$/, ""));
+  if (["GET", "HEAD"].includes(context.request.method) && destination) {
+    url.pathname = destination;
     return Response.redirect(url.href, 301);
   }
   if (url.pathname.startsWith("/partials/")) {

@@ -1,0 +1,404 @@
+{
+  "checkedOn": "2026-11-12",
+  "replacements": {
+    "https://jodo-ss.com/temple_list/": "https://jodo-ss.com/temple/",
+    "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/011/670/meibo4.pdf": "https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/083/677/meibo4.pdf",
+    "https://www.pref.shizuoka.jp/kensei/gyoseikaikaku/kouekihoujin/1002313/1011670.html": "https://www.pref.shizuoka.jp/kensei/gyoseikaikaku/1083643/1083669/1083677.html",
+    "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/kankyou_gomi/1001569.html": "https://www.city.iwata.shizuoka.jp/kurashi_tetsuzuki/juutaku_pet_seikatsu/bochi/1001525.html",
+    "https://kanko-iwata.jp/wp/wp-content/uploads/2023/06/B4_nakaizumi.pdf": "https://kanko-iwata.jp/wp2/wp-content/uploads/2023/06/B4_nakaizumi.pdf",
+    "https://kanko-iwata.jp/wp/wp-content/uploads/2024/04/b4ab4d365d0b6e6d965c69bc660a68cf.pdf": "https://kanko-iwata.jp/wp2/wp-content/uploads/2024/04/b4ab4d365d0b6e6d965c69bc660a68cf.pdf",
+    "https://kanko-iwata.jp/wp/wp-content/uploads/2023/06/B4_toyooka.pdf": "https://kanko-iwata.jp/wp2/wp-content/uploads/2023/06/B4_toyooka.pdf"
+  },
+  "unavailable": [
+    {
+      "url": "https://honganjifoundation.org/jouen/event/event-allyear/event_houonkou/",
+      "status": 404
+    },
+    {
+      "url": "https://jodo.or.jp/wp-content/uploads/2023/03/souryo26_2023.pdf",
+      "status": 404
+    },
+    {
+      "url": "https://kanko-iwata.jp/wp/wp-content/uploads/2017/06/6eaf16078e4feb0b3081ada956ed7e08.pdf",
+      "status": 404,
+      "discoveryUrl": "https://kanko-iwata.jp/useful_information/pamphlet/",
+      "discoveryLabel": "観光協会のパンフレット一覧"
+    },
+    {
+      "url": "https://kanko-iwata.jp/wp/wp-content/uploads/2023/06/150844ffe2b2880acb51af5e8e4da6ef.pdf",
+      "status": 404,
+      "discoveryUrl": "https://kanko-iwata.jp/useful_information/pamphlet/",
+      "discoveryLabel": "観光協会のパンフレット一覧"
+    },
+    {
+      "url": "https://kanko-iwata.jp/wp/wp-content/uploads/2023/06/B4_kamata.pdf",
+      "status": 404,
+      "discoveryUrl": "https://kanko-iwata.jp/useful_information/pamphlet/",
+      "discoveryLabel": "観光協会のパンフレット一覧"
+    },
+    {
+      "url": "https://kanko-iwata.jp/wp/wp-content/uploads/2022/11/ad74275f34cb264f6f78f2f709caf0b7.pdf",
+      "status": 404,
+      "discoveryUrl": "https://kanko-iwata.jp/useful_information/pamphlet/",
+      "discoveryLabel": "観光協会のパンフレット一覧"
+    },
+    {
+      "url": "https://www.cbr.mlit.go.jp/tenjyo/think/basin/pdf/pab_seibi-plan01.pdf",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/001/142/keikaku.pdf",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/001/182/siryo.pdf",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/001/196/R7.4honbun.pdf",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/001/525/bosyuukukaku0801.pdf",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/002/024/dayori218.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/002/024/dayori226.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/002/338/r0601tochi.pdf",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/003/006/09011.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/kyoiku/kyouikushisaku/1003006.html",
+      "discoveryLabel": "公式の冊子掲載ページ"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/003/006/R7iwatanokyouiku.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/kyoiku/kyouikushisaku/1003006.html",
+      "discoveryLabel": "公式の冊子掲載ページ"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/003/006/R7iwatanokyouiku2.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/kyoiku/kyouikushisaku/1003006.html",
+      "discoveryLabel": "公式の冊子掲載ページ"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/005/537/01.pdf",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/005/537/07.pdf",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/005/537/14-2.pdf",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/005/537/21.pdf",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/005/583/R0708machi.pdf",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/0505.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.chion-in.or.jp/about/worship.php",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/0507.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/0509.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/0511.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/0512.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/0603.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/0608.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/0802.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/0907.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/1202.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/1301.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/1506.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/1509.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/1511.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/1602.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/1701.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/1711.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/1808.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/1812.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/1907.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/dayori171-.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/dayori178.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/dayori116.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/dayori180.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/dayori187.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/dayori193.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/007/901/dayori195.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1007901.html",
+      "discoveryLabel": "公式バックナンバーで探す"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/012/011/R06karute/1405_ancienttomb_r6.pdf",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/009/747/honpen23mega.pdf",
+      "status": 404,
+      "discoveryUrl": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/bunkazainitsuite/1009747.html",
+      "discoveryLabel": "現行の計画掲載ページ"
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/012/069/sugoroku.pdf",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/012/219/siryo.pdf",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/012/101/01_2303_koho_iwata_PDF/teisei2/iwata_230315_low.pdf",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/_res/projects/default_project/_page_/001/013/005/akushon2024.pdf",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/kenkou_fukushi/chiiki_shakai_fukushi/1012650.html",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/shisetsu_guide/toshokan_bunka/rekishimonjokan/1003503.html",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/sports_midokoro/bunkazai/kenshitei/1002051.html",
+      "status": 404
+    },
+    {
+      "url": "https://www.city.iwata.shizuoka.jp/sports_midokoro/kankou/kankou_event/1002004.html",
+      "status": 404
+    },
+    {
+      "url": "https://www.digital.archives.go.jp/howto/helpKbun_06.html",
+      "status": 404
+    },
+    {
+      "url": "https://www.jishujinja.or.jp/blog/archives/2004/07/post_6.html",
+      "status": 404
+    },
+    {
+      "url": "https://www.jpinf.com/BukyJpinf/TJpinfNO22/InJPinf0552650400803.html",
+      "status": 404
+    },
+    {
+      "url": "https://www.hyakuryudo.com/jiin_search/shizuoka/jiincd22211_106.html",
+      "status": 404
+    },
+    {
+      "url": "https://www.jbf.ne.jp/about/organization/",
+      "status": 404
+    },
+    {
+      "url": "https://www.jbf.ne.jp/knowledge/buddhist_service",
+      "status": 404
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/bouchi/index.html",
+      "status": 404
+    },
+    {
+      "url": "https://www.pref.gunma.jp/uploaded/attachment/36716.pdf",
+      "status": 404
+    },
+    {
+      "url": "https://www.pref.shizuoka.jp/bosaikinkyu/sonae/earthquake/1040816/1029868.html",
+      "status": 404
+    },
+    {
+      "url": "https://www.pref.shizuoka.jp/kankosports/bunkageijutsu/bunkazai/1002825/1041001.html",
+      "status": 404
+    },
+    {
+      "url": "https://www.pref.shizuoka.jp/machizukuri/kasensabo/coast/1049317.html",
+      "status": 404
+    },
+    {
+      "url": "https://www.sotozen-net.or.jp/soto/history",
+      "status": 404
+    },
+    {
+      "url": "https://www.sotozen-net.or.jp/ceremony/memorial/gravesite",
+      "status": 404
+    },
+    {
+      "url": "https://www.sotozen-net.or.jp/ceremony/memorial/touba",
+      "status": 404
+    },
+    {
+      "url": "https://www.sotozen-net.or.jp/what/",
+      "status": 404
+    },
+    {
+      "url": "https://www.zojoji.or.jp/kaisyu850/news/000841.html",
+      "status": 404
+    },
+    {
+      "url": "https://www.rinnou.net/cont_03/search.php",
+      "status": 404
+    },
+    {
+      "url": "https://www2.kokugakuin.ac.jp/museology/kiyou34.pdf",
+      "status": 404
+    },
+    {
+      "url": "https://www.syougenninn28.com/",
+      "status": 404
+    }
+  ]
+}
