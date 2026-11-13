@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（141本）
+## ブログ｜大石浩之のお寺ノート（142本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- 永代供養の期間と合祀の時期｜三十三回忌までが目安（2026-11-13）: https://temple.atawi.link/blog/20261113-eitai-kuyo-goshi-jiki-iwata/
 - 開眼供養と入仏法要の違い｜新しい仏壇を迎えるとき（2026-11-12）: https://temple.atawi.link/blog/20261112-butsudan-kaigen-nyubutsu-iwata/
 - 年忌法要の数え方｜三回忌は満2年、2027年の早見表（2026-11-11）: https://temple.atawi.link/blog/20261111-nenki-kazoekata-iwata/
 - 祭祀承継者でもめたら｜磐田の実家と家庭裁判所の指定（2026-11-10）: https://temple.atawi.link/blog/20261110-saishi-shokeisha-shitei-iwata/
@@ -48,7 +49,6 @@
 - 墓の巡回と清掃の違い｜磐田の実家売却後に（2026-10-31）: https://temple.atawi.link/blog/20261031-haka-junkai-seisou-chigai-iwata/
 - お寺は年末年始に休み？磐田の実家整理で確認（2026-10-30）: https://temple.atawi.link/blog/20261030-otera-nenmatsu-nenshi-yasumi-iwata/
 - 法事の香典の郵送方法｜磐田の実家を離れた後に（2026-10-28）: https://temple.atawi.link/blog/20261028-houji-kouden-yusou-iwata/
-- 仏壇に鏡餅は供える？磐田の実家を空ける年末（2026-10-28）: https://temple.atawi.link/blog/20261028-butsudan-kagamimochi-iwata/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-11-12 時点・全874ページ）
+（2026-11-13 時点・全875ページ）
