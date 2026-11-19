@@ -20,7 +20,7 @@
 - 特集・読みもの（4本）: https://temple.atawi.link/tokushu/
 - 研究論文（343本）: https://temple.atawi.link/research/
 
-## ブログ｜大石浩之のお寺ノート（147本）
+## ブログ｜大石浩之のお寺ノート（148本）
 
 - 一覧: https://temple.atawi.link/blog/
 - RSS: https://temple.atawi.link/feed.xml
@@ -29,6 +29,7 @@
 
 データベース本体が運営組織名義の事実の整理であるのに対し、ブログは大石浩之個人の署名記事です。現場で見たことと本人の判断を含みます。
 
+- 修正会とは｜除夜の鐘から元日の初参り、寺の年頭法要（2026-11-18）: https://temple.atawi.link/blog/20261118-joya-no-kane-shushoue-iwata/
 - お彼岸の数え方｜彼岸入り・中日・彼岸明けの決まり方（2026-11-18）: https://temple.atawi.link/blog/20261118-higan-hairi-ake-iwata/
 - 四十九日法要の準備｜満中陰の数え方と当日の段取り（2026-11-17）: https://temple.atawi.link/blog/20261117-shijukunichi-houyou-junbi-iwata/
 - 施餓鬼会と棚経の違い｜お盆に寺と家で営む2つの供養（2026-11-16）: https://temple.atawi.link/blog/20261116-segaki-tanagyo-obon-iwata/
@@ -48,7 +49,6 @@
 - 磐田の津波避難場所｜墓参りの前に確かめるには（2026-11-04）: https://temple.atawi.link/blog/20261104-iwata-hakamairi-tsunami-hinan/
 - 仏壇の防炎マットの選び方｜磐田の実家から仏壇を移すとき（2026-11-04）: https://temple.atawi.link/blog/20261104-butsudan-bouen-mat-iwata/
 - お寺への寄付は控除対象？磐田の実家整理で確認（2026-11-03）: https://temple.atawi.link/blog/20261103-otera-kifu-koujo-iwata/
-- 墓参りは夕方でもよい？磐田の実家整理と日没（2026-11-03）: https://temple.atawi.link/blog/20261103-hakamairi-yugata-iwata/
 
 ## 家族向けの無料ツール
 
@@ -73,4 +73,4 @@
 
 - https://temple.atawi.link/llms-full.txt
 
-（2026-11-18 時点・全880ページ）
+（2026-11-18 時点・全881ページ）
