@@ -131,11 +131,12 @@ const historicalPeriods = ["奈良", "平安", "鎌倉", "室町", "江戸", "�
 >
   <section class:list={["area-hero", { "area-hero--photo": areaHeroImage }]} style={heroStyle}>
     <div class="area-hero-copy">
-      <p class="eyebrow">Area Results / {district.slug}</p>
-      <h1>{district.name}の寺院検索結果</h1>
+      <p class="eyebrow">TEMPLE DIRECTORY / {district.slug}</p>
+      <h1>{district.name}地区のお寺・寺院一覧</h1>
       <p>{district.summary}</p>
       <div class="area-actions">
-        <a class="button-link" href={searchUrl} data-track-click="temple_search_refine">この地区で検索する</a>
+        <a class="button-link" href="#area-temple-list">登録寺院の一覧へ</a>
+        <a class="area-text-link" href={searchUrl} data-track-click="temple_search_refine">この地区で検索する</a>
         <a class="area-text-link" href={mapUrl} data-track-click="temple_map_click">住所一覧で見る</a>
         <a class="area-text-link" href="/areas/">9地区一覧へ戻る</a>
       </div>
