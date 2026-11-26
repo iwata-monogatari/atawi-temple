@@ -724,7 +724,12 @@ const showHouyouBridge = true;
           </div>
         </section>
 
-        {templeResearchArticles.length > 0 && (
+        {temple.slug === "jokoji-maeno" && (
+          <section class="detail-panel" aria-labelledby="jokoji-kannon-exhibition-title">
+            <h2 id="jokoji-kannon-exhibition-title">千手観音菩薩像の展示（2026年）</h2>
+            <p>修復を経た像を紹介した2026年の企画展は浜松市美術館が会場です。定光寺での拝観案内とは別に、<a href="/blog/20261005-jokoji-senjukannon-tenji-iwata/#mihotoke-gallery-talk">展覧会の会期と展示解説を読む</a>。</p>
+          </section>
+        )}{templeResearchArticles.length > 0 && (
           <section class="temple-related-research" aria-labelledby="temple-research-title">
             <div class="section-heading"><div><p class="eyebrow">Research</p><h2 id="temple-research-title">この寺院に関する調査・研究</h2></div><a href="/research/">研究・地域史を見る</a></div>
             <div class="card-grid">
